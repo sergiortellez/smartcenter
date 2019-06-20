@@ -1,0 +1,776 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133473676-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-133473676-1');
+</script>
+    <!-- End Global site tag (gtag.js) - Google Analytics -->
+    <title>My Career My Success</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--    <meta name="keywords" content="" /> -->
+    <meta charset="utf-8">
+    <meta name="author" content="Universidad Panamericana" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <!-- <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i,900|Montserrat:400,700|PT+Serif'
+        rel='stylesheet' type='text/css'> -->
+    <link rel="stylesheet" type="text/css" href='css/clear.css' />
+    <link rel="stylesheet" type="text/css" href='css/common.css' />
+    <!-- <link rel="stylesheet" type="text/css" href='css/font-awesome.min.css' /> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href='css/carouFredSel.css' />
+    <link rel="stylesheet" type="text/css" href='css/prettyPhoto.css' />
+    <link rel="stylesheet" type="text/css" href='css/sm-clean.css' />
+    <link rel="stylesheet" type="text/css" href='style.css' />
+    <link rel="stylesheet" type="text/css" href="css/mcms.css">
+    <!--[if lt IE 9]>
+                <script src="js/html5.js"></script>
+        <![endif]-->
+    <!-- Latest Bootstrap compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+    <!-- Flickity CSS (carrousels -->
+    <link rel="stylesheet" href="css/flickity.css" media="screen">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- Preloader Gif -->
+    <table class="doc-loader">
+        <tr>
+            <td> <img src="images/loaderSmart.gif" alt="Loading..." /> </td>
+        </tr>
+    </table>
+    <!-- Menu -->
+    <div class="menu-wrapper center-relative">
+        <!-- <nav id="header-main-menu">
+            <div class="mob-menu">MENU</div>
+            <ul class="main-menu sm sm-clean mr-auto">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#oylb">Organizing your life like a boss</a></li>
+                <li><a href="#contact">Contacto</a></li>
+
+                <li><a href="#services">Liderazgo</a></li>
+                <li><a href="#portfolio">Resiliencia</a></li>
+                <li><a href="#about">Comunicación</a></li>
+                <li><a href="#news">Your CV Your Masterpiece</a></li>
+
+                <li><a href="#video">Video</a></li>
+                <li><a href="#skills">Skills</a></li>
+
+
+
+                <li class="logged d-none" id="clientName"></li>
+                <li class="logged d-none"><img src="" id="clientPhoto" alt="foto"></li>
+                <li class="notLogged d-block"><button type="button" onclick="login()">Login</button></li>
+                <li class="logged d-none"><button type="button" onclick="logout()">Logout</button></li>
+            </ul>
+            <ul class="ml-auto align-self-center d-flex flex-row">
+
+            </ul>
+        </nav>  -->
+
+        <nav class="navbar navbar-expand-lg custumNavbar navbar-dark">
+            <img class="navbar-brand logoSmartNavbar mb-1" src="images/logo-smart-cuadrito.png"></img>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="custom-toggler navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#oylb">Organizing your life like a boss</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#liderazgo">Liderazgo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cvmp">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+
+                    <label class="logged d-none mr-2"><img src="" id="clientPhoto" alt="foto"></label>
+                    <label class="logged d-none mr-3" id="clientName"></label>
+
+                    <button class=" d-none btn btn-outline-warning my-2 my-sm-0" id="logInButton" type="button" onclick="toggleSignIn()">Login</button>
+                </form>
+            </div>
+        </nav>
+
+    </div>
+    <!-- Home -->
+    <div id="home" class="section intro-page">
+
+        <div class="block content-1170 center-relative center-text"> <img class="top-logo" src="images/logoSuccessBlancoSinFondo-08.png"
+                alt="Success Center" />
+            <br>
+            <h1 class="big-title">My Career <span>My Success</span></h1>
+            <p class="title-desc">Todo lo que necesitas para tener éxito en el mundo laboral.</p>
+
+        </div>
+    </div>
+
+    <!-- Organizing your life like a boss  -->
+
+    <div id="oylb" class="section pb-5">
+        <!-- Bloque de presentación -->
+        <div class="block content-1170 center-relative">
+            <!-- bloque de título -->
+            <div class="section-title-holder  left">
+                <div class="d-flex column-alignment  h-100">
+                    <img src="images/icons/oylb.png" class="icon-title align-self-center" alt="titulo del curso">
+                    <!-- ***************cambiar el título*************** -->
+                    <span class="course-title text-center my-auto">Organizing your life<br> like a boss</span>
+                </div>
+
+
+            </div>
+            <!-- fin de bloque de título -->
+            <!-- bloque de información -->
+            <div class="d-none section-content-holder right notLogged p-5">
+                <div class="loginLetrero">
+                    <h2>Organizing your life like a boss</h2>
+                    <p>Haz login con tu cuenta de la UP en la barra de navegación para disfrutar de esta experiencia</p>
+                    <div style='position:relative; padding-bottom:calc(62.50% + 44px)'><iframe src='https://gfycat.com/ifr/ElementaryFluidAfricanmolesnake?controls=0&speed=4&autoplay=1&hd=0'
+                            frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;'
+                            allowfullscreen></iframe></div>
+                </div>
+
+
+            </div>
+            <div class="section-content-holder right logged">
+                <div class="titleBandYellow mt-2 p-3">¿Qué es?</div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md m-3">
+                            <span>Esta experiencia te permitirá ver cómo organizas tu tiempo para detectar en qué áreas
+                                puedes mejorar con el fin de
+                                aumentar tu productividad y hacer más en menos tiempo.</span>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="titleBandYellow mt-2 p-3">¿Qué puedo esperar de esta experiencia?</div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col m-3">
+
+                            <p> <b> 9 videos</b> de máximo <b>3
+                                    minutos </b>con estrategias sencillas para aumentar tu productividad.</p>
+                            <p>La <b>oportunidad</b> de tener una sesión de <b>coaching personalizado</b> para que
+                                en una sesión uno
+                                a uno puedas <b>maximizar el uso de tu tiempo</b>.</p>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="titleBandYellow mt-2 p-3">¿Cómo puedo disfrutar esta experiencia?</div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <p class="m-2"> Sigue estos <b> sencillos pasos </b> para disfrutar la experiencia <b>#oyl
+                                #likeaboss</b></p>
+                    </div>
+                    <div class="row">
+
+
+                        <div class="col-md">
+                            <img class="imageSteps" src="images/oyl/carousel.png">
+                            <p> <b class="circleNumber"> 1</b> Disfruta cualquiera de los 9 videos que están en el
+                                carrusel de abajo. (no tienen un orden estricto)</p>
+                        </div>
+                        <div class="col-md">
+                            <img class="imageSteps" src="images/oyl/video-player.png">
+                            <p><b class="circleNumber"> 2</b> Cada vídeo tiene actividades y técnicas, sigue las
+                                instrucciones en cada vídeo.</p>
+                        </div>
+                        <div class="col-md">
+                            <img class="imageSteps" src="images/oyl/meeting.png">
+                            <p> <b class="circleNumber"> 3</b> Si lo crees necesario agenda una sesión de coaching. Usa
+                                el botón de abajo.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- cita en simply bookme -->
+                <div class="m-4 d-flex align-items-center justify-content-center">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn botonRojo" data-toggle="modal" data-target="#oylbModal">
+                        Aparta tu cita de coaching
+                    </button>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="ml-3">* Recomendamos disfrutar esta experiencia en tabletas <span class="fas fa-tablet-alt"></span>
+                            y
+                            computadoras
+                            <span class="fas fa-laptop"></span></p>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!-- fin del bloque de información -->
+            <div class="clear" id="oylbcarouserini"></div>
+        </div>
+
+        <!-- fin del bloque de presentación  -->
+
+        <!-- bloque de la lista de contenidos -->
+        <!-- Flickity HTML init -->
+        <!-- "wrapAround": true indica que el carrusel es infinito, la clase que construye  cada casilla del carrusel es gallery-cell -->
+        <div class="gallery carouselOylb js-flickity logged" id="oylbcarousel" data-flickity='{ "wrapAround": true }'>
+
+            <a href="oyl/intro.html" target="_blank" class="gallery-cell">
+                <div class="contenedorImagenCarrusel imagenCarruselIntro"></div>
+                <div class="tituloCarrusel">Introducción</div>
+            </a>
+            <a href="https://www.playposit.com/listcode/947117/f5151c/open/anonymous" target="_blank" class="gallery-cell">
+                <div class="contenedorImagenCarrusel imagenCarruselProductivity"></div>
+                <div class="tituloCarrusel">Productivity 101</div>
+            </a>
+            <a href="https://www.playposit.com/listcode/947103/f5151c/open/anonymous" target="_blank" class="gallery-cell">
+                <div class="contenedorImagenCarrusel imagenCarruselDistracciones"></div>
+                <div class="tituloCarrusel">Estudia sin distracciones</div>
+            </a>
+            <!-- Agregar url -->
+            <a href="https://www.playposit.com/listcode/947114/f5151c/open/anonymous" target="_blank" class="gallery-cell">
+                <!-- Modificar nombre de la clase  -->
+                <div class="contenedorImagenCarrusel imagenCarruselEfectivo"></div>
+                <!-- Agregar título del vídeo -->
+                <div class="tituloCarrusel">¿Cómo ser más efectivo?</div>
+            </a>
+            <!-- Agregar url -->
+            <a href="https://www.playposit.com/listcode/821359/f5151c/open/anonymous" target="_blank" class="gallery-cell">
+                <!-- Modificar nombre de la clase  -->
+                <div class="contenedorImagenCarrusel imagenCarruselUsasTiempo"></div>
+                <!-- Agregar título del vídeo -->
+                <div class="tituloCarrusel">¿Cómo usas tu tiempo?</div>
+            </a>
+            <!-- Agregar url -->
+            <a href="https://www.playposit.com/listcode/821159/f5151c/open/anonymous" target="_blank" class="gallery-cell">
+                <!-- Modificar nombre de la clase  -->
+                <div class="contenedorImagenCarrusel imagenCarruselMasEnergia"></div>
+                <!-- Agregar título del vídeo -->
+                <div class="tituloCarrusel">5 formas de tener más energía</div>
+            </a>
+            <!-- Agregar url -->
+            <a href="https://www.playposit.com/listcode/821164/f5151c/open/anonymous" target="_blank" class="gallery-cell">
+                <!-- Modificar nombre de la clase  -->
+                <div class="contenedorImagenCarrusel imagenCarruselPropioCoach"></div>
+                <!-- Agregar título del vídeo -->
+                <div class="tituloCarrusel">¿Quieres tener tu propio coach?</div>
+            </a>
+            <!-- Agregar url -->
+            <a href="https://www.playposit.com/listcode/821172/f5151c/open/anonymous" target="_blank" class="gallery-cell">
+                <!-- Modificar nombre de la clase  -->
+                <div class="contenedorImagenCarrusel imagenCarruselTiempodeNada"></div>
+                <!-- Agregar título del vídeo -->
+                <div class="tituloCarrusel">¿No tienes tiempo de nada?</div>
+            </a>
+            <!-- Agregar url -->
+            <a href="https://www.playposit.com/listcode/821350/f5151c/open/anonymous" target="_blank" class="gallery-cell">
+                <!-- Modificar nombre de la clase  -->
+                <div class="contenedorImagenCarrusel imagenCarruselMeta"></div>
+                <!-- Agregar título del vídeo -->
+                <div class="tituloCarrusel"> Casi estás en la meta</div>
+            </a>
+        </div>
+        <!-- fin de Flickity HTML init -->
+
+        <!-- bloque de información -->
+
+
+    </div>
+
+
+    <!-- fin Organizing your life like a boss -->
+
+
+
+    <!-- Liderazgo  -->
+
+    <div id="liderazgo" class="section pb-5">
+        <!-- Bloque de presentación -->
+        <div class="block content-1170 center-relative">
+            <!-- bloque de título -->
+            <div class="section-title-holder  right">
+
+                <div class="d-flex column-alignment  h-100">
+                    <img src="images/icons/liderazgo.png" class="icon-title align-self-center" alt="titulo del curso">
+                    <!-- ***************cambiar el título*************** -->
+                    <span class="course-title text-center my-auto">Liderazgo</span>
+                </div>
+
+
+            </div>
+            <!-- fin de bloque de título -->
+            <!-- bloque de información -->
+
+            <div class="d-none section-content-holder left notLogged p-5">
+                <div class="loginLetrero">
+                    <h2>Liderazgo</h2>
+                    <p>Haz login con tu cuenta de la UP en la barra de navegación para disfrutar de esta experiencia</p>
+                    <div style='position:relative; padding-bottom:calc(62.50% + 44px)'><iframe src='https://gfycat.com/ifr/ElementaryFluidAfricanmolesnake?controls=0&speed=4&autoplay=1&hd=0'
+                            frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;'
+                            allowfullscreen></iframe></div>
+                </div>
+            </div>
+            <div class="section-content-holder left logged">
+                <div class="titleBand mt-2 p-3">¿Qué es?</div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md m-3">
+                            <span>Está experiencia te permitirá descubrir tu estilo de liderazgo y conocer en qué
+                                situaciones lo puedes aplicar.</span>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="titleBand mt-2 p-3">¿Qué puedo esperar de esta experiencia?</div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col m-3">
+
+                            <p> Un taller en línea pensado en ti y en tus necesidades. Corto, entendible, fácil y
+                                rápido de hacer. ¡No tardarás mas de 30 minutos! Recuerda que la plataforma no guardará
+                                tu avance, por lo que te recomendamos realizarlo de corrido.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="titleBand mt-2 p-3">¿Cómo puedo disfrutar esta experiencia?</div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <p class="m-2"> Sigue estos <b> sencillos pasos </b> para disfrutar la experiencia <b>#liderazgo
+                            </b></p>
+                    </div>
+                    <div class="row">
+
+
+                        <div class="col-md">
+                            <img class="imageSteps" src="images/oyl/click-gesture.png">
+                            <p> <b class="circleNumber"> 1</b> Aprieta el botón de abajo que dice "¡Empieza ya!"</p>
+                        </div>
+                        <div class="col-md">
+                            <img class="imageSteps" src="images/oyl/content.png">
+                            <p><b class="circleNumber"> 2</b> Sigue las instrucciones de la experiencia.</p>
+                        </div>
+                        <div class="col-md">
+                            <img class="imageSteps" src="images/oyl/team-leader.png">
+                            <p> <b class="circleNumber"> 3</b> ¡Listo!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-4 d-flex align-items-center justify-content-center">
+                    <a href="liderazgo/liderazgo.html" class="btn botonRojo" target="_blank">¡Empieza ya!</a>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="ml-3">* Recomendamos disfrutar esta experiencia en tabletas <span class="fas fa-tablet-alt"></span>
+                            y
+                            computadoras
+                            <span class="fas fa-laptop"></span></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- fin del bloque de información -->
+            <div class="clear "></div>
+
+        </div>
+
+        <!-- fin del bloque de presentación  -->
+
+
+    </div>
+
+
+    <!-- fin liderazgo -->
+    <!-- Organizing your life like a boss  -->
+
+    <div id="cvmp" class="section pb-5">
+        <!-- Bloque de presentación -->
+        <div class="block content-1170 center-relative">
+            <!-- bloque de título -->
+            <div class="section-title-holder  left">
+                <div class="d-flex column-alignment  h-100">
+                    <img src="images/icons/cvmp.png" class="icon-title align-self-center" alt="titulo del curso">
+                    <!-- ***************cambiar el título*************** -->
+                    <span class="course-title text-center my-auto">Your CV <br>Your Masterpiece</span>
+                </div>
+
+
+            </div>
+            <!-- fin de bloque de título -->
+            <!-- bloque de información -->
+            <div class="d-none section-content-holder right notLogged p-5">
+                <div class="loginLetrero">
+                    <h2>Your CV Your Masterpiece</h2>
+                    <p>Haz login con tu cuenta de la UP en la barra de navegación para disfrutar de esta experiencia</p>
+                    <div style='position:relative; padding-bottom:calc(62.50% + 44px)'><iframe src='https://gfycat.com/ifr/ElementaryFluidAfricanmolesnake?controls=0&speed=4&autoplay=1&hd=0'
+                            frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;'
+                            allowfullscreen></iframe></div>
+                </div>
+
+
+            </div>
+            <div class="section-content-holder right logged">
+                <div class="titleBand mt-2 p-3">¿Qué es?</div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md m-3">
+                            <span>Una experiencia en donde aprenderás todo lo que necesitas saber para hacer tu CV y la
+                                oportunidad de tener una asesoría personalizada para resolver tus dudas y en donde un
+                                experto podrá revisar tu CV.
+
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="titleBand mt-2 p-3">¿Qué puedo esperar de esta experiencia?</div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col m-3">
+
+                            <p> <b> 7 videos en</b> donde aprenderás todo lo que necesitas saber para diseñar el CV
+                                perfecto.
+                            </p>
+                            <p>Una <b>asesoría</b> de <b>30 minutos</b> en donde <b>un experto</b> revisará tu CV y
+                                resolverá todas tus dudas.
+                            </p>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="titleBand mt-2 p-3">¿Cómo puedo disfrutar esta experiencia?</div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <p class="m-2"> Sigue estos <b> sencillos pasos </b></p>
+                    </div>
+                    <div class="row">
+
+
+                        <div class="col-md">
+                            <img class="imageSteps" src="images/oyl/carousel.png">
+                            <p class="alignJustify"> <b class="circleNumber"> 1</b> Ve los 7 videos que están en el
+                                carrusel de abajo. Empieza por el video llamado “Bienvenido”. Luego sigue el orden de
+                                los videos.
+                            </p>
+                        </div>
+                        <div class="col-md">
+                            <img class="imageSteps" src="images/oyl/video-player.png">
+                            <p class="alignJustify"><b class="circleNumber"> 2</b> Descarga los recursos que saldrán en
+                                la parte derecha de los videos para que tengas todos los formatos para llevar esta
+                                experiencia a la práctica.
+                            </p>
+                        </div>
+                        <div class="col-md">
+                            <img class="imageSteps" src="images/oyl/meeting.png">
+                            <p class="alignJustify"> <b class="circleNumber"> 3</b> Si quieres una asesoría
+                                personalizada sigue las instrucciones que aparecerán en el último video de esta
+                                experiencia. En él podrás encontrar el pdf que te guiará paso a paso.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- cita en simply bookme -->
+                <div class="m-4 d-flex align-items-center justify-content-center">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn boton" data-toggle="modal" data-target="#cvmpModal">
+                        Aparta tu asesoría
+                    </button>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <p class="ml-3">* Recomendamos disfrutar esta experiencia en tabletas <span class="fas fa-tablet-alt"></span>
+                            y
+                            computadoras
+                            <span class="fas fa-laptop"></span></p>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <!-- fin del bloque de información -->
+            <div class="clear" id="cvCarouserIni"></div>
+        </div>
+
+        <!-- fin del bloque de presentación  -->
+
+        <!-- bloque de la lista de contenidos -->
+        <!-- Flickity HTML init -->
+        <!-- "wrapAround": true indica que el carrusel es infinito, la clase que construye  cada casilla del carrusel es gallery-cell -->
+        <div class="gallery carouselCvmp js-flickity logged" id="cvcarousel" data-flickity='{ "wrapAround": false, "contain": true }'>
+
+            <a href="cv/bienvenido.html" target="_blank" class="gallery-cell">
+                <div class="contenedorImagenCarrusel imagenCarruselCvUno"></div>
+                <div class="tituloCarrusel">Bienvenido</div>
+            </a>
+            <a href="cv/para_que.html" target="_blank" class="gallery-cell">
+                <div class="contenedorImagenCarrusel imagenCarruselCvDos"></div>
+                <div class="tituloCarrusel">¿Qué es un CV y para qué sirve?</div>
+            </a>
+            <a href="cv/ti_mismo.html" target="_blank" class="gallery-cell">
+                <div class="contenedorImagenCarrusel imagenCarruselCvTres"></div>
+                <div class="tituloCarrusel">Enfócate en ti mismo</div>
+            </a>
+            <!-- Agregar url -->
+            <a href="cv/la_empresa.html" target="_blank" class="gallery-cell">
+                <!-- Modificar nombre de la clase  -->
+                <div class="contenedorImagenCarrusel imagenCarruselCvCuatro"></div>
+                <!-- Agregar título del vídeo -->
+                <div class="tituloCarrusel">Enfócate en la empresa</div>
+            </a>
+            <!-- Agregar url -->
+            <a href="cv/el_puesto.html" target="_blank" class="gallery-cell">
+                <!-- Modificar nombre de la clase  -->
+                <div class="contenedorImagenCarrusel imagenCarruselCvCinco"></div>
+                <!-- Agregar título del vídeo -->
+                <div class="tituloCarrusel">Enfócate en el puesto</div>
+            </a>
+            <!-- Agregar url -->
+            <a href="cv/prepara.html" target="_blank" class="gallery-cell">
+                <!-- Modificar nombre de la clase  -->
+                <div class="contenedorImagenCarrusel imagenCarruselCvSeis"></div>
+                <!-- Agregar título del vídeo -->
+                <div class="tituloCarrusel">Prepara tu CV</div>
+            </a>
+            <!-- Agregar url -->
+            <a href="cv/must.html" target="_blank" class="gallery-cell">
+                <!-- Modificar nombre de la clase  -->
+                <div class="contenedorImagenCarrusel imagenCarruselCvSiete"></div>
+                <!-- Agregar título del vídeo -->
+                <div class="tituloCarrusel">8 musts del CV perfecto</div>
+            </a>
+        </div>
+        <!-- fin de Flickity HTML init -->
+
+        <!-- bloque de información -->
+
+
+    </div>
+
+
+    <!-- fin CVMP -->
+
+
+
+
+
+    <!-- contacto -->
+    <div id="contact" class="section">
+        <!-- Bloque de presentación -->
+        <div class="block content-1170 center-relative">
+            <!-- bloque de título -->
+            <div class="section-title-holder  right">
+
+                <div class="d-flex column-alignment  h-100">
+                    <img src="images/icons/letter.png" class="icon-title align-self-center" alt="titulo del curso">
+                    <!-- ***************cambiar el título*************** -->
+                    <span class="course-title text-center my-auto">Contacto</span>
+                </div>
+            </div>
+
+            <div class="section-content-holder mb-5 p-5 left">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md">
+                            <p>¿Tienes preguntas o comentarios?</p>
+                            <br>
+                            <p><strong><span style="color: #e64b77;">Escríbenos</span></strong> en este espacio y a la
+                                brevedad te atenderemos.</p>
+                        </div>
+                        <div class="col-md contact-form">
+
+
+                            <form method="POST" action="https://formspree.io/mx_successcenter@up.edu.mx">
+                                <input type="email" name="email" placeholder="Tu email">
+                                <input type="text" name="name" placeholder="Tu Nombre">
+                                <textarea name="message" placeholder="Escribe tu mensaje aquí" class="mt-4"></textarea>
+                                <button type="submit" class="mt-4 mb-4 botonRojo">Enviar</button>
+                                <input type="hidden" name="_next" value="https://smartcenter.up.edu.mx/success/cursos/mcms/#contact" />
+                            </form>
+                            <!-- Esta era la vieja forma (aún funciona) -->
+                            <!-- <div class="contact-form">
+                                <p><input id="name"
+                                        type="text"
+                                        name="your-name"
+                                        placeholder="Nombre"></p>
+                                <p><input id="contact-email"
+                                        type="email"
+                                        name="your-email"
+                                        placeholder="Email"></p>
+                                <p><input id="subject"
+                                        type="text"
+                                        name="your-subject"
+                                        placeholder="Asunto"></p>
+                                <p><textarea id="message"
+                                        name="your-message"
+                                        placeholder="Mensaje"></textarea></p>
+                                <p><input type="submit"
+                                        onClick="SendMail()"
+                                        value="Enviar"></p>
+                            </div> -->
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+                <!-- <div class="full-width">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4274.290564544589!2d-75.2952832049782!3d40.753669641460846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2srs!4v1444506658649"
+                        width="600"
+                        height="450"
+                        frameborder="0"
+                        style="border:0"
+                        allowfullscreen></iframe>
+                </div> -->
+            </div>
+            <!-- fin del bloque de información -->
+            <div class="clear"></div>
+        </div>
+
+        <!-- fin del bloque de presentación  -->
+        <!-- bloque de la lista de contenidos -->
+
+    </div>
+
+    <!-- fin del template para los cursos en articulate -->
+
+
+
+    <!-- ************************* Modals *************************************************** -->
+
+
+    <div class="modal fade" id="oylbModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">¿Ya viste los vídeos de #oyl #likeaboss?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Recuerda que <b>antes</b> de apartar tu cita de coaching personalizado, debes <b>ver los 9 vídeos</b>
+                    que aparecen en el carrusel de abajo. Asegúrate de vivir la experiencia completa.
+                    <br>
+                    ¿Ya viste los vídeos?
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="oyl/intro.html" target="_blank" role="button">Ir al primer vídeo</a>
+                    <a class="btn btn-danger" href="oyl/bookme.html" target="_blank" role="button">Agendar una cita</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cvmpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">¿Ya viste los vídeos de Your CV your
+                        masterpiece?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Recuerda que <b>antes</b> de apartar tu cita de asesoría personalizada, debes <b>ver los 7 vídeos</b>
+                    que aparecen en el carrusel de abajo. Asegúrate de vivir la experiencia completa.
+                    <br>
+                    ¿Ya viste los vídeos?
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="cv/bienvenido.html" target="_blank" role="button">Ir al primer
+                        vídeo</a>
+                    <a class="btn btn-danger" href="cv/bookme.html" target="_blank" role="button">Agendar una cita</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer content-1170 center-relative ">
+            <ul>
+                <li class="copyright-footer "> © 2018 Derechos Reservados. | Universidad Panamericana <a class="link-succes"
+                        href="https://smartcenter.up.edu.mx " target="_blank ">SmartCenter</a> </li>
+                <li class="social-footer ">
+                    <!-- <a href="# "><span class="fa fa-twitter "></span></a> -->
+                    <a href="https://www.youtube.com/channel/UCMAOisJbM69nBTLbCK_b4LQ?view_as=subscriber " target="_blank "><span
+                            class="fa fa-youtube "></span></a>
+                    <!-- <a href="# "><span class="fa fa-instagram "></span></a>  -->
+                    <a href="https://www.facebook.com/SuccessCenterUP/ " target="_blank "><span class="fa fa-facebook "></span></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- firabes first of any first app then auth -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase-auth.js"></script>
+    <!-- end of firebase -->
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <!--Load JavaScript-->
+    <script type="text/javascript " src="js/jquery.js "></script>
+    <script type='text/javascript' src='js/jquery.sticky-kit.min.js'></script>
+    <script type='text/javascript' src='js/jquery.smartmenus.min.js'></script>
+    <script type='text/javascript' src='js/jquery.sticky.js'></script>
+    <script type='text/javascript' src='js/jquery.dryMenu.js'></script>
+    <script type='text/javascript' src='js/isotope.pkgd.js'></script>
+    <script type='text/javascript' src='js/jquery.carouFredSel-6.2.0-packed.js'></script>
+    <script type='text/javascript' src='js/jquery.mousewheel.min.js'></script>
+    <script type='text/javascript' src='js/jquery.touchSwipe.min.js'></script>
+    <script type='text/javascript' src='js/jquery.easing.1.3.js'></script>
+    <script type='text/javascript' src='js/imagesloaded.pkgd.js'></script>
+    <script type='text/javascript' src='js/jquery.prettyPhoto.js'></script>
+    <script type='text/javascript' src='js/main.js'></script>
+
+    <!-- install flickity (carrousels) -->
+    <script src="js/flickity.pkgd.min.js"></script>
+
+
+
+</body>
+
+</html>
