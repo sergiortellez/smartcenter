@@ -115,3 +115,38 @@ body {
 }
 
 /* end parallax */
+/* start row links */
+.advisory {
+    background-color: #000;
+    padding: 1rem;
+    border: #fff solid 4px;
+    margin: 0px;
+    width: 100%;
+}
+
+.meeting {
+    background-color: #000;
+    padding: 1rem;
+    border: #fff solid 4px;
+    width: 100%;
+}
+
+.success {
+    background-color: #000;
+    padding: 1rem;
+    border: #fff solid 4px;
+    width: 100%;
+}
+
+.reload {
+    background-color: #000;
+    padding: 1rem;
+    border: #fff solid 4px;
+    width: 100%;
+}
+
+.logos-link-bar {
+    width: 18rem;
+}
+
+/* end row links */
