@@ -19,68 +19,99 @@
     height: 90px;
 }
 
-/* ****************************Fin DOC Loader*************************** */
+/* **************************** end DOC Loader*************************** */
 
-/*******************************Comming Soon *************************** */
-.primerCuadrante {
-    background-color: #fff;
-    min-height: 50vh;
-    max-height: 50vh;
-    width: 100%;
-    max-height: 50vh;
+/******************************* Root Variables *************************** */
+/* font size */
+:root {
+    --fs-b: 0.3rem;
+    /* colors */
+    --smartRed: #A41C1D;
+    --smartBlue: #1B2E4A;
+    --smartGreen: #497D38;
+    --smartYellow: #FEEE36;
 }
 
-.segundoCuadrante {
-    background-color: #A41C1D;
-    min-height: 50vh;
-    max-height: 50vh;
-    width: 100%;
+/* tablet up */
+@media (min-width: 576px) {
+    :root {
+        --fs-b: 0.5rem;
+    }
 }
 
-.segundoCuadrante span {
-    color: #fff;
-    font-size: 3vw;
+/* Laptops up */
+
+@media (min-width: 992px) {
+    :root {
+        --fs-b: 0.7rem;
+    }
 }
 
-.tercerCuadrante {
-    background-color: #497D38;
-    min-height: 50vh;
-    max-height: 50vh;
-    width: 100%;
+/* desktop up */
+@media (min-width: 1200px) {
+    :root {
+        --fs-b: 1rem;
+    }
 }
 
-.cuartoCuadrante {
-    background-color: #1B2E4A;
-    min-height: 50vh;
-    max-height: 50vh;
-    width: 100%;
+/* end font-size */
+/**************************** end Root Variables *************************** */
+html {
+    scroll-behavior: smooth;
 }
 
-.logoSmart {
-    height: 40vmin;
-    width: auto;
+body {
+    font-size: var(--fs-b);
+    /* scroll spy */
+    overflow-y: scroll;
+    background-color: #000;
 }
 
-.logoSucces {
-    height: 15vmin;
-    width: auto;
+/* navbar */
+.brand-logo {
+    width: 2.3rem;
+    height: 2.3rem;
 }
 
-.tituloMyCareer {
-    color: #fff;
-    font-size: 5vmin;
+/* end navbar */
+/* parallax */
+.divider {
+    padding: 0px;
+    margin-bottom: 0px;
+    color: inherit;
+    background-color: darkgoldenrod;
+    background: url("../images/power_ideas.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 35vh;
+}
+
+/* Laptops up */
+
+@media (min-width: 992px) {
+    .divider {
+        padding: 0px;
+        margin-bottom: 0px;
+        color: inherit;
+        background-color: darkgoldenrod;
+        background: url("../images/power_ideas.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 35vh;
+    }
 
 }
 
-.mcms {
-    color: #fff;
-    font-size: 5vmin;
-    width: 50vmin;
-    background-color: #111111;
+
+.scroll-adjust {
+    display: block;
+    position: relative;
+    top: -3.3rem;
+    visibility: hidden;
 }
 
-.mcms:hover {
-    color: #FEEE36;
-}
-
-/****************************Fin Comming Soon *************************** */
+/* end parallax */
