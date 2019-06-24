@@ -24,18 +24,18 @@
 /******************************* Root Variables *************************** */
 /* font size */
 :root {
-    --fs-b: 0.3rem;
+    --fs-b: 16px;
     /* colors */
     --smartRed: #A41C1D;
     --smartBlue: #1B2E4A;
     --smartGreen: #497D38;
-    --smartYellow: #FEEE36;
+    --smartYellow: #c7a534;
 }
 
 /* tablet up */
 @media (min-width: 576px) {
     :root {
-        --fs-b: 0.5rem;
+        --fs-b: 18px;
     }
 }
 
@@ -43,14 +43,14 @@
 
 @media (min-width: 992px) {
     :root {
-        --fs-b: 0.7rem;
+        --fs-b: 20px;
     }
 }
 
 /* desktop up */
 @media (min-width: 1200px) {
     :root {
-        --fs-b: 1rem;
+        --fs-b: 22px;
     }
 }
 
@@ -76,36 +76,59 @@ body {
 /* end navbar */
 /* parallax */
 .divider {
-    padding: 0px;
-    margin-bottom: 0px;
-    color: inherit;
-    background-color: darkgoldenrod;
+    height: 35vh;
+    display: block;
+    position: relative;
+    opacity: 1;
+}
+
+.divider-p {
+    color: #fff;
+    font-size: 2rem;
+    
+}
+
+.divider::after {
+    content: "";
     background: url("../images/power_ideas.jpg") no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 35vh;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
 }
 
 /* Laptops up */
 
 @media (min-width: 992px) {
     .divider {
-        padding: 0px;
-        margin-bottom: 0px;
-        color: inherit;
-        background-color: darkgoldenrod;
-        background: url("../images/power_ideas.jpg") no-repeat center center fixed;
+        height: 35vh;
+        display: block;
+        position: relative;
+        opacity: 1;
+    }
+
+    .divider::after {
+        content: "";
+        background: url("../images/power_ideas.jpg") no-repeat center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        height: 35vh;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+
     }
-
 }
-
 
 .scroll-adjust {
     display: block;
@@ -115,38 +138,87 @@ body {
 }
 
 /* end parallax */
-/* start row links */
-.advisory {
-    background-color: #000;
-    padding: 1rem;
-    border: #fff solid 4px;
-    margin: 0px;
-    width: 100%;
+/* cover */
+#inicio {
+    min-height: 100vh;
+    background-color: rgb(37, 35, 35);
+    color: rgb(92, 88, 88);
 }
 
-.meeting {
-    background-color: #000;
+.flecha-down {
+    color: #fff;
+    font-size: 3rem;
+}
+
+/* end cover */
+
+/* start row links */
+.links {
     padding: 1rem;
-    border: #fff solid 4px;
+    margin: 0px;
     width: 100%;
+    border: transparent solid 4px;
+    transition: border 0.3s linear;
+    -webkit-transition: border 0.3s linear;
+    -moz-transition: border 0.3s linear;
+    -ms-transition: border 0.3s linear;
+    -o-transition: border 0.3s linear;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.links:hover {
+
+    border: #fff solid 4px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.pleca {
+    background-color: #000;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.8rem;
 }
 
 .success {
-    background-color: #000;
-    padding: 1rem;
-    border: #fff solid 4px;
-    width: 100%;
+    background-color: var(--smartYellow);
+}
+
+.meeting {
+    background-color: var(--smartBlue);
+}
+
+.advasory {
+    background-color: var(--smartRed);
 }
 
 .reload {
-    background-color: #000;
-    padding: 1rem;
-    border: #fff solid 4px;
-    width: 100%;
+    background-color: var(--smartGreen);
+    font-size: 0.9rem;
+}
+
+.logos-link-bar-succes {
+    width: 2rem;
+    height: auto;
 }
 
 .logos-link-bar {
-    width: 18rem;
+    width: 4.2rem;
+    height: auto;
 }
+
 
 /* end row links */
