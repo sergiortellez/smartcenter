@@ -265,7 +265,24 @@ body {
 /* row links */
 /*...................................................*/
 /*###################################################*/
+.grid-sections-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(2rem, auto);
+    grid-gap: 0.2rem;
+}
 
+/* cellphone landscape up */
+@media (min-width: 576px) {
+    .grid-sections-links {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(2rem, auto);
+        grid-gap: 0.5rem;
+    }
+}
+
+/* end cellphone landscape up */
 .links {
     padding: 1rem;
     margin: 0px;
