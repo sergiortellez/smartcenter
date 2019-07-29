@@ -41,7 +41,7 @@
     --fs-b: 14px;
     /* colors */
     --smartRed: #A41C1D;
-    --smartBlue: #1B2E4A;
+    --smartBlue: #1c5396;
     --smartGreen: #497D38;
     --smartYellow: #c7a534;
 }
@@ -368,6 +368,11 @@ body {
 /*-------------------------------*/
 /* end sobre nosotros */
 /*-------------------------------*/
+
+
+/*-------------------------------*/
+/* nuestras áreas */
+/*-------------------------------*/
 .grid-sections-info {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -460,15 +465,346 @@ body {
 
 /* end cellphone landscape up */
 
-/*-------------------------------*/
-/* nuestras áreas */
-/*-------------------------------*/
-
-
 
 /*-------------------------------*/
 /* end nuestras áreas */
 /*-------------------------------*/
+
+/*###################################################*/
+/*...................................................*/
+/* noticias */
+/*...................................................*/
+/*###################################################*/
+/*-------------------------------*/
+/* naming */
+/*-------------------------------*/
+
+
+/* principal */
+.directos {
+    grid-area: directos;
+    padding: 30px;
+    background-color: rgba(128, 0, 128, 0.815);
+
+
+}
+
+.num-semestre {
+    grid-area: num-semestre;
+    padding: 30px;
+    background-color: rgba(128, 0, 128, 0.815);
+    flex-direction: column;
+
+}
+
+
+.indirectos {
+    grid-area: indirectos;
+    padding: 30px;
+    background-color: rgba(128, 0, 128, 0.507);
+
+}
+
+.operacion {
+    grid-area: operacion;
+    padding: 30px;
+    background-color: rgba(128, 0, 128, 0.507);
+
+}
+
+.smart-logo-grid {
+    grid-area: smart-logo-grid;
+    display: none;
+}
+
+/* end principal */
+
+/* success */
+.success-logo-grid {
+    grid-area: success-logo-grid;
+    background-color: var(--smartYellow);
+    flex-direction: column;
+}
+
+.success-stats-one {
+    grid-area: success-stats-one;
+    padding: 30px;
+    background-color: #c2a64ade;
+}
+
+.success-stats-two {
+    grid-area: success-stats-two;
+    padding: 30px;
+    background-color: #c2a64ab4;
+    flex-direction: column;
+
+}
+
+.success-stats-three {
+    grid-area: success-stats-three;
+    padding: 30px;
+    background-color: #c2a64a75;
+
+}
+
+.success-stats-four {
+    grid-area: success-stats-four;
+    padding: 30px;
+    background-color: #c2a64a50;
+    flex-direction: column;
+
+}
+
+/* end success */
+
+/* meeting */
+.meeting-logo-grid {
+    grid-area: meeting-logo-grid;
+    background-color: var(--smartBlue);
+    flex-direction: column;
+}
+
+.meeting-stats-one {
+    grid-area: meeting-stats-one;
+    background-color: #1c5396d0;
+    flex-direction: column;
+
+}
+
+.meeting-stats-two {
+    grid-area: meeting-stats-two;
+    background-color: #1c5396a2;
+    flex-direction: column;
+}
+
+.meeting-stats-three {
+    grid-area: meeting-stats-three;
+    background-color: #1c539669;
+    flex-direction: column;
+}
+
+.meeting-stats-four {
+    grid-area: meeting-stats-four;
+    background-color: #1c539649;
+    flex-direction: column;
+}
+
+/* end meeting */
+
+/* advisory */
+.advisory-logo-grid {
+    grid-area: advisory-logo-grid;
+    background-color: var(--smartRed);
+    flex-direction: column;
+}
+
+.advisory-stats-one {
+    grid-area: advisory-stats-one;
+    background-color: #972b25d5;
+    flex-direction: column;
+}
+
+.advisory-stats-two {
+    grid-area: advisory-stats-two;
+    background-color: #972b25a9;
+}
+
+.advisory-stats-three {
+    grid-area: advisory-stats-three;
+    background-color: #972b257a;
+    
+}
+
+.advisory-stats-four {
+    grid-area: advisory-stats-four;
+    background-color: #972b2536;
+    flex-direction: column;
+}
+
+/* end advisory */
+
+/* reload */
+.reload-logo-grid {
+    grid-area: reload-logo-grid;
+    background-color: var(--smartGreen);
+    flex-direction: column;
+}
+
+.reload-stats-one {
+    grid-area: reload-stats-one;
+    background-color: #557b40bd;
+    flex-direction: column;
+
+}
+
+.reload-stats-two {
+    grid-area: reload-stats-two;
+    background-color: #557b408a;
+    flex-direction: column;
+
+}
+
+.reload-stats-three {
+    grid-area: reload-stats-three;
+    background-color: #557b4057;
+    flex-direction: column;
+}
+
+.reload-stats-four {
+    grid-area: reload-stats-four;
+    background-color: #557b402c;
+    flex-direction: column;
+}
+
+/* end reload */
+
+/* twitter */
+.twitter {
+    grid-area: twitter;
+    background-color: #2a2f32;
+}
+
+/* end twitter */
+
+
+/*-------------------------------*/
+/* end naming */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* grid */
+/*-------------------------------*/
+
+#noticias-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(4rem, auto);
+    grid-template-areas:
+        "operacion    operacion    directos     directos "
+        "operacion    operacion    directos     directos "
+        "num-semestre num-semestre indirectos   indirectos"
+        "num-semestre num-semestre indirectos   indirectos"
+        "success-logo-grid   success-logo-grid   success-stats-one  success-stats-one"
+        "success-logo-grid   success-logo-grid   success-stats-one  success-stats-one"
+        "success-logo-grid   success-logo-grid   success-stats-two  success-stats-two"
+        "success-logo-grid   success-logo-grid   success-stats-two  success-stats-two"
+        "success-stats-three success-stats-three success-stats-four success-stats-four"
+        "success-stats-three success-stats-three success-stats-four success-stats-four"
+        "meeting-logo-grid   meeting-logo-grid   meeting-stats-one  meeting-stats-one"
+        "meeting-logo-grid   meeting-logo-grid   meeting-stats-one  meeting-stats-one"
+        "meeting-logo-grid   meeting-logo-grid   meeting-stats-two  meeting-stats-two"
+        "meeting-logo-grid   meeting-logo-grid   meeting-stats-two  meeting-stats-two"
+        "meeting-stats-three meeting-stats-three meeting-stats-four meeting-stats-four"
+        "meeting-stats-three meeting-stats-three meeting-stats-four meeting-stats-four"
+        "advisory-logo-grid   advisory-logo-grid   advisory-stats-one  advisory-stats-one"
+        "advisory-logo-grid   advisory-logo-grid   advisory-stats-one  advisory-stats-one"
+        "advisory-logo-grid   advisory-logo-grid   advisory-stats-two  advisory-stats-two"
+        "advisory-logo-grid   advisory-logo-grid   advisory-stats-two  advisory-stats-two"
+        "advisory-stats-three advisory-stats-three advisory-stats-four advisory-stats-four"
+        "advisory-stats-three advisory-stats-three advisory-stats-four advisory-stats-four"
+        "reload-logo-grid   reload-logo-grid   reload-stats-one  reload-stats-one"
+        "reload-logo-grid   reload-logo-grid   reload-stats-one  reload-stats-one"
+        "reload-logo-grid   reload-logo-grid   reload-stats-two  reload-stats-two"
+        "reload-logo-grid   reload-logo-grid   reload-stats-two  reload-stats-two"
+        "reload-stats-three reload-stats-three reload-stats-four reload-stats-four"
+        "reload-stats-three reload-stats-three reload-stats-four reload-stats-four"
+        "twitter twitter twitter twitter"
+        "twitter twitter twitter twitter"
+        "twitter twitter twitter twitter"
+        "twitter twitter twitter twitter"
+        "twitter twitter twitter twitter"
+        "twitter twitter twitter twitter"
+        "twitter twitter twitter twitter"
+        "twitter twitter twitter twitter"
+    ;
+}
+
+/* tablet up */
+@media (min-width: 768px) {
+    #noticias-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: minmax(8rem, auto);
+        grid-template-areas:
+            "success-logo-grid  success-stats-four   operacion        twitter           twitter"
+            "success-logo-grid  success-stats-three  directos         twitter           twitter"
+            "success-stats-two  success-stats-one    smart-logo-grid  twitter           twitter"
+            "advisory-stats-two advisory-stats-one   smart-logo-grid  twitter           twitter"
+            "advisory-logo-grid advisory-stats-three num-semestre     twitter           twitter"
+            "advisory-logo-grid advisory-stats-four   indirectos      twitter           twitter"
+            "meeting-stats-one  meeting-stats-two      .              reload-stats-one  reload-stats-two"
+            "meeting-stats-three meeting-logo-grid      .             reload-logo-grid  reload-stats-three"
+            "meeting-stats-four meeting-logo-grid      .             reload-logo-grid  reload-stats-four"
+        ;
+    }
+
+    .smart-logo-grid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* end tablet up */
+
+/* laptop up */
+@media (min-width: 1279px) {
+    #noticias-grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-auto-rows: minmax(8rem, auto);
+        grid-template-areas:
+            "success-logo-grid  success-stats-four   operacion       meeting-stats-four  meeting-logo-grid twitter twitter"
+            "success-logo-grid  success-stats-three  directos        meeting-stats-three meeting-logo-grid twitter twitter"
+            "success-stats-two  success-stats-one    smart-logo-grid meeting-stats-one   meeting-stats-two twitter twitter"
+            "advisory-stats-two advisory-stats-one   smart-logo-grid reload-stats-one    reload-stats-two  twitter twitter"
+            "advisory-logo-grid advisory-stats-three num-semestre    reload-stats-three  reload-logo-grid  twitter twitter"
+            "advisory-logo-grid advisory-stats-four   indirectos     reload-stats-four   reload-logo-grid  twitter twitter"
+        ;
+    }
+}
+
+/* end laptop up */
+
+/*-------------------------------*/
+/* end grid */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* text */
+/*-------------------------------*/
+.w-number {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.b-number {
+    color: #000;
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.w-text {
+    color: #fff;
+}
+
+.b-text {
+    color: #000;
+}
+
+/*-------------------------------*/
+/* end text */
+/*-------------------------------*/
+
+
+
+
+/*###################################################*/
+/*...................................................*/
+/* end noticias */
+/*...................................................*/
+/*###################################################*/
 
 /*###################################################*/
 /*...................................................*/
