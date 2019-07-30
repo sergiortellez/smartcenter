@@ -364,6 +364,14 @@ body {
 .text-nosotros {
     color: #fff;
 }
+.orange-btn{
+    background-color: rgb(218, 94, 22);
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
 
 /*-------------------------------*/
 /* end sobre nosotros */
