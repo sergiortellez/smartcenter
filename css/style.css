@@ -364,7 +364,8 @@ body {
 .text-nosotros {
     color: #fff;
 }
-.orange-btn{
+
+.orange-btn {
     background-color: rgb(218, 94, 22);
     border-radius: 0px;
     -webkit-border-radius: 0px;
@@ -620,7 +621,7 @@ body {
 .advisory-stats-three {
     grid-area: advisory-stats-three;
     background-color: #972b257a;
-    
+
 }
 
 .advisory-stats-four {
@@ -811,6 +812,44 @@ body {
 /*###################################################*/
 /*...................................................*/
 /* end noticias */
+/*...................................................*/
+/*###################################################*/
+
+/*###################################################*/
+/*...................................................*/
+/* contacto */
+/*...................................................*/
+/*###################################################*/
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.7rem;
+}
+
+#contact-form input[type=email],
+#contact-form input[type=text] {
+    margin: 0.7rem 0;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+#contact-form textarea {
+    width: 100%;
+}
+
+#contact-form textarea:focus {
+    height: 190px;
+    overflow: auto;
+}
+
+.enviar-mensaje {
+    width: 50%;
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end contacto */
 /*...................................................*/
 /*###################################################*/
 
