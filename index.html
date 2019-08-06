@@ -86,11 +86,36 @@
     <!------------------------------------------------->
     <!--	jumbotron	-->
     <!------------------------------------------------->
-    <section class="jumbotron jumbotron-fluid  mb-0 p-2 d-flex justify-content-between align-items-center flex-column"
+    <section
+        class="jumbotron jumbotron-fluid  mb-0 p-2 d-none d-md-flex justify-content-between align-items-center flex-column cover"
+        id="inicio">
+        <div></div>
+        <div></div>
+
+        <!--inicia flecha-->
+        <div class="container d-flex align-items-center justify-content-center  mb-2" data-rellax-speed="-1">
+            <div class="row">
+                <div class="col-xs-12">
+                    <a href="#somos"><i class="fas fa-angle-down wow bounce flecha-down" data-wow-duration="3s"
+                            data-wow-delay="5s" data-wow-iteration="10"></i></a>
+                </div>
+            </div>
+        </div>
+        <!--termina flecha-->
+    </section>
+    <!------------------------------------------------->
+    <!--	end jumbotron	-->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--	jumbotron iPhone	-->
+    <!------------------------------------------------->
+    <section
+        class="jumbotron jumbotron-fluid  mb-0 p-2 d-flex justify-content-between align-items-center flex-column d-block d-md-none"
         id="inicio">
         <!-- empty div for cheating flex content-between -->
         <div></div>
-        <div class="cover-logo">
+        <div>
             <img src="images/logo-smart-cuadrito.png" alt="smartCenterUP">
         </div>
 
@@ -106,7 +131,7 @@
         <!--termina flecha-->
     </section>
     <!------------------------------------------------->
-    <!--	end jumbotron	-->
+    <!--	end jumbotron iPhone	-->
     <!------------------------------------------------->
 
     <!------------------------------------------------->

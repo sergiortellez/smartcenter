@@ -256,6 +256,13 @@ body {
     font-size: 3rem;
 }
 
+.cover {
+    background-image: url(../images/smartCenter.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: center;
+}
+
 /*-------------------------------*/
 /* end cover */
 /*-------------------------------*/
