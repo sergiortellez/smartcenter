@@ -500,7 +500,7 @@ body {
 .directos {
     grid-area: directos;
     padding: 30px;
-    background-color: rgba(128, 0, 128, 0.815);
+    background-color:  rgba(19, 18, 19, 0.431);
 
 
 }
@@ -508,7 +508,7 @@ body {
 .num-semestre {
     grid-area: num-semestre;
     padding: 30px;
-    background-color: rgba(128, 0, 128, 0.815);
+    background-color:  rgba(19, 18, 19, 0.171);
     flex-direction: column;
 
 }
@@ -517,14 +517,14 @@ body {
 .indirectos {
     grid-area: indirectos;
     padding: 30px;
-    background-color: rgba(128, 0, 128, 0.507);
+    background-color: rgb(19, 18, 19);
 
 }
 
 .operacion {
     grid-area: operacion;
     padding: 30px;
-    background-color: rgba(128, 0, 128, 0.507);
+    background-color:  rgba(19, 18, 19, 0.685);
 
 }
 
