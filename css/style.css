@@ -39,11 +39,14 @@
 :root {
     /* font size */
     --fs-b: 14px;
-    /* colors */
+    /* custom colors */
     --smartRed: #A41C1D;
     --smartBlue: #1c5396;
     --smartGreen: #497D38;
     --smartYellow: #c7a534;
+    /* theme colors */
+    --brColor: #fff;
+    --textColor: #000;
 }
 
 /* tablet up */
@@ -98,7 +101,8 @@ html {
 body {
     /* scroll spy */
     overflow-y: scroll;
-    background-color: #000;
+    background-color: var(--brColor);
+    color: var(--textColor);
 }
 
 /*###################################################*/
@@ -117,6 +121,11 @@ body {
     height: 2.3rem;
 }
 
+/* for light mode */
+.bg-light-custom {
+    background-color: rgb(235, 227, 227);
+}
+
 /*-------------------------------*/
 /* end navbar */
 /*-------------------------------*/
@@ -133,7 +142,8 @@ body {
     display: block;
     position: relative;
     opacity: 1;
-    color: #fff;
+    color: var(--textColor);
+    ;
 }
 
 .divider::after {
@@ -369,7 +379,7 @@ body {
 /*-------------------------------*/
 
 .text-nosotros {
-    color: #fff;
+    color: var(--textColor);
 }
 
 .orange-btn {
@@ -500,7 +510,7 @@ body {
 .directos {
     grid-area: directos;
     padding: 30px;
-    background-color:  rgba(19, 18, 19, 0.431);
+    background-color: rgba(19, 18, 19, 0.431);
 
 
 }
@@ -508,7 +518,7 @@ body {
 .num-semestre {
     grid-area: num-semestre;
     padding: 30px;
-    background-color:  rgba(19, 18, 19, 0.171);
+    background-color: rgba(19, 18, 19, 0.171);
     flex-direction: column;
 
 }
@@ -524,7 +534,7 @@ body {
 .operacion {
     grid-area: operacion;
     padding: 30px;
-    background-color:  rgba(19, 18, 19, 0.685);
+    background-color: rgba(19, 18, 19, 0.685);
 
 }
 
