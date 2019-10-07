@@ -45,8 +45,9 @@
     --smartGreen: #497D38;
     --smartYellow: #c7a534;
     /* theme colors */
-    --brColor: #fff;
+    --brColor: #dfdfdf;
     --textColor: #000;
+    --orangeBtn: rgb(97, 90, 90);
 }
 
 /* tablet up */
@@ -123,7 +124,7 @@ body {
 
 /* for light mode */
 .bg-light-custom {
-    background-color: rgb(235, 227, 227);
+    background-color: rgb(190, 179, 179);
 }
 
 /*-------------------------------*/
@@ -143,25 +144,25 @@ body {
     position: relative;
     opacity: 1;
     color: var(--textColor);
-    ;
+
 }
 
-.divider::after {
+.divider::before {
     content: "";
-    background: url("../images/power_ideas.jpg") no-repeat center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    opacity: 0.1;
-    -webkit-filter: grayscale(10%);
-    filter: grayscale(10%);
+    background: url("../images/power_ideas_tablet.jpg") center no-repeat;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    filter: opacity(0.5) grayscale(0.2);
+    -webkit-filter: opacity(0.5) grayscale(0.2);
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     position: absolute;
 }
+
 
 /* endlandscape cellphone up */
 
@@ -175,22 +176,22 @@ body {
         opacity: 1;
     }
 
-    .divider::after {
+    .divider::before {
         content: "";
         background: url("../images/power_ideas.jpg") no-repeat center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        -webkit-filter: grayscale(10%);
-        filter: grayscale(10%);
+        filter: opacity(0.5) grayscale(0.2);
+        -webkit-filter: opacity(0.5) grayscale(0.2);
         top: 0;
         left: 0;
         bottom: 0;
         right: 0;
         position: absolute;
-
     }
+
 }
 
 /*-------------------------------*/
@@ -206,12 +207,16 @@ body {
 .divider-text {
 
     font-size: 1rem;
+
 }
 
 .divider-icon {
 
     font-size: 4rem;
+
+
 }
+
 
 /* landscape cellphone up */
 @media (min-width: 576px) {
@@ -383,7 +388,7 @@ body {
 }
 
 .orange-btn {
-    background-color: rgb(218, 94, 22);
+    background-color: var(--orangeBtn);
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
@@ -883,18 +888,18 @@ body {
     padding: 16px 18px;
     font-size: 13px;
     line-height: 15px;
-    color: #ffffff;
+    color: var(--textColor);
     text-transform: uppercase;
     display: block;
     text-decoration: none;
-    border: solid 1px #95d9ee;
+    border: solid 1px #3b606b;
     transition-duration: 0.2s;
     -webkit-transition-duration: 0.2s;
-    background-color: #000;
+    background-color: var(--brColor);
 }
 
 .directoryFilter button:hover {
-    border: solid 1px #15596e;
+    border: solid 1px #1d7f9c;
     color: #15596e;
     transition-duration: 0.2s;
     -webkit-transition-duration: 0.2s;
@@ -920,7 +925,7 @@ body {
 .our-team-main {
     width: 100%;
     height: auto;
-    border-bottom: 5px #323233 solid;
+    /* border-bottom: 5px #323233 solid; */
     background: rgba(255, 255, 255);
     text-align: center;
     border-radius: 10px;

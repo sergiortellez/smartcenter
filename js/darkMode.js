@@ -16,7 +16,7 @@
      if (darkMode) {
          //toggle colors
 
-         document.documentElement.style.setProperty('--brColor', '#fff');
+         document.documentElement.style.setProperty('--brColor', '#dfdfdf');
          document.documentElement.style.setProperty('--textColor', '#000');
 
          // navbar toogle
@@ -50,5 +50,8 @@
          //toggle status
          darkMode = true;
          console.log("darkmode: " + darkMode);
+         //dividers 
+         
+
      }
  };
