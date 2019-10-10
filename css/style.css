@@ -139,7 +139,8 @@ body {
 /*###################################################*/
 
 .divider {
-    height: 35vh;
+    height: auto;
+    min-height: 35vh;
     display: block;
     position: relative;
     opacity: 1;
@@ -150,10 +151,10 @@ body {
 .divider::before {
     content: "";
     background: url("../images/power_ideas_tablet.jpg") center no-repeat;
-    background-size: contain;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     filter: opacity(0.5) grayscale(0.2);
     -webkit-filter: opacity(0.5) grayscale(0.2);
     top: 0;
@@ -320,7 +321,9 @@ body {
     display: flex;
     align-content: center;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    padding-left: 25%;
+
 }
 
 .links:hover {
@@ -546,6 +549,7 @@ body {
 .smart-logo-grid {
     grid-area: smart-logo-grid;
     display: none;
+    background-color: var(--brColor);
 }
 
 /* end principal */
@@ -561,6 +565,7 @@ body {
     grid-area: success-stats-one;
     padding: 30px;
     background-color: #c2a64ade;
+    flex-direction: column;
 }
 
 .success-stats-two {
@@ -575,6 +580,7 @@ body {
     grid-area: success-stats-three;
     padding: 30px;
     background-color: #c2a64a75;
+    flex-direction: column;
 
 }
 
@@ -748,6 +754,7 @@ body {
         "twitter twitter twitter twitter"
         "twitter twitter twitter twitter"
     ;
+    background-color: #000;
 }
 
 /* tablet up */
