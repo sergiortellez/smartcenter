@@ -1059,15 +1059,13 @@ footer {
 }
 
 .footer {
-    font-size: 16px;
-    line-height: 36px;
-    clear: both;
+    font-size: 0.7rem;
+    /* clear: both; */
     color: #9a9a9a;
-    text-align: center;
-    padding: 100px 0;
+    padding: 2rem 4rem;
 }
 
-.footer>ul>li {
+.footerLi {
     list-style: none;
 }
 
@@ -1082,6 +1080,11 @@ footer {
 .social-footer a {
     margin: 0 10px;
     font-size: 20px;
+}
+
+.logoFooter {
+    width: 13rem;
+    height: 4.3rem;
 }
 
 /*###################################################*/
