@@ -326,6 +326,31 @@ body {
 
 }
 
+.linksGen:hover {
+
+    border: #fff solid 4px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.linksGen {
+    padding: 1rem;
+    margin: 0px;
+    width: 100%;
+    border: transparent solid 4px;
+    transition: border 0.3s linear;
+    -webkit-transition: border 0.3s linear;
+    -moz-transition: border 0.3s linear;
+    -ms-transition: border 0.3s linear;
+    -o-transition: border 0.3s linear;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
 .links:hover {
 
     border: #fff solid 4px;
@@ -442,7 +467,7 @@ body {
 
 .reload-btn {
     background-color: var(--smartGreen);
-    font-size: 0.7rem;
+    font-size: 1rem;
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
