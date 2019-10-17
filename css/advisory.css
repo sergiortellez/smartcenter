@@ -105,8 +105,10 @@ body {
         "intro intro intro intro"
         "intro intro intro intro"
         "intro intro intro intro"
-        "link1 link1 link1 link2"
-        "link1 link1 link1 link2";
+        "guia guia guia guia"
+        "derechos derechos derechos derechos"
+        "temas temas temas temas"
+        "asesores asesores asesores asesores";
 }
 
 /* tablet portrait up */
@@ -119,12 +121,11 @@ body {
             "news news news news intro intro intro"
             "news news news news intro intro intro"
             "news news news news intro intro intro"
-            "news news news news intro intro intro"
-            "news news news news intro intro intro"
-            "news news news news intro intro intro"
-            "news news news news intro intro intro"
-            "link1 link1 link1 link1 link2 link2 link2"
-            "link1 link1 link1 link1 link2 link2 link2";
+            "news news news news guia guia guia"
+            "news news news news temas temas temas"
+            "news news news news derechos derechos derechos"
+            "news news news news asesores asesores asesores"
+        ;
     }
 }
 
@@ -143,8 +144,10 @@ body {
             "intro intro intro intro intro intro intro intro news news news news "
             "intro intro intro intro intro intro intro intro news news news news "
             "intro intro intro intro intro intro intro intro news news news news "
-            "link1 link1 link1 link1 link1 link2 link2 link2 news news news news "
-            "link1 link1 link1 link1 link1 link2 link2 link2 news news news news "
+            "guia guia guia guia temas temas temas temas news news news news "
+            "guia guia guia guia temas temas temas temas news news news news "
+            "derechos derechos derechos derechos asesores asesores asesores asesores news news news news "
+            "derechos derechos derechos derechos asesores asesores asesores asesores news news news news "
         ;
     }
 }
@@ -176,22 +179,48 @@ body {
     background-color: #000;
 }
 
+#banner>img {
+    width: 40vw;
+    height: auto;
+}
+
 #news {
     grid-area: news;
-    background-color: gray;
+    background-color: #2a2f32;
 }
 
 #intro {
     grid-area: intro;
     background-color: var(--smartRed);
+    color: #fff;
 }
 
-#link1 {
-    grid-area: link1;
+#guia {
+    grid-area: guia;
+    background-color: rgb(230, 209, 24);
+    color: #000;
 }
 
-#link2 {
-    grid-area: link2;
+#derechos {
+    grid-area: derechos;
+    background-color: rgb(24, 55, 230);
+    color: #fff;
+}
+
+#temas {
+    grid-area: temas;
+    background-color: rgb(9, 87, 9);
+    color: #fff;
+}
+
+#asesores {
+    grid-area: asesores;
+    background-color: rgb(184, 107, 63);
+    color: #fff;
+}
+
+#asesores>i {
+    font-size: 3rem;
 }
 
 /*###################################################*/
@@ -256,7 +285,27 @@ body {
     height: auto;
 }
 
+.imgAsesoria {
+    width: 26vw;
+    height: auto;
+    float: right;
+    margin: 1rem;
+    border: 4px solid #fff;
+}
 
+/* rewrite from bootstrap */
+.btn {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+
+/* controla los íconos dentro de los botones */
+.btn>i {
+    font-size: 3rem;
+}
 
 /*###################################################*/
 /*...................................................*/

@@ -5,7 +5,7 @@
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no'>
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
-    <title>Success Center | UP</title>
+    <title>Advisory | UP</title>
     <!-- Bootstrap css.min -->
     <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'
         integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
@@ -50,24 +50,91 @@
         </a>
         <!--	*** end nav ***	-->
         <!--	*** banner ***	-->
-        <div id="banner"></div>
+        <div id="banner" class="d-flex align-items-center justify-content-center">
+            <img src="../images/advisory-text-white.png" alt="advisory">
+        </div>
         <!--	*** end banner ***	-->
         <!--	*** news ***	-->
         <div id="news">
             <a class="twitter-timeline" data-lang="es" data-width="100%" data-height="100%" data-dnt="true"
-                data-theme="dark" data-link-color="#E95F28" data-chrome="nofooter noheader"
-                href="https://twitter.com/SmartCenterUP/lists/smartcenter?ref_src=twsrc%5Etfw">A Twitter List by
-                SMART CenterUP</a>
+                data-theme="dark" data-link-color="#FAB81E" data-chrome="nofooter noheader"
+                href="https://twitter.com/SuccessCenterU1?ref_src=twsrc%5Etfw">Tweets by SuccessCenterU1</a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
         <!--	*** end news ***	-->
         <!--	*** intro ***	-->
-        <div id="intro"></div>
+        <div id="intro">
+            <p class="text-justify p-4"><img src="../images/asesoria.jpg" alt="asesoria" class="imgAsesoria"> ¡No estás
+                solo! <br>
+                El asesor universitario te apoyará siendo un guía en todo lo que tenga que ver con
+                tu rendimiento académico y en la formación de competencias profesionales,
+                además de ayudarte a detectar tus fortalezas y áreas de mejora, sugiriéndote
+                planes de acción para tu crecimiento o invitándote a unirte a algunas actividades
+                que te ofrece la Universidad u otras organizaciones estudiantiles.
+
+            </p>
+        </div>
         <!--	*** end intro ***	-->
-        <!--	*** bottom grid ***	-->
-        <div id="link1"></div>
-        <div id="link2"></div>
-        <!--	*** end bottom grid ***	-->
+        <!--	*** modal title grid ***	-->
+        <button id="guia" type="button" class="btn linksGen" data-toggle="modal" data-target="#modalGuia">
+            <i class="fas fa-shoe-prints mr-2"></i> <span>Guía de asesorías</span>
+        </button>
+        <button id="temas" type="button" class="btn linksGen" data-toggle="modal" data-target="#modalTemas">
+            <i class="fas fa-comments mr-2"></i> <span>Temas a tratar con tu asesor</span>
+        </button>
+        <button id="derechos" type="button" class="btn linksGen" data-toggle="modal" data-target="#modalDerechos">
+            <i class="fas fa-gavel mr-2"></i> <span>Tus derechos y Obligaciones</span>
+        </button>
+        <a id="asesores" class="linksGen" href="#" target="_blank">
+            <i class="fas fa-users mr-2"></i> <span>¿Eres asesor?</span>
+        </a>
+        <!--	*** end modals title grid ***	-->
+        <!------------------------------------------------->
+        <!--	modals	-->
+        <!------------------------------------------------->
+
+        <!--	*** guía ***	-->
+        <div class="modal fade" id="modalGuia" tabindex="-1" role="dialog" aria-labelledby="modalGuia"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    Gaia
+                </div>
+            </div>
+        </div>
+        <!--	*** end guía ***	-->
+        <!--	*** derechos ***	-->
+        <div class="modal fade" id="modalDerechos" tabindex="-1" role="dialog" aria-labelledby="modalDerechos"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Título</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--	*** end derechos ***	-->
+        <!--	*** temas ***	-->
+        <div class="modal fade" id="modalTemas" tabindex="-1" role="dialog" aria-labelledby="modalTemas"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    Temas
+                </div>
+            </div>
+        </div>
+        <!--	*** end temas ***	-->
+
+        <!------------------------------------------------->
+        <!--	end modals	-->
+        <!------------------------------------------------->
 
     </section>
     <!------------------------------------------------->
