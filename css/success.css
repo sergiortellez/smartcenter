@@ -74,6 +74,11 @@ body {
     color: var(--textColor);
 }
 
+mark {
+    background-color: black;
+    color: white;
+}
+
 /*###################################################*/
 /*...................................................*/
 /* end general properties */
@@ -103,10 +108,16 @@ body {
         "news news news news"
         "intro intro intro intro"
         "intro intro intro intro"
-        "intro intro intro intro"
-        "intro intro intro intro"
-        "link1 link1 link1 link2"
-        "link1 link1 link1 link2";
+        "link1 link1 link2 link2"
+        "link1 link1 link2 link2"
+        "testimonials testimonials testimonials testimonials"
+        "testimonials testimonials testimonials testimonials"
+        "facebook rate rate rate"
+        "youtube rate rate rate"
+
+
+
+    ;
 }
 
 /* tablet portrait up */
@@ -120,11 +131,13 @@ body {
             "news news news news intro intro intro"
             "news news news news intro intro intro"
             "news news news news intro intro intro"
-            "news news news news intro intro intro"
-            "news news news news intro intro intro"
-            "news news news news intro intro intro"
-            "link1 link1 link1 link1 link2 link2 link2"
-            "link1 link1 link1 link1 link2 link2 link2";
+            "news news news news link1 link1 link1"
+            "news news news news link2 link2 link2"
+            "rate rate  facebook testimonials testimonials testimonials testimonials"
+            "rate rate  youtube testimonials testimonials testimonials testimonials"
+
+
+        ;
     }
 }
 
@@ -139,12 +152,12 @@ body {
             "advisoryBack banner banner banner banner banner banner banner news news news news "
             "meetingBack banner banner banner banner banner banner banner news news news news "
             "reloadBack banner banner banner banner banner banner banner news news news news "
-            "intro intro intro intro intro intro intro intro news news news news "
-            "intro intro intro intro intro intro intro intro news news news news "
-            "intro intro intro intro intro intro intro intro news news news news "
-            "intro intro intro intro intro intro intro intro news news news news "
-            "link1 link1 link1 link1 link1 link2 link2 link2 news news news news "
-            "link1 link1 link1 link1 link1 link2 link2 link2 news news news news "
+            "intro intro intro intro intro intro link1 link1 news news news news "
+            "intro intro intro intro intro intro link1 link1 news news news news "
+            "intro intro intro intro intro intro link2 link2 news news news news "
+            "intro intro intro intro intro intro link2 link2 news news news news "
+            "rate rate facebook testimonials testimonials testimonials testimonials testimonials news news news news "
+            "rate rate youtube testimonials testimonials testimonials testimonials testimonials news news news news "
         ;
     }
 }
@@ -178,7 +191,7 @@ body {
 
 #news {
     grid-area: news;
-    background-color: gray;
+    background-color: #2a2f32;
 }
 
 #intro {
@@ -188,10 +201,59 @@ body {
 
 #link1 {
     grid-area: link1;
+    background-color: #4c4ac2;
+    flex-direction: column;
+}
+
+#link1>i {
+    /* CONTROLA LOS íconos */
+    font-size: 3rem;
 }
 
 #link2 {
     grid-area: link2;
+    background-color: #c24ac0;
+    flex-direction: column;
+
+}
+
+#link2>i {
+    /* CONTROLA LOS íconos */
+    font-size: 3rem;
+}
+
+#testimonials {
+    grid-area: testimonials;
+    background-color: rgb(6, 16, 71);
+    color: #fff;
+}
+
+#carouselTestimonials {
+    height: inherit;
+}
+
+#carouselTestimonials>.carousel-inner>.carousel-item {
+    min-height: 100px;
+}
+
+#facebook {
+    grid-area: facebook;
+    background-color: rgb(27, 50, 179);
+    color: #fff;
+    font-size: 3rem;
+}
+
+#youtube {
+    grid-area: youtube;
+    background-color: rgb(173, 16, 16);
+    color: #fff;
+    font-size: 3rem;
+}
+
+#rate {
+    grid-area: rate;
+    background-color: rgb(18, 63, 6);
+    color: #fff;
 }
 
 /*###################################################*/
@@ -265,6 +327,7 @@ body {
     width: inherit;
     height: inherit;
 }
+
 
 
 
