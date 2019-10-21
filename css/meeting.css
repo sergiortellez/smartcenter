@@ -1,0 +1,134 @@
+/*###################################################*/
+/*...................................................*/
+/* root variables (responsive font size installed)   */
+/*...................................................*/
+/*###################################################*/
+
+:root {
+    /* font size */
+    --fs-b: 14px;
+    /* custom colors */
+    --smartRed: #A41C1D;
+    --smartBlue: #1c5396;
+    --smartGreen: #497D38;
+    --smartYellow: #c7a534;
+    /* theme colors */
+    --brColor: #dfdfdf;
+    --textColor: #000;
+    --orangeBtn: rgb(97, 90, 90);
+}
+
+/* tablet up */
+@media (min-width: 768px) {
+    :root {
+        /* font size */
+        --fs-b: 16px;
+    }
+}
+
+/* end tablet up */
+
+/* laptop up */
+@media (min-width: 991px) {
+    :root {
+        /* font size */
+        --fs-b: 18px;
+    }
+}
+
+/* end laptop up */
+
+/* desktop up */
+@media (min-width: 1300px) {
+    :root {
+        /* font size */
+        --fs-b: 22px;
+    }
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end root variables                                */
+/*...................................................*/
+/*###################################################*/
+
+
+/*###################################################*/
+/*...................................................*/
+/* general properties */
+/*...................................................*/
+/*###################################################*/
+
+html {
+    /* scroll smooth from nav control */
+    scroll-behavior: smooth;
+    /* font size general control using variable */
+    font-size: var(--fs-b);
+
+}
+
+body {
+    /* scroll spy */
+    overflow-y: scroll;
+    background-color: var(--brColor);
+    color: var(--textColor);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.bg-nav {
+    background-color: var(--smartBlue);
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end general properties */
+/*...................................................*/
+/*###################################################*/
+
+/*###################################################*/
+/*...................................................*/
+/* footer */
+/*...................................................*/
+/*###################################################*/
+
+footer {
+    background-color: #2e3338;
+
+}
+
+.footer {
+    font-size: 0.7rem;
+    /* clear: both; */
+    color: #9a9a9a;
+    padding: 2rem 4rem;
+}
+
+.footerLi {
+    list-style: none;
+}
+
+.footer a {
+    color: #9a9a9a;
+}
+
+.footer a :hover {
+    color: yellow;
+}
+
+.social-footer a {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.logoFooter {
+    width: 13rem;
+    height: 4.3rem;
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end footer */
+/*...................................................*/
+/*###################################################*/
