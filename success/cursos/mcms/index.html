@@ -6,10 +6,13 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133473676-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-133473676-1');
-</script>
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-133473676-1');
+    </script>
     <!-- End Global site tag (gtag.js) - Google Analytics -->
     <title>My Career My Success</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -23,8 +26,8 @@
     <link rel="stylesheet" type="text/css" href='css/clear.css' />
     <link rel="stylesheet" type="text/css" href='css/common.css' />
     <!-- <link rel="stylesheet" type="text/css" href='css/font-awesome.min.css' /> -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href='css/carouFredSel.css' />
     <link rel="stylesheet" type="text/css" href='css/prettyPhoto.css' />
     <link rel="stylesheet" type="text/css" href='css/sm-clean.css' />
@@ -34,10 +37,10 @@
                 <script src="js/html5.js"></script>
         <![endif]-->
     <!-- Latest Bootstrap compiled and minified CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-    <!-- Flickity CSS (carrousels -->
+    <!-- Flickity CSS carrousels -->
     <link rel="stylesheet" href="css/flickity.css" media="screen">
 </head>
 
@@ -109,7 +112,8 @@
                     <label class="logged d-none mr-2"><img src="" id="clientPhoto" alt="foto"></label>
                     <label class="logged d-none mr-3" id="clientName"></label>
 
-                    <button class=" d-none btn btn-outline-warning my-2 my-sm-0" id="logInButton" type="button" onclick="toggleSignIn()">Login</button>
+                    <button class=" d-none btn btn-outline-warning my-2 my-sm-0" id="logInButton" type="button"
+                        onclick="toggleSignIn()">Login</button>
                 </form>
             </div>
         </nav>
@@ -118,8 +122,8 @@
     <!-- Home -->
     <div id="home" class="section intro-page">
 
-        <div class="block content-1170 center-relative center-text"> <img class="top-logo" src="images/logoSuccessBlancoSinFondo-08.png"
-                alt="Success Center" />
+        <div class="block content-1170 center-relative center-text"> <img class="top-logo"
+                src="images/logoSuccessBlancoSinFondo-08.png" alt="Success Center" />
             <br>
             <h1 class="big-title">My Career <span>My Success</span></h1>
             <p class="title-desc">Todo lo que necesitas para tener éxito en el mundo laboral.</p>
@@ -148,9 +152,10 @@
                 <div class="loginLetrero">
                     <h2>Organizing your life like a boss</h2>
                     <p>Haz login con tu cuenta de la UP en la barra de navegación para disfrutar de esta experiencia</p>
-                    <div style='position:relative; padding-bottom:calc(62.50% + 44px)'><iframe src='https://gfycat.com/ifr/ElementaryFluidAfricanmolesnake?controls=0&speed=4&autoplay=1&hd=0'
-                            frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;'
-                            allowfullscreen></iframe></div>
+                    <div style='position:relative; padding-bottom:calc(62.50% + 44px)'><iframe
+                            src='https://gfycat.com/ifr/ElementaryFluidAfricanmolesnake?controls=0&speed=4&autoplay=1&hd=0'
+                            frameborder='0' scrolling='no' width='100%' height='100%'
+                            style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
                 </div>
 
 
@@ -220,7 +225,8 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <p class="ml-3">* Recomendamos disfrutar esta experiencia en tabletas <span class="fas fa-tablet-alt"></span>
+                        <p class="ml-3">* Recomendamos disfrutar esta experiencia en tabletas <span
+                                class="fas fa-tablet-alt"></span>
                             y
                             computadoras
                             <span class="fas fa-laptop"></span></p>
@@ -241,55 +247,68 @@
         <!-- "wrapAround": true indica que el carrusel es infinito, la clase que construye  cada casilla del carrusel es gallery-cell -->
         <div class="gallery carouselOylb js-flickity logged" id="oylbcarousel" data-flickity='{ "wrapAround": true }'>
 
-            <a href="oyl/intro.html" target="_blank" class="gallery-cell">
+            <!--<a href="https://api.playposit.com/player_v2/?type=share&bulb_id=69610" target="_blank"
+                class="gallery-cell">
+                <div class="contenedorImagenCarrusel imagenCarruselIntro"></div>
+                <div class="tituloCarrusel">Introducción</div>
+            </a>-->
+            <a type="button" class="gallery-cell" data-toggle="modal" data-target="#oylAlertModal">
                 <div class="contenedorImagenCarrusel imagenCarruselIntro"></div>
                 <div class="tituloCarrusel">Introducción</div>
             </a>
-            <a href="https://www.playposit.com/listcode/947117/f5151c/open/anonymous" target="_blank" class="gallery-cell">
+            <a href="https://api.playposit.com/player_v2/?type=share&bulb_id=69617" target="_blank"
+                class="gallery-cell">
                 <div class="contenedorImagenCarrusel imagenCarruselProductivity"></div>
                 <div class="tituloCarrusel">Productivity 101</div>
             </a>
-            <a href="https://www.playposit.com/listcode/947103/f5151c/open/anonymous" target="_blank" class="gallery-cell">
+            <a href="https://api.playposit.com/player_v2/?type=share&bulb_id=69615" target="_blank"
+                class="gallery-cell">
                 <div class="contenedorImagenCarrusel imagenCarruselDistracciones"></div>
                 <div class="tituloCarrusel">Estudia sin distracciones</div>
             </a>
             <!-- Agregar url -->
-            <a href="https://www.playposit.com/listcode/947114/f5151c/open/anonymous" target="_blank" class="gallery-cell">
+            <a href="https://api.playposit.com/player_v2/?type=share&bulb_id=69616" target="_blank"
+                class="gallery-cell">
                 <!-- Modificar nombre de la clase  -->
                 <div class="contenedorImagenCarrusel imagenCarruselEfectivo"></div>
                 <!-- Agregar título del vídeo -->
                 <div class="tituloCarrusel">¿Cómo ser más efectivo?</div>
             </a>
             <!-- Agregar url -->
-            <a href="https://www.playposit.com/listcode/821359/f5151c/open/anonymous" target="_blank" class="gallery-cell">
+            <a href="https://api.playposit.com/player_v2/?type=share&bulb_id=69618" target="_blank"
+                class="gallery-cell">
                 <!-- Modificar nombre de la clase  -->
                 <div class="contenedorImagenCarrusel imagenCarruselUsasTiempo"></div>
                 <!-- Agregar título del vídeo -->
                 <div class="tituloCarrusel">¿Cómo usas tu tiempo?</div>
             </a>
             <!-- Agregar url -->
-            <a href="https://www.playposit.com/listcode/821159/f5151c/open/anonymous" target="_blank" class="gallery-cell">
+            <a href="https://api.playposit.com/player_v2/?type=share&bulb_id=69619" target="_blank"
+                class="gallery-cell">
                 <!-- Modificar nombre de la clase  -->
                 <div class="contenedorImagenCarrusel imagenCarruselMasEnergia"></div>
                 <!-- Agregar título del vídeo -->
                 <div class="tituloCarrusel">5 formas de tener más energía</div>
             </a>
             <!-- Agregar url -->
-            <a href="https://www.playposit.com/listcode/821164/f5151c/open/anonymous" target="_blank" class="gallery-cell">
+            <a href="https://api.playposit.com/player_v2/?type=share&bulb_id=69612" target="_blank"
+                class="gallery-cell">
                 <!-- Modificar nombre de la clase  -->
                 <div class="contenedorImagenCarrusel imagenCarruselPropioCoach"></div>
                 <!-- Agregar título del vídeo -->
                 <div class="tituloCarrusel">¿Quieres tener tu propio coach?</div>
             </a>
             <!-- Agregar url -->
-            <a href="https://www.playposit.com/listcode/821172/f5151c/open/anonymous" target="_blank" class="gallery-cell">
+            <a href="https://api.playposit.com/player_v2/?type=share&bulb_id=69613" target="_blank"
+                class="gallery-cell">
                 <!-- Modificar nombre de la clase  -->
                 <div class="contenedorImagenCarrusel imagenCarruselTiempodeNada"></div>
                 <!-- Agregar título del vídeo -->
                 <div class="tituloCarrusel">¿No tienes tiempo de nada?</div>
             </a>
             <!-- Agregar url -->
-            <a href="https://www.playposit.com/listcode/821350/f5151c/open/anonymous" target="_blank" class="gallery-cell">
+            <a href="https://api.playposit.com/player_v2/?type=share&bulb_id=69614" target="_blank"
+                class="gallery-cell">
                 <!-- Modificar nombre de la clase  -->
                 <div class="contenedorImagenCarrusel imagenCarruselMeta"></div>
                 <!-- Agregar título del vídeo -->
@@ -331,9 +350,10 @@
                 <div class="loginLetrero">
                     <h2>Liderazgo</h2>
                     <p>Haz login con tu cuenta de la UP en la barra de navegación para disfrutar de esta experiencia</p>
-                    <div style='position:relative; padding-bottom:calc(62.50% + 44px)'><iframe src='https://gfycat.com/ifr/ElementaryFluidAfricanmolesnake?controls=0&speed=4&autoplay=1&hd=0'
-                            frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;'
-                            allowfullscreen></iframe></div>
+                    <div style='position:relative; padding-bottom:calc(62.50% + 44px)'><iframe
+                            src='https://gfycat.com/ifr/ElementaryFluidAfricanmolesnake?controls=0&speed=4&autoplay=1&hd=0'
+                            frameborder='0' scrolling='no' width='100%' height='100%'
+                            style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
                 </div>
             </div>
             <div class="section-content-holder left logged">
@@ -388,7 +408,8 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <p class="ml-3">* Recomendamos disfrutar esta experiencia en tabletas <span class="fas fa-tablet-alt"></span>
+                        <p class="ml-3">* Recomendamos disfrutar esta experiencia en tabletas <span
+                                class="fas fa-tablet-alt"></span>
                             y
                             computadoras
                             <span class="fas fa-laptop"></span></p>
@@ -430,9 +451,10 @@
                 <div class="loginLetrero">
                     <h2>Your CV Your Masterpiece</h2>
                     <p>Haz login con tu cuenta de la UP en la barra de navegación para disfrutar de esta experiencia</p>
-                    <div style='position:relative; padding-bottom:calc(62.50% + 44px)'><iframe src='https://gfycat.com/ifr/ElementaryFluidAfricanmolesnake?controls=0&speed=4&autoplay=1&hd=0'
-                            frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;'
-                            allowfullscreen></iframe></div>
+                    <div style='position:relative; padding-bottom:calc(62.50% + 44px)'><iframe
+                            src='https://gfycat.com/ifr/ElementaryFluidAfricanmolesnake?controls=0&speed=4&autoplay=1&hd=0'
+                            frameborder='0' scrolling='no' width='100%' height='100%'
+                            style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
                 </div>
 
 
@@ -510,7 +532,8 @@
 
                 <div class="row">
                     <div class="col">
-                        <p class="ml-3">* Recomendamos disfrutar esta experiencia en tabletas <span class="fas fa-tablet-alt"></span>
+                        <p class="ml-3">* Recomendamos disfrutar esta experiencia en tabletas <span
+                                class="fas fa-tablet-alt"></span>
                             y
                             computadoras
                             <span class="fas fa-laptop"></span></p>
@@ -530,9 +553,10 @@
         <!-- bloque de la lista de contenidos -->
         <!-- Flickity HTML init -->
         <!-- "wrapAround": true indica que el carrusel es infinito, la clase que construye  cada casilla del carrusel es gallery-cell -->
-        <div class="gallery carouselCvmp js-flickity logged" id="cvcarousel" data-flickity='{ "wrapAround": false, "contain": true }'>
-
-            <a href="cv/bienvenido.html" target="_blank" class="gallery-cell">
+        <div class="gallery carouselCvmp js-flickity logged" id="cvcarousel"
+            data-flickity='{ "wrapAround": false, "contain": true }'>
+            <!-- href="cv/bienvenido.html" target="_blank" class="gallery-cell" -->
+            <a type="button" class="gallery-cell" data-toggle="modal" data-target="#cvmpAlertModal">
                 <div class="contenedorImagenCarrusel imagenCarruselCvUno"></div>
                 <div class="tituloCarrusel">Bienvenido</div>
             </a>
@@ -618,7 +642,8 @@
                                 <input type="text" name="name" placeholder="Tu Nombre">
                                 <textarea name="message" placeholder="Escribe tu mensaje aquí" class="mt-4"></textarea>
                                 <button type="submit" class="mt-4 mb-4 botonRojo">Enviar</button>
-                                <input type="hidden" name="_next" value="https://smartcenter.up.edu.mx/success/cursos/mcms/#contact" />
+                                <input type="hidden" name="_next"
+                                    value="https://smartcenter.up.edu.mx/success/cursos/mcms/#contact" />
                             </form>
                             <!-- Esta era la vieja forma (aún funciona) -->
                             <!-- <div class="contact-form">
@@ -670,6 +695,29 @@
 
     <!-- ************************* Modals *************************************************** -->
 
+    <!-- Modal temporal para hacer el typeform antes de empezar OYL -->
+    <div class="modal fade" id="oylAlertModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Debes registrarte antes de iniciar este curso
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Para poder disfrutar de esta experiencia debes registrarte primero.
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="https://successcenter1.typeform.com/to/H7Lxn2" target="_blank"
+                        role="button">Registrarse</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="modal fade" id="oylbModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
         aria-hidden="true">
@@ -682,14 +730,17 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    Recuerda que <b>antes</b> de apartar tu cita de coaching personalizado, debes <b>ver los 9 vídeos</b>
+                    Recuerda que <b>antes</b> de apartar tu cita de coaching personalizado, debes <b>ver los 9
+                        vídeos</b>
                     que aparecen en el carrusel de abajo. Asegúrate de vivir la experiencia completa.
                     <br>
                     ¿Ya viste los vídeos?
                 </div>
                 <div class="modal-footer">
-                    <a class="btn btn-primary" href="oyl/intro.html" target="_blank" role="button">Ir al primer vídeo</a>
-                    <a class="btn btn-danger" href="oyl/bookme.html" target="_blank" role="button">Agendar una cita</a>
+                    <a class="btn btn-primary" href="oyl/intro.html" target="_blank" role="button">Ir al primer
+                        vídeo</a>
+                    <a class="btn btn-danger" href="https://successcenterup.simplybook.me/v2/#book" target="_blank"
+                        role="button">Agendar una cita</a>
                 </div>
             </div>
         </div>
@@ -707,7 +758,8 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    Recuerda que <b>antes</b> de apartar tu cita de asesoría personalizada, debes <b>ver los 7 vídeos</b>
+                    Recuerda que <b>antes</b> de apartar tu cita de asesoría personalizada, debes <b>ver los 7
+                        vídeos</b>
                     que aparecen en el carrusel de abajo. Asegúrate de vivir la experiencia completa.
                     <br>
                     ¿Ya viste los vídeos?
@@ -715,7 +767,31 @@
                 <div class="modal-footer">
                     <a class="btn btn-primary" href="cv/bienvenido.html" target="_blank" role="button">Ir al primer
                         vídeo</a>
-                    <a class="btn btn-danger" href="cv/bookme.html" target="_blank" role="button">Agendar una cita</a>
+                    <a class="btn btn-danger" href="https://successcenterup.simplybook.me/v2/#book" target="_blank"
+                        role="button">Agendar una cita</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal temporal para hacer el typeform antes de empezar CVMP -->
+    <div class="modal fade" id="cvmpAlertModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Debes registrarte antes de iniciar este curso
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Para poder disfrutar de esta experiencia debes registrarte primero.
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="https://successcenter1.typeform.com/to/aqqozE" target="_blank"
+                        role="button">Registrarse</a>
+
                 </div>
             </div>
         </div>
@@ -723,19 +799,19 @@
 
 
 
-
     <!-- Footer -->
     <footer>
         <div class="footer content-1170 center-relative ">
             <ul>
-                <li class="copyright-footer "> © 2018 Derechos Reservados. | Universidad Panamericana <a class="link-succes"
-                        href="https://smartcenter.up.edu.mx " target="_blank ">SmartCenter</a> </li>
+                <li class="copyright-footer "> © 2018 Derechos Reservados. | Universidad Panamericana <a
+                        class="link-succes" href="https://smartcenter.up.edu.mx " target="_blank ">SmartCenter</a> </li>
                 <li class="social-footer ">
                     <!-- <a href="# "><span class="fa fa-twitter "></span></a> -->
-                    <a href="https://www.youtube.com/channel/UCMAOisJbM69nBTLbCK_b4LQ?view_as=subscriber " target="_blank "><span
-                            class="fa fa-youtube "></span></a>
+                    <a href="https://www.youtube.com/channel/UCMAOisJbM69nBTLbCK_b4LQ?view_as=subscriber "
+                        target="_blank "><span class="fa fa-youtube "></span></a>
                     <!-- <a href="# "><span class="fa fa-instagram "></span></a>  -->
-                    <a href="https://www.facebook.com/SuccessCenterUP/ " target="_blank "><span class="fa fa-facebook "></span></a>
+                    <a href="https://www.facebook.com/SuccessCenterUP/ " target="_blank "><span
+                            class="fa fa-facebook "></span></a>
                 </li>
             </ul>
         </div>
@@ -745,12 +821,15 @@
     <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase-auth.js"></script>
     <!-- end of firebase -->
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
     <!--Load JavaScript-->
     <script type="text/javascript " src="js/jquery.js "></script>
     <script type='text/javascript' src='js/jquery.sticky-kit.min.js'></script>
