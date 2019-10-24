@@ -495,6 +495,15 @@ body {
     color: #fff;
 }
 
+.btn-acordeon-faq {
+    color: #000;
+    text-decoration: none;
+}
+
+.btn-acordeon-faq:hover {
+    text-decoration: none;
+}
+
 /*-------------------------------*/
 /* end FAQ */
 /*-------------------------------*/
@@ -503,6 +512,39 @@ body {
 /* problemas */
 /*-------------------------------*/
 
+.modal-header-problemas {
+    background-color: rgb(26, 116, 168);
+    color: #fff;
+}
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#contact-form input[type=email],
+#contact-form input[type=text] {
+    margin: 0.7rem 0;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+#contact-form textarea {
+    width: 100%;
+}
+
+#contact-form textarea:focus {
+    height: 190px;
+    overflow: auto;
+}
+
+.enviar-mensaje {
+    width: 50%;
+    background-color: rgb(26, 116, 168);
+    color: #fff;
+}
 
 /*-------------------------------*/
 /* end problemas */
