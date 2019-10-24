@@ -165,13 +165,15 @@ body {
 }
 
 
+
 /* endlandscape cellphone up */
 
 /* Laptops up parallax working */
 
 @media (min-width: 991px) {
     .divider {
-        height: 35vh;
+        height: auto;
+        min-height: 35vh;
         display: block;
         position: relative;
         opacity: 1;
@@ -191,6 +193,7 @@ body {
         bottom: 0;
         right: 0;
         position: absolute;
+        height: auto;
     }
 
 }
@@ -422,6 +425,11 @@ body {
     -moz-border-radius: 0px;
     -ms-border-radius: 0px;
     -o-border-radius: 0px;
+}
+
+.botones-obj {
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 /*-------------------------------*/
@@ -899,6 +907,39 @@ body {
 
 .enviar-mensaje {
     width: 50%;
+}
+
+
+.linea-horizontal-mapa {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 0.1rem;
+    background-color: var(--textColor);
+
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 361px;
+    width: 100%;
+    border-left: 10px solid rgb(255, 255, 255);
+    border-right: 10px solid rgb(255, 255, 255);
+    border-bottom: 10px solid rgb(255, 255, 255);
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 351px;
+    width: 100%;
+}
+
+.campus-img {
+    border-left: 10px solid rgb(255, 255, 255);
+    border-right: 10px solid rgb(255, 255, 255);
+    border-top: 10px solid rgb(255, 255, 255);
 }
 
 /*-------------------------------*/
