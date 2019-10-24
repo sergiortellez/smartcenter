@@ -106,6 +106,14 @@ body {
     color: var(--textColor);
 }
 
+.modal-header {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+
 /*###################################################*/
 /*...................................................*/
 /* end general properties */

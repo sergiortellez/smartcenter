@@ -126,8 +126,8 @@ body {
             "news news news news temas temas temas"
             "news news news news derechos derechos derechos"
             "news news news news asesores asesores asesores"
-            "news news news news derechos faq faq"
-            "news news news news asesores problemas problemas"
+            "news news news news faq faq faq"
+            "news news news news problemas problemas problemas"
         ;
     }
 }
@@ -521,7 +521,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
 #contact-form input[type=email],
@@ -542,6 +542,7 @@ body {
 
 .enviar-mensaje {
     width: 50%;
+    height: 2rem;
     background-color: rgb(26, 116, 168);
     color: #fff;
 }
