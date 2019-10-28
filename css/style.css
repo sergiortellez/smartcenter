@@ -685,11 +685,13 @@ body {
 .advisory-stats-two {
     grid-area: advisory-stats-two;
     background-color: #972b25a9;
+    flex-direction: column;
 }
 
 .advisory-stats-three {
     grid-area: advisory-stats-three;
     background-color: #972b257a;
+    flex-direction: column;
 
 }
 

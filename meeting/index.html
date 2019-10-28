@@ -29,16 +29,16 @@
     <!--	nav	-->
     <!------------------------------------------------->
     <nav class="navbar navbar-expand-lg navbar-dark bg-nav">
-        <a class="navbar-brand" href="../index.html">
+        <a class="navbar-brand pleca" href="../index.html">
             <img src="../images/logo-smart-cuadrito.png" width="30" height="30" alt="SMART Center">
         </a>
-        <a class="navbar-brand" href="../success/index.html">
+        <a class="navbar-brand pleca" href="../success/index.html">
             <img src="../images/success-short.png" width="20" height="30" alt="SMART Center">
         </a>
-        <a class="navbar-brand" href="../advisory/index.html">
+        <a class="navbar-brand pleca" href="../advisory/index.html">
             <img src="../images/advisory-short.png" width="30" height="30" alt="SMART Center">
         </a>
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand pleca" href="#">
             <img src="../images/reload-short.png" width="30" height="30" alt="SMART Center">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -52,6 +52,9 @@
 
                 <a class="nav-item nav-link" data-toggle="collapse" href="#somos" role="button" aria-expanded="false"
                     aria-controls="somos">¿Quienes somos?</a>
+
+                <a class="nav-item nav-link btn" data-toggle="modal" role="button" aria-controls="unete"
+                    data-target=".unete">Únete a un grupo</a>
 
             </div>
         </div>
@@ -225,13 +228,19 @@
                         Nuestra misión es hacer posible que los jóvenes desarrollen su liderazgo a través del
                         aprendizaje mediante experiencias prácticas en un entorno desafiante.
                         Para lograrlo contamos con tres tipos de experiencias:
-                        <br>Emprendedor Global:<br>
-                        Experiencia que desarrolla habilidades de liderazgo y emprendimiento
-                        <br> Voluntario Global:<br>
-                        Experiencia voluntaria en donde se realizan proyectos sociales en ONGs.
-                        <br> Talento Global:<br>
-                        Experiencia que enriquece la vida profesional a través de oportunidades y pasantías
-                        internacionales
+                        <ul>
+                            <li><b>Emprendedor Global:</b>
+                                Experiencia que desarrolla habilidades de liderazgo y emprendimiento.</li>
+                            <li> <b> Voluntario Global:</b>
+                                Experiencia voluntaria en donde se realizan proyectos sociales en ONGs.</li>
+                            <li> <b> Talento Global:</b>
+                                Experiencia que enriquece la vida profesional a través de oportunidades y
+                                pasantías
+                                internacionales.</li>
+                        </ul>
+
+
+
                     </p>
                 </div>
                 <div class="modal-footer">
@@ -246,7 +255,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
+                    <h5 class="modal-title">GROWTH</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true" style="color: #fff;">&times;</span>
                     </button>
@@ -442,7 +451,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Alianzas estratégicas </h5>
+                    <h5 class="modal-title">Alianzas estratégicas GROWTH</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true" style="color: #fff;">&times;</span>
                     </button>
@@ -477,7 +486,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Comité</h5>
+                    <h5 class="modal-title">Comité TEDx</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true" style="color: #fff;">&times;</span>
                     </button>
@@ -609,6 +618,43 @@
         </div>
     </div>
     <!--	*** end tedPosterMod ***	-->
+
+    <!--	*** únete ***	-->
+    <div class="modal fade unete" tabindex="-1" role="dialog" aria-labelledby="unete" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Quiero inscribirme a un grupo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="color: #fff;">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="contact-form">
+                    <form method="POST" action="https://formspree.io/mx_meetingpoint@up.edu.mx">
+                        <input class="d-block" type="email" name="email" placeholder="Tu email ">
+                        <input class="d-block" type="text" name="name" placeholder="Tu Nombre">
+                        <input class="d-block" type="text" name="semestre" placeholder="Tu Semestre">
+                        <input class="d-block" type="text" name="carrera" placeholder="Tu Carrera">
+                        <select name="club" class="selector">
+                            <option>Selecciona un proyecto para inscribirte</option>
+                            <option value="GROWTH">GROWTH</option>
+                            <option value="HULT-PRIZE">HULT PRIZE</option>
+                            <option value="NOUS">NOUS</option>
+                            <option value="SHE">S+HE</option>
+                            <option value="TEDx">TEDx</option>
+                            <option value="GREEN-PROJECT">GREEN PROJECT</option>
+                        </select>
+                        <textarea name="message" placeholder="¿Quieres hacer un comentario?" class="mt-4"></textarea>
+                        <button type="submit" class="mt-5 mb-4 d-block enviar-mensaje">Enviar</button>
+                        <input type="hidden" name="_next" value="https://smartcenter.up.edu.mx/meeting" />
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--	*** end únete ***	-->
 
     <!------------------------------------------------->
     <!--	end modals	-->

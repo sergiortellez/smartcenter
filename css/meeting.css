@@ -81,6 +81,21 @@ body {
     background-color: var(--smartBlue);
 }
 
+.pleca {
+    background-color: rgb(255, 255, 255);
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
 /*###################################################*/
 /*...................................................*/
 /* end general properties */
@@ -113,6 +128,56 @@ body {
 /* end cards */
 /*...................................................*/
 /*###################################################*/
+/*###################################################*/
+/*...................................................*/
+/* contact */
+/*...................................................*/
+/*###################################################*/
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.7rem;
+    padding: 3rem;
+}
+
+#contact-form input[type=email],
+#contact-form input[type=text] {
+    margin: 0.7rem 0;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+#contact-form textarea {
+    width: 100%;
+}
+
+#contact-form textarea:focus {
+    height: 190px;
+    overflow: auto;
+}
+
+.enviar-mensaje {
+    width: 50%;
+    height: 2.5rem;
+    background-color: #004b88;
+    color: #fff;
+}
+
+.selector {
+    width: 50%;
+    height: 2.5rem;
+    background-color: #004b88;
+    color: #fff;
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end contact */
+/*...................................................*/
+/*###################################################*/
+
 /*###################################################*/
 /*...................................................*/
 /* footer */

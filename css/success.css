@@ -99,6 +99,9 @@ mark {
         "smartBack advisoryBack meetingBack reloadBack"
         "banner banner banner banner"
         "banner banner banner banner"
+        "video video video video"
+        "video video video video"
+        "video video video video"
         "news news news news"
         "news news news news"
         "news news news news"
@@ -114,6 +117,7 @@ mark {
         "testimonials testimonials testimonials testimonials"
         "facebook rate rate rate"
         "youtube rate rate rate"
+        "instagram rate rate rate"
 
 
 
@@ -126,15 +130,16 @@ mark {
         grid-template-columns: repeat(7, 1fr);
         grid-template-areas:
             "smartBack advisoryBack meetingBack reloadBack banner banner banner "
-            "news news news news banner banner banner"
-            "news news news news intro intro intro"
-            "news news news news intro intro intro"
+            "video video video video banner banner banner"
+            "video video video video intro intro intro"
+            "video video video video intro intro intro"
             "news news news news intro intro intro"
             "news news news news intro intro intro"
             "news news news news link1 link1 link1"
             "news news news news link2 link2 link2"
             "rate rate  facebook testimonials testimonials testimonials testimonials"
             "rate rate  youtube testimonials testimonials testimonials testimonials"
+            "rate rate  instagram testimonials testimonials testimonials testimonials"
 
 
         ;
@@ -148,8 +153,8 @@ mark {
     .grid {
         grid-template-columns: repeat(12, 1fr);
         grid-template-areas:
-            "smartBack banner banner banner banner banner banner banner news news news news "
-            "advisoryBack banner banner banner banner banner banner banner news news news news "
+            "smartBack banner banner banner banner banner banner banner video video video video "
+            "advisoryBack banner banner banner banner banner banner banner video video video video "
             "meetingBack banner banner banner banner banner banner banner news news news news "
             "reloadBack banner banner banner banner banner banner banner news news news news "
             "intro intro intro intro intro intro link1 link1 news news news news "
@@ -158,6 +163,7 @@ mark {
             "intro intro intro intro intro intro link2 link2 news news news news "
             "rate rate facebook testimonials testimonials testimonials testimonials testimonials news news news news "
             "rate rate youtube testimonials testimonials testimonials testimonials testimonials news news news news "
+            "rate rate instagram testimonials testimonials testimonials testimonials testimonials news news news news "
         ;
     }
 }
@@ -192,6 +198,11 @@ mark {
 #news {
     grid-area: news;
     background-color: #2a2f32;
+}
+
+#video {
+    grid-area: video;
+    background-color: rgb(3, 3, 3);
 }
 
 #intro {
@@ -246,6 +257,13 @@ mark {
 #youtube {
     grid-area: youtube;
     background-color: rgb(173, 16, 16);
+    color: #fff;
+    font-size: 3rem;
+}
+
+#instagram {
+    grid-area: instagram;
+    background-color: rgb(108, 16, 212);
     color: #fff;
     font-size: 3rem;
 }
