@@ -207,11 +207,66 @@
             <p class="text-center m-2">al vivir nuestras experiencias</p>
         </div>
         <!--	*** end rate ***	-->
+        <!--	*** diplomas ***	-->
+
+        <button type="button" class="btn linksGen" id="diplomas" data-toggle="modal" data-target=".diplomasModal">
+            <i class="fas fa-award"></i>
+            <span>Diplomas</span>
+        </button>
+
+        <!--	*** end diplomas ***	-->
 
     </section>
     <!------------------------------------------------->
     <!--	end grid	-->
     <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--	modals	-->
+    <!------------------------------------------------->
+
+    <!--	*** diplomas ***	-->
+    <div class="modal fade diplomasModal" tabindex="-1" role="dialog" aria-labelledby="diplomasModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header" id="diplomasModalHeader">
+                    <h5 class="modal-title">Tramita tu diploma en esta sección</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="contact-form">
+                    <form method="POST" action="https://formspree.io/mx_successcenter@up.edu.mx">
+                        <input class="d-block" type="email" name="email" placeholder="Tu email ">
+                        <input class="d-block" type="text" name="name" placeholder="Tu Nombre Completo">
+                        <input class="d-block" type="text" name="semestre" placeholder="Tu Semestre">
+                        <input class="d-block" type="number" name="id" placeholder="Tu ID">
+                        <input class="d-block" type="text" name="experiencia" placeholder="Experiencia que tomaste">
+                        <label for="fecha y hora">Fecha y hora en la que tomaste la experiencia:</label>
+                        <input class=" m-3" type="date" name="fecha-aplic"
+                            placeholder="fecha en la que tomaste el curso">
+                        <input class="m-2 " type="time" name="hora-aplic"
+                            placeholder="fecha en la que tomaste el curso">
+                        <label for="tipo de experiencia">¿Qué tipo de experiencia tomaste?:</label>
+                        <input type="radio" name="gender" value="virtual" checked> Virtual<br>
+                        <input type="radio" name="gender" value="presencial"> Presencial<br>
+                        <textarea name="message" placeholder="Comentarios" class="mt-4"></textarea>
+                        <button type="submit" class="mt-5 mb-4 d-block enviar-mensaje">Enviar</button>
+                        <input type="hidden" name="_next" value="https://smartcenter.up.edu.mx/success" />
+                        <input type="hidden" name="_subject" value="Trámite de diploma" />
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--	*** end diplomas ***	-->
+
+    <!------------------------------------------------->
+    <!--	end modals	-->
+    <!------------------------------------------------->
+
     <!------------------------------------------------->
     <!--	footer	-->
     <!------------------------------------------------->

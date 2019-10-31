@@ -113,14 +113,12 @@ mark {
         "intro intro intro intro"
         "link1 link1 link2 link2"
         "link1 link1 link2 link2"
+        "diplomas diplomas diplomas diplomas"
         "testimonials testimonials testimonials testimonials"
         "testimonials testimonials testimonials testimonials"
         "facebook rate rate rate"
         "youtube rate rate rate"
         "instagram rate rate rate"
-
-
-
     ;
 }
 
@@ -137,11 +135,10 @@ mark {
             "news news news news intro intro intro"
             "news news news news link1 link1 link1"
             "news news news news link2 link2 link2"
+            "news news news news diplomas diplomas diplomas"
             "rate rate  facebook testimonials testimonials testimonials testimonials"
             "rate rate  youtube testimonials testimonials testimonials testimonials"
             "rate rate  instagram testimonials testimonials testimonials testimonials"
-
-
         ;
     }
 }
@@ -158,9 +155,8 @@ mark {
             "meetingBack banner banner banner banner banner banner banner news news news news "
             "reloadBack banner banner banner banner banner banner banner news news news news "
             "intro intro intro intro intro intro link1 link1 news news news news "
-            "intro intro intro intro intro intro link1 link1 news news news news "
             "intro intro intro intro intro intro link2 link2 news news news news "
-            "intro intro intro intro intro intro link2 link2 news news news news "
+            "intro intro intro intro intro intro diplomas diplomas news news news news "
             "rate rate facebook testimonials testimonials testimonials testimonials testimonials news news news news "
             "rate rate youtube testimonials testimonials testimonials testimonials testimonials news news news news "
             "rate rate instagram testimonials testimonials testimonials testimonials testimonials news news news news "
@@ -274,6 +270,25 @@ mark {
     color: #fff;
 }
 
+#diplomas {
+    grid-area: diplomas;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    background-color: rgb(161, 34, 34);
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    color: #fff;
+}
+
+#diplomas>.fas {
+    font-size: 3rem;
+}
+
 /*###################################################*/
 /*...................................................*/
 /* end grid */
@@ -346,7 +361,53 @@ mark {
     height: inherit;
 }
 
+/*-------------------------------*/
+/* form y modal para diplomas */
+/*-------------------------------*/
+#diplomasModalHeader {
+    background-color: var(--smartYellow);
+}
 
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.7rem;
+    padding: 3rem;
+}
+
+#contact-form label {
+    color: rgb(88, 86, 86);
+
+}
+
+#contact-form input[type=email],
+#contact-form input[type=text] {
+    margin: 0.7rem 0;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+#contact-form textarea {
+    width: 100%;
+}
+
+#contact-form textarea:focus {
+    height: 190px;
+    overflow: auto;
+}
+
+.enviar-mensaje {
+    width: 50%;
+    height: 2.5rem;
+    background-color: var(--smartYellow);
+    color: rgb(0, 0, 0);
+}
+
+
+/*-------------------------------*/
+/* end form */
+/*-------------------------------*/
 
 
 /*###################################################*/
