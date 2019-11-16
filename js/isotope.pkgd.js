@@ -4083,7 +4083,6 @@ var getText = docElem.textContent ?
     var layoutMode = this.options.layoutMode;
     var mode = this.modes[ layoutMode ];
     if ( !mode ) {
-      // TODO console.error
       throw new Error( 'No layout mode: ' + layoutMode );
     }
     // HACK sync mode's options
