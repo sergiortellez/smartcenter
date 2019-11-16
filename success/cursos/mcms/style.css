@@ -1099,6 +1099,52 @@ a.video-popup-holder:hover img.popup-play {
 
 /* Fin cvmp*/
 
+/* communicate */
+
+#communicate {
+    background-color: rgb(26, 82, 31);
+    background-image: url("images/bImage/fondoVerdeOscuro.jpg");
+    background-position: center center;
+    background-size: auto;
+    z-index: 5;
+}
+
+#communicate .section-title-holder {
+    background-color: rgb(26, 82, 31);
+}
+
+#communicate .section-title-holder span {
+    color: #fff;
+}
+
+#communicate .section-content-holder {
+    padding-bottom: 0;
+}
+
+#communicate .important-text {
+    color: #284670;
+}
+
+
+#communicate .botonRojo {
+    color: #fff;
+    background-color: #b41c4c;
+    border-color: rgb(218, 114, 40);
+    font-size: 2vw;
+    padding: 1vw 3vw;
+}
+
+#communicate .titleBand {
+
+    background-color: #b41c4c;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 65%;
+}
+
+/* fin liderazgo */
+
 /* Curso en Video amarillo */
 
 #amarilloVideo {
