@@ -68,13 +68,9 @@ html {
 }
 
 body {
-    /* scroll spy */
     overflow-y: scroll;
     background-color: var(--brColor);
     color: var(--textColor);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 .linksGen {
@@ -141,22 +137,35 @@ body {
     font-size: 3rem;
 }
 
-.somos {
-    background-color: rgba(73, 125, 56, 0.5);
-    color: rgb(32, 73, 24);
-}
 
 /*-------------------------------*/
 /* botones colapse */
 /*-------------------------------*/
-
-.card-header {
-    background-color: rgba(73, 125, 56, 0.84);
+.card {
+    background-color: rgba(95, 223, 53, 0.84);
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     -ms-border-radius: 0px;
     -o-border-radius: 0px;
+    border: 0px;
+
+}
+
+.card-header:first-child {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+
+#headingTwo {
+    background-color: rgb(116, 2, 209);
+}
+
+#headingThree {
+    background-color: rgb(211, 104, 4);
 }
 
 .card-header>h5>button {
@@ -182,7 +191,7 @@ body {
 /*...................................................*/
 /*###################################################*/
 
-.grid {
+.grid-reload {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(10vh, auto);
@@ -211,7 +220,7 @@ body {
 
 /* tablet portrait up */
 @media (min-width: 768px) {
-    .grid {
+    .grid-reload {
         grid-template-columns: repeat(7, 1fr);
         grid-template-areas:
             "smartBack successBack meetingBack reloadBack banner banner banner "
@@ -233,21 +242,25 @@ body {
 
 /* tablet landscape up */
 @media (min-width: 1024.1px) {
-    .grid {
+    .grid-reload {
         grid-template-columns: repeat(12, 1fr);
         grid-template-areas:
             "smartBack banner banner banner banner banner banner banner news news news news "
             "successBack banner banner banner banner banner banner banner news news news news "
             "meetingBack banner banner banner banner banner banner banner news news news news "
-            "reloadBack banner banner banner banner banner banner banner news news news news "
-            "intro intro intro intro intro intro intro intro news news news news "
-            "intro intro intro intro intro intro intro intro news news news news "
-            "intro intro intro intro intro intro intro intro news news news news "
-            "intro intro intro intro intro intro intro intro news news news news "
-            "guia guia guia guia temas temas temas temas news news news news "
-            "guia guia guia guia temas temas temas temas news news news news "
-            "derechos derechos derechos faq faq problemas problemas asesores news news news news "
-            "derechos derechos derechos faq faq problemas problemas asesores news news news news "
+            "advisoryBack banner banner banner banner banner banner banner news news news news "
+            "intro intro intro intro intro intro servicios servicios news news news news "
+            "intro intro intro intro intro intro servicios servicios news news news news "
+            "intro intro intro intro intro intro principios principios news news news news "
+            "intro intro intro intro intro intro principios principios news news news news "
+            "acordeon acordeon acordeon acordeon acordeon acordeon acordeon acordeon news news news news "
+            "acordeon acordeon acordeon acordeon acordeon acordeon acordeon acordeon news news news news "
+            "acordeon acordeon acordeon acordeon acordeon acordeon acordeon acordeon news news news news "
+            "acordeon acordeon acordeon acordeon acordeon acordeon acordeon acordeon news news news news "
+            "acordeon acordeon acordeon acordeon acordeon acordeon acordeon acordeon news news news news "
+            "acordeon acordeon acordeon acordeon acordeon acordeon acordeon acordeon news news news news "
+            "acordeon acordeon acordeon acordeon acordeon acordeon acordeon acordeon news news news news "
+
         ;
     }
 }
@@ -270,9 +283,9 @@ body {
     background-color: var(--smartBlue);
 }
 
-#reloadBack {
-    grid-area: reloadBack;
-    background-color: var(--smartGreen);
+#advisoryBack {
+    grid-area: advisoryBack;
+    background-color: var(--smartRed);
 }
 
 #banner {
@@ -281,9 +294,54 @@ body {
 }
 
 #banner>img {
-    width: 40vw;
+    width: 26vw;
     height: auto;
 }
+
+#noticias {
+    grid-area: news;
+    background-color: #292f33;
+}
+
+#intro {
+    grid-area: intro;
+    background-color: var(--smartGreen);
+    font-size: 0.8rem;
+    padding: 1rem;
+    color: #fff;
+}
+
+#principios {
+    grid-area: principios;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(62, 16, 214);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: #fff;
+}
+
+#servicios {
+    grid-area: servicios;
+    background-color: rgb(39, 122, 216);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: #fff;
+}
+
+#acordeon {
+    grid-area: acordeon;
+    background-color: #292f33;
+
+}
+
+
+
+
 
 /*###################################################*/
 /*...................................................*/
@@ -293,76 +351,15 @@ body {
 
 /*###################################################*/
 /*...................................................*/
-/* grids */
+/* grids acordeon */
 /*...................................................*/
 /*###################################################*/
 
 
-/*-------------------------------*/
-/* inicio */
-/*-------------------------------*/
-
-.container-inicio {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(5rem, auto);
-    gap: 10px;
-}
-
-/* cellphone landscape up */
-@media (min-width: 576px) {
-    .container-inicio {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-auto-rows: minmax(5rem, auto);
-        gap: 10px;
-    }
-}
-
-/* end cellphone landscape up */
-
-#servicios {
-    background-color: rgb(39, 122, 216);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    color: #fff;
-}
-
-#mision {
-    background-color: rgb(206, 20, 20);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    color: #fff;
-}
-
-#metas {
-    background-color: rgb(201, 150, 9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    color: #fff;
-}
-
-#principios {
-    background-color: rgb(62, 16, 214);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    color: #fff;
-}
-
-/*-------------------------------*/
-/* end inicio */
-/*-------------------------------*/
 
 
-/* end cellphone landscape up */
+
+
 /*-------------------------------*/
 /* artículos */
 /*-------------------------------*/
@@ -466,55 +463,7 @@ body {
 /* end modals */
 /*...................................................*/
 /*###################################################*/
-/*###################################################*/
-/*...................................................*/
-/* contact */
-/*...................................................*/
-/*###################################################*/
 
-#contact-form form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 0.7rem;
-    padding: 3rem;
-}
-
-#contact-form input[type=email],
-#contact-form input[type=text] {
-    margin: 0.7rem 0;
-    padding: 0.5rem;
-    width: 100%;
-}
-
-#contact-form textarea {
-    width: 100%;
-}
-
-#contact-form textarea:focus {
-    height: 190px;
-    overflow: auto;
-}
-
-.enviar-mensaje {
-    width: 50%;
-    height: 2.5rem;
-    background-color: #004b88;
-    color: #fff;
-}
-
-.selector {
-    width: 50%;
-    height: 2.5rem;
-    background-color: #004b88;
-    color: #fff;
-}
-
-/*###################################################*/
-/*...................................................*/
-/* end contact */
-/*...................................................*/
-/*###################################################*/
 
 /*###################################################*/
 /*...................................................*/
@@ -524,7 +473,6 @@ body {
 
 footer {
     background-color: #2e3338;
-
 }
 
 .footer {
