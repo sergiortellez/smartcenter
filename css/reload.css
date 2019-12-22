@@ -197,7 +197,7 @@ body {
     grid-auto-rows: minmax(10vh, auto);
     padding: 0px;
     grid-template-areas:
-        "smartBack successBack meetingBack reloadBack"
+        "smartBack successBack meetingBack advisoryBack"
         "banner banner banner banner"
         "banner banner banner banner"
         "intro intro intro intro"
@@ -211,11 +211,14 @@ body {
         "news news news news"
         "news news news news"
         "news news news news"
-        "guia guia guia guia"
-        "derechos derechos derechos derechos"
-        "temas temas temas temas"
-        "asesores asesores asesores asesores"
-        "faq faq problemas problemas";
+        "principios principios principios principios"
+        "servicios servicios servicios servicios"
+        "acordeon acordeon acordeon acordeon"
+        "acordeon acordeon acordeon acordeon"
+        "acordeon acordeon acordeon acordeon"
+        "acordeon acordeon acordeon acordeon"
+        "acordeon acordeon acordeon acordeon"
+    ;
 }
 
 /* tablet portrait up */
@@ -223,17 +226,19 @@ body {
     .grid-reload {
         grid-template-columns: repeat(7, 1fr);
         grid-template-areas:
-            "smartBack successBack meetingBack reloadBack banner banner banner "
+            "smartBack successBack meetingBack advisoryBack banner banner banner "
             "news news news news banner banner banner"
             "news news news news intro intro intro"
             "news news news news intro intro intro"
             "news news news news intro intro intro"
-            "news news news news guia guia guia"
-            "news news news news temas temas temas"
-            "news news news news derechos derechos derechos"
-            "news news news news asesores asesores asesores"
-            "news news news news faq faq faq"
-            "news news news news problemas problemas problemas"
+            "news news news news servicios servicios servicios"
+            "news news news news principios principios principios"
+            "news news news news principios principios principios"
+            "acordeon acordeon acordeon acordeon acordeon acordeon acordeon"
+            "acordeon acordeon acordeon acordeon acordeon acordeon acordeon"
+            "acordeon acordeon acordeon acordeon acordeon acordeon acordeon"
+            "acordeon acordeon acordeon acordeon acordeon acordeon acordeon"
+            "acordeon acordeon acordeon acordeon acordeon acordeon acordeon"
         ;
     }
 }
