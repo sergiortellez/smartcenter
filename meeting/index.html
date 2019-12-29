@@ -137,19 +137,25 @@
         </div>
         <!--	*** end intro ***	-->
 
-        <!--	*** servicios ***	-->
-        <button type="button" class="btn linksGen" id="servicios" data-toggle="modal" data-target=".serviciosModal">
-            <i class="fas fa-concierge-bell m-2"></i>
-            <span>Servicios</span>
+        <!--	*** Beneficios ***	-->
+        <button type="button" class="btn linksGen" id="beneficios" data-toggle="modal" data-target=".modalBeneficios">
+            <i class="fas fa-smile m-2"></i>
+            <span>Beneficios GEA</span>
         </button>
-        <!--	*** end servicios ***	-->
+        <!--	*** end beneficios ***	-->
 
-        <!--	*** principios ***	-->
-        <button type="button" class="btn linksGen" id="principios" data-toggle="modal" data-target=".principiosModal">
-            <i class="fas fa-ruler-combined m-2"></i>
-            <span>Principios</span>
+        <!--	*** únete ***	-->
+        <button type="button" class="btn linksGen" id="unete" data-toggle="modal" data-target=".modalUnete">
+            <i class="fas fa-edit m-2"></i>
+            <span>Únete a un GEA</span>
         </button>
-        <!--	*** end principios ***	-->
+        <!--	*** end únete ***	-->
+        <!--	*** únete ***	-->
+        <button type="button" class="btn linksGen" id="crea" data-toggle="modal" data-target=".modalCrea">
+            <i class="fas fa-hard-hat m-2"></i>
+            <span>Crea un GEA</span>
+        </button>
+        <!--	*** end únete ***	-->
     </section>
     <!------------------------------------------------->
     <!--	End Principal grid	-->
@@ -694,11 +700,11 @@
     <!--	*** end tedPosterMod ***	-->
 
     <!--	*** únete ***	-->
-    <div class="modal fade unete" tabindex="-1" role="dialog" aria-labelledby="unete" aria-hidden="true">
+    <div class="modal fade modalUnete" tabindex="-1" role="dialog" aria-labelledby="unete" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Quiero inscribirme a un grupo</h5>
+                    <h5 class="modal-title"> <i class="fas fa-edit m-1"></i> Quiero inscribirme a un grupo</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true" style="color: #fff;">&times;</span>
                     </button>
@@ -730,6 +736,115 @@
         </div>
     </div>
     <!--	*** end únete ***	-->
+
+    <!--	*** beneficios ***	-->
+    <div class="modal fade modalBeneficios" tabindex="-1" role="dialog" aria-labelledby="unete" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"> <i class="fas fa-smile m-2"></i> Beneficios de un GEA</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="color: #fff;">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="contact-form">
+
+                    <p>Como puedes ver, los GEA son creados y conformados por alumnos y cuentan con una implicación
+                        académica que potencia tu desarrollo personal y profesional más allá del salón de clases.</p>
+                    <p>¿Cuáles son los beneficios de un GEA?</p>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md beneficiosGrid"><i class="fas fa-money-check-alt mt-2"></i>Financiamiento
+                            </div>
+                            <div class="col-md beneficiosGrid"><i class="fas fa-chart-line mt-2"></i>Mayor alcance</div>
+                            <div class="col-md beneficiosGrid"><i class="fas fa-chalkboard-teacher m-2"></i> Guía de
+                                expertos</div>
+                        </div>
+                    </div>
+
+                    <p>Además, como miembro de un GEA:</p>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col beneficiosRow">
+                                <span class="bigLetters">CONECTAS</span><i class="fas fa-link m-1 bigLetters m-2"></i>
+                                con
+                                alianzas
+                                internas, externas,
+                                nacionales e
+                                internacionales.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col beneficiosRow">
+                                <span class="bigLetters">DESARROLLAS</span><i
+                                    class="fas fa-arrow-right bigLetters  m-2"></i>
+                                habilidades como liderazgo,
+                                comunicación,
+                                trabajo en equipo, negociación y
+                                más.
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col beneficiosRow">
+                                <span class="bigLetters">IMPACTAS</span><i class="fas fa-hand-rock bigLetters  m-2"></i>
+                                influyendo a la sociedad con cada
+                                acción que
+                                emprendes.
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--	*** end beneficios ***	-->
+
+    <!--	*** crea ***	-->
+    <div class="modal fade modalCrea" tabindex="-1" role="dialog" aria-labelledby="unete" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"> <i class="fas fa-hard-hat m-1"></i> Quiero Crear un GEA</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="color: #fff;">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="contact-form">
+                    <p>¿Tienes una idea que merece ser compartida? ¿Buscas financiamiento y guía para lograr mayor
+                        alcance?
+                        Meeting Point del SMART Center te invita a constituir tu GEA. Completa este formulario y pronto
+                        recibirás noticias nuestras... </p>
+                    <p>¡Te estamos buscando!</p>
+                    <form method="POST" action="https://formspree.io/mx_meetingpoint@up.edu.mx">
+                        <input class="d-block" type="email" name="email" placeholder="Tu email ">
+                        <input class="d-block" type="text" name="name" placeholder="Tu nombre completo">
+                        <input class="d-block" type="text" name="semestre" placeholder="Tu Semestre">
+                        <input class="d-block" type="text" name="carrera" placeholder="Tu Carrera">
+                        <input class="d-block" type="text" name="id" placeholder="Tu ID">
+                        <input class="d-block" type="text" name="gea" placeholder="Nombre tentativo de tu GEA">
+
+                        <select name="existe" class="selector">
+                            <option>¿Ya existe esta iniciativa? </option>
+                            <option value="si">sí</option>
+                            <option value="no">no</option>
+                        </select>
+                        <textarea name="donde" placeholder="Si ya existe especifica dónde" class="mt-4"></textarea>
+                        <textarea name="message" placeholder="Comentarios o dudas" class="mt-4"></textarea>
+                        <button type="submit" class="mt-5 mb-4 d-block enviar-mensaje">Enviar</button>
+                        <input type="hidden" name="_next" value="https://smartcenter.up.edu.mx/meeting" />
+                        <input type="hidden" name="_subject" value="Alguien quiere formar un grupo." />
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--	*** end crea ***	-->
 
     <!------------------------------------------------->
     <!--	end modals	-->

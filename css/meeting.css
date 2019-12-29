@@ -208,6 +208,45 @@ body {
 /* end botones colapse */
 /*-------------------------------*/
 
+/*-------------------------------*/
+/* modal beneficios */
+/*-------------------------------*/
+
+.beneficiosGrid {
+    background-color: rgb(11, 39, 117);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin: 0.3rem;
+    padding: 1rem;
+}
+
+.beneficiosGrid>i {
+
+    font-size: 2rem;
+
+}
+
+.beneficiosRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(16, 29, 104);
+    color: #fff;
+    margin: 0.3rem;
+    padding: 1rem;
+}
+
+.bigLetters {
+    font-size: 1.5rem;
+
+}
+
+/*-------------------------------*/
+/* end modal beneficios */
+/*-------------------------------*/
 
 /*###################################################*/
 /*...................................................*/
@@ -228,6 +267,8 @@ body {
     padding: 0px;
     grid-template-areas:
         "smartBack successBack reloadBack advisoryBack"
+        "video video video video"
+        "video video video video"
         "banner banner banner banner"
         "banner banner banner banner"
         "intro intro intro intro"
@@ -241,8 +282,8 @@ body {
         "news news news news"
         "news news news news"
         "news news news news"
-        "principios principios principios principios"
-        "servicios servicios servicios servicios"
+        "beneficios beneficios beneficios beneficios"
+        "unete unete unete unete"
         "acordeon acordeon acordeon acordeon"
         "acordeon acordeon acordeon acordeon"
         "acordeon acordeon acordeon acordeon"
@@ -257,13 +298,13 @@ body {
         grid-template-columns: repeat(7, 1fr);
         grid-template-areas:
             "smartBack successBack reloadBack advisoryBack banner banner banner "
-            "news news news news banner banner banner"
+            "video video video video banner banner banner"
+            "video video video video intro intro intro"
             "news news news news intro intro intro"
             "news news news news intro intro intro"
-            "news news news news intro intro intro"
-            "news news news news servicios servicios servicios"
-            "news news news news principios principios principios"
-            "news news news news principios principios principios"
+            "news news news news beneficios beneficios beneficios"
+            "news news news news unete unete unete"
+            "news news news news unete unete unete"
             "acordeon acordeon acordeon acordeon acordeon acordeon acordeon"
             "acordeon acordeon acordeon acordeon acordeon acordeon acordeon"
             "acordeon acordeon acordeon acordeon acordeon acordeon acordeon"
@@ -284,10 +325,10 @@ body {
             "successBack banner banner banner banner banner banner banner video video video video "
             "reloadBack banner banner banner banner banner banner banner news news news news "
             "advisoryBack banner banner banner banner banner banner banner news news news news "
-            "intro intro intro intro intro intro servicios servicios news news news news "
-            "intro intro intro intro intro intro servicios servicios news news news news "
-            "intro intro intro intro intro intro principios principios news news news news "
-            "intro intro intro intro intro intro principios principios news news news news "
+            "intro intro intro intro intro intro beneficios beneficios news news news news "
+            "intro intro intro intro intro intro beneficios beneficios news news news news "
+            "intro intro intro intro intro intro unete unete news news news news "
+            "intro intro intro intro intro intro unete unete news news news news "
             "acordeon acordeon acordeon acordeon acordeon acordeon acordeon acordeon news news news news "
             "acordeon acordeon acordeon acordeon acordeon acordeon acordeon acordeon news news news news "
             "acordeon acordeon acordeon acordeon acordeon acordeon acordeon acordeon news news news news "
@@ -353,11 +394,11 @@ body {
     color: yellow;
 }
 
-#principios {
-    grid-area: principios;
+#beneficios {
+    grid-area: beneficios;
     display: flex;
     flex-direction: column;
-    background-color: rgb(62, 16, 214);
+    background-color: rgb(12, 132, 231);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -365,9 +406,18 @@ body {
     color: #fff;
 }
 
-#servicios {
-    grid-area: servicios;
+#unete {
+    grid-area: unete;
     background-color: rgb(39, 122, 216);
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    color: #fff;
+}
+
+#crea {
+    grid-area: crea;
+    background-color: rgb(4, 29, 58);
     display: flex;
     justify-content: center;
     align-items: center;
