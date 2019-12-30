@@ -284,11 +284,10 @@ body {
         "news news news news"
         "beneficios beneficios beneficios beneficios"
         "unete unete unete unete"
-        "acordeon acordeon acordeon acordeon"
-        "acordeon acordeon acordeon acordeon"
-        "acordeon acordeon acordeon acordeon"
-        "acordeon acordeon acordeon acordeon"
-        "acordeon acordeon acordeon acordeon"
+        "crea crea crea crea"
+        "instagram instagram facebook facebook"
+        "youtube youtube youtube youtube"
+
     ;
 }
 
@@ -302,14 +301,10 @@ body {
             "video video video video intro intro intro"
             "news news news news intro intro intro"
             "news news news news intro intro intro"
+            "news news news news intro intro intro"
             "news news news news beneficios beneficios beneficios"
-            "news news news news unete unete unete"
-            "news news news news unete unete unete"
-            "acordeon acordeon acordeon acordeon acordeon acordeon acordeon"
-            "acordeon acordeon acordeon acordeon acordeon acordeon acordeon"
-            "acordeon acordeon acordeon acordeon acordeon acordeon acordeon"
-            "acordeon acordeon acordeon acordeon acordeon acordeon acordeon"
-            "acordeon acordeon acordeon acordeon acordeon acordeon acordeon"
+            "facebook  youtube  instagram crea crea unete unete"
+            "facebook  youtube  instagram crea crea unete unete"
         ;
     }
 }
@@ -329,8 +324,8 @@ body {
             "intro intro intro intro intro intro beneficios beneficios news news news news "
             "intro intro intro intro intro intro unete unete news news news news "
             "intro intro intro intro intro intro unete unete news news news news "
-            "acordeon acordeon acordeon acordeon acordeon acordeon acordeon acordeon news news news news "
-            "acordeon acordeon acordeon acordeon acordeon acordeon acordeon acordeon news news news news "
+            "facebook facebook youtube youtube instagram instagram crea crea news news news news "
+            "facebook facebook youtube youtube instagram instagram crea crea news news news news "
             "acordeon acordeon acordeon acordeon acordeon acordeon acordeon acordeon news news news news "
             "acordeon acordeon acordeon acordeon acordeon acordeon acordeon acordeon news news news news "
             "acordeon acordeon acordeon acordeon acordeon acordeon acordeon acordeon news news news news "
@@ -425,11 +420,28 @@ body {
     color: #fff;
 }
 
-#acordeon {
-    grid-area: acordeon;
-    background-color: #292f33;
 
+#facebook {
+    grid-area: facebook;
+    background-color: rgb(27, 50, 179);
+    color: #fff;
+    font-size: 3rem;
 }
+
+#youtube {
+    grid-area: youtube;
+    background-color: rgb(173, 16, 16);
+    color: #fff;
+    font-size: 3rem;
+}
+
+#instagram {
+    grid-area: instagram;
+    background-color: rgb(108, 16, 212);
+    color: #fff;
+    font-size: 3rem;
+}
+
 
 #video {
     grid-area: video;
