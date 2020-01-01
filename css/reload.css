@@ -142,7 +142,7 @@ body {
 /* botones colapse */
 /*-------------------------------*/
 .card {
-    background-color: rgba(95, 223, 53, 0.84);
+    background-color: rgba(16, 119, 47, 0.84);
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
@@ -161,11 +161,11 @@ body {
 }
 
 #headingTwo {
-    background-color: rgb(116, 2, 209);
+    background-color: #385a7d;
 }
 
 #headingThree {
-    background-color: rgb(211, 104, 4);
+    background-color: #387d5a;
 }
 
 .card-header>h5>button {
@@ -320,7 +320,7 @@ body {
     grid-area: principios;
     display: flex;
     flex-direction: column;
-    background-color: rgb(62, 16, 214);
+    background-color: #0d5833;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -330,7 +330,7 @@ body {
 
 #servicios {
     grid-area: servicios;
-    background-color: rgb(39, 122, 216);
+    background-color: #074615;
     display: flex;
     justify-content: center;
     align-items: center;

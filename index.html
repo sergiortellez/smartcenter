@@ -136,28 +136,32 @@
     <!------------------------------------------------->
     <!--	enlace a áreas	-->
     <!------------------------------------------------->
-    <!-- TODO: tooltip for sections -->
+
     <section class="container mt-5 mb-3">
         <div class="grid-sections-links">
-            <a href="success/index.html" class="links success">
+            <a href="success/index.html" class="links success" data-toggle="tooltip" data-placement="top"
+                title="Success Center">
                 <div class="pleca">
                     <img src="images/success-short.png" alt="" class="logos-link-bar-succes">
                 </div>
 
             </a>
-            <a href="meeting/index.html" class="links meeting">
+            <a href="meeting/index.html" class="links meeting" data-toggle="tooltip" data-placement="top"
+                title="Meeting Point">
                 <div class="pleca">
                     <img src="images/meeting-short.png" alt="" class="logos-link-bar">
                 </div>
 
             </a>
-            <a href="advisory/index.html" class="links advisory">
+            <a href="advisory/index.html" class="links advisory" data-toggle="tooltip" data-placement="top"
+                title="Advisory">
                 <div class="pleca">
                     <img src="images/advisory-short.png" alt="" class="logos-link-bar">
                 </div>
 
             </a>
-            <a href="reload/index.html" class="links reload">
+            <a href="reload/index.html" class="links reload" data-toggle="tooltip" data-placement="top"
+                title="Reload & Talent">
                 <div class="pleca">
                     <img src="images/reload-short.png" alt="" class="logos-link-bar">
                 </div>
@@ -766,7 +770,7 @@
         <div class="twitter">
             <a class="twitter-timeline" data-lang="es" data-width="100%" data-height="100%" data-dnt="true"
                 data-theme="dark" data-link-color="#E95F28" data-chrome="nofooter noheader"
-                href="https://twitter.com/SmartCenterUP/lists/smartcenter?ref_src=twsrc%5Etfw">A Twitter List by
+                href="https://twitter.com/SmartCenterUP?ref_src=twsrc%5Etfw">A Twitter List by
                 SMART CenterUP</a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
@@ -1233,6 +1237,12 @@
 
     <!-- custom scripts -->
     <script src="js/darkMode.js" type="text/javascript"></script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 </body>
 
 </html>
