@@ -114,6 +114,7 @@ mark {
         "link1 link1 link2 link2"
         "link1 link1 link2 link2"
         "diplomas diplomas diplomas diplomas"
+        "becarios becarios becarios becarios"
         "testimonials testimonials testimonials testimonials"
         "testimonials testimonials testimonials testimonials"
         "facebook rate rate rate"
@@ -136,6 +137,7 @@ mark {
             "news news news news link1 link1 link1"
             "news news news news link2 link2 link2"
             "news news news news diplomas diplomas diplomas"
+            "news news news news becarios becarios becarios"
             "rate rate  facebook testimonials testimonials testimonials testimonials"
             "rate rate  youtube testimonials testimonials testimonials testimonials"
             "rate rate  instagram testimonials testimonials testimonials testimonials"
@@ -155,8 +157,8 @@ mark {
             "meetingBack banner banner banner banner banner banner banner news news news news "
             "reloadBack banner banner banner banner banner banner banner news news news news "
             "intro intro intro intro intro intro link1 link1 news news news news "
-            "intro intro intro intro intro intro link2 link2 news news news news "
-            "intro intro intro intro intro intro diplomas diplomas news news news news "
+            "intro intro intro intro intro intro becarios becarios news news news news "
+            "intro intro intro intro intro intro diplomas link2 news news news news "
             "rate rate facebook testimonials testimonials testimonials testimonials testimonials news news news news "
             "rate rate youtube testimonials testimonials testimonials testimonials testimonials news news news news "
             "rate rate instagram testimonials testimonials testimonials testimonials testimonials news news news news "
@@ -289,6 +291,25 @@ mark {
     font-size: 3rem;
 }
 
+#becarios {
+    grid-area: becarios;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    background-color: rgb(199, 102, 11);
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    color: #fff;
+}
+
+#becarios>.fas {
+    font-size: 3rem;
+}
+
 /*###################################################*/
 /*...................................................*/
 /* end grid */
@@ -404,6 +425,17 @@ mark {
     color: rgb(0, 0, 0);
 }
 
+#becariosModalHeader {
+    background-color: rgb(199, 102, 11);
+    color: #fff;
+}
+
+.enviar-mensaje-becarios {
+    width: 50%;
+    height: 2.5rem;
+    background-color: rgb(199, 102, 11);
+    color: rgb(255, 255, 255);
+}
 
 /*-------------------------------*/
 /* end form */
