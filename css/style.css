@@ -860,6 +860,12 @@ body {
     font-weight: 200;
 }
 
+.w-big-number {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
 .b-number {
     color: #000;
     font-size: 3rem;
