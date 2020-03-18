@@ -64,7 +64,7 @@ html {
     scroll-behavior: smooth;
     /* font size general control using variable */
     font-size: var(--fs-b);
-
+    font-family: 'Monserrat', serif;
 }
 
 body {
@@ -159,7 +159,7 @@ body {
 
 #smartBack {
     grid-area: smartBack;
-    background-color: purple;
+    background-color: rgb(22, 21, 21);
 }
 
 #successBack {
@@ -200,25 +200,25 @@ body {
 
 #guia {
     grid-area: guia;
-    background-color: rgb(230, 209, 24);
-    color: #000;
+    background-color: rgb(199, 97, 97);
+    color: rgb(255, 255, 255);
 }
 
 #derechos {
     grid-area: derechos;
-    background-color: rgb(24, 55, 230);
+    background-color: rgb(214, 25, 25);
     color: #fff;
 }
 
 #temas {
     grid-area: temas;
-    background-color: rgb(9, 87, 9);
+    background-color: rgb(124, 21, 21);
     color: #fff;
 }
 
 #asesores {
     grid-area: asesores;
-    background-color: rgb(168, 44, 44);
+    background-color: rgb(179, 62, 62);
     color: #fff;
     display: flex;
 
@@ -230,7 +230,7 @@ body {
 
 #faq {
     grid-area: faq;
-    background-color: rgb(224, 96, 21);
+    background-color: rgb(68, 3, 3);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -239,7 +239,7 @@ body {
 
 #problemas {
     grid-area: problemas;
-    background-color: rgb(26, 116, 168);
+    background-color: rgb(104, 32, 32);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -284,7 +284,7 @@ body {
 }
 
 .pleca {
-    background-color: #000;
+    background-color: rgb(255, 255, 255);
     width: 3rem;
     height: 3rem;
     border-radius: 50%;

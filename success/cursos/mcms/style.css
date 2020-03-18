@@ -1,5 +1,5 @@
 body {
-    font-family: 'Aleo', sans-serif;
+    /* font-family: 'Aleo', sans-serif; */
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
@@ -505,12 +505,12 @@ a.video-popup-holder:hover img.popup-play {
 /* CONTACT SECTION */
 
 #contact {
-    background-color: rgb(34, 28, 90);
-    background-image: url("demo-images/background_img_05b.jpg");
+    background-color: rgb(187, 161, 22);
+    /* background-image: url("demo-images/background_img_05b.jpg"); */
     background-repeat: no-repeat;
     background-position: center top;
     background-size: auto;
-    z-index: 3;
+
 }
 
 #contact .section-title-holder {
@@ -884,7 +884,7 @@ a.video-popup-holder:hover img.popup-play {
 
 #oylb {
     background-color: #111111;
-    background-image: url("images/bImage/fondoNegro.jpg");
+    /* background-image: url("images/bImage/fondoNegro.jpg"); */
     background-position: center center;
     background-size: auto;
     z-index: 5;
@@ -972,8 +972,8 @@ a.video-popup-holder:hover img.popup-play {
 /* Liderazgo */
 
 #liderazgo {
-    background-color: #E86A11;
-    background-image: url("images/bImage/fondo-liderazgo.jpg");
+    background-color: rgb(151, 71, 14);
+    /* background-image: url("images/bImage/fondo-liderazgo.jpg"); */
     background-position: center center;
     background-size: auto;
     z-index: 5;
@@ -1019,7 +1019,7 @@ a.video-popup-holder:hover img.popup-play {
 
 #cvmp {
     background-color: #7b477a;
-    background-image: url("images/bImage/fondoMorado.jpg");
+    /* background-image: url("images/bImage/fondoMorado.jpg"); */
     background-position: center center;
     background-size: auto;
     z-index: 5;
@@ -1102,8 +1102,8 @@ a.video-popup-holder:hover img.popup-play {
 /* communicate */
 
 #communicate {
-    background-color: rgb(26, 82, 31);
-    background-image: url("images/bImage/fondoVerdeOscuro.jpg");
+    background-color: rgb(5, 54, 10);
+    /* background-image: url("images/bImage/fondoVerdeOscuro.jpg"); */
     background-position: center center;
     background-size: auto;
     z-index: 5;
@@ -1210,8 +1210,8 @@ a.video-popup-holder:hover img.popup-play {
 
 #contact {
     background-color: rgb(187, 161, 22);
-    background-image: url("images/bImage/fondoAmarillo.jpg");
-    background-repeat: repeat repeat;
+    /* background-image: url("images/bImage/fondoAmarillo.jpg"); */
+    /* background-repeat: repeat repeat; */
     z-index: 5;
 }
 

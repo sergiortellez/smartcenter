@@ -64,7 +64,7 @@ html {
     scroll-behavior: smooth;
     /* font size general control using variable */
     font-size: var(--fs-b);
-
+    font-family: 'Monserrat', serif;
 }
 
 body {
@@ -170,7 +170,7 @@ mark {
 
 #smartBack {
     grid-area: smartBack;
-    background-color: purple;
+    background-color: rgb(22, 21, 21);
 }
 
 #advisoryBack {
@@ -195,7 +195,7 @@ mark {
 
 #news {
     grid-area: news;
-    background-color: #2a2f32;
+    background-color: #9c863d;
 }
 
 #video {
@@ -210,7 +210,7 @@ mark {
 
 #link1 {
     grid-area: link1;
-    background-color: #4c4ac2;
+    background-color: #b39228;
     flex-direction: column;
 }
 
@@ -221,7 +221,7 @@ mark {
 
 #link2 {
     grid-area: link2;
-    background-color: #c24ac0;
+    background-color: #e6cc7a;
     flex-direction: column;
 
 }
@@ -233,7 +233,7 @@ mark {
 
 #testimonials {
     grid-area: testimonials;
-    background-color: rgb(6, 16, 71);
+    background-color: #756120;
     color: #fff;
 }
 
@@ -247,28 +247,28 @@ mark {
 
 #facebook {
     grid-area: facebook;
-    background-color: rgb(27, 50, 179);
+    background-color: #493e19;
     color: #fff;
     font-size: 3rem;
 }
 
 #youtube {
     grid-area: youtube;
-    background-color: rgb(173, 16, 16);
+    background-color: #e9bb23;
     color: #fff;
     font-size: 3rem;
 }
 
 #instagram {
     grid-area: instagram;
-    background-color: rgb(108, 16, 212);
+    background-color: #97760a;
     color: #fff;
     font-size: 3rem;
 }
 
 #rate {
     grid-area: rate;
-    background-color: rgb(18, 63, 6);
+    background-color: #e0c158;
     color: #fff;
 }
 
@@ -278,7 +278,7 @@ mark {
     flex-direction: column;
     align-content: center;
     justify-items: center;
-    background-color: rgb(161, 34, 34);
+    background-color: #ffd900;
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
@@ -297,7 +297,7 @@ mark {
     flex-direction: column;
     align-content: center;
     justify-items: center;
-    background-color: rgb(199, 102, 11);
+    background-color: #977506;
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
@@ -348,7 +348,7 @@ mark {
 }
 
 .pleca {
-    background-color: #000;
+    background-color: rgb(255, 245, 245);
     width: 3rem;
     height: 3rem;
     border-radius: 50%;

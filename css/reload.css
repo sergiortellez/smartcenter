@@ -64,6 +64,7 @@ html {
     scroll-behavior: smooth;
     /* font size general control using variable */
     font-size: var(--fs-b);
+    font-family: 'Monserrat', serif;
 
 }
 
@@ -99,7 +100,7 @@ body {
 }
 
 .pleca {
-    background-color: #000;
+    background-color: rgb(255, 255, 255);
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
@@ -275,7 +276,7 @@ body {
 
 #smartBack {
     grid-area: smartBack;
-    background-color: purple;
+    background-color: rgb(22, 21, 21);
 }
 
 #successBack {

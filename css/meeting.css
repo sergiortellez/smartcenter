@@ -64,6 +64,7 @@ html {
     scroll-behavior: smooth;
     /* font size general control using variable */
     font-size: var(--fs-b);
+    font-family: 'Monserrat', serif;
 
 }
 
@@ -101,7 +102,7 @@ body {
 }
 
 .pleca {
-    background-color: #000;
+    background-color: rgb(255, 255, 255);
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
@@ -345,7 +346,7 @@ body {
 
 #smartBack {
     grid-area: smartBack;
-    background-color: purple;
+    background-color: rgb(22, 21, 21);
 }
 
 #successBack {
@@ -434,14 +435,14 @@ body {
 
 #youtube {
     grid-area: youtube;
-    background-color: rgb(173, 16, 16);
+    background-color: rgb(61, 77, 121);
     color: #fff;
     font-size: 3rem;
 }
 
 #instagram {
     grid-area: instagram;
-    background-color: rgb(108, 16, 212);
+    background-color: rgb(39, 40, 75);
     color: #fff;
     font-size: 3rem;
 }
