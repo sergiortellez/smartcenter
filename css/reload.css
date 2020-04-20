@@ -162,7 +162,7 @@ body {
 }
 
 #headingTwo {
-    background-color: #385a7d;
+    background-color: #27a365;
 }
 
 #headingThree {
@@ -214,6 +214,10 @@ body {
         "news news news news"
         "principios principios principios principios"
         "servicios servicios servicios servicios"
+        "cita cita cita cita"
+        "instagram instagram instagram instagram"
+        "rate rate rate rate"
+        "rate rate rate rate"
         "acordeon acordeon acordeon acordeon"
         "acordeon acordeon acordeon acordeon"
         "acordeon acordeon acordeon acordeon"
@@ -235,6 +239,8 @@ body {
             "news news news news servicios servicios servicios"
             "news news news news principios principios principios"
             "news news news news principios principios principios"
+            "cita cita instagram instagram rate rate rate"
+            "cita cita instagram instagram rate rate rate"
             "acordeon acordeon acordeon acordeon acordeon acordeon acordeon"
             "acordeon acordeon acordeon acordeon acordeon acordeon acordeon"
             "acordeon acordeon acordeon acordeon acordeon acordeon acordeon"
@@ -251,21 +257,20 @@ body {
     .grid-reload {
         grid-template-columns: repeat(12, 1fr);
         grid-template-areas:
-            "smartBack banner banner banner banner banner banner banner news news news news "
-            "successBack banner banner banner banner banner banner banner news news news news "
-            "meetingBack banner banner banner banner banner banner banner news news news news "
-            "advisoryBack banner banner banner banner banner banner banner news news news news "
-            "intro intro intro intro intro intro servicios servicios news news news news "
-            "intro intro intro intro intro intro servicios servicios news news news news "
-            "intro intro intro intro intro intro principios principios news news news news "
-            "intro intro intro intro intro intro principios principios news news news news "
-            "acordeon acordeon acordeon acordeon acordeon acordeon acordeon acordeon news news news news "
-            "acordeon acordeon acordeon acordeon acordeon acordeon acordeon acordeon news news news news "
-            "acordeon acordeon acordeon acordeon acordeon acordeon acordeon acordeon news news news news "
-            "acordeon acordeon acordeon acordeon acordeon acordeon acordeon acordeon news news news news "
-            "acordeon acordeon acordeon acordeon acordeon acordeon acordeon acordeon news news news news "
-            "acordeon acordeon acordeon acordeon acordeon acordeon acordeon acordeon news news news news "
-            "acordeon acordeon acordeon acordeon acordeon acordeon acordeon acordeon news news news news "
+            "smartBack banner banner banner banner banner banner banner banner news news news "
+            "successBack banner banner banner banner banner banner banner banner news news news "
+            "meetingBack banner banner banner banner banner banner banner banner news news news "
+            "advisoryBack banner banner banner banner banner banner banner banner news news news "
+            "intro intro intro intro intro intro servicios servicios servicios news news news "
+            "intro intro intro intro intro intro servicios servicios servicios news news news "
+            "intro intro intro intro intro intro principios principios principios news news news "
+            "intro intro intro intro intro intro principios principios principios news news news "
+            "acordeon acordeon acordeon acordeon acordeon acordeon cita cita cita news news news "
+            "acordeon acordeon acordeon acordeon acordeon acordeon cita cita cita news news news "
+            "acordeon acordeon acordeon acordeon acordeon acordeon instagram instagram instagram news news news "
+            "acordeon acordeon acordeon acordeon acordeon acordeon instagram instagram instagram news news news "
+            "acordeon acordeon acordeon acordeon acordeon acordeon rate rate rate news news news "
+            "acordeon acordeon acordeon acordeon acordeon acordeon rate rate rate news news news "
 
         ;
     }
@@ -312,8 +317,8 @@ body {
 #intro {
     grid-area: intro;
     background-color: var(--smartGreen);
-    font-size: 0.8rem;
-    padding: 1rem;
+    font-size: 1.1rem;
+    padding: 2rem;
     color: #fff;
 }
 
@@ -333,9 +338,45 @@ body {
     grid-area: servicios;
     background-color: #074615;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    color: #fff;
+}
+
+#instagram {
+    grid-area: instagram;
+    background-color: #074615d7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: #fff;
+    font-size: 5rem;
+}
+
+#cita {
+    grid-area: cita;
+    background-color: #0f8029fd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: #fff;
+}
+
+#rate {
+    grid-area: rate;
+    background-color: #2b4d32f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    padding-top: 2rem;
     color: #fff;
 }
 
@@ -346,7 +387,29 @@ body {
 }
 
 
+/*-------------------------------*/
+/* rate */
+/*-------------------------------*/
 
+.rate-question {
+    white-space: nowrap;
+    font-size: 0.7rem;
+    margin-top: 0.3rem;
+}
+
+.rate-answer {
+    white-space: nowrap;
+    font-size: 0.8rem;
+
+}
+
+.rate-title {
+    white-space: nowrap;
+}
+
+/*-------------------------------*/
+/* end rate */
+/*-------------------------------*/
 
 
 /*###################################################*/
@@ -375,13 +438,14 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 15rem;
     gap: 10px;
+    background-color: rgb(9, 46, 21);
 }
 
 /* cellphone landscape up */
 @media (min-width: 576px) {
     .container-articulos {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: 15rem;
         gap: 10px;
     }
@@ -446,18 +510,19 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 10rem;
     gap: 10px;
+    background-color: rgb(9, 46, 21);
 }
 
 /* cellphone landscape up */
 @media (min-width: 576px) {
     .container-recursos {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 /* end cellphone landscape up */
 .recursos {
-    background-color: rgb(218, 117, 23);
+    background-color: #33864e;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -468,6 +533,7 @@ body {
 
 .recursos:hover {
     text-decoration: none;
+    color: rgb(9, 46, 21);
 }
 
 .recursos>span {
@@ -498,7 +564,7 @@ body {
 /*###################################################*/
 
 .modal-header {
-    background-color: var(--smartBlue);
+    background-color: var(--smartGreen);
     color: #fff;
     border-radius: 0px;
     -webkit-border-radius: 0px;
@@ -511,6 +577,93 @@ body {
     border: 5px solid #fff;
     padding: 0;
 }
+
+/*-------------------------------*/
+/* servicios */
+/*-------------------------------*/
+.container-servicios {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 1rem;
+
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .container-servicios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* end tablet up */
+
+.container-servicios>.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    border: 1px solid #1762143a;
+    padding: 1rem;
+}
+
+.container-servicios>.btn>img {
+    width: 90%;
+    height: auto;
+}
+
+
+
+
+/*-------------------------------*/
+/* end servicios */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* cita */
+/*-------------------------------*/
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.7rem;
+}
+
+#contact-form>form {
+    width: 70%;
+}
+
+#contact-form label {
+    color: rgb(88, 86, 86);
+
+}
+
+#contact-form input[type=email],
+#contact-form input[type=text] {
+    margin: 0.7rem 0;
+    padding: 0.2rem;
+    width: 100%;
+}
+
+#contact-form textarea {
+    width: 100%;
+}
+
+#contact-form textarea:focus {
+    height: 190px;
+    overflow: auto;
+}
+
+.enviar-mensaje {
+    width: 100%;
+    height: 2.5rem;
+    background-color: var(--smartGreen);
+    color: #fff;
+}
+
+/*-------------------------------*/
+/* end cita */
+/*-------------------------------*/
 
 /*###################################################*/
 /*...................................................*/
