@@ -74,6 +74,8 @@
         <div id="intro">
             <p class="text-justify p-4"><img src="../images/asesoria.jpg" alt="asesoria" class="imgAsesoria"> ¡No estás
                 solo! <br>
+
+                Al comienzo de los primeros semestres el coordinador de asesores de tu facultad o escuela asigna a cada alumno un asesor y te reenvía esta información en un mail ¿ya lo conoces? ¿ya están en contacto?<br>
                 El asesor universitario <i class="fas fa-user-graduate"></i> te apoyará siendo un guía <i class="fas fa-map-signs"></i> en todo lo que
                 tenga que ver con
                 tu rendimiento académico <i class="fas fa-graduation-cap"></i> y en la formación de competencias
@@ -87,7 +89,7 @@
         <!--	*** end intro ***	-->
         <!--	*** modal title grid ***	-->
         <button id="guia" type="button" class="btn linksGen" data-toggle="modal" data-target="#modalGuia">
-            <i class="fas fa-shoe-prints mr-2"></i> <span>Guía para asesorías</span>
+            <i class="fas fa-shoe-prints mr-2"></i> <span>Pasos de la AU</span>
         </button>
         <button id="temas" type="button" class="btn linksGen" data-toggle="modal" data-target="#modalTemas">
             <i class="fas fa-comments mr-2"></i> <span>Temas a tratar con tu asesor</span>
@@ -189,10 +191,6 @@
                     </div>
                     <div class="modal-body m-o p-0 containerDerechos">
                         <div class="derecho">
-                            <i class="fas fa-gift mr-2"></i>
-                            <span>Recibir los servicios de tu asesor.</span>
-                        </div>
-                        <div class="derecho">
                             <i class="fas fa-mobile mr-3"></i>
                             <span>Mantener una comunicación
                                 constante con su asesor y sus
@@ -206,7 +204,7 @@
                         </div>
                         <div class="derecho">
                             <i class="fas fa-handshake mr-2"></i>
-                            <span>Contar con el apoyo de su asesor.</span>
+                            <span>Recibir los servicios y contar con el apoyo de su asesor.</span>
                         </div>
                         <div class="obligacion">
                             <i class="fas fa-clock mr-2"></i>
@@ -292,6 +290,40 @@
                     </div>
                     <div class="modal-body container-fluid pt-1 pb-1">
                         <div class="accordion" id="accordionFaq">
+                            <div class="card">
+                                <div class="card-header card-header-faq" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed w-100 btn-acordeon-faq" type="button" data-toggle="collapse" data-target="#collapseCero" aria-expanded="true" aria-controls="collapseOne">
+                                            ¿Para que la AU?
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseCero" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFaq">
+                                    <div class="card-body">
+                                        <p>
+                                            Un acompañamiento para ayudarte a adaptarte al campus.
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                Puede proporcionarte información valiosa sobre los procesos y peculiaridades de tu carrera.
+                                            </li>
+                                            <li>
+                                                Te puede vincular a otras áreas de la universidad según se te ofrezca.
+                                            </li>
+                                            <li>
+                                                Proporciona tips de como tomar apuntes, preparar exámenes y recursos para la investigación.
+                                            </li>
+                                            <li>
+                                                Ayuda en tu proceso de autoconocimiento: intereses, áreas de mejora.
+                                            </li>
+                                            <li>
+                                                Acompaña en la construcción de tu plan personal, académico y profesional
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="card">
                                 <div class="card-header card-header-faq" id="headingOne">
                                     <h2 class="mb-0">
@@ -382,6 +414,7 @@
                         </button>
                     </div>
                     <div class="modal-body container-fluid pt-1 pb-1">
+
                         <p class="text-justify">Para nosotros es muy importante que estés satisfecho <i class="fas fa-smile"></i> con el programa de
                             asesores, si ha surgido algún problema <i class="fas fa-thumbs-down"></i> o piensas que lo
                             mejor para ti es cambiar de asesor,
@@ -394,6 +427,8 @@
                                 <input class="d-block" type="text" name="semestre" placeholder="Tu Semestre">
                                 <input class="d-block" type="text" name="carrera" placeholder="Tu Carrera">
                                 <textarea name="message" placeholder="Escribe un mensaje aquí" class="mt-4"></textarea>
+
+                                <h6 class="text-danger">*Recuerda que alternativamente puedes completar este trámite avisándole directamente al coordinador de AU de tu facultad o escuela.</h6>
                                 <button type="submit" class="mt-4 mb-4 d-block enviar-mensaje">Enviar</button>
                                 <input type="hidden" name="_next" value="https://smartcenter.up.edu.mx/advisory" />
                                 <input type="hidden" name="_subject" value="Cambio de asesor" />
