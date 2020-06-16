@@ -1,0 +1,147 @@
+/*###################################################*/
+/*...................................................*/
+/* root variables (responsive font size installed)   */
+/*...................................................*/
+/*###################################################*/
+
+:root {
+    /* font-size */
+    --fs-b: 14px;
+    /* custom colors */
+    --smartRed: #A41C1D;
+    --smartBlue: #1c5396;
+    --smartGreen: #497D38;
+    --smartYellow: #c7a534;
+}
+
+/* tablet up */
+@media (min-width: 768px) {
+    :root {
+        /* font-size */
+        --fs-b: 16px;
+    }
+}
+
+/* end tablet up */
+
+/* laptop up */
+@media (min-width: 1279px) {
+    :root {
+        /* font-size */
+        --fs-b: 18px;
+    }
+}
+
+/* end laptop up */
+
+/* desktop up */
+@media (min-width: 1300px) {
+    :root {
+        /* font-size */
+        --fs-b: 22px;
+    }
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end root variables                                */
+/*...................................................*/
+/*###################################################*/
+
+
+/*###################################################*/
+/*...................................................*/
+/* general properties                                */
+/*...................................................*/
+/*###################################################*/
+
+html {
+    /* scroll smooth from nav control */
+    scroll-behavior: smooth;
+    /* font size general control using variable */
+    font-size: var(--fs-b);
+
+}
+
+body {
+    /* scroll spy */
+    overflow-y: scroll;
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end general properties                            */
+/*...................................................*/
+/*###################################################*/
+
+/*###################################################*/
+/*...................................................*/
+/* custom properties */
+/*...................................................*/
+/*###################################################*/
+.navbar {
+    background-color: var(--smartGreen);
+}
+
+.navbar>* {
+    color: #ffffff;
+}
+
+/* cellphone landscape up */
+@media (min-width: 576px) {
+    .dos_columnas {
+        column-count: 2;
+        column-gap: 4rem;
+    }
+}
+
+/* end cellphone landscape up */
+
+
+.biblio {
+    font-size: 0.6rem;
+}
+
+.contenedor {
+    display: block;
+
+}
+
+/* cellphone landscape up */
+@media (min-width: 576px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: auto;
+        gap: 3px;
+    }
+}
+
+/* end cellphone landscape up */
+
+
+.contenedor>div {
+    padding: 0.6rem;
+    background-color: rgb(233, 224, 224);
+
+}
+
+.header-table {
+    padding: 1.3rem;
+    background-color: var(--smartGreen) !important;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor-boton {
+    margin-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end custom properties */
+/*...................................................*/
+/*###################################################*/
