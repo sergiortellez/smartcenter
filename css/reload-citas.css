@@ -1,0 +1,4 @@
+/* asegurarse de que el fondo siempre sea negro en toda la pantalla haciendo que el iframe extienda su fondo hacia abajo. */
+iframe {
+    min-height: 100vh;
+}
