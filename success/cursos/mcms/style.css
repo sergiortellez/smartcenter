@@ -1126,7 +1126,7 @@ a.video-popup-holder:hover img.popup-play {
 }
 
 
-#communicate .botonRojo {
+.boton_comun {
     color: #fff;
     background-color: #b41c4c;
     border-color: rgb(218, 114, 40);
@@ -1143,7 +1143,53 @@ a.video-popup-holder:hover img.popup-play {
     width: 65%;
 }
 
-/* fin liderazgo */
+/* fin cB */
+
+/* resiliencia */
+
+#resiliencia {
+    background-color: rgb(56, 58, 65);
+    /* background-image: url("images/bImage/fondoVerdeOscuro.jpg"); */
+    background-position: center center;
+    background-size: auto;
+    z-index: 5;
+}
+
+#resiliencia .section-title-holder {
+    background-color: rgb(43, 40, 36);
+}
+
+#resiliencia .section-title-holder span {
+    color: #fff;
+}
+
+#resiliencia .section-content-holder {
+    padding-bottom: 0;
+}
+
+#resiliencia .important-text {
+    color: #284670;
+}
+
+
+#resiliencia .botonRojo {
+    color: #fff;
+    background-color: #534e4f;
+    border-color: rgb(218, 114, 40);
+    font-size: 2vw;
+    padding: 1vw 3vw;
+}
+
+#resiliencia .titleBand {
+
+    background-color: #534e4f;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 65%;
+}
+
+/* fin resiliencia */
 
 /* Curso en Video amarillo */
 
