@@ -1,0 +1,550 @@
+/*###################################################*/
+/*...................................................*/
+/* root variables (responsive font size installed)   */
+/*...................................................*/
+/*###################################################*/
+
+:root {
+    /* font size */
+    --fs-b: 14px;
+    /* custom colors */
+    --smartRed: #A41C1D;
+    --smartBlue: #1c5396;
+    --smartGreen: #497D38;
+    --smartYellow: #c7a534;
+    /* theme colors */
+    --brColor: #dfdfdf;
+    --textColor: #000;
+    --orangeBtn: rgb(97, 90, 90);
+}
+
+/* tablet up */
+@media (min-width: 768px) {
+    :root {
+        /* font size */
+        --fs-b: 16px;
+    }
+}
+
+/* end tablet up */
+
+/* laptop up */
+@media (min-width: 991px) {
+    :root {
+        /* font size */
+        --fs-b: 18px;
+    }
+}
+
+/* end laptop up */
+
+/* desktop up */
+@media (min-width: 1300px) {
+    :root {
+        /* font size */
+        --fs-b: 22px;
+    }
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end root variables                                */
+/*...................................................*/
+/*###################################################*/
+
+
+/*###################################################*/
+/*...................................................*/
+/* general properties */
+/*...................................................*/
+/*###################################################*/
+
+html {
+    /* scroll smooth from nav control */
+    scroll-behavior: smooth;
+    /* font size general control using variable */
+    font-size: var(--fs-b);
+    font-family: 'Monserrat', serif;
+
+}
+
+body {
+
+    background-color: var(--brColor);
+    color: var(--textColor);
+
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end general properties */
+/*...................................................*/
+/*###################################################*/
+
+/*###################################################*/
+/*...................................................*/
+/* custom styles */
+/*...................................................*/
+/*###################################################*/
+
+/*-------------------------------*/
+/* header */
+/*-------------------------------*/
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+/* cellphone landscape up */
+@media (min-width: 576px) {
+    header {
+        flex-direction: row;
+    }
+}
+
+/* end cellphone landscape up */
+
+.logo-y-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 3rem;
+}
+
+/* general Stats */
+
+.generalStats>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+
+.generalStats>div>div {
+    text-align: center;
+    margin-left: 0.4rem;
+}
+
+.generalStats .fad {
+    font-size: 3.3rem;
+}
+
+.icon-stats {
+    font-size: 3rem;
+}
+
+/* end general stats */
+
+/*-------------------------------*/
+/* end header */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* grid ssecciones */
+/*-------------------------------*/
+
+#grid-secciones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 1.4rem;
+}
+
+/* cellphone landscape up */
+@media (min-width: 576px) {
+    #grid-secciones {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* end cellphone landscape up */
+
+#grid-secciones>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#grid-secciones .fad {
+    font-size: 3rem;
+    margin-left: 1rem;
+}
+
+.success {
+    background-color: var(--smartYellow);
+    color: white;
+
+}
+
+.meeting {
+    background-color: var(--smartBlue);
+    color: white;
+}
+
+.advisory {
+    background-color: var(--smartRed);
+    color: white;
+}
+
+.reload {
+    background-color: var(--smartGreen);
+    color: white;
+}
+
+/*-------------------------------*/
+/* end grid ssecciones */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* reporte semanal */
+/*-------------------------------*/
+
+#reportesemanal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+}
+
+#reportesemanal .fad {
+    font-size: 3rem;
+    margin-right: 1rem;
+    color: green;
+}
+
+#reportesemanal p {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+#reportesemanal a {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-style: none;
+    background-color: gray;
+    color: whitesmoke;
+}
+
+#reportesemanal a:hover {
+    cursor: pointer;
+    color: black;
+    background-color: #fff;
+}
+
+/*-------------------------------*/
+/* end reporte semanal */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* título */
+/*-------------------------------*/
+
+#intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(36, 108, 224);
+    color: white;
+    min-height: 10rem;
+    font-size: 1.4rem;
+    text-align: center;
+
+}
+
+/*-------------------------------*/
+/* end título */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* secciones individuales */
+/*-------------------------------*/
+
+/* id necesario para que funcione el collapsable de bootstrap, se aprovechó para cear el grid */
+#grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 2.5rem;
+    grid-auto-rows: minmax(12rem, auto);
+    gap: 4px;
+    min-height: 50vh;
+    padding: none;
+}
+
+/* cellphone landscape up */
+@media (min-width: 576px) {
+    #grid {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 1rem;
+    }
+}
+
+/* end cellphone landscape up */
+
+#grid div {
+    padding: none;
+    margin: none;
+}
+
+
+/* cellphone landscape up */
+@media (min-width: 576px) {
+    .detalle-seccion {
+        grid-column: span 4;
+    }
+}
+
+/* end cellphone landscape up */
+
+/* cellphone landscape up */
+@media (min-width: 576px) {
+    .detalle-seccion {
+        grid-column: span 4;
+        padding: 2rem;
+    }
+}
+
+/* tablet portrait up */
+@media (min-width: 980px) {
+    .detalle-seccion {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* end tablet up */
+/* end cellphone landscape up */
+
+.img-planet {
+    width: 4rem;
+    margin-left: 0.5rem;
+}
+
+
+/*-------------------------------*/
+/* end ssecciones individuales */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* botones secciones */
+/*-------------------------------*/
+
+button:focus {
+    outline: none !important;
+}
+
+button[aria-expanded="true"] {
+    background-color: var(--textColor) !important;
+    border: solid 9px rgb(0, 153, 255);
+}
+
+.botones-secciones {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    padding: 0;
+    background: var(--textColor);
+    color: white;
+    border-radius: 6px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    padding: 0.2rem;
+
+}
+
+.secciones-logos {
+    width: 9rem;
+}
+
+.succes-logo {
+    width: 5rem;
+
+}
+
+/* override bootstrap collapse animation */
+.collapsing {
+    -webkit-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    transition: all .1s ease-out;
+    -moz-transition: all .1s ease-out;
+    -ms-transition: all .1s ease-out;
+}
+
+/*-------------------------------*/
+/* end botones secciones */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* secciones individuales */
+/*-------------------------------*/
+
+/* succces */
+
+#success-stats-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+    width: 100%;
+}
+
+/* cellphone landscape up */
+@media (min-width: 576px) {
+    #success-stats-container {
+        flex-direction: row;
+        margin: none;
+        padding: none;
+        justify-content: space-between;
+    }
+}
+
+/* end cellphone landscape up */
+
+/* grid succes */
+#grid-succes {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+#titulo-cursos {
+    background-color: rgb(230, 230, 80);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+#cursos {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+}
+
+#titulo-asesorias {
+    background-color: rgb(119, 119, 3);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+#asesorias {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+}
+
+#titulo-puntuales {
+    background-color: rgb(155, 155, 138);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+#puntuales {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    grid-auto-rows: auto;
+    font-size: 0.9rem;
+    gap: 0.5rem;
+}
+
+.participantes {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+/* end grid succes */
+
+/* news */
+#news {
+    height: 30rem;
+    width: 25rem;
+}
+
+/* end news */
+
+/* end succes */
+
+
+
+
+.equipo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+
+}
+
+.becarios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/*-------------------------------*/
+/* end secciones individuales */
+/*-------------------------------*/
+
+/*###################################################*/
+/*...................................................*/
+/* end custom styles */
+/*...................................................*/
+/*###################################################*/
+
+/*###################################################*/
+/*...................................................*/
+/* footer */
+/*...................................................*/
+/*###################################################*/
+
+footer {
+    background-color: #2e3338;
+}
+
+.footer {
+    font-size: 0.7rem;
+    /* clear: both; */
+    color: #9a9a9a;
+    padding: 2rem 4rem;
+}
+
+.footerLi {
+    list-style: none;
+}
+
+.footer a {
+    color: #9a9a9a;
+}
+
+.footer a :hover {
+    color: yellow;
+}
+
+.social-footer a {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.logoFooter {
+    width: 13rem;
+    height: 4.3rem;
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end footer */
+/*...................................................*/
+/*###################################################*/
