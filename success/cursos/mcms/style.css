@@ -1191,6 +1191,54 @@ a.video-popup-holder:hover img.popup-play {
 
 /* fin resiliencia */
 
+/* negociación */
+
+#negotiate {
+    background-color: rgb(216, 18, 97);
+    /* background-image: url("images/bImage/fondoVerdeOscuro.jpg"); */
+    background-position: center center;
+    background-size: auto;
+    z-index: 5;
+}
+
+#negotiate .section-title-holder {
+    background-color: rgb(147, 14, 7);
+}
+
+#negotiate .section-title-holder span {
+    color: #fff;
+}
+
+#negotiate .section-content-holder {
+    padding-bottom: 0;
+}
+
+#negotiate .important-text {
+    color: #284670;
+}
+
+
+.boton_comun {
+    color: #fff;
+    background-color: #b41c4c;
+    border-color: rgb(218, 114, 40);
+    font-size: 2vw;
+    padding: 1vw 3vw;
+}
+
+#negotiate .titleBand {
+
+    background-color: rgb(147, 14, 7);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 65%;
+}
+
+/* fin negociación */
+
+
+
 /* Curso en Video amarillo */
 
 #amarilloVideo {
