@@ -1237,6 +1237,59 @@ a.video-popup-holder:hover img.popup-play {
 
 /* fin negociación */
 
+/* rmv */
+
+#rmv {
+    background-color: #47577b;
+    /* background-image: url("images/bImage/fondoMorado.jpg"); */
+    background-position: center center;
+    background-size: auto;
+    z-index: 5;
+}
+
+#rmv .section-title-holder {
+    background-color: #3481c4;
+}
+
+#rmv .section-title-holder span {
+    color: #fff;
+}
+
+#rmv .section-content-holder {
+    padding-bottom: 0;
+}
+
+#rmv .important-text {
+    color: #612542;
+}
+
+
+#rmv .boton {
+    color: #fff;
+    background-color: #3481c4;
+    border-color: #0d9724;
+    font-size: 2vw;
+    padding: 1vw 3vw;
+}
+
+#rmv .titleBand {
+    background-color: #3481c4;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 65%;
+    color: #fff;
+}
+
+/* carrusel de vídeos rmv */
+.imagenCarruselRmv {
+    background-image: url("images/rmv/coverRmv.webp");
+    background-size: cover;
+}
+
+
+/* fin del carrusel de vídeos  rmv*/
+
+/* Fin rmv*/
 
 
 /* Curso en Video amarillo */
