@@ -134,9 +134,9 @@ body {
 }
 
 .up-logo {
-    height: 2.3rem;
+    height: 3rem;
     width: auto;
-    padding-top: 0.3rem;
+    /* padding-top: 0.3rem; */
 }
 
 /* for light mode */
@@ -293,7 +293,7 @@ body {
 }
 
 .cover {
-    background-image: url(../images/smartCenter.gif);
+    background-image: url(../images/smart-new.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: center;
@@ -1108,6 +1108,10 @@ body {
 }
 
 /* end tarjetas */
+.small-title {
+    /* font-size: 0.7rem; */
+
+}
 
 /*-------------------------------*/
 /* end directorio */
@@ -1154,7 +1158,7 @@ footer {
 
 .logoFooter {
     width: 13rem;
-    height: 4.3rem;
+    height: auto;
 }
 
 /*###################################################*/

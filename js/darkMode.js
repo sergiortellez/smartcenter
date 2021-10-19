@@ -3,6 +3,7 @@
  var getNav = document.getElementById("nav");
  var getLabelSwitch = document.getElementById('lightDarkLabel');
  var getLabelIcon = document.getElementById('lightDarkIcon');
+ var logoUrl = document.getElementById('logo_up');
  //on load & listeners
  window.onload = function () {
      var darkMode = false;
@@ -15,7 +16,6 @@
  function toggle() {
      if (darkMode) {
          //toggle colors
-
          document.documentElement.style.setProperty('--brColor', '#dfdfdf');
          document.documentElement.style.setProperty('--textColor', '#000');
 
@@ -31,10 +31,12 @@
          //toggle status
          darkMode = false;
          console.log("darkmode: " + darkMode);
+         //toggle upLogo
+         logoUrl.src = 'images/up_oscuro.webp';
+
 
      } else {
          //toggle colors
-
          document.documentElement.style.setProperty('--brColor', '#000');
          document.documentElement.style.setProperty('--textColor', '#fff');
 
@@ -51,6 +53,8 @@
          darkMode = true;
          console.log("darkmode: " + darkMode);
          //dividers 
+         //toggle upLogo
+         logoUrl.src = 'images/up.webp';
          
 
      }

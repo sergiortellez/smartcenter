@@ -47,8 +47,8 @@
     <!--	navbar	-->
     <!------------------------------------------------->
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light-custom" id="nav">
-        <a class="navbar-brand" href="https://up.edu.mx" target="_blank"><img src="images/up.png" class="up-logo" alt="Universidad Panamericana"></a>
-        <a class="navbar-brand" href="#inicio"><img src="images/logo-smart-cuadrito.png" class="brand-logo" alt="Smart Center"></a>
+        <a href="https://up.edu.mx" target="_blank"><img src="images/up_oscuro.webp" class="up-logo" id="logo_up" alt="Universidad Panamericana"></a>
+        <!-- <a class="navbar-brand" href="#inicio"><img src="images/logo-smart-cuadrito.png" class="brand-logo" alt="Smart Center"></a> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -65,7 +65,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contacto">Contacto</a>
-                </li> 
+                </li>
                 <li class="nav-item">
                     <a id="toggle" class="nav-link">
                         <label class="fas fa-moon" id="lightDarkIcon"></label>
@@ -107,7 +107,9 @@
         <!-- empty div for cheating flex content-between -->
         <div></div>
         <div>
-            <img src="images/logo-smart-cuadrito.png" alt="smartCenterUP">
+            <!-- <img src="images/logo-smart-cuadrito.png" alt="smartCenterUP"> -->
+            <p style="color: #fff;font-size: 4rem;">SMART Center</p>
+            <p style="font-size: 2rem;">Campus CDMX</p>
         </div>
 
         <!--inicia flecha-->
@@ -128,7 +130,7 @@
     <!--	enlace a áreas	-->
     <!------------------------------------------------->
 
-    <section class="container mt-5 mb-3">
+    <!-- <section class="container mt-5 mb-3">
         <div class="grid-sections-links">
             <a href="success/index.html" class="links success" data-toggle="tooltip" data-placement="top" title="Success Center">
                 <div class="pleca">
@@ -155,15 +157,7 @@
 
             </a>
         </div>
-    </section>
-    <section class="container-fluid">
-        <div class="row mt-5 mb-5">
-            <div class="col">
-                <!-- <h3 class="text-center" style="color: white;"><i class="fas fa-quote-left" style="color: orangered"></i>
-                    Power your ideas <i class="fas fa-quote-right" style="color: orangered"></i></h3> -->
-            </div>
-        </div>
-    </section>
+    </section> -->
     <!------------------------------------------------->
     <!--	end enlace a áreas	-->
     <!------------------------------------------------->
@@ -198,32 +192,41 @@
         <div class="row mt-4 mb-5">
             <div class="col-sm-9">
                 <p class="text-nosotros pt-1 text-justify">
-                    El <strong>SMART Center</strong> nace con el claro objetivo
-                    de potenciar el talento del alumnado durante su experiencia universitaria, brindando apoyo y
-                    orientación en su labor educativa, fomentando la toma de decisiones con respecto a sus metas
-                    académicas, personales y profesionales para sentar las bases de su desarrollo integral.<br>
-                    Buscamos ser un referente nacional en el desarrollo integral del alumnado para una vida
-                    universitaria plena. Para conseguirlo, nuestro principal objetivo es brindar un servicio de
-                    excelencia para el mejoramiento constante de las competencias
-                    <i class="fas fa-graduation-cap"></i>
-                    académicas, <i class="fas fa-heart"></i> personales y
-                    <i class="fas fa-briefcase"></i> profesionales del alumnado
-                    de la Universidad Panamericana.
+                    El SMART Center, es un centro para estudiantes que complementa su desarrollo académico y fortalece las competencias que necesitarán para ser profesionistas que cumplan las demandas sociales, impulsando líderes que contribuyan a la mejora de México y el mundo.
+                    Buscamos ser un referente nacional en el desarrollo integral del alumnado para una vida universitaria plena. Para conseguirlo, nuestro principal objetivo es brindar un servicio de excelencia para el mejoramiento constante de las competencias académicas, personales y profesionales
+                    del alumnado de la Universidad Panamericana.
                 </p>
+                <h5>Nuestros objetivos:</h5>
+
+                <ul>
+                    <li>
+                        Potenciar el talento del alumnado durante su experiencia universitaria, brindando formación, apoyo y orientación en su labor educativa.
+                    </li>
+                    <li>
+                        Potenciar al alumno en las competencias profesionales que requiere para su futuro por medio de experiencias que le permitan desarrollarlas.
+                    </li>
+                    <li>
+                        Promover y apoyar actividades e iniciativas estudiantiles académicas que contribuyan a la formación integral de los alumnos de la UP.
+                    </li>
+                </ul>
+
+
+
+
                 <p class="text-justify">
-                    El proyecto pertenece a la Universidad Panamericana. Está bajo el liderazgo de la <b>Vicerrectora Académica y de Innovación Educativa</b>, la <i>Dra. María Teresa Nicolás Gavilán</i>. La coordinación general del centro está a cargo de la <i>Mtra. María Fernanda Haro Alvarez</i>.
+
                 </p>
             </div>
             <div class="col m-1 d-flex botones-obj">
                 <button type="button" class="btn orange-btn p-2  m-1 linksGen" data-toggle="modal" data-target="#historia-modal">
                     <span>Historia</span>
                 </button>
-                <button type="button" class="btn orange-btn p-2 m-1 linksGen" data-toggle="modal" data-target="#objetivos-modal">
+                <!-- <button type="button" class="btn orange-btn p-2 m-1 linksGen" data-toggle="modal" data-target="#objetivos-modal">
                     <span>Objetivos</span>
                 </button>
                 <button type="button" class="btn orange-btn p-2 m-1 linksGen" data-toggle="modal" data-target="#info-modal">
                     <span><i class="fas fa-info"></i></span>
-                </button>
+                </button> -->
             </div>
         </div>
         <div class="row mb-5">
@@ -373,10 +376,9 @@
             <div class="col d-flex justify-content-center align-items-center">
                 <i class="fas fa-puzzle-piece divider-icon mr-5"></i>
                 <div class="div">
-                    <p class="divider-p"> Nuestras áreas</p>
-                    <p class="divider-text">El SMART Center se compone de 4 áreas,<br> conoce qué puedes esperar de cada
-                        una.</p>
-                </div>
+                    <p class="divider-p"> Nuestras experiencias</p>
+                    <p class="divider-text">Logramos potenciar tu talento a través de las siguientes experiencias.</p>
+                </div>s
                 <!--¡¡¡¡¡¡modificar el título!!!!-->
             </div>
         </div>
@@ -384,31 +386,32 @@
     <!--Termina Parallax-->
 
     <!-- grid -->
+    <!-- modal: data-toggle="modal" data-target="#meeting-modal" -->
     <section class="grid-sections-info">
-        <button type="button" class="btn success-btn links" data-toggle="modal" data-target="#success-modal">
+        <a type="button" class="btn success-btn links" href="success/cursos/mcms/index.html" target="_blank">
             <div class="pleca">
                 <img src="images/success-short.png" alt="" class="logos-link-bar-succes">
             </div>
-            <span>SUCCESS CENTER</span>
-        </button>
-        <button type="button" class="btn meeting-btn links" data-toggle="modal" data-target="#meeting-modal">
+            <span>Learning skills</span>
+        </a>
+        <a type="button" class="btn meeting-btn links" href="meeting/index.html" target="_blank">
             <div class="pleca">
                 <img src="images/meeting-short.png" alt="" class="logos-link-bar">
             </div>
-            <span>MEETING POINT</span>
-        </button>
-        <button type="button" class="btn advisory-btn links" data-toggle="modal" data-target="#advisory-modal">
+            <span>Learning by doing</span>
+        </a>
+        <a type="button" class="btn advisory-btn links" href="advisory/index.html" target="_blank">
             <div class="pleca">
                 <img src="images/advisory-short.png" alt="" class="logos-link-bar">
             </div>
             <span>ADVISORY</span>
-        </button>
-        <button type="button" class="btn reload-btn links" data-toggle="modal" data-target="#reload-modal">
+        </a>
+        <a type="button" class="btn reload-btn links" href="reload/index.html" target="_blank">
             <div class="pleca">
                 <img src="images/reload-short.png" alt="" class="logos-link-bar">
             </div>
-            <span>RELOAD & TALENT </span>
-        </button>
+            <span>Counseling especializado </span>
+        </a>
     </section>
     <!-- end grid -->
     <!-- -------------modals------------- -->
@@ -584,20 +587,20 @@
     <div id="noticias-grid">
         <!-- principal -->
         <div class="operacion text-left">
-            <span class="counter-value w-number" data-count="3">0</span> <span class="w-text">años <i class="fas fa-calendar-day"></i>
+            <span class="counter-value w-number" data-count="5">0</span> <span class="w-text">años <i class="fas fa-calendar-day"></i>
                 en
                 operación</span>
         </div>
         <div class="directos">
-            <div class="counter-value w-number text-center" data-count="7407">0</div>
+            <div class="counter-value w-number text-center" data-count="8926">0</div>
             <div class="w-text text-center">Alumnos <i class="fas fa-user-graduate"></i> en total <i class="fas fa-link"></i></div>
         </div>
         <div class="num-semestre d-flex align-items-center justify-content-center">
-            <div class="counter-value w-number text-center" data-count="10">0</div>
+            <div class="counter-value w-number text-center" data-count="9">0</div>
             <div class="w-text text-center">Miembros <i class="fas fa-user"></i> en el equipo SMART </div>
         </div>
         <div class="indirectos">
-            <div class="counter-value w-number text-center" data-count="7885">0</div>
+            <div class="counter-value w-number text-center" data-count="11353">0</div>
             <div class="w-text text-left">Alumnos <i class="fas fa-user-graduate"></i> impactados indirectamente</div>
         </div>
         <div class="smart-logo-grid">
@@ -610,23 +613,23 @@
             <div class="pleca">
                 <img src="images/success-short.png" alt="" class="logos-link-bar-succes">
             </div>
-            <div class="counter-value w-number" data-count="494">0</div>
+            <div class="counter-value w-number" data-count="337">0</div>
             <div class="w-text text-center">Alumnos <i class="fas fa-user-graduate"></i> <br> impactados </div>
         </div>
         <div class="success-stats-one d-flex align-items-center justify-content-center">
-            <div class="counter-value w-number" data-count="39">0</div>
+            <div class="counter-value w-number" data-count="71">0</div>
             <div class="w-text text-center"> ¿Qué %$& hago con mi dinero? <i class="fas fa-hand-holding-usd"></i></div>
         </div>
         <div class="success-stats-two d-flex align-items-center justify-content-center">
-            <div class="counter-value w-number" data-count="167">0</div>
+            <div class="counter-value w-number" data-count="12">0</div>
             <div class="w-text text-center">#OYL <i class="fas fa-book-open"></i> </div>
         </div>
         <div class="success-stats-three d-flex align-items-center justify-content-center">
-            <div class="counter-value w-number" data-count="31">0</div>
+            <div class="counter-value w-number" data-count="21">0</div>
             <div class="w-text text-center">Ser Líder <i class="fas fa-hand-rock"></i></div>
         </div>
         <div class="success-stats-four d-flex align-items-center justify-content-center">
-            <div class="counter-value w-number" data-count="69">0</div>
+            <div class="counter-value w-number" data-count="71">0</div>
             <div class="w-text text-center">CV Masterpiece <i class="fas fa-book-open"></i> </div>
         </div>
         <!-- end success -->
@@ -636,12 +639,12 @@
             <div class="pleca">
                 <img src="images/meeting-short.png" alt="" class="logos-link-bar">
             </div>
-            <div class="counter-value w-number" data-count="933">0</div>
+            <div class="counter-value w-number" data-count="1579">0</div>
             <div class="w-text text-center">Alumnos <i class="fas fa-user-graduate"></i><br> impactados </div>
         </div>
         <div class="meeting-stats-one d-flex align-items-center justify-content-center">
-            <div class="w-text text-center">FUNED <i class="fas fa-money-check-alt"></i></div>
-            <div class="counter-value w-number" data-count="13">0</div>
+            <div class="w-text text-center">InspireUP <i class="fad fa-lightbulb"></i></div>
+            <div class="counter-value w-number" data-count="379">0</div>
             <div class="w-text text-center">Líderes en Desarrollo </div>
 
         </div>
@@ -656,7 +659,7 @@
         </div>
         <div class="meeting-stats-four d-flex align-items-center justify-content-center">
             <div class="w-text text-center">Miembros GEA <i class="fas fa-users"></i></div>
-            <div class="counter-value w-number" data-count="84">0</div>
+            <div class="counter-value w-number" data-count="178">0</div>
         </div>
         <!-- end meeting -->
 
@@ -665,7 +668,7 @@
             <div class="pleca">
                 <img src="images/advisory-short.png" alt="" class="logos-link-bar">
             </div>
-            <div class="counter-value w-number" data-count="184">0</div>
+            <div class="counter-value w-number" data-count="1077">0</div>
             <div class="w-text text-center">Asesores <i class="fas fa-user-graduate"></i><br> impactados </div>
         </div>
         <div class="advisory-stats-one d-flex align-items-center justify-content-center">
@@ -692,20 +695,20 @@
             <div class="pleca">
                 <img src="images/reload-short.png" alt="" class="logos-link-bar">
             </div>
-            <div class="counter-value w-number" data-count="947">0</div>
+            <div class="counter-value w-number" data-count="1005">0</div>
             <div class="w-text text-center">Alumnos <i class="fas fa-user-graduate"></i><br> impactados </div>
         </div>
         <div class="reload-stats-one d-flex align-items-center justify-content-center">
             <div class="w-text text-center"> Resalta <i class="fas fa-hand-point-up"></i></div>
-            <div class="counter-value w-number" data-count="586">0</div>
+            <div class="counter-value w-number" data-count="610">0</div>
         </div>
         <div class="reload-stats-two d-flex align-items-center justify-content-center">
             <div class="w-text text-center"> Counseling <i class="fas fa-coffee"></i></div>
-            <div class="counter-value w-number" data-count="309">0</div>
+            <div class="counter-value w-number" data-count="201">0</div>
         </div>
         <div class="reload-stats-three d-flex align-items-center justify-content-center">
             <div class="w-text text-center">Perfil de estudio (DPI) <i class="fas fa-map"></i></div>
-            <div class="counter-value w-number" data-count="1086">0</div>
+            <div class="counter-value w-number" data-count="1940">0</div>
         </div>
         <div class="reload-stats-four d-flex align-items-center justify-content-center">
             <div class="w-text text-center"> Refuerza <i class="fas fa-bullseye"></i></div>
@@ -729,7 +732,7 @@
                 <p class="divider-p">Informes <i class="fas fa-file-pdf" style="color: darkred;"></i></p>
 
             </div>
-            <div class="col d-flex align-items-center justify-content-center">
+            <!-- <div class="col d-flex align-items-center justify-content-center">
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Por semestre <i class="fas fa-calendar-alt"></i>
@@ -739,7 +742,7 @@
                         <a class="dropdown-item" href="informes/semestre/1192.pdf" download="Smart en números 1192.pdf">1192 <i class="fas fa-cloud-download-alt"></i></a>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="col d-flex align-items-center justify-content-center">
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -747,6 +750,7 @@
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="informes/anual/18.pdf" download="Smart en números 18-19.pdf">Agosto 18 - Junio 19 <i class="fas fa-cloud-download-alt"></i></a>
+                        <a class="dropdown-item" href="informes/anual/21.pdf" download="Smart en números 20-21.pdf">Agosto 20 - Junio 21 <i class="fas fa-cloud-download-alt"></i></a>
 
                     </div>
                 </div>
@@ -809,17 +813,17 @@
             <div class="col pt-5">
                 <div class="directoryFilter" id="filters">
                     <button class="button current" data-filter="*"><i class="fas fa-address-book"></i></button>
-                    <button class="button" data-filter=".success-flt">Success Center</button>
-                    <button class="button" data-filter=".meeting-flt">Meeting Point</button>
+                    <button class="button" data-filter=".success-flt">Learning skills</button>
+                    <button class="button" data-filter=".meeting-flt">Learning by doing</button>
                     <button class="button" data-filter=".advisory-flt">Advisory</button>
-                    <button class="button" data-filter=".reload-flt">Reload & Talent</button>
+                    <button class="button" data-filter=".reload-flt">Counseling</button>
                 </div>
                 <ul class="grid row">
                     <li class="element-item direccion-flt col-xs-6 col-sm-6 col-md-5 col-lg-5 col-xl-4 mb-1">
 
                         <div class="our-team-main lightCon">
                             <div class=" team-front">
-                                <img src="images/team/ferHaro.jpeg" class="img-fluid" />
+                                <img src="images/team/ferHaro.jpg" class="img-fluid" />
                                 <h3>Mtra. María Fernanda Haro Alvarez</h3>
                                 <p><i class="fas fa-user-tag"></i> Jefe de área <br> &nbsp;</p>
                             </div>
@@ -836,6 +840,31 @@
                                     <i class="fas fa-phone"></i>
                                 </div>
                                 <div> <span>ext.5363</span></div>
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li class="element-item direccion-flt col-xs-6 col-sm-6 col-md-5 col-lg-5 col-xl-4 mb-1">
+
+                        <div class="our-team-main lightCon">
+                            <div class=" team-front">
+                                <img src="images/team/teresa.jpg" class="img-fluid" />
+                                <h3>Dra. Ma. Teresa Nicolás <br> Gavilán</h3>
+                                <p class="small-title"><i class="fas fa-user-tag"></i> Vicerrectora académica <br> y de innovación</p>
+                            </div>
+
+                            <div class="team-back text-center text-dark">
+                                <div><i class="fas fa-envelope"></i></div>
+
+                                <div>
+                                    <i class="fas fa-user"></i> <span>mnicolas@up.edu.mx </span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div> <span>ext.6033</span></div>
                             </div>
 
                         </div>
@@ -874,8 +903,8 @@
                         <div class="our-team-main lightCon">
 
                             <div class="team-front meeting-fltbc">
-                                <img src="images/team/leslieGutierrez.png" class="img-fluid" />
-                                <h3>Mtra. Leslie Araceli Gutiérrez Hermosillo</h3>
+                                <img src="images/team/ssofiaRoux.jpg" class="img-fluid" />
+                                <h3>Dra. Sofía Roux Tercero</h3>
                                 <p><i class="fas fa-user-tag"></i> Fortalecimiento Académico</p>
                             </div>
 
@@ -885,7 +914,7 @@
                                     <i class="fas fa-building"></i> <span>mx_meetingpoint@up.edu.mx</span>
                                 </div>
                                 <div>
-                                    <i class="fas fa-user"></i> <span>lgutierr@up.edu.mx</span>
+                                    <i class="fas fa-user"></i> <span>sroux@up.edu.mx</span>
                                 </div>
                                 <div>
                                     <i class="fas fa-phone"></i>
@@ -901,8 +930,8 @@
                         <div class="our-team-main lightCon">
 
                             <div class="team-front meeting-fltbc">
-                                <img src="images/team/fernandaSarmiento.jpg" class="img-fluid" />
-                                <h3>Lic. María Fernanda Sarmiento Armendáriz
+                                <img src="images/team/aurora.jpg" class="img-fluid" />
+                                <h3>Lic Aurora Pino Ruesga
                                 </h3>
                                 <p><i class="fas fa-user-tag"></i> Fortalecimiento Académico</p>
                             </div>
@@ -912,7 +941,7 @@
                                 <div><i class="fas fa-envelope"></i></div>
 
                                 <div>
-                                    <i class="fas fa-user"></i> <span>msarmiento@up.edu.mx</span>
+                                    <i class="fas fa-user"></i> <span>dpino@up.edu.mx</span>
                                 </div>
                                 <div>
                                     <i class="fas fa-phone"></i>
@@ -1004,7 +1033,7 @@
                         </div>
 
                     </li>
-                    <li class="element-item reload-flt col-xs-6 col-sm-6 col-md-5 col-lg-5 col-xl-4 mb-1">
+                    <!-- <li class="element-item reload-flt col-xs-6 col-sm-6 col-md-5 col-lg-5 col-xl-4 mb-1">
 
                         <div class="our-team-main lightCon">
                             <div class=" team-front reload-fltbc">
@@ -1026,7 +1055,7 @@
 
                         </div>
 
-                    </li>
+                    </li> -->
                     <li class="element-item reload-flt col-xs-6 col-sm-6 col-md-5 col-lg-5 col-xl-4 mb-1">
 
                         <div class="our-team-main lightCon">
@@ -1113,7 +1142,7 @@
     <footer class="container-fluid footer">
         <div class="row">
             <div class="col-sm d-flex justify-content-center">
-                <img src="images/ESCUDOS-UP-3W.png" class="logoFooter" alt="Universidad Panamericana">
+                <img src="images/up.webp" class="logoFooter" alt="Universidad Panamericana">
             </div>
             <div class="col-sm text-center">
 
