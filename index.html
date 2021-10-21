@@ -82,9 +82,11 @@
     <!------------------------------------------------->
     <!--	jumbotron	-->
     <!------------------------------------------------->
-    <section class="jumbotron jumbotron-fluid  mb-0 p-2 d-none d-md-flex justify-content-between align-items-center flex-column cover" id="inicio">
+    <section class="jumbotron jumbotron-fluid  mb-0 p-2 d-none d-md-flex justify-content-between align-items-center flex-column " id="inicio">
         <div></div>
-        <div></div>
+        <div class="cover">
+            <img class='jumbotron-cover' src="images/smart_mor.webp" alt="SMART Center CCDMX">
+        </div>
 
         <!--inicia flecha-->
         <div class="container d-flex align-items-center justify-content-center  mb-2" data-rellax-speed="-1">
@@ -378,7 +380,7 @@
                 <div class="div">
                     <p class="divider-p"> Nuestras experiencias</p>
                     <p class="divider-text">Logramos potenciar tu talento a través de las siguientes experiencias.</p>
-                </div>s
+                </div>
                 <!--¡¡¡¡¡¡modificar el título!!!!-->
             </div>
         </div>
@@ -388,29 +390,32 @@
     <!-- grid -->
     <!-- modal: data-toggle="modal" data-target="#meeting-modal" -->
     <section class="grid-sections-info">
-        <a type="button" class="btn success-btn links" href="success/cursos/mcms/index.html" target="_blank">
+        <a class="btn success-btn links" href="success/cursos/mcms/index.html" target="_blank">
             <div class="pleca">
                 <img src="images/success-short.png" alt="" class="logos-link-bar-succes">
             </div>
-            <span>Learning skills</span>
+            <span>Success learning skills</span>
         </a>
-        <a type="button" class="btn meeting-btn links" href="meeting/index.html" target="_blank">
+        <a class="btn meeting-btn links" href="meeting/index.html" target="_blank">
             <div class="pleca">
                 <img src="images/meeting-short.png" alt="" class="logos-link-bar">
             </div>
-            <span>Learning by doing</span>
+            <span>Grupos estudiantiles learning by doing</span>
         </a>
-        <a type="button" class="btn advisory-btn links" href="advisory/index.html" target="_blank">
+        <a class="btn advisory-btn links" href="advisory/index.html" target="_blank">
             <div class="pleca">
                 <img src="images/advisory-short.png" alt="" class="logos-link-bar">
             </div>
             <span>ADVISORY</span>
         </a>
-        <a type="button" class="btn reload-btn links" href="reload/index.html" target="_blank">
+        <a class="btn reload-btn links" href="reload/index.html" target="_blank">
             <div class="pleca">
                 <img src="images/reload-short.png" alt="" class="logos-link-bar">
             </div>
-            <span>Counseling especializado </span>
+            <span>Counseling y fortalecimiento especializado </span>
+        </a>
+        <a class="btn links redes-btn" href="http://instagram.com/smartcenterup" target="_blank">
+            <span>Disfruta nuestras experiencias virtuales <i class="fab fa-instagram" style="font-size: 1.5rem;"></i> </span>
         </a>
     </section>
     <!-- end grid -->
@@ -604,7 +609,9 @@
             <div class="w-text text-left">Alumnos <i class="fas fa-user-graduate"></i> impactados indirectamente</div>
         </div>
         <div class="smart-logo-grid">
-            <img src="images/logo-smart-cuadrito.png" alt="logo smart" width="150rem" height="150rem">
+            <!-- <img src="images/logo-smart-cuadrito.png" alt="logo smart" width="150rem" height="150rem"> -->
+            <!-- <p style="color: rgb(0, 0, 0);font-size: 2rem;">SMART Center</p> -->
+            <p style="font-size: 1rem;">Campus CDMX</p>
         </div>
         <!-- end principal -->
 
@@ -813,7 +820,7 @@
             <div class="col pt-5">
                 <div class="directoryFilter" id="filters">
                     <button class="button current" data-filter="*"><i class="fas fa-address-book"></i></button>
-                    <button class="button" data-filter=".success-flt">Learning skills</button>
+                    <button class="button" data-filter=".success-flt">Success</button>
                     <button class="button" data-filter=".meeting-flt">Learning by doing</button>
                     <button class="button" data-filter=".advisory-flt">Advisory</button>
                     <button class="button" data-filter=".reload-flt">Counseling</button>
@@ -1135,6 +1142,15 @@
     </section>
     <!------------------------------------------------->
     <!--	end contacto	-->
+    <!------------------------------------------------->
+    <!------------------------------------------------->
+    <!--	instagram fixed	-->
+    <!------------------------------------------------->
+    <div class="instagram-fixed">
+        <a href="https://instagram.com/smartcenterup" target="_blank">Síguenos <i class="fab fa-instagram"></i></a>
+    </div>
+    <!------------------------------------------------->
+    <!--	end instagram fixed	-->
     <!------------------------------------------------->
     <!------------------------------------------------->
     <!--	footer	-->
