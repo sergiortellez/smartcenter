@@ -40,14 +40,15 @@
     /* font size */
     --fs-b: 14px;
     /* custom colors */
-    --smartRed: #A41C1D;
-    --smartBlue: #1c5396;
-    --smartGreen: #497D38;
-    --smartYellow: #c7a534;
+    --smartRed: #771d32;
+    --smartBlue: #122e5b;
+    --smartGreen: #005245;
+    --smartYellow: #9f8156;
     /* theme colors */
-    --brColor: #dfdfdf;
+    --brColor: #ffffff;
     --textColor: #000;
-    --orangeBtn: rgb(97, 90, 90);
+    --primary: #ac8a54;
+    --orangeBtn: var(--primary);
 }
 
 /* tablet up */
@@ -141,7 +142,9 @@ body {
 
 /* for light mode */
 .bg-light-custom {
-    background-color: rgb(190, 179, 179);
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid var(--primary);
+    color: var(--textColor);
 }
 
 /*-------------------------------*/
@@ -157,15 +160,16 @@ body {
 
 .divider {
     height: auto;
-    min-height: 35vh;
+    min-height: 50vh;
     display: block;
     position: relative;
     opacity: 1;
     color: var(--textColor);
+    background-color: var(--brColor);
 
 }
 
-.divider::before {
+/* .divider::before {
     content: "";
     background: url("../images/power_ideas_tablet.jpg") center no-repeat;
     background-size: cover;
@@ -179,7 +183,7 @@ body {
     bottom: 0;
     right: 0;
     position: absolute;
-}
+} */
 
 
 
@@ -187,7 +191,7 @@ body {
 
 /* Laptops up parallax working */
 
-@media (min-width: 991px) {
+/* @media (min-width: 991px) {
     .divider {
         height: auto;
         min-height: 35vh;
@@ -213,7 +217,7 @@ body {
         height: auto;
     }
 
-}
+} */
 
 /*-------------------------------*/
 /* fonts */
@@ -234,6 +238,7 @@ body {
 .divider-icon {
 
     font-size: 4rem;
+    color: var(--primary);
 
 
 }
@@ -283,12 +288,16 @@ body {
 
 #inicio {
     min-height: 100vh;
-    background-color: rgb(37, 35, 35);
-    color: rgb(92, 88, 88);
+    background-color: var(--brColor);
+    background-image: url(../images/cover.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .flecha-down {
-    color: #fff;
+    color: var(--primary);
     font-size: 3rem;
 }
 
@@ -297,15 +306,61 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: center; */
-    width: 100%;
+
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* backdrop-filter: blur(10px); */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: 3rem;
+    color: var(--brColor);
+
+}
+
+/* end tablet up */
+.cover i {
+    color: var(--primary);
+    font-size: 2rem;
+
+}
+
+.cover span {
+    text-align: center;
 }
 
 .jumbotron-cover {
     width: 50%;
 }
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .cover {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        /* backdrop-filter: blur(10px); */
+        margin-top: 9rem;
+        padding-top: 3rem;
+        font-size: 5.6rem;
+        color: var(--brColor);
+    }
+
+    .cover span {
+        text-align: right;
+        margin-left: 3rem;
+    }
+
+    .cover i {
+
+        font-size: 4rem;
+
+    }
+}
+
+
 
 /*-------------------------------*/
 /* end cover */
@@ -353,14 +408,13 @@ body {
     align-items: center;
     justify-content: start;
     padding-left: 10%;
-
+    border: var(--primary) solid 1px;
 }
 
 .linksGen:hover {
 
     border: #fff solid 4px;
     text-decoration: none;
-    color: #fff;
 }
 
 .linksGen {
@@ -383,9 +437,9 @@ body {
 
 .links:hover {
 
-    border: #fff solid 4px;
+    border: var(--textColor) solid 4px;
     text-decoration: none;
-    color: #fff;
+    color: gray;
 }
 
 .pleca {
@@ -401,22 +455,23 @@ body {
     align-items: center;
     justify-content: center;
     margin-right: 0.8rem;
+    border: var(--primary) solid 1px;
 }
 
 .success {
-    background-color: var(--smartYellow);
+    color: var(--smartYellow);
 }
 
 .meeting {
-    background-color: var(--smartBlue);
+    color: var(--smartBlue);
 }
 
 .advisory {
-    background-color: var(--smartRed);
+    color: var(--smartRed);
 }
 
 .reload {
-    background-color: var(--smartGreen);
+    color: var(--smartGreen);
     font-size: 0.7rem;
 }
 
@@ -467,14 +522,20 @@ body {
 /*-------------------------------*/
 /* nuestras áreas */
 /*-------------------------------*/
-.grid-sections-info {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: minmax(3rem, auto);
+.grid-sections-info {}
+
+/* cellphone landscape up */
+@media (min-width: 576px) {
+    .grid-sections-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(3rem, auto);
+    }
 }
 
+/* end cellphone landscape up */
 .success-btn {
-    background-color: var(--smartYellow);
+    color: var(--smartYellow);
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
@@ -483,7 +544,7 @@ body {
 }
 
 .meeting-btn {
-    background-color: var(--smartBlue);
+    color: var(--smartBlue);
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
@@ -492,7 +553,7 @@ body {
 }
 
 .advisory-btn {
-    background-color: var(--smartRed);
+    color: var(--smartRed);
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
@@ -501,7 +562,7 @@ body {
 }
 
 .reload-btn {
-    background-color: var(--smartGreen);
+    color: var(--smartGreen);
     font-size: 1rem;
     border-radius: 0px;
     -webkit-border-radius: 0px;
@@ -565,16 +626,7 @@ body {
     color: var(--smartGreen);
 }
 
-/* cellphone landscape up */
-@media (min-width: 576px) {
-    .grid-sections-info {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: minmax(3rem, auto);
-    }
-}
 
-/* end cellphone landscape up */
 
 
 /*-------------------------------*/
@@ -894,20 +946,20 @@ body {
 /*-------------------------------*/
 .w-number {
     color: #fff;
-    font-size: 3rem;
-    font-weight: 200;
+    font-size: 2rem;
+    font-weight: 130;
 }
 
 .w-big-number {
     color: #fff;
     font-size: 1.5rem;
-    font-weight: 200;
+    font-weight: 130;
 }
 
 .b-number {
     color: #000;
     font-size: 3rem;
-    font-weight: 200;
+    font-weight: 130;
 }
 
 .w-text {
@@ -961,6 +1013,9 @@ body {
 
 .enviar-mensaje {
     width: 50%;
+    background-color: var(--primary);
+    color: var(--brColor);
+    border: none;
 }
 
 
@@ -969,7 +1024,7 @@ body {
     margin-left: 0px;
     margin-right: 0px;
     height: 0.1rem;
-    background-color: var(--textColor);
+    background-color: var(--primary);
 
 }
 
@@ -1015,14 +1070,14 @@ body {
     padding: 16px 18px;
     font-size: 13px;
     line-height: 15px;
-    color: var(--textColor);
+    color: var(--brColor);
     text-transform: uppercase;
     display: block;
     text-decoration: none;
-    border: solid 1px #3b606b;
     transition-duration: 0.2s;
     -webkit-transition-duration: 0.2s;
-    background-color: var(--brColor);
+    background-color: var(--primary);
+    border: none;
 }
 
 .directoryFilter button:hover {
@@ -1033,8 +1088,9 @@ body {
 }
 
 .directoryFilter button.current {
-    background: #15596e;
-    border: solid 1px #15596e;
+    background: var(--primary);
+    border: none;
+    /* border: solid 1px #15596e; */
     color: #fff;
 }
 
@@ -1099,7 +1155,7 @@ body {
     min-height: 13rem;
     position: relative;
     z-index: 10;
-    background: #29586c;
+    background: var(--primary);
     padding: 15px;
     bottom: 0px;
     transition: all 0.5s ease;
@@ -1117,19 +1173,19 @@ body {
 }
 
 .success-fltbc {
-    background-color: var(--smartYellow);
+    background-color: var(--primary);
 }
 
 .meeting-fltbc {
-    background-color: var(--smartBlue);
+    background-color: var(--primary);
 }
 
 .advisory-fltbc {
-    background-color: var(--smartRed);
+    background-color: var(--primary);
 }
 
 .reload-fltbc {
-    background-color: var(--smartGreen);
+    background-color: var(--primary);
 }
 
 /* end tarjetas */
@@ -1157,7 +1213,7 @@ body {
     position: fixed;
     bottom: -4px;
     right: 10px;
-    background-color: rgb(175, 22, 175);
+    background-color: var(--primary);
     z-index: 300;
     padding: 0.5rem;
     border-top-left-radius: 13px;
