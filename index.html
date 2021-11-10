@@ -26,12 +26,15 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/c09e05c963.js" crossorigin="anonymous" async></script>
     <!-- Google fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monserrat">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>SMART Center | UP</title>
     <!-- fav ico -->
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
     <!-- style.css -->
     <link rel="stylesheet" href="css/style.min.css">
+
 </head>
 
 
@@ -47,7 +50,7 @@
     <!--	navbar	-->
     <!------------------------------------------------->
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light-custom" id="nav">
-        <a href="https://up.edu.mx" target="_blank"><img src="images/panamericana.webp" class="up-logo" id="logo_up" alt="Universidad Panamericana"></a>
+        <a href="https://up.edu.mx" target="_blank"><img src="images/panamericana_smart.webp" class="up-logo" id="logo_up" alt="Universidad Panamericana"></a>
         <!-- <a class="navbar-brand" href="#inicio"><img src="images/logo-smart-cuadrito.png" class="brand-logo" alt="Smart Center"></a> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -264,7 +267,7 @@
         <div class="modal fade" id="historia-modal" tabindex="-1" role="dialog" aria-labelledby="historia-modal" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
-                    <div class="modal-header" style="background-color: #242323;color:#fff;">
+                    <div class="modal-header" style="background-color: var(--primary);color:#fff;">
                         <h5 class="modal-title" id="exampleModalLabel">Historia del SMART Center®</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true" style="color:#fff;">&times;</span>
@@ -273,7 +276,8 @@
                     <div class="modal-body text-dark">
 
                         <p class="text-justify">
-                            En la planeación estratégica 2016 - 2022 de Campus México se encarga a la Vicerrectoría Académica y de Innovación Educativa diseñar, crear y desarrollar un centro de alumnos con el fin de fortalecer la formación integral del alumno y dotarlo de más y mejores competencias
+                            En la planeación estratégica 2016-2022 de Campus México se encarga a la Vicerrectoría Académica y de Innovación Educativa - Dra. Teresa Nicolas, crear y desarrollar un centro de alumnos con el fin de fortalecer la formación integral del alumno y dotarlo de más y mejores
+                            competencias
                             (soft skills). <br>
                             En el proceso de diseño del centro se visitaron diferentes centros de atención a alumnos en universidades británicas y norteamericanas de prestigio con el fin de identificar buenas prácticas. Con base en las visitas antes mencionadas y al estudio de documentos sobre el
                             futuro de la educación y las prácticas de innovación se desarrolló un documento base.
@@ -399,19 +403,19 @@
             <div class="pleca">
                 <img src="images/meeting-short.png" alt="" class="logos-link-bar">
             </div>
-            <span>Grupos estudiantiles learning by doing</span>
+            <span>Grupos Estudiantiles Académicos</span>
         </a>
         <a class="btn advisory-btn links" href="advisory/index.html" target="_blank">
             <div class="pleca">
                 <img src="images/advisory-short.png" alt="" class="logos-link-bar">
             </div>
-            <span>ADVISORY</span>
+            <span>Asesoria Universitaria / Advisory</span>
         </a>
         <a class="btn reload-btn links" href="reload/index.html" target="_blank">
             <div class="pleca">
                 <img src="images/reload-short.png" alt="" class="logos-link-bar">
             </div>
-            <span>Counseling y fortalecimiento especializado </span>
+            <span>Counseling y Fortalecimiento Académico </span>
         </a>
         <a class="btn links redes-btn" href="http://instagram.com/smartcenterup" target="_blank">
             <span>Disfruta nuestras experiencias virtuales <i class="fab fa-instagram" style="font-size: 1.5rem;"></i> </span>
@@ -724,9 +728,11 @@
 
         <!-- twitter  -->
         <div class="twitter">
-            <a class="twitter-timeline" data-lang="es" data-width="100%" data-height="100%" data-dnt="true" data-theme="dark" data-link-color="#E95F28" data-chrome="nofooter noheader" href="https://twitter.com/SmartCenterUP?ref_src=twsrc%5Etfw">A Twitter List by
-                SMART CenterUP</a>
+            <a class="twitter-timeline" data-lang="es" data-dnt="true" data-width="100%" data-height="100%" data-link-color="#b69156" data-chrome="nofooter noheader" href="https://twitter.com/SmartCenterUP?ref_src=twsrc%5Etfw">Tweets by SmartCenterUP</a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <!-- <a class="twitter-timeline" data-lang="es" data-width="100%" data-height="100%" data-dnt="true" data-theme="dark" data-link-color="#E95F28" data-chrome="nofooter noheader" href="https://twitter.com/SmartCenterUP?ref_src=twsrc%5Etfw">A Twitter List by
+                SMART CenterUP</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
         </div>
         <!-- end twitter -->
 
@@ -788,10 +794,10 @@
         </div>
     </section>
     <!--Termina Parallax-->
-    <section class="container-fluid">
+    <section class="container-fluid mb-5 pb-5">
         <div class="row">
             <!-- inicia mensaje -->
-            <div class="col-sm-4 pt-5" id="contact-form">
+            <div class="col-sm-4 pt-5 pb-5" id="contact-form">
                 <form method="POST" action="https://formspree.io/mx_smartcenter@up.mx">
                     <input class="d-block" type="email" name="email" placeholder="Tu email ">
                     <input class="d-block" type="text" name="name" placeholder="Tu Nombre">

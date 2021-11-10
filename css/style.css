@@ -97,7 +97,7 @@ html {
     scroll-behavior: smooth;
     /* font size general control using variable */
     font-size: var(--fs-b);
-    font-family: 'Monserrat', serif;
+    font-family: 'Nunito', sans-serif;
 
 }
 
@@ -323,6 +323,11 @@ body {
 .cover i {
     color: var(--primary);
     font-size: 2rem;
+
+}
+
+.cover i:last-child {
+    color: var(--brColor);
 
 }
 
@@ -1244,22 +1249,24 @@ body {
 /*###################################################*/
 
 footer {
-    background-color: #2e3338;
+    background-color: var(--smartRed);
+
 }
 
 .footer {
     font-size: 0.7rem;
     /* clear: both; */
-    color: #9a9a9a;
+    color: var(--brColor);
     padding: 2rem 4rem;
 }
 
 .footerLi {
     list-style: none;
+
 }
 
 .footer a {
-    color: #9a9a9a;
+    color: var(--brColor);
 }
 
 .footer a :hover {
