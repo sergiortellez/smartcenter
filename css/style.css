@@ -118,6 +118,18 @@ body {
     -o-border-radius: 0px;
 }
 
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centered-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 /*###################################################*/
 /*...................................................*/
 /* end general properties */
