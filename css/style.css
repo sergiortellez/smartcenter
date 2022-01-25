@@ -142,8 +142,8 @@ body {
 /*-------------------------------*/
 
 .brand-logo {
-    width: 2.3rem;
-    height: 2.3rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 .up-logo {
@@ -155,10 +155,46 @@ body {
 /* for light mode */
 .bg-light-custom {
     background-color: rgb(255, 255, 255);
-    border-bottom: 2px solid var(--primary);
+    border-bottom: 7px solid var(--primary);
     color: var(--textColor);
 }
 
+.active {
+    color: var(--smartYellow) !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--smartBlue);
+    font-weight: 500;
+}
+
+.arbol_up {
+    height: 4rem;
+    width: auto;
+    padding-left: 1.2rem;
+    margin-left: 1rem;
+    border-left: 1px solid var(--smartYellow);
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    nav {
+        height: 6.5rem;
+    }
+
+    .up-logo {
+        height: 4.4rem;
+        width: auto;
+        /* padding-top: 0.3rem; */
+    }
+
+    .navbar-nav {
+        margin-left: auto;
+    }
+}
+
+/* end tablet up */
 /*-------------------------------*/
 /* end navbar */
 /*-------------------------------*/
