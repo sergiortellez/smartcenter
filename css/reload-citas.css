@@ -8,41 +8,42 @@
     /* font size */
     --fs-b: 14px;
     /* custom colors */
-    --smartRed: #A41C1D;
-    --smartBlue: #1c5396;
-    --smartGreen: #497D38;
-    --smartYellow: #c7a534;
+    --smartRed: #771d32;
+    --smartBlue: #122e5b;
+    --smartGreen: #005245;
+    --smartYellow: #9f8156;
     /* theme colors */
-    --brColor: #dfdfdf;
+    --brColor: #ffffff;
     --textColor: #000;
-    --orangeBtn: rgb(97, 90, 90);
-}
+    --primary: #ac8a54;
+    --orangeBtn: var(--primary);
 
-/* tablet up */
-@media (min-width: 768px) {
-    :root {
-        /* font size */
-        --fs-b: 16px;
+    /* tablet up */
+    @media (min-width: 768px) {
+        :root {
+            /* font size */
+            --fs-b: 16px;
+        }
     }
-}
 
-/* end tablet up */
+    /* end tablet up */
 
-/* laptop up */
-@media (min-width: 991px) {
-    :root {
-        /* font size */
-        --fs-b: 18px;
+    /* laptop up */
+    @media (min-width: 991px) {
+        :root {
+            /* font size */
+            --fs-b: 18px;
+        }
     }
-}
 
-/* end laptop up */
+    /* end laptop up */
 
-/* desktop up */
-@media (min-width: 1300px) {
-    :root {
-        /* font size */
-        --fs-b: 22px;
+    /* desktop up */
+    @media (min-width: 1300px) {
+        :root {
+            /* font size */
+            --fs-b: 22px;
+        }
     }
 }
 
@@ -62,62 +63,79 @@ iframe {
 /* nav */
 /*...................................................*/
 /*###################################################*/
+/*-------------------------------*/
+/* navbar */
+/*-------------------------------*/
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    background-color: rgb(2, 51, 14);
-    height: 5rem;
-    color: #fff;
-    font-size: 2rem;
-
+.brand-logo {
+    width: 4rem;
+    height: 4rem;
 }
 
-nav>span {
-    margin: 0.6rem;
-    margin-right: auto;
-    font-size: 1.2rem;
+.up-logo {
+    height: 3rem;
+    width: auto;
+    /* padding-top: 0.3rem; */
 }
 
-/* tablet landscape up */
-@media (min-width: 1024.1px) {
-    nav>span {
-        font-size: 2rem;
+/* for light mode */
+.bg-light-custom {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 7px solid var(--primary);
+    color: var(--textColor);
+}
+
+.active {
+    color: var(--smartYellow) !important;
+    font-weight: 500;
+}
+
+.nav-link {
+    font-size: 1.3rem;
+}
+
+.nav-link:hover {
+    color: var(--smartBlue);
+    font-weight: 500;
+}
+
+.arbol_up {
+    height: 4rem;
+    width: auto;
+    padding-left: 1.2rem;
+    margin-left: 1rem;
+    border-left: 1px solid var(--smartYellow);
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    nav {
+        height: 6.5rem;
+    }
+
+    .up-logo {
+        height: 4.4rem;
+        width: auto;
+        /* padding-top: 0.3rem; */
+    }
+
+    .navbar-nav {
+        margin-left: auto;
     }
 }
 
 /* end tablet up */
-
-.envelope {
-    /* background-color: #000;
-    border: 1px solid #fff; */
-    height: 5rem;
-    width: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
-    color: #fff;
-    font-size: 2.3rem;
-}
-
-.logo_rt {
-    /* background-color: #000;
-    border: 1px solid #fff; */
-    height: 5rem;
-    width: 5rem;
-    display: flex;
-    align-items: center;
-    padding: 0.5rem;
-}
-
-.logo_rt>img {
-    width: 3.3rem;
-}
-
+/*-------------------------------*/
+/* end navbar */
+/*-------------------------------*/
 /*###################################################*/
 /*...................................................*/
 /* end nav */
 /*...................................................*/
 /*###################################################*/
+
+.citas {
+    min-height: 100wv;
+    padding-top: 7rem;
+
+}
