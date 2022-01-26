@@ -336,6 +336,8 @@ body {
 
 #inicio {
     min-height: 100vh;
+    width: 100%;
+
     background-color: var(--brColor);
     background-image: url(../images/cover.webp);
     background-position: center;
@@ -387,8 +389,37 @@ body {
     width: 50%;
 }
 
+.leyenda_cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+
+}
+
+.leyenda_primera {
+    text-align: right;
+    padding-left: 3rem;
+}
+
+.leyenda_segunda {
+    text-align: center;
+}
+
+.leyenda_texto_uno {
+    font-size: 3rem;
+}
+
 /* tablet portrait up */
 @media (min-width: 768px) {
+
+    #inicio {
+        min-height: 100vh;
+        width: 75%;
+
+    }
+
     .cover {
         width: 100%;
         display: flex;
@@ -565,6 +596,10 @@ body {
 .botones-obj {
     flex-direction: column;
     justify-content: space-around;
+}
+
+.imagen_alumnos {
+    width: 100%;
 }
 
 /*-------------------------------*/
