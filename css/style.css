@@ -406,18 +406,17 @@ body {
 .leyenda_pleca {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     /* background-color: var(--smartBlue); */
     color: var(--textColor);
-    width: 20rem;
-    height: 20rem;
+    text-align: right;
     /* border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%; */
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 .leyenda_primera {
@@ -437,7 +436,7 @@ body {
 }
 
 .leyenda_texto_dos {
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: right;
     width: 85%;
     color: var(--smartYellow);
