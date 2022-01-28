@@ -111,12 +111,16 @@ body {
 }
 
 .modal-header {
+    color: #fff;
+    background-color: var(--primary) !important;
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     -ms-border-radius: 0px;
     -o-border-radius: 0px;
 }
+
+.modal-title {}
 
 .centered {
     display: flex;
@@ -144,6 +148,7 @@ body {
 .brand-logo {
     width: 4rem;
     height: 4rem;
+
 }
 
 .up-logo {
@@ -184,7 +189,7 @@ body {
     }
 
     .up-logo {
-        height: 3.5rem;
+        height: 4.2rem;
         width: auto;
         /* padding-top: 0.3rem; */
     }
@@ -725,7 +730,6 @@ body {
 
 .reload-btn {
     color: var(--smartGreen);
-    font-size: 1rem;
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
@@ -737,7 +741,7 @@ body {
 
 .redes-btn {
     color: var(--textColor);
-    font-size: 1rem;
+
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
