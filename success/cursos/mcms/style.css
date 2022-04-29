@@ -1291,97 +1291,53 @@ a.video-popup-holder:hover img.popup-play {
 
 /* Fin rmv*/
 
-/* self */
 
-#self {
-    background-color: rgb(151, 71, 14);
-    /* background-image: url("images/bImage/fondo-self.jpg"); */
+
+/* smarter */
+
+#smarter {
+    background-color: #f7d001;
+    /* background-image: url("images/bImage/fondo-smarter.jpg"); */
     background-position: center center;
     background-size: auto;
     z-index: 5;
 }
 
-#self .section-title-holder {
-    background-color: rgb(218, 114, 40);
+#smarter .section-title-holder {
+    background-color: #3242af;
 }
 
-#self .section-title-holder span {
+#smarter .section-title-holder span {
     color: #fff;
 }
 
-#self .section-content-holder {
+#smarter .section-content-holder {
     padding-bottom: 0;
 }
 
-#self .important-text {
+#smarter .important-text {
     color: #284670;
 }
 
 
-#self .botonRojo {
+#smarter .botonRojo {
     color: #fff;
-    background-color: #113bad;
+    background-color: #c60655;
     border-color: rgb(218, 114, 40);
-    font-size: 2vw;
-    padding: 1vw 3vw;
+    font-size: 1.3vw;
+    padding: 1vw 1vw;
 }
 
-#self .titleBand {
+#smarter .titleBand {
 
-    background-color: #113bad;
+    background-color: #c60655;
     color: white;
     font-size: 1.5rem;
     font-weight: 500;
     width: 65%;
 }
 
-/* fin self */
-
-/* manage */
-
-#manage {
-    background-color: rgb(14, 76, 151);
-    /* background-image: url("images/bImage/fondo-manage.jpg"); */
-    background-position: center center;
-    background-size: auto;
-    z-index: 5;
-}
-
-#manage .section-title-holder {
-    background-color: rgb(135, 142, 4);
-}
-
-#manage .section-title-holder span {
-    color: #fff;
-}
-
-#manage .section-content-holder {
-    padding-bottom: 0;
-}
-
-#manage .important-text {
-    color: #284670;
-}
-
-
-#manage .botonRojo {
-    color: #fff;
-    background-color: #113bad;
-    border-color: rgb(218, 114, 40);
-    font-size: 2vw;
-    padding: 1vw 3vw;
-}
-
-#manage .titleBand {
-
-    background-color: #113bad;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 500;
-    width: 65%;
-}
-
-/* fin manage */
+/* fin smarter */
 
 
 /* Curso en Video amarillo */
