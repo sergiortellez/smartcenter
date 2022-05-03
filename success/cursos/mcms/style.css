@@ -1337,6 +1337,10 @@ a.video-popup-holder:hover img.popup-play {
     width: 65%;
 }
 
+#smarter .certificado{
+    text-decoration: underline;
+    color: #113bad;
+}
 /* fin smarter */
 
 
