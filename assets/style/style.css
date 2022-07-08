@@ -1,0 +1,348 @@
+/*###################################################*/
+/*...................................................*/
+/* root variables (responsive font size installed)   */
+/*...................................................*/
+/*###################################################*/
+
+:root {
+    /* font size */
+    --fs-b: 14px;
+    /* custom colors */
+    --smartRed: #771d32;
+    --smartBlue: #122e5b;
+    --smartGreen: #005245;
+    --smartYellow: #9f8156;
+    /* theme colors */
+    --background: #ffffff;
+    --text: #000;
+    --primary: #ac8a54;
+    --orangeBtn: var(--primary);
+    --navHeight:7vh;
+}
+
+/* tablet up */
+@media (min-width: 768px) {
+    :root {
+        /* font size */
+        --fs-b: 16px;
+    }
+}
+
+/* end tablet up */
+
+/* laptop up */
+@media (min-width: 991px) {
+    :root {
+        /* font size */
+        --fs-b: 18px;
+    }
+}
+
+/* end laptop up */
+
+/* desktop up */
+@media (min-width: 1300px) {
+    :root {
+        /* font size */
+        --fs-b: 22px;
+    }
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end root variables                                */
+/*...................................................*/
+/*###################################################*/
+
+
+/*###################################################*/
+/*...................................................*/
+/* general properties */
+/*...................................................*/
+/*###################################################*/
+
+html {
+    /* scroll smooth from nav control */
+    scroll-behavior: smooth;
+    /* font size general control using variable */
+    font-size: var(--fs-b);
+    /* font-family oficial de SMART  */
+    font-family: 'Nunito', sans-serif;
+    /* protección de movimiento de overflow por animaciones */
+    overflow-x: hidden;
+
+}
+
+
+body {
+    /* scroll spy */
+    overflow-y: scroll;
+
+    background-color: var(--brColor);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+
+    /* protección de movimiento de overflow por animaciones */
+    overflow-x: hidden;
+
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end general properties */
+/*...................................................*/
+/*###################################################*/
+
+/*###################################################*/
+/*...................................................*/
+/* navbar */
+/*...................................................*/
+/*###################################################*/
+
+
+/*-------------------------------*/
+/* collapsed mobile nav */
+/*-------------------------------*/
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+   
+    background-color: var(--background);
+    color: var(--text);
+    border-bottom: 6px solid var(--primary);
+    font-weight: 200;
+
+    /* fixed from materialized  */
+    height: var(--navHeight);
+    line-height: inherit;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+
+    /* Set the navbar to fixed position */
+    position: fixed;
+    top: 0;
+    /* full width */
+    width: 100vw;
+    
+    /* always in the front */
+    z-index: 9;
+}
+/* eliminamos los estilos por defecto de los botones dentro de la nav */
+nav button{
+    all: unset;
+}
+nav button:focus{
+    all: unset;
+}
+
+/*-------------------------------*/
+/* brand */
+/*-------------------------------*/
+
+.navIcons{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 90vw;
+    height: var(--navHeight);  
+}
+.brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iconTrigger{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--text);
+}
+#navSmartLogoMin {
+    height: 1.8rem;
+    width: auto;
+}
+
+#navSmartLogo {
+    display: none;
+}
+
+#navUpLogo {
+    display: none;
+}
+
+/*-------------------------------*/
+/* end brand */
+/*-------------------------------*/
+
+
+nav .navContents {
+    /*propiedades a animar*/visibility: hidden;
+    opacity: 0;
+    height: 0;
+
+    /*control de animaciones*/
+    transition: visibility 0s, opacity 0.3s, height 0.4s linear;
+    -webkit-transition: visibility 0s, opacity 0.3s, height 0.4s linear;
+    -moz-transition: visibility 0s, opacity 0.3s, height 0.4s linear;
+    -ms-transition: visibility 0s, opacity 0.3s, height 0.4s linear;
+    -o-transition: visibility 0s, opacity 0.3s, height 0.4s linear;
+}
+
+
+/*-------------------------------*/
+/* end collapsed mobile nav */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* expanded mobile nav */
+/*-------------------------------*/
+nav.expanded {
+    display: flex;
+    flex-direction: column; 
+}
+
+nav.expanded .navContents {
+    /* segunda parte de la animación */
+    visibility: visible;
+    opacity: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    height: calc(100vh - var(--navHeight));    
+}
+
+nav.expanded .navContents a{
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.512);
+}
+
+.navContents a {
+    color: var(--text);
+    text-align: center;
+    padding: 2rem 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+   
+}
+
+.navContents a.active {
+    background-color: var(--primary);
+    color: white;
+    font-weight: 300;
+}
+
+/*-------------------------------*/
+/* end expanded mobile nav */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* Tabletas y computadoras */
+/*-------------------------------*/
+
+/* desktop up */
+@media (min-width: 648px) {
+    nav{
+        flex-direction: row;
+        align-items: flex-end;
+        --navHeight: 11vh
+    }
+    .iconTrigger{
+        display: none;
+    }
+    nav .navIcons{
+        width: auto;
+        margin-left: 1rem;
+    }
+   nav .navContents {
+        visibility: visible;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        height: 7vh;  
+    }
+    nav .navContents a{
+        font-size: 1rem;
+        padding: 0 0.7rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    /* ---brand--- */
+
+    #navSmartLogoMin {
+        display: none;
+        height: 1.8rem;
+        width: auto;
+    }
+    
+    #navSmartLogo {
+        display: inline;
+        height: auto;
+        width: 8rem;
+        
+    }
+    
+
+    /* ---end brand--- */  
+}
+/* end desktop up */
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    nav{
+    --navHeight:16vh;
+    transition: height 0.2s ease  ;
+    -webkit-transition: height 0.2s ease  ;
+    -moz-transition: height 0.2s ease  ;
+    -ms-transition: height 0.2s ease  ;
+    -o-transition: height 0.2s ease  ;
+}
+    #navUpLogo {
+        display: inline;
+        height: 4rem;
+        width: auto;
+        padding-left: 1rem;
+        border-left: 0.5px solid var(--primary);
+        margin-left: 1rem;
+    }
+}
+/* end tablet up */
+
+/*-------------------------------*/
+/* end Tabletas y computadoras */
+/*-------------------------------*/
+
+
+
+/*###################################################*/
+/*...................................................*/
+/* end navbar */
+/*...................................................*/
+/*###################################################*/
+
+/*###################################################*/
+/*...................................................*/
+/* portada */
+/*...................................................*/
+/*###################################################*/
+
+.portada{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: blue;
+    
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end portada */
+/*...................................................*/
+/*###################################################*/
+
+
