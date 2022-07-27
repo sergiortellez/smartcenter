@@ -117,11 +117,11 @@ nav {
     font-weight: 200;
 
     /* fixed from materialized  */
-    height: var(--navHeight);
-    line-height: inherit;
-    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+    line-height: unset;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);  
 
     /* Set the navbar to fixed position */
+    height: auto;
     position: fixed;
     top: 0;
     /* full width */
@@ -203,6 +203,7 @@ nav .navContents {
 nav.expanded {
     display: flex;
     flex-direction: column; 
+   
 }
 
 nav.expanded .navContents {
@@ -213,7 +214,10 @@ nav.expanded .navContents {
     display: flex;
     flex-direction: column;
     align-self: stretch;
-    height: calc(100vh - var(--navHeight));    
+    height: calc(100vh - var(--navHeight));
+   
+
+    
 }
 
 nav.expanded .navContents a{
@@ -248,9 +252,11 @@ nav.expanded .navContents a{
 /* desktop up */
 @media (min-width: 648px) {
     nav{
+        height: var(--navHeight);
         flex-direction: row;
         align-items: flex-end;
         --navHeight: 11vh
+        
     }
     .iconTrigger{
         display: none;

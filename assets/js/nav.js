@@ -40,6 +40,7 @@ ScrollTrigger.create({
         }
     },
     onEnterBack: function back(){
+        if(window.innerWidth > 1024){
         const navSmartLogoMin = document.getElementById('navSmartLogoMin');
         const navSmartLogo = document.getElementById('navSmartLogo');
         const navUpLogo = document.getElementById('navUpLogo');
@@ -49,8 +50,9 @@ ScrollTrigger.create({
         navSmartLogo.style.display='inline';
         navSmartLogoMin.style.display='none';
         navUpLogo.style.display='inline';
+        }
     },
-    markers: true
+    markers: false
 });
 
 
