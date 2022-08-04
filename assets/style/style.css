@@ -88,6 +88,95 @@ body {
 
 }
 
+/* ajustando y centrando el contenido en un ancho máximo */
+body > section{
+    max-width: 1824px;
+    margin: 5rem auto !important;
+    float: none !important;
+}
+
+/* sobre escribir listas de materialize */
+ul:not(.browser-default)>li {
+    list-style-type: disc;
+}
+
+/*-------------------------------*/
+/* tarjetas expansibles */
+/*-------------------------------*/
+
+/* ---data-expand para la animación de tarjetas ocultas--- */
+
+article[data-expand='hidden'] {
+ /*saca el elemento del flujo de la página para que sea ignorado por cualquier grid*/
+ position: absolute;
+ /*escóndelo*/
+ visibility: hidden;
+ height: 0;
+ overflow: hidden;
+}
+
+  article[data-expand='expanded']{
+    /*regrésalo al flujo de la página*/
+    position: relative;
+    /* hazlo visible */
+    visibility: visible;
+    height: 100%;
+    /* esconde lo que supere el borde */
+    overflow: hidden;
+    /* anima el cambio de altura y opacidad */
+    transition: height 0.5s ease-out, opacity 0.4s linear;
+    -webkit-transition: height 0.5s ease-out, opacity 0.4s linear;
+    -moz-transition: height 0.5s ease-out, opacity 0.4s linear;
+    -ms-transition: height 0.5s ease-out, opacity 0.4s linear;
+    -o-transition: height 0.5s ease-out, opacity 0.4s linear;
+}
+
+/* ---end data-expand para la animación de tarjetas ocultas--- */
+
+/* ---tarjetas expandidas--- */
+
+.expanded_card{
+    padding: 1rem;
+}
+
+.expanded_card header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 1.3rem;
+}
+
+.expanded_card header svg{
+    color: var(--smartRed);
+    font-size: 3rem;
+    pointer-events: none 
+}
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .expanded_card header svg{
+        font-size: 2rem;
+    }
+}
+/* end tablet up */
+
+button[data-action='close']{
+    all: unset;
+  }
+
+  button[data-action='close']:hover,
+  button[data-action='close']:focus{
+    cursor: pointer;
+    color: var(--primary);
+
+}
+
+/* ---end tarjetas expandidas--- */
+
+
+/*-------------------------------*/
+/* end tarjetas expansibles */
+/*-------------------------------*/
+
 /*###################################################*/
 /*...................................................*/
 /* end general properties */
@@ -354,3 +443,513 @@ nav.expanded .navContents a{
 /*###################################################*/
 
 
+/*###################################################*/
+/*...................................................*/
+/* quienes somos */
+/*...................................................*/
+/*###################################################*/
+
+/*-------------------------------*/
+/* grid */
+/*-------------------------------*/
+#somos{
+    padding: 0 1rem;
+}
+.grid_somos{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    gap: 1rem;
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .grid_somos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* end tablet up */
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    .grid_somos{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+/* end tablet up */
+
+/*-------------------------------*/
+/* end grid */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* tarjetas */
+/*-------------------------------*/
+
+#somos article{
+   background-color: rgb(232, 230, 230);
+   border-radius: 15px;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   -ms-border-radius: 15px;
+   -o-border-radius: 15px;
+}
+
+/*-------------------------------*/
+/* end tarjetas */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* tarjeta portada */
+/*-------------------------------*/
+
+#somos_portada{
+    
+    min-height: 40vh;
+    display: flex;
+    align-items: flex-end;
+    background-image: url(../images/alumnos_up.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    #somos_portada{
+        grid-column: span 2;
+    }
+}
+/* end tablet up */
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    #somos_portada{
+        grid-row: span 2;
+    }
+}
+/* end tablet up */
+
+#somos_portada p{
+    background-color: #fff;
+    padding: 0.5rem;
+    background-color: var(--smartRed);
+    color: var(--background);
+    width: 100%;
+}
+/*-------------------------------*/
+/* end tarjeta portada */
+/*-------------------------------*/
+
+
+#somos_texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/*-------------------------------*/
+/* tarjeta CIIE */
+/*-------------------------------*/
+#somos_ciie{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#somos_ciie img{
+    width: 10rem;
+    height: auto;
+  }
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    #somos_ciie{
+        font-size: 0.7rem;
+    }
+    /* end tablet up */
+    
+}
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    #somos_ciie{
+       flex-direction: column;
+    }
+    #somos_ciie img{
+        width: 8rem;
+        height: auto;
+    }
+}
+/* end tablet up */
+/*-------------------------------*/
+/* end tarjeta CIIE */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* tiras, contenidos y botones */
+/*-------------------------------*/
+.somos_card_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--smartBlue);
+    color: var(--background);
+    font-size: 1.4rem;
+    padding: 1rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; 
+}
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    .somos_card_title{
+        font-size: 1.2rem;
+    }
+}
+/* end tablet up */
+
+.somos_card_title svg{
+    margin-right: 0.5rem;
+}
+
+.somos_card_content{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 12rem;
+    padding: 1rem;
+}
+
+.somos_card_content p{ 
+   text-align: center;
+}
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    .somos_card_content{
+        font-size: 0.8rem;
+    }
+}
+/* end tablet up */
+
+.somos_card_content button{
+    all: unset;
+    background-color: var(--primary);
+    color: var(--background);
+    padding: 0.6rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-top: 1.4rem;
+    font-size: 1.3rem;
+}
+
+.somos_card_content button:hover,
+.somos_card_content button:focus{
+    cursor: pointer;
+    background-color: var(--background);
+    color: var(--primary);
+
+}
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    .somos_card_content button{
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+}
+/* end tablet up */
+/*-------------------------------*/
+/* end tiras, contenidos y botones  */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* tarjeta objetivo */
+/*-------------------------------*/
+
+#somos_objetivo_expanded{
+   
+    grid-column: span 1;
+    padding: 1rem;
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    #somos_objetivo_expanded{
+        grid-column: span 2;
+    }
+    
+}
+/* end tablet up */
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    #somos_objetivo_expanded{
+        grid-column: span 3;
+    }
+}
+/* end tablet up */
+#somos_objetivo_expanded ul{
+   
+    padding: 1rem;
+}
+#somos_objetivo_expanded li{
+   
+    margin-bottom: 1rem;
+}
+/*-------------------------------*/
+/* end tarjeta objetivo */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* tarjeta historia */
+/*-------------------------------*/
+
+#somos_historia_expanded{
+   
+    grid-column: span 1;
+}
+
+
+
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    #somos_historia_expanded{
+        grid-column: span 2;
+    }
+    
+}
+/* end tablet up */
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    #somos_historia_expanded{
+        grid-column: 3/6;
+        grid-row: 3/4;
+    }
+}
+/* end tablet up */
+/*-------------------------------*/
+/* end tarjeta historia */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* tarjeta misión */
+/*-------------------------------*/
+
+#somos_mision_expanded{
+   
+    grid-column: span 1;
+}
+
+
+
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    #somos_mision_expanded{
+        grid-column: span 2;
+    }
+    
+}
+/* end tablet up */
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    #somos_mision_expanded{
+        grid-column: 3/6;
+        grid-row: 3/4;
+    }
+}
+/* end tablet up */
+/*-------------------------------*/
+/* end tarjeta misión */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* tarjeta valores */
+/*-------------------------------*/
+
+#somos_valores_expanded{ 
+    grid-column: span 1;
+}
+
+#somos_valores_expanded ul{ 
+    padding: 1rem;
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    #somos_valores_expanded{
+        grid-column: span 2;
+    }
+    
+}
+/* end tablet up */
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    #somos_valores_expanded{
+        grid-column: 3/6;
+        grid-row: 3/4;
+    }
+}
+/* end tablet up */
+
+#listaValores{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+#listaValores li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: auto;
+    height: 4rem;
+    padding: 1rem;
+    font-weight: 600;
+    background-color: var(--smartRed);
+    color: var(--background);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/*-------------------------------*/
+/* end tarjeta valores */
+/*-------------------------------*/
+
+
+/*###################################################*/
+/*...................................................*/
+/* end quienes somos */
+/*...................................................*/
+/*###################################################*/
+
+
+/*###################################################*/
+/*...................................................*/
+/* footer */
+/*...................................................*/
+/*###################################################*/
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    background-color: var(--smartRed);
+    padding: 3rem;
+    color: var(--background);
+    text-align: center;
+}
+/* tablet portrait up */
+@media (min-width: 768px) {
+    footer{
+        flex-direction: row;
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+}
+/* end tablet up */
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    footer{
+        flex-direction: row;
+        font-size: 1rem;
+        padding: 3rem;
+    }
+}
+/* end tablet up */
+
+footer a{
+    color: var(--background);
+}
+footer a:visited{
+    color: var(--background);
+}
+footer svg{
+    font-size: 1.3rem;
+}
+/*-------------------------------*/
+/* up logo */
+/*-------------------------------*/
+
+#footer_logo{
+    width: 18rem;
+}
+/* tablet portrait up */
+@media (min-width:768px) and (max-width:1024.1px){
+    #footer_logo{
+        width: 12rem;
+    }
+}
+/* end tablet up */
+/*-------------------------------*/
+/* end up logo */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* legales y links */
+/*-------------------------------*/
+#footer_derechos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0; 
+}
+
+#footer_redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+/*-------------------------------*/
+/* end legales y links */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* dirección y contacto */
+/*-------------------------------*/
+#footer_contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    #footer_contacto{
+        align-items: flex-start;
+    }
+}
+/* end tablet up */
+
+
+/*-------------------------------*/
+/* end dirección y contacto */
+/*-------------------------------*/
+
+/*###################################################*/
+/*...................................................*/
+/* end footer */
+/*...................................................*/
+/*###################################################*/
