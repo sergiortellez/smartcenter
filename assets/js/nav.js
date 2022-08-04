@@ -22,8 +22,8 @@ if(window.innerWidth < 648){
 gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.create({
-    trigger: '.portada',
-    start:'bottom 100px',
+    trigger: '.portada',//el elemento que desencadena el comportamiento
+    start:'bottom 100px', //cuando la parte inferior del elemento toca 100px abajo del  tope superior del viewport
     //end:'800px 200px',
     onEnter: function enter(){
         if(window.innerWidth > 1024){
