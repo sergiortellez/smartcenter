@@ -16,17 +16,25 @@ var sections = {};
 var i = 0;
   
 Array.prototype.forEach.call(section, function(e) {
-      sections[e.id] = e.offsetTop -50;
-      //el menos 80 activa la función 80 pixeles antes de llegar al objetivo.
+      sections[e.id] = e.offsetTop -200;
+      //el menos 200 activa la función 200 pixeles antes de llegar al objetivo.
 });
   
+
     
 window.onscroll = function() {
     var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
     
     for (i in sections) {
         if (sections[i] <= scrollPosition) {
-            document.querySelector('.active').setAttribute('class', ' ');
+
+            try {
+                document.querySelector('.active').setAttribute('class', ' ');
+              } catch (error) {
+                console.error(error);
+              }
+              
+            
             document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
           }
     }
