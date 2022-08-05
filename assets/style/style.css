@@ -838,6 +838,84 @@ nav.expanded .navContents a{
 /*...................................................*/
 /*###################################################*/
 
+/*###################################################*/
+/*...................................................*/
+/* contacto */
+/*...................................................*/
+/*###################################################*/
+
+.grid_contacto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.grid_contacto article{
+    padding: 10rem 0 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-content{
+    color: var(--background);
+    font-size: 0.7rem;
+    padding: 1rem 0.5rem;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.4px);
+    -webkit-backdrop-filter: blur(7.4px);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transform: translateY(55%);
+    -webkit-transform: translateY(55%);
+    -moz-transform: translateY(55%);
+    -ms-transform: translateY(55%);
+    -o-transform: translateY(55%);
+    transition: transform 500ms ease;
+    -webkit-transition: transform 500ms ease;
+    -moz-transition: transform 500ms ease;
+    -ms-transition: transform 500ms ease;
+    -o-transition: transform 500ms ease;
+}
+
+.person:hover .card-content{
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+}
+
+.card-name{
+    border-bottom: #fff 2px solid;
+    font-weight: 800;
+}
+
+.card-position{
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.card-data{
+    font-size: 0.9rem,;
+}
+/*###################################################*/
+/*...................................................*/
+/* end contacto */
+/*...................................................*/
+/*###################################################*/
 
 /*###################################################*/
 /*...................................................*/
