@@ -49,7 +49,7 @@ const body = document.querySelector('body');
 body.addEventListener('click', (e) =>{
 
     //si el elemento que responde al click es un botón y tiene el data-type = 'button'
-    if(e.target && e.target.tagName === 'BUTTON' && e.target.dataset.type === 'button'){
+    if(e.target  && e.target.dataset.type === 'button'){
         //usamos el data-id del botón para apuntar al objeto que queremos expandir.
 
         //cierra todas las instancias de tarjetas abiertas

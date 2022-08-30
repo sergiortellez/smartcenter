@@ -23,10 +23,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.create({
     trigger: '.portada',//el elemento que desencadena el comportamiento
-    start:'bottom 100px', //cuando la parte inferior del elemento toca 100px abajo del  tope superior del viewport
+    start:'center top', //cuando la parte central del elemento toca el  tope superior del viewport
     //end:'800px 200px',
     onEnter: function enter(){
-        if(window.innerWidth > 1024){
+        if(window.innerWidth > 1054){
             const navSmartLogoMin = document.getElementById('navSmartLogoMin');
             const navSmartLogo = document.getElementById('navSmartLogo');
             const navUpLogo = document.getElementById('navUpLogo');
