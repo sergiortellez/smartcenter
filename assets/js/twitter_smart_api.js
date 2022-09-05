@@ -50,9 +50,8 @@ const URLTwitterFeed = "https://sheets.googleapis.com/v4/spreadsheets/1TS5Qa0eBI
 <!------------------------------------------------->*/
 
 window.onload = function() {
-
-    //carga el widget de twitter: https://developer.twitter.com/en/docs/twitter-for-websites/javascript-api/guides/set-up-twitter-for-websites
     
+    //carga el widget de twitter: https://developer.twitter.com/en/docs/twitter-for-websites/javascript-api/guides/set-up-twitter-for-websites
     window.twttr = (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0],
           t = window.twttr || {};
@@ -126,7 +125,7 @@ function buildData(URLdata){
 function fillPageData(data){
     
 
-    let smartNewsGrid = document.querySelector(".news");
+    let smartNewsGrid = document.querySelector("#grid-news");
     //para cada dato en nuestro arreglo, inyecta el código de una tarjeta.
     data.forEach(function(dataArray){
         smartNewsGrid.innerHTML += dataArray[0];
@@ -139,7 +138,7 @@ function fillPageData(data){
 
     */
     twttr.widgets.load( 
-        document.querySelector(".news")
+        document.querySelector("#grid-news")
       );
     
 

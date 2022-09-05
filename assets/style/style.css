@@ -1065,6 +1065,55 @@ nav.expanded .navContents a {
 
 /*###################################################*/
 /*...................................................*/
+/* news */
+/*...................................................*/
+/*###################################################*/
+
+#grid-news {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 1rem;
+    grid-auto-rows: auto;
+    padding: 0 1rem;
+}
+
+.twitter-tweet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(128, 128, 128, 0.512);
+    padding: 0.6rem;
+    /* max-width: 350px !important; */
+    width: 100% !important;
+
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.twitter-tweet iframe {
+
+    width: auto !important;
+    min-height: 100% !important;
+    background-color: #fff;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end news */
+/*...................................................*/
+/*###################################################*/
+
+/*###################################################*/
+/*...................................................*/
 /* tips */
 /*...................................................*/
 /*###################################################*/
@@ -1087,31 +1136,7 @@ nav.expanded .navContents a {
 .grid-tips {
     min-height: 80vh;
     min-width: 60vw;
-
-
 }
-
-.news {
-    position: relative;
-    background-color: #e8e6e6;
-    min-height: 80vh;
-    height: 100%;
-    width: 100%;
-    padding: 1rem;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    overflow: scroll;
-}
-
-.twitter-timeline {
-    height: 1450px !important;
-}
-
-
-
 
 /*###################################################*/
 /*...................................................*/
