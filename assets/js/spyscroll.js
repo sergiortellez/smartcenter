@@ -15,27 +15,29 @@ var section = document.querySelectorAll(".spy-scroll > section");
 var sections = {};
 var i = 0;
   
-Array.prototype.forEach.call(section, function(e) {
-      sections[e.id] = e.offsetTop -200;
-      //el menos 200 activa la función 200 pixeles antes de llegar al objetivo.
-});
-  
-
-    
 window.onscroll = function() {
+
+  Array.prototype.forEach.call(section, function(e) {
+    sections[e.id] = e.offsetTop -200;
+    //el menos 200 activa la función 200 pixeles antes de llegar al objetivo.
+});
+
     var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
     
     for (i in sections) {
+       
+      // console.log(sections[i]);
         if (sections[i] <= scrollPosition) {
 
             try {
-                document.querySelector('.active').setAttribute('class', ' ');
-              } catch (error) {
-                console.error(error);
-              }
-              
+              document.querySelector('.active').setAttribute('class', ' ');
+            } catch (error) {
+              // console.error(error);
+            }
             
-            document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
+          
+          document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
+           
           }
     }
 }

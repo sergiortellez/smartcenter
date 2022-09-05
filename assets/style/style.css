@@ -396,7 +396,8 @@ button[data-action='close']:focus {
 
 /* sólo aparecen en celulares */
 .title {
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
+    text-align: center;
 }
 
 
@@ -1069,6 +1070,7 @@ nav.expanded .navContents a {
 /*...................................................*/
 /*###################################################*/
 
+
 #grid-news {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
@@ -1077,12 +1079,23 @@ nav.expanded .navContents a {
     padding: 0 1rem;
 }
 
+#grid-news blockquote {
+    min-height: 500px;
+
+}
+
+#grid-news blockquote * {
+    display: none;
+    color: #e8e6e6;
+
+}
+
 .twitter-tweet {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background-color: rgba(128, 128, 128, 0.512);
+    background-color: #e8e6e6;
     padding: 0.6rem;
     /* max-width: 350px !important; */
     width: 100% !important;
