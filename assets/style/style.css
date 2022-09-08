@@ -895,32 +895,25 @@ nav.expanded .navContents a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     padding: 1rem;
     cursor: pointer;
-
     border-radius: 9px;
     -webkit-border-radius: 9px;
     -moz-border-radius: 9px;
     -ms-border-radius: 9px;
     -o-border-radius: 9px;
-
-    transition: transform 500ms ease;
-    -webkit-transition: transform 500ms ease;
-    -moz-transition: transform 500ms ease;
-    -ms-transition: transform 500ms ease;
-    -o-transition: transform 500ms ease;
+    transition: scale 300ms ease;
+    -webkit-transition: scale 300ms ease;
+    -moz-transition: scale 300ms ease;
+    -ms-transition: scale 300ms ease;
+    -o-transition: scale 300ms ease;
 }
 
 #experiencias article[data-type="button"]:hover,
 #experiencias article[data-type="button"]:focus,
 .experiencias-grid>a:hover,
 .experiencias-grid>a:focus {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
+    scale: 0.95;
 }
 
 #experiencias article[data-type="button"] * {
@@ -1669,34 +1662,26 @@ nav.expanded .navContents a {
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
-
     min-height: 20rem;
     padding: 10rem 0 0 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
-
-
-    transition: transform 500ms ease;
-    -webkit-transition: transform 500ms ease;
-    -moz-transition: transform 500ms ease;
-    -ms-transition: transform 500ms ease;
-    -o-transition: transform 500ms ease;
-
+    transition: scale 300ms ease;
+    -webkit-transition: scale 300ms ease;
+    -moz-transition: scale 300ms ease;
+    -ms-transition: scale 300ms ease;
+    -o-transition: scale 300ms ease;
 }
 
 .person:hover {
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
+    scale: 1.05;
+
 }
 
 .card-content {
