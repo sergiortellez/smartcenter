@@ -857,6 +857,7 @@ nav.expanded .navContents a {
 /*...................................................*/
 /*###################################################*/
 
+
 #experiencias {
     padding: 5rem 1rem;
 }
@@ -1070,53 +1071,110 @@ nav.expanded .navContents a {
 /*...................................................*/
 /*###################################################*/
 
+/*-------------------------------*/
+/* grid */
+/*-------------------------------*/
 
 #grid-news {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 1rem;
-    grid-auto-rows: auto;
-    padding: 0 1rem;
+    margin: 0 1rem;
 }
+
+/*-------------------------------*/
+/* end grid */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* tarjetas */
+/*-------------------------------*/
 
 #grid-news blockquote {
-    min-height: 500px;
+    all: unset;
+    background-color: #e8e6e6;
+    padding: 0.3rem;
 
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
-#grid-news blockquote * {
-    display: none;
-    color: #e8e6e6;
 
+.tweet-card a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100%;
+    padding: 0.3rem;
+    color: #000;
+    transition: scale 300ms ease;
+    -webkit-transition: scale 300ms ease;
+    -moz-transition: scale 300ms ease;
+    -ms-transition: scale 300ms ease;
+    -o-transition: scale 300ms ease;
 }
 
-.twitter-tweet {
+.tweet-card a:hover,
+.tweet-card a:focus {
+    scale: 0.95;
+    background-color: rgba(255, 253, 253, 0.75);
+
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.tweet-card a:hover img {
+    border: solid 1px var(--primary);
+}
+
+/*-------------------------------*/
+/* end tarjetas */
+/*-------------------------------*/
+
+
+
+.tweet-card a p {
+    min-width: 100%;
+    text-align: left;
+}
+
+.tweet-card a img {
+    max-height: 16rem;
+    width: auto;
+    max-width: 100%;
+    align-self: center;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.data-publication {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    min-width: 100%;
 
-    background-color: #e8e6e6;
-    padding: 0.6rem;
-    /* max-width: 350px !important; */
-    width: 100% !important;
-
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
 }
 
-.twitter-tweet iframe {
+.data-publication span {
+    font-size: 0.7rem;
+    color: gray;
+    font-weight: 300;
+}
 
-    width: auto !important;
-    min-height: 100% !important;
-    background-color: #fff;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+.data-publication svg {
+    font-size: 1.4rem;
+    /* color: rgb(170, 16, 170); */
 }
 
 /*###################################################*/
@@ -1130,26 +1188,9 @@ nav.expanded .navContents a {
 /* tips */
 /*...................................................*/
 /*###################################################*/
-#tips {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem
-}
 
-/* tablet portrait up */
-@media (min-width: 768px) {
-    #tips {
-        flex-direction: row;
-    }
-}
 
-/* end tablet up */
-.grid-tips {
-    min-height: 80vh;
-    min-width: 60vw;
-}
+
 
 /*###################################################*/
 /*...................................................*/
@@ -1588,6 +1629,7 @@ nav.expanded .navContents a {
 /* contacto */
 /*...................................................*/
 /*###################################################*/
+
 #contacto {
     padding: 5rem 1rem;
 }
@@ -1895,9 +1937,6 @@ nav.expanded .navContents a {
 /* footer */
 /*...................................................*/
 /*###################################################*/
-
-
-
 
 
 footer {
