@@ -111,16 +111,16 @@
     <section id="experiencias">
         <h1 class="title">Nuestras experiencias</h1>
         <div class="experiencias-grid">
+            <!-- Tarjeta Presentación -->
             <article class="experiencias_title">
-                <p><i class="fa-duotone fa-crosshairs-simple"></i> <span>Llegaste a </span> <b style="color: var(--primary);">SMART</b>
-
-                </p>
+                <p><i class="fa-duotone fa-crosshairs-simple"></i> <span>Llegaste a </span> <b style="color: var(--primary);">SMART</b></p>
                 <hr>
                 <span>Aquí encontrarás una colección de</span> <span style="color: var(--primary); font-size: 1.5rem;">experiencias</span>, <span style="color: var(--primary); font-size: 1.7rem;">cursos</span>, <span style="color: var(--primary); font-size: 1.3rem;">guías</span> e <span
                     style="color: var(--primary); font-size: 1rem;">información</span> que te será increíblemente útil durante tus años de universidad.
                 <p>Visítanos seguido y déjanos acompañarte y ayudarte en esta gran aventura. <i class="fa-duotone fa-graduation-cap"></i></p>
             </article>
-            <!--	----  tarjeta enlace ----	-->
+
+            <!--	----  tarjeta enlace Biblioteca experiencias ----	-->
             <a class="successCard horizontal" href="success/cursos/mcms/index.html">
                 <i class="fa-duotone fa-link"></i>
                 <i class="fa-duotone fa-books"></i>
@@ -128,10 +128,18 @@
             </a>
             <!--	---- end tarjeta enlace ----	-->
 
-            <!--	----  tarjeta expandible ----	-->
-            <article class="gruposCard" data-type="button" data-id="que_es_gea">
+            <!--	----  tarjeta enlace (oferta GEAS)----	-->
+            <a class="gruposCard horizontal" href="oferta_geas.html">
+                <i class="fa-duotone fa-link"></i>
+                <i class="fa-duotone fa-cart-circle-arrow-down"></i>
+                <span>Oferta de GEAS</span>
+            </a>
+            <!--	---- end tarjeta enlace ----	-->
+
+            <!--	----  tarjeta expandible (Qué es un GEA) ----	-->
+            <article class="gruposCard horizontal" data-type="button" data-id="que_es_gea">
                 <i class="fa-duotone fa-block-question"></i>
-                <span>¿Qué es un GEA?</span>
+                <span>¿Qué es un Grupo Estudiantil Académico (GEA)?</span>
             </article>
 
             <!-- tarjeta expandida -->
@@ -146,6 +154,7 @@
                 </header>
                 <div class="expanded-content">
                     <!-- TODO: llenar contenido -->
+                    <!-- TODO: video ¿Qué es un GEA? -->
                     <p></p>
                 </div>
             </article>
@@ -153,47 +162,23 @@
 
             <!--	---- end tarjeta expandible ----	-->
 
-            <!--	----  tarjeta enlace ----	-->
-            <a class="gruposCard horizontal" href="https://form.typeform.com/to/B3w43naa?typeform-source=successcenter1.typeform.com">
+            <!--	----  tarjeta enlace (Únete a un GEA)----	-->
+            <a class="gruposCard" href="https://form.typeform.com/to/B3w43naa?typeform-source=successcenter1.typeform.com">
 
                 <i class="fa-duotone fa-link"></i>
                 <i class="fa-duotone fa-calendar-lines-pen"></i>
-                <span>Únete a un GEA</span>
+                <span style="font-size: 1rem;">Únete a un GEA</span>
             </a>
             <!--	---- end tarjeta enlace ----	-->
 
-            <!--	----  tarjeta expandible ----	-->
-            <article class="gruposCard" data-type="button" data-id="requisitos_gea">
-                <i class="fa-duotone fa-list-check"></i>
-                <span>Requisitos</span>
-            </article>
-
-            <!-- tarjeta expandida -->
-            <article class="expanded_card" data-expand="hidden" id="requisitos_gea">
-                <header>
-                    <span class="title-expanded"></span>
-                    <!-- botón cerrar -->
-                    <button data-action="close">
-                        <i class="fa-duotone fa-rectangle-xmark"></i>
-                    </button>
-                    <!-- end botón cerrar -->
-                </header>
-                <div class="expanded-content">
-                    <p></p>
-                </div>
-            </article>
-            <!-- end tarjeta expandida -->
-
-            <!--	---- end tarjeta expandible ----	-->
-
-            <!--	----  tarjeta expandible ----	-->
-            <article class="gruposCard" data-type="button" data-id="fechas_gea">
+            <!--	----  tarjeta expandible (Eventos GEA) ----	-->
+            <article class="gruposCard" data-type="button" data-id="eventos_gea">
                 <i class="fa-duotone fa-calendar"></i>
-                <span>Fechas GEA</span>
+                <span>Eventos GEA</span>
             </article>
 
             <!-- tarjeta expandida -->
-            <article class="expanded_card" data-expand="hidden" id="fechas_gea">
+            <article class="expanded_card" data-expand="hidden" id="eventos_gea">
                 <header>
                     <span class="title-expanded"></span>
                     <!-- botón cerrar -->
@@ -210,7 +195,7 @@
 
             <!--	---- end tarjeta expandible ----	-->
 
-            <!--	----  tarjeta expandible ----	-->
+            <!--	----  tarjeta expandible (Training program)----	-->
             <article class="gruposCard" data-type="button" data-id="training">
                 <i class="fa-duotone fa-signs-post"></i>
                 <span>Training program</span>
@@ -234,14 +219,49 @@
 
             <!--	---- end tarjeta expandible ----	-->
 
-            <!--	----  tarjeta expandible ----	-->
-            <article class="gruposCard" data-type="button" data-id="simulador_empresarial">
-                <i class="fa-duotone fa-signs-post"></i>
-                <span>Simulador Empresarial</span>
+            <!--	----  tarjeta expandible (Requisitos) ----	-->
+
+            <article class="gruposCard" data-type="button" data-id="requisitos_gea">
+                <i class="fa-duotone fa-list-check"></i>
+                <span>Requisitos</span>
             </article>
 
             <!-- tarjeta expandida -->
-            <article class="expanded_card" data-expand="hidden" id="simulador_empresarial">
+            <article class="expanded_card" data-expand="hidden" id="requisitos_gea">
+                <header>
+                    <span class="title-expanded"></span>
+                    <!-- botón cerrar -->
+                    <button data-action="close">
+                        <i class="fa-duotone fa-rectangle-xmark"></i>
+                    </button>
+                    <!-- end botón cerrar -->
+                </header>
+                <div class="expanded-content">
+                    <p></p>
+                </div>
+            </article>
+            <!-- end tarjeta expandida -->
+            <!--	---- end tarjeta expandible ----	-->
+
+            <!--	----  tarjeta enlace (Crea tu GEA) ----	-->
+            <!-- TODO: insertar enlace a formulario -->
+            <a class="gruposCard horizontal" href="">
+
+                <i class="fa-duotone fa-link"></i>
+                <i class="fa-duotone fa-calendar-lines-pen"></i>
+                <span>Crea tu GEA</span>
+            </a>
+            <!--	---- end tarjeta enlace ----	-->
+
+            <!--	----  tarjeta expandible (¿Qué es la AU?) ----	-->
+
+            <article class="asesoriaCard horizontal" data-type="button" data-id="que_es_au">
+                <i class="fa-duotone fa-comments"></i>
+                <span style="font-size: 1rem;margin-left:2.2rem;">¿Qué es la <br> Asesoría Universitaria (AU)?</span>
+            </article>
+
+            <!-- tarjeta expandida -->
+            <article class="expanded_card" data-expand="hidden" id="que_es_au">
                 <header>
                     <span class="title-expanded"></span>
                     <!-- botón cerrar -->
@@ -258,18 +278,18 @@
 
             <!--	---- end tarjeta expandible ----	-->
 
-            <!--	----  tarjeta enlace ----	-->
-            <a class="gruposCard horizontal" href="oferta_geas.html">
+            <!--	----  tarjeta enlace (¿Eres Asesor?) ----	-->
+            <a class="asesoriaCard" href="https://asesoria.up.edu.mx" target="_blank">
                 <i class="fa-duotone fa-link"></i>
-                <i class="fa-duotone fa-cart-circle-arrow-down"></i>
-                <span>Oferta de GEAS</span>
+                <i class="fa-duotone fa-person-chalkboard"></i>
+                <span style="font-size: 1.2rem;">¿Eres Asesor?</span>
             </a>
             <!--	---- end tarjeta enlace ----	-->
 
-            <!--	----  tarjeta expandible ----	-->
+            <!--	----  tarjeta expandible (Prepara tu asesoría) ----	-->
             <article class="asesoriaCard" data-type="button" data-id="pasos_au">
                 <i class="fa-duotone fa-shoe-prints"></i>
-                <span>Pasos de la AU</span>
+                <span style="font-size: 1rem;">Prepara tu asesoría</span>
             </article>
 
             <!-- tarjeta expandida -->
@@ -288,9 +308,7 @@
             </article>
             <!-- end tarjeta expandida -->
 
-            <!--	---- end tarjeta expandible ----	-->
-
-            <!--	----  tarjeta expandible ----	-->
+            <!--	----  tarjeta expandible (Temas en la AU) ----	-->
             <article class="asesoriaCard" data-type="button" data-id="temas_au">
                 <i class="fa-duotone fa-comments"></i>
                 <span>Temas en la AU</span>
@@ -314,31 +332,7 @@
 
             <!--	---- end tarjeta expandible ----	-->
 
-            <!--	----  tarjeta expandible ----	-->
-            <article class="asesoriaCard" data-type="button" data-id="derechos_au">
-                <i class="fa-duotone fa-scale-balanced"></i>
-                <span>Derechos y Obligaciones</span>
-            </article>
-
-            <!-- tarjeta expandida -->
-            <article class="expanded_card" data-expand="hidden" id="derechos_au">
-                <header>
-                    <span class="title-expanded"></span>
-                    <!-- botón cerrar -->
-                    <button data-action="close">
-                        <i class="fa-duotone fa-rectangle-xmark"></i>
-                    </button>
-                    <!-- end botón cerrar -->
-                </header>
-                <div class="expanded-content">
-                    <p></p>
-                </div>
-            </article>
-            <!-- end tarjeta expandida -->
-
-            <!--	---- end tarjeta expandible ----	-->
-
-            <!--	----  tarjeta expandible ----	-->
+            <!--	----  tarjeta expandible (FAQ AU) ----	-->
             <article class="asesoriaCard" data-type="button" data-id="faq_au">
                 <i class="fa-duotone fa-circle-question"></i>
                 <span>FAQ AU</span>
@@ -359,25 +353,24 @@
                 </div>
             </article>
             <!-- end tarjeta expandida -->
-
             <!--	---- end tarjeta expandible ----	-->
 
-            <!--	----  tarjeta enlace ----	-->
+            <!--	----  tarjeta enlace (Cambio asesor) ----	-->
             <a class="asesoriaCard" href="cambio_asesor.html">
                 <i class="fa-duotone fa-link"></i>
                 <i class="fa-duotone fa-recycle"></i>
-                <span>Cambio de asesor</span>
+                <span style="font-size: 1rem;">Cambio de asesor</span>
             </a>
             <!--	---- end tarjeta enlace ----	-->
 
-            <!--	----  tarjeta expandible ----	-->
-            <article class="asesoriaCard" data-type="button" data-id="asesores_au">
-                <i class="fa-duotone fa-person-chalkboard"></i>
-                <span>¿Eres Asesor?</span>
+            <!--	----  tarjeta expandible (¿Qué es counseling?) ----	-->
+            <article class="talentCard horizontal" data-type="button" data-id="que_es_couns">
+                <i class="fa-duotone fa-comments-question-check"></i>
+                <span style="margin-left: 2rem;">¿Qué es counseling?</span>
             </article>
 
             <!-- tarjeta expandida -->
-            <article class="expanded_card" data-expand="hidden" id="asesores_au">
+            <article class="expanded_card" data-expand="hidden" id="que_es_couns">
                 <header>
                     <span class="title-expanded"></span>
                     <!-- botón cerrar -->
@@ -391,7 +384,54 @@
                 </div>
             </article>
             <!-- end tarjeta expandida -->
+            <!--	---- end tarjeta expandible ----	-->
 
+            <!--	----  tarjeta expandible (DPI) ----	-->
+            <article class="talentCard" data-type="button" data-id="dpi">
+                <i class="fa-duotone fa-magnifying-glass"></i>
+                <span style="font-size: 1rem;">Conócete con DPI</span>
+            </article>
+
+            <!-- tarjeta expandida -->
+            <article class="expanded_card" data-expand="hidden" id="dpi">
+                <header>
+                    <span class="title-expanded"></span>
+                    <!-- botón cerrar -->
+                    <button data-action="close">
+                        <i class="fa-duotone fa-rectangle-xmark"></i>
+                    </button>
+                    <!-- end botón cerrar -->
+                </header>
+                <div class="expanded-content">
+                    <p></p>
+                </div>
+            </article>
+            <!-- end tarjeta expandida -->
+            <!--	---- end tarjeta expandible ----	-->
+
+
+
+            <!--	----  tarjeta expandible (Talleres) ----	-->
+            <article class="talentCard" data-type="button" data-id="talleres">
+                <i class="fa-duotone fa-screen-users"></i>
+                <span style="font-size: 1rem;">Talleres</span>
+            </article>
+
+            <!-- tarjeta expandida -->
+            <article class="expanded_card" data-expand="hidden" id="talleres">
+                <header>
+                    <span class="title-expanded"></span>
+                    <!-- botón cerrar -->
+                    <button data-action="close">
+                        <i class="fa-duotone fa-rectangle-xmark"></i>
+                    </button>
+                    <!-- end botón cerrar -->
+                </header>
+                <div class="expanded-content">
+                    <p></p>
+                </div>
+            </article>
+            <!-- end tarjeta expandida -->
             <!--	---- end tarjeta expandible ----	-->
 
         </div>
@@ -610,7 +650,7 @@
         <!--	---- grid tips ----	-->
         <div class="grid-tips">
 
-            
+
 
 
         </div>
@@ -807,6 +847,7 @@
     <!------------------------------------------------->
     <!--	JS	-->
     <!------------------------------------------------->
+
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- GASP 3 for animations on view -->

@@ -991,6 +991,17 @@ nav.expanded .navContents a {
     -o-border-radius: 15px;
 }
 
+/* ajuste para tablet en portrait, así se ve mejor: */
+
+/* tablet portrait up */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .experiencias_title {
+        grid-column: span all;
+    }
+}
+
+/* end tablet up */
+
 /*-------------------------------*/
 /* end title */
 /*-------------------------------*/
@@ -1048,6 +1059,24 @@ nav.expanded .navContents a {
 
 /*-------------------------------*/
 /* end asesoría */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* talent */
+/*-------------------------------*/
+
+.talentCard {
+    background-color: var(--smartGreen);
+    color: var(--background);
+}
+
+.talentCard:hover {
+    background-color: rgb(194, 220, 202);
+    color: var(--smartGreen);
+}
+
+/*-------------------------------*/
+/* end talent */
 /*-------------------------------*/
 
 
@@ -1156,6 +1185,7 @@ nav.expanded .navContents a {
     align-items: center;
     justify-content: space-between;
     min-width: 100%;
+    margin-bottom: 0.6rem;
 
 }
 
