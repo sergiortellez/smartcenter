@@ -689,6 +689,7 @@ nav.expanded .navContents a {
     background-position: left bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    backdrop-filter: opacity(20%);
 
     padding-top: var(--navHeight);
 
@@ -949,19 +950,24 @@ nav.expanded .navContents a {
     -o-border-radius: 15px;
 }
 
+#experiencias a {
+    position: relative;
+}
+
 #experiencias a .fa-link {
     font-size: 1rem;
-    align-self: flex-start;
-
+    /* align-self: flex-start; */
+    position: absolute;
+    top: 9px;
+    left: 9px;
 }
 
 #experiencias .horizontal .fa-link {
-    font-size: 1rem;
-    transform: translate(-180%);
+    /* transform: translate(-180%);
     -webkit-transform: translate(-180%);
     -moz-transform: translate(-180%);
     -ms-transform: translate(-180%);
-    -o-transform: translate(-180%);
+    -o-transform: translate(-180%); */
 }
 
 #experiencias .experiencias-grid>a>span {
