@@ -556,7 +556,10 @@ nav.expanded .navContents a {
     padding: 2rem 1rem;
     text-decoration: none;
     font-size: 1.2rem;
-
+    /* evita que los menús se vayan a doble línea */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .navContents a.active {
