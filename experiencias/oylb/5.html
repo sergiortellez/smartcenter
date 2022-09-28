@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- theme -->
+    <meta name="theme-color" content="#ac8a54">
+    <!-- autor -->
+    <meta name="author" content="Desarrollo: Sergio R. Téllez | SMART Center UP">
+    <meta name="author" content="Diseño: Sergio R. Téllez">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet'>
+
+    <title>Experiencias Digitales | SMART Center</title>
+
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- font awesome SMART Center kit -->
+    <script src="https://kit.fontawesome.com/c09e05c963.js" crossorigin="anonymous"></script>
+
+    <!-- css -->
+    <link rel='stylesheet' href='../../assets/style/videos_experiencias.min.css'>
+
+    <!-- Fav icon -->
+    <link rel='apple-touch-icon' sizes='180x180' href='../../assets/images/favicon/apple-touch-icon.png'>
+    <link rel='icon' type='image/png' sizes='32x32' href='../../assets/images/favicon/favicon-32x32.png'>
+    <link rel='icon' type='image/png' sizes='16x16' href='../../assets/images/favicon/favicon-16x16.png'>
+    <link rel='manifest' href='../../assets/images/favicon/site.webmanifest'>
+    <!-- genera el  favicon en https://favicon.io/favicon-converter/ nombra la carpeta resusltante como 'favicon' y ponla en assets-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156802125-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-156802125-1');
+    </script>
+
+</head>
+
+<!-- TODO: cambiar nombre del curso y agregar clase en CSS -->
+
+<body class="oylb">
+
+    <!------------------------------------------------->
+    <!--	nav	-->
+    <!------------------------------------------------->
+    <nav id="navbar">
+        <!-- botón cerrar -->
+        <button data-action="close" onclick="close_window();return false;">
+            <i class="fa-duotone fa-rectangle-xmark"></i>
+        </button>
+        <!-- end botón cerrar -->
+    </nav>
+    <!------------------------------------------------->
+    <!--  end nav	-->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--	content	-->
+    <!------------------------------------------------->
+    <section class="flex-container">
+        <!--	---- video container ----	-->
+        <main class="video_container">
+            <iframe class="frame-video" id="ytplayer" type="text/html" src="https://www.youtube.com/embed/Zieb2guZIq4?loop=1&color=white&modestbranding=1&enablejsapi=1&showinfo=0" frameborder="0" allow="accelerometer;  clipboard-write; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            <!-- TODO: cambiar título del video -->
+            <h2 class="animate__animated animate__bounceInLeft animate__delay-0.8s">5 formas de tener más energía</h2>
+        </main>
+        <!--	---- end video container ----	-->
+
+        <!--	---- aside ----	-->
+        <aside class="animate__animated animate__bounceInRight animate__delay-0.8s">
+            <div class="buttons">
+                <a href="4.html" class="prev">Anterior</a>
+                <a href="6.html" class="next">Siguiente</a>
+            </div>
+            <div class="downloads">
+                <!-- TODO: revisar recursos descargables -->
+                <h2>Recursos <i class="fa-duotone fa-cloud-arrow-down"></i></h2>
+                <!-- <span>Este video no contiene recursos</span> -->
+                <a href="https://drive.google.com/drive/u/1/folders/1Iv_otFMaSt2ijaJCxcfk-7G5hyKIKKY0" target="_blank">
+                    <i class="fa-duotone fa-file-pdf"></i> <span>Eleva tu energía</span>
+                </a>
+                <a href="https://form.typeform.com/to/QET6K2hi" target="_blank">
+                    <i class="fa-duotone fa-list-check"></i> <span>Niveles de energía</span>
+                </a>
+                <a href="https://drive.google.com/drive/u/1/folders/1Iv_otFMaSt2ijaJCxcfk-7G5hyKIKKY0" target="_blank">
+                    <i class="fa-duotone fa-images"></i> <span>Relax Fast</span>
+                </a>
+            </div>
+            <!-- TODO: cambiar nombre y logo del curso -->
+            <header>
+                <h1>Organizing your life like a boss</h1>
+                <img src="../../assets/images/experiencias/oylb.png" alt="oylb">
+            </header>
+        </aside>
+        <!--	---- end aside ----	-->
+
+    </section>
+    <!------------------------------------------------->
+    <!--	end content	-->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--	JS	-->
+    <!------------------------------------------------->
+    <!-- close function -->
+    <script>
+        function close_window() {
+
+            close();
+
+        }
+    </script>
+    <!------------------------------------------------->
+    <!--	end JS	-->
+    <!------------------------------------------------->
+
+</body>
