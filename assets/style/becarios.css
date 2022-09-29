@@ -95,10 +95,6 @@ body > section{
     float: none !important;
 }
 
-/* sobre escribir listas de materialize */
-ul:not(.browser-default)>li {
-    list-style-type: disc;
-}
 
 
 
