@@ -119,12 +119,16 @@
                     style="color: var(--primary); font-size: 1rem;">información</span> que te será increíblemente útil durante tus años de universidad.
                 <p>Visítanos seguido y déjanos acompañarte y ayudarte en esta gran aventura. <i class="fa-duotone fa-graduation-cap"></i></p>
             </article>
-
+        <!-- end Tarjeta Presentación -->
+           
             <!--	----  tarjeta enlace Biblioteca experiencias ----	-->
             <a class="experiencias_digitales parallax" href="experiencias.html">
                 <i class="fa-duotone fa-link"></i>
+                
+                <img class="rellax" data-rellax-speed="6" data-rellax-percentage="0.5" src="assets/images/experiencias_parallax_up.webp" alt="">
+                <img class="rellax" data-rellax-speed="2" data-rellax-percentage="0.7" src="assets/images/experiencias_parallax_down.webp" alt="">
+
                 <span>Experiencias Digitales</span>
-                <img src="assets/images/parallax_experiencias.webp" alt="">
             </a>
             <!--	---- end tarjeta enlace ----	-->
 
@@ -133,6 +137,15 @@
                 <i class="fa-duotone fa-link"></i>
                 <i class="fa-duotone fa-cart-circle-arrow-down"></i>
                 <span>Oferta de GEAS</span>
+            </a>
+            <!--	---- end tarjeta enlace ----	-->
+
+             <!--	----  tarjeta enlace (Únete a un GEA)----	-->
+             <a class="gruposCard" href="https://form.typeform.com/to/B3w43naa?typeform-source=successcenter1.typeform.com">
+
+                <i class="fa-duotone fa-link"></i>
+                <i class="fa-duotone fa-calendar-lines-pen"></i>
+                <span style="font-size: 1rem;">Únete a un GEA</span>
             </a>
             <!--	---- end tarjeta enlace ----	-->
 
@@ -161,15 +174,6 @@
             <!-- end tarjeta expandida -->
 
             <!--	---- end tarjeta expandible ----	-->
-
-            <!--	----  tarjeta enlace (Únete a un GEA)----	-->
-            <a class="gruposCard" href="https://form.typeform.com/to/B3w43naa?typeform-source=successcenter1.typeform.com">
-
-                <i class="fa-duotone fa-link"></i>
-                <i class="fa-duotone fa-calendar-lines-pen"></i>
-                <span style="font-size: 1rem;">Únete a un GEA</span>
-            </a>
-            <!--	---- end tarjeta enlace ----	-->
 
             <!--	----  tarjeta expandible (Eventos GEA) ----	-->
             <article class="gruposCard" data-type="button" data-id="eventos_gea">
@@ -409,8 +413,6 @@
             <!-- end tarjeta expandida -->
             <!--	---- end tarjeta expandible ----	-->
 
-
-
             <!--	----  tarjeta expandible (Talleres) ----	-->
             <article class="talentCard" data-type="button" data-id="talleres">
                 <i class="fa-duotone fa-screen-users"></i>
@@ -449,6 +451,7 @@
         <div class="grid_somos">
             <!--	---- Tarjeta Portada ----	-->
             <article id="somos_portada">
+                <!-- <img class="rellax" data-rellax-percentage="0.2" data-rellax-speed="4"  src="assets/images/alumnos_up.webp" alt=""> -->
                 <p>Bienvenidos a SMART, el centro que ofrece la universidad para fortalecer las competencias que necesitas para triunfar como profesionista.</p>
             </article>
             <!--	---- end Tarjeta Portada ----	-->
@@ -497,7 +500,7 @@
                     <ul>
                         <li>Brindar un servicio de excelencia para el mejoramiento constante de las competencias académicas, personales y profesionales de los estudiantes de la Universidad Panamericana.</li>
                         <li>Potenciar el talento del alumnado durante su experiencia universitaria, brindando formación, apoyo y orientación en su labor educativa.</li>
-                        
+
                         <li>Potenciar la atención personalizada, a través de la asesoría universitaria, el coaching, mentoring u otro recurso de ayuda individual, tanto para los estudiantes como para los profesores.</li>
                         <li> Promover y apoyar actividades e iniciativas estudiantiles académicas que contribuyan a la formación integral de los alumnos de la UP.</li>
                     </ul>
@@ -505,7 +508,6 @@
             </article>
             <!-- end tarjeta expandida -->
             <!--	---- end Tarjeta Objetivos ----	-->
-
 
             <!--	---- Tarjeta Historia ----	-->
             <article id="somos_historia">
@@ -684,17 +686,6 @@
             <!-- termina tarjeta -->
 
             <!-- empieza tarjeta -->
-            <!-- <article class="person" style="background-image: url(assets/images/team/teresa.jpg);">
-                <div class="card-content">
-                    <div class="card-name">Dra. Ma. Teresa Nicolás Gavilán</div>
-                    <div class="card-position"><i class="fa-duotone fa-user-tag"></i> Vicerrectora de innovación</div>
-                    <div class="card-data"><i class="fa-duotone fa-envelopes"></i>mnicolas@up.edu.mx</div>
-                    <div class="card-data"><i class="fa-duotone fa-phone-arrow-down-left"></i> ext.6033</div>
-                </div>
-            </article> -->
-            <!-- termina tarjeta -->
-
-            <!-- empieza tarjeta -->
             <article class="person" style="background-image: url(assets/images/team/sofiaDerat.webp);">
                 <div class="card-content">
                     <div class="card-name">Lic. Diana Sofía Derat Castrejón</div>
@@ -801,11 +792,13 @@
             </article>
             <!-- termina mapa -->
 
+            <!-- becarios -->
             <article class="becarios">
                 <h5><i class="fa-duotone fa-users-medical"></i> Forma parte de nuestro equipo como <b style="color: var(--primary);">becario</b>. </h5>
                 <p> Contesta <a href="becarios.html" class="boton_becarios" target="_blank">este</a> formulario y nos pondremos en contacto contigo.
                 </p>
             </article>
+            <!-- termina becarios -->
         </div>
         <!-- termina grid -->
     </section>
@@ -851,11 +844,15 @@
     <!--	JS	-->
     <!------------------------------------------------->
 
-
     <!-- GASP 3 for animations on view -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
 
+    <!-- rellax parallax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax');
+    </script>
 
     <!-- nav -->
     <script src="assets/js/nav.min.js"></script>
@@ -868,7 +865,6 @@
     <script src="assets/js/twitter_smart_api_pure.min.js"></script>
     <!-- spyscroll -->
     <script src="assets/js/spyscroll.min.js"></script>
-
 
     <!------------------------------------------------->
     <!--	end JS	-->

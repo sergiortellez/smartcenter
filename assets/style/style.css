@@ -54,7 +54,6 @@
 /*...................................................*/
 /*###################################################*/
 
-
 /*###################################################*/
 /*...................................................*/
 /* general properties */
@@ -952,26 +951,7 @@ nav.expanded .navContents a {
 
 }
 
-#experiencias article[data-type="button"].parallaxi,
-.experiencias-grid>a.parallaxi {
 
-    grid-column: span 2;
-    /* grid-row: span 2; */
-    min-height: 21rem;
-
-}
-
-/* tablet landscape up */
-@media (min-width: 1024.1px) {
-
-    #experiencias article[data-type="button"].parallaxi,
-    .experiencias-grid>a.parallaxi {
-        grid-column: span 4;
-        min-height: 10rem;
-    }
-}
-
-/* end tablet up */
 
 #experiencias article[data-type="button"] svg,
 .experiencias-grid>a svg {
@@ -1037,9 +1017,10 @@ nav.expanded .navContents a {
 /* ajuste para tablet en portrait, así se ve mejor: */
 
 /* tablet portrait up */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1084px) {
     .experiencias_title {
-        grid-column: span all;
+        grid-column: span 1;
+        grid-row: span 1/2;
     }
 }
 
@@ -1089,20 +1070,56 @@ nav.expanded .navContents a {
 /*-------------------------------*/
 /* experiencias digitales card */
 /*-------------------------------*/
+#experiencias article[data-type="button"].parallax,
+.experiencias-grid>a.parallax {
 
+    grid-column: span 2;
+    /* grid-row: span 2; */
+    min-height: 21rem;
+
+}
+/* tablet portrait up */
+@media (min-width: 768px) and (max-width: 1089px) {
+    
+    #experiencias article[data-type="button"].parallax,
+    .experiencias-grid>a.parallax {
+        grid-column: 2/-1;
+        /* grid-row: span 1; */
+    }
+}
+
+/* end tablet up */
+
+/* tablet landscape up */
+@media (min-width: 1089.1px) {
+
+    #experiencias article[data-type="button"].parallax,
+    .experiencias-grid>a.parallax {
+        grid-column: 3/-1;
+        grid-row: span 2;
+        min-height: 10rem;
+    }
+}
+
+/* end tablet up */
 .experiencias_digitales {
-    background: url(../images/fondo_experiencias.webp);
+    /* background: url(../images/fondo_experiencias.webp);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: left;
-    background-color: rgb(220, 215, 215);
+    background-position: center;
+    background-attachment: fixed; */
+    background-color: #e8e6e6;;
     color: var(--text);
     overflow: hidden;
+    position: relative;
+    /* las fotos tienen un z index negativo, hay que reiniciar el stack para que no desaparezcan */
+    isolation: isolate;
 
 }
 
 #experiencias .experiencias-grid>.experiencias_digitales>span {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
+    text-shadow: 1px 2px rgba(229, 223, 223, 0.668);
 }
 
 .experiencias_digitales img {
@@ -1113,6 +1130,10 @@ nav.expanded .navContents a {
     -moz-transform: translate3d(0%, -294.036px, 0px);
     -ms-transform: translate3d(0%, -294.036px, 0px);
     -o-transform: translate3d(0%, -294.036px, 0px);
+    z-index: -1;
+    position: absolute;
+    top: -0%;
+    left: 0;
 }
 
 /*-------------------------------*/
@@ -1372,6 +1393,19 @@ nav.expanded .navContents a {
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0;
+    /* position: relative;
+    isolation: isolate;
+    overflow: hidden; */
+}
+
+#somos_portada img{
+    position: absolute;
+    left: -30%;
+    top: -0%;
+    aspect-ratio: 1 / 1;
+    width: 160%;
+    z-index: -1;
+
 }
 
 /* tablet portrait up */
