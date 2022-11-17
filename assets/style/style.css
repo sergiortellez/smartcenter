@@ -12,6 +12,11 @@
     --smartBlue: #122e5b;
     --smartGreen: #005245;
     --smartYellow: #9f8156;
+    /* custom mono */
+    --smartRedMono: #914053;
+    --smartBlueMono: #2e4975;
+    --smartGreenMono: #166c5e;
+    --smartYellowMono: #86612e;
     /* theme colors */
     --background: #ffffff;
     --text: #000;
@@ -951,6 +956,14 @@ nav.expanded .navContents a {
 
 }
 
+#experiencias article[data-type="button"].vertical,
+.experiencias-grid>a.vertical {
+    flex-direction: column;
+     grid-column: span 2;
+     grid-row: span 2;
+
+}
+
 
 
 #experiencias article[data-type="button"] svg,
@@ -1045,6 +1058,87 @@ nav.expanded .navContents a {
     color: var(--smartBlue);
 }
 
+/* ---re acomodo de grid para tabletas en portrait--- */
+
+/* tablet portrait up */
+@media (min-width: 768px) and (max-width: 1024.1px){
+   
+    /* qué es un gea abarca sólo una columna en este @media se tuvo que usar un selector tan específico para no interrumpir el re uso de los selectores verticales */
+
+    #experiencias article[data-id="que_es_gea"].vertical{
+     grid-column: span 1;
+
+}
+    #que_es_gea{
+        /* grid-column: span 1 !important; */
+    }
+}
+/* end tablet up */
+
+
+/* ---end re acomodo de grid para tabletas en portrait--- */
+
+/* ---GEAS--- */
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    #que_es_gea>.expanded-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+}
+/* end tablet up */
+
+#que_es_gea>.expanded-content>p>span{
+    font-size: 2rem;
+    color: var(--smartBlue);
+    font-weight: 100;
+}
+
+
+/* ---end GEAS--- */
+
+
+/* ---oferta de grupos estudiantiles parallax--- */
+
+
+.gruposCardOferta {
+    
+    background-color: var(--smartBlueMono);
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    /* las fotos tienen un z index negativo, hay que reiniciar el stack para que no desaparezcan */
+    isolation: isolate;
+
+}
+
+#experiencias .experiencias-grid>.gruposCardOferta>span {
+    font-size: 2.4rem;
+    text-shadow: 1px 2px rgb(0, 0, 0);
+}
+
+.gruposCardOferta img {
+    width: 100%;
+    transform: translate3d(0%, -294.036px, 0px);
+    opacity: 1;
+    -webkit-transform: translate3d(0%, -294.036px, 0px);
+    -moz-transform: translate3d(0%, -294.036px, 0px);
+    -ms-transform: translate3d(0%, -294.036px, 0px);
+    -o-transform: translate3d(0%, -294.036px, 0px);
+    z-index: -1;
+    position: absolute;
+    top: -0%;
+    left: 0;
+}
+
+
+/* ---end oferta de grupos estudiantiles parallax--- */
+
+
+
 /*-------------------------------*/
 /* end grupos estudiantiles */
 /*-------------------------------*/
@@ -1102,6 +1196,8 @@ nav.expanded .navContents a {
 }
 
 /* end tablet up */
+
+
 .experiencias_digitales {
     /* background: url(../images/fondo_experiencias.webp);
     background-size: contain;
