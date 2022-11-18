@@ -15,7 +15,7 @@
     /* custom mono */
     --smartRedMono: #914053;
     --smartBlueMono: #2e4975;
-    --smartGreenMono: #166c5e;
+    --smartGreenMono: #207569;
     --smartYellowMono: #86612e;
     /* theme colors */
     --background: #ffffff;
@@ -1268,6 +1268,55 @@ nav.expanded .navContents a {
     color: var(--smartGreen);
 }
 
+
+/* ---atención uno a uno parallax--- */
+
+
+.unoauno {
+    
+    background-color: var(--smartGreenMono);
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    /* las fotos tienen un z index negativo, hay que reiniciar el stack para que no desaparezcan */
+    isolation: isolate;
+    grid-column: span 2;
+    
+
+}
+
+/* div necesario para obtener la altura mínima */
+#experiencias .experiencias-grid>.unoauno>div{
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 45vh;
+}
+
+
+#experiencias .experiencias-grid>.unoauno>div>span {
+    font-size: 2.4rem;
+    text-shadow: 1px 2px rgb(0, 0, 0);
+    
+}
+
+.unoauno img {
+    width: 100%;
+    transform: translate3d(0%, -294.036px, 0px);
+    opacity: 1;
+    -webkit-transform: translate3d(0%, -294.036px, 0px);
+    -moz-transform: translate3d(0%, -294.036px, 0px);
+    -ms-transform: translate3d(0%, -294.036px, 0px);
+    -o-transform: translate3d(0%, -294.036px, 0px);
+    z-index: -1;
+    position: absolute;
+    top: 3%;
+    left: 0;
+
+}
+
+
+/* ---end atención uno a uno parallax--- */
 /*-------------------------------*/
 /* end talent */
 /*-------------------------------*/
