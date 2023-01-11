@@ -1069,9 +1069,9 @@ nav.expanded .navContents a {
      grid-column: span 1;
 
 }
-    #que_es_gea{
-        /* grid-column: span 1 !important; */
-    }
+    /* #que_es_gea{
+        grid-column: span 1 !important;
+    } */
 }
 /* end tablet up */
 
