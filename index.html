@@ -138,7 +138,7 @@
             <!--	----  tarjeta expandible (Qué es un GEA) ----	-->
             <article class="gruposCard vertical" data-type="button" data-id="que_es_gea">
                 <i class="fa-duotone fa-block-question" style="margin-right:1rem;"></i>
-                <span>¿Qué es un Grupo Estudiantil<br> Académico (GEA)?</span>
+                <span>¿Qué es un GEA?<br>(Grupo Estudiantil Académico)</span>
             </article>
 
             <!-- tarjeta expandida -->
@@ -169,7 +169,7 @@
             <!--	---- end tarjeta expandible ----	-->
 
             <!--	----  tarjeta enlace (oferta GEAS)----	-->
-            <a class="gruposCardOferta horizontal parallax" href="oferta_geas.html">
+            <a class="gruposCardOferta cuadrado parallax" href="oferta_geas.html">
                 <i class="fa-duotone fa-link"></i>
                 <img class="rellax" data-rellax-speed="6" data-rellax-percentage="0.5" src="assets/images/parallax_geas_up.webp" alt="">
                 <img class="rellax" data-rellax-speed="2" data-rellax-percentage="0.7" src="assets/images/parallax_geas_down.webp" alt="">
@@ -198,7 +198,7 @@
             <!--	---- end tarjeta enlace ----	-->
 
             <!--	----  tarjeta enlace (Crea tu GEA) ----	-->
-            <a class="gruposCard " href="https://docs.google.com/forms/d/e/1FAIpQLSeWJPgUl6ZTCLZXKFrPKvoPaIXD_VOjeb0KGhKqojdYhYVIQg/viewform?usp=pp_url" target="_blank">
+            <a id="crea_gea" class="gruposCard " href="https://docs.google.com/forms/d/e/1FAIpQLSeWJPgUl6ZTCLZXKFrPKvoPaIXD_VOjeb0KGhKqojdYhYVIQg/viewform?usp=pp_url" target="_blank">
 
                 <i class="fa-duotone fa-link"></i>
                 <i class="fa-duotone fa-calendar-lines-pen"></i>
@@ -316,6 +316,10 @@
             </a>
             <!--	---- end tarjeta enlace ----	-->
 
+            <!--	---- espacio vacío para tabletas up ----	-->
+            <div class="vacio"></div>
+            <!--	---- end espacio vacío para tabletas up ----	-->
+
             <!--	----  tarjeta expandible (¿Qué es counseling?) ----	-->
             <article class="talentCard" data-type="button" data-id="que_es_couns">
                 <i class="fa-duotone fa-comments-question-check"></i>
@@ -364,7 +368,9 @@
 
             <!--	----  tarjeta expandible (atención uno a uno) ----	-->
             <article class="unoauno parallax" data-type="button" data-id="talleres">
-                <img class="rellax" data-rellax-speed="5" data-rellax-percentage="0.5" src="assets/images/parallax_atencion_personalizada.webp" alt="">
+                <!-- habrá dos imágenes, una para móviles y otra para computadoras -->
+                <img class="rellax mobile_unoauno" data-rellax-speed="5" data-rellax-percentage="0.5" src="assets/images/parallax_atencion_personalizada.webp" alt="">
+                <img class="rellax desktop_unoauno" data-rellax-speed="30" data-rellax-percentage="0.3" src="assets/images/parallax_atencion_personalizada.webp" alt="">
                 <div>
                     <span>Atención uno a uno</span>
                 </div>
@@ -379,7 +385,7 @@
                     <button data-action="close">
                         <i class="fa-duotone fa-rectangle-xmark"></i>
                     </button>
-                    <!-- end botón cerrar -->b
+                    <!-- end botón cerrar -->
                 </header>
                 <div class="expanded-content">
                     <p></p>

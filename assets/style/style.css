@@ -903,11 +903,19 @@ nav.expanded .navContents a {
 /* tablet portrait up */
 @media (min-width: 768px) {
     .experiencias-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
     }
 }
-
 /* end tablet up */
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    .experiencias-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+/* end tablet up */
+
 
 /*-------------------------------*/
 /* end estructura grids */
@@ -953,6 +961,14 @@ nav.expanded .navContents a {
 .experiencias-grid>a.horizontal {
     flex-direction: row;
     grid-column: span 2;
+
+}
+
+#experiencias article[data-type="button"].cuadrado,
+.experiencias-grid>a.cuadrado {
+    flex-direction: row;
+    grid-column: span 2;
+    grid-row: span 2;
 
 }
 
@@ -1005,6 +1021,8 @@ nav.expanded .navContents a {
     margin-left: 1.5rem;
 }
 
+
+
 /*-------------------------------*/
 /* end cards generales */
 /*-------------------------------*/
@@ -1030,7 +1048,7 @@ nav.expanded .navContents a {
 /* ajuste para tablet en portrait, así se ve mejor: */
 
 /* tablet portrait up */
-@media (min-width: 768px) and (max-width: 1084px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .experiencias_title {
         grid-column: span 1;
         grid-row: span 1/2;
@@ -1058,17 +1076,17 @@ nav.expanded .navContents a {
     color: var(--smartBlue);
 }
 
-/* ---re acomodo de grid para tabletas en portrait--- */
+/* ---reacomodo de grid para tabletas en portrait--- */
 
 /* tablet portrait up */
 @media (min-width: 768px) and (max-width: 1024.1px){
    
-    /* qué es un gea abarca sólo una columna en este @media se tuvo que usar un selector tan específico para no interrumpir el re uso de los selectores verticales */
+    /* qué es un gea abarca sólo una columna en este @media se tuvo que usar un selector tan específico para no interrumpir el el uso de los selectores verticales */
 
     #experiencias article[data-id="que_es_gea"].vertical{
      grid-column: span 1;
 
-}
+    }
     /* #que_es_gea{
         grid-column: span 1 !important;
     } */
@@ -1076,7 +1094,8 @@ nav.expanded .navContents a {
 /* end tablet up */
 
 
-/* ---end re acomodo de grid para tabletas en portrait--- */
+/* ---end reacomodo de grid para tabletas en portrait--- */
+
 
 /* ---GEAS--- */
 
@@ -1096,6 +1115,16 @@ nav.expanded .navContents a {
     color: var(--smartBlue);
     font-weight: 100;
 }
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    #crea_gea{
+grid-column: span 2;
+}
+
+}
+/* end tablet up */
+
 
 
 /* ---end GEAS--- */
@@ -1173,7 +1202,7 @@ nav.expanded .navContents a {
 
 }
 /* tablet portrait up */
-@media (min-width: 768px) and (max-width: 1089px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     
     #experiencias article[data-type="button"].parallax,
     .experiencias-grid>a.parallax {
@@ -1185,12 +1214,12 @@ nav.expanded .navContents a {
 /* end tablet up */
 
 /* tablet landscape up */
-@media (min-width: 1089.1px) {
+@media (min-width: 1024.1px) {
 
     #experiencias article[data-type="button"].parallax,
     .experiencias-grid>a.parallax {
         grid-column: 3/-1;
-        grid-row: span 2;
+        grid-row: span 3;
         min-height: 10rem;
     }
 }
@@ -1268,6 +1297,46 @@ nav.expanded .navContents a {
     color: var(--smartGreen);
 }
 
+/* reacomodo de algunos botones */
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+      article[data-id="que_es_couns"]{
+        grid-row-start: 8;
+        grid-row-end: 9;
+    }
+    article[data-id="talleres"]{
+        grid-row-start: 8;
+        grid-row-end: 10;
+    }
+     article[data-id="dpi"]{
+        grid-row-start: 9;
+        grid-row-end: 10;
+    }
+}
+/* end tablet up */
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    article[data-id="que_es_couns"]{
+        grid-row-start: 9;
+        grid-row-end: 10;
+    }
+    article[data-id="dpi"]{
+        grid-row-start: 10;
+        grid-row-end: 12;
+    }
+     #experiencias article[data-id="talleres"].parallax{
+        grid-row-start: 8;
+        grid-row-end: 12;
+        grid-column-start: -6;
+        
+    }
+}
+/* end tablet up */
+
+
+
 
 /* ---atención uno a uno parallax--- */
 
@@ -1284,6 +1353,23 @@ nav.expanded .navContents a {
     
 
 }
+
+
+
+.unoauno .desktop_unoauno{
+    display: none;
+}
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+  .unoauno .mobile_unoauno{
+    display: none;
+}
+
+.unoauno .desktop_unoauno{
+    display: block;
+}
+}
+/* end tablet up */
 
 /* div necesario para obtener la altura mínima */
 #experiencias .experiencias-grid>.unoauno>div{
