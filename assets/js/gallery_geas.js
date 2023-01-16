@@ -1,0 +1,52 @@
+/*<------------------------------------------------->
+<!--	expandImage	-->
+<!-------------------------------------------------->
+* Descripción:
+    Función que gobierna las galerías dentro de las tarjetas de las GEAS, la idea es tomar el src de una miniatura y sustituirlo en un contenedor ampliado, mismo asunto con el alt, que se vuelve el texto.
+    Esta función es reutilizable en una página siempre y cuando se respete la estructura en el HTML
+* Parámetros:
+    -currentImg: elemento (imagen) que llama a la función con el parámetro 'this'
+* Dependencias: ninguna
+* Devuelve/resultado: amplía la imagen que pertenece a una galería y le pone un título al hacer click en la miniatura. 
+<!------------------------------------------------->*/
+function expandImage(currentImg) {
+
+    // sube un nivel
+    var contenedorMiniaturas = currentImg.parentElement;
+
+
+    //--todas las miniaturas serán transparentes--
+
+    //crea un arreglo que tenga todos los hijos del contenedor (debe ser un arreglo porque un HTML collection no se puede iterar.)
+    let miniaturas = Array.from(contenedorMiniaturas.children);
+    //remueve la clase de opacidad 1 a todos los elementos del arreglo.
+    miniaturas.forEach(function (image) {
+        image.classList.remove('selected');
+    });
+
+
+    //el elemento que quedó seleccionado sí tendrá opacidad 1
+    currentImg.classList.add('selected');
+
+    // Encuentra el contenedor de la imagen expandida (está inmediatamente después del contenedor de miniaturas)
+    var expandContainer = contenedorMiniaturas.nextElementSibling;
+
+
+    //encuentra la imagen 
+    var expandImg = expandContainer.querySelector("[data-image='expandedImg']");
+
+    // encuentra el contenedor de texto
+    var expandTxt = expandContainer.querySelector("[data-txt='imgtext']");
+
+
+    // Use the same src in the expanded image as the image being clicked on from the grid
+    expandImg.src = currentImg.src;
+
+    // Use the value of the alt attribute of the clickable image as text inside the expanded image
+    expandTxt.innerHTML = currentImg.alt;
+
+}
+/*<!------------------------------------------------->
+<!--	end expandImage	-->
+<!------------------------------------------------->*/
+

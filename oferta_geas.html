@@ -84,10 +84,11 @@
         <div id="experiencias_digitales_grid">
 
 
-            <!--	----  tarjeta expandible [interactiva] (Liderazgo) ----	-->
-            <article class="card_cover_success" data-type="button" data-id="liderazgo">
-                <img src="assets/images/logos_geas/nous.png" alt="nous">
-                <span>Nombre GEA</span>
+            <!-- INICIO ----  tarjeta expandible (AIESEC) ---- INICIO -->
+            <article class="tarjeta_generica" data-type="button" data-id="aiesec">
+                <div class="logo_container">
+                    <img src="assets/images/logos_geas/aiesec.png" alt="AIESEC">
+                </div>
                 <div class="details">
                     <span class="pill"><i class="fad fa-fingerprint"></i> interactiva</span>
                     <span class="pill"><i class='fad fa-clock'></i> 35min</span>
@@ -96,7 +97,7 @@
             </article>
 
             <!-- tarjeta expandida -->
-            <article class="expanded_card customSuccess" data-expand="hidden" id="liderazgo">
+            <article class="expanded_card" id="aiesec" data-expand="hidden">
                 <header>
                     <span class="title-expanded"></span>
                     <!-- botón cerrar -->
@@ -106,43 +107,835 @@
                     <!-- end botón cerrar -->
                 </header>
                 <div class="expanded-content">
+
+                    <!-- Columna derecha -->
                     <div class="descriptions">
+
+                        <!-- inicia ¿Qué es? -->
                         <div class="que_es">
-                            <header><i class="fa-duotone fa-block-question"></i> ¿De qué se trata?</header>
-                            <p>
-                                <!-- TODO: insertar Descripción general -->
-                            </p>
-                        </div>
-                        <div class="que_esperar">
-                            <header><i class="fa-duotone fa-block-question"></i> ¿Qué puedo esperar?</header>
-                            <!-- TODO: insertar Qué puedo esperar -->
+                            <header><i class="fa-solid fa-square-question"></i>¿De qué se trata?</header>
+                            <div>
+                                <p>
+                                    AIESEC es la red de jóvenes más grande del mundo que generan impacto positivo en la sociedad a través de desarrollo personal y experiencias internacionales. Su misión es hacer posible que los jóvenes desarrollen el liderazgo a través del aprendizaje mediante
+                                    experiencias prácticas en un entorno
+                                    desafiante.
+
+                                </p>
+                            </div>
 
                         </div>
+                        <!-- fin ¿Qué es? -->
 
-                    </div>
-                    <div class="descriptions">
+                        <!-- inicia ¿Qué esperar? -->
+                        <div class="que_esperar interactivas">
+                            <header><i class="fa-solid fa-square-question"></i> ¿Qué puedo esperar?</header>
+                            <div>
+                                <p>
+                                    Adquirir experiencias internacionales, desarrollar el liderazgo como jóvenes que serán agentes de cambio, desarrollar habilidades de trabajo en equipo. Para lograrlo cuentan con dos tipos de experiencias:
+                                </p>
+
+                                <ul>
+                                    <li>
+                                        Voluntario Global: Intercambios sociales para realizar voluntariado.
+                                    </li>
+                                    <li>
+                                        Talento Global: Intercambios profesionales que enriquecen la vida profesional a través de oportunidades y pasantías internacionales.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- fin ¿Qué esperar? -->
+
+                        <!-- inicia Beneficios -->
                         <div class="instrucciones interactivas">
                             <header><i class="fa-duotone fa-signs-post"></i> Beneficios</header>
-                            <ul>
-                                <!-- TODO: insertarBeneficios -->
+                            <div>
+                                <ul>
 
-                            </ul>
-
+                                    <li>Desarrollo de habilidades “Learning by doing”.</li>
+                                    <li>Comunicación.</li>
+                                    <li>Manejo del cambio</li>
+                                    <li>Trabajo en equipo</li>
+                                    <li>Liderazgo</li>
+                                </ul>
+                            </div>
                         </div>
+                        <!-- fin Beneficios -->
+                    </div>
+                    <!-- fin columna derecha -->
 
+                    <!-- columna izquierda -->
+                    <div class="descriptions">
+
+                        <div>
+                            <!-- galería -->
+                            <!-- The grid: four columns -->
+                            <div class="miniaturas">
+                                <img class="selected" src="assets/images/fotos_geas/aiesec_1.webp" alt="Noche de Aliados" onclick="expandImage(this);">
+                                <img src="assets/images/fotos_geas/aiesec_2.webp" alt="Noche de Aliados" onclick="expandImage(this);">
+                                <img src="assets/images/fotos_geas/aiesec_3.webp" alt="Noche de Aliados" onclick="expandImage(this);">
+                                <img src="assets/images/fotos_geas/aiesec_4.webp" alt="Noche de Aliados" onclick="expandImage(this);">
+                            </div>
+
+                            <!-- The expanding image container -->
+                            <div class="image_container">
+
+
+                                <!-- Expanded image -->
+                                <img src="assets/images/fotos_geas/aiesec_1.webp" data-image="expandedImg" style="width:100%">
+
+                                <!-- Image text -->
+                                <span data-txt="imgtext"></span>
+                            </div>
+                            <!-- end galería -->
+                        </div>
                     </div>
-                </div>
-                <div class="inicia_experiencia_interactiva">
-                    <div class="boton_out_experiencia_interactiva">
-                        <a href="#" target="_blank">Enlace</a>
-                    </div>
+                    <!-- Fin columna izquierda -->
                 </div>
             </article>
             <!-- end tarjeta expandida -->
+            <!-- FIN ----  end tarjeta expandible ---- FIN	-->
 
-            <!--	----  end tarjeta expandible ----	-->
+
+            <!-- INICIO ----  tarjeta expandible (COPARMEX UP) ---- INICIO -->
+            <article class="tarjeta_generica" data-type="button" data-id="coparmex">
+                <div class="logo_container">
+                    <img src="assets/images/logos_geas/coparmex.png" alt="COPARMEX">
+                </div>
+                <div class="details">
+                    <span class="pill"><i class="fad fa-fingerprint"></i> interactiva</span>
+                    <span class="pill"><i class='fad fa-clock'></i> 35min</span>
+                    <span class="pill"><i class="fa-duotone fa-hashtag"></i>success</span>
+                </div>
+            </article>
+
+            <!-- tarjeta expandida -->
+            <article class="expanded_card" id="coparmex" data-expand="hidden">
+                <header>
+                    <span class="title-expanded"></span>
+                    <!-- botón cerrar -->
+                    <button data-action="close">
+                        <i class="fa-duotone fa-rectangle-xmark"></i>
+                    </button>
+                    <!-- end botón cerrar -->
+                </header>
+                <div class="expanded-content">
+
+                    <!-- Columna derecha -->
+                    <div class="descriptions">
+
+                        <!-- inicia ¿Qué es? -->
+                        <div class="que_es">
+                            <header><i class="fa-solid fa-square-question"></i>¿De qué se trata?</header>
+                            <div>
+                                <p>
+                                    La Comisión Nacional de Empresarios Jóvenes #COPARMEX es un semillero de líderes empresariales, que va generando una nueva cultura empresarial.
 
 
+                                </p>
+                            </div>
+                        </div>
+                        <!-- fin ¿Qué es? -->
+
+                        <!-- inicia ¿Qué esperar? -->
+                        <div class="que_esperar interactivas">
+                            <header><i class="fa-solid fa-square-question"></i> ¿Qué puedo esperar?</header>
+                            <div>
+                                <p>
+                                    Recibir información así como participar en eventos y talleres que ayudan a desarrollar las habilidades necesarias para el mundo empresarial.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- fin ¿Qué esperar? -->
+
+                        <!-- inicia Beneficios -->
+                        <div class="instrucciones interactivas">
+                            <header><i class="fa-duotone fa-signs-post"></i> Beneficios</header>
+                            <div>
+                                <p>Desarrollo de learning skills y de learning by doing como lo son:</p>
+                                <ul>
+                                    <li>liderazgo</li>
+                                    <li>manejo del cambio</li>
+                                    <li>comunicación</li>
+                                    <li>creatividad</li>
+                                    <li>pensamiento analítico</li>
+                                    <li>resolución de problemas</li>
+                                    <li>innovación empresarial</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- fin Beneficios -->
+                    </div>
+                    <!-- fin columna derecha -->
+
+                    <!-- columna izquierda -->
+                    <div class="descriptions">
+
+                        <div>
+                            <!-- galería -->
+                            <!-- The grid: four columns -->
+                            <div class="miniaturas">
+                                <img class="selected" src="assets/images/fotos_geas/coparmex_0.webp" alt="Triunfando nos queremos" onclick="expandImage(this);">
+                                <img src="assets/images/fotos_geas/coparmex_1.webp" alt="Triunfando nos queremos" onclick="expandImage(this);">
+                                <img src="assets/images/fotos_geas/coparmex_2.webp" alt="Triunfando nos queremos" onclick="expandImage(this);">
+                                <img src="assets/images/fotos_geas/coparmex_3.webp" alt="Triunfando nos queremos" onclick="expandImage(this);">
+                            </div>
+
+                            <!-- The expanding image container -->
+                            <div class="image_container">
+                                <!-- Expanded image -->
+                                <img src="assets/images/fotos_geas/coparmex_0.webp" data-image="expandedImg">
+
+                                <!-- Image text -->
+                                <span data-txt="imgtext"></span>
+                            </div>
+                            <!-- end galería -->
+                        </div>
+
+
+                        <div class="inicia_experiencia_interactiva">
+                            <div class="boton_out_experiencia_interactiva">
+                                <a href="#" target="_blank">coparmexup <i class="fa-brands fa-square-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin columna izquierda -->
+                </div>
+            </article>
+            <!-- end tarjeta expandida -->
+            <!-- FIN ----  end tarjeta expandible ---- FIN -->
+
+
+            <!-- INICIO ----  tarjeta expandible (GROWTH) ---- INICIO -->
+            <article class="tarjeta_generica" data-type="button" data-id="growth">
+                <div class="logo_container">
+                    <img src="assets/images/logos_geas/growth.webp" alt="growth">
+                </div>
+                <div class="details">
+                    <span class="pill"><i class="fad fa-fingerprint"></i> interactiva</span>
+                    <span class="pill"><i class='fad fa-clock'></i> 35min</span>
+                    <span class="pill"><i class="fa-duotone fa-hashtag"></i>success</span>
+                </div>
+            </article>
+
+            <!-- tarjeta expandida -->
+            <article class="expanded_card" id="growth" data-expand="hidden">
+                <header>
+                    <span class="title-expanded"></span>
+                    <!-- botón cerrar -->
+                    <button data-action="close">
+                        <i class="fa-duotone fa-rectangle-xmark"></i>
+                    </button>
+                    <!-- end botón cerrar -->
+                </header>
+                <div class="expanded-content">
+
+                    <!-- Columna derecha -->
+                    <div class="descriptions">
+
+                        <!-- inicia ¿Qué es? -->
+                        <div class="que_es">
+                            <header><i class="fa-solid fa-square-question"></i>¿De qué se trata?</header>
+                            <div>
+                                <p>
+                                    Se emprenden iniciativas que busquen beneficiar la salud integral, impulsando el conocimiento y la reflexión sobre aspectos clave en el manejo de las emociones para un liderazgo de impacto.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- fin ¿Qué es? -->
+
+                        <!-- inicia ¿Qué esperar? -->
+                        <div class="que_esperar interactivas">
+                            <header><i class="fa-solid fa-square-question"></i> ¿Qué puedo esperar?</header>
+                            <div>
+                                <p>
+                                    Conferencias sobre temas de salud mental y bienestar, talleres sobre manejo de estrés.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- fin ¿Qué esperar? -->
+
+
+                    </div>
+                    <!-- fin columna derecha -->
+
+                    <!-- columna izquierda -->
+                    <div class="descriptions">
+                        <!-- inicia Beneficios -->
+                        <div class="instrucciones interactivas">
+                            <header><i class="fa-duotone fa-signs-post"></i> Beneficios</header>
+                            <div>
+                                <span>Desarrollo de habilidades blandas como:</span>
+                                <ul>
+                                    <li>Trabajo en equipo</li>
+                                    <li>Orientación a resultados</li>
+                                    <li>Gestión del tiempo</li>
+                                    <li>toma de decisiones</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <!-- fin Beneficios -->
+                    </div>
+                    <!-- Fin columna izquierda -->
+                </div>
+            </article>
+            <!-- end tarjeta expandida -->
+            <!-- FIN ----  end tarjeta expandible ---- FIN -->
+
+
+            <!-- INICIO ----  tarjeta expandible (Hult Prize) ---- INICIO -->
+            <article class="tarjeta_generica" data-type="button" data-id="hult">
+                <div class="logo_container">
+                    <img src="assets/images/logos_geas/hult.webp" alt="Hult Prize">
+                </div>
+                <div class="details">
+                    <span class="pill"><i class="fad fa-fingerprint"></i> interactiva</span>
+                    <span class="pill"><i class='fad fa-clock'></i> 35min</span>
+                    <span class="pill"><i class="fa-duotone fa-hashtag"></i>success</span>
+                </div>
+            </article>
+
+            <!-- tarjeta expandida -->
+            <article class="expanded_card" id="hult" data-expand="hidden">
+                <header>
+                    <span class="title-expanded"></span>
+                    <!-- botón cerrar -->
+                    <button data-action="close">
+                        <i class="fa-duotone fa-rectangle-xmark"></i>
+                    </button>
+                    <!-- end botón cerrar -->
+                </header>
+                <div class="expanded-content">
+
+                    <!-- Columna derecha -->
+                    <div class="descriptions">
+
+                        <!-- inicia ¿Qué es? -->
+                        <div class="que_es">
+                            <header><i class="fa-solid fa-square-question"></i>¿De qué se trata?</header>
+                            <div>
+                                <p>
+                                    Competencia dirigida a universitarios de todo el mundo con el propósito de promover la creatividad y emprendimiento en los jóvenes para resolver los problemas sociales más críticos. Cada año se lanza un reto diferente a resolver mediante el emprendimiento social,
+                                    ayudando a los participantes a
+                                    emprender ideas que sirven a los menos afortunados y abordan los grandes desafíos de la humanidad manteniendo una visión de negocio.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- fin ¿Qué es? -->
+
+                        <!-- inicia ¿Qué esperar? -->
+                        <div class="que_esperar interactivas">
+                            <header><i class="fa-solid fa-square-question"></i> ¿Qué puedo esperar?</header>
+                            <div>
+                                <p>
+                                    Desarrollar las habilidades de trabajo en equipo, participar en la organización de un concurso a nivel mundial.
+
+                                </p>
+                            </div>
+                        </div>
+                        <!-- fin ¿Qué esperar? -->
+
+
+                    </div>
+                    <!-- fin columna derecha -->
+
+                    <!-- columna izquierda -->
+                    <div class="descriptions">
+                        <!-- inicia Beneficios -->
+                        <div class="instrucciones interactivas">
+                            <header><i class="fa-duotone fa-signs-post"></i> Beneficios</header>
+                            <div>
+                                <span>Desarrollo de habilidades blandas como:</span>
+                                <ul>
+                                    <li>Trabajo en equipo</li>
+                                    <li>Orientación a resultados</li>
+                                    <li>Gestión del tiempo</li>
+                                    <li>Liderazgo</li>
+                                    <li>Negociación</li>
+                                    <li>Manejo del cambio</li>
+                                    <li>Toma de decisiones</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- fin Beneficios -->
+
+                        <div class="inicia_experiencia_interactiva">
+                            <div class="boton_out_experiencia_interactiva">
+                                <a href="https://www.instagram.com/hultprizeatupmx/" target="_blank"> <i class="fa-brands fa-square-instagram"></i> @hultprizeatupmx </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin columna izquierda -->
+                </div>
+            </article>
+            <!-- end tarjeta expandida -->
+            <!-- FIN ----  end tarjeta expandible ---- FIN -->
+
+
+            <!-- INICIO ----  tarjeta expandible (Inspire UP) ---- INICIO -->
+            <article class="tarjeta_generica" data-type="button" data-id="inspire">
+                <div class="logo_container">
+                    <img src="assets/images/logos_geas/inspire.png" alt="Inspire UP">
+                </div>
+                <div class="details">
+                    <span class="pill"><i class="fad fa-fingerprint"></i> interactiva</span>
+                    <span class="pill"><i class='fad fa-clock'></i> 35min</span>
+                    <span class="pill"><i class="fa-duotone fa-hashtag"></i>success</span>
+                </div>
+            </article>
+
+            <!-- tarjeta expandida -->
+            <article class="expanded_card" id="inspire" data-expand="hidden">
+                <header>
+                    <span class="title-expanded"></span>
+                    <!-- botón cerrar -->
+                    <button data-action="close">
+                        <i class="fa-duotone fa-rectangle-xmark"></i>
+                    </button>
+                    <!-- end botón cerrar -->
+                </header>
+                <div class="expanded-content">
+
+                    <!-- Columna derecha -->
+                    <div class="descriptions">
+
+                        <!-- inicia ¿Qué es? -->
+                        <div class="que_es">
+                            <header><i class="fa-solid fa-square-question"></i>¿De qué se trata?</header>
+                            <div>
+                                <p>
+                                    Grupo Estudiantil de excelencia académica y humana que tiene la intención de potenciar el talento de cada uno de sus miembros para formar a los futuros líderes de México, destacando áreas importantes como el sentido humano, la responsabilidad social, el análisis
+                                    de riesgo, y la ética profesional por
+                                    medio de actividades que fomenten y desarrollen la formación profesional y humana.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- fin ¿Qué es? -->
+
+                        <!-- inicia ¿Qué esperar? -->
+                        <div class="que_esperar interactivas">
+                            <header><i class="fa-solid fa-square-question"></i> ¿Qué puedo esperar?</header>
+                            <div>
+                                <p>
+                                    Formar líderes con un alto sentido humano, poder desarrollar la capacidad de toma de decisiones, creatividad, trabajo en equipo, etc. Participar en proyectos internos y externos donde el alumno desarrolle su talento.
+                                    Creación de alianzas externas e internas que favorezcan a nuestros miembros y a la universidad.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- fin ¿Qué esperar? -->
+
+
+                    </div>
+                    <!-- fin columna derecha -->
+
+                    <!-- columna izquierda -->
+                    <div class="descriptions">
+
+                        <!-- inicia Beneficios -->
+                        <div class="instrucciones interactivas">
+                            <header><i class="fa-duotone fa-signs-post"></i> Beneficios</header>
+                            <div>
+                                <span>Desarrollo de habilidades blandas como:</span>
+                                <ul>
+                                    <li>Trabajo en equipo</li>
+                                    <li>Orientación a resultados</li>
+                                    <li>Gestión del tiempo</li>
+                                    <li>Liderazgo</li>
+                                    <li>Negociación</li>
+                                    <li>Manejo del cambio</li>
+                                    <li>Toma de decisiones</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- fin Beneficios -->
+
+                        <div class="inicia_experiencia_interactiva">
+                            <div class="boton_out_experiencia_interactiva">
+                                <a href="https://www.instagram.com/inspireup_/" target="_blank"><i class="fa-brands fa-square-instagram"></i> @inspireup_</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin columna izquierda -->
+                </div>
+            </article>
+            <!-- end tarjeta expandida -->
+            <!-- FIN ----  end tarjeta expandible ---- FIN -->
+
+
+            <!-- INICIO ----  tarjeta expandible (Nous) ---- INICIO -->
+            <article class="tarjeta_generica" data-type="button" data-id="nous">
+                <div class="logo_container">
+                    <img src="assets/images/logos_geas/nous.png" alt="Nous">
+                </div>
+                <div class="details">
+                    <span class="pill"><i class="fad fa-fingerprint"></i> interactiva</span>
+                    <span class="pill"><i class='fad fa-clock'></i> 35min</span>
+                    <span class="pill"><i class="fa-duotone fa-hashtag"></i>success</span>
+                </div>
+            </article>
+
+            <!-- tarjeta expandida -->
+            <article class="expanded_card" id="nous" data-expand="hidden">
+                <header>
+                    <span class="title-expanded"></span>
+                    <!-- botón cerrar -->
+                    <button data-action="close">
+                        <i class="fa-duotone fa-rectangle-xmark"></i>
+                    </button>
+                    <!-- end botón cerrar -->
+                </header>
+                <div class="expanded-content">
+
+                    <!-- Columna derecha -->
+                    <div class="descriptions">
+
+                        <!-- inicia ¿Qué es? -->
+                        <div class="que_es">
+                            <header><i class="fa-solid fa-square-question"></i>¿De qué se trata?</header>
+                            <div>
+                                <p>
+                                    Nous es un espacio donde puedes interactuar y profundizar a través de debates, diálogos, podcasts y discusiones de diversos temas promoviendo el ejercicio filosófico y de reflexión en la comunidad universitaria. Su misión es enfatizar la importancia del ejercicio
+                                    filosófico en la comunidad
+                                    universitaria a través del diálogo y la reflexión.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- fin ¿Qué es? -->
+
+                        <!-- inicia ¿Qué esperar? -->
+                        <div class="que_esperar interactivas">
+                            <header><i class="fa-solid fa-square-question"></i> ¿Qué puedo esperar?</header>
+                            <div>
+                                <p>
+                                    Reuniones de diálogo y reflexión acerca de temas profundos y trascendentes que definen el horizonte de la Sociedad y de la vida personal. Para lograrlo cuentan con tres tipos de experiencias:
+                                <ul>
+                                    <li>Debates: Un intercambio de ideas entre carreras, enfocados en un tema actual.
+                                    </li>
+                                    <li>Concurso de ensayos: ¿Te gusta escribir? Pronto conocerás nuestra competencia de ensayos, cuentos, etc...
+                                    </li>
+                                    <li>Podcast: Espacio de discusión con expertos sobre temas de relevancia seleccionados mensualmente.
+                                    </li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- fin ¿Qué esperar? -->
+
+                        <!-- inicia Beneficios -->
+                        <div class="instrucciones interactivas">
+                            <header><i class="fa-duotone fa-signs-post"></i> Beneficios</header>
+                            <div>
+                                <ul>
+                                    <span>Desarrollo de habilidades blandas como:</span>
+                                    <li>Pensamiento analítico</li>
+                                    <li>Influencia social</li>
+                                    <li>Comunicación</li>
+                                    <li>Trabajo en equipo</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- fin Beneficios -->
+                    </div>
+                    <!-- fin columna derecha -->
+
+                    <!-- columna izquierda -->
+                    <div class="descriptions">
+                        <div>
+                            <!-- galería -->
+                            <!-- The grid: four columns -->
+                            <div class="miniaturas">
+                                <img class="selected" src="assets/images/fotos_geas/nous_0.webp" alt="Pensando la Música" onclick="expandImage(this);">
+                                <img src="assets/images/fotos_geas/nous_1.webp" alt="Pensando la Música" onclick="expandImage(this);">
+                                <img src="assets/images/fotos_geas/nous_2.webp" alt="Pensando la Música" onclick="expandImage(this);">
+                                <img src="assets/images/fotos_geas/nous_3.webp" alt="Pensando la Música" onclick="expandImage(this);">
+                            </div>
+
+                            <!-- The expanding image container -->
+                            <div class="image_container">
+                                <!-- Expanded image -->
+                                <img src="assets/images/fotos_geas/nous_0.webp" data-image="expandedImg" style="width:100%">
+
+                                <!-- Image text -->
+                                <span data-txt="imgtext"></span>
+                            </div>
+                            <!-- end galería -->
+                        </div>
+
+                        <div class="inicia_experiencia_interactiva">
+                            <div class="boton_out_experiencia_interactiva">
+                                <a href="https://www.instagram.com/nousupmx/" target="_blank"><i class="fa-brands fa-square-instagram"></i> @nousupmx</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin columna izquierda -->
+                </div>
+            </article>
+            <!-- end tarjeta expandida -->
+            <!-- FIN ----  end tarjeta expandible ---- FIN -->
+
+            <!-- INICIO ----  tarjeta expandible (SH+E) ---- INICIO -->
+            <article class="tarjeta_generica" data-type="button" data-id="she">
+                <div class="logo_container">
+                    <img src="assets/images/logos_geas/heshe.png" alt="SH+E">
+                </div>
+                <div class="details">
+                    <span class="pill"><i class="fad fa-fingerprint"></i> interactiva</span>
+                    <span class="pill"><i class='fad fa-clock'></i> 35min</span>
+                    <span class="pill"><i class="fa-duotone fa-hashtag"></i>success</span>
+                </div>
+            </article>
+
+            <!-- tarjeta expandida -->
+            <article class="expanded_card" id="she" data-expand="hidden">
+                <header>
+                    <span class="title-expanded"></span>
+                    <!-- botón cerrar -->
+                    <button data-action="close">
+                        <i class="fa-duotone fa-rectangle-xmark"></i>
+                    </button>
+                    <!-- end botón cerrar -->
+                </header>
+                <div class="expanded-content">
+
+                    <!-- Columna derecha -->
+                    <div class="descriptions">
+
+                        <!-- inicia ¿Qué es? -->
+                        <div class="que_es">
+                            <header><i class="fa-solid fa-square-question"></i>¿De qué se trata?</header>
+                            <div>
+                                <p>
+                                    Buscamos ser parte del cambio que queremos ver en el mundo, formando alumnas líderes; empoderando a la mujer y sensibilizando a la comunidad UP en la situación de igualdad de oportunidades.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- fin ¿Qué es? -->
+
+                        <!-- inicia ¿Qué esperar? -->
+                        <div class="que_esperar interactivas">
+                            <header><i class="fa-solid fa-square-question"></i> ¿Qué puedo esperar?</header>
+                            <div>
+                                <p>
+                                    Ser parte del cambio que quieren ver en el mundo formando alumnas líderes. Para lograrlo cuentan con diversas experiencias como son: Conferencias, ferias para emprendedoras, talleres de sensibilización, entre otras.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- fin ¿Qué esperar? -->
+
+                        <!-- inicia Beneficios -->
+                        <div class="instrucciones interactivas">
+                            <header><i class="fa-duotone fa-signs-post"></i> Beneficios</header>
+                            <div>
+                                <span>Desarrollo de habilidades:</span>
+                                <ul>
+                                    <li>liderazgo</li>
+                                    <li>trabajo en equipo</li>
+                                    <li>pensamiento analítico</li>
+                                    <li>creatividad</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- fin Beneficios -->
+                    </div>
+                    <!-- fin columna derecha -->
+
+                    <!-- columna izquierda -->
+                    <div class="descriptions">
+                        <div>
+                            <!-- galería -->
+                            <!-- The grid: four columns -->
+                            <div class="miniaturas">
+                                <img class="selected" src="assets/images/fotos_geas/she_0.webp" alt="Feria Emprendedoras" onclick="expandImage(this);">
+                                <img src="assets/images/fotos_geas/she_1.webp" alt="Feria Emprendedoras" onclick="expandImage(this);">
+                                <img src="assets/images/fotos_geas/she_2.webp" alt="Feria Emprendedoras" onclick="expandImage(this);">
+                                <img src="assets/images/fotos_geas/she_3.webp" alt="Feria Emprendedoras" onclick="expandImage(this);">
+                            </div>
+
+                            <!-- The expanding image container -->
+                            <div class="image_container">
+                                <!-- Expanded image -->
+                                <img src="assets/images/fotos_geas/she_0.webp" data-image="expandedImg" style="width:100%">
+                                <!-- Image text -->
+                                <span data-txt="imgtext"></span>
+                            </div>
+                            <!-- end galería -->
+                        </div>
+                    </div>
+                    <!-- Fin columna izquierda -->
+                </div>
+            </article>
+            <!-- end tarjeta expandida -->
+            <!-- FIN ----  end tarjeta expandible ---- FIN -->
+
+
+            <!-- INICIO ----  tarjeta expandible (TEDx) ---- INICIO -->
+            <article class="tarjeta_generica" data-type="button" data-id="tedx">
+                <div class="logo_container">
+                    <img src="assets/images/logos_geas/tedx_short.png" alt="TEDx">
+                </div>
+                <div class="details">
+                    <span class="pill"><i class="fad fa-fingerprint"></i> interactiva</span>
+                    <span class="pill"><i class='fad fa-clock'></i> 35min</span>
+                    <span class="pill"><i class="fa-duotone fa-hashtag"></i>success</span>
+                </div>
+            </article>
+
+            <!-- tarjeta expandida -->
+            <article class="expanded_card" id="tedx" data-expand="hidden">
+                <header>
+                    <span class="title-expanded"></span>
+                    <!-- botón cerrar -->
+                    <button data-action="close">
+                        <i class="fa-duotone fa-rectangle-xmark"></i>
+                    </button>
+                    <!-- end botón cerrar -->
+                </header>
+                <div class="expanded-content">
+
+                    <!-- Columna derecha -->
+                    <div class="descriptions">
+
+                        <!-- inicia ¿Qué es? -->
+                        <div class="que_es">
+                            <header><i class="fa-solid fa-square-question"></i>¿De qué se trata?</header>
+                            <div>
+                                <p>
+                                    Con el espíritu de compartir, “ideas que valen la pena difundir” TED creó el programa de TEDx donde se otorga una licencia para recrear una experiencia TED.
+                                    TEDx es un evento local, organizado independientemente por diferentes entidades. Sin embargo, todas comparten el mismo estilo y objetivo de TED.
+
+                                </p>
+                            </div>
+                        </div>
+                        <!-- fin ¿Qué es? -->
+
+                        <!-- inicia ¿Qué esperar? -->
+                        <div class="que_esperar interactivas">
+                            <header><i class="fa-solid fa-square-question"></i> ¿Qué puedo esperar?</header>
+                            <div>
+                                <p>
+                                    El poder brindar experiencias que empoderen y motiven a la audiencia a emprender acciones poderosas a partir de la difusión de ideas valiosas.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- fin ¿Qué esperar? -->
+
+
+                    </div>
+                    <!-- fin columna derecha -->
+
+                    <!-- columna izquierda -->
+                    <div class="descriptions">
+                        <!-- inicia Beneficios -->
+                        <div class="instrucciones interactivas">
+                            <header><i class="fa-duotone fa-signs-post"></i> Beneficios</header>
+                            <div>
+                                <span>Desarrollo de habilidades blandas como:</span>
+                                <ul>
+                                    <li>trabajo en equipo</li>
+                                    <li>orientación a resultados</li>
+                                    <li>gestión del tiempo</li>
+                                    <li>liderazgo</li>
+                                    <li>negociación</li>
+                                    <li>manejo del cambio</li>
+                                    <li>toma de decisiones</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- fin Beneficios -->
+
+                        <div class="inicia_experiencia_interactiva">
+                            <div class="boton_out_experiencia_interactiva">
+                                <a href="https://www.instagram.com/ted_x_up/" target="_blank"><i class="fa-brands fa-square-instagram"></i> @ted_x_up</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin columna izquierda -->
+                </div>
+            </article>
+            <!-- end tarjeta expandida -->
+            <!-- FIN ----  end tarjeta expandible ---- FIN -->
+
+            <!-- INICIO ----  tarjeta expandible (The Green Project) ---- INICIO -->
+            <article class="tarjeta_generica" data-type="button" data-id="green">
+                <div class="logo_container">
+                    <img src="assets/images/logos_geas/green.png" alt="The Green Project">
+                </div>
+                <div class="details">
+                    <span class="pill"><i class="fad fa-fingerprint"></i> interactiva</span>
+                    <span class="pill"><i class='fad fa-clock'></i> 35min</span>
+                    <span class="pill"><i class="fa-duotone fa-hashtag"></i>success</span>
+                </div>
+            </article>
+
+            <!-- tarjeta expandida -->
+            <article class="expanded_card" id="green" data-expand="hidden">
+                <header>
+                    <span class="title-expanded"></span>
+                    <!-- botón cerrar -->
+                    <button data-action="close">
+                        <i class="fa-duotone fa-rectangle-xmark"></i>
+                    </button>
+                    <!-- end botón cerrar -->
+                </header>
+                <div class="expanded-content">
+
+                    <!-- Columna derecha -->
+                    <div class="descriptions">
+
+                        <!-- inicia ¿Qué es? -->
+                        <div class="que_es">
+                            <header><i class="fa-solid fa-square-question"></i>¿De qué se trata?</header>
+                            <div>
+                                <p>
+                                    Promover una vida ecológica entre la comunidad de la Universidad Panamericana y hacer de la universidad un lugar más sustentable.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- fin ¿Qué es? -->
+
+                        <!-- inicia ¿Qué esperar? -->
+                        <div class="que_esperar interactivas">
+                            <header><i class="fa-solid fa-square-question"></i> ¿Qué puedo esperar?</header>
+                            <div>
+                                <p>
+                                    El poder establecer un vínculo con la comunidad universitaria a través de la excelencia de nuestros eventos y proyectos.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- fin ¿Qué esperar? -->
+                    </div>
+                    <!-- fin columna derecha -->
+
+                    <!-- columna izquierda -->
+                    <div class="descriptions">
+                        <!-- inicia Beneficios -->
+                        <div class="instrucciones interactivas">
+                            <header><i class="fa-duotone fa-signs-post"></i> Beneficios</header>
+                            <div>
+                                <span>Desarrollo de habilidades blandas como:</span>
+                                <ul>
+                                    <li>trabajo en equipo</li>
+                                    <li>orientación a resultados</li>
+                                    <li>gestión del tiempo</li>
+                                    <li>liderazgo</li>
+                                    <li>toma de decisiones</li>
+                                    <li>negociación</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- fin Beneficios -->
+                        <div class="inicia_experiencia_interactiva">
+                            <div class="boton_out_experiencia_interactiva">
+                                <a href="https://www.instagram.com/thegreenprojectup/" target="_blank"><i class="fa-brands fa-square-instagram"></i> @thegreenprojectup</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin columna izquierda -->
+                </div>
+            </article>
+            <!-- end tarjeta expandida -->
+            <!-- FIN ----  end tarjeta expandible ---- FIN -->
 
         </div>
     </section>
@@ -194,6 +987,8 @@
     <script src="assets/js/expand_cards.min.js"></script>
     <!-- nav -->
     <script src="assets/js/nav_citas.min.js"></script>
+    <!-- gallery -->
+    <script src="assets/js/gallery_geas.min.js"></script>
 
 
 

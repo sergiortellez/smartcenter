@@ -377,6 +377,7 @@ nav.expanded .navContents a {
 /*-------------------------------*/
 /* estructura grids */
 /*-------------------------------*/
+
 #experiencias_digitales_grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -405,8 +406,9 @@ nav.expanded .navContents a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 1.5rem;
+    justify-content: space-around;
+    min-height: 14rem;
+    padding: 1.2rem;
     cursor: pointer;
     border-radius: 9px;
     -webkit-border-radius: 9px;
@@ -429,17 +431,33 @@ nav.expanded .navContents a {
     pointer-events: none;
 }
 
-
+#experiencias_digitales_grid article[data-type="button"] .logo_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+}
 
 #experiencias_digitales_grid article[data-type="button"] img {
-    width: 8rem;
-    margin-bottom: 0.7rem;
+    width: 10rem;
+    height: auto;
+    margin-bottom: 1rem;
+    /* margin: 1.8rem 0; */
 }
 
-#experiencias_digitales_grid article[data-type="button"] span {
-    font-size: 1rem;
+#experiencias_digitales_grid article[data-type="button"]>span {
+    font-size: 1.2rem; 
     text-align: center;
 }
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+   #experiencias_digitales_grid article[data-type="button"]>span {
+    font-size: 1.4rem; 
+    text-align: center;
+}
+}
+/* end tablet up */
 
 #experiencias_digitales_grid article[data-expand="expanded"] {
     grid-column: 1/-1;
@@ -459,11 +477,11 @@ nav.expanded .navContents a {
     justify-content: space-around;
     gap: 0.3rem;
 
-    margin-top: 1.3rem;
+    /* margin-top: auto; */
 }
 
 #experiencias_digitales_grid article[data-type="button"] .pill {
-    background-color: var(--smartYellow);
+    background-color: var(--smartBlue);
     color: #ffffff;
     padding: 0.2rem 0.4rem;
     font-size: 0.7rem;
@@ -483,24 +501,7 @@ nav.expanded .navContents a {
 /* end cards generales */
 /*-------------------------------*/
 
-/*-------------------------------*/
-/* personalización de cards por curso */
-/*-------------------------------*/
 
-.card_cover_success {
-    background-color: rgb(220, 212, 194);
-    color: var(--text);
-}
-
-.card_cover_success:hover {
-    background-color: var(--smartYellow);
-    color: var(--background);
-
-}
-
-/*-------------------------------*/
-/* end personalización de cards por curso */
-/*-------------------------------*/
 
 /*-------------------------------*/
 /* tarjetas expansibles */
@@ -560,7 +561,7 @@ article[data-expand='expanded'] {
 
 .expanded_card header svg {
     color: var(--smartRed);
-    font-size: 3rem;
+    font-size: 2.2rem;
     pointer-events: none
 }
 
@@ -606,10 +607,11 @@ button[data-action='close']:focus {
 
 /* end tablet up */
 
-.descriptions {
+.descriptions{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    min-width: 45vw;
 }
 
 .descriptions .que_es,
@@ -627,7 +629,7 @@ button[data-action='close']:focus {
 .descriptions .que_esperar header,
 .descriptions .instrucciones header {
 
-    background-color: var(--customCourse);
+    background-color: var(--primarioGEA);
     color: #ffffff;
     padding: 1rem;
     border-top-left-radius: 15px;
@@ -638,152 +640,29 @@ button[data-action='close']:focus {
 .descriptions .que_es header svg,
 .descriptions .que_esperar header svg,
 .descriptions .instrucciones header svg {
-    color: #9f8156;
+    color: var(--contrasteGEA);
 }
 
-.descriptions .que_es p {
-    padding: 1rem;
-}
 
-/* tablet portrait */
-@media (min-width: 768px) and (max-width: 1999px) {
-
-    .descriptions .que_es p,
-    .descriptions .que_esperar ul,
-    .descriptions .instrucciones ul {
+ .descriptions .que_es div,
+ .descriptions .que_esperar div,
+ .descriptions .instrucciones div {
         font-size: 0.8rem;
+         padding: 1rem;
     }
-}
 
-/* end tablet */
+
+
 .que_esperar ul {
-    margin: 0;
+    margin-left: 1rem;
     padding: 0.5rem;
     padding-left: 1.3rem;
 }
 
 .instrucciones ul {
-    text-align: right;
-    padding: 0;
-}
-
-.instrucciones ul li {
-    list-style: none;
-    display: flex;
-    align-items: center;
     text-align: left;
-    padding: 0.4rem;
-}
-
-.instrucciones ul svg {
-    font-size: 1.4rem;
-    /* margin-bottom: 0.6rem; */
-    margin-right: 0.6rem;
-    color: var(--customCourse);
-}
-
-.interactivas {
-    min-width: 50vw;
-}
-
-.boton_out_experiencia {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 0.5rem;
-}
-
-.boton_out_experiencia a {
-    text-decoration: none;
-    background-color: var(--customCourseMono);
-    color: var(--customCourse);
-    padding: 0.5rem;
-    border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
-    transition: scale 300ms ease;
-    -webkit-transition: scale 300ms ease;
-    -moz-transition: scale 300ms ease;
-    -ms-transition: scale 300ms ease;
-    -o-transition: scale 300ms ease;
-}
-
-.boton_out_experiencia a:hover {
-    color: var(--customCourseMono);
-    background-color: var(--customCourse);
-    scale: 0.95;
-}
-
-.boton_out_experiencia a:hover svg {
-    color: var(--customCourseMono);
-}
-
-.playlist {
-    min-width: 45vw;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.video_card {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1rem;
-    text-decoration: none;
-    color: #e8e6e6;
-    background-color: var(--customCourse);
-    padding: 0.5rem;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    transition: scale 300ms ease;
-    -webkit-transition: scale 300ms ease;
-    -moz-transition: scale 300ms ease;
-    -ms-transition: scale 300ms ease;
-    -o-transition: scale 300ms ease;
-
-}
-
-.video_card:hover {
-    scale: 0.95;
-    background-color: var(--customCourseMono);
-    color: var(--customCourse);
-}
-
-.video_card h4 {
-    display: flex;
-    align-items: center;
-}
-
-
-/* tablet portrait */
-@media (min-width: 768px) and (max-width: 1000px) {
-
-    .video_card h4 {
-        font-size: 0.8rem;
-    }
-}
-
-/* end tablet */
-.video_card img {
-    width: 8rem;
-    height: 4.5rem;
-    object-fit: cover;
-    border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
-}
-
-.video_card svg {
-    font-size: 1.5rem;
-    margin-right: 0.7rem;
+    padding: 1rem;
+    margin-left: 1rem;
 }
 
 /* ---end tarjetas expandidas contenido--- */
@@ -793,14 +672,14 @@ button[data-action='close']:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 2rem;
+    margin-top: auto;
 }
 
 .boton_out_experiencia_interactiva a {
     text-decoration: none;
-    background-color: var(--customCourseMono);
-    color: var(--customCourse);
-    padding: 0.5rem;
+    background-color: var(--monoGEA);
+    color: var(--primarioGEA);
+    padding: 0.5rem 1rem;
     border-radius: 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
@@ -811,17 +690,18 @@ button[data-action='close']:focus {
     -moz-transition: scale 300ms ease;
     -ms-transition: scale 300ms ease;
     -o-transition: scale 300ms ease;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
 }
 
 .boton_out_experiencia_interactiva a:hover {
-    color: var(--customCourseMono);
-    background-color: var(--customCourse);
+    color: var(--textoGEA);
+    background-color: var(--primarioGEA);
     scale: 0.95;
 }
 
 .boton_out_experiencia_interactiva a:hover svg {
-    color: var(--customCourseMono);
+    color: var(--monoGEA);
 }
 
 /* ---end experiencias interactivas--- */
@@ -844,32 +724,194 @@ button[data-action='close']:focus {
 /*-------------------------------*/
 
 /*-------------------------------*/
-/* custom course */
+/* galerías */
 /*-------------------------------*/
 
-.customSuccess {
+
+.miniaturas{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 3rem;
+}
+
+
+.miniaturas img {
+  opacity: 0.6; 
+  cursor: pointer; 
+  width: 5rem;
+  height: 5rem;
+  object-fit: contain;
+}
+
+
+/* el !important es porque al modificar con JS el estilo de la primer imagen se estaba sobrescribiendo este hover */
+.miniaturas img:hover {
+  opacity: 1!important;
+}
+
+.miniaturas .selected{
+    opacity: 1;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.image_container {
+  position: relative;
+  display: flex;
+  margin-bottom: 3rem;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* en dispositivos grandes la imagen medirá la mitad del total */
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    .image_container{
+        width: 40vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* end tablet up */
+
+
+.image_container img{
+    width: 100%;
+    height: auto;
+}
+/* Expanding image text */
+[data-txt="imgtext"] {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white; 
+  font-size: 20px;
+}
+
+/*-------------------------------*/
+/* end galerías */
+/*-------------------------------*/
+
+
+/*-------------------------------*/
+/* personalización de cards por GEA */
+/*-------------------------------*/
+
+/* Tarjeta Genérica */
+.tarjeta_generica {
+    background-color: var(--monoGEA);
+    color: var(--textoGEA);
+    min-height: 10rem;
+}
+
+.tarjeta_generica:hover {
+    background-color: lightgray;
+    color: var(--background);
+}
+
+.customGeaInterior {
     --customCourse: var(--smartGreen);
     --customCourseMono: rgb(149, 163, 149);
 }
+/* fin Tarjeta Genérica */
 
-.oylb {
-    --customCourse: var(--smartBlue);
-    --customCourseMono: rgb(163, 173, 211);
+/* AIESEC */
+[data-id="aiesec"],
+#aiesec {
+   --primarioGEA:#177afa;
+   --monoGEA:#0c3a75;
+   --contrasteGEA:#e7620f;
+   --textoGEA:#fff;
 }
+/* fin AIESEC */
 
-.cvmp {
-    --customCourse: var(--smartYellow);
-    --customCourseMono: rgb(214, 223, 181);
+/* COPARMEX */
+[data-id="coparmex"],
+#coparmex {
+   --primarioGEA:#041a71;
+   --monoGEA:#6574b1;
+   --contrasteGEA:#c25903;
+   --textoGEA:#fff;
 }
+/* fin COPARMEX */
 
-.communicate {
-    --customCourse: var(--smartRed);
-    --customCourseMono: rgb(223, 181, 181);
+/* COPARMEX */
+[data-id="growth"],
+#growth {
+   --primarioGEA:#57d9c6;
+   --monoGEA:#106659;
+   --contrasteGEA:#d97357;
+   --textoGEA:#fff;
 }
+/* fin COPARMEX */
+
+
+/* Hult Prize */
+[data-id="hult"],
+#hult {
+   --primarioGEA:#C3007B;
+   --monoGEA:#FF69B4;
+   --contrasteGEA:#039090;
+   --textoGEA:#fff;
+}
+/* fin Hult Prize */
+
+/* Hult Prize */
+[data-id="inspire"],
+#inspire {
+   --primarioGEA:#b48f4d;
+   --monoGEA:#4c70b8;
+   --contrasteGEA:#f5d8a1;
+   --textoGEA:#fff;
+}
+/* fin Hult Prize */
+
+/* Nous */
+[data-id="nous"],
+#nous {
+   --primarioGEA:#ff7b27;
+   --monoGEA:#b45c1f;
+   --contrasteGEA:#097451;
+   --textoGEA:#fff;
+}
+/* fin Nous */
+
+/* SH+E */
+[data-id="she"],
+#she {
+   --primarioGEA:#472ea8;
+   --monoGEA:#7c5ed8;
+   --contrasteGEA:#a8472e;
+   --textoGEA:#fff;
+}
+/* fin SH+E  */
+
+/* TEDx */
+[data-id="tedx"],
+#tedx {
+   --primarioGEA:#ca2103;
+   --monoGEA:#921709;
+   --contrasteGEA:#12c693;
+   --textoGEA:#fff;
+}
+/* fin TEDx */
+
+/* The Green Project */
+[data-id="green"],
+#green {
+   --primarioGEA:#04a522;
+   --monoGEA:#056015;
+   --contrasteGEA:#720f21;
+   --textoGEA:#fff;
+}
+/* fin The Green Project */
 
 /*-------------------------------*/
-/* end custom course */
+/* end personalización de cards por GEA */
 /*-------------------------------*/
+
 
 
 /*###################################################*/
@@ -877,6 +919,7 @@ button[data-action='close']:focus {
 /* end experiencias digitales  */
 /*...................................................*/
 /*###################################################*/
+
 
 /*###################################################*/
 /*...................................................*/
