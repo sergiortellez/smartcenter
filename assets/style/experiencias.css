@@ -13,7 +13,7 @@
     --smartGreen: #005245;
     --smartYellow: #9f8156;
     /* theme colors */
-    --background: #ffffff;
+    --background: #F5F5F5;
     --text: #000;
     --primary: #ac8a54;
     --orangeBtn: var(--primary);
@@ -638,7 +638,7 @@ button[data-action='close']:focus {
 .descriptions .que_es header svg,
 .descriptions .que_esperar header svg,
 .descriptions .instrucciones header svg {
-    color: #9f8156;
+    color: var(--customCourseContrast);
 }
 
 .descriptions .que_es p {
@@ -847,24 +847,40 @@ button[data-action='close']:focus {
 /* custom course */
 /*-------------------------------*/
 
-.customSuccess {
+#customSuccess {
     --customCourse: var(--smartGreen);
     --customCourseMono: rgb(149, 163, 149);
+    --customCourseContrast:rgb(199, 107, 36);
+    --customCourseText:#000;
+
 }
 
-.oylb {
+#oylb {
     --customCourse: var(--smartBlue);
     --customCourseMono: rgb(163, 173, 211);
+    --customCourseContrast:rgb(199, 107, 36);
+    --customCourseText:#000;
 }
 
-.cvmp {
+#liderazgo {
+    --customCourse: var(--smartBlue);
+    --customCourseMono: rgb(163, 173, 211);
+    --customCourseContrast:rgb(199, 107, 36);
+    --customCourseText:#000;
+}
+
+#cvmp {
     --customCourse: var(--smartYellow);
     --customCourseMono: rgb(214, 223, 181);
+    --customCourseContrast:rgb(199, 107, 36);
+    --customCourseText:#000;
 }
 
-.communicate {
+#communicate {
     --customCourse: var(--smartRed);
     --customCourseMono: rgb(223, 181, 181);
+    --customCourseContrast:rgb(199, 107, 36);
+    --customCourseText:#000;
 }
 
 /*-------------------------------*/
