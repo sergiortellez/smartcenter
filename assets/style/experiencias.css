@@ -883,6 +883,19 @@ button[data-action='close']:focus {
     --customCourseText:#000;
 }
 
+#resiliencia {
+    --customCourse: var(--smartRed);
+    --customCourseMono: rgb(223, 181, 181);
+    --customCourseContrast:rgb(199, 107, 36);
+    --customCourseText:#000;
+}
+
+#negotiate {
+    --customCourse: var(--smartRed);
+    --customCourseMono: rgb(223, 181, 181);
+    --customCourseContrast:rgb(199, 107, 36);
+    --customCourseText:#000;
+}
 /*-------------------------------*/
 /* end custom course */
 /*-------------------------------*/
