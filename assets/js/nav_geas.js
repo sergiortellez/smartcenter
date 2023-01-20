@@ -22,8 +22,8 @@ if (window.innerWidth < 648) {
 gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.create({
-    trigger: '#app_citas', //el elemento que desencadena el comportamiento
-    start: 'top 100px', //cuando el centro del elemento toca el top del viewport
+    trigger: '#experiencias_digitales', //el elemento que desencadena el comportamiento
+    start: '100px top', //cuando el top + 100px del elemento toca el top del viewport
     //end:'800px 200px',
     onEnter: function enter() {
         if (window.innerWidth > 1024) {
