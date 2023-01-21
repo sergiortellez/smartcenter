@@ -856,46 +856,54 @@ button[data-action='close']:focus {
 }
 
 #oylb {
-    --customCourse: var(--smartBlue);
-    --customCourseMono: rgb(163, 173, 211);
-    --customCourseContrast:rgb(199, 107, 36);
+    --customCourse: #4ab7cd;
+    --customCourseMono: #a2e5f4 ;
+    --customCourseContrast:#cc1857;
     --customCourseText:#000;
 }
 
 #liderazgo {
-    --customCourse: var(--smartBlue);
-    --customCourseMono: rgb(163, 173, 211);
-    --customCourseContrast:rgb(199, 107, 36);
+    --customCourse:  #55469b;
+    --customCourseMono: #8e87c1;
+    --customCourseContrast:#9b5532;
     --customCourseText:#000;
 }
 
 #cvmp {
-    --customCourse: var(--smartYellow);
-    --customCourseMono: rgb(214, 223, 181);
-    --customCourseContrast:rgb(199, 107, 36);
+    --customCourse: #538f18;
+    --customCourseMono: #92c926;
+    --customCourseContrast: #c886a3;
     --customCourseText:#000;
 }
 
 #communicate {
-    --customCourse: var(--smartRed);
-    --customCourseMono: rgb(223, 181, 181);
-    --customCourseContrast:rgb(199, 107, 36);
+    --customCourse: #e69d13;
+    --customCourseMono: #9c4c09;
+    --customCourseContrast:#1b62c9;
     --customCourseText:#000;
 }
 
 #resiliencia {
-    --customCourse: var(--smartRed);
-    --customCourseMono: rgb(223, 181, 181);
-    --customCourseContrast:rgb(199, 107, 36);
+    --customCourse: #ff9032;
+    --customCourseMono: #804c1a;
+    --customCourseContrast:#0057a5;
     --customCourseText:#000;
 }
 
 #negotiate {
-    --customCourse: var(--smartRed);
-    --customCourseMono: rgb(223, 181, 181);
-    --customCourseContrast:rgb(199, 107, 36);
+    --customCourse: #189b62;
+    --customCourseMono: #0c4c22;
+    --customCourseContrast: #bf2075;
     --customCourseText:#000;
 }
+
+#self, #manage {
+    --customCourse: #c60855;
+    --customCourseMono: #6b0328;
+    --customCourseContrast: #16b5c6;
+    --customCourseText:#000;
+}
+
 /*-------------------------------*/
 /* end custom course */
 /*-------------------------------*/
