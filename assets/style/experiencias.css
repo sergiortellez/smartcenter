@@ -691,9 +691,10 @@ button[data-action='close']:focus {
 .boton_out_experiencia {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     padding-bottom: 0.5rem;
-    margin-top: 1rem;
+    margin: 1rem;
+    
 }
 
 .boton_out_experiencia a {
