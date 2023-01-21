@@ -369,7 +369,7 @@ nav.expanded .navContents a {
 /*###################################################*/
 
 #experiencias_digitales {
-    padding: 5rem 1rem;
+    padding: 5rem 0.4rem;
     padding-top: var(--navHeight);
 }
 
@@ -657,11 +657,13 @@ button[data-action='close']:focus {
 
 /* end tablet */
 .que_esperar ul {
+    padding: 0.6rem;
     margin: 0;
-    padding: 0.5rem;
-    padding-left: 1.3rem;
+    margin-left: 1.3rem;
 }
-
+.que_esperar li {
+    padding: 0.4rem 0.3rem;
+}
 .instrucciones ul {
     text-align: right;
     padding: 0;
@@ -679,7 +681,7 @@ button[data-action='close']:focus {
     font-size: 1.4rem;
     /* margin-bottom: 0.6rem; */
     margin-right: 0.6rem;
-    color: var(--customCourse);
+    color: var(--customCourseContrast);
 }
 
 .interactivas {
@@ -691,6 +693,7 @@ button[data-action='close']:focus {
     align-items: center;
     justify-content: center;
     padding-bottom: 0.5rem;
+    margin-top: 1rem;
 }
 
 .boton_out_experiencia a {
@@ -708,6 +711,10 @@ button[data-action='close']:focus {
     -moz-transition: scale 300ms ease;
     -ms-transition: scale 300ms ease;
     -o-transition: scale 300ms ease;
+}
+
+.instrucciones ul .boton_out_experiencia svg{
+    color: var(--customCourse);
 }
 
 .boton_out_experiencia a:hover {
