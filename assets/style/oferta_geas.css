@@ -369,7 +369,7 @@ nav.expanded .navContents a {
 /*###################################################*/
 
 #experiencias_digitales {
-    padding: 5rem 1rem;
+    padding: 5rem 0.4rem;
     padding-top: var(--navHeight);
 }
 
