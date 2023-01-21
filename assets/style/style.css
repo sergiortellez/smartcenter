@@ -1279,6 +1279,104 @@ grid-column: span 2;
     color: var(--smartRed);
 }
 
+/* cellphone landscape up */
+@media (min-width: 576px) {
+    #que_es_au .expanded-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+}
+/* end cellphone landscape up */
+
+
+#que_es_au p{
+    text-align: start;
+}
+
+
+.imagen_asesores img{
+    width:100%; 
+    height:auto;
+
+}
+
+.asesoria_resaltado{
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: var(--smartRed);
+}
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .asesoria_resaltado{
+    font-size: 1.7rem;
+
+}
+}
+/* end tablet up */
+
+
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    #pasos_au .expanded-content .pasos{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+    .asesoria_pasos_pill{
+        /* flex: 1; */
+        flex-basis: 45%;
+        height: 100%;
+        min-height: 10rem;
+    }
+}
+/* end tablet up */
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+     #pasos_au .expanded-content .pasos{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+    .asesoria_pasos_pill{
+        /* flex: 1; */
+        flex-basis: 29%;
+        height: 100%;
+        min-height: 22vh;
+    }
+}
+/* end tablet up */
+
+
+.asesoria_pasos_pill{
+    background-color: rgb(127, 119, 119);
+    padding: 1rem;
+    border-radius: 15px;
+    color: #fff;
+    margin-bottom: 1rem;
+
+}
+
+.pill_num{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.4rem;
+}
+.pill_first{
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+}
+
+.pill_first svg{
+    margin-right: 0.3rem;
+}
 /*-------------------------------*/
 /* end asesoría */
 /*-------------------------------*/
@@ -1297,40 +1395,67 @@ grid-column: span 2;
     color: var(--smartGreen);
 }
 
-/* reacomodo de algunos botones */
 
+
+
+/* reacomodo de algunos botones  de talent
+
+Como se complicó el grid (estéticamente) en este punto, tomé la decisión de fijar el orden de los elementos a partir de 'cambio de asesor' y hasta 'talleres' para que se acomodaran como se veían mejor en la pantalla. No se puede usar la propiedad grid-items, grid-start o grid end porque eso fija a una porción del grid y es imposible considerar el dinamismo de los botones que abren y cierran. Además sería problemático añadir más elementos antes o después.
+
+*/
+
+
+
+ #cambio_asesor{
+        order: 1;
+    }
+      article[data-id="que_es_couns"],#que_es_couns{
+       order: 4;
+    }
+    article[data-id="talleres"],#talleres{
+      order: 3;
+    }
+     article[data-id="dpi"],#dpi{
+        order: 5
+        ;
+    }
 /* tablet portrait up */
 @media (min-width: 768px) {
-      article[data-id="que_es_couns"]{
-        grid-row-start: 8;
-        grid-row-end: 9;
+    #cambio_asesor{
+        order: 1;
     }
-    article[data-id="talleres"]{
-        grid-row-start: 8;
-        grid-row-end: 10;
+      article[data-id="que_es_couns"],#que_es_couns{
+       order: 3;
     }
-     article[data-id="dpi"]{
-        grid-row-start: 9;
-        grid-row-end: 10;
+    article[data-id="talleres"],#talleres{
+      order: 2;
+    }
+     article[data-id="dpi"],#dpi{
+        order: 4;
     }
 }
 /* end tablet up */
 
 /* tablet landscape up */
 @media (min-width: 1024.1px) {
-    article[data-id="que_es_couns"]{
-        grid-row-start: 9;
-        grid-row-end: 10;
+   #cambio_asesor{
+        order: 1;
     }
-    article[data-id="dpi"]{
-        grid-row-start: 10;
-        grid-row-end: 12;
+      article[data-id="que_es_couns"],#que_es_couns{
+       order: 3;
     }
-     #experiencias article[data-id="talleres"].parallax{
-        grid-row-start: 8;
-        grid-row-end: 12;
-        grid-column-start: -6;
-        
+    article[data-id="talleres"]{
+      order: 2;
+      grid-row: span 3;
+      grid-column: span 5 !important;
+      /* fue necesario sobre escribir mi selector parallax porque era mucho más específico. */
+      
+    }
+    #talleres{
+        order: 5;
+    }
+     article[data-id="dpi"],#dpi{
+        order: 4;
     }
 }
 /* end tablet up */
