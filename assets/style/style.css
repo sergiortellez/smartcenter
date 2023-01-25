@@ -882,7 +882,7 @@ nav.expanded .navContents a {
 
 /*###################################################*/
 /*...................................................*/
-/* experiencias */
+/* experiencias generales */
 /*...................................................*/
 /*###################################################*/
 
@@ -1061,10 +1061,19 @@ nav.expanded .navContents a {
 /* end title */
 /*-------------------------------*/
 
+/*###################################################*/
+/*...................................................*/
+/* end experiencias generales */
+/*...................................................*/
+/*###################################################*/
 
-/*-------------------------------*/
-/* grupos estudiantiles */
-/*-------------------------------*/
+
+/*###################################################*/
+/*...................................................*/
+/* Grupos estudiantiles */
+/*...................................................*/
+/*###################################################*/
+
 
 .gruposCard {
     background-color: var(--smartBlue);
@@ -1136,7 +1145,7 @@ grid-column: span 2;
 .gruposCardOferta {
     
     background-color: var(--smartBlueMono);
-    color: #fff;
+    color: #f7f7f7;
     overflow: hidden;
     position: relative;
     /* las fotos tienen un z index negativo, hay que reiniciar el stack para que no desaparezcan */
@@ -1168,13 +1177,20 @@ grid-column: span 2;
 
 
 
-/*-------------------------------*/
-/* end grupos estudiantiles */
-/*-------------------------------*/
 
-/*-------------------------------*/
+/*###################################################*/
+/*...................................................*/
+/* end Grupos estudiantiles */
+/*...................................................*/
+/*###################################################*/
+
+
+/*###################################################*/
+/*...................................................*/
 /* success */
-/*-------------------------------*/
+/*...................................................*/
+/*###################################################*/
+
 
 .successCard {
     background-color: var(--smartYellow);
@@ -1186,9 +1202,7 @@ grid-column: span 2;
     color: var(--smartYellow);
 }
 
-/*-------------------------------*/
-/* end success */
-/*-------------------------------*/
+
 
 /*-------------------------------*/
 /* experiencias digitales card */
@@ -1265,9 +1279,19 @@ grid-column: span 2;
 /* end experiencias digitales card */
 /*-------------------------------*/
 
-/*-------------------------------*/
+/*###################################################*/
+/*...................................................*/
+/* end success */
+/*...................................................*/
+/*###################################################*/
+
+/*###################################################*/
+/*...................................................*/
 /* asesoría */
-/*-------------------------------*/
+/*...................................................*/
+/*###################################################*/
+
+
 
 .asesoriaCard {
     background-color: var(--smartRed);
@@ -1290,6 +1314,9 @@ grid-column: span 2;
 }
 /* end cellphone landscape up */
 
+/*-------------------------------*/
+/* qué es au */
+/*-------------------------------*/
 
 #que_es_au p{
     text-align: start;
@@ -1317,6 +1344,14 @@ grid-column: span 2;
 /* end tablet up */
 
 
+
+/*-------------------------------*/
+/* end qué es au */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* pasos AU */
+/*-------------------------------*/
 
 /* tablet portrait up */
 @media (min-width: 768px) {
@@ -1359,7 +1394,7 @@ grid-column: span 2;
     background-color: rgb(127, 119, 119);
     padding: 1rem;
     border-radius: 15px;
-    color: #fff;
+    color: #f7f7f7;
     margin-bottom: 1rem;
 
 }
@@ -1376,13 +1411,142 @@ grid-column: span 2;
 .pill_first svg{
     margin-right: 0.3rem;
 }
+
 /*-------------------------------*/
-/* end asesoría */
+/* end pasos AU */
 /*-------------------------------*/
 
 /*-------------------------------*/
-/* talent */
+/* temas AU */
 /*-------------------------------*/
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) { 
+    .flex-temas{
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }  
+}
+/* end tablet up */
+
+
+.flex-temas :is(.primeros, .ultimos, .durante){
+    background-color: rgb(146, 146, 146);
+    padding: 0.5rem;
+    border-radius: 15px;
+    color: #f7f7f7;
+    margin-top: 1rem;
+}
+.flex-temas :is(.primeros, .ultimos, .durante) svg{
+ font-size: 1.4rem;
+}
+
+.flex-temas > .durante{
+    background-color: rgb(81, 79, 79);
+ }
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+        .flex-temas > div{
+        flex: 1 1 0;
+        margin-top: 0;
+    }
+}
+/* end tablet up */
+
+.flex-temas div ul{
+    padding: 0.5rem;
+    list-style: none;
+}
+.flex-temas div ul li{
+    margin-bottom: 1.2rem;
+    
+}
+/*-------------------------------*/
+/* end temas AU */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* FAQ AU */
+/*-------------------------------*/
+
+.accordion_faq {
+  width: 100%;
+}
+
+
+.accordion_faq-item-title {
+  background-color: #f7f7f7;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.accordion_faq-item-content {
+  padding: 0.3rem;
+  display: none;
+}
+
+.accordion_faq-item-content ul{
+    list-style: none;
+    padding: 0.1rem;
+    margin: 0;
+}
+.accordion_faq-item-content li{
+    margin-top: 0.5rem;
+}
+
+/* ---animaciones--- */
+
+.accordion_faq-item-content {
+   /* necesario para que la transición funcione  */
+   overflow: hidden;
+   /* primer valor de la altura es 0 */
+  max-height: 0; 
+  transition: max-height 1s ease-out; 
+}
+
+
+.accordion_faq-item-content.show {
+  max-height: 15rem; 
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-70%); }
+  to { transform: translateY(0%); }
+}
+
+.accordion_faq-item-content {
+  display: none;
+  animation: slideDown 0.4s ease-out;
+}
+
+.accordion_faq-item-content.show {
+    /*La animación sólo funciona si display se ajusta a block */
+  display: block;
+  animation: slideDown 0.4s ease-out;
+}
+/* ---end animaciones--- */
+
+/*-------------------------------*/
+/* end FAQ AU */
+/*-------------------------------*/
+
+
+/*###################################################*/
+/*...................................................*/
+/* end asesoría */
+/*...................................................*/
+/*###################################################*/
+
+
+/*###################################################*/
+/*...................................................*/
+/* talent */
+/*...................................................*/
+/*###################################################*/
+
 
 .talentCard {
     background-color: var(--smartGreen);
@@ -1468,7 +1632,7 @@ Como se complicó el grid (estéticamente) en este punto, tomé la decisión de 
 .unoauno {
     
     background-color: var(--smartGreenMono);
-    color: #fff;
+    color: #f7f7f7;
     overflow: hidden;
     position: relative;
     /* las fotos tienen un z index negativo, hay que reiniciar el stack para que no desaparezcan */
@@ -1527,17 +1691,14 @@ min-height: 45vh;
 
 
 /* ---end atención uno a uno parallax--- */
-/*-------------------------------*/
+
+
+/*###################################################*/
+/*...................................................*/
 /* end talent */
-/*-------------------------------*/
-
-
-
-/*###################################################*/
-/*...................................................*/
-/* end experiencias */
 /*...................................................*/
 /*###################################################*/
+
 
 /*###################################################*/
 /*...................................................*/
@@ -1782,7 +1943,7 @@ min-height: 45vh;
 /* end tablet up */
 
 #somos_portada p {
-    background-color: #fff;
+    background-color: #f7f7f7;
     padding: 0.5rem;
     background-color: var(--smartRed);
     color: var(--background);
@@ -2210,7 +2371,7 @@ min-height: 45vh;
 }
 
 .card-name {
-    border-bottom: #fff 2px solid;
+    border-bottom: #f7f7f7 2px solid;
     font-weight: 800;
 }
 

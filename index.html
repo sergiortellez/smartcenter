@@ -366,7 +366,7 @@
             <!-- tarjeta expandida -->
             <article class="expanded_card" data-expand="hidden" id="temas_au">
                 <header>
-                    <span class="title-expanded"></span>
+                    <span class="title-expanded">¿No sabes de qué hablar con tu asesor? Inspírate con esta guía...</span>
                     <!-- botón cerrar -->
                     <button data-action="close">
                         <i class="fa-duotone fa-rectangle-xmark"></i>
@@ -374,7 +374,50 @@
                     <!-- end botón cerrar -->
                 </header>
                 <div class="expanded-content">
-                    <p></p>
+                    <h3></h3>
+                    <div class="flex-temas">
+                        <div class="durante">
+                            <h4>Durante la carrera</h4>
+                            <hr>
+                            <ul>
+                                <li><i class="fa-duotone fa-image-polaroid-user"></i> <b>Autoconocimiento</b>.</li>
+                                <li><i class="fa-duotone fa-medal"></i> Definición de <b>metas</b> y desarrollo de <b>proyecto de vida</b>.</li>
+                                <li><i class="fa-duotone fa-triangle-exclamation"></i> <b>Problemas</b> y situaciones personales.</li>
+                                <li><i class="fa-duotone fa-signs-post"></i> Información sobre: <b>Servicios</b> que brinda la universidad, actividades <b>extracurriculares</b>, <b>talleres</b> que puedan ser de tu interés.</li>
+                                <li><i class="fa-duotone fa-money-check-dollar-pen"></i>
+                                    <w>Financiamiento</w> y <b>becas</b> que ofrece la Universidad.
+                                </li>
+                                <li><i class="fa-solid fa-gavel"></i> Normativa de la Universidad y tu Escuela o Facultad.</li>
+                                <li><i class="fa-duotone fa-scale-balanced"></i> <b>Equilibrio</b> vida trabajo.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="primeros">
+                                <h4>Primeros semestres</h4>
+                                <hr>
+                                <ul>
+                                    <li>Consejos para adaptarte al ambiente universitario.</li>
+                                    <li>DPI (entender los resultados).</li>
+                                    <li>Técnicas de estudio e investigación.</li>
+                                    <li>Organización del tiempo.</li>
+                                    <li>Aspectos específicos de la Escuela o Facultad a la que perteneces.</li>
+                                    <li>Dudas si esa carrera es para ti.</li>
+                                    <li>Desarrollo de plan académico y personal.</li>
+                                </ul>
+                            </div>
+
+                            <div class="ultimos">
+                                <h4>Últimos semestres</h4>
+                                <hr>
+                                <ul>
+                                    <li>Preparación para el ambiente laboral.</li>
+                                    <li>Personal branding y CV.</li>
+                                    <li>Desarrollo de plan profesional.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </article>
             <!-- end tarjeta expandida -->
@@ -398,7 +441,28 @@
                     <!-- end botón cerrar -->
                 </header>
                 <div class="expanded-content">
-                    <p></p>
+                    <div class="accordion_faq">
+                        <div class="accordion_faq-item">
+                            <h4 class="accordion_faq-item-title"><i class="fa-solid fa-message-question mr-1"></i>¿Cuántas veces tengo que ver a mi asesor?</h4>
+                            <div class="accordion_faq-item-content">
+                                <ul>
+                                    <li>Búscalo a principio de semestre para que te ayude a organizar tu semestre.</li>
+                                    <li>Búscalo al final de semestre para cerrar mejor tu semestre.</li>
+                                    <li>Lo puedes buscar las veces que necesitas a lo largo del semestre.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion_faq-item">
+                            <h4 class="accordion_faq-item-title"><i class="fa-solid fa-message-question mr-1"></i>¿Cómo contacto a mi asesor?</h4>
+                            <div class="accordion_faq-item-content">
+                                <ul>
+                                    <li>Utiliza distintos medios, wa <i class="fa-brands fa-whatsapp"></i>, mail <i class="fa-duotone fa-envelopes"></i></li>
+                                    <li>Localízalo en su oficina. <i class="fa-duotone fa-door-open"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Add more questions and answers here -->
+                    </div>
                 </div>
             </article>
             <!-- end tarjeta expandida -->
@@ -412,9 +476,6 @@
             </a>
             <!--	---- end tarjeta enlace ----	-->
 
-            <!--	---- espacio vacío para tabletas up ----	-->
-
-            <!--	---- end espacio vacío para tabletas up ----	-->
 
             <!--	----  tarjeta expandible (¿Qué es counseling?) ----	-->
             <article class="talentCard" data-type="button" data-id="que_es_couns">
@@ -920,7 +981,12 @@
     <script src="assets/js/twitter_smart_api_pure.min.js"></script>
     <!-- spyscroll -->
     <script src="assets/js/spyscroll.min.js"></script>
+    <!-- Gobierna el FAQ de asesoría universitaria -->
+    <script src="assets/js/faqau.min.js"></script>
+    <script>
 
+
+    </script>
     <!------------------------------------------------->
     <!--	end JS	-->
     <!------------------------------------------------->
