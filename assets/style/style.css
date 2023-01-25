@@ -1175,7 +1175,13 @@ grid-column: span 2;
 
 /* ---end oferta de grupos estudiantiles parallax--- */
 
-
+/* cellphone landscape down */
+@media (max-width: 767.98px) {
+    #crea_gea{
+        grid-column: -3/3;
+    }  
+}
+/* end cellphone landscape down */
 
 
 /*###################################################*/
@@ -1530,6 +1536,23 @@ grid-column: span 2;
 
 /*-------------------------------*/
 /* end FAQ AU */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* cambio de asesor */
+/*-------------------------------*/
+
+/* cellphone landscape down */
+@media (max-width: 767.98px) {
+    #cambio_asesor {
+        grid-column: -3/3;
+    }
+}
+/* end cellphone landscape down */
+
+
+/*-------------------------------*/
+/* end cambio de asesor */
 /*-------------------------------*/
 
 
