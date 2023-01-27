@@ -1297,8 +1297,6 @@ grid-column: span 2;
 /*...................................................*/
 /*###################################################*/
 
-
-
 .asesoriaCard {
     background-color: var(--smartRed);
     color: var(--background);
@@ -1581,7 +1579,11 @@ grid-column: span 2;
 }
 
 
-
+.resaltado_talent{
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: var(--smartGreen);
+}
 
 /* reacomodo de algunos botones  de talent
 
@@ -1713,6 +1715,150 @@ min-height: 45vh;
 
 
 /* ---end atención uno a uno parallax--- */
+
+
+/*-------------------------------*/
+/* qué es counseling */
+/*-------------------------------*/
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .counseling_flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+/* end tablet up */
+
+.counseling_definition{
+    margin-bottom: 2rem;
+}
+.counseling_photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counseling_photo img {
+  width: 80%; /* Set the image to take up the full width of the container */
+  height: auto; /* Set the height to automatically adjust to maintain the aspect ratio */
+  border-radius: 15px;
+
+}
+
+
+/* tablet portrait */
+@media (min-width: 768px ) and (max-width: 1024.1px) {
+    .counseling_photo {
+        flex: 1;
+    }
+
+    .counseling_definition {
+        flex: 1; 
+    }
+    .counseling_photo img {
+     width: 100%; /* Set the image to take up the full width of the container */
+    }
+
+}
+/* end tablet */
+
+
+
+
+/*-------------------------------*/
+/* end qué es counseling */
+/*-------------------------------*/
+
+
+/*-------------------------------*/
+/* dpi */
+/*-------------------------------*/
+
+#dpi>div {
+margin-bottom: 1rem;
+}
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    #dpi .flex_container_dpi {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+    }
+}
+/* end tablet up */
+
+.pill_dpi{
+    display: inline-block;
+    background-color:var(--smartGreenMono);
+    color: var(--background);
+    font-size: 0.7rem;
+    margin: 0.2rem;
+    padding: 0.4rem;
+    border-radius: 10px;
+    
+    white-space: nowrap;
+}
+
+.btn_dpi {
+    background-color:var(--smartGreenMono);
+    color: var(--background);
+    font-size: 1.5rem;
+    margin:0.2rem;
+    padding: 0.4rem;
+    padding-left: 2rem;
+    border-radius: 9px;
+}
+
+.resultados_dpi{
+    display: block;
+    font-size: 0.7rem;
+    margin-top: 1rem;
+    color: gray;
+}
+
+/* tablet landscape down */
+@media (max-width: 1023.5px) {
+    
+.video_dpi {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video_dpi iframe,
+.video_dpi object,
+.video_dpi embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+}
+/* end tablet down */
+
+/*-------------------------------*/
+/* end dpi */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* uno a uno */
+/*-------------------------------*/
+
+
+
+/*-------------------------------*/
+/* end uno a uno */
+/*-------------------------------*/
+
 
 
 /*###################################################*/
