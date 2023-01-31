@@ -475,7 +475,6 @@
             </a>
             <!--	---- end tarjeta enlace ----	-->
 
-
             <!--	----  tarjeta expandible (¿Qué es counseling?) ----	-->
             <article class="talentCard" data-type="button" data-id="que_es_couns">
                 <i class="fa-duotone fa-comments-question-check"></i>
@@ -806,13 +805,108 @@
         <div class="grid-tips">
 
 
-            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@somossmartcenter" data-unique-id="somossmartcenter" data-embed-type="creator" style="max-width: 720px; min-width: 288px;">
-                <section> <a target="_blank" href="https://www.tiktok.com/@somossmartcenter?refer=creator_embed">@somossmartcenter</a> </section>
-            </blockquote>
-            <script async src="https://www.tiktok.com/embed.js"></script>
 
         </div>
         <!--	---- end grid tips ----	-->
+
+        <!--	---- up explorer ----	-->
+        <div id="up_explorer">
+            <h3><i class="fa-duotone fa-compass"></i> Up Explorer </h3>
+
+            <hr>
+
+            <div class="up_explorer_container">
+                <div class="preview">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="carrousels">
+                    <div class="carousel portrait">
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/200x300.png/1E1E1E/ffffff" alt="UP explorer">
+                            <figcaption>Lorem, ipsum dolor.</figcaption>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/200x300.png/1E1E1E/ffffff" alt="UP explorer">
+                            <figcaption>Lorem ipsum dolor sit amet consectetur.</figcaption>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/200x300.png/1E1E1E/ffffff" alt="UP explorer">
+                            <figcaption>Lorem, ipsum dolor.</figcaption>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/200x300.png/1E1E1E/ffffff" alt="UP explorer">
+                            <figcaption>Lorem ipsum dolor .</figcaption>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/200x300.png/1E1E1E/ffffff" alt="UP explorer">
+                            <figcaption>Lorem, ipsum dolor.</figcaption>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/200x300.png/1E1E1E/ffffff" alt="UP explorer">
+                            <figcaption>Lorem ipsum dolor .</figcaption>
+                        </div>
+
+                    </div>
+
+                    <div class="carousel landscape">
+
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/300x200.png/fE1E1E/ffffff" alt="UP explorer">
+                            <figcaption>Lorem ipsum dolor sit.</figcaption>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/300x200.png/fE1E1E/ffffff" alt="UP explorer">
+                            <figcaption>Lorem ipsum dolor sit.</figcaption>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/300x200.png/fE1E1E/ffffff" alt="UP explorer">
+                            <figcaption>Lorem ipsum dolor sit.</figcaption>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/300x200.png/fE1E1E/ffffff" alt="UP explorer">
+                            <figcaption>Lorem ipsum dolor sit.</figcaption>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/300x200.png/fE1E1E/ffffff" alt="UP explorer">
+                            <figcaption>Lorem ipsum dolor sit.</figcaption>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/300x200.png/fE1E1E/ffffff" alt="UP explorer">
+                            <figcaption>Lorem ipsum dolor sit.</figcaption>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/300x200.png/fE1E1E/ffffff" alt="UP explorer">
+                            <figcaption>Lorem ipsum dolor sit.</figcaption>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/300x200.png/fE1E1E/ffffff" alt="UP explorer">
+                            <figcaption>Lorem ipsum dolor sit.</figcaption>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/300x200.png/fE1E1E/ffffff" alt="UP explorer">
+                            <figcaption>Lorem ipsum dolor sit.</figcaption>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/300x200.png/fE1E1E/ffffff" alt="UP explorer">
+                            <figcaption>Lorem ipsum dolor sit.</figcaption>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--	---- end up explorer ----	-->
+
+
     </section>
     <!------------------------------------------------->
     <!--	end tips	-->
@@ -1021,8 +1115,28 @@
     <!-- Gobierna el FAQ de asesoría universitaria -->
     <script src="assets/js/faqau.min.js"></script>
     <script>
+        // const carousel = document.querySelector('.carousel');
+        // const items = document.querySelectorAll('.carousel-item');
 
+        // carousel.addEventListener('scroll', function () {
+        //     const firstItem = items[0];
+        //     const lastItem = items[items.length - 1];
+        //     const firstItemRect = firstItem.getBoundingClientRect();
+        //     const lastItemRect = lastItem.getBoundingClientRect();
 
+        //     if (firstItemRect.right < 0) {
+        //         carousel.appendChild(firstItem);
+        //         carousel.scrollLeft -= firstItemRect.width + firstItemRect.right;
+        //     }
+
+        //     if (lastItemRect.left > carousel.clientWidth) {
+        //         carousel.insertBefore(lastItem, firstItem);
+        //         carousel.scrollLeft += lastItemRect.width - lastItemRect.left;
+        //     }
+        // });
+
+        // // Set the initial scroll position to the middle of the carousel
+        // carousel.scrollLeft = (items.length / 2) * (items[0].clientWidth + 20) - (carousel.clientWidth / 2);
     </script>
     <!------------------------------------------------->
     <!--	end JS	-->

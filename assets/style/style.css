@@ -693,6 +693,7 @@ nav.expanded .navContents a {
 /*...................................................*/
 /*###################################################*/
 
+
 /*###################################################*/
 /*...................................................*/
 /* portada */
@@ -879,6 +880,7 @@ nav.expanded .navContents a {
 /* end portada */
 /*...................................................*/
 /*###################################################*/
+
 
 /*###################################################*/
 /*...................................................*/
@@ -1992,6 +1994,110 @@ margin-bottom: 1rem;
 /* tips */
 /*...................................................*/
 /*###################################################*/
+#tips {
+    padding: 5rem 1rem;
+}
+
+/*-------------------------------*/
+/* upExplorer */
+/*-------------------------------*/
+
+/* ---contenedor flex--- */
+
+up_explorer_container{
+    
+}
+
+/* ---end contenedor flex--- */
+
+
+/* ---contenedor de video--- */
+
+
+.preview {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.preview iframe,
+.preview object,
+.preview embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+}
+
+
+/* ---end contenedor de video--- */
+
+/* ---carruseles--- */
+
+
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 2rem;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  cursor: ew-resize;
+  scroll-behavior: smooth;
+  margin-bottom: 2rem;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.carousel {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+ 
+}
+.carousel-item figcaption{
+    font-size: 0.7rem;
+}
+
+.portrait div{
+    width: auto;
+    align-items: center;
+
+}
+.landscape div {
+    width: auto;
+    align-items: flex-start;
+}
+
+
+
+.portrait div>img{
+    width: auto;
+    height: 6rem;
+}
+.landscape div>img{
+    width: auto;
+    height: 6rem;
+}
+
+/* ---end carruseles--- */
+
+
+/*-------------------------------*/
+/* end upExplorer */
+/*-------------------------------*/
+
 
 
 
@@ -2440,6 +2546,7 @@ margin-bottom: 1rem;
 /* end quienes somos */
 /*...................................................*/
 /*###################################################*/
+
 
 /*###################################################*/
 /*...................................................*/
