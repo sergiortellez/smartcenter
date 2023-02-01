@@ -2004,8 +2004,8 @@ margin-bottom: 1rem;
 
 /* ---contenedor flex--- */
 
-up_explorer_container{
-    
+.up_explorer_container{
+
 }
 
 /* ---end contenedor flex--- */
@@ -2045,7 +2045,7 @@ up_explorer_container{
   gap: 2rem;
   overflow-x: scroll;
   scrollbar-width: none;
-  cursor: ew-resize;
+  /* cursor: ew-resize; */
   scroll-behavior: smooth;
   margin-bottom: 2rem;
 }
@@ -2058,6 +2058,11 @@ up_explorer_container{
 .carousel {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+}
+
+.carousel button{
+    all: unset;
+    cursor: pointer;
 }
 
 .carousel-item {
@@ -2090,6 +2095,44 @@ up_explorer_container{
     width: auto;
     height: 6rem;
 }
+
+/* ---botones next/prev--- */
+
+.carrousel_container{
+     position: relative;
+  overflow: hidden;
+}
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.5em 1em;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 50%;
+  font-size: 1.5em;
+  opacity: 0.7;
+  cursor: pointer;
+}
+@media (pointer: coarse) {
+  /* styles for touch devices */
+    .prev-button,
+    .next-button {
+        display: none;
+    }
+}
+
+
+.prev-button {
+  left: 0.5em;
+}
+
+.next-button {
+  right: 0.5em;
+}
+
+/* ---end botones next/prev--- */
 
 /* ---end carruseles--- */
 
