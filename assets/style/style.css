@@ -2059,12 +2059,11 @@ margin-bottom: 1rem;
 /*-------------------------------*/
 
 .carrousels h3{
-    margin: 0;
+    margin: 0.5rem 0;
     padding: 0;
+    
 }
-.carrousels hr{
-    margin: 2px;
-}
+
 
 .carousel {
   display: flex;
@@ -2092,26 +2091,39 @@ margin-bottom: 1rem;
 .carousel button{
     all: unset;
     cursor: pointer;
+    display: flex;
+    gap: 0.7rem;
+    background-color: #e8e6e6;
+    padding: 0.5rem;
+    border-radius: 8px;
+    min-width: 9rem;
+    transition: all 0.3s ease;
 }
 
+.carousel button:is(:hover){
+    transform: scale(0.9);
+}
+
+.carousel button:active{
+    transform: scale(0.9);
+    background-color: rgb(84, 82, 82);
+}
 .carousel-item {
   display: flex;
-  flex-direction: column;
   justify-content: flex-start;
- 
+
 }
 .carousel-item figcaption{
-    font-size: 0.5rem;
+    font-size: 0.8rem;
 }
 
-.portrait div{
-    width: auto;
-    align-items: center;
-
+.portrait button {
+    align-items: flex-end;
 }
-.landscape div {
-    width: auto;
-    align-items: flex-start;
+
+.landscape button {
+    gap: 0.3rem;
+    flex-direction: column;
 }
 
 
@@ -2128,8 +2140,8 @@ margin-bottom: 1rem;
 /* ---botones next/prev--- */
 
 .carrousel_container{
-     position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 .prev-button,
 .next-button {
@@ -2143,6 +2155,7 @@ margin-bottom: 1rem;
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.3s ease;
+  z-index: 2;
 }
 
 .prev-button:hover,
@@ -2153,7 +2166,7 @@ margin-bottom: 1rem;
 .prev-button svg,
 .next-button svg {
     font-size: 3rem;
-    color: var(--background);
+    color: rgb(79, 76, 76);
 }
 
 /* ---controles de visualización de botones en el carrusel--- */
