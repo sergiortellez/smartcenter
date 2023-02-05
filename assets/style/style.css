@@ -2095,8 +2095,9 @@ margin-bottom: 1rem;
     gap: 0.7rem;
     background-color: #e8e6e6;
     padding: 0.5rem;
-    border-radius: 8px;
-    min-width: 9rem;
+    border-radius: 5px;
+    min-width: 10rem;
+    min-height: 5.3rem;
     transition: all 0.3s ease;
 }
 
@@ -2130,11 +2131,11 @@ margin-bottom: 1rem;
 
 .portrait .carousel-item>img{
     width: auto;
-    height: 5rem;
+    height: 5.3rem;
 }
 .landscape .carousel-item>img{
     width: auto;
-    height: 5rem;
+    height: 5.5rem;
 }
 
 /* ---botones next/prev--- */
@@ -2146,20 +2147,21 @@ margin-bottom: 1rem;
 .prev-button,
 .next-button {
   position: absolute;
-  top: 50%;
-  /* transform: translateY(-60%); */
+  top: 30%;
   padding: 0.5em 1em;
   background-color: transparent;
   border: none;
   opacity: 0.9;
   border-radius: 50%;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   z-index: 2;
 }
 
 .prev-button:hover,
 .next-button:hover {
+  
+
   transform: scale(1.2);
 }
 
@@ -2190,9 +2192,6 @@ margin-bottom: 1rem;
 }
 /* ---end controles de visualización de botones en el carrusel--- */
 
-
-
-
 .prev-button {
   left: 0.5em;
 }
@@ -2200,8 +2199,84 @@ margin-bottom: 1rem;
 .next-button {
   right: 0.5em;
 }
-
 /* ---end botones next/prev--- */
+
+
+/* ---placeHolders--- */
+.carrouselPlaceHolder{
+    display: flex;
+    gap: 0.7rem;
+    background-color: #e8e6e6;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 12rem;
+    height: 5.3rem;
+    transition: all 0.3s ease;
+    animation: placeholder-fade 3s linear infinite;
+}
+/* animación  */
+@keyframes placeholder-fade {
+    0% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0.7;
+    }
+}
+/* end animación  */
+
+.portrait .carrouselPlaceHolder {
+    align-items: flex-end;
+}
+
+.landscape .carrouselPlaceHolder {
+    gap: 0.3rem;
+    flex-direction: column;
+}
+
+.portrait .PlaceHolderPreview{
+    width: 3.5rem;
+    height: 5.3rem;
+    background-color: rgb(78, 73, 73);
+}
+.landscape .PlaceHolderPreview{
+    width: 10rem;
+    height: 4rem;
+    background-color: rgb(78, 73, 73);
+}
+
+.landscape .PlaceHoldertitle{
+    width: 10rem;
+    height: 0.6rem;
+    border-radius: 15px;
+    background-color: rgb(49, 46, 46);
+}
+
+.landscape .PlaceHoldertitleShort{
+     width: 4.5rem;
+    height: 0.6rem;
+    border-radius: 15px;
+    background-color: rgb(103, 97, 97);
+}
+
+.portrait  .PlaceHoldertitle{
+    width: 4.5rem;
+    height: 0.6rem;
+    border-radius: 15px;
+    background-color: rgb(49, 46, 46);
+}
+
+.portrait .PlaceHoldertitleShort{
+     width: 2.5rem;
+    height: 0.6rem;
+    margin-top: 0.5rem;
+    border-radius: 15px;
+    background-color: rgb(103, 97, 97);
+}
+/* ---end placeHolders--- */
 
 /*-------------------------------*/
 /* end carruseles */
