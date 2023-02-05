@@ -1,35 +1,74 @@
 /*<------------------------------------------------->
+<!--	variables Globales	-->
+<!------------------------------------------------->*/
+//selecciona todos los contenedores de carruseles con la clase 'carrousel_container'
+const carouselsContainers = document.querySelectorAll(".carrousel_container");
+//selecciona el visor de previsualización
+const videoPreview = document.querySelector('#previewVideo');
+// Esta constante guarda la clave API de Google. 
+const API_KEY = "AIzaSyAY92qoSUcTrzZ669HLcAh-Mx9KBKKfePo";
+
+/*<!------------------------------------------------->
+<!--	end variables Globales	-->
+<!------------------------------------------------->*/
+
+
+/*<------------------------------------------------->
 <!--	creación de carruseles	-->
 <!------------------------------------------------->*/
 
-const API_KEY = "AIzaSyAY92qoSUcTrzZ669HLcAh-Mx9KBKKfePo";
-// Esta constante guarda la clave API de Google. 
+//selecciona todos los contenedores
+carouselsContainers.forEach(function (container) {
+    //toma el data-id de cada contenedor
+    let PLAYLIST_ID = container.getAttribute('data-id');
+    // Esta constante guarda el ID de la lista de reproducción que se desea obtener.
 
-const PLAYLIST_ID = "PLhMMXwN8RXkwqQ7JMSyWl2JYt2B4_sU5O";
-// Esta constante guarda el ID de la lista de reproducción que se desea obtener.
+    const endpoint = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,contentDetails&maxResults=12&playlistId=${PLAYLIST_ID}&key=${API_KEY}`;
+    // Esta constante guarda la URL de la solicitud API. Incluye el ID de la lista de reproducción y la clave API, además de establecer los detalles que se desean obtener (snippet y contentDetails) y el número máximo de resultados por solicitud (12).
+    // Utiliza la función `fetch` para realizar una solicitud GET a la URL de la API.
 
-const endpoint = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,contentDetails&maxResults=12&playlistId=${PLAYLIST_ID}&key=${API_KEY}`;
-// Esta constante guarda la URL de la solicitud API. Incluye el ID de la lista de reproducción y la clave API, además de establecer los detalles que se desean obtener (snippet y contentDetails) y el número máximo de resultados por solicitud (12).
+    fetch(endpoint)
+        // Si la solicitud es exitosa, la respuesta se convierte en un objeto JSON.
+        .then(response => response.json())
+        //Luego, se extrae la información relevante de cada video(ID, título y miniatura) y se almacena en una nueva constante`videos`
+        .then(data => {
+            const videos = data.items.map(item => {
+                return {
+                    id: item.snippet.resourceId.videoId,
+                    title: item.snippet.title,
+                    thumbnail: item.snippet.thumbnails.default.url
+                };
+            });
 
+            //borra los placeHolders del contenedor
+            container.innerHTML = ' ';
+            //Encuentra el elemento carrousel dentro del contenedor
+            let carouselElement = container.querySelector(".carousel");
+            //construye los botones 'prev' y 'next'
+            //TODO: construir los botones prev y next
+            //para cada uno de los videos del carrusel:
+            videos.forEach(function (video) {
+                console.log(video.id);
+                console.log(video.title);
+                console.log(video.thumbnail);
 
-// Utiliza la función `fetch` para realizar una solicitud GET a la URL de la API.
-fetch(endpoint)
-    // Si la solicitud es exitosa, la respuesta se convierte en un objeto JSON.
-    .then(response => response.json())
-    //Luego, se extrae la información relevante de cada video(ID, título y miniatura) y se almacena en una nueva constante`videos`
-    .then(data => {
-        const videos = data.items.map(item => {
-            return {
-                id: item.snippet.resourceId.videoId,
-                title: item.snippet.title,
-                thumbnail: item.snippet.thumbnails.default.url
-            };
+            });
+
+        })
+        // Si ocurre un error durante la solicitud, se mostrará un mensaje de error en la consola.
+        .catch(error => {
+            console.error(error);
         });
-    })
-    // Si ocurre un error durante la solicitud, se mostrará un mensaje de error en la consola.
-    .catch(error => {
-        console.error(error);
-    });
+
+});
+
+
+
+
+
+
+
+
 
 /*<!------------------------------------------------->
 <!--	end creación de carruseles	-->
@@ -40,13 +79,10 @@ fetch(endpoint)
 <!--	funcionamiento de carruseles	-->
 <!------------------------------------------------->*/
 
-
-
 //selecciona todos los carruseles de la página que tengan la clase '.carousel'
-let carousels = document.querySelectorAll(".carousel");
-let carouselItems = document.querySelectorAll('.carousel-item');
-let videoPreview = document.querySelector('#previewVideo');
-
+const carousels = document.querySelectorAll(".carousel");
+//selecciona todos los elementos que tengan la clase .carrousel-item
+const carouselItems = document.querySelectorAll('.carousel-item');
 
 carousels.forEach(carousel => {
     //encuentra el botón 'next'
