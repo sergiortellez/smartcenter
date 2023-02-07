@@ -1,8 +1,10 @@
+//Programa que gobierna la creación y funcionamiento de carruseles de videos basados en playlists de youtube. (SMART Tips)
+
 /*<------------------------------------------------->
 <!--	variables Globales	-->
 <!------------------------------------------------->*/
 //selecciona todos los contenedores de carruseles con la clase 'carrousel_container'
-const carouselsContainers = document.querySelectorAll(".carrousel_container");
+var carouselsContainers = document.querySelectorAll(".carrousel_container");
 //selecciona el visor de previsualización
 const videoPreview = document.querySelector('#previewVideo');
 // Esta constante guarda la clave API de Google. 
@@ -12,11 +14,9 @@ const API_KEY = "AIzaSyAY92qoSUcTrzZ669HLcAh-Mx9KBKKfePo";
 <!--	end variables Globales	-->
 <!------------------------------------------------->*/
 
-
 /*<------------------------------------------------->
-<!--	creación de carruseles	-->
+<!--	Creación de carruseles (main)	-->
 <!------------------------------------------------->*/
-
 //selecciona todos los contenedores
 carouselsContainers.forEach(function (container) {
     //toma el data-id de cada contenedor
@@ -40,20 +40,29 @@ carouselsContainers.forEach(function (container) {
                 };
             });
 
-            //borra los placeHolders del contenedor
-            container.innerHTML = ' ';
+
             //Encuentra el elemento carrousel dentro del contenedor
             let carouselElement = container.querySelector(".carousel");
+
+            //borra los placeHolders del contenedor
+            carouselElement.innerHTML = ' ';
+
             //construye los botones 'prev' y 'next'
-            //TODO: construir los botones prev y next
+            let tempPrevButton = buildPrevButton();
+            container.prepend(tempPrevButton);
+            let tempNextButton = buildNextButton();
+            container.append(tempNextButton);
+
             //para cada uno de los videos del carrusel:
             videos.forEach(function (video) {
-                console.log(video.id);
-                console.log(video.title);
-                console.log(video.thumbnail);
+
+                let tempItem = buildCarouselItem(video.id, video.title, video.thumbnail);
+                carouselElement.appendChild(tempItem);
 
             });
 
+            prevNextButtonActivate();
+            previewSelectorActivate();
         })
         // Si ocurre un error durante la solicitud, se mostrará un mensaje de error en la consola.
         .catch(error => {
@@ -61,8 +70,85 @@ carouselsContainers.forEach(function (container) {
         });
 
 });
+/*<!------------------------------------------------->
+<!--	end Creación de carruseles	-->
+<!------------------------------------------------->*/
+
+/*<------------------------------------------------->
+<!-- funciones auxiliares de	creación de carruseles	-->
+<!------------------------------------------------->*/
+
+function buildPrevButton() {
+    // Crea el botón
+    let prevButton = document.createElement('button');
+    prevButton.setAttribute('type', 'button');
+    prevButton.classList.add('prev-button');
+    prevButton.classList.add('hideButton');
+
+    //crea el ícono
+    let prevIcon = document.createElement('i');
+    prevIcon.classList.add('fa-duotone');
+    prevIcon.classList.add('fa-square-left');
+
+    //mete el ícono en el botón
+    prevButton.appendChild(prevIcon);
+
+    //devuelve el botón
+    return prevButton;
+}
+
+function buildNextButton() {
+    // Crea el botón
+    let nextButton = document.createElement('button');
+    nextButton.setAttribute('type', 'button');
+    nextButton.classList.add('next-button');
+    nextButton.classList.add('showButton');
+
+    //crea el ícono
+    let nextIcon = document.createElement('i');
+    nextIcon.classList.add('fa-duotone');
+    nextIcon.classList.add('fa-square-right');
+
+    //mete el ícono en el botón
+    nextButton.appendChild(nextIcon);
+
+    //devuelve el botón
+    return nextButton;
+}
+
+function buildCarouselItem(id, title, thumbnail) {
+    //construye el botón
+    let carouselItem = document.createElement('button');
+    carouselItem.classList.add('carousel-item');
+    carouselItem.setAttribute('type', 'button');
+    carouselItem.setAttribute('data-id', id);
+
+    //ahora sus elementos:
+
+    //thumbnail
+    let itemThumbnail = document.createElement('img');
+    itemThumbnail.setAttribute('alt', 'video Thumbnail');
+    itemThumbnail.setAttribute('src', thumbnail);
 
 
+    //title
+
+    //recorta títulos demasiado largos
+    if (title.length > 45) {
+        title = title.substring(0, 45).concat("...");
+    }
+
+    let itemTitle = document.createElement('figcaption');
+    itemTitle.innerText = title;
+
+    //mete los elementos al botón
+    carouselItem.appendChild(itemThumbnail);
+    carouselItem.appendChild(itemTitle);
+
+    //devuélveme el elemento completo
+    return carouselItem;
+
+}
 
 
 
@@ -71,102 +157,105 @@ carouselsContainers.forEach(function (container) {
 
 
 /*<!------------------------------------------------->
-<!--	end creación de carruseles	-->
+<!--	end funciones auxiliares de creación de carruseles	-->
 <!------------------------------------------------->*/
 
 
 /*<------------------------------------------------->
-<!--	funcionamiento de carruseles	-->
+<!-- funciones auxiliares de funcionamiento de carruseles	-->
 <!------------------------------------------------->*/
 
-//selecciona todos los carruseles de la página que tengan la clase '.carousel'
-const carousels = document.querySelectorAll(".carousel");
-//selecciona todos los elementos que tengan la clase .carrousel-item
-const carouselItems = document.querySelectorAll('.carousel-item');
+function prevNextButtonActivate() {
+    //selecciona todos los carruseles de la página que tengan la clase '.carousel'
+    var carousels = document.querySelectorAll(".carousel");
+    //selecciona todos los elementos que tengan la clase .carrousel-item
+    var carouselItems = document.querySelectorAll('.carousel-item');
 
-carousels.forEach(carousel => {
-    //encuentra el botón 'next'
-    let botonNext = carousel.nextElementSibling;
-    //encuentra el botón 'prev'
-    let botonPrev = carousel.previousElementSibling;
-    //determina cuánto mide de ancho el primer elemento (todos tienen un ancho parecido) y multiplícalo por 2
-    let itemWidth = carousel.firstElementChild.offsetWidth * 2;
-
-
-    //cuando el carrusel sufra un scroll ejecuta 'displayButtons'
-    carousel.addEventListener('scroll', displayButtons)
-    //cuando se apriete el botón next, ejecuta la función 'showNext'
-    botonNext.addEventListener('click', showNext);
-    //cuando se apriete el botón prev, ejecuta la función 'showPrev'
-    botonPrev.addEventListener('click', showPrev);
+    carousels.forEach(carousel => {
+        //encuentra el botón 'next'
+        let botonNext = carousel.nextElementSibling;
+        //encuentra el botón 'prev'
+        let botonPrev = carousel.previousElementSibling;
+        //determina cuánto mide de ancho el primer elemento (todos tienen un ancho parecido) y multiplícalo por 2
+        let itemWidth = carousel.firstElementChild.offsetWidth * 2;
 
 
+        //cuando el carrusel sufra un scroll ejecuta 'displayButtons'
+        carousel.addEventListener('scroll', displayButtons)
+        //cuando se apriete el botón next, ejecuta la función 'showNext'
+        botonNext.addEventListener('click', showNext);
+        //cuando se apriete el botón prev, ejecuta la función 'showPrev'
+        botonPrev.addEventListener('click', showPrev);
 
-    function showNext() {
-        //haz scroll la distancia 'itemWith ()' hacia la Izquierda
-        carousel.scrollLeft += itemWidth;
-    }
 
-    function showPrev() {
-        //haz scroll la distancia 'itemWith ()' hacia la derecha
-        carousel.scrollLeft -= itemWidth;
-    }
 
-    function displayButtons() {
-        // ¿El carrusel está al inicio
-        if (carousel.scrollLeft === 0) {
-            //oculta el botón prev
-            botonPrev.classList.add('hideButton');
-            botonPrev.classList.remove('showButton');
-        } else {
-            //muestra el botón prev
-            botonPrev.classList.remove('hideButton');
-            botonPrev.classList.add('showButton');
+        function showNext() {
+            //haz scroll la distancia 'itemWith ()' hacia la Izquierda
+            carousel.scrollLeft += itemWidth;
         }
-        //¿El carrusel está al final? 
-        if (carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth) {
-            //oculta el botón 'next'
-            botonNext.classList.add('hideButton');
-            botonNext.classList.remove('showButton');
-        } else {
-            //muestra el botón 'next'
-            botonNext.classList.remove('hideButton');
-            botonNext.classList.add('showButton');
+
+        function showPrev() {
+            //haz scroll la distancia 'itemWith ()' hacia la derecha
+            carousel.scrollLeft -= itemWidth;
         }
-    }
-});
+
+        function displayButtons() {
+            // ¿El carrusel está al inicio
+            if (carousel.scrollLeft === 0) {
+                //oculta el botón prev
+                botonPrev.classList.add('hideButton');
+                botonPrev.classList.remove('showButton');
+            } else {
+                //muestra el botón prev
+                botonPrev.classList.remove('hideButton');
+                botonPrev.classList.add('showButton');
+            }
+            //¿El carrusel está al final? 
+            if (carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth) {
+                //oculta el botón 'next'
+                botonNext.classList.add('hideButton');
+                botonNext.classList.remove('showButton');
+            } else {
+                //muestra el botón 'next'
+                botonNext.classList.remove('hideButton');
+                botonNext.classList.add('showButton');
+            }
+        }
+    });
+}
 
 
 
 
-carouselItems.forEach(item => {
-    let dataId = item.getAttribute('data-id');
+function previewSelectorActivate() {
+    //selecciona todos los elementos que tengan la clase .carrousel-item
+    var carouselItems = document.querySelectorAll('.carousel-item');
 
-    item.addEventListener('click', displayVideo);
+    carouselItems.forEach(item => {
+        let dataId = item.getAttribute('data-id');
 
-    function displayVideo() {
-        let src = "https://www.youtube.com/embed/" + dataId;
-        console.log(src);
-        videoPreview.src = src;
-        console.log(getVideoTitle(dataId));
-    }
+        item.addEventListener('click', displayVideo);
+
+        function displayVideo() {
+            let src = "https://www.youtube.com/embed/" + dataId;
+
+            videoPreview.src = src;
+
+            if (window.innerWidth <= 769) {
+
+                videoPreview.scrollIntoView({ behavior: 'smooth' });
+            }
 
 
-    function getVideoTitle(videoId) {
+        }
+    });
+}
 
-        var ytApiKey = "AIzaSyAY92qoSUcTrzZ669HLcAh-Mx9KBKKfePo";
-        var videoId = videoId;
-
-        $.get("https://www.googleapis.com/youtube/v3/videos?part=snippet&id=" + videoId + "&key=" + ytApiKey, function (data) {
-            return (data.items[0].snippet.title);
-        });
-    }
-});
 
 
 
 /*<!------------------------------------------------->
-<!--	end funcionamiento de carruseles	-->
+<!--	end funciones auxiliares de funcionamiento de carruseles	-->
 <!------------------------------------------------->*/
 
 

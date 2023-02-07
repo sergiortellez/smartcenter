@@ -2016,10 +2016,10 @@ margin-bottom: 1rem;
         flex-direction: row;
     } 
     .preview {
-        width: 50%;
+        width: 60%;
     }
     .carrousels{
-        width: 50%;
+        width: 40%;
     }
 }
 /* end tablet up */
@@ -2046,7 +2046,9 @@ margin-bottom: 1rem;
 .preview object,
 .preview embed {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 3 / 2;
+  border-radius: 15px;
+
 }
 
 /*-------------------------------*/
@@ -2097,7 +2099,7 @@ margin-bottom: 1rem;
     padding: 0.5rem;
     border-radius: 5px;
     min-width: 10rem;
-    min-height: 5.3rem;
+    min-height: 8.3rem;
     transition: all 0.3s ease;
 }
 
@@ -2115,7 +2117,7 @@ margin-bottom: 1rem;
 
 }
 .carousel-item figcaption{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 .portrait button {
@@ -2132,10 +2134,15 @@ margin-bottom: 1rem;
 .portrait .carousel-item>img{
     width: auto;
     height: 5.3rem;
+    clip-path: inset(0px 34% 0px 34%);
+    transform: translate(-30%);
+
 }
 .landscape .carousel-item>img{
-    width: auto;
-    height: 5.5rem;
+    
+    height: 6rem;
+     aspect-ratio: 3 / 2;
+     border-radius: 10px;
 }
 
 /* ---botones next/prev--- */
@@ -2168,7 +2175,7 @@ margin-bottom: 1rem;
 .prev-button svg,
 .next-button svg {
     font-size: 3rem;
-    color: rgb(79, 76, 76);
+    color: rgb(179, 173, 173);
 }
 
 /* ---controles de visualización de botones en el carrusel--- */
@@ -2281,15 +2288,6 @@ margin-bottom: 1rem;
 /*-------------------------------*/
 /* end carruseles */
 /*-------------------------------*/
-
-
-
-
-
-
-
-
-
 
 /*###################################################*/
 /*...................................................*/
