@@ -1,3 +1,4 @@
+
 //Programa que gobierna la creación y funcionamiento de carruseles de videos basados en playlists de youtube. (SMART Tips)
 
 /*<------------------------------------------------->
@@ -60,16 +61,18 @@ carouselsContainers.forEach(function (container) {
                 carouselElement.appendChild(tempItem);
 
             });
+            prevNextButtonActivate(carouselElement);
+            previewSelectorActivate(carouselElement);
 
-            prevNextButtonActivate();
-            previewSelectorActivate();
         })
         // Si ocurre un error durante la solicitud, se mostrará un mensaje de error en la consola.
         .catch(error => {
             console.error(error);
         });
 
+
 });
+
 /*<!------------------------------------------------->
 <!--	end Creación de carruseles	-->
 <!------------------------------------------------->*/
@@ -151,11 +154,6 @@ function buildCarouselItem(id, title, thumbnail) {
 }
 
 
-
-
-
-
-
 /*<!------------------------------------------------->
 <!--	end funciones auxiliares de creación de carruseles	-->
 <!------------------------------------------------->*/
@@ -165,63 +163,60 @@ function buildCarouselItem(id, title, thumbnail) {
 <!-- funciones auxiliares de funcionamiento de carruseles	-->
 <!------------------------------------------------->*/
 
-function prevNextButtonActivate() {
-    //selecciona todos los carruseles de la página que tengan la clase '.carousel'
-    var carousels = document.querySelectorAll(".carousel");
-    //selecciona todos los elementos que tengan la clase .carrousel-item
-    var carouselItems = document.querySelectorAll('.carousel-item');
+function prevNextButtonActivate(carouselElement) {
 
-    carousels.forEach(carousel => {
-        //encuentra el botón 'next'
-        let botonNext = carousel.nextElementSibling;
-        //encuentra el botón 'prev'
-        let botonPrev = carousel.previousElementSibling;
-        //determina cuánto mide de ancho el primer elemento (todos tienen un ancho parecido) y multiplícalo por 2
-        let itemWidth = carousel.firstElementChild.offsetWidth * 2;
+    //encuentra el botón 'next'
+    let botonNext = carouselElement.nextElementSibling;
+
+    //encuentra el botón 'prev'
+    let botonPrev = carouselElement.previousElementSibling;
+
+    //determina cuánto mide de ancho el primer elemento (todos tienen un ancho parecido) y multiplícalo por 2
+    let itemWidth = carouselElement.firstElementChild.offsetWidth * 2;
 
 
-        //cuando el carrusel sufra un scroll ejecuta 'displayButtons'
-        carousel.addEventListener('scroll', displayButtons)
-        //cuando se apriete el botón next, ejecuta la función 'showNext'
-        botonNext.addEventListener('click', showNext);
-        //cuando se apriete el botón prev, ejecuta la función 'showPrev'
-        botonPrev.addEventListener('click', showPrev);
+    //cuando el carrusel sufra un scroll ejecuta 'displayButtons'
+    carouselElement.addEventListener('scroll', displayButtons);
+    //cuando se apriete el botón next, ejecuta la función 'showNext'
+    botonNext.addEventListener('click', showNext);
+    //cuando se apriete el botón prev, ejecuta la función 'showPrev'
+    botonPrev.addEventListener('click', showPrev);
 
 
 
-        function showNext() {
-            //haz scroll la distancia 'itemWith ()' hacia la Izquierda
-            carousel.scrollLeft += itemWidth;
+    function showNext() {
+        //haz scroll la distancia 'itemWith ()' hacia la Izquierda
+        carouselElement.scrollLeft += itemWidth;
+    }
+
+    function showPrev() {
+        //haz scroll la distancia 'itemWith ()' hacia la derecha
+        carouselElement.scrollLeft -= itemWidth;
+    }
+
+    function displayButtons() {
+        // ¿El carrusel está al inicio
+        if (carouselElement.scrollLeft === 0) {
+            //oculta el botón prev
+            botonPrev.classList.add('hideButton');
+            botonPrev.classList.remove('showButton');
+        } else {
+            //muestra el botón prev
+            botonPrev.classList.remove('hideButton');
+            botonPrev.classList.add('showButton');
         }
-
-        function showPrev() {
-            //haz scroll la distancia 'itemWith ()' hacia la derecha
-            carousel.scrollLeft -= itemWidth;
+        //¿El carrusel está al final? 
+        if (carouselElement.scrollLeft + carouselElement.offsetWidth >= carouselElement.scrollWidth) {
+            //oculta el botón 'next'
+            botonNext.classList.add('hideButton');
+            botonNext.classList.remove('showButton');
+        } else {
+            //muestra el botón 'next'
+            botonNext.classList.remove('hideButton');
+            botonNext.classList.add('showButton');
         }
+    }
 
-        function displayButtons() {
-            // ¿El carrusel está al inicio
-            if (carousel.scrollLeft === 0) {
-                //oculta el botón prev
-                botonPrev.classList.add('hideButton');
-                botonPrev.classList.remove('showButton');
-            } else {
-                //muestra el botón prev
-                botonPrev.classList.remove('hideButton');
-                botonPrev.classList.add('showButton');
-            }
-            //¿El carrusel está al final? 
-            if (carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth) {
-                //oculta el botón 'next'
-                botonNext.classList.add('hideButton');
-                botonNext.classList.remove('showButton');
-            } else {
-                //muestra el botón 'next'
-                botonNext.classList.remove('hideButton');
-                botonNext.classList.add('showButton');
-            }
-        }
-    });
 }
 
 
