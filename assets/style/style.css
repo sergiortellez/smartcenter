@@ -729,6 +729,7 @@ nav.expanded .navContents a {
     .portada {
         grid-template-columns: repeat(2, 1fr);
         background-position: left top;
+        max-height: calc(100vh - var(--navHeight));
     }
 }
 
@@ -761,7 +762,7 @@ nav.expanded .navContents a {
         width: 100%;
         /* evita que la animación de hype se desborde, 600 es lo que mide el original */
         height: 100%;
-        max-height: 600px;
+        /* max-height: 600px; */
     }
 }
 
@@ -795,22 +796,7 @@ nav.expanded .navContents a {
     background-color: var(--background);
 }
 
-/* tablet portrait up */
-@media (min-width: 768px) {
-    .video {
-        display: none;
-    }
-}
 
-/* end tablet up */
-
-/* tablet landscape up */
-@media (min-width: 1054.1px) {
-    .video {
-        max-height: 100%;
-    }
-
-}
 
 /* end tablet up */
 .video {
@@ -831,10 +817,26 @@ nav.expanded .navContents a {
 
 }
 
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .video {
+        display: none;
+    }
+}
 
+/* end tablet up */
+
+/* tablet landscape up */
+@media (min-width: 1054.1px) {
+    .video {
+        display: block;
+        max-height: calc(100vh - var(--navHeight));
+    }
+
+}
 .video-header {
     position: relative;
-    top: -23%;
+    top: -40%;
     z-index: 2;
     color: var(--background);
     text-shadow: 3px 3px 8px var(--text);
