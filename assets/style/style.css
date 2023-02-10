@@ -1146,7 +1146,7 @@ grid-column: span 2;
 
 .gruposCardOferta {
     
-    background-color: var(--smartBlueMono);
+    background-color: var(--smartBlue);
     color: #f7f7f7;
     overflow: hidden;
     position: relative;
