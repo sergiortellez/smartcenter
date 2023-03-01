@@ -842,7 +842,7 @@ nav.expanded .navContents a {
     color: var(--background);
     text-shadow: 3px 3px 8px var(--text);
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-align: center;
 }
 
