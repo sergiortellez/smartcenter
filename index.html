@@ -73,7 +73,7 @@
         <section class="navContents">
             <a href="#experiencias">Experiencias</a>
             <a href="#somos">¿Quiénes somos?</a>
-            <a href="#news">SMART News</a>
+            <a href="#news">Noticias</a>
             <a href="#tips">SMART Tips</a>
             <a href="#contacto">Contacto</a>
             <a href="citas.html">Citas</a>
@@ -97,7 +97,7 @@
                 <!-- el SRC se inyecta desde JS random_video.js -->
             </video>
             <div class="video-header">
-                <p><i class="fa-duotone fa-quote-left"></i>Power your ideas<i class="fa-duotone fa-quote-right"></i></p>
+                <p><i class="fa-duotone fa-quote-left"></i>Construye tu mejor versión<i class="fa-duotone fa-quote-right"></i></p>
             </div>
         </div>
     </div>
@@ -781,13 +781,103 @@
 
 
     <!------------------------------------------------->
-    <!--	noticias	-->
+    <!--	Noticias	-->
     <!------------------------------------------------->
     <section id="news">
-        <h1 class="title">SMART News</h1>
+        <h1 class="title">Mantente al día <i class="fa-brands fa-instagram"></i></h1>
         <!--	---- noticias ----	-->
         <div id="grid-news">
-            <!-- Tarjetas se cargan dinámicamente desde: twitter_smart_api_pure.js -->
+            <!-- Tarjetas se cargan dinámicamente desde: instagram_api.js -->
+
+            <div class="fantasma">
+                <div class="fantasma_img"></div>
+                <div class="fantasma_icon_container">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="fantasma_txt_container">
+                    <div class="fantasma_txt"></div>
+                    <div class="fantasma_txt_short"></div>
+                </div>
+            </div>
+            <div class="fantasma">
+                <div class="fantasma_img"></div>
+                <div class="fantasma_icon_container">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="fantasma_txt_container">
+                    <div class="fantasma_txt"></div>
+                    <div class="fantasma_txt_short"></div>
+                </div>
+            </div>
+            <div class="fantasma">
+                <div class="fantasma_img"></div>
+                <div class="fantasma_icon_container">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="fantasma_txt_container">
+                    <div class="fantasma_txt"></div>
+                    <div class="fantasma_txt_short"></div>
+                </div>
+            </div>
+            <div class="fantasma">
+                <div class="fantasma_img"></div>
+                <div class="fantasma_icon_container">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="fantasma_txt_container">
+                    <div class="fantasma_txt"></div>
+                    <div class="fantasma_txt_short"></div>
+                </div>
+            </div>
+            <div class="fantasma">
+                <div class="fantasma_img"></div>
+                <div class="fantasma_icon_container">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="fantasma_txt_container">
+                    <div class="fantasma_txt"></div>
+                    <div class="fantasma_txt_short"></div>
+                </div>
+            </div>
+            <div class="fantasma">
+                <div class="fantasma_img"></div>
+                <div class="fantasma_icon_container">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="fantasma_txt_container">
+                    <div class="fantasma_txt"></div>
+                    <div class="fantasma_txt_short"></div>
+                </div>
+            </div>
+            <div class="fantasma">
+                <div class="fantasma_img"></div>
+                <div class="fantasma_icon_container">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="fantasma_txt_container">
+                    <div class="fantasma_txt"></div>
+                    <div class="fantasma_txt_short"></div>
+                </div>
+            </div>
+            <div class="fantasma">
+                <div class="fantasma_img"></div>
+                <div class="fantasma_icon_container">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="fantasma_txt_container">
+                    <div class="fantasma_txt"></div>
+                    <div class="fantasma_txt_short"></div>
+                </div>
+            </div>
+
         </div>
         <!--	---- end noticias ----	-->
     </section>
@@ -1155,54 +1245,14 @@
     <!-- random video -->
     <script src="assets/js/random_video.min.js"></script>
     <!-- twitter smartApiPure -->
-    <script src="assets/js/twitter_smart_api_pure.min.js"></script>
+    <script src="assets/js/instagram_api.min.js"></script>
     <!-- spyscroll -->
     <script src="assets/js/spyscroll.min.js"></script>
     <!-- Gobierna el FAQ de asesoría universitaria -->
     <script src="assets/js/faqau.min.js"></script>
     <!-- Gobierna los carruseles de videos -->
     <script src="assets/js/carousels.js"></script>
-    <script>
-        //TODO: enviar el token a google sheets y usar su api como backend, crear un nuevo documento para la api de instagram y crear las tarjetas. 
-        const accessToken = "IGQVJWbXg4OWQ1X0VKSHF5eURzLWYzT0NaNEFiUGhvazNXZAFEzWC1Jak1YVjdISHR0MUduNmdOOFJhMG9HM0RQaXJRRmY5RmZArSXhaTXZAwUms0dkkwXzFzTF9ueml5dUJScjExZAzVfR3FhSWV3REVEVQZDZD";
-        const limit = 10;
-        const endpoint = `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp,thumbnail_src,is_video,location&limit=${limit}&access_token=${accessToken}`;
 
-        async function fetchInstagramData() {
-            try {
-                const response = await fetch(endpoint);
-                const json = await response.json();
-
-                if (!json.data) {
-                    console.error("No data was returned from the API");
-                    return;
-                }
-
-                const media = json.data;
-                media.forEach(function (data) {
-                    const caption = data.caption;
-                    const thumbnail = data.thumbnail_url;
-                    const postLink = data.permalink;
-                    const date = new Date(data.timestamp * 1000).toLocaleString();
-                    const location = data.location;
-                    let videoUrl = "";
-
-                    if (data.is_video) {
-                        videoUrl = data.media_url;
-                    }
-
-                    console.log(caption, thumbnail, postLink, date, location, videoUrl);
-                    // Do something with the data, such as creating a card
-                });
-            } catch (error) {
-                console.error(error);
-            }
-        }
-
-        fetchInstagramData();
-
-
-    </script>
     <!------------------------------------------------->
     <!--	end JS	-->
     <!------------------------------------------------->

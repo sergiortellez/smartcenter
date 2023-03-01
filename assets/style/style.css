@@ -842,7 +842,7 @@ nav.expanded .navContents a {
     color: var(--background);
     text-shadow: 3px 3px 8px var(--text);
     font-weight: 600;
-    font-size: 2.6rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -860,7 +860,7 @@ nav.expanded .navContents a {
 /* desktop up */
 @media (min-width: 1054.1px) {
     .video-header {
-        font-size: 2.2rem;
+        font-size: 1.6rem;
         margin-bottom: unset;
     }
 
@@ -1941,13 +1941,6 @@ margin-bottom: 1rem;
 .tweet-card a:hover img {
     border: solid 1px var(--primary);
 }
-
-/*-------------------------------*/
-/* end tarjetas */
-/*-------------------------------*/
-
-
-
 .tweet-card a p {
     min-width: 100%;
     text-align: left;
@@ -1985,6 +1978,74 @@ margin-bottom: 1rem;
     font-size: 1.4rem;
     /* color: rgb(170, 16, 170); */
 }
+
+/*-------------------------------*/
+/* end tarjetas */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* fantasmas */
+/*-------------------------------*/
+
+.fantasma{
+    background-color: #e8e6e6;
+    border-radius: 15px;
+    padding: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    animation: placeholder-fade 3s linear infinite;
+    /* Es la misma animación que gobierna los carruseles youtube, la animación está definida en la sección TIPS */
+}
+
+.fantasma_img{
+    background-color: #7a7777;
+    width: 97%;
+    height: 12rem;
+}
+
+.fantasma_icon_container{
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: end;
+}
+
+.fantasma_icon_container div{
+    background-color: #7a7777;
+    width: 1rem;
+    height: 1rem;
+    margin-top: 1rem;
+    margin-left: 0.3rem;
+}
+
+.fantasma_txt_container{
+    width: 100%;
+}
+.fantasma_txt{
+    background-color: #7a7777;
+    width: 100%;
+    height: 1rem;
+    margin: 1rem 0;
+}
+
+.fantasma_txt_short{
+    background-color: #7a7777;
+    width: 40%;
+    height: 1rem;
+    margin: 1rem 0;
+}
+
+/*-------------------------------*/
+/* end fantasmas */
+/*-------------------------------*/
+
+
+
+
 
 /*###################################################*/
 /*...................................................*/
