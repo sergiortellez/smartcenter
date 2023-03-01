@@ -1163,7 +1163,7 @@
     <!-- Gobierna los carruseles de videos -->
     <script src="assets/js/carousels.js"></script>
     <script>
-        //TODO: enviar el token a google sheets y usar su api como backend, crear un nuevo docuemnto para la api de instagram y crear las tarjetas. 
+        //TODO: enviar el token a google sheets y usar su api como backend, crear un nuevo documento para la api de instagram y crear las tarjetas. 
         const accessToken = "IGQVJWbXg4OWQ1X0VKSHF5eURzLWYzT0NaNEFiUGhvazNXZAFEzWC1Jak1YVjdISHR0MUduNmdOOFJhMG9HM0RQaXJRRmY5RmZArSXhaTXZAwUms0dkkwXzFzTF9ueml5dUJScjExZAzVfR3FhSWV3REVEVQZDZD";
         const limit = 10;
         const endpoint = `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp,thumbnail_src,is_video,location&limit=${limit}&access_token=${accessToken}`;

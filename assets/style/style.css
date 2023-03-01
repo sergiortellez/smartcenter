@@ -762,6 +762,7 @@ nav.expanded .navContents a {
         width: 100%;
         /* evita que la animación de hype se desborde, 600 es lo que mide el original */
         height: 100%;
+        margin-top: 8rem;
         /* max-height: 600px; */
     }
 }
