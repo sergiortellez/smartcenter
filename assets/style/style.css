@@ -1885,10 +1885,19 @@ margin-bottom: 1rem;
 
 #grid-news {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin: 0 1rem;
 }
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    #grid-news {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+/* end tablet up */
 
 /*-------------------------------*/
 /* end grid */
@@ -1911,7 +1920,7 @@ margin-bottom: 1rem;
 }
 
 
-.tweet-card a {
+.insta-card a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1926,8 +1935,8 @@ margin-bottom: 1rem;
     -o-transition: scale 300ms ease;
 }
 
-.tweet-card a:hover,
-.tweet-card a:focus {
+.insta-card a:hover,
+.insta-card a:focus {
     scale: 0.95;
     background-color: rgba(255, 253, 253, 0.75);
 
@@ -1938,25 +1947,30 @@ margin-bottom: 1rem;
     -o-border-radius: 15px;
 }
 
-.tweet-card a:hover img {
+.insta-card a:hover img {
     border: solid 1px var(--primary);
 }
-.tweet-card a p {
+.insta-card a p {
     min-width: 100%;
+    font-size: 0.7rem;
     text-align: left;
+    margin: 0;
 }
 
-.tweet-card a img {
-    max-height: 16rem;
-    width: auto;
+.insta-card a img {
+    width: 100%;
+    /* siempre será un cuadrado */
+    aspect-ratio: 1/1;
     max-width: 100%;
-    align-self: center;
-    margin-bottom: 1rem;
+
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+
+    object-fit: cover; 
+    object-position: center center;
 }
 
 .data-publication {
@@ -1975,8 +1989,8 @@ margin-bottom: 1rem;
 }
 
 .data-publication svg {
-    font-size: 1.4rem;
-    /* color: rgb(170, 16, 170); */
+    font-size: 1rem;
+    color: gray;
 }
 
 /*-------------------------------*/
@@ -2004,22 +2018,29 @@ margin-bottom: 1rem;
 .fantasma_img{
     background-color: #7a7777;
     width: 97%;
-    height: 12rem;
+    height: 14rem;
 }
 
 .fantasma_icon_container{
      width: 100%;
      display: flex;
      align-items: center;
-     justify-content: end;
+     justify-content: space-between;
+
 }
 
-.fantasma_icon_container div{
+.fantasma_icon_container:first-child{
     background-color: #7a7777;
+    width: 30%;
+    height: 1rem; 
+}
+
+
+.fantasma_icon_container:last-child{
+    background-color: #7a7777;
+    border-radius: 50%;
     width: 1rem;
     height: 1rem;
-    margin-top: 1rem;
-    margin-left: 0.3rem;
 }
 
 .fantasma_txt_container{
@@ -2028,14 +2049,14 @@ margin-bottom: 1rem;
 .fantasma_txt{
     background-color: #7a7777;
     width: 100%;
-    height: 1rem;
+    height: 0.6rem;
     margin: 1rem 0;
 }
 
 .fantasma_txt_short{
     background-color: #7a7777;
     width: 40%;
-    height: 1rem;
+    height: 0.6rem;
     margin: 1rem 0;
 }
 

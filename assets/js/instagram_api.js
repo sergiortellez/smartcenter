@@ -44,6 +44,8 @@ window.onload = function () {
 };
 
 
+
+
 /*<!------------------------------------------------->
 <!--	end onPageLoad	-->
 <!------------------------------------------------->*/
@@ -68,7 +70,7 @@ async function buildData() {
             console.error("No data was returned from the API");
             return;
         }
-
+        var dataPostsArray = [];
         const media = json.data;
         for (const data of media) {
             const type = data.media_type;
@@ -88,10 +90,13 @@ async function buildData() {
                 hour: '2-digit',
                 minute: '2-digit'
             });
-
-            console.log(type, caption, thumbnail, postLink, date);
-            // Do something with the data, such as creating a card
+            //mete todo en un arreglo
+            let post = [type, caption, thumbnail, postLink, date];
+            //manda ese arreglo al arreglo data (para exportar)
+            dataPostsArray.push(post);
         }
+        //manda el arreglo dataPostsArray a la función que construye la sección de noticias
+        buildNews(dataPostsArray);
     } catch (error) {
         console.error(error);
     }
@@ -108,26 +113,31 @@ async function buildData() {
 * Descripción:
     Usa los datos que vienen de buildData para llenar el HTML de SMART News.
 * Parámetros:
-    -data: arreglo con datos de la url 
+    -data: arreglo de arreglos con los datos de cada post
+        -data[i][0]: tipo de publicación (colección, video o imagen)
+        -data[i][1]: texto de la publicación
+        -data[i][2]: imagen de la publicación
+        -data[i][3]: enlace a la publicación
+        -data[i][4]: fecha de la publicación
+
 * Dependencias: ninguna
-* Devuelve/resultado: alimenta el código HTML que construye la sección SMART News
+* Devuelve/resultado: alimenta el código HTML que construye la sección Noticias
 <!------------------------------------------------->*/
 
-function buildNews(data) {
-
-    /*los datos tienen la forma: 
-    [["hecha y hora", "enlace a ig", "texto publicado", "enlace a ilustración"],[entrada 2],[entradaN]]*/
+function buildNews(dataPostsArray) {
 
     //localiza el contenedor del grid
     let smartNewsGrid = document.querySelector("#grid-news");
+    //limpia el contenedor
+    smartNewsGrid.innerHTML = "";
 
     //recorre todos los datos para construir las tarjetas
-    data.forEach(pub => {
+    dataPostsArray.forEach(pub => {
 
         //crea un contenedor para la tarjeta
         let card = document.createElement('blockquote');
-        //añade la clase 'tweet-card'
-        card.classList.add('tweet-card');
+        //añade la clase 'insta-card'
+        card.classList.add('insta-card');
 
 
         /*<--	*** añade el enlace ***	-->*/
@@ -135,24 +145,26 @@ function buildNews(data) {
         /*cada tarjeta tendrá un ancla que lleva a la publicación de IG*/
         //crea un ancla
         let anchor = document.createElement('a');
-
-
-        //existe el enlace externo a ig? 
-        if (pub[1].length > 1) {
-            //el enlace será el elemento uno del arreglo
-            anchor.setAttribute('href', pub[1]);
-        } else {
-            //si no hay enlace simplemente te lleva a twitter
-            anchor.setAttribute('href', "https://twitter.com/smart__UP");
-        }
-
+        //añade el enlace externo
+        anchor.setAttribute('href', pub[3]);
         //se debe abrir en una página nueva
         anchor.setAttribute('target', "_blank");
-
         //añádelo al contenedor de tarjeta.
         card.append(anchor);
 
         /*<--	*** end añade el enlace ***	-->*/
+
+
+        /*<--	*** añade imagen de ilustración ***	-->*/
+
+        //crea una imagen
+        let image = document.createElement('img');
+        //añade el atributos src
+        image.setAttribute('src', pub[2]);
+        //agrégalo al contenedor tarjeta
+        anchor.append(image);
+
+        /*<--	*** end añade imagen de ilustración ***	-->*/
 
 
         /*<--	*** añade el texto ***	-->*/
@@ -160,33 +172,13 @@ function buildNews(data) {
         // crea un párrafo
         let paragraph = document.createElement('p');
         //añade el texto
-        paragraph.innerText = pub[2]
+        paragraph.innerText = pub[1]
         //ponlo dentro del ancla
         anchor.append(paragraph);
+
         /*<--	*** end añade el texto ***	-->*/
 
-        /*<--	*** añade imagen de ilustración ***	-->*/
-        /*¿existe un campo para la imagen?*/
-        if (pub[3].length > 1) {
-            //crea una imagen
-            let image = document.createElement('img');
-            //añade el atributos src
-            image.setAttribute('src', pub[3]);
-            //agrégalo al contenedor tarjeta
-            anchor.append(image);
-        } else {
-            //crea una imagen genérica
 
-            //crea una imagen
-            let image = document.createElement('img');
-            //añade el atributos src
-            image.setAttribute('src', "assets/images/smart_comunica.webp");
-            //agrégalo al contenedor tarjeta
-            anchor.append(image);
-        }
-
-
-        /*<--	*** end añade imagen de ilustración ***	-->*/
 
         /*<--	*** añadir contenedor para fecha ***	-->*/
 
@@ -196,39 +188,35 @@ function buildNews(data) {
         dataPublication.classList.add('data-publication');
         //crea un span para contener la fecha
         let dateContainer = document.createElement('span');
+        //añade la fecha
+        dateContainer.innerText = pub[4];
 
-        //transforma el elemento fecha en algo legible:
 
-        //guarda los parámetros de los elementos fecha en este objeto: 
-        var dateOptions = { weekday: undefined, year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', };
-        //crea una fecha y usa el string que viene del api
-        const normalDate = new Date(pub[0]);
-        //añade el texto "fecha" pero transformado a la hora de México, con las opciones que se especificaron en la línea 202
-        dateContainer.innerHTML = normalDate.toLocaleTimeString('es-MX', dateOptions);;
-        //agrega la fecha al contenedor de datos
         dataPublication.append(dateContainer);
         //añade logo de origen de redes sociales
         let socialLogo = document.createElement('i');
         //añade las clases de font-awesome
-        socialLogo.classList.add('fa-brands');
+        socialLogo.classList.add('fa-solid');
 
-        //veamos si escogeremos el logo de instagram o de twitter:
+        //veamos qué tipo de publicación es para escoger el logo respectivo
 
-        //existe el enlace externo a ig? 
-        if (pub[1].length > 1) {
-            //añade la clase de ig
-            socialLogo.classList.add('fa-square-instagram');
-            socialLogo.style.color = '#833AB4';
+        //es una colección?
+        if (pub[0] === 'CAROUSEL_ALBUM') {
+            //añade la clase de colección
+            socialLogo.classList.add('fa-rectangle-vertical-history');
+        } else if (pub[0] === 'VIDEO') {
+            //añade la clase de video
+            socialLogo.classList.add('fa-video');
         } else {
-            //añade la clase de twitter
-            socialLogo.classList.add('fa-square-twitter');
-            socialLogo.style.color = '#00acee';
+            //añade la clase de imagen
+            socialLogo.classList.add('fa-image');
         }
 
-        //añade el logo de ig o twitter al contenedor de datos
-        dataPublication.append(socialLogo);
-        //añade el contenedor de datos a la tarjeta
 
+        //añade el logo 
+        dataPublication.append(socialLogo);
+
+        //añade el contenedor de datos a la tarjeta
         anchor.append(dataPublication);
 
         /*<--	*** end añadir contenedor para fecha ***	-->*/
