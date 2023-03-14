@@ -1857,9 +1857,62 @@ margin-bottom: 1rem;
 /*-------------------------------*/
 /* uno a uno */
 /*-------------------------------*/
+.programas{
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    .programas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+/* end tablet up */
 
 
+.programas>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    .programas>div {
+        /* flex: 1; */
+        justify-content: flex-end;
+    }
+}
+/* end tablet up */
 
+.programas>div>img{
+    width:auto;
+    height: 12rem;
+    max-width: 300px;
+    margin-top: 1rem;
+}
+.boton_citas_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.boton_citas_container a{
+    background-color: var(--smartGreenMono);
+    color: var(--background);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+.boton_citas_container a:hover{
+    transform: scale(1.1);
+}
 /*-------------------------------*/
 /* end uno a uno */
 /*-------------------------------*/

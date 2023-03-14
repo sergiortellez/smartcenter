@@ -420,6 +420,7 @@ nav.expanded .navContents a {
     -moz-transition: scale 300ms ease;
     -ms-transition: scale 300ms ease;
     -o-transition: scale 300ms ease;
+    background-color: #8299c0;
 }
 
 #experiencias_digitales_grid article[data-type="button"]:hover,
@@ -484,12 +485,15 @@ nav.expanded .navContents a {
     background-color: var(--smartBlue);
     color: #ffffff;
     padding: 0.2rem 0.4rem;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+.pill svg{
+    margin-right: 0.2rem;
 }
 
 #experiencias_digitales_grid article[data-type="button"]:hover .pill {
@@ -801,7 +805,7 @@ button[data-action='close']:focus {
 
 /* Tarjeta Genérica */
 .tarjeta_generica {
-    background-color: var(--monoGEA);
+    background-color: var(--smartBlue);
     color: var(--textoGEA);
     min-height: 10rem;
 }
