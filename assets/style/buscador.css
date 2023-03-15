@@ -1,0 +1,764 @@
+/*###################################################*/
+/*...................................................*/
+/* root variables (responsive font size installed)   */
+/*...................................................*/
+/*###################################################*/
+
+:root {
+    /* font size */
+    --fs-b: 14px;
+    /* custom colors */
+    --smartRed: #771d32;
+    --smartBlue: #122e5b;
+    --smartGreen: #005245;
+    --smartYellow: #9f8156;
+    /* custom mono */
+    --smartRedMono: #914053;
+    --smartBlueMono: #2e4975;
+    --smartGreenMono: #207569;
+    --smartYellowMono: #86612e;
+    /* theme colors */
+    --background: #F5F5F5;
+    --text: #000;
+    --primary: #ac8a54;
+    --orangeBtn: var(--primary);
+    --navHeight: 7vh;
+}
+
+/* tablet up */
+@media (min-width: 768px) {
+    :root {
+        /* font size */
+        --fs-b: 16px;
+    }
+}
+
+/* end tablet up */
+
+/* laptop up */
+@media (min-width: 991px) {
+    :root {
+        /* font size */
+        --fs-b: 18px;
+    }
+}
+
+/* end laptop up */
+
+/* desktop up */
+@media (min-width: 1300px) {
+    :root {
+        /* font size */
+        --fs-b: 22px;
+    }
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end root variables                                */
+/*...................................................*/
+/*###################################################*/
+
+/*###################################################*/
+/*...................................................*/
+/* general properties */
+/*...................................................*/
+/*###################################################*/
+
+html {
+    /* scroll smooth from nav control */
+    scroll-behavior: smooth;
+    /* distancia extra de scroll */
+    scroll-padding-top: 200px;
+    /* font size general control using variable */
+    font-size: var(--fs-b);
+    /* font-family oficial de SMART  */
+    font-family: 'Nunito', sans-serif;
+    /* protección de movimiento de overflow por animaciones */
+    overflow-x: hidden;
+
+}
+
+
+body {
+    /* scroll spy */
+    overflow-y: scroll;
+
+    background-color: var(--brColor);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+
+    /* protección de movimiento de overflow por animaciones */
+    overflow-x: hidden;
+
+}
+
+/* ajustando y centrando el contenido en un ancho máximo */
+body>section {
+    max-width: 1824px;
+    margin: 5rem auto !important;
+    float: none !important;
+}
+
+
+
+/*-------------------------------*/
+/* margins */
+/*-------------------------------*/
+
+.m-0 {
+    margin: 0;
+}
+
+.m-1 {
+    margin: 1rem;
+}
+
+.m-2 {
+    margin: 2rem;
+}
+
+.m-3 {
+    margin: 3rem;
+}
+
+.m-4 {
+    margin: 4rem;
+}
+
+/* ---top--- */
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
+
+/* ---end top--- */
+
+/* ---bottom--- */
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+.mb-4 {
+    margin-bottom: 4rem;
+}
+
+/* ---end bottom--- */
+
+/* ---left--- */
+.ml-1 {
+    margin-left: 1rem;
+}
+
+.ml-2 {
+    margin-left: 2rem;
+}
+
+.ml-3 {
+    margin-left: 3rem;
+}
+
+.ml-4 {
+    margin-left: 4rem;
+}
+
+/* ---end left--- */
+
+/* ---right--- */
+.mr-1 {
+    margin-right: 1rem;
+}
+
+.mr-2 {
+    margin-right: 2rem;
+}
+
+.mr-3 {
+    margin-right: 3rem;
+}
+
+.mr-4 {
+    margin-right: 4rem;
+}
+
+/* ---end right--- */
+
+/*-------------------------------*/
+/* end margins */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* paddings */
+/*-------------------------------*/
+
+.p-0 {
+    padding: 0;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-3 {
+    padding: 3rem;
+}
+
+.p-4 {
+    padding: 4rem;
+}
+
+/* ---top--- */
+.pt-1 {
+    padding-top: 1rem;
+}
+
+.pt-2 {
+    padding-top: 2rem;
+}
+
+.pt-3 {
+    padding-top: 3rem;
+}
+
+.pt-4 {
+    padding-top: 4rem;
+}
+
+/* ---end top--- */
+
+/* ---bottom--- */
+.pb-1 {
+    padding-bottom: 1rem;
+}
+
+.pb-2 {
+    padding-bottom: 2rem;
+}
+
+.pb-3 {
+    padding-bottom: 3rem;
+}
+
+.pb-4 {
+    padding-bottom: 4rem;
+}
+
+/* ---end bottom--- */
+
+/* ---left--- */
+.pl-1 {
+    padding-left: 1rem;
+}
+
+.pl-2 {
+    padding-left: 2rem;
+}
+
+.pl-3 {
+    padding-left: 3rem;
+}
+
+.pl-4 {
+    padding-left: 4rem;
+}
+
+/* ---end left--- */
+
+/* ---right--- */
+.pr-1 {
+    padding-right: 1rem;
+}
+
+.pr-2 {
+    padding-right: 2rem;
+}
+
+.pr-3 {
+    padding-right: 3rem;
+}
+
+.pr-4 {
+    padding-right: 4rem;
+}
+
+/* ---end right--- */
+
+/*-------------------------------*/
+/* end paddings */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* special styles */
+/*-------------------------------*/
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+/*-------------------------------*/
+/* end special styles */
+/*-------------------------------*/
+
+
+
+/*###################################################*/
+/*...................................................*/
+/* end general properties */
+/*...................................................*/
+/*###################################################*/
+
+
+/* asegurarse de que el fondo siempre sea negro en toda la pantalla haciendo que el iframe extienda su fondo hacia abajo. */
+iframe {
+    min-height: 100vh;
+}
+
+/*###################################################*/
+/*...................................................*/
+/* nav */
+/*...................................................*/
+/*###################################################*/
+
+
+/*-------------------------------*/
+/* collapsed mobile nav */
+/*-------------------------------*/
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    background-color: var(--background);
+    color: var(--text);
+    border-bottom: 6px solid var(--primary);
+    font-weight: 200;
+
+    /* fixed from materialized  */
+    line-height: unset;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+
+    /* Set the navbar to fixed position */
+    height: auto;
+    position: fixed;
+    top: 0;
+    /* full width */
+    width: 100vw;
+
+    /* always in the front */
+    z-index: 9;
+}
+
+/* eliminamos los estilos por defecto de los botones dentro de la nav */
+nav button {
+    all: unset;
+}
+
+nav button:focus {
+    all: unset;
+}
+
+/*-------------------------------*/
+/* brand */
+/*-------------------------------*/
+
+.navIcons {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 90vw;
+    height: var(--navHeight);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconTrigger {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--text);
+}
+
+#navSmartLogoMin {
+    height: 1.8rem;
+    width: auto;
+}
+
+#navSmartLogo {
+    display: none;
+}
+
+#navUpLogo {
+    display: none;
+}
+
+/*-------------------------------*/
+/* end brand */
+/*-------------------------------*/
+
+
+nav .navContents {
+    /*propiedades a animar*/
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+
+    /*control de animaciones*/
+    transition: visibility 0s, opacity 0.3s, height 0.4s linear;
+    -webkit-transition: visibility 0s, opacity 0.3s, height 0.4s linear;
+    -moz-transition: visibility 0s, opacity 0.3s, height 0.4s linear;
+    -ms-transition: visibility 0s, opacity 0.3s, height 0.4s linear;
+    -o-transition: visibility 0s, opacity 0.3s, height 0.4s linear;
+}
+
+
+/*-------------------------------*/
+/* end collapsed mobile nav */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* expanded mobile nav */
+/*-------------------------------*/
+nav.expanded {
+    display: flex;
+    flex-direction: column;
+
+}
+
+nav.expanded .navContents {
+    /* segunda parte de la animación */
+    visibility: visible;
+    opacity: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    height: calc(100vh - var(--navHeight));
+
+
+
+}
+
+nav.expanded .navContents a {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.512);
+}
+
+.navContents a {
+    color: var(--text);
+    text-align: center;
+    padding: 2rem 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    /* evita que los menús se vayan a doble línea */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.navContents a.active {
+    background-color: var(--primary);
+    color: white;
+    font-weight: 300;
+}
+
+/*-------------------------------*/
+/* end expanded mobile nav */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* Tabletas y computadoras */
+/*-------------------------------*/
+
+/* desktop up */
+@media (min-width: 648px) {
+    nav {
+        height: var(--navHeight);
+        flex-direction: row;
+        align-items: flex-end;
+        --navHeight: 11vh
+    }
+
+    .iconTrigger {
+        display: none;
+    }
+
+    nav .navIcons {
+        width: auto;
+        margin-left: 1rem;
+    }
+
+    nav .navContents {
+        visibility: visible;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        height: 7vh;
+    }
+
+    nav .navContents a {
+        font-size: 1rem;
+        padding: 0 0.7rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    /* ---brand--- */
+
+    #navSmartLogoMin {
+        display: none;
+        height: 1.2rem;
+        width: auto;
+        margin-top: 10px;
+    }
+
+    #navSmartLogo {
+        display: inline;
+        height: auto;
+        width: 8rem;
+
+    }
+
+
+    /* ---end brand--- */
+}
+
+/* end desktop up */
+
+/* tablet landscape up */
+@media (min-width: 1054.1px) {
+    nav {
+        --navHeight: 16vh;
+        transition: height 0.2s ease;
+        -webkit-transition: height 0.2s ease;
+        -moz-transition: height 0.2s ease;
+        -ms-transition: height 0.2s ease;
+        -o-transition: height 0.2s ease;
+    }
+
+    #navUpLogo {
+        display: inline;
+        height: 4rem;
+        width: auto;
+        padding-left: 1rem;
+        border-left: 0.5px solid var(--primary);
+        margin-left: 1rem;
+    }
+}
+
+/* end tablet up */
+
+/*-------------------------------*/
+/* end Tabletas y computadoras */
+/*-------------------------------*/
+
+
+/*###################################################*/
+/*...................................................*/
+/* end nav */
+/*...................................................*/
+/*###################################################*/
+
+.citas {
+    min-height: 100wv;
+    padding-top: 7rem;
+
+}
+
+/*###################################################*/
+/*...................................................*/
+/* app */
+/*...................................................*/
+/*###################################################*/
+header {
+
+    text-align: center;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#buscador {
+    padding-top: 6.8rem;
+    height: calc(100vh - 6.8rem);
+
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+/* cellphone landscape up */
+@media (min-width: 1024.1px) {
+    #buscador {}
+}
+
+/* end cellphone landscape up */
+
+
+#search {
+    width: 70vw;
+    height: 3rem;
+    border: 2px solid rgba(169, 168, 168, 0.516);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 0.5rem;
+    /* margin-top: 3rem; */
+    /* box-shadow: 0 4px 20px -2px #e9e9e9; */
+}
+
+/* cellphone landscape up */
+@media (min-width: 576px) {
+    #search {
+        width: 40vw;
+    }
+}
+
+/* end cellphone landscape up */
+#search:focus {
+    border: 3px solid var(--primary);
+}
+
+#search:hover {
+    background-color: var(--smartBlue);
+    color: #fff;
+}
+
+.busqueda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+
+/* cellphone landscape up */
+@media (min-width: 576px) {
+    .busqueda {
+        margin: 0;
+    }
+}
+
+/* end cellphone landscape up */
+
+.busqueda button {
+    background-color: #fff !important;
+    font-size: 2rem;
+    border: none;
+    padding: 0 1rem;
+}
+
+.busqueda button:focus {
+    border: 1px solid var(--primary);
+}
+
+.busqueda button:hover {
+    color: var(--primary);
+}
+
+/*-------------------------------*/
+/* instrucciones */
+/*-------------------------------*/
+
+.instrucciones {
+    display: grid;
+    gap: 1.5rem;
+
+    margin-top: auto;
+    padding: 2rem;
+
+}
+
+/* cellphone landscape up */
+@media (min-width: 576px) {
+    .instrucciones {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* end cellphone landscape up */
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    .instrucciones {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* end tablet up */
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--smartBlue);
+    padding: 1rem;
+    border: 1px solid var(--smartBlue);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+
+.info>span {
+    text-align: right;
+    color: #122e5b86;
+}
+
+.info>svg:first-of-type{
+    font-size: 2.4rem;
+    margin-right: 1rem;
+}
+/*-------------------------------*/
+/* end instrucciones */
+/*-------------------------------*/
+
+/*###################################################*/
+/*...................................................*/
+/* end app */
+/*...................................................*/
+/*###################################################*/
