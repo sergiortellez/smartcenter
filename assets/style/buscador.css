@@ -600,11 +600,6 @@ nav.expanded .navContents a {
 /*...................................................*/
 /*###################################################*/
 
-.citas {
-    min-height: 100wv;
-    padding-top: 7rem;
-
-}
 
 /*###################################################*/
 /*...................................................*/
@@ -646,6 +641,7 @@ header {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     padding: 0.5rem;
+    font-size: 1.7rem;
     /* margin-top: 3rem; */
     /* box-shadow: 0 4px 20px -2px #e9e9e9; */
 }
@@ -693,10 +689,12 @@ header {
 
 .busqueda button:focus {
     border: 1px solid var(--primary);
+    
 }
 
 .busqueda button:hover {
     color: var(--primary);
+    cursor: pointer;
 }
 
 /*-------------------------------*/
@@ -760,5 +758,133 @@ header {
 /*###################################################*/
 /*...................................................*/
 /* end app */
+/*...................................................*/
+/*###################################################*/
+
+
+
+/*###################################################*/
+/*...................................................*/
+/* footer */
+/*...................................................*/
+/*###################################################*/
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    background-color: var(--smartRed);
+    padding: 3rem;
+    color: var(--background);
+    text-align: center;
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    footer {
+        flex-direction: row;
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+}
+
+/* end tablet up */
+/* tablet landscape up */
+@media (min-width: 1054.1px) {
+    footer {
+        flex-direction: row;
+        font-size: 1rem;
+        padding: 3rem;
+    }
+}
+
+/* end tablet up */
+
+footer a {
+    color: var(--background);
+}
+
+footer a:visited {
+    color: var(--background);
+}
+
+footer svg {
+    font-size: 1.3rem;
+}
+
+/*-------------------------------*/
+/* up logo */
+/*-------------------------------*/
+
+#footer_logo {
+    width: 18rem;
+}
+
+/* tablet portrait up */
+@media (min-width:768px) and (max-width:1054.1px) {
+    #footer_logo {
+        width: 12rem;
+    }
+}
+
+/* end tablet up */
+/*-------------------------------*/
+/* end up logo */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* legales y links */
+/*-------------------------------*/
+#footer_derechos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+#footer_redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+/*-------------------------------*/
+/* end legales y links */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* dirección y contacto */
+/*-------------------------------*/
+#footer_contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    #footer_contacto {
+        align-items: flex-start;
+    }
+}
+
+/* end tablet up */
+
+
+/*-------------------------------*/
+/* end dirección y contacto */
+/*-------------------------------*/
+
+/*###################################################*/
+/*...................................................*/
+/* end footer */
 /*...................................................*/
 /*###################################################*/
