@@ -2185,10 +2185,10 @@ justify-content: center;
         flex-direction: row;
     } 
     .preview {
-        width: 60%;
+        width: 40%;
     }
     .carrousels{
-        width: 40%;
+        width: 60%;
     }
 }
 /* end tablet up */
@@ -2215,7 +2215,7 @@ justify-content: center;
 .preview object,
 .preview embed {
   width: 100%;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 9 / 16;
   border-radius: 15px;
 
 }
@@ -2301,16 +2301,19 @@ justify-content: center;
 
 
 .portrait .carousel-item>img{
+    height: 100%;
     width: auto;
+    aspect-ratio: 9/16;    
+    /* width: auto;
     height: 5.3rem;
     clip-path: inset(0px 34% 0px 34%);
-    transform: translate(-30%);
+    transform: translate(-30%); */
 
 }
 .landscape .carousel-item>img{
     
     height: 6rem;
-     aspect-ratio: 3 / 2;
+     aspect-ratio: 16 / 9;
      border-radius: 10px;
 }
 
