@@ -83,7 +83,6 @@
 
         <div id="experiencias_digitales_grid">
 
-
             <!-- INICIO ----  tarjeta expandible (AIESEC) ---- INICIO -->
             <article class="tarjeta_generica" data-type="button" data-id="aiesec">
                 <div class="logo_container">
@@ -187,6 +186,14 @@
                                 <span data-txt="imgtext"></span>
                             </div>
                             <!-- end galería -->
+                        </div>
+
+                        <div class="inicia_experiencia_interactiva">
+                            <div class="boton_out_experiencia_interactiva">
+
+                                <!-- correo info -->
+                                <button class="send-info-button" data-id="AIESEC"><i class="fa-duotone fa-circle-info"></i> informes</button>
+                            </div>
                         </div>
                     </div>
                     <!-- Fin columna izquierda -->
@@ -293,8 +300,10 @@
 
                         <div class="inicia_experiencia_interactiva">
                             <div class="boton_out_experiencia_interactiva">
+                                <!-- redes -->
                                 <a href="#" target="_blank">coparmexup <i class="fa-brands fa-square-instagram"></i></a>
-                                <button id="send-email-button">Send Email</button>
+                                <!-- correo info -->
+                                <button class="send-info-button" data-id="Coparmex UP"><i class="fa-duotone fa-circle-info"></i> informes</button>
                             </div>
                         </div>
                     </div>
@@ -374,6 +383,13 @@
 
                         </div>
                         <!-- fin Beneficios -->
+                        <div class="inicia_experiencia_interactiva">
+                            <div class="boton_out_experiencia_interactiva">
+
+                                <!-- correo info -->
+                                <button class="send-info-button" data-id="Growth"><i class="fa-duotone fa-circle-info"></i> informes</button>
+                            </div>
+                        </div>
                     </div>
                     <!-- Fin columna izquierda -->
                 </div>
@@ -460,6 +476,8 @@
                         <div class="inicia_experiencia_interactiva">
                             <div class="boton_out_experiencia_interactiva">
                                 <a href="https://www.instagram.com/hultprizeatupmx/" target="_blank"> <i class="fa-brands fa-square-instagram"></i> @hultprizeatupmx </a>
+                                <!-- correo info -->
+                                <button class="send-info-button" data-id="Hult Prize"><i class="fa-duotone fa-circle-info"></i> informes</button>
                             </div>
                         </div>
                     </div>
@@ -549,6 +567,8 @@
                         <div class="inicia_experiencia_interactiva">
                             <div class="boton_out_experiencia_interactiva">
                                 <a href="https://www.instagram.com/inspireup_/" target="_blank"><i class="fa-brands fa-square-instagram"></i> @inspireup_</a>
+                                <!-- correo info -->
+                                <button class="send-info-button" data-id="Inspire UP"><i class="fa-duotone fa-circle-info"></i> informes</button>
                             </div>
                         </div>
                     </div>
@@ -660,6 +680,8 @@
                         <div class="inicia_experiencia_interactiva">
                             <div class="boton_out_experiencia_interactiva">
                                 <a href="https://www.instagram.com/nousupmx/" target="_blank"><i class="fa-brands fa-square-instagram"></i> @nousupmx</a>
+                                <!-- correo info -->
+                                <button class="send-info-button" data-id="Nous"><i class="fa-duotone fa-circle-info"></i> informes</button>
                             </div>
                         </div>
                     </div>
@@ -668,6 +690,7 @@
             </article>
             <!-- end tarjeta expandida -->
             <!-- FIN ----  end tarjeta expandible ---- FIN -->
+
 
             <!-- INICIO ----  tarjeta expandible (SH+E) ---- INICIO -->
             <article class="tarjeta_generica" data-type="button" data-id="she">
@@ -755,6 +778,12 @@
                             </div>
                             <!-- end galería -->
                         </div>
+                        <div class="inicia_experiencia_interactiva">
+                            <div class="boton_out_experiencia_interactiva">
+                                <!-- correo info -->
+                                <button class="send-info-button" data-id="SH+E"><i class="fa-duotone fa-circle-info"></i> informes</button>
+                            </div>
+                        </div>
                     </div>
                     <!-- Fin columna izquierda -->
                 </div>
@@ -840,6 +869,8 @@
                         <div class="inicia_experiencia_interactiva">
                             <div class="boton_out_experiencia_interactiva">
                                 <a href="https://www.instagram.com/ted_x_up/" target="_blank"><i class="fa-brands fa-square-instagram"></i> @ted_x_up</a>
+                                <!-- correo info -->
+                                <button class="send-info-button" data-id="TEDx UP"><i class="fa-duotone fa-circle-info"></i> informes</button>
                             </div>
                         </div>
                     </div>
@@ -848,6 +879,7 @@
             </article>
             <!-- end tarjeta expandida -->
             <!-- FIN ----  end tarjeta expandible ---- FIN -->
+
 
             <!-- INICIO ----  tarjeta expandible (The Green Project) ---- INICIO -->
             <article class="tarjeta_generica" data-type="button" data-id="green">
@@ -920,6 +952,8 @@
                         <div class="inicia_experiencia_interactiva">
                             <div class="boton_out_experiencia_interactiva">
                                 <a href="https://www.instagram.com/thegreenprojectup/" target="_blank"><i class="fa-brands fa-square-instagram"></i> @thegreenprojectup</a>
+                                <!-- correo info -->
+                                <button class="send-info-button" data-id="The Green Project UP"><i class="fa-duotone fa-circle-info"></i> informes</button>
                             </div>
                         </div>
                     </div>
@@ -981,16 +1015,8 @@
     <script src="assets/js/nav_geas.min.js"></script>
     <!-- gallery -->
     <script src="assets/js/gallery_geas.min.js"></script>
-    <script>const sendEmailButton = document.getElementById("send-email-button");
-        sendEmailButton.addEventListener("click", () => {
-            const email = "mx_meetingpoint@up.edu.mx";
-            const subject = "Informes sobre nombre_gea";
-            const body = "Me gustaría saber más sobre nombre_gea";
-            const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-            window.location.href = mailtoUrl;
-        });</script>
-
-
+    <!-- botones info mail -->
+    <script src="assets/js/info_geas.min.js"></script>
 
     <!------------------------------------------------->
     <!--	end JS	-->

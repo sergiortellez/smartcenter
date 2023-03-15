@@ -420,7 +420,7 @@ nav.expanded .navContents a {
     -moz-transition: scale 300ms ease;
     -ms-transition: scale 300ms ease;
     -o-transition: scale 300ms ease;
-    background-color: #8299c0;
+    background-color: #6b88ba;
 }
 
 #experiencias_digitales_grid article[data-type="button"]:hover,
@@ -672,7 +672,7 @@ button[data-action='close']:focus {
 /* ---end tarjetas expandidas contenido--- */
 
 /* ---experiencias interactivas--- */
-.inicia_experiencia_interactiva {
+.boton_out_experiencia_interactiva {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -694,8 +694,9 @@ button[data-action='close']:focus {
     -moz-transition: scale 300ms ease;
     -ms-transition: scale 300ms ease;
     -o-transition: scale 300ms ease;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-align: center;
+    margin: 0 1rem;
 }
 
 .boton_out_experiencia_interactiva a:hover {
@@ -709,6 +710,39 @@ button[data-action='close']:focus {
 }
 
 /* ---end experiencias interactivas--- */
+
+/* ---botón correo info--- */
+
+button.send-info-button{
+    all: unset;
+    cursor: pointer;
+    background-color: var(--monoGEA);
+    color: var(--primarioGEA);
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    transition: scale 300ms ease;
+    -webkit-transition: scale 300ms ease;
+    -moz-transition: scale 300ms ease;
+    -ms-transition: scale 300ms ease;
+    -o-transition: scale 300ms ease;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+button.send-info-button:hover {
+    color: var(--textoGEA);
+    background-color: var(--primarioGEA);
+    scale: 0.95;
+}
+
+button.send-info-button:hover svg {
+    color: var(--monoGEA);
+}
+/* ---end botón correo info--- */
 
 /*-------------------------------*/
 /* end tarjetas expansibles */
