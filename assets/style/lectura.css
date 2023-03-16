@@ -5,19 +5,30 @@
 /*###################################################*/
 
 :root {
-    /* font-size */
+    /* font size */
     --fs-b: 14px;
     /* custom colors */
-    --smartRed: #A41C1D;
-    --smartBlue: #1c5396;
-    --smartGreen: #497D38;
-    --smartYellow: #c7a534;
+    --smartRed: #771d32;
+    --smartBlue: #122e5b;
+    --smartGreen: #005245;
+    --smartYellow: #9f8156;
+    /* custom mono */
+    --smartRedMono: #914053;
+    --smartBlueMono: #2e4975;
+    --smartGreenMono: #207569;
+    --smartYellowMono: #86612e;
+    /* theme colors */
+    --background: #F5F5F5;
+    --text: #000;
+    --primary: #ac8a54;
+    --orangeBtn: var(--primary);
+    --navHeight: 7vh;
 }
 
 /* tablet up */
 @media (min-width: 768px) {
     :root {
-        /* font-size */
+        /* font size */
         --fs-b: 16px;
     }
 }
@@ -25,9 +36,9 @@
 /* end tablet up */
 
 /* laptop up */
-@media (min-width: 1279px) {
+@media (min-width: 991px) {
     :root {
-        /* font-size */
+        /* font size */
         --fs-b: 18px;
     }
 }
@@ -37,10 +48,11 @@
 /* desktop up */
 @media (min-width: 1300px) {
     :root {
-        /* font-size */
+        /* font size */
         --fs-b: 22px;
     }
 }
+
 
 /*###################################################*/
 /*...................................................*/
@@ -80,7 +92,7 @@ body {
 /*...................................................*/
 /*###################################################*/
 .navbar {
-    background-color: var(--smartGreen);
+    background-color: var(--smartYellow);
 }
 
 .navbar>* {
@@ -151,7 +163,7 @@ body {
 
 .header-table {
     padding: 1.3rem;
-    background-color: var(--smartGreen) !important;
+    background-color: var(--smartYellowMono) !important;
     color: #fff;
     text-align: center;
     justify-content: center;
@@ -165,8 +177,147 @@ body {
     align-items: center;
 }
 
+.btn-success{
+    background-color: var(--smartYellow) !important;
+    border: none;
+    font-size: 2.1rem;
+    transition: all 0.3s ease-in-out;
+}
+.btn-success:focus, 
+.btn-success:hover{
+    background-color: var(--smartYellowMono) !important;
+    border: none;
+    box-shadow: none;
+    transform: scale(1.1);
+}
 /*###################################################*/
 /*...................................................*/
 /* end custom properties */
+/*...................................................*/
+/*###################################################*/
+
+/*###################################################*/
+/*...................................................*/
+/* footer */
+/*...................................................*/
+/*###################################################*/
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    background-color: var(--smartRed);
+    padding: 3rem;
+    color: var(--background);
+    text-align: center;
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    footer {
+        flex-direction: row;
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+}
+
+/* end tablet up */
+/* tablet landscape up */
+@media (min-width: 1054.1px) {
+    footer {
+        flex-direction: row;
+        font-size: 1rem;
+        padding: 3rem;
+    }
+}
+
+/* end tablet up */
+
+footer a {
+    color: var(--background);
+}
+
+footer a:visited {
+    color: var(--background);
+}
+
+footer svg {
+    font-size: 1.3rem;
+}
+
+/*-------------------------------*/
+/* up logo */
+/*-------------------------------*/
+
+#footer_logo {
+    width: 18rem;
+}
+
+/* tablet portrait up */
+@media (min-width:768px) and (max-width:1054.1px) {
+    #footer_logo {
+        width: 12rem;
+    }
+}
+
+/* end tablet up */
+/*-------------------------------*/
+/* end up logo */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* legales y links */
+/*-------------------------------*/
+#footer_derechos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+#footer_redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+/*-------------------------------*/
+/* end legales y links */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* dirección y contacto */
+/*-------------------------------*/
+#footer_contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    #footer_contacto {
+        align-items: flex-start;
+    }
+}
+
+/* end tablet up */
+
+
+/*-------------------------------*/
+/* end dirección y contacto */
+/*-------------------------------*/
+
+/*###################################################*/
+/*...................................................*/
+/* end footer */
 /*...................................................*/
 /*###################################################*/

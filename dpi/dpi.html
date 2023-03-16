@@ -14,7 +14,7 @@
     <link href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100;1,300;1,500;1,900&display=swap' rel='stylesheet'>
     <title>DPI | SMART Center</title>
     <!-- css -->
-    <link rel='stylesheet' href='../css/dpi.min.css'>
+    <link rel='stylesheet' href='../assets/style/dpi.min.css'>
     <!-- Fav icon -->
     <link rel='shortcut icon' type='image/x-icon' href='../images/favicon.ico' />
     <!-- Animations On Scroll -->
@@ -50,7 +50,9 @@
         const urlParams = new URLSearchParams(queryString);
         //consigue el id
         const id = urlParams.get('id');
-        const idImplementacion = 'AKfycby_H388a1Vt6jG2QuHlPV6D6YDEj-gjRF9NYU6C8071uX8YOJki90iajcjUM9pfP0POPQ';
+        //id de la implementación, debe cambiarse cada vez que se implementa (se hacen cambios en el backend)
+        const idImplementacion = 'AKfycbwerCuOTX0uTIfbHJLHc9FbE0XwTvY6PZcIRU-ux0CTVDyST2DBeR1VKf_PQOcBXuC8kA';
+        //arma un nuevo url
         const frameURL = 'https://script.google.com/a/up.edu.mx/macros/s/' + idImplementacion + '/exec' + '?id=' + id;
         //encuentra el iframe
         var iframe = document.getElementById('dpiIframe');
