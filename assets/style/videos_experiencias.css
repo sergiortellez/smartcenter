@@ -362,6 +362,11 @@ aside header img {
     --customCourse: #3342AF;
     --customCourseMono: rgb(163, 173, 211);
 }
+
+.recreando {
+    --customCourse: #3342AF;
+    --customCourseMono: rgb(163, 173, 211);
+}
 /*###################################################*/
 /*...................................................*/
 /* end custom colors */

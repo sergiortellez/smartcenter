@@ -912,6 +912,12 @@ button[data-action='close']:focus {
     --customCourseText:#000;
 }
 
+#recreando {
+    --customCourse: #b38e2d;
+    --customCourseMono: #ffe07d;
+    --customCourseContrast: #114876;
+    --customCourseText:#000;
+}
 /*-------------------------------*/
 /* end custom course */
 /*-------------------------------*/
