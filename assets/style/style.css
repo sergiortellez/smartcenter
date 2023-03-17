@@ -430,6 +430,22 @@ button[data-action='close']:focus {
 /* end títulos secciones */
 /*-------------------------------*/
 
+/*-------------------------------*/
+/* new tag */
+/*-------------------------------*/
+
+.new-tag{
+    background-color: var(--smartBlue);
+    color: var(--background);
+    font-size: 0.8rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 15px;
+}
+
+/*-------------------------------*/
+/* end new tag */
+/*-------------------------------*/
+
 
 /*###################################################*/
 /*...................................................*/
@@ -2939,6 +2955,7 @@ justify-content: center;
 @media (min-width: 1200px) {
     .grid_contacto {
         grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(9, 4.4rem);
     }
 }
 
@@ -2952,7 +2969,7 @@ justify-content: center;
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
-    min-height: 10rem;
+    min-height: 8rem;
     padding: 8rem 0 0 0;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2970,9 +2987,17 @@ justify-content: center;
 }
 
 .person:hover {
-    scale: 0.92;
+    scale: 0.95;
 
 }
+
+/* desktop up */
+@media (min-width: 1200px) {
+    .person {
+        grid-row: span 3;
+    }
+}
+/* end desktop up */
 
 .card-content {
     width: 100%;
@@ -3086,7 +3111,7 @@ justify-content: center;
 @media (min-width: 1200px) {
     .mapa {
         /* ajusta la posición en el grid */
-        grid-row: 1 / 3;
+        grid-row: 1 / 9;
         grid-column: 1 / 3;
     }
 }
@@ -3139,7 +3164,7 @@ justify-content: center;
 .becarios {
     /* ajusta la posición en el grid */
     grid-column: span 2;
-    grid-row: span 2;
+    grid-row: span 1;
 
 
     display: flex;
@@ -3171,7 +3196,7 @@ justify-content: center;
 @media (min-width: 1200px) {
     .becarios {
         /* ajusta la posición en el grid */
-        grid-row: 3 / 4;
+        grid-row: 9 / 12;
         grid-column: 1 / 3;
     }
 }
