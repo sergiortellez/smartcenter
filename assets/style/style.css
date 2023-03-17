@@ -2037,9 +2037,6 @@ justify-content: center;
     -o-border-radius: 15px;
 }
 
-.insta-card a:hover img {
-    border: solid 1px var(--primary);
-}
 .insta-card a p {
     min-width: 100%;
     font-size: 0.7rem;
