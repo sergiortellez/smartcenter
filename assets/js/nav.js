@@ -12,7 +12,7 @@ if (window.innerWidth < 648) {
     const clickableArea = document.querySelector('.navContents');
     //cuando se hace click en el menú expandido, se ejecuta la función toggleNav
     clickableArea.addEventListener('click',
-    //se necesita capturar el elemento que desencadena el evento y pasarlo como parámetro a la función toggleNav para que al finalizar su trabajo nos dirija al link que contiene. 
+        //se necesita capturar el elemento que desencadena el evento y pasarlo como parámetro a la función toggleNav para que al finalizar su trabajo nos dirija al link que contiene. 
         function (e) {
             let target = e.target;
             toggleNav(target);
@@ -104,7 +104,11 @@ function toggleNav(target) {
         toggleIcon.classList.add('fa-bars');
         //contrae la barra
         nav.classList.remove('expanded');
-        window.location.href = target.href;
+        //el elemento tiene un enlace? o sólo se quiere cerrar la barra?
+        if (target.href) {
+            window.location.href = target.href;
+        }
+
     } else {
 
         nav.classList.add('expanded');

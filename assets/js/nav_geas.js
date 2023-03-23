@@ -104,7 +104,10 @@ function toggleNav(target) {
         toggleIcon.classList.add('fa-bars');
         //contrae la barra
         nav.classList.remove('expanded');
-        window.location.href = target.href;
+        //el elemento tiene un enlace? o sólo se quiere cerrar la barra?
+        if (target.href) {
+            window.location.href = target.href;
+        }
     } else {
 
         nav.classList.add('expanded');
