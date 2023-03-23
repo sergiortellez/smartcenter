@@ -6,12 +6,24 @@ button.addEventListener('click', toggleNav);
 
 //este listener sólo tiene sentido si la pantalla mide menos de 600px
 
-if(window.innerWidth < 648){
+if (window.innerWidth < 648) {
 
     //nav contents en este contexto es el menú expandido
     const clickableArea = document.querySelector('.navContents');
-    clickableArea.addEventListener('click', toggleNav);
-    clickableArea.addEventListener('touchend', toggleNav);
+    //cuando se hace click en el menú expandido, se ejecuta la función toggleNav
+    clickableArea.addEventListener('click',
+    //se necesita capturar el elemento que desencadena el evento y pasarlo como parámetro a la función toggleNav para que al finalizar su trabajo nos dirija al link que contiene. 
+        function (e) {
+            let target = e.target;
+            toggleNav(target);
+        });
+    //en caso de dispositivos touch.
+    clickableArea.addEventListener('touchend',
+        function (e) {
+            let target = e.target;
+            toggleNav(target);
+
+        });
 }
 
 /*<------------------------------------------------->
@@ -23,33 +35,33 @@ gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.create({
     trigger: '.portada',//el elemento que desencadena el comportamiento
-    start:'center top', //cuando la parte central del elemento toca el  tope superior del viewport
+    start: 'center top', //cuando la parte central del elemento toca el  tope superior del viewport
     //end:'800px 200px',
-    onEnter: function enter(){
-        if(window.innerWidth > 1054){
+    onEnter: function enter() {
+        if (window.innerWidth > 1054) {
             const navSmartLogoMin = document.getElementById('navSmartLogoMin');
             const navSmartLogo = document.getElementById('navSmartLogo');
             const navUpLogo = document.getElementById('navUpLogo');
             const nav = document.querySelector('nav');
-    
+
             nav.style.setProperty('--navHeight', 7 + "vh")
-            navSmartLogo.style.display='none';
-            navSmartLogoMin.style.display='inline';
-            navUpLogo.style.display='none';
-    
+            navSmartLogo.style.display = 'none';
+            navSmartLogoMin.style.display = 'inline';
+            navUpLogo.style.display = 'none';
+
         }
     },
-    onEnterBack: function back(){
-        if(window.innerWidth > 1024){
-        const navSmartLogoMin = document.getElementById('navSmartLogoMin');
-        const navSmartLogo = document.getElementById('navSmartLogo');
-        const navUpLogo = document.getElementById('navUpLogo');
-        const nav = document.querySelector('nav');
+    onEnterBack: function back() {
+        if (window.innerWidth > 1024) {
+            const navSmartLogoMin = document.getElementById('navSmartLogoMin');
+            const navSmartLogo = document.getElementById('navSmartLogo');
+            const navUpLogo = document.getElementById('navUpLogo');
+            const nav = document.querySelector('nav');
 
-        nav.style.setProperty('--navHeight', 16 + "vh")
-        navSmartLogo.style.display='inline';
-        navSmartLogoMin.style.display='none';
-        navUpLogo.style.display='inline';
+            nav.style.setProperty('--navHeight', 16 + "vh")
+            navSmartLogo.style.display = 'inline';
+            navSmartLogoMin.style.display = 'none';
+            navUpLogo.style.display = 'inline';
         }
     },
     markers: false
@@ -74,8 +86,8 @@ ScrollTrigger.create({
 <!------------------------------------------------->*/
 
 
-function toggleNav(){
-    
+function toggleNav(target) {
+
     //encuentra la barra de navegación
     var nav = document.querySelector('nav');
 
@@ -83,25 +95,27 @@ function toggleNav(){
     var toggleIcon = document.querySelector('#toggleIcon');
 
     //revisa si la barra está expandida
-    if(nav.classList.contains('expanded')){
-        //contrae la barra
-        nav.classList.remove('expanded');
+    if (nav.classList.contains('expanded')) {
+        console.log(target)
         //quita el ícono de cerrar
         toggleIcon.classList.remove('fa-xmark');
         //añade el ícono de barras
         toggleIcon.classList.add('fa-duotone');
         toggleIcon.classList.add('fa-bars');
-    }else{
-        
+        //contrae la barra
+        nav.classList.remove('expanded');
+        window.location.href = target.href;
+    } else {
+
         nav.classList.add('expanded');
-         //quita el ícono de barras
-         toggleIcon.classList.remove('fa-bars');
-         //añade el ícono de cerrar
-         toggleIcon.classList.add('fa-duotone');
-         toggleIcon.classList.add('fa-xmark');
-       
+        //quita el ícono de barras
+        toggleIcon.classList.remove('fa-bars');
+        //añade el ícono de cerrar
+        toggleIcon.classList.add('fa-duotone');
+        toggleIcon.classList.add('fa-xmark');
+
     }
-   
+
 }
 
 /*<!------------------------------------------------->
