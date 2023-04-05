@@ -78,6 +78,9 @@
     <!------------------------------------------------->
     <section id="app_citas">
         <h3><i class="fa-duotone fa-user"></i> Agenda Personal </h3>
+        <div class="loader">
+            <div class="aside"></div>
+        </div>
         <script src="//widget.simplybook.me/v2/widget/widget.js"></script>
         <script>
             var widget = new SimplybookWidget({
@@ -169,6 +172,24 @@
     <!-- spyscroll -->
     <script src="assets/js/spyscroll.min.js"></script>
 
+    <script>
+        const iframeContainer = document.querySelector("#app_citas");
+        const myIframe = iframeContainer.querySelector("iframe");
+        console.log(myIframe);
+        initialHeight = myIframe.offsetHeight;
+        console.log(initialHeight);
+        const intervalId = setInterval(function () {
+            currentHeight = myIframe.offsetHeight;
+            if (currentHeight !== initialHeight) {
+                console.log("IFrame has displayed something on the screen.");
+                // Do other things here
+                // ...
+                clearInterval(intervalId);
+            }
+        }, 1000);
+
+
+    </script>
 
     <!------------------------------------------------->
     <!--	end JS	-->
