@@ -173,21 +173,39 @@
     <script src="assets/js/spyscroll.min.js"></script>
 
     <script>
+        // Seleccionar el contenedor del iframe mediante su ID
         const iframeContainer = document.querySelector("#app_citas");
+
+        // Seleccionar el iframe dentro del contenedor
         const myIframe = iframeContainer.querySelector("iframe");
+
+        // Mostrar el objeto del iframe en la consola
         console.log(myIframe);
+
+        // Obtener la altura inicial del iframe, incluyendo el padding, el borde y la barra de desplazamiento (si existe)
         initialHeight = myIframe.offsetHeight;
+
+        // Mostrar la altura inicial del iframe en la consola
         console.log(initialHeight);
+
+        // Configurar un intervalo que se ejecute cada segundo
         const intervalId = setInterval(function () {
+
+            // Obtener la altura actual del iframe, incluyendo el padding, el borde y la barra de desplazamiento (si existe)
             currentHeight = myIframe.offsetHeight;
+
+            // Si la altura actual es diferente a la altura inicial, significa que el iframe ha mostrado algo en la pantalla
             if (currentHeight !== initialHeight) {
+
+                // Mostrar un mensaje en la consola indicando que el iframe ha mostrado algo en la pantalla
                 console.log("IFrame has displayed something on the screen.");
-                // Do other things here
-                // ...
+
+                // Ejecutar otras acciones aquí, como por ejemplo cambiar el tamaño o posición del iframe
+
+                // Limpiar el intervalo para que deje de ejecutarse
                 clearInterval(intervalId);
             }
-        }, 1000);
-
+        }, 1000); // Intervalo de 1000ms (1 segundo) entre cada ejecución de la función```
 
     </script>
 
