@@ -78,9 +78,45 @@
     <!------------------------------------------------->
     <section id="app_citas">
         <h3><i class="fa-duotone fa-user"></i> Agenda Personal </h3>
-        <div class="loader">
-            <div class="aside"></div>
+        <!-- El loader desaparece al cargar el iframe -->
+        <div id="loader">
+
+            <div class="loader_top">
+                <div class="loader_logo"></div>
+            </div>
+            <hr>
+            <div class="loader_menu">
+                <div class="phanthom_title"></div>
+                <div class="phanthom_title"></div>
+                <div class="phanthom_title"></div>
+                <div class="phanthom_title"></div>
+                <div class="phanthom_title"></div>
+                <div class="phanthom_title"></div>
+            </div>
+
+            <hr>
+            <div class="loader_cards">
+                <div class="loader_phanthom">
+                    <div class="phanthom_img"></div>
+                    <div class="phanthom_txt"></div>
+                    <div class="phanthom_button"></div>
+                </div>
+                <div class="loader_phanthom">
+                    <div class="phanthom_img"></div>
+                    <div class="phanthom_txt"></div>
+                    <div class="phanthom_button"></div>
+                </div>
+                <div class="loader_phanthom">
+                    <div class="phanthom_img"></div>
+                    <div class="phanthom_txt"></div>
+                    <div class="phanthom_button"></div>
+                </div>
+            </div>
+
         </div>
+        <!-- fin de loader -->
+
+        <!-- simple book me iframe -->
         <script src="//widget.simplybook.me/v2/widget/widget.js"></script>
         <script>var widget = new SimplybookWidget({ "widget_type": "iframe", "url": "https:\/\/reloadtalent.simplybook.me", "theme": "space", "theme_settings": { "timeline_hide_unavailable": "1", "sb_base_color": "#d5b673", "hide_past_days": "1", "timeline_show_end_time": "0", "timeline_modern_display": "as_slots", "display_item_mode": "block", "sb_review_image": "", "dark_font_color": "#474747", "light_font_color": "#ffffff", "sb_company_label_color": "#ffffff", "hide_img_mode": "0", "show_sidebar": "1", "sb_busy": "#dad2ce", "sb_available": "#d3e0f1" }, "timeline": "modern_week", "datepicker": "inline_datepicker", "is_rtl": false, "app_config": { "clear_session": 0, "allow_switch_to_ada": 0, "predefined": [] } });</script>
     </section>
@@ -144,43 +180,8 @@
     <script src="assets/js/nav_citas.min.js"></script>
     <!-- spyscroll -->
     <script src="assets/js/spyscroll.min.js"></script>
-
-    <script>
-        // Seleccionar el contenedor del iframe mediante su ID
-        const iframeContainer = document.querySelector("#app_citas");
-
-        // Seleccionar el iframe dentro del contenedor
-        const myIframe = iframeContainer.querySelector("iframe");
-
-        // Mostrar el objeto del iframe en la consola
-        console.log(myIframe);
-
-        // Obtener la altura inicial del iframe, incluyendo el padding, el borde y la barra de desplazamiento (si existe)
-        initialHeight = myIframe.offsetHeight;
-
-        // Mostrar la altura inicial del iframe en la consola
-        console.log(initialHeight);
-
-        // Configurar un intervalo que se ejecute cada segundo
-        const intervalId = setInterval(function () {
-
-            // Obtener la altura actual del iframe, incluyendo el padding, el borde y la barra de desplazamiento (si existe)
-            currentHeight = myIframe.offsetHeight;
-
-            // Si la altura actual es diferente a la altura inicial, significa que el iframe ha mostrado algo en la pantalla
-            if (currentHeight !== initialHeight) {
-
-                // Mostrar un mensaje en la consola indicando que el iframe ha mostrado algo en la pantalla
-                console.log("IFrame has displayed something on the screen.");
-
-                // Ejecutar otras acciones aquí, como por ejemplo cambiar el tamaño o posición del iframe
-
-                // Limpiar el intervalo para que deje de ejecutarse
-                clearInterval(intervalId);
-            }
-        }, 1000); // Intervalo de 1000ms (1 segundo) entre cada ejecución de la función```
-
-    </script>
+    <!-- loader citas (fantasmas para agenda personal) -->
+    <script src="assets/js/loader_citas.min.js"></script>
 
     <!------------------------------------------------->
     <!--	end JS	-->

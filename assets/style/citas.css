@@ -389,6 +389,140 @@ nav.expanded .navContents a {
 
 /*###################################################*/
 /*...................................................*/
+/* loader */
+/*...................................................*/
+/*###################################################*/
+
+#loader {
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+     transition: all 0.3s ease;
+    animation: placeholder-fade 3s linear infinite;
+}
+
+.loader_cards{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .loader_cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/* end tablet up */
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    .loader_cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+/* end tablet up */
+
+.loader_phanthom{
+    display: flex;
+    align-items: left;
+    justify-content: top;
+    flex-direction: column;
+    min-height: 22rem;
+    width: 100%;
+    height: 12rem;
+    background-color: gray;
+    border-radius: 5px;
+   
+}
+
+/* animación  */
+@keyframes placeholder-fade {
+    0% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0.7;
+    }
+}
+/* end animación  */
+.loader_top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader_logo{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #ada5a5;
+}
+
+.loader_menu{
+    display: none;
+}
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .loader_menu{
+    width: 100%;
+    display: flex;
+    align-items:space-between; 
+    justify-content: center;
+    margin: 0;
+}
+}
+/* end tablet up */
+.phanthom_title{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 10%;
+    height: 1.5rem;
+    background-color: #ada5a5;
+    border-radius: 10px;
+}
+
+#loader hr{
+    width: 100%;
+    margin: 0;
+}
+
+.phanthom_img {
+   width: 100%;
+   height: 60%;
+    background-color: #ada5a5;
+}
+.phanthom_txt{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 40%;
+    height: 1.5rem;
+    background-color: #ada5a5;
+    border-radius: 10px;
+}
+.phanthom_button{
+    margin-top: 2rem;
+    align-self: center;
+    width: 80%;
+    height: 3rem;
+    background-color: #ada5a5;
+    border-radius: 20px;
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end loader */
+/*...................................................*/
+/*###################################################*/
+
+
+/*###################################################*/
+/*...................................................*/
 /* agenda grupal */
 /*...................................................*/
 /*###################################################*/
