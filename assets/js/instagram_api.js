@@ -14,9 +14,9 @@ Api de Instagram
 <!--	Parámetros	-->
 <!------------------------------------------------->*/
 
-//TODO: enviar el token a google sheets y usar su api como backend, crear un nuevo documento para la api de instagram y crear las tarjetas. 
+//TODO: enviar el token a google sheets y usar su api como backend, crear un nuevo documento para la api de instagram y crear las tarjetas. (es importante por privacidad y manejar la caducidad del token) 
 //clave de acceso
-const accessToken = "IGQVJWbXg4OWQ1X0VKSHF5eURzLWYzT0NaNEFiUGhvazNXZAFEzWC1Jak1YVjdISHR0MUduNmdOOFJhMG9HM0RQaXJRRmY5RmZArSXhaTXZAwUms0dkkwXzFzTF9ueml5dUJScjExZAzVfR3FhSWV3REVEVQZDZD";
+const accessToken = "IGQVJVYVlUcDkxZA2FMTnhaOGl1SjUtdkRtV19fejdTYnd1S19jSHdMLTlxZAVdfVzNEWElScFNJQjF4bEFTZATZA6QnhvOFk4d3hjNzVNZA1VHSWpyeC1QOC1POVRZAMnI5aUhxOFNxVnVjeFBKcm9NMTVQdQZDZD";
 //¿Cuántos posts se necesitan?
 const limit = 8;
 //URL endpoint
