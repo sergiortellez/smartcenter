@@ -371,159 +371,283 @@ nav.expanded .navContents a {
 /*...................................................*/
 /*###################################################*/
 
+
+
+
 /*###################################################*/
 /*...................................................*/
-/* app citas */
+/* Experiencias Presenciales */
 /*...................................................*/
 /*###################################################*/
 
-#app_citas {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 35vh;
-    padding-top: var(--navHeight);
+/*-------------------------------*/
+/* grid */
+/*-------------------------------*/
+
+
+#presenciales {
+   text-align: center; 
+   padding-top: 5rem;
 }
 
-/*###################################################*/
-/*...................................................*/
-/* end app_citas */
-/*...................................................*/
-/*###################################################*/
-
-/*###################################################*/
-/*...................................................*/
-/* loader */
-/*...................................................*/
-/*###################################################*/
-
-#loader {
-    width: 100%;
-   display: flex;
-   flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-     transition: all 0.3s ease;
-    animation: placeholder-fade 3s linear infinite;
-}
-
-.loader_cards{
-    width: 90%;
+#events_grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 3rem;
+    padding: 0 1rem;
 }
 
 /* tablet portrait up */
 @media (min-width: 768px) {
-    .loader_cards {
-        grid-template-columns: 1fr 1fr;
+    #events_grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 }
 /* end tablet up */
 
 /* tablet landscape up */
 @media (min-width: 1024.1px) {
-    .loader_cards {
-        grid-template-columns: 1fr 1fr 1fr;
+    #events_grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
     }
 }
 /* end tablet up */
 
-.loader_phanthom{
+/*-------------------------------*/
+/* end grid */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* general cards */
+/*-------------------------------*/
+
+.event_card{
     display: flex;
-    align-items: left;
-    justify-content: top;
+    align-items: center;
+    justify-content: space-evenly;
     flex-direction: column;
-    min-height: 22rem;
+    min-height: 24rem;
+    max-height: 24rem;
     width: 100%;
-    height: 12rem;
-    background-color: gray;
-    border-radius: 5px;
-   
+    border-radius: 15px;
+    font-size: 1.15rem;
 }
 
-/* animación  */
-@keyframes placeholder-fade {
-    0% {
-        opacity: 0.7;
-    }
-    50% {
-        opacity: 0.3;
-    }
-    100% {
-        opacity: 0.7;
-    }
+.success_card{
+    background-color: var(--smartYellowMono);
+    --dominant: var(--smartYellow);
 }
-/* end animación  */
-.loader_top{
+.meeting_card{
+    background-color: var(--smartBlueMono);
+    --dominant: var(--smartBlue);
+}
+.talent_card{
+    background-color: var(--smartGreenMono);
+    --dominant: var(--smartGreen);
+}
+.advisory_card{
+    background-color: var(--smartRedMono);
+    --dominant: var(--smartRed);
+}
+
+/*-------------------------------*/
+/* end general cards */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* event title */
+/*-------------------------------*/
+
+.event_title{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.loader_logo{
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    background-color: #ada5a5;
-}
-
-.loader_menu{
-    display: none;
-}
-/* tablet portrait up */
-@media (min-width: 768px) {
-    .loader_menu{
+    min-height: 8rem;
     width: 100%;
-    display: flex;
-    align-items:space-between; 
-    justify-content: center;
-    margin: 0;
 }
+.event_card h4{
+    color: var(--dominant);
 }
-/* end tablet up */
-.phanthom_title{
-    margin-top: 1rem;
-    margin-left: 1rem;
-    width: 10%;
-    height: 1.5rem;
-    background-color: #ada5a5;
-    border-radius: 10px;
+.event_title svg{
+    position: absolute;
+    font-size: 8rem;
+    color: var(--dominant);
+    margin: 0.5rem;
+    opacity: 10%;
 }
 
-#loader hr{
-    width: 100%;
-    margin: 0;
+.event_title .fa-quote-left{
+    left: -1%;
 }
 
-.phanthom_img {
-   width: 100%;
-   height: 60%;
-    background-color: #ada5a5;
+.event_title .fa-quote-right{
+    left:66.5%;
 }
-.phanthom_txt{
-    margin-top: 1rem;
-    margin-left: 1rem;
-    width: 40%;
-    height: 1.5rem;
-    background-color: #ada5a5;
-    border-radius: 10px;
+
+.event_card hr{
+    width: 99%;
+    opacity: 70%;
+    margin: 0;
+    border: var(--dominant) solid 0.5px;
 }
-.phanthom_button{
+
+
+/*-------------------------------*/
+/* end event title */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* event data */
+/*-------------------------------*/
+
+
+.event_data{
     margin-top: 2rem;
-    align-self: center;
-    width: 80%;
-    height: 3rem;
-    background-color: #ada5a5;
-    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 93%;
+    font-size: 1.2rem;
 }
+
+.event_data>div{
+    background-color: var(--dominant);
+    color: var(--background);
+    padding: 0.3rem 0.7rem;
+    border-radius: 5px;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.event_data svg{
+    font-size: 0.8rem;
+    margin-right: 0.4rem;
+}
+
+.event_location{
+    margin-top: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    font-size: 1rem;
+}
+
+.event_more{
+    width: 90%;
+    margin-top: 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.event_more button{
+    all: unset;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color:rgb(93, 93, 93);
+    /* border: rgba(93, 93, 93, 0.272) solid 1px; */
+    padding: 0.7rem;
+    border-radius: 10px;
+
+
+}
+.event_more button svg{
+    
+    font-size: 0.7rem;
+    margin-left: 0.3rem;
+
+}
+
+
+/*-------------------------------*/
+/* end event data */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* event hidden */
+/*-------------------------------*/
+
+/* ---funcionamiento--- */
+.event_hidden {
+
+    max-height: 0px;
+    transition: all 1s ease-in-out;
+    overflow: hidden;
+
+}
+
+/* ---end funcionamiento--- */
+
+.event_description p {
+    font-size: 0.9rem;
+    text-align: justify;
+    padding: 1rem;
+
+}
+
+.event_time{
+    font-size: 1rem;
+    text-align: left;
+    padding: 0.5rem;
+}
+.event_instructor{
+    font-size: 1rem;
+    text-align: left;
+    padding: 0.5rem;
+}
+.event_tags{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.event_tags .tag{
+    background-color: var(--dominant);
+    color: var(--background);
+    padding: 0.3rem 0.7rem;
+    border-radius: 15px;
+    margin: 0.3rem;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.event_button{
+    margin: 3rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.event_button a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background-color: var(--dominant);
+    color: var(--background);
+    padding: 1.5rem 0.3rem;
+    border-radius: 15px;
+    margin: 0.3rem;
+    width: 65%;
+}
+
+/*-------------------------------*/
+/* end event hidden */
+/*-------------------------------*/
 
 /*###################################################*/
 /*...................................................*/
-/* end loader */
+/* end Experiencias Presenciales */
 /*...................................................*/
-/*###################################################*/
+/*
+###################################################*/
 
 
 /*###################################################*/
