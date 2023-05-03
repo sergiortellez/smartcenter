@@ -568,6 +568,42 @@ nav.expanded .navContents a {
 /*-------------------------------*/
 
 /*-------------------------------*/
+/* event message */
+/*-------------------------------*/
+
+.event_message {
+    display: flex;
+    /* visible: flex */
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: red;
+    padding:0.2rem 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.event_message p{
+    font-size: 0.7rem;
+
+    color: var(--background);
+    margin-left: 0.5rem;
+    text-align: left;
+
+}
+.event_message svg{
+    font-size: 2rem;
+    color: yellow;
+    margin-left: 0.3rem;
+}
+
+/*-------------------------------*/
+/* end event message */
+/*-------------------------------*/
+
+
+/*-------------------------------*/
 /* event hidden */
 /*-------------------------------*/
 
