@@ -1,6 +1,7 @@
 //TODO: trabajar en mapa de documentación
 //TODO: La función buildCards() está muy larga, dividirla en funciones más pequeñas
 //TODO: Aprovechar la reconstrucción para manejar los casos en los que algunos datos de evento no existen
+//TODO: añadir parámetro de id por número de fila
 
 /*<------------------------------------------------->
 <!--	Parámetros	-->

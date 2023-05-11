@@ -428,8 +428,8 @@ nav.expanded .navContents a {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    min-height: 24rem;
-    max-height: 24rem;
+    min-height: 27rem;
+    max-height: 27rem;
     width: 100%;
     border-radius: 15px;
     font-size: 1.15rem;
@@ -473,7 +473,7 @@ nav.expanded .navContents a {
 }
 .event_title svg{
     position: absolute;
-    font-size: 8rem;
+    font-size: 5.5rem;
     color: var(--dominant);
     margin: 0.5rem;
     opacity: 10%;
@@ -484,7 +484,7 @@ nav.expanded .navContents a {
 }
 
 .event_title .fa-quote-right{
-    left:66.5%;
+    right: 0;
 }
 
 .event_card hr{
@@ -511,6 +511,8 @@ nav.expanded .navContents a {
     justify-content: space-between;
     width: 93%;
     font-size: 1.2rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 .event_data>div{
@@ -519,7 +521,7 @@ nav.expanded .navContents a {
     padding: 0.3rem 0.7rem;
     border-radius: 5px;
     font-weight: 100;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .event_data svg{
@@ -533,9 +535,11 @@ nav.expanded .navContents a {
     align-items: center;
     justify-content: space-between;
     width: 90%;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
-
+.event_location span{
+    margin-left: 0.3rem;
+}
 .event_more{
     width: 90%;
     margin-top: 1rem;
@@ -577,7 +581,7 @@ nav.expanded .navContents a {
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 3rem;
     background-color: red;
     padding:0.2rem 0;
     border-bottom-left-radius: 15px;
@@ -626,14 +630,21 @@ nav.expanded .navContents a {
 }
 
 .event_time{
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: left;
-    padding: 0.5rem;
+    padding: 0.6rem;
+}
+.event_time span{
+    margin-left: 0.5rem;
 }
 .event_instructor{
     font-size: 1rem;
     text-align: left;
-    padding: 0.5rem;
+    padding: 0.6rem;
+}
+
+.event_instructor span{
+    margin-left: 0.5rem;
 }
 .event_tags{
     display: flex;
