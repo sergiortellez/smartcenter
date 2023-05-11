@@ -51,6 +51,8 @@ function buildData(URLdata) {
             //funciones a ejecutar con la data:
             //construye las tarjetas
             buildCards(data);
+            //remplaza los fantasmas
+            replaceGhosts();
             //agrega funcionalidad a las tarjetas
             cardHandler();
         });
@@ -470,6 +472,31 @@ function buildCards(data) {
 }
 /*<!------------------------------------------------->
 <!--	end buildCards	-->
+<!------------------------------------------------->*/
+
+/*<------------------------------------------------->
+<!--	replaceGhosts()	-->
+<!-------------------------------------------------->
+* Descripción:
+    Este método reemplaza los elementos fantasmas del grid de eventos por elementos construidos por cardBuilder().
+* Parámetros:
+    -ninguno
+* Dependencias: ninguna
+* Devuelve/resultado: Elimina las tarjetas fantasmas cuando las tarjetas están listas. 
+<!------------------------------------------------->*/
+function replaceGhosts() {
+    //crea una referencia al contenedor de grid de eventos
+    const container = document.getElementById('events_grid');
+    //crea una referencia a los elementos fantasmas
+    const ghosts = container.querySelectorAll('.tarjeta_fantasma');
+    //itera sobre los elementos fantasmas
+    ghosts.forEach(ghost => {
+        //elimina la tarjeta fantasma
+        container.removeChild(ghost);
+    });
+}
+/*<!------------------------------------------------->
+<!--	end replaceGhosts()	-->
 <!------------------------------------------------->*/
 
 /*<------------------------------------------------->
