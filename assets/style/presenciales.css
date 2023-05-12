@@ -529,15 +529,22 @@ nav.expanded .navContents a {
 }
 
 .event_location{
-    margin-top: 1.3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    flex-wrap: wrap;
+    width: 96%;
+    margin-top: 1.3rem;
     font-size: 0.9rem;
 }
 .event_location span{
     margin-left: 0.3rem;
+}
+.event_url a{
+    color: var(--dominant);
+    text-decoration: underline;
+    font-size: 0.9rem;
+    font-style: italic;
 }
 .event_more{
     width: 90%;
@@ -545,6 +552,9 @@ nav.expanded .navContents a {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+}
+.event_more span{
+text-decoration: underline;
 }
 
 .event_more button{
