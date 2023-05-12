@@ -371,9 +371,6 @@ nav.expanded .navContents a {
 /*...................................................*/
 /*###################################################*/
 
-
-
-
 /*###################################################*/
 /*...................................................*/
 /* Experiencias Presenciales */
@@ -383,7 +380,6 @@ nav.expanded .navContents a {
 /*-------------------------------*/
 /* grid */
 /*-------------------------------*/
-
 
 #presenciales {
    text-align: center; 
@@ -428,8 +424,8 @@ nav.expanded .navContents a {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    min-height: 27rem;
-    max-height: 27rem;
+    min-height: 23rem;
+    max-height: 23rem;
     width: 100%;
     border-radius: 15px;
     font-size: 1.15rem;
@@ -438,18 +434,22 @@ nav.expanded .navContents a {
 .success_card{
     background-color: var(--smartYellowMono);
     --dominant: var(--smartYellow);
+    --dominantMono: var(--smartYellowMono);
 }
 .meeting_card{
     background-color: var(--smartBlueMono);
     --dominant: var(--smartBlue);
+    --dominantMono: var(--smartBlueMono);
 }
 .talent_card{
     background-color: var(--smartGreenMono);
     --dominant: var(--smartGreen);
+    --dominantMono: var(--smartGreenMono);
 }
 .advisory_card{
     background-color: var(--smartRedMono);
     --dominant: var(--smartRed);
+    --dominantMono: var(--smartRedMono);
 }
 
 /*-------------------------------*/
@@ -465,7 +465,7 @@ nav.expanded .navContents a {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 8rem;
+    min-height: 6rem;
     width: 100%;
 }
 .event_card h4{
@@ -502,7 +502,6 @@ nav.expanded .navContents a {
 /*-------------------------------*/
 /* event data */
 /*-------------------------------*/
-
 
 .event_data{
     margin-top: 2rem;
@@ -566,7 +565,6 @@ nav.expanded .navContents a {
 
 }
 
-
 /*-------------------------------*/
 /* end event data */
 /*-------------------------------*/
@@ -590,7 +588,6 @@ nav.expanded .navContents a {
 
 .event_message p{
     font-size: 0.7rem;
-
     color: var(--background);
     margin-left: 0.5rem;
     text-align: left;
@@ -615,8 +612,14 @@ nav.expanded .navContents a {
 .event_hidden {
 
     max-height: 0px;
+    width: 100%;
+    margin: 0 0.5rem;
     transition: all 1s ease-in-out;
     overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
 
 }
 
@@ -624,13 +627,13 @@ nav.expanded .navContents a {
 
 .event_description p {
     font-size: 0.9rem;
-    text-align: justify;
+    text-align: left;
     padding: 1rem;
 
 }
 
 .event_time{
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-align: left;
     padding: 0.6rem;
 }
@@ -646,6 +649,7 @@ nav.expanded .navContents a {
 .event_instructor span{
     margin-left: 0.5rem;
 }
+
 .event_tags{
     display: flex;
     align-items: center;
@@ -671,6 +675,14 @@ nav.expanded .navContents a {
     align-items: center;
     justify-content: center;
     width: 100%;
+    transition: transform 0.3s ease;   
+}
+
+.event_button:active{ 
+    transform: scale(0.9);   
+}
+ .event_button:active a, .event_button:hover a{
+    background-color: var(--dominantMono);
 }
 
 .event_button a{
@@ -852,9 +864,6 @@ nav.expanded .navContents a {
 /*-------------------------------*/
 /* end more */
 /*-------------------------------*/
-
-
-
 
 /*###################################################*/
 /*...................................................*/
