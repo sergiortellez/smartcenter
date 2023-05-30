@@ -161,15 +161,28 @@ function buildCards(data) {
     //obtén una referencia al contenedor de grid de eventos
     const container = document.getElementById('events_grid');
 
+    // haremos un contador para revisar cuántas tarjetas se han construido
+    let counterCards = 0;
     //itera sobre el arreglo de eventos y construye las tarjetas
     eventsArray.forEach(event => {
         let constructedCard = event.buildCard();
         //si la tarjeta existe agrégala al contenedor.
         if (constructedCard != null) {
             container.appendChild(constructedCard);
+            //aumenta el contador de tarjetas
+            counterCards++;
         }
     });
+
+    //si no se construyó ninguna tarjeta, muestra el mensaje de "no hay eventos"
+    if (counterCards == 0) {
+        //obtén una referencia al contenedor de grid de eventos (es el título del grid)
+        let gridParent = container.parentElement;
+        //cambia el contenido del contenedor por el mensaje de "no hay eventos"
+        gridParent.innerHTML = '<p class="no_events">No hay eventos en los próximos 30 días.</p>';
+    }
 }
+
 /*<!------------------------------------------------->
 <!--	end buildCards	-->
 <!------------------------------------------------->*/
@@ -633,7 +646,7 @@ function eventHidden(description, time, speaker, tag1, tag2, tag3, tag4, link) {
 <!------------------------------------------------->*/
 
 /*<------------------------------------------------->
-<!--	replaceGhosts()	-->
+<!--	replaceGhosts	-->
 <!-------------------------------------------------->
 * Descripción:
     Este método reemplaza los elementos fantasmas del grid de eventos por elementos construidos por cardBuilder().
@@ -654,7 +667,7 @@ function replaceGhosts() {
     });
 }
 /*<!------------------------------------------------->
-<!--	end replaceGhosts()	-->
+<!--	end replaceGhosts	-->
 <!------------------------------------------------->*/
 
 /*<------------------------------------------------->

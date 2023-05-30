@@ -411,6 +411,21 @@ nav.expanded .navContents a {
 }
 /* end tablet up */
 
+/* ---no events--- */
+
+.no_events{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    width: 100%;
+    font-size: 2rem;
+    color: grey;
+    text-align: center;
+}
+
+/* ---end no events--- */
+
 /*-------------------------------*/
 /* end grid */
 /*-------------------------------*/
