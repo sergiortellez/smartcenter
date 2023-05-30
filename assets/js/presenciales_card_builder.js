@@ -34,7 +34,7 @@ window.onload = function () {
 * Parámetros:
     -URLdata: string
 * Dependencias: fillTable()
-* Devuelve/resultado: genera un arreglo 'data' y lo pasa como parámetro a las funciónes que construyen las tablas y gráficas
+* Devuelve/resultado: genera un arreglo 'data' y lo pasa como parámetro a las funciones que construyen las tablas y gráficas
 <!------------------------------------------------->*/
 function buildData(URLdata) {
     var data = [];
@@ -51,6 +51,8 @@ function buildData(URLdata) {
             replaceGhosts();
             //agrega funcionalidad a las tarjetas
             cardHandler();
+            //si hay un ID en la URL, abre la tarjeta correspondiente
+            openCard();
         });
 }
 /*<!------------------------------------------------->
@@ -739,4 +741,41 @@ function cardHandler() {
 
 /*<!------------------------------------------------->
 <!--	end Card Handler	-->
+<!------------------------------------------------->*/
+
+/*<------------------------------------------------->
+<!--	openCard	-->
+<!-------------------------------------------------->
+* Descripción:
+    Si existe un id en la URL de la página, abre la tarjeta correspondiente.
+* Parámetros:
+    -ninguno, corre al inicio.
+* Dependencias: ninguna
+* Devuelve/resultado: Hace Scroll en la página cargada localizando el id en la URL y abre la tarjeta correspondiente.
+<!------------------------------------------------->*/
+function openCard() {
+    //obtiene el id de la URL
+    let hash = window.location.hash.substr(1); // remove the '#' prefix
+    //si existe un id en la URL
+    if (hash) {
+        //busca el elemento con el id correspondiente
+        let element = document.getElementById(hash);
+        //si existe un elemento con el id correspondiente
+        if (element) {
+            //hace scroll hasta el elemento pero 90px más arriba para que no quede pegado al tope
+            var navbarHeight = 90;
+            //has scroll hasta el elemento
+            window.scroll({
+                //resta la altura del navbar para que no quede pegado al tope
+                top: element.offsetTop - navbarHeight,
+                left: 0,
+                behavior: 'smooth'
+            });
+
+        }
+    }
+
+}
+/*<!------------------------------------------------->
+<!--	end openCard	-->
 <!------------------------------------------------->*/
