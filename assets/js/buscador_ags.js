@@ -9,7 +9,7 @@
 <!--	Parámetros	-->
 <!------------------------------------------------->*/
 
-const URLdata = "https://sheets.googleapis.com/v4/spreadsheets/1WAvF8Qs9s9EK6mAv1KY9hpGKxdFQ5V9myJpTjBkECIE/values/gdl!A1:A?key=AIzaSyDzdEQYUcSwjzEmZNZhYd2vh1E_P6ykPAY";
+const URLdata = "https://sheets.googleapis.com/v4/spreadsheets/1WAvF8Qs9s9EK6mAv1KY9hpGKxdFQ5V9myJpTjBkECIE/values/ags!A1:A?key=AIzaSyDzdEQYUcSwjzEmZNZhYd2vh1E_P6ykPAY";
 
 /*<!------------------------------------------------->
 <!--	end Parámetros	-->
@@ -88,11 +88,12 @@ function compareEntryData(data, id) {
   let clavesArray = dataToArray(data);
   //encripta el id proporcionado por el asesor
   let encrypted = encriptadorId(id);
-  // console.log(encrypted);
-  // console.log(clavesArray.indexOf('zddnlni'));
+  console.log(encrypted);
+  console.log(clavesArray);
+  console.log(clavesArray.indexOf('zddnlni'));
   //verifica si el id existe en la base de datos y actúa dependiendo el caso. 
   if (clavesArray.indexOf(encrypted) !== -1) {
-    let url = 'https://smartcenter.up.edu.mx/dpi/gdl/dpi.html?id=' + encrypted;
+    let url = 'https://smartcenter.up.edu.mx/dpi/ags/dpi.html?id=' + encrypted;
     window.open(url);
   } else {
     alert("El alumno que estás buscando no está en nuestros registros");
@@ -107,7 +108,7 @@ function compareEntryData(data, id) {
 <!-------------------------------------------------->
 * Descripción:
     Toma los datos de la promesa y los convierte en un arreglo
-* Parámetros:
+* Parámetros: saf
     -data: Objeto con arreglos de datos
 * Dependencias: ninguna
 * Devuelve/resultado: un arreglo con las claves encriptadas de los DPIs existentes.
