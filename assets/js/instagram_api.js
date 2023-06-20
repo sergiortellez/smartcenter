@@ -9,6 +9,31 @@ Instagram Generator api
 ¿De dónde salen estos datos? 
 Api de Instagram 
 
+TOKEN EXPIRADO? 
+
+1) hacer la prueba de token expirado con este código:
+
+*********
+var url = "token";
+
+fetch(url)
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error:', error));
+
+*********
+
+2) Si el error devuelve un token expirado, entonces hay que generar uno nuevo.
+
+3) Para generar un nuevo token, hay que ir a https://developers.facebook.com/apps y seguir los siguientes pasos:
+    -selecciona tu app
+    -haz click en "visualización básica de instagram"
+    -haz click en "visualización básica"
+    - ve a "User Token Generator"
+    - Genera un nuevo token
+    -sustitúyelo en este documento de sheets: 
+
+
 
 /*<------------------------------------------------->
 <!--	Parámetros	-->
