@@ -1082,6 +1082,46 @@ nav.expanded .navContents a {
 /* end title */
 /*-------------------------------*/
 
+/*-------------------------------*/
+/* experiencias presenciales */
+/*-------------------------------*/
+
+.experiencias-grid > .experiencias_presenciales {
+    
+    display: flex;
+    flex-direction: row;
+    background-color: #e8e6e6;
+    padding: 1rem;
+
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+
+    grid-column: span 2;
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .experiencias-grid > .experiencias_presenciales {
+        grid-column: span 3;
+    }
+}
+/* end tablet up */
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    .experiencias-grid > .experiencias_presenciales {
+        grid-column: span 6;
+    }
+}
+/* end tablet up */
+
+/*-------------------------------*/
+/* end experiencias presenciales */
+/*-------------------------------*/
+
 /*###################################################*/
 /*...................................................*/
 /* end experiencias generales */
