@@ -30,20 +30,50 @@ function expandImage(currentImg) {
 
     // Encuentra el contenedor de la imagen expandida (está inmediatamente después del contenedor de miniaturas)
     var expandContainer = contenedorMiniaturas.nextElementSibling;
+    //borra cualquier cosa dentro del contenedor
+    expandContainer.innerHTML = '';
+    //prueba si el elemento es una imagen o un video
+    if (currentImg.tagName == 'IMG') {
+        //crea una imagen 
+        const expandedImage = document.createElement('img');
+        //le da un atributo src
+        expandedImage.setAttribute('src', currentImg.src);
+        //dale un atributo data-image con el valor 'expandedImg'
+        expandedImage.setAttribute('data-image', 'expandedImg');
+        //dale un atributo alt con el valor del alt de la imagen
+        expandedImage.setAttribute('alt', currentImg.alt);
+
+        //fija el ancho a 100%
+        expandedImage.style.width = '100%';
+        //agrega la imagen al contenedor de la imagen expandida
+        expandContainer.appendChild(expandedImage);
 
 
-    //encuentra la imagen 
-    var expandImg = expandContainer.querySelector("[data-image='expandedImg']");
+        // encuentra el contenedor de texto
+        const expandTxt = expandContainer.querySelector("[data-txt='imgtext']");
+        //crea un elemento span
+        const textContainerSpan = document.createElement('span');
+        //dale un atributo data-txt con el valor 'imgtext'
+        textContainerSpan.setAttribute('data-txt', 'imgtext');
+        //Usa el valor del atributo alt de la imagen como texto dentro de la imagen expandida
+        textContainerSpan.innerHTML = currentImg.alt;
+        //agrega el texto al contenedor de imagen
+        expandContainer.appendChild(textContainerSpan);
 
-    // encuentra el contenedor de texto
-    var expandTxt = expandContainer.querySelector("[data-txt='imgtext']");
-
-
-    // Use the same src in the expanded image as the image being clicked on from the grid
-    expandImg.src = currentImg.src;
-
-    // Use the value of the alt attribute of the clickable image as text inside the expanded image
-    expandTxt.innerHTML = currentImg.alt;
+    } else if (currentImg.tagName == 'VIDEO') {
+        //crea un video 
+        const expandedVideo = document.createElement('video');
+        //le da un atributo src
+        expandedVideo.setAttribute('src', currentImg.src);
+        //dale un atributo data-image con el valor 'expandedImg'
+        expandedVideo.setAttribute('data-image', 'expandedImg');
+        //fija el ancho a 100%
+        expandedVideo.style.width = '85%';
+        //añade el atributo controls
+        expandedVideo.setAttribute('controls', '');
+        //agrega la imagen al contenedor de la imagen expandida
+        expandContainer.appendChild(expandedVideo);
+    }
 
 }
 /*<!------------------------------------------------->

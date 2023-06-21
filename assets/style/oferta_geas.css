@@ -615,7 +615,7 @@ button[data-action='close']:focus {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    min-width: 45vw;
+    flex: 1;
 }
 
 .descriptions .que_es,
@@ -771,21 +771,24 @@ button.send-info-button:hover svg {
     align-items: baseline;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    
 }
 
 
-.miniaturas img {
+.miniaturas img,
+.miniaturas video {
   opacity: 0.6; 
   cursor: pointer; 
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   object-fit: contain;
 }
 
 
 /* el !important es porque al modificar con JS el estilo de la primer imagen se estaba sobrescribiendo este hover */
-.miniaturas img:hover {
+.miniaturas img:hover,
+.miniaturas video:hover {
   opacity: 1!important;
 }
 
@@ -815,7 +818,8 @@ button.send-info-button:hover svg {
 /* end tablet up */
 
 
-.image_container img{
+.image_container img,
+.image_container video {
     width: 100%;
     height: auto;
 }
