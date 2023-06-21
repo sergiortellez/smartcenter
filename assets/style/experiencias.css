@@ -920,9 +920,8 @@ button[data-action='close']:focus {
 }
 
 #master {
-    /* TODO: Paleta de colores del curso de acuerdo al logo */
-     --customCourse: #b38e2d;
-    --customCourseMono: #ffe07d;
+     --customCourse: #f9bc00;
+    --customCourseMono: #0e38a2;
     --customCourseContrast: #114876;
     --customCourseText:#000;
 }
@@ -931,7 +930,7 @@ button[data-action='close']:focus {
      --customCourse: #2b428c;
     --customCourseMono: #7079be;
     --customCourseContrast: #8c7b2b;
-    --customCourseText:#fff;
+    --customCourseText:#000;
 }
 /*-------------------------------*/
 /* end custom course */
