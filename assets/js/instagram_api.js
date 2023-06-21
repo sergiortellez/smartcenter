@@ -31,7 +31,7 @@ fetch(url)
     -haz click en "visualización básica"
     - ve a "User Token Generator"
     - Genera un nuevo token
-    -sustitúyelo en este documento de sheets: 
+    -sustitúyelo en este documento de sheets: https://docs.google.com/spreadsheets/d/12s8z3DKqUWCre_FnzjAPDZKqOwrSW6WaiQ708cdeUvM/edit#gid=2043418408
 
 
 
@@ -39,13 +39,11 @@ fetch(url)
 <!--	Parámetros	-->
 <!------------------------------------------------->*/
 
-//TODO: enviar el token a google sheets y usar su api como backend, crear un nuevo documento para la api de instagram y crear las tarjetas. (es importante por privacidad y manejar la caducidad del token) 
-//clave de acceso
-const accessToken = "IGQVJVYVlUcDkxZA2FMTnhaOGl1SjUtdkRtV19fejdTYnd1S19jSHdMLTlxZAVdfVzNEWElScFNJQjF4bEFTZATZA6QnhvOFk4d3hjNzVNZA1VHSWpyeC1QOC1POVRZAMnI5aUhxOFNxVnVjeFBKcm9NMTVQdQZDZD";
-//¿Cuántos posts se necesitan?
-const limit = 8;
-//URL endpoint
-const endpoint = `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp,thumbnail_src,is_video,location&limit=${limit}&access_token=${accessToken}`;
+
+
+const URLdata = 'https://sheets.googleapis.com/v4/spreadsheets/12s8z3DKqUWCre_FnzjAPDZKqOwrSW6WaiQ708cdeUvM/values/token!A1?key=AIzaSyDzdEQYUcSwjzEmZNZhYd2vh1E_P6ykPAY';
+
+
 
 /*<!------------------------------------------------->
 <!--	end Parámetros	-->
@@ -65,15 +63,68 @@ const endpoint = `https://graph.instagram.com/me/media?fields=id,caption,media_t
 <!------------------------------------------------->*/
 
 window.onload = function () {
-    buildData();
+
+    getToken(URLdata);
 };
-
-
 
 
 /*<!------------------------------------------------->
 <!--	end onPageLoad	-->
 <!------------------------------------------------->*/
+
+/*<------------------------------------------------->
+<!--	getToken	-->
+<!-------------------------------------------------->
+* Descripción:
+    Usa un URL para hacer fetch a los datos de Jason, transforma esos datos en objetos que tienen arreglos, pasa como parámetro uno de esos arreglos '.values' a la función buildTable(). 
+* Parámetros:
+    -URLdata: string
+* Dependencias: fillTable()
+* Devuelve/resultado: genera un arreglo 'data' y lo pasa como parámetro a las funciones que construyen las tablas y gráficas
+<!------------------------------------------------->*/
+function getToken(URLdata) {
+    var data = [];
+    fetch(URLdata)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(object => {
+            data = object.values;
+            //funciones a ejecutar con la data:
+            //construye las tarjetas
+            getInstagramEndpoint(data);
+
+        });
+}
+/*<!------------------------------------------------->
+<!--	end getToken	-->
+<!------------------------------------------------->*/
+
+
+/*<------------------------------------------------->
+<!--	getInstagramEndpoint	-->
+<!-------------------------------------------------->
+* Descripción:
+    
+* Parámetros:
+    -
+* Dependencias:
+* Devuelve/resultado:
+<!------------------------------------------------->*/
+function getInstagramEndpoint(data) {
+    //clave de acceso
+    const accessToken = data[0][0];
+    //¿Cuántos posts se necesitan?
+    const limit = 8;
+    //URL endpoint
+    const endpoint = `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp,thumbnail_src,is_video,location&limit=${limit}&access_token=${accessToken}`;
+
+    buildData(endpoint);
+}
+/*<!------------------------------------------------->
+<!--	end getInstagramEndpoint	-->
+<!------------------------------------------------->*/
+
 
 /*<------------------------------------------------->
 <!--	buildData	-->
@@ -86,7 +137,7 @@ window.onload = function () {
 * Devuelve/resultado: genera un arreglo "data" y lo pasa como parámetro a las funciones que construyen la sección de noticias.
 <!------------------------------------------------->*/
 
-async function buildData() {
+async function buildData(endpoint) {
     try {
         const response = await fetch(endpoint);
         const json = await response.json();
