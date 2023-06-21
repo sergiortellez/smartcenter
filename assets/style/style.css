@@ -1408,6 +1408,15 @@ grid-column: span 2;
 }
 /* end tablet up */
 
+/* tablet landscape up */
+/* Por estética el botón de AU ahora dura 4 columnas en tamaños grandes */
+@media (min-width: 1024.1px) {
+    [data-id="que_es_au"] {
+        grid-column: span 4!important;
+}
+}
+/* end tablet up */
+
 
 
 /*-------------------------------*/
