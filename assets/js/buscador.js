@@ -9,7 +9,7 @@
 <!--	Parámetros	-->
 <!------------------------------------------------->*/
 
-const URLdata = "https://sheets.googleapis.com/v4/spreadsheets/1WAvF8Qs9s9EK6mAv1KY9hpGKxdFQ5V9myJpTjBkECIE/values/gdl!A1:A?key=AIzaSyDzdEQYUcSwjzEmZNZhYd2vh1E_P6ykPAY";
+const URLdata = "https://sheets.googleapis.com/v4/spreadsheets/1WAvF8Qs9s9EK6mAv1KY9hpGKxdFQ5V9myJpTjBkECIE/values/cdmx!A1:A?key=AIzaSyDzdEQYUcSwjzEmZNZhYd2vh1E_P6ykPAY";
 
 /*<!------------------------------------------------->
 <!--	end Parámetros	-->
