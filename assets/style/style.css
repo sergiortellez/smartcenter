@@ -792,9 +792,11 @@ nav.expanded .navContents a {
 @media (min-width: 1054.1px) {
     .banner {
         width: calc((100vw * 1.61803398874)/(1 + 1.61803398874));
+        align-items: center;
     }
 
     .banner iframe {
+        top: 4rem;
         width: 100%;
         height: 100%;
         overflow: hidden;
