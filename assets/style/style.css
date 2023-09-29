@@ -1100,6 +1100,29 @@ nav.expanded .navContents a {
     -o-border-radius: 15px;
 
     grid-column: span 2;
+    min-height: 10rem;
+
+    /* background-image: url(../images/map.webp);
+    background-repeat: no-repeat;
+    background-position: center; */
+    overflow: hidden;
+    position: relative;
+    /* las fotos tienen un z index negativo, hay que reiniciar el stack para que no desaparezcan */
+    isolation: isolate;
+}
+
+.experiencias_presenciales img {
+    width: 100%;
+    transform: translate3d(0%, -294.036px, 0px);
+    opacity: 1;
+    -webkit-transform: translate3d(0%, -294.036px, 0px);
+    -moz-transform: translate3d(0%, -294.036px, 0px);
+    -ms-transform: translate3d(0%, -294.036px, 0px);
+    -o-transform: translate3d(0%, -294.036px, 0px);
+    z-index: -1;
+    position: absolute;
+    top: -0%;
+    left: 0;
 }
 
 /* tablet portrait up */
