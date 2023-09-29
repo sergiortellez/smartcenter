@@ -770,15 +770,19 @@ nav.expanded .navContents a {
     .banner {
         min-height: calc(100vh - var(--navHeight));
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
     }
 
     .banner iframe {
-        width: 100%;
-        /* evita que la animación de hype se desborde, 600 es lo que mide el original */
+        position: relative;
+        top: -4rem;
+        margin-top: 0rem;
         height: 100%;
-        margin-top: 8rem;
+        width: 100%;
+        /* no permitas scroll bars */
+        overflow: hidden;
+
         /* max-height: 600px; */
     }
 }
@@ -794,6 +798,7 @@ nav.expanded .navContents a {
         width: 100%;
         height: 100%;
         overflow: hidden;
+        margin-top: 4rem;
     }
 }
 
