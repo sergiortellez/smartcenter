@@ -9,7 +9,8 @@ var carouselsContainers = document.querySelectorAll(".carrousel_container");
 //selecciona el visor de previsualización
 const videoPreview = document.querySelector('#previewVideo');
 // Esta constante guarda la clave API de Google. 
-const API_KEY = "AIzaSyAY92qoSUcTrzZ669HLcAh-Mx9KBKKfePo";
+const API_KEY = "AIzaSyCwGNVWWv5RMKWf_djwHzjE8mNigWnxGzE";
+// AIzaSyAY92qoSUcTrzZ669HLcAh - Mx9KBKKfePo
 
 /*<!------------------------------------------------->
 <!--	end variables Globales	-->
@@ -33,6 +34,7 @@ carouselsContainers.forEach(function (container) {
         .then(response => response.json())
         //Luego, se extrae la información relevante de cada video(ID, título y miniatura) y se almacena en una nueva constante`videos`
         .then(data => {
+            console.log(data);
             const videos = data.items.map(item => {
                 return {
                     id: item.snippet.resourceId.videoId,
