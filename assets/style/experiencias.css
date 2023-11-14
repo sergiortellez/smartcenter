@@ -932,6 +932,13 @@ button[data-action='close']:focus {
     --customCourseContrast: #8c7b2b;
     --customCourseText:#000;
 }
+
+#powerup {
+     --customCourse: #535459;
+    --customCourseMono: #a7abc5;
+    --customCourseContrast: #8c7b2b;
+    --customCourseText:#ffffff;
+}
 /*-------------------------------*/
 /* end custom course */
 /*-------------------------------*/
