@@ -36,7 +36,7 @@ function getID() {
   //llama la función buildData() que contiene una promesa de fetch de datos de JSON (las claves encriptadas de cada DPI) por eso la ejecución tendrá que continuar en el resultado de la promesa: 
   buildData(URLdata, id);
   //resetea la caja de búsqueda
-  document.getElementById('search').value = ' ';
+  document.getElementById('search').value = '';
 
 
 }
@@ -197,4 +197,4 @@ function encriptadorId(idAlumno) {
   }
 
 }
-  /* -----------fin función encriptadorId()----------- */
+/* -----------fin función encriptadorId()----------- */

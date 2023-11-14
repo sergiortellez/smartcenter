@@ -43,6 +43,7 @@
 
         gtag('config', 'G-FM403JG22S');
     </script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
 
 </head>
 
@@ -80,14 +81,28 @@
     <!------------------------------------------------->
     <!--	app buscador	-->
     <!------------------------------------------------->
-    <section id="buscador">
-        <header>
-            <span>Bienvenido al buscador de reportes DPI para los asesores de la UP</span>
-        </header>
-        <div class="busqueda" style="background-color: rgb(215, 209, 209); ">
-            <i class="fa-duotone fa-person-digging" style="font-size: 3rem; margin-right: 1rem;"></i> Estamos trabajando para ti, regresa pronto...
+
+    <!-- botón login -->
+    <section class="login">
+
+        <div id="g_id_onload" data-client_id="94652977258-lf78996qj8qd6i9fgeg0j6qk1aq2ehp1.apps.googleusercontent.com" data-context="use" data-ux_mode="popup" data-callback="responseGOauth" data-nonce="">
+
         </div>
-        <!-- <div class="busqueda">
+
+        <div class="g_id_signin" data-type="standard" data-shape="pill" data-theme="outline" data-text="$ {button.text}" data-size="large" data-locale="es-419" data-logo_alignment="left"></div>
+
+    </section>
+    <!-- Aviso de bloqueo -->
+    <section id="notLogged">
+        <div class="busqueda" style="background-color: rgb(215, 209, 209); ">
+
+            <i class=" fa-duotone fa-user-lock" style="font-size: 3rem; margin-right: 1rem;"></i>
+            <span>Bienvenido al buscador de reportes DPI para los asesores de la UP, usa tu cuenta de la universidad para acceder.</span>
+        </div>
+    </section>
+    <!-- buscador -->
+    <section id="buscador">
+        <div class="busqueda">
             <input id="search" type="search" placeholder="Número de cuenta del alumno" required>
             <button onclick="getID()"><i class="fa-duotone fa-search"></i></button>
         </div>
@@ -106,7 +121,7 @@
             <div class="info">
                 <i class="fa-duotone fa-envelope"></i> <span>Si deseas consultar reportes de generaciones anteriores, dirígete al Coordinador de tu escuela o facultad.</span>
             </div>
-        </div> -->
+        </div>
     </section>
     <!------------------------------------------------->
     <!--	end app buscador	-->
@@ -152,6 +167,8 @@
 <!-- nav -->
 <script src="../assets/js/nav_buscador.min.js"></script>
 <!-- buscador -->
-<!-- <script src="../assets/js/buscador.min.js"></script> -->
+
+<script src="../assets/js/loginbuscador.min.js"></script>
+<script src="../assets/js/buscador.min.js"></script>
 
 </html>
