@@ -612,6 +612,15 @@ button[data-action='close']:focus {
     gap: 1rem;
 }
 
+/* desktop up */
+@media (min-width: 1600px) {
+    .descriptions .que_es{
+        min-width: 20rem;
+    }
+   
+}
+/* end desktop up */
+ 
 .descriptions .que_es,
 .descriptions .que_esperar,
 .descriptions .instrucciones {
@@ -687,6 +696,15 @@ button[data-action='close']:focus {
 .interactivas {
     min-width: 50vw;
 }
+/* desktop up */
+@media (min-width: 1600px) {
+   
+     .descriptions .interactivas{
+        min-width: 50rem;
+    }
+   
+}
+/* end desktop up */
 
 .boton_out_experiencia {
     display: flex;
@@ -729,11 +747,12 @@ button[data-action='close']:focus {
 }
 
 .playlist {
-    min-width: 45vw;
+    min-width: 25rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
+
 
 .video_card {
     display: flex;
