@@ -1648,6 +1648,14 @@ grid-column: span 2;
 }
 /* end cellphone landscape down */
 
+/* desktop up */
+@media (min-width: 1600px) {
+    #cambio_asesor {
+        grid-column: span 2;
+    }
+}
+/* end desktop up */
+
 
 /*-------------------------------*/
 /* end cambio de asesor */
