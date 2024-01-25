@@ -3021,7 +3021,7 @@ justify-content: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
-    gap: 1rem;
+    gap: 0.4rem;
     padding: 1rem;
 }
 
@@ -3068,6 +3068,7 @@ justify-content: center;
     -moz-transition: scale 300ms ease;
     -ms-transition: scale 300ms ease;
     -o-transition: scale 300ms ease;
+     overflow: hidden;
 }
 
 .person:hover {
@@ -3138,7 +3139,7 @@ justify-content: center;
 
 /* end tablet up */
 .card-data {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     position: absolute;
     visibility: hidden;
     white-space: nowrap;
