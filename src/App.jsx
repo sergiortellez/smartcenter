@@ -27,6 +27,9 @@ function App() {
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
+        <i className="fas fa-coffee"></i> {/* Example of a solid icon */}
+        <i className="far fa-user"></i> {/* Example of a regular icon */}
+        <i className="fab fa-github"></i> {/* Example of a brand icon */}
       </p>
     </>
   )
