@@ -30,6 +30,7 @@
 
         gtag('config', 'G-FM403JG22S');
     </script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 
 <body>
@@ -39,10 +40,29 @@
         AOS.init();
     </script>
 
+    <!-- botón login -->
+    <section class="login">
+
+        <div id="g_id_onload" data-client_id="94652977258-lf78996qj8qd6i9fgeg0j6qk1aq2ehp1.apps.googleusercontent.com" data-context="use" data-ux_mode="popup" data-callback="responseGOauth" data-nonce="">
+
+        </div>
+
+        <div class="g_id_signin" data-type="standard" data-shape="pill" data-theme="outline" data-text="$ {button.text}" data-size="large" data-locale="es-419" data-logo_alignment="left"></div>
+
+    </section>
+    <!-- Aviso de bloqueo -->
+    <section id="notLogged">
+        <div class="busqueda" style="background-color: rgb(215, 209, 209); ">
+
+            <i class=" fa-duotone fa-user-lock" style="font-size: 3rem; margin-right: 1rem;"></i>
+            <span>Bienvenido a tu reporte DPI, inicia sesión con tu cuenta de la universidad para consultar.</span>
+        </div>
+    </section>
+
     <!------------------------------------------------->
     <!--	iframe	-->
     <!------------------------------------------------->
-    <section class="iframeContainer">
+    <section class="iframeContainer" id="dpi">
 
         <iframe id="dpiIframe" src="" frameborder="0"></iframe>
 
@@ -68,6 +88,11 @@
         var iframe = document.getElementById('dpiIframe');
         iframe.setAttribute('src', frameURL);
     </script>
+
+
+    <script src="../assets/js/logindpi.min.js"></script>
+
+
 
 </body>
 
