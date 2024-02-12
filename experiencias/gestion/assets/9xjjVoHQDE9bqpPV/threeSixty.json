@@ -1,0 +1,35 @@
+{
+  "version": "3.73.29904.0",
+  "course_id": "6TZBTVVODbu",
+  "title": "DIANA PROYECTO",
+  "thumbnail": "story_content/thumbnail.jpg",
+  "scenes": [
+    {
+      "title": "Escena sin título"
+    },
+    {
+      "title": "Escena sin título"
+    }
+  ],
+  "slides": [
+    {
+      "id": "60VbQnElbAi",
+      "title": "Listo",
+      "scene_index": "1.1"
+    },
+    {
+      "id": "5wgTssOKiaU",
+      "title": "Diapositiva sin título",
+      "scene_index": "2.1"
+    }
+  ],
+  "player": {
+    "name": "unified",
+    "width": 978,
+    "height": 601
+  },
+  "stage": {
+    "width": 958,
+    "height": 530
+  }
+}

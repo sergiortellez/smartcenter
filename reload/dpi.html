@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        /* ---------------------------------------------------------------------------
+    ------------------------------------------------------------------------------
+    Para redirigir a dpi.html en la implementación SMART 2.0 se han modificado los archivos de origen de para todos los usuarios nuevos. Sin embargo los usuarios que presentaron el DPI antes del lanzamiento tienen un enlace reload/dpi.html, así que será necesario redirigirlos a dpi.html.
+    Las url de la forma: http://192.168.1.80:3002/reload/dpi.html?id=zdgdsgd se procesarán de esta forma:
+    ------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------*/
+        //obtén el string de la URL
+        const queryString = window.location.search;
+        //busca los parámetros en ese string
+        const urlParams = new URLSearchParams(queryString);
+        //consigue el id
+        const id = urlParams.get('id');
+        //arma un nuevo url
+        const url = '../dpi/dpi.html' + '?id=' + id;
+        //redirige
+        window.location.replace(url);
+    </script>
+
+</body>
+
+</html>

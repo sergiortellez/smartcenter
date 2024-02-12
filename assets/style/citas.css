@@ -1,0 +1,653 @@
+/*###################################################*/
+/*...................................................*/
+/* root variables (responsive font size installed)   */
+/*...................................................*/
+/*###################################################*/
+
+:root {
+    /* font size */
+    --fs-b: 14px;
+    /* custom colors */
+    --smartRed: #771d32;
+    --smartBlue: #122e5b;
+    --smartGreen: #005245;
+    --smartYellow: #9f8156;
+    /* custom colors mono */
+     --smartRedMono: #771d324b;
+    --smartBlueMono: #122e5b5d;
+    --smartGreenMono: #00524455;
+    --smartYellowMono: #9f815650;
+    /* theme colors */
+    --background: #ffffff;
+    --text: #000;
+    --primary: #ac8a54;
+    --orangeBtn: var(--primary);
+    --navHeight: 7vh;
+}
+
+/* tablet up */
+@media (min-width: 768px) {
+    :root {
+        /* font size */
+        --fs-b: 16px;
+    }
+}
+
+/* end tablet up */
+
+/* laptop up */
+@media (min-width: 991px) {
+    :root {
+        /* font size */
+        --fs-b: 18px;
+    }
+}
+
+/* end laptop up */
+
+/* desktop up */
+@media (min-width: 1300px) {
+    :root {
+        /* font size */
+        --fs-b: 22px;
+    }
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end root variables                                */
+/*...................................................*/
+/*###################################################*/
+
+
+/*###################################################*/
+/*...................................................*/
+/* general properties */
+/*...................................................*/
+/*###################################################*/
+
+html {
+    /* scroll smooth from nav control */
+    scroll-behavior: smooth;
+    /* font size general control using variable */
+    font-size: var(--fs-b);
+    /* font-family oficial de SMART  */
+    font-family: 'Nunito', sans-serif;
+    /* protección de movimiento de overflow por animaciones */
+    overflow-x: hidden;
+
+}
+
+
+body {
+    /* scroll spy */
+    overflow-y: scroll;
+
+    background-color: var(--brColor);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+
+    /* protección de movimiento de overflow por animaciones */
+    overflow-x: hidden;
+
+}
+
+/* ajustando y centrando el contenido en un ancho máximo */
+body>section {
+    max-width: 1824px;
+    margin: 5rem auto !important;
+    float: none !important;
+}
+
+
+
+h3 {
+    font-size: 2.3rem;
+}
+
+
+/*###################################################*/
+/*...................................................*/
+/* end general properties */
+/*...................................................*/
+/*###################################################*/
+
+/*###################################################*/
+/*...................................................*/
+/* navbar */
+/*...................................................*/
+/*###################################################*/
+
+
+/*-------------------------------*/
+/* collapsed mobile nav */
+/*-------------------------------*/
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    background-color: var(--background);
+    color: var(--text);
+    border-bottom: 6px solid var(--primary);
+    font-weight: 200;
+
+    /* fixed from materialized  */
+    line-height: unset;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+
+    /* Set the navbar to fixed position */
+    height: auto;
+    position: fixed;
+    top: 0;
+    /* full width */
+    width: 100vw;
+
+    /* always in the front */
+    z-index: 9;
+}
+
+/* eliminamos los estilos por defecto de los botones dentro de la nav */
+nav button {
+    all: unset;
+}
+
+nav button:focus {
+    all: unset;
+}
+
+/*-------------------------------*/
+/* brand */
+/*-------------------------------*/
+
+.navIcons {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 90vw;
+    height: var(--navHeight);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconTrigger {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--text);
+}
+
+#navSmartLogoMin {
+    height: 1.8rem;
+    width: auto;
+}
+
+#navSmartLogo {
+    display: none;
+}
+
+#navUpLogo {
+    display: none;
+}
+
+/*-------------------------------*/
+/* end brand */
+/*-------------------------------*/
+
+
+nav .navContents {
+    /*propiedades a animar*/
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+
+    /*control de animaciones*/
+    transition: visibility 0s, opacity 0.3s, height 0.4s linear;
+    -webkit-transition: visibility 0s, opacity 0.3s, height 0.4s linear;
+    -moz-transition: visibility 0s, opacity 0.3s, height 0.4s linear;
+    -ms-transition: visibility 0s, opacity 0.3s, height 0.4s linear;
+    -o-transition: visibility 0s, opacity 0.3s, height 0.4s linear;
+}
+
+
+/*-------------------------------*/
+/* end collapsed mobile nav */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* expanded mobile nav */
+/*-------------------------------*/
+nav.expanded {
+    display: flex;
+    flex-direction: column;
+
+}
+
+nav.expanded .navContents {
+    /* segunda parte de la animación */
+    visibility: visible;
+    opacity: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    height: calc(100vh - var(--navHeight));
+
+
+
+}
+
+nav.expanded .navContents a {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.512);
+}
+
+.navContents a {
+    color: var(--text);
+    text-align: center;
+    padding: 2rem 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+    /* evita que los menús se vayan a doble línea */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.navContents a.active {
+    background-color: var(--primary);
+    color: white;
+    font-weight: 300;
+}
+
+/*-------------------------------*/
+/* end expanded mobile nav */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* Tabletas y computadoras */
+/*-------------------------------*/
+
+/* desktop up */
+@media (min-width: 648px) {
+    nav {
+        height: var(--navHeight);
+        flex-direction: row;
+        align-items: flex-end;
+        --navHeight: 11vh
+    }
+
+    .iconTrigger {
+        display: none;
+    }
+
+    nav .navIcons {
+        width: auto;
+        margin-left: 1rem;
+    }
+
+    nav .navContents {
+        visibility: visible;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        height: 7vh;
+    }
+
+    nav .navContents a {
+        font-size: 1rem;
+        padding: 0 0.7rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    /* ---brand--- */
+
+    #navSmartLogoMin {
+        display: none;
+        height: 1.2rem;
+        width: auto;
+        margin-top: 10px;
+    }
+
+    #navSmartLogo {
+        display: inline;
+        height: auto;
+        width: 8rem;
+
+    }
+
+
+    /* ---end brand--- */
+}
+
+/* end desktop up */
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    nav {
+        --navHeight: 16vh;
+        transition: height 0.2s ease;
+        -webkit-transition: height 0.2s ease;
+        -moz-transition: height 0.2s ease;
+        -ms-transition: height 0.2s ease;
+        -o-transition: height 0.2s ease;
+    }
+
+    #navUpLogo {
+        display: inline;
+        height: 4rem;
+        width: auto;
+        padding-left: 1rem;
+        border-left: 0.5px solid var(--primary);
+        margin-left: 1rem;
+    }
+}
+
+/* end tablet up */
+
+/*-------------------------------*/
+/* end Tabletas y computadoras */
+/*-------------------------------*/
+
+
+
+/*###################################################*/
+/*...................................................*/
+/* end navbar */
+/*...................................................*/
+/*###################################################*/
+
+/*###################################################*/
+/*...................................................*/
+/* app citas */
+/*...................................................*/
+/*###################################################*/
+
+#app_citas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 35vh;
+    padding-top: var(--navHeight);
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end app_citas */
+/*...................................................*/
+/*###################################################*/
+
+/*###################################################*/
+/*...................................................*/
+/* loader */
+/*...................................................*/
+/*###################################################*/
+
+#loader {
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+     transition: all 0.3s ease;
+    animation: placeholder-fade 3s linear infinite;
+}
+
+.loader_cards{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .loader_cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/* end tablet up */
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    .loader_cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+/* end tablet up */
+
+.loader_phanthom{
+    display: flex;
+    align-items: left;
+    justify-content: top;
+    flex-direction: column;
+    min-height: 22rem;
+    width: 100%;
+    height: 12rem;
+    background-color: gray;
+    border-radius: 5px;
+   
+}
+
+/* animación  */
+@keyframes placeholder-fade {
+    0% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0.7;
+    }
+}
+/* end animación  */
+.loader_top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader_logo{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #ada5a5;
+}
+
+.loader_menu{
+    display: none;
+}
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .loader_menu{
+    width: 100%;
+    display: flex;
+    align-items:space-between; 
+    justify-content: center;
+    margin: 0;
+}
+}
+/* end tablet up */
+.phanthom_title{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 10%;
+    height: 1.5rem;
+    background-color: #ada5a5;
+    border-radius: 10px;
+}
+
+#loader hr{
+    width: 100%;
+    margin: 0;
+}
+
+.phanthom_img {
+   width: 100%;
+   height: 60%;
+    background-color: #ada5a5;
+}
+.phanthom_txt{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 40%;
+    height: 1.5rem;
+    background-color: #ada5a5;
+    border-radius: 10px;
+}
+.phanthom_button{
+    margin-top: 2rem;
+    align-self: center;
+    width: 80%;
+    height: 3rem;
+    background-color: #ada5a5;
+    border-radius: 20px;
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end loader */
+/*...................................................*/
+/*###################################################*/
+
+
+/*###################################################*/
+/*...................................................*/
+/* footer */
+/*...................................................*/
+/*###################################################*/
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    background-color: var(--smartRed);
+    padding: 3rem;
+    color: var(--background);
+    text-align: center;
+    margin-top: auto;
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    footer {
+        flex-direction: row;
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+}
+
+/* end tablet up */
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    footer {
+        flex-direction: row;
+        font-size: 1rem;
+        padding: 3rem;
+    }
+}
+
+/* end tablet up */
+
+footer a {
+    color: var(--background);
+}
+
+footer a:visited {
+    color: var(--background);
+}
+
+footer svg {
+    font-size: 1.3rem;
+}
+
+/*-------------------------------*/
+/* up logo */
+/*-------------------------------*/
+
+#footer_logo {
+    width: 18rem;
+}
+
+/* tablet portrait up */
+@media (min-width:768px) and (max-width:1024.1px) {
+    #footer_logo {
+        width: 12rem;
+    }
+}
+
+/* end tablet up */
+/*-------------------------------*/
+/* end up logo */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* legales y links */
+/*-------------------------------*/
+#footer_derechos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+#footer_redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+/*-------------------------------*/
+/* end legales y links */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* dirección y contacto */
+/*-------------------------------*/
+#footer_contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    #footer_contacto {
+        align-items: flex-start;
+    }
+}
+
+/* end tablet up */
+
+
+/*-------------------------------*/
+/* end dirección y contacto */
+/*-------------------------------*/
+
+/*###################################################*/
+/*...................................................*/
+/* end footer */
+/*...................................................*/
+/*###################################################*/

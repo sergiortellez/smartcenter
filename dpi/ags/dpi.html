@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='author' content='Desarrollo: Sergio R. Téllez'>
+    <meta name='author' content='Diseño: Sergio R. Téllez'>
+    <!-- font awesome kit -->
+    <script src='https://kit.fontawesome.com/c09e05c963.js' crossorigin='anonymous'></script>
+    <!-- Google fonts -->
+    <link rel='preconnect' href='https://fonts.gstatic.com'>
+    <link href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100;1,300;1,500;1,900&display=swap' rel='stylesheet'>
+    <title>DPI | SMART Center</title>
+    <!-- css -->
+    <link rel='stylesheet' href='../../assets/style/dpi.min.css'>
+    <!-- Fav icon -->
+    <link rel='apple-touch-icon' sizes='180x180' href='../../assets/images/favicon/apple-touch-icon.png'>
+    <link rel='icon' type='image/png' sizes='32x32' href='../../assets/images/favicon/favicon-32x32.png'>
+    <link rel='icon' type='image/png' sizes='16x16' href='../../assets/images/favicon/favicon-16x16.png'>
+    <link rel='manifest' href='../../assets/images/favicon/site.webmanifest'>
+
+    <!-- Animations On Scroll -->
+    <link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet'>
+    <!-- genera el  favicon en https://favicon.io/favicon-converter/ nombra la carpeta resultante como 'favicon' y ponla en assets-->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FM403JG22S"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FM403JG22S');
+    </script>
+</head>
+
+<body>
+    <!--Animations On Scroll, animaciones on view-->
+    <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!------------------------------------------------->
+    <!--	iframe	-->
+    <!------------------------------------------------->
+    <section class="iframeContainer">
+
+        <iframe id="dpiIframe" src="" frameborder="0"></iframe>
+
+    </section>
+
+    <!------------------------------------------------->
+    <!--	end iframe	-->
+    <!------------------------------------------------->
+
+
+    <script>
+        //obtén el string de parámetros en la URL
+        const queryString = window.location.search;
+        //busca los parámetros en ese string
+        const urlParams = new URLSearchParams(queryString);
+        //consigue el id
+        const id = urlParams.get('id');
+        //id de la implementación, debe cambiarse cada vez que se implementa (se hacen cambios en el backend)
+        const idImplementacion = 'AKfycbyMvV0d3aAvaYOniaoMlJBJF7BdOkWALjZdJKUFPKoJZmFUu_MT3Ifh1i5KDg81TfzH';
+        //arma un nuevo url
+        const frameURL = 'https://script.google.com/a/up.edu.mx/macros/s/' + idImplementacion + '/exec' + '?id=' + id;
+        //encuentra el iframe
+        var iframe = document.getElementById('dpiIframe');
+        iframe.setAttribute('src', frameURL);
+    </script>
+
+</body>
+
+</html>
