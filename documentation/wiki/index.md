@@ -6,7 +6,7 @@
 - [1. Introducción](#1-introducción)
   - [Objetivo del Proyecto](#objetivo-del-proyecto)
   - [Antecedentes](#antecedentes)
-  - [Tecnologías involucradas en el desarrollo](#tecnologías-involucradas-en-el-desarrollo)
+  - [Tecnologías y dependencias involucradas en el desarrollo](#tecnologías-y-dependencias-involucradas-en-el-desarrollo)
   - [Versiones](#versiones)
 - [2. Navegación](#2-navegación)
   - [Barra de Navegación (componente)](#barra-de-navegación-componente)
@@ -30,14 +30,14 @@
 ## 1. Introducción
 
    ### Objetivo del Proyecto
-      SMART Center es parte importante de la cultura universitaria de cara a los alumnos. El primer objetivo del proyecto es darle una 'casa en la red' al centro, un lugar de llegada para alumnos que desean acercarse a los servicios que se ofrecen en el mismo. 
-      Se pretende también que sea un trampolín para magnificar el alcance que el centro tiene al ofrecer experiencias asincrónicas y de valor. 
+   SMART Center es parte importante de la cultura universitaria de cara a los alumnos. El primer objetivo del proyecto es darle una 'casa en la red' al centro, un lugar de llegada para alumnos que desean acercarse a los servicios que se ofrecen en el mismo. 
+   Se pretende también que sea un trampolín para magnificar el alcance que el centro tiene al ofrecer experiencias asincrónicas y de valor. 
    
 
    ### Antecedentes
-      La manera orgánica en la que creció el sitio respecto a las necesidades del centro ocasionó problemas respecto a la elección y uso de tecnologías. A finales de 2019 se detectó la necesidad de reescribir todo el código usando una sola arquitectura y una lista de tecnologías definidas. Se abandonaron los frameworks y se restructuró todo a una arquitectura basada en componentes. 
+   La manera orgánica en la que creció el sitio respecto a las necesidades del centro ocasionó problemas respecto a la elección y uso de tecnologías. A finales de 2019 se detectó la necesidad de reescribir todo el código usando una sola arquitectura y una lista de tecnologías definidas. Se abandonaron los frameworks y se restructuró todo a una arquitectura basada en componentes. 
 
-   ### Tecnologías involucradas en el desarrollo
+   ### Tecnologías y dependencias involucradas en el desarrollo
 
    #### El sitio usa globalmente las siguientes **tecnologías**: 
 
@@ -67,31 +67,38 @@
 
    ### Versiones:
 
-   - **Alpha**  
+   - **Alpha** 
+
       Versión de prueba que se presentó a la Vicerrectoría de innovación, Diseño aprobado por comunicación institucional de la universidad.
       --- 
-   - **Beta**
+   - **Beta**  
+
       Primer versión pública, contenía una biblioteca de experiencias digitales (cursos) de un programa llamado "My career my success"
       ---
-   - **0.5**
+   - **0.5**  
+
       Primer versión que contenía un landing page para SMART, se explicaban los objetivos del centro. Contenía secciones de noticias en tiempo real y un buzón para que los alumnos se comunicaran con la dirección del centro. Además un directorio con los miembros del equipo. 
       ---
-   - **1.0**
+   - **1.0**  
+
       Versión que contenía una sección especializada para cada una de las sub secciones del Centro: 
       * Success Center: Además de la biblioteca de experiencias digitales los alumnos tenían acceso a un catálogo completo de las actividades de success, podían comunicarse con el área, pedir diplomas de sus cursos y calificar algunas experiencias.
       * Meeting Point: Se creó un catálogo para que los alumnos conocieran todas los grupos estudiantiles. Además de botones para que formaran sus propios grupos estudiantiles o se unieran a alguno.
       * Advisory: Se publicaron guías respecto a lo que el alumno pude esperar y debe hacer antes, durante y después de la asesoría universitaria. Se dio la posibilidad a los alumnos de solicitar un cambio de asesor desde Advisory. 
       * Reload & Talent: Se publicaron guías de aprovechamiento académico, consejos respecto a técnicas de estudio, y la agenda original del centro pertenecía a esta área.
       ---
-   - **1.5**
+   - **1.5**  
+
       A raíz del cambio de imagen institucional el Centro adaptó su página para seguir los estándares institucionales. 
       Desaparecieron las páginas de las secciones pues el enfoque del centro ahora sería centralizado, se trabajó más en un enfoque a lo que el alumno podía hacer en la página y menos en darle información innecesaria.
       --- 
-   - **2.0**
+   - **2.0**  
+
       
       Versión detallada en la presente wiki, se añaden detalles de cada versión a partir de 2.06:
 
-   - **2.06**
+   - **2.06**  
+
       * implementación del login en el buscador para asesores de DPI, ahora sólo cuentas de la UP pueden acceder.
       * Se añadió la tarjeta de Érika en el directorio.
       * Se actualizó el enlace del campus virtual.
@@ -108,7 +115,8 @@
       * Se eliminó totalmente la lista de bugs.
       ---
 
-   - **2.07**
+   - **2.07**  
+
       * La tarjeta de Aurora contiene el título correcto (disculpa el error).
       * Se añadió la tarjeta de Santiago.
       * Se añadió la tarjeta de Fer Sarmiento.
@@ -122,12 +130,14 @@
       * Mantenimiento generalizado semestral. 
       ---
 
-   - **2.08**
+   - **2.08**  
+
       Actualización de seguridad: 
       - Ahora los usuarios del buscador de asesores y del DPI deben estar logueados con una cuenta @up.edu.mx. 
       ---
 
-   - **2.09** 
+   - **2.09**  
+
       Actualización de seguridad: 
       - Ahora los números de cuenta en la aplicación DPI se encriptan con una llave de seguridad única para cada ID.
       - Se creó una pantalla para DPIs no encontrados que da instrucciones a los alumnos que escriban mal la URL.
@@ -180,106 +190,107 @@
 
       ####  Experiencias Digitales
 
-         1. **Organizing Your Life Like a Boss (Video)**
-            - **Duración:** 20min
-            - **Resumen:** Esta experiencia ofrece estrategias para mejorar la organización del tiempo y aumentar la productividad. Incluye 9 videos cortos con técnicas sencillas y la posibilidad de una sesión de coaching personalizado.
+      1. **Organizing Your Life Like a Boss (Video)**
+         - **Duración:** 20min
+         - **Resumen:** Esta experiencia ofrece estrategias para mejorar la organización del tiempo y aumentar la productividad. Incluye 9 videos cortos con técnicas sencillas y la posibilidad de una sesión de coaching personalizado.
 
-         2. **Discovering the Leader in You (Interactiva)**
-            - **Duración:** 10min
-            - **Resumen:** Un taller en línea para descubrir tu estilo de liderazgo y aprender cómo aplicarlo efectivamente en diversas situaciones.
+      2. **Discovering the Leader in You (Interactiva)**
+         - **Duración:** 10min
+         - **Resumen:** Un taller en línea para descubrir tu estilo de liderazgo y aprender cómo aplicarlo efectivamente en diversas situaciones.
 
-         3. **Your CV Your Masterpiece (Video)**
-            - **Duración:** 30min
-            - **Resumen:** Aprende a crear un CV impresionante y a destacar en procesos de selección. Incluye 7 videos educativos y la opción de recibir asesoría personalizada.
+      3. **Your CV Your Masterpiece (Video)**
+         - **Duración:** 30min
+         - **Resumen:** Aprende a crear un CV impresionante y a destacar en procesos de selección. Incluye 7 videos educativos y la opción de recibir asesoría personalizada.
 
-         4. **Communicate Better (Interactiva)**
-            - **Duración:** 12min
-            - **Resumen:** Mejora tu estilo de comunicación descubriendo sus ventajas y desventajas, y aprende a relacionarte de manera más efectiva con los demás.
+      4. **Communicate Better (Interactiva)**
+         - **Duración:** 12min
+         - **Resumen:** Mejora tu estilo de comunicación descubriendo sus ventajas y desventajas, y aprende a relacionarte de manera más efectiva con los demás.
 
-         5. **Enfrenta tus problemas con mayor facilidad (Interactiva)**
-            - **Duración:** 10min
-            - **Resumen:** Aprende a gestionar situaciones estresantes de manera efectiva, encontrando soluciones prácticas a problemas comunes.
+      5. **Enfrenta tus problemas con mayor facilidad (Interactiva)**
+         - **Duración:** 10min
+         - **Resumen:** Aprende a gestionar situaciones estresantes de manera efectiva, encontrando soluciones prácticas a problemas comunes.
 
-         6. **Negociación (Interactiva)**
-            - **Duración:** 22min
-            - **Resumen:** Descubre tu estilo de negociación y cómo aplicarlo en diferentes contextos para lograr resultados óptimos.
+      6. **Negociación (Interactiva)**
+         - **Duración:** 22min
+         - **Resumen:** Descubre tu estilo de negociación y cómo aplicarlo en diferentes contextos para lograr resultados óptimos.
 
-         7. **Live Smarter (Self-awareness) (Interactiva)**
-            - **Duración:** 15min
-            - **Resumen:** Fomenta tu autoconocimiento y mejora tu inteligencia emocional a través de actividades y reflexiones guiadas.
+      7. **Live Smarter (Self-awareness) (Interactiva)**
+         - **Duración:** 15min
+         - **Resumen:** Fomenta tu autoconocimiento y mejora tu inteligencia emocional a través de actividades y reflexiones guiadas.
 
-         8. **Live Smarter (Manage yourself) (Interactiva)**
-            - **Duración:** 16min
-            - **Resumen:** Continúa tu desarrollo personal y profesional gestionando mejor tus emociones y reacciones ante diversas situaciones.
+      8. **Live Smarter (Manage yourself) (Interactiva)**
+         - **Duración:** 16min
+         - **Resumen:** Continúa tu desarrollo personal y profesional gestionando mejor tus emociones y reacciones ante diversas situaciones.
 
-         9. **Recreando mi vida (Video)**
-            - **Duración:** 40min
-            - **Resumen:** Potencia tu autoconocimiento y establece un plan de acción para alcanzar tus metas personales y profesionales.
+      9. **Recreando mi vida (Video)**
+         - **Duración:** 40min
+         - **Resumen:** Potencia tu autoconocimiento y establece un plan de acción para alcanzar tus metas personales y profesionales.
 
-         10. **Atrévete a ser un master (Interactiva)**
-            - **Duración:** 30min
-            - **Resumen:** Explora los requisitos de admisión para estudios de posgrado en el extranjero, conoce programas de preparación y obtén información sobre becas.
+      10. **Atrévete a ser un master (Interactiva)**
+         - **Duración:** 30min
+         - **Resumen:** Explora los requisitos de admisión para estudios de posgrado en el extranjero, conoce programas de preparación y obtén información sobre becas.
 
-         11. **Gestión del cambio (Interactiva)**
-            - **Duración:** 60min
-            - **Resumen:** Aprende a adaptarte y gestionar el cambio de manera efectiva para alcanzar tus objetivos personales y profesionales.
+      11. **Gestión del cambio (Interactiva)**
+         - **Duración:** 60min
+         - **Resumen:** Aprende a adaptarte y gestionar el cambio de manera efectiva para alcanzar tus objetivos personales y profesionales.
 
-         12. **Power UP (Interactiva)**
-            - **Duración:** 35min
-            - **Resumen:** Transforma tus habilidades en superpoderes laborales a través de talleres, proyectos innovadores y mentoring.
-
+      12. **Power UP (Interactiva)**
+         - **Duración:** 35min
+         - **Resumen:** Transforma tus habilidades en superpoderes laborales a través de talleres, proyectos innovadores y mentoring.
+   ---
       ####  Experiencias Presenciales
       - Experiencias presenciales es un componente diseñado a la medida para SMART para que cuando nuestros colaboradores organicen eventos presenciales se vean reflejados en tiempo real en la página. El procedimiento para agregar un evento presencial es sencillo: 
          1. El colaborador abrirá el documento: https://docs.google.com/spreadsheets/d/1TXTHaHBOZXMPBtT8X5LJaZIuixXd-osvNHAGAHpPgZg/edit#gid=0
          2. llenará los campos correspondientes a su evento.
          3. El módulo automáticamente se comunicará con el documento y generará la tarjeta correspondiente que los alumnos pueden consultar. 
-
+   ---
       #### Oferta GEAS
-         ##### Opciones Disponibles de GEAs
-         1. **AIESEC**
-            - **Simulador empresarial**
-            - **Training program**
-            - **Descripción:** Red de jóvenes que ofrece desarrollo personal y experiencias internacionales a través de voluntariado y pasantías.
+      ##### Opciones Disponibles de GEAs
+      1. **AIESEC**
+         - **Simulador empresarial**
+         - **Training program**
+         - **Descripción:** Red de jóvenes que ofrece desarrollo personal y experiencias internacionales a través de voluntariado y pasantías.
 
-         2. **COPARMEX UP**
-            - **Simulador empresarial**
-            - **Training program**
-            - **Descripción:** Semillero de líderes empresariales que promueve una nueva cultura empresarial entre los jóvenes.
+      2. **COPARMEX UP**
+         - **Simulador empresarial**
+         - **Training program**
+         - **Descripción:** Semillero de líderes empresariales que promueve una nueva cultura empresarial entre los jóvenes.
 
-         3. **GROWTH**
-            - **Simulador empresarial**
-            - **Training program**
-            - **Descripción:** Iniciativas para beneficiar la salud integral, promoviendo conocimiento y reflexión sobre el manejo de las emociones.
+      3. **GROWTH**
+         - **Simulador empresarial**
+         - **Training program**
+         - **Descripción:** Iniciativas para beneficiar la salud integral, promoviendo conocimiento y reflexión sobre el manejo de las emociones.
 
-         4. **Hult Prize**
-            - **Simulador empresarial**
-            - **Training program**
-            - **Descripción:** Competencia global que invita a universitarios a resolver problemas sociales a través del emprendimiento social.
+      4. **Hult Prize**
+         - **Simulador empresarial**
+         - **Training program**
+         - **Descripción:** Competencia global que invita a universitarios a resolver problemas sociales a través del emprendimiento social.
 
-         5. **Inspire UP**
-            - **Simulador empresarial**
-            - **Training program**
-            - **Descripción:** Grupo estudiantil de excelencia que busca formar futuros líderes de México enfocándose en el sentido humano y la responsabilidad social.
+      5. **Inspire UP**
+         - **Simulador empresarial**
+         - **Training program**
+         - **Descripción:** Grupo estudiantil de excelencia que busca formar futuros líderes de México enfocándose en el sentido humano y la responsabilidad social.
 
-         6. **Nous**
-            - **Simulador empresarial**
-            - **Training program**
-            - **Descripción:** Espacio para el ejercicio filosófico y de reflexión a través de debates, diálogos, y discusiones sobre temas diversos.
+      6. **Nous**
+         - **Simulador empresarial**
+         - **Training program**
+         - **Descripción:** Espacio para el ejercicio filosófico y de reflexión a través de debates, diálogos, y discusiones sobre temas diversos.
 
-         7. **SH+E**
-            - **Simulador empresarial**
-            - **Training program**
-            - **Descripción:** Promueve el empoderamiento femenino y la igualdad de oportunidades a través de conferencias, ferias, y talleres.
+      7. **SH+E**
+         - **Simulador empresarial**
+         - **Training program**
+         - **Descripción:** Promueve el empoderamiento femenino y la igualdad de oportunidades a través de conferencias, ferias, y talleres.
 
-         8. **TEDx**
-            - **Simulador empresarial**
-            - **Training program**
-            - **Descripción:** Eventos locales que siguen el estilo de TED para difundir "ideas que valen la pena" a través de charlas y presentaciones.
+      8. **TEDx**
+         - **Simulador empresarial**
+         - **Training program**
+         - **Descripción:** Eventos locales que siguen el estilo de TED para difundir "ideas que valen la pena" a través de charlas y presentaciones.
 
-         9. **The Green Project**
-            - **Simulador empresarial**
-            - **Training program**
-            - **Descripción:** Fomenta una vida ecológica y busca hacer de la universidad un lugar más sustentable a través de diferentes proyectos y eventos.
+      9. **The Green Project**
+         - **Simulador empresarial**
+         - **Training program**
+         - **Descripción:** Fomenta una vida ecológica y busca hacer de la universidad un lugar más sustentable a través de diferentes proyectos y eventos.
+   ---
 
       - Únete a un GEA
       - Eventos GEA
