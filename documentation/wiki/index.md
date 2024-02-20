@@ -1,6 +1,6 @@
 # SMART 2.0 -  SMART Center UP
 
-
+---
 # Tabla de Contenidos
 
 - [1. Introducción](#1-introducción)
@@ -39,127 +39,135 @@
 
    ### Tecnologías involucradas en el desarrollo
 
-   El sitio usa globalmente las siguientes tecnologías: 
+      #### El sitio usa globalmente las siguientes **tecnologías**: 
 
-   1. **HTML5**: Se utilizan varios elementos y atributos de HTML5, demostrando estándares web modernos para estructuración de contenido y diseño responsivo.
-   2. **Técnicas de Diseño Responsivo**: A través de configuraciones del meta viewport y CSS, el sitio está diseñado para ser responsivo, asegurando que se adapta a diferentes tamaños de pantalla y dispositivos.
-   3. **CSS**: Se usa CSS externo para el estilo (`assets/style/style.min.css`).
-   4. **JavaScript**: Se hacen referencia a varios archivos JavaScript externos para funcionalidad, incluyendo navegación, inserción de videos, integración de API de Instagram, tarjetas expandibles, desplazamiento espía, gestión de FAQ y carruseles. Estos scripts son responsables de elementos interactivos, ajustes de diseño y gestión de contenido.
+      1. **HTML5**: Se utilizan varios elementos y atributos de HTML5, demostrando estándares web modernos para estructuración de contenido y diseño responsivo.
+      2. **Técnicas de Diseño Responsivo**: A través de configuraciones del meta viewport y CSS, el sitio está diseñado para ser responsivo, asegurando que se adapta a diferentes tamaños de pantalla y dispositivos.
+      3. **CSS**: Se usa CSS externo para el estilo (`assets/style/style.min.css`).
+      4. **JavaScript**: Se hacen referencia a varios archivos JavaScript externos para funcionalidad, incluyendo navegación, inserción de videos, integración de API de Instagram, tarjetas expandibles, desplazamiento espía, gestión de FAQ y carruseles. Estos scripts son responsables de elementos interactivos, ajustes de diseño y gestión de contenido.
 
 
+      #### Además de tener las siguientes **dependencias**: 
 
-   Además de tener las siguientes dependencias: 
-
-   1. **Google Fonts**: El sitio utiliza Google Fonts para la tipografía, específicamente la familia de fuentes 'Nunito'.
-   2. **GSAP (GreenSock Animation Platform)**: El sitio utiliza GSAP junto con su plugin ScrollTrigger para animaciones basadas en el desplazamiento.
-   TODO: revisar constantemente la disponibilidad de la tecnología en CSS para reemplazar esta dependencia.(última revisión: ene 2023 - negativa) 
-   4. **Google Tag Manager (Gtag.js)**: Para análisis y seguimiento, se integra el `gtag.js` de Google Tag Manager. Se usa para google analytics. 
-   5. **Google Analytics**: PAra seguimiento y estadísticas del sitio, los resultados son incrustados automáticamente en el reporte "SMART Stats" 
-   6. **Rellax.js**: Para efectos de paralaje, el sitio utiliza Rellax.js, una biblioteca ligera de JavaScript vanilla. Se usa específicamente en las tarjetas dinámicas. 
-   TODO: revisar constantemente la disponibilidad de la tecnología en CSS para reemplazar esta dependencia.(última revisión: ene 2023 - negativa) 
-   7. **Font Awesome**: El sitio utiliza Font Awesome para los iconos, como se indica por la fuente del script a un kit de Font Awesome (`https://kit.fontawesome.com/c09e05c963.js`). (Este Kit es pagado por el desarrollador y compartido gratuitamente al SMART)
-   8. **https://simplybook.me/**: La agenda presencial de las sesiones de counseling, coaching y programas de SMART es manejada desde el software de simplybook.me, un plugin costumizado para la página es el que se presenta de cara a los alumnos. 
-   9. Revisar Tecnologías en sección de proyecto DPI.
-   10. **Animate.css**: Para animaciones, el sitio incorpora Animate.css, una biblioteca de animaciones listas para usar.
-   11. **Google Auth**: Para manejar el login en cualquier página individual del sitio donde se requiera. 
-   12. **Instagram Api** Alimenta la sección "SMART news"
-   13. **Youtube API** Alimenta la sección: "SMART Tips"
+      1. **Google Fonts**: El sitio utiliza Google Fonts para la tipografía, específicamente la familia de fuentes 'Nunito'.
+      2. **GSAP (GreenSock Animation Platform)**: El sitio utiliza GSAP junto con su plugin ScrollTrigger para animaciones basadas en el desplazamiento.
+      TODO: revisar constantemente la disponibilidad de la tecnología en CSS para reemplazar esta dependencia.(última revisión: ene 2023 - negativa) 
+      4. **Google Tag Manager (Gtag.js)**: Para análisis y seguimiento, se integra el `gtag.js` de Google Tag Manager. Se usa para google analytics. 
+      5. **Google Analytics**: PAra seguimiento y estadísticas del sitio, los resultados son incrustados automáticamente en el reporte "SMART Stats" 
+      6. **Rellax.js**: Para efectos de paralaje, el sitio utiliza Rellax.js, una biblioteca ligera de JavaScript vanilla. Se usa específicamente en las tarjetas dinámicas. 
+      TODO: revisar constantemente la disponibilidad de la tecnología en CSS para reemplazar esta dependencia.(última revisión: ene 2023 - negativa) 
+      7. **Font Awesome**: El sitio utiliza Font Awesome para los iconos, como se indica por la fuente del script a un kit de Font Awesome (`https://kit.fontawesome.com/c09e05c963.js`). (Este Kit es pagado por el desarrollador y compartido gratuitamente al SMART)
+      8. **https://simplybook.me/**: La agenda presencial de las sesiones de counseling, coaching y programas de SMART es manejada desde el software de simplybook.me, un plugin costumizado para la página es el que se presenta de cara a los alumnos. 
+      9. Revisar Tecnologías en sección de proyecto DPI.
+      10. **Animate.css**: Para animaciones, el sitio incorpora Animate.css, una biblioteca de animaciones listas para usar.
+      11. **Google Auth**: Para manejar el login en cualquier página individual del sitio donde se requiera. 
+      12. **Instagram Api** Alimenta la sección "SMART news"
+      13. **Youtube API** Alimenta la sección: "SMART Tips"
 
 
    ### Versiones:
 
-   **Alpha**
-      Versión de prueba que se presentó a la Vicerrectoría de innovación, Diseño aprobado por comunicación institucional de la universidad. 
-   **Beta**
+   - **Alpha**
+      Versión de prueba que se presentó a la Vicerrectoría de innovación, Diseño aprobado por comunicación institucional de la universidad.
+      --- 
+   - **Beta**
       Primer versión pública, contenía una biblioteca de experiencias digitales (cursos) de un programa llamado "My career my success"
-   **0.5**
+      ---
+   - **0.5**
       Primer versión que contenía un landing page para SMART, se explicaban los objetivos del centro. Contenía secciones de noticias en tiempo real y un buzón para que los alumnos se comunicaran con la dirección del centro. Además un directorio con los miembros del equipo. 
-   **1.0**
+      ---
+   - **1.0**
       Versión que contenía una sección especializada para cada una de las sub secciones del Centro: 
-      - Success Center: Además de la biblioteca de experiencias digitales los alumnos tenían acceso a un catálogo completo de las actividades de success, podían comunicarse con el área, pedir diplomas de sus cursos y calificar algunas experiencias.
-      - Meeting Point: Se creó un catálogo para que los alumnos conocieran todas los grupos estudiantiles. Además de botones para que formaran sus propios grupos estudiantiles o se unieran a alguno.
-      - Advisory: Se publicaron guías respecto a lo que el alumno pude esperar y debe hacer antes, durante y después de la asesoría universitaria. Se dio la posibilidad a los alumnos de solicitar un cambio de asesor desde Advisory. 
-      - Reload & Talent: Se publicaron guías de aprovechamiento académico, consejos respecto a técnicas de estudio, y la agenda original del centro pertenecía a esta área.
-   **1.5**
+      * Success Center: Además de la biblioteca de experiencias digitales los alumnos tenían acceso a un catálogo completo de las actividades de success, podían comunicarse con el área, pedir diplomas de sus cursos y calificar algunas experiencias.
+      * Meeting Point: Se creó un catálogo para que los alumnos conocieran todas los grupos estudiantiles. Además de botones para que formaran sus propios grupos estudiantiles o se unieran a alguno.
+      * Advisory: Se publicaron guías respecto a lo que el alumno pude esperar y debe hacer antes, durante y después de la asesoría universitaria. Se dio la posibilidad a los alumnos de solicitar un cambio de asesor desde Advisory. 
+      * Reload & Talent: Se publicaron guías de aprovechamiento académico, consejos respecto a técnicas de estudio, y la agenda original del centro pertenecía a esta área.
+      ---
+   - **1.5**
       A raíz del cambio de imagen institucional el Centro adaptó su página para seguir los estándares institucionales. 
-      Desaparecieron las páginas de las secciones pues el enfoque del centro ahora sería centralizado, se trabajó más en un enfoque a lo que el alumno podía hacer en la página y menos en darle información innecesaria. 
-   **2.0**
+      Desaparecieron las páginas de las secciones pues el enfoque del centro ahora sería centralizado, se trabajó más en un enfoque a lo que el alumno podía hacer en la página y menos en darle información innecesaria.
+      --- 
+   - **2.0**
+      
       Versión detallada en la presente wiki, se añaden detalles de cada versión a partir de 2.06:
 
-   **2.06**
-      - implementación del login en el buscador para asesores de DPI, ahora sólo cuentas de la UP pueden acceder.
-      - Se añadió la tarjeta de Érika en el directorio.
-      - Se actualizó el enlace del campus virtual.
-      - Se añadió un formulario para solicitud de cambio de asesor, y se conectó con un SCRIPT que automáticamente envía un correo a Caro con el resumen de la petición.
-      - Buzón SMART: Se añadió una sección en la página principal para que alumnos escriban comentarios o sugerencias, se creó un SCRIPT para que automáticamente envíe un correo a Fer con el comentario, el nombre y correo de quien lo envió.
-      -Implementación de Power UP como experiencia SMART
+   - **2.06**
+      * implementación del login en el buscador para asesores de DPI, ahora sólo cuentas de la UP pueden acceder.
+      * Se añadió la tarjeta de Érika en el directorio.
+      * Se actualizó el enlace del campus virtual.
+      * Se añadió un formulario para solicitud de cambio de asesor, y se conectó con un SCRIPT que automáticamente envía un correo a Caro con el resumen de la petición.
+      * Buzón SMART: Se añadió una sección en la página principal para que alumnos escriban comentarios o sugerencias, se creó un SCRIPT para que automáticamente envíe un correo a Fer con el comentario, el nombre y correo de quien lo envió.
+      * Implementación de Power UP como experiencia SMART
 
       Solución de errores:
 
-      - La animación de entrada ahora corre en versiones más viejas de google chrome, además ahora se ajusta el tamaño para computadoras más pequeñas o más grandes.
+      * La animación de entrada ahora corre en versiones más viejas de google chrome, además ahora se ajusta el tamaño para computadoras más pequeñas o más grandes.
 
-      - Se solucionaron todos los problemas de visualización en monitores ultra wide (de más de 34 pulgadas)
+      * Se solucionaron todos los problemas de visualización en monitores ultra wide (de más de 34 pulgadas)
 
-      - Se eliminó totalmente la lista de bugs.
+      * Se eliminó totalmente la lista de bugs.
+      ---
 
-   **2.07**
-      - La tarjeta de Aurora contiene el título correcto (disculpa el error).
-      - Se añadió la tarjeta de Santiago.
-      - Se añadió la tarjeta de Fer Sarmiento.
-      - Se retiró la tarjeta de Sofía Rux
-      - Todas las tarjetas de contacto ahora tienen el mismo ancho sin importar su contenido. 
-      - Así mismo se realizaron algunas acciones de mantenimiento: 
-      - Depuración de código en la página de inicio. 
-      - Se mejoró la resolución de la animación de entrada.
-      - Se renovaron los permisos para que el feed de IG se vea en el sitio.
-      - Se conectó el mantenimiento de la página con el semestral del DPI para asegurarnos que todo funcionara para las aplicaciones. 
-      - Mantenimiento generalizado semestral. 
+   - **2.07**
+      * La tarjeta de Aurora contiene el título correcto (disculpa el error).
+      * Se añadió la tarjeta de Santiago.
+      * Se añadió la tarjeta de Fer Sarmiento.
+      * Se retiró la tarjeta de Sofía Rux
+      * Todas las tarjetas de contacto ahora tienen el mismo ancho sin importar su contenido. 
+      * Así mismo se realizaron algunas acciones de mantenimiento: 
+      * Depuración de código en la página de inicio. 
+      * Se mejoró la resolución de la animación de entrada.
+      * Se renovaron los permisos para que el feed de IG se vea en el sitio.
+      * Se conectó el mantenimiento de la página con el semestral del DPI para asegurarnos que todo funcionara para las aplicaciones. 
+      * Mantenimiento generalizado semestral. 
+      ---
 
-   **2.08**
+   - **2.08**
       Actualización de seguridad: 
       - Ahora los usuarios del buscador de asesores y del DPI deben estar logueados con una cuenta @up.edu.mx. 
+      ---
 
-   **2.09** 
+   - **2.09** 
       Actualización de seguridad: 
       - Ahora los números de cuenta en la aplicación DPI se encriptan con una llave de seguridad única para cada ID.
       - Se creó una pantalla para DPIs no encontrados que da instrucciones a los alumnos que escriban mal la URL.
       - Se arregló un error que impedía ejecutar nuestras experiencias interactivas. 
-
+      ---
 
 ## 2. Navegación
 
    ### Barra de Navegación (componente)
-   La barra de navegación está diseñada para estar presente en todo el sitio, de un click puede llevarnos a: 
-   - [Experiencias](#experiencias)
-   - [¿Quiénes somos?](#somos)
-   - [Noticias](#news)
-   - [SMART Tips](#tips)
-   - [Contacto](#contacto)
-   - [Citas](citas.html)
+      La barra de navegación está diseñada para estar presente en todo el sitio, de un click puede llevarnos a: 
+      - [Experiencias](#experiencias)
+      - [¿Quiénes somos?](#somos)
+      - [Noticias](#news)
+      - [SMART Tips](#tips)
+      - [Contacto](#contacto)
+      - [Citas](citas.html)
 
    ### Sección de Experiencias
 
-   - [Experiencias Digitales](experiencias.html)
-   - [Experiencias Presenciales](presenciales.html)
-   - [Conoce nuestros GEAS](oferta_geas.html)
-   - [Únete a un GEA](https://form.typeform.com/to/B3w43naa?typeform-source=successcenter1.typeform.com)
-   - [Eventos GEA](https://calendar.google.com/calendar/embed?src=c_04s4ftskn78nu8vjsp0dseidpc%40group.calendar.google.com&ctz=America%2FMexico_City)
-   - [Crea tu GEA](https://docs.google.com/forms/d/e/1FAIpQLSeWJPgUl6ZTCLZXKFrPKvoPaIXD_VOjeb0KGhKqojdYhYVIQg/viewform?usp=pp_url)
-   - [¿Eres Asesor?](https://asesoria.up.edu.mx)
-   - [Cambio de asesor](https://forms.gle/BNqd2BnFyApZYJVL7)
+      - [Experiencias Digitales](experiencias.html)
+      - [Experiencias Presenciales](presenciales.html)
+      - [Conoce nuestros GEAS](oferta_geas.html)
+      - [Únete a un GEA](https://form.typeform.com/to/B3w43naa?typeform-source=successcenter1.typeform.com)
+      - [Eventos GEA](https://calendar.google.com/calendar/embed?src=c_04s4ftskn78nu8vjsp0dseidpc%40group.calendar.google.com&ctz=America%2FMexico_City)
+      - [Crea tu GEA](https://docs.google.com/forms/d/e/1FAIpQLSeWJPgUl6ZTCLZXKFrPKvoPaIXD_VOjeb0KGhKqojdYhYVIQg/viewform?usp=pp_url)
+      - [¿Eres Asesor?](https://asesoria.up.edu.mx)
+      - [Cambio de asesor](https://forms.gle/BNqd2BnFyApZYJVL7)
 
    ### Sección de Contacto
 
-   - [Formulario de Contacto](https://forms.gle/yVDwtKpG1gDEmdT89)
+      - [Formulario de Contacto](https://forms.gle/yVDwtKpG1gDEmdT89)
 
    ### Redes Sociales y Otros Enlaces
 
-   - [YouTube](https://www.youtube.com/channel/UCMAOisJbM69nBTLbCK_b4LQ?view_as=subscriber)
-   - [Facebook](https://www.facebook.com/SuccessCenterUP/)
-   - [Instagram](https://www.instagram.com/smartcenterup/)
-   - [Aviso de privacidad](https://www.up.edu.mx/legales-politicas/)
-   - [SMART Center](https://smartcenter.up.edu.mx)
-   - [Visita Virtual](https://spotvirtual.com/invite/smart-center-eb42618dd1212b0a-enmMJMj8nb/sign-up)
+      - [YouTube](https://www.youtube.com/channel/UCMAOisJbM69nBTLbCK_b4LQ?view_as=subscriber)
+      - [Facebook](https://www.facebook.com/SuccessCenterUP/)
+      - [Instagram](https://www.instagram.com/smartcenterup/)
+      - [Aviso de privacidad](https://www.up.edu.mx/legales-politicas/)
+      - [SMART Center](https://smartcenter.up.edu.mx)
+      - [Visita Virtual](https://spotvirtual.com/invite/smart-center-eb42618dd1212b0a-enmMJMj8nb/sign-up)
 
 
 ## 3. Secciones Principales
