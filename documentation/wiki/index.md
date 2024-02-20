@@ -67,7 +67,7 @@
 
    ### Versiones:
 
-   - **Alpha**
+   - **Alpha**  
       Versión de prueba que se presentó a la Vicerrectoría de innovación, Diseño aprobado por comunicación institucional de la universidad.
       --- 
    - **Beta**
