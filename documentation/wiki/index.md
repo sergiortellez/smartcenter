@@ -39,30 +39,30 @@
 
    ### Tecnologías involucradas en el desarrollo
 
-      #### El sitio usa globalmente las siguientes **tecnologías**: 
+   #### El sitio usa globalmente las siguientes **tecnologías**: 
 
-      1. **HTML5**: Se utilizan varios elementos y atributos de HTML5, demostrando estándares web modernos para estructuración de contenido y diseño responsivo.
-      2. **Técnicas de Diseño Responsivo**: A través de configuraciones del meta viewport y CSS, el sitio está diseñado para ser responsivo, asegurando que se adapta a diferentes tamaños de pantalla y dispositivos.
-      3. **CSS**: Se usa CSS externo para el estilo (`assets/style/style.min.css`).
-      4. **JavaScript**: Se hacen referencia a varios archivos JavaScript externos para funcionalidad, incluyendo navegación, inserción de videos, integración de API de Instagram, tarjetas expandibles, desplazamiento espía, gestión de FAQ y carruseles. Estos scripts son responsables de elementos interactivos, ajustes de diseño y gestión de contenido.
+   1. **HTML5**: Se utilizan varios elementos y atributos de HTML5, demostrando estándares web modernos para estructuración de contenido y diseño responsivo.
+   2. **Técnicas de Diseño Responsivo**: A través de configuraciones del meta viewport y CSS, el sitio está diseñado para ser responsivo, asegurando que se adapta a diferentes tamaños de pantalla y dispositivos.
+   3. **CSS**: Se usa CSS externo para el estilo (`assets/style/style.min.css`).
+   4. **JavaScript**: Se hacen referencia a varios archivos JavaScript externos para funcionalidad, incluyendo navegación, inserción de videos, integración de API de Instagram, tarjetas expandibles, desplazamiento espía, gestión de FAQ y carruseles. Estos scripts son responsables de elementos interactivos, ajustes de diseño y gestión de contenido.
 
 
-      #### Además de tener las siguientes **dependencias**: 
+   #### Además de tener las siguientes **dependencias**: 
 
-      1. **Google Fonts**: El sitio utiliza Google Fonts para la tipografía, específicamente la familia de fuentes 'Nunito'.
-      2. **GSAP (GreenSock Animation Platform)**: El sitio utiliza GSAP junto con su plugin ScrollTrigger para animaciones basadas en el desplazamiento.
-      TODO: revisar constantemente la disponibilidad de la tecnología en CSS para reemplazar esta dependencia.(última revisión: ene 2023 - negativa) 
-      4. **Google Tag Manager (Gtag.js)**: Para análisis y seguimiento, se integra el `gtag.js` de Google Tag Manager. Se usa para google analytics. 
-      5. **Google Analytics**: PAra seguimiento y estadísticas del sitio, los resultados son incrustados automáticamente en el reporte "SMART Stats" 
-      6. **Rellax.js**: Para efectos de paralaje, el sitio utiliza Rellax.js, una biblioteca ligera de JavaScript vanilla. Se usa específicamente en las tarjetas dinámicas. 
-      TODO: revisar constantemente la disponibilidad de la tecnología en CSS para reemplazar esta dependencia.(última revisión: ene 2023 - negativa) 
-      7. **Font Awesome**: El sitio utiliza Font Awesome para los iconos, como se indica por la fuente del script a un kit de Font Awesome (`https://kit.fontawesome.com/c09e05c963.js`). (Este Kit es pagado por el desarrollador y compartido gratuitamente al SMART)
-      8. **https://simplybook.me/**: La agenda presencial de las sesiones de counseling, coaching y programas de SMART es manejada desde el software de simplybook.me, un plugin costumizado para la página es el que se presenta de cara a los alumnos. 
-      9. Revisar Tecnologías en sección de proyecto DPI.
-      10. **Animate.css**: Para animaciones, el sitio incorpora Animate.css, una biblioteca de animaciones listas para usar.
-      11. **Google Auth**: Para manejar el login en cualquier página individual del sitio donde se requiera. 
-      12. **Instagram Api** Alimenta la sección "SMART news"
-      13. **Youtube API** Alimenta la sección: "SMART Tips"
+   1. **Google Fonts**: El sitio utiliza Google Fonts para la tipografía, específicamente la familia de fuentes 'Nunito'.
+   2. **GSAP (GreenSock Animation Platform)**: El sitio utiliza GSAP junto con su plugin ScrollTrigger para animaciones basadas en el desplazamiento.
+   TODO: revisar constantemente la disponibilidad de la tecnología en CSS para reemplazar esta dependencia.(última revisión: ene 2023 - negativa) 
+   4. **Google Tag Manager (Gtag.js)**: Para análisis y seguimiento, se integra el `gtag.js` de Google Tag Manager. Se usa para google analytics. 
+   5. **Google Analytics**: PAra seguimiento y estadísticas del sitio, los resultados son incrustados automáticamente en el reporte "SMART Stats" 
+   6. **Rellax.js**: Para efectos de paralaje, el sitio utiliza Rellax.js, una biblioteca ligera de JavaScript vanilla. Se usa específicamente en las tarjetas dinámicas. 
+   TODO: revisar constantemente la disponibilidad de la tecnología en CSS para reemplazar esta dependencia.(última revisión: ene 2023 - negativa) 
+   7. **Font Awesome**: El sitio utiliza Font Awesome para los iconos, como se indica por la fuente del script a un kit de Font Awesome (`https://kit.fontawesome.com/c09e05c963.js`). (Este Kit es pagado por el desarrollador y compartido gratuitamente al SMART)
+   8. **https://simplybook.me/**: La agenda presencial de las sesiones de counseling, coaching y programas de SMART es manejada desde el software de simplybook.me, un plugin costumizado para la página es el que se presenta de cara a los alumnos. 
+   9. Revisar Tecnologías en sección de proyecto DPI.
+   10. **Animate.css**: Para animaciones, el sitio incorpora Animate.css, una biblioteca de animaciones listas para usar.
+   11. **Google Auth**: Para manejar el login en cualquier página individual del sitio donde se requiera. 
+   12. **Instagram Api** Alimenta la sección "SMART news"
+   13. **Youtube API** Alimenta la sección: "SMART Tips"
 
 
    ### Versiones:
