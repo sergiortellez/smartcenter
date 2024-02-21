@@ -1,18 +1,17 @@
 # SMART 2.0 -  SMART Center UP
 ---
----
-
-
 
 # Tabla de Contenidos
 ---
+
 - [1. Introducción](#1-introducción)
   - [1.1 Objetivo del Proyecto](#11-objetivo-del-proyecto)
   - [1.2 Antecedentes](#12-antecedentes)
-  - [1.3 Tecnologías y dependencias involucradas en el desarrollo](#13-tecnologías-y-dependencias-involucradas-en-el-desarrollo)
-    - [1.3.1 El sitio usa globalmente las siguientes **tecnologías**](#131-el-sitio-usa-globalmente-las-siguientes-tecnologías)
-    - [1.3.2 Además de tener las siguientes **dependencias**](#132-además-de-tener-las-siguientes-dependencias)
-  - [1.4 Versiones](#14-versiones)
+  - [1.3 Lenguaje de comunicación](#13-lenguaje-de-comunicación)
+  - [1.4 Tecnologías y dependencias involucradas en el desarrollo](#14-tecnologías-y-dependencias-involucradas-en-el-desarrollo)
+    - [1.4.1 El sitio usa globalmente las siguientes **tecnologías**](#141-el-sitio-usa-globalmente-las-siguientes-tecnologías)
+    - [1.4.2 Además de tener las siguientes **dependencias**](#142-además-de-tener-las-siguientes-dependencias)
+  - [1.5 Versiones](#15-versiones)
 - [2. Navegación](#2-navegación)
   - [2.1 Barra de Navegación (componente)](#21-barra-de-navegación-componente)
   - [2.2 Sección de Experiencias](#22-sección-de-experiencias)
@@ -37,7 +36,6 @@
     - [4.1.3 Funcionalidad JS para la Interactividad](#413-funcionalidad-js-para-la-interactividad)
     - [4.1.4 Interacción con los Eventos](#414-interacción-con-los-eventos)
   - [4.2 DPI](#42-dpi)
-
 
 
 ## 1. Introducción
@@ -78,22 +76,22 @@
          - **JavaScript**: Se hacen referencia a varios archivos JavaScript externos para funcionalidad, incluyendo navegación, inserción de videos, integración de API de Instagram, tarjetas expandibles, desplazamiento espía, gestión de FAQ y carruseles. Estos scripts son responsables de elementos interactivos, ajustes de diseño y gestión de contenido.
 
 
-   - #### 1.4.2 Además de tener las siguientes **dependencias**: 
+      - #### 1.4.2 Además de tener las siguientes **dependencias**: 
 
-      - **Google Fonts**: El sitio utiliza Google Fonts para la tipografía, específicamente la familia de fuentes 'Nunito'.
-      - **GSAP (GreenSock Animation Platform)**: El sitio utiliza GSAP junto con su plugin ScrollTrigger para animaciones basadas en el desplazamiento.
-   TODO: revisar constantemente la disponibilidad de la tecnología en CSS para reemplazar esta dependencia.(última revisión: ene 2023 - negativa) 
-      - **Google Tag Manager (Gtag.js)**: Para análisis y seguimiento, se integra el `gtag.js` de Google Tag Manager. Se usa para google analytics. 
-      - **Google Analytics**: PAra seguimiento y estadísticas del sitio, los resultados son incrustados automáticamente en el reporte "SMART Stats" 
-      - **Rellax.js**: Para efectos de paralaje, el sitio utiliza Rellax.js, una biblioteca ligera de JavaScript vanilla. Se usa específicamente en las tarjetas dinámicas. 
-   TODO: revisar constantemente la disponibilidad de la tecnología en CSS para reemplazar esta dependencia.(última revisión: ene 2023 - negativa) 
-      - **Font Awesome**: El sitio utiliza Font Awesome para los iconos, como se indica por la fuente del script a un kit de Font Awesome (`https://kit.fontawesome.com/c09e05c963.js`). (Este Kit es pagado por el desarrollador y compartido gratuitamente al SMART)
-      - **https://simplybook.me/**: La agenda presencial de las sesiones de counseling, coaching y programas de SMART es manejada desde el software de simplybook.me, un plugin costumizado para la página es el que se presenta de cara a los alumnos. 
-      - Revisar Tecnologías en sección de proyecto DPI.
-      - **Animate.css**: Para animaciones, el sitio incorpora Animate.css, una biblioteca de animaciones listas para usar.
-      - **Google Auth**: Para manejar el login en cualquier página individual del sitio donde se requiera. 
-      - **Instagram Api** Alimenta la sección "SMART news"
-      - **Youtube API** Alimenta la sección: "SMART Tips"  
+         - **Google Fonts**: El sitio utiliza Google Fonts para la tipografía, específicamente la familia de fuentes 'Nunito'.
+         - **GSAP (GreenSock Animation Platform)**: El sitio utiliza GSAP junto con su plugin ScrollTrigger para animaciones basadas en el desplazamiento.
+      TODO: revisar constantemente la disponibilidad de la tecnología en CSS para reemplazar esta dependencia.(última revisión: ene 2023 - negativa) 
+         - **Google Tag Manager (Gtag.js)**: Para análisis y seguimiento, se integra el `gtag.js` de Google Tag Manager. Se usa para google analytics. 
+         - **Google Analytics**: PAra seguimiento y estadísticas del sitio, los resultados son incrustados automáticamente en el reporte "SMART Stats" 
+         - **Rellax.js**: Para efectos de paralaje, el sitio utiliza Rellax.js, una biblioteca ligera de JavaScript vanilla. Se usa específicamente en las tarjetas dinámicas. 
+      TODO: revisar constantemente la disponibilidad de la tecnología en CSS para reemplazar esta dependencia.(última revisión: ene 2023 - negativa) 
+         - **Font Awesome**: El sitio utiliza Font Awesome para los iconos, como se indica por la fuente del script a un kit de Font Awesome (`https://kit.fontawesome.com/c09e05c963.js`). (Este Kit es pagado por el desarrollador y compartido gratuitamente al SMART)
+         - **https://simplybook.me/**: La agenda presencial de las sesiones de counseling, coaching y programas de SMART es manejada desde el software de simplybook.me, un plugin costumizado para la página es el que se presenta de cara a los alumnos. 
+         - Revisar Tecnologías en sección de proyecto DPI.
+         - **Animate.css**: Para animaciones, el sitio incorpora Animate.css, una biblioteca de animaciones listas para usar.
+         - **Google Auth**: Para manejar el login en cualquier página individual del sitio donde se requiera. 
+         - **Instagram Api** Alimenta la sección "SMART news"
+         - **Youtube API** Alimenta la sección: "SMART Tips"  
 
 
   - ### 1.5 Versiones:
