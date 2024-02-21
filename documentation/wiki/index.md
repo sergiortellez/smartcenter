@@ -116,61 +116,61 @@
             * Advisory: Se publicaron guías respecto a lo que el alumno pude esperar y debe hacer antes, durante y después de la asesoría universitaria. Se dio la posibilidad a los alumnos de solicitar un cambio de asesor desde Advisory. 
             * Reload & Talent: Se publicaron guías de aprovechamiento académico, consejos respecto a técnicas de estudio, y la agenda original del centro pertenecía a esta área.
       ---
-   - **1.5**  
+      - **1.5**  
 
-      - A raíz del cambio de imagen institucional el Centro adaptó su página para seguir los estándares institucionales. 
-      Desaparecieron las páginas de las secciones pues el enfoque del centro ahora sería centralizado, se trabajó más en un enfoque a lo que el alumno podía hacer en la página y menos en darle información innecesaria.
-      --- 
-   - **2.0**  
-  
-      Versión detallada en la presente wiki, se añaden detalles de cada versión a partir de 2.06:
+         - A raíz del cambio de imagen institucional el Centro adaptó su página para seguir los estándares institucionales. 
+         Desaparecieron las páginas de las secciones pues el enfoque del centro ahora sería centralizado, se trabajó más en un enfoque a lo que el alumno podía hacer en la página y menos en darle información innecesaria.
+         --- 
+      - **2.0**  
+   
+         Versión detallada en la presente wiki, se añaden detalles de cada versión a partir de 2.06:
 
-   - **2.06**  
+      - **2.06**  
 
-      * implementación del login en el buscador para asesores de DPI, ahora sólo cuentas de la UP pueden acceder.
-      * Se añadió la tarjeta de Érika en el directorio.
-      * Se actualizó el enlace del campus virtual.
-      * Se añadió un formulario para solicitud de cambio de asesor, y se conectó con un SCRIPT que automáticamente envía un correo a Caro con el resumen de la petición.
-      * Buzón SMART: Se añadió una sección en la página principal para que alumnos escriban comentarios o sugerencias, se creó un SCRIPT para que automáticamente envíe un correo a Fer con el comentario, el nombre y correo de quien lo envió.
-      * Implementación de Power UP como experiencia SMART
+         * implementación del login en el buscador para asesores de DPI, ahora sólo cuentas de la UP pueden acceder.
+         * Se añadió la tarjeta de Érika en el directorio.
+         * Se actualizó el enlace del campus virtual.
+         * Se añadió un formulario para solicitud de cambio de asesor, y se conectó con un SCRIPT que automáticamente envía un correo a Caro con el resumen de la petición.
+         * Buzón SMART: Se añadió una sección en la página principal para que alumnos escriban comentarios o sugerencias, se creó un SCRIPT para que automáticamente envíe un correo a Fer con el comentario, el nombre y correo de quien lo envió.
+         * Implementación de Power UP como experiencia SMART
 
-      Solución de errores:
+         Solución de errores:
 
-      * La animación de entrada ahora corre en versiones más viejas de google chrome, además ahora se ajusta el tamaño para computadoras más pequeñas o más grandes.
+         * La animación de entrada ahora corre en versiones más viejas de google chrome, además ahora se ajusta el tamaño para computadoras más pequeñas o más grandes.
 
-      * Se solucionaron todos los problemas de visualización en monitores ultra wide (de más de 34 pulgadas)
+         * Se solucionaron todos los problemas de visualización en monitores ultra wide (de más de 34 pulgadas)
 
-      * Se eliminó totalmente la lista de bugs.
-      ---
+         * Se eliminó totalmente la lista de bugs.
+         ---
 
-   - **2.07**  
+      - **2.07**  
 
-      * La tarjeta de Aurora contiene el título correcto (disculpa el error).
-      * Se añadió la tarjeta de Santiago.
-      * Se añadió la tarjeta de Fer Sarmiento.
-      * Se retiró la tarjeta de Sofía Rux
-      * Todas las tarjetas de contacto ahora tienen el mismo ancho sin importar su contenido. 
-      * Así mismo se realizaron algunas acciones de mantenimiento: 
-      * Depuración de código en la página de inicio. 
-      * Se mejoró la resolución de la animación de entrada.
-      * Se renovaron los permisos para que el feed de IG se vea en el sitio.
-      * Se conectó el mantenimiento de la página con el semestral del DPI para asegurarnos que todo funcionara para las aplicaciones. 
-      * Mantenimiento generalizado semestral. 
-      ---
+         * La tarjeta de Aurora contiene el título correcto (disculpa el error).
+         * Se añadió la tarjeta de Santiago.
+         * Se añadió la tarjeta de Fer Sarmiento.
+         * Se retiró la tarjeta de Sofía Rux
+         * Todas las tarjetas de contacto ahora tienen el mismo ancho sin importar su contenido. 
+         * Así mismo se realizaron algunas acciones de mantenimiento: 
+         * Depuración de código en la página de inicio. 
+         * Se mejoró la resolución de la animación de entrada.
+         * Se renovaron los permisos para que el feed de IG se vea en el sitio.
+         * Se conectó el mantenimiento de la página con el semestral del DPI para asegurarnos que todo funcionara para las aplicaciones. 
+         * Mantenimiento generalizado semestral. 
+         ---
 
-   - **2.08**  
+      - **2.08**  
 
-      Actualización de seguridad: 
-      - Ahora los usuarios del buscador de asesores y del DPI deben estar logueados con una cuenta @up.edu.mx. 
-      ---
+         Actualización de seguridad: 
+         - Ahora los usuarios del buscador de asesores y del DPI deben estar logueados con una cuenta @up.edu.mx. 
+         ---
 
-   - **2.09**  
+      - **2.09**  
 
-      Actualización de seguridad: 
-      - Ahora los números de cuenta en la aplicación DPI se encriptan con una llave de seguridad única para cada ID.
-      - Se creó una pantalla para DPIs no encontrados que da instrucciones a los alumnos que escriban mal la URL.
-      - Se arregló un error que impedía ejecutar nuestras experiencias interactivas. 
-      ---
+         Actualización de seguridad: 
+         - Ahora los números de cuenta en la aplicación DPI se encriptan con una llave de seguridad única para cada ID.
+         - Se creó una pantalla para DPIs no encontrados que da instrucciones a los alumnos que escriban mal la URL.
+         - Se arregló un error que impedía ejecutar nuestras experiencias interactivas. 
+         ---
 
 ## 2. Navegación
 ---
@@ -211,8 +211,8 @@
 ## 3. Secciones Principales
 ---
    - ### 3.1 Portada
-   - Banner con animación
-   - Video promocional
+      - Banner con animación
+      - Video promocional
 
    - ### 3.2 Nuestras Experiencias
 
