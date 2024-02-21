@@ -218,65 +218,65 @@
 
       - ####  3.2.1 Experiencias Digitales
 
-      - **Organizing Your Life Like a Boss (Video)**
-         - **Duración:** 20min
-         - **Resumen:** Esta experiencia ofrece estrategias para mejorar la organización del tiempo y aumentar la productividad. Incluye 9 videos cortos con técnicas sencillas y la posibilidad de una sesión de coaching personalizado.
-      ---   
+         - **Organizing Your Life Like a Boss (Video)**
+            - **Duración:** 20min
+            - **Resumen:** Esta experiencia ofrece estrategias para mejorar la organización del tiempo y aumentar la productividad. Incluye 9 videos cortos con técnicas sencillas y la posibilidad de una sesión de coaching personalizado.
+         ---   
 
-      - **Discovering the Leader in You (Interactiva)**
-         - **Duración:** 10min
-         - **Resumen:** Un taller en línea para descubrir tu estilo de liderazgo y aprender cómo aplicarlo efectivamente en diversas situaciones.
-      ---
+         - **Discovering the Leader in You (Interactiva)**
+            - **Duración:** 10min
+            - **Resumen:** Un taller en línea para descubrir tu estilo de liderazgo y aprender cómo aplicarlo efectivamente en diversas situaciones.
+         ---
 
-      - **Your CV Your Masterpiece (Video)**
-         - **Duración:** 30min
-         - **Resumen:** Aprende a crear un CV impresionante y a destacar en procesos de selección. Incluye 7 videos educativos y la opción de recibir asesoría personalizada.
-      ---
+         - **Your CV Your Masterpiece (Video)**
+            - **Duración:** 30min
+            - **Resumen:** Aprende a crear un CV impresionante y a destacar en procesos de selección. Incluye 7 videos educativos y la opción de recibir asesoría personalizada.
+         ---
 
-      - **Communicate Better (Interactiva)**
-         - **Duración:** 12min
-         - **Resumen:** Mejora tu estilo de comunicación descubriendo sus ventajas y desventajas, y aprende a relacionarte de manera más efectiva con los demás.
-      ---
+         - **Communicate Better (Interactiva)**
+            - **Duración:** 12min
+            - **Resumen:** Mejora tu estilo de comunicación descubriendo sus ventajas y desventajas, y aprende a relacionarte de manera más efectiva con los demás.
+         ---
 
-      - **Enfrenta tus problemas con mayor facilidad (Interactiva)**
-         - **Duración:** 10min
-         - **Resumen:** Aprende a gestionar situaciones estresantes de manera efectiva, encontrando soluciones prácticas a problemas comunes.
-      ----
+         - **Enfrenta tus problemas con mayor facilidad (Interactiva)**
+            - **Duración:** 10min
+            - **Resumen:** Aprende a gestionar situaciones estresantes de manera efectiva, encontrando soluciones prácticas a problemas comunes.
+         ----
 
-      - **Negociación (Interactiva)**
-         - **Duración:** 22min
-         - **Resumen:** Descubre tu estilo de negociación y cómo aplicarlo en diferentes contextos para lograr resultados óptimos.
-      ---
+         - **Negociación (Interactiva)**
+            - **Duración:** 22min
+            - **Resumen:** Descubre tu estilo de negociación y cómo aplicarlo en diferentes contextos para lograr resultados óptimos.
+         ---
 
-      - **Live Smarter (Self-awareness) (Interactiva)**
-         - **Duración:** 15min
-         - **Resumen:** Fomenta tu autoconocimiento y mejora tu inteligencia emocional a través de actividades y reflexiones guiadas.
-      ---
+         - **Live Smarter (Self-awareness) (Interactiva)**
+            - **Duración:** 15min
+            - **Resumen:** Fomenta tu autoconocimiento y mejora tu inteligencia emocional a través de actividades y reflexiones guiadas.
+         ---
 
-      - **Live Smarter (Manage yourself) (Interactiva)**
-         - **Duración:** 16min
-         - **Resumen:** Continúa tu desarrollo personal y profesional gestionando mejor tus emociones y reacciones ante diversas situaciones.
-      ---
+         - **Live Smarter (Manage yourself) (Interactiva)**
+            - **Duración:** 16min
+            - **Resumen:** Continúa tu desarrollo personal y profesional gestionando mejor tus emociones y reacciones ante diversas situaciones.
+         ---
 
-      - **Recreando mi vida (Video)**
-         - **Duración:** 40min
-         - **Resumen:** Potencia tu autoconocimiento y establece un plan de acción para alcanzar tus metas personales y profesionales.
-      ---
+         - **Recreando mi vida (Video)**
+            - **Duración:** 40min
+            - **Resumen:** Potencia tu autoconocimiento y establece un plan de acción para alcanzar tus metas personales y profesionales.
+         ---
 
-      - **Atrévete a ser un master (Interactiva)**
-         - **Duración:** 30min
-         - **Resumen:** Explora los requisitos de admisión para estudios de posgrado en el extranjero, conoce programas de preparación y obtén información sobre becas.
-      ---
+         - **Atrévete a ser un master (Interactiva)**
+            - **Duración:** 30min
+            - **Resumen:** Explora los requisitos de admisión para estudios de posgrado en el extranjero, conoce programas de preparación y obtén información sobre becas.
+         ---
 
-      - **Gestión del cambio (Interactiva)**
-         - **Duración:** 60min
-         - **Resumen:** Aprende a adaptarte y gestionar el cambio de manera efectiva para alcanzar tus objetivos personales y profesionales.
-      ---
+         - **Gestión del cambio (Interactiva)**
+            - **Duración:** 60min
+            - **Resumen:** Aprende a adaptarte y gestionar el cambio de manera efectiva para alcanzar tus objetivos personales y profesionales.
+         ---
 
-      - **Power UP (Interactiva)**
-         - **Duración:** 35min
-         - **Resumen:** Transforma tus habilidades en superpoderes laborales a través de talleres, proyectos innovadores y mentoring.
-      ---
+         - **Power UP (Interactiva)**
+            - **Duración:** 35min
+            - **Resumen:** Transforma tus habilidades en superpoderes laborales a través de talleres, proyectos innovadores y mentoring.
+         ---
       - #### 3.2.2 Experiencias Presenciales
          - Experiencias presenciales es un componente diseñado a la medida para SMART para que cuando nuestros colaboradores organicen eventos presenciales se vean reflejados en tiempo real en la página. El procedimiento para agregar un evento presencial es sencillo: 
             1. El colaborador abrirá el documento: https://docs.google.com/spreadsheets/d/1TXTHaHBOZXMPBtT8X5LJaZIuixXd-osvNHAGAHpPgZg/edit#gid=0
@@ -342,7 +342,7 @@
          - Cambio de asesor
          - ¿Qué es counseling?
          - Conócete con DPI
-         - Atención uno a uno (ver sección agenda) 
+         - Atención uno a uno (ver sección agenda) <br>
 
    - ### 3.3 ¿Quiénes Somos?
       - Tarjeta Portada
@@ -354,21 +354,19 @@
       - Valores de SMART
 
    - ### 3.4 Noticias
-      - Enlaces a noticias (cargadas dinámicamente desde Instagram)
+      - Enlaces a noticias (cargadas dinámicamente desde Instagram) <br>
 
    - ### 3.5 SMART Tips
-   Carruseles de videos extraídos de nuestro canal de youtube, se sincronizan en tiempo real gracias a la API de youtube.
-      - Preview de Video
-      - Carruseles de videos temáticos
-      - UP Explorer
-      - Competencias en el cine
-      - Cómo sobreviví a...
-      - Apps para ti
+      - Carruseles de videos extraídos de nuestro canal de youtube, se sincronizan en tiempo real gracias a la API de youtube:
+         - UP Explorer
+         - Competencias en el cine
+         - Cómo sobreviví a...
+         - Apps para ti
 
    - ### 3.6 Contacto
       - Información de contacto de todos los colaboradores del SMART
       - Mapa de ubicación
-      - Buzón de sugerencias
+      - Buzón de sugerencias <br>
 
    - ### 3.7  Footer
       - Logo de la Universidad Panamericana
