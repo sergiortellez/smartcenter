@@ -29,15 +29,15 @@
 
 ## 1. Introducción
 
-   ### 1.1 Objetivo del Proyecto
+  - ### 1.1 Objetivo del Proyecto
    SMART Center es parte importante de la cultura universitaria de cara a los alumnos. El primer objetivo del proyecto es darle una 'casa en la red' al centro, un lugar de llegada para alumnos que desean acercarse a los servicios que se ofrecen en el mismo. 
    Se pretende también que sea un trampolín para magnificar el alcance que el centro tiene al ofrecer experiencias asincrónicas y de valor. 
    
 
-   ### 1.2 Antecedentes
+  - ### 1.2 Antecedentes
    La manera orgánica en la que creció el sitio respecto a las necesidades del centro ocasionó problemas respecto a la elección y uso de tecnologías. A finales de 2019 se detectó la necesidad de reescribir todo el código usando una sola arquitectura y una lista de tecnologías definidas. Se abandonaron los frameworks y se restructuró todo a una arquitectura basada en componentes. 
 
-   ### 1.3 Tecnologías y dependencias involucradas en el desarrollo
+  - ### 1.3 Tecnologías y dependencias involucradas en el desarrollo
 
    #### 1.3.1 El sitio usa globalmente las siguientes **tecnologías**: 
 
@@ -65,7 +65,7 @@
    - **Youtube API** Alimenta la sección: "SMART Tips"
 
 
-   ### 1.4 Versiones:
+  - ### 1.4 Versiones:
 
    - **Alpha** 
 
@@ -89,7 +89,7 @@
       ---
    - **1.5**  
 
-      A raíz del cambio de imagen institucional el Centro adaptó su página para seguir los estándares institucionales. 
+      - A raíz del cambio de imagen institucional el Centro adaptó su página para seguir los estándares institucionales. 
       Desaparecieron las páginas de las secciones pues el enfoque del centro ahora sería centralizado, se trabajó más en un enfoque a lo que el alumno podía hacer en la página y menos en darle información innecesaria.
       --- 
    - **2.0**  
