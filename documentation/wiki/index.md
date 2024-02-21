@@ -402,10 +402,10 @@ La sección de la agenda en el sitio web está diseñada para permitir a los usu
 
 
    - ### 4.2 DPI
-   El sitio alberga las siguientes partes del proyecto DPI (consultar diagramas de documentación):
-      - Lectura.
-      - Despliegue de DPI por alumno.
-      - Buscador para asesores.
+      - El sitio alberga las siguientes partes del proyecto DPI (consultar diagramas de documentación):
+         - Lectura.
+         - Despliegue de DPI por alumno.
+         - Buscador para asesores.
 
 
 
