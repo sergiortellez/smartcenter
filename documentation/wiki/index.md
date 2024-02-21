@@ -214,6 +214,7 @@
       - Video promocional
 
    - ### 3.2 Nuestras Experiencias
+      - Se han generado dos diferentes plantillas para dos tipos de experiencias digitales. Puede ser que las experiencias que desarrolla el equipo sean en forma de vídeo con playlists secuenciales que incluyen materiales o instrucciones por video o que sean interactivas. Las experiencias interactivas simplemente se añaden como archivo externo ligado en el mismo paquete de la página, la plantilla da la sensación de que la experiencia está integrada a la página. 
 
       - ####  3.2.1 Experiencias Digitales
 
