@@ -41,8 +41,7 @@
 ## 1. Introducción
 ---
    - ### 1.1 Objetivo del Proyecto
-   SMART Center es parte importante de la cultura universitaria de cara a los alumnos. El primer objetivo del proyecto es darle una 'casa en la red' al centro, un lugar de llegada para alumnos que desean acercarse a los servicios que se ofrecen en el mismo. 
-   Se pretende también que sea un trampolín para magnificar el alcance que el centro tiene al ofrecer experiencias asincrónicas y de valor. 
+   SMART Center es un  Centro de estudiantes en el que el alumno cuenta con proyectos , servicios y experiencias para desarrollar competencias profesionales, académicas y de vida, motivo por el. que el principal objetivo del proyecto es darle una 'casa en la red' al centro, un lugar de llegada para alumnos que desean acercarse a los servicios que se ofrecen en el mismo. Se pretende también que sea un proyecto que permite  magnificar el alcance que el centro tiene al ofrecer experiencias directamente desde la página.
    
 
    - ### 1.2 Antecedentes
