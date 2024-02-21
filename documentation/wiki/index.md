@@ -41,28 +41,28 @@
 
    #### 1.3.1 El sitio usa globalmente las siguientes **tecnologías**: 
 
-   1. **HTML5**: Se utilizan varios elementos y atributos de HTML5, demostrando estándares web modernos para estructuración de contenido y diseño responsivo.
-   2. **Técnicas de Diseño Responsivo**: A través de configuraciones del meta viewport y CSS, el sitio está diseñado para ser responsivo, asegurando que se adapta a diferentes tamaños de pantalla y dispositivos.
-   3. **CSS**: Se usa CSS externo para el estilo (`assets/style/style.min.css`).
-   4. **JavaScript**: Se hacen referencia a varios archivos JavaScript externos para funcionalidad, incluyendo navegación, inserción de videos, integración de API de Instagram, tarjetas expandibles, desplazamiento espía, gestión de FAQ y carruseles. Estos scripts son responsables de elementos interactivos, ajustes de diseño y gestión de contenido.
+   - **HTML5**: Se utilizan varios elementos y atributos de HTML5, demostrando estándares web modernos para estructuración de contenido y diseño responsivo.
+   - **Técnicas de Diseño Responsivo**: A través de configuraciones del meta viewport y CSS, el sitio está diseñado para ser responsivo, asegurando que se adapta a diferentes tamaños de pantalla y dispositivos.
+   - **CSS**: Se usa CSS externo para el estilo (`assets/style/style.min.css`).
+   - **JavaScript**: Se hacen referencia a varios archivos JavaScript externos para funcionalidad, incluyendo navegación, inserción de videos, integración de API de Instagram, tarjetas expandibles, desplazamiento espía, gestión de FAQ y carruseles. Estos scripts son responsables de elementos interactivos, ajustes de diseño y gestión de contenido.
 
 
    #### 1.3.2 Además de tener las siguientes **dependencias**: 
 
-   1. **Google Fonts**: El sitio utiliza Google Fonts para la tipografía, específicamente la familia de fuentes 'Nunito'.
-   2. **GSAP (GreenSock Animation Platform)**: El sitio utiliza GSAP junto con su plugin ScrollTrigger para animaciones basadas en el desplazamiento.
+   - **Google Fonts**: El sitio utiliza Google Fonts para la tipografía, específicamente la familia de fuentes 'Nunito'.
+   - **GSAP (GreenSock Animation Platform)**: El sitio utiliza GSAP junto con su plugin ScrollTrigger para animaciones basadas en el desplazamiento.
    TODO: revisar constantemente la disponibilidad de la tecnología en CSS para reemplazar esta dependencia.(última revisión: ene 2023 - negativa) 
-   4. **Google Tag Manager (Gtag.js)**: Para análisis y seguimiento, se integra el `gtag.js` de Google Tag Manager. Se usa para google analytics. 
-   5. **Google Analytics**: PAra seguimiento y estadísticas del sitio, los resultados son incrustados automáticamente en el reporte "SMART Stats" 
-   6. **Rellax.js**: Para efectos de paralaje, el sitio utiliza Rellax.js, una biblioteca ligera de JavaScript vanilla. Se usa específicamente en las tarjetas dinámicas. 
+   - **Google Tag Manager (Gtag.js)**: Para análisis y seguimiento, se integra el `gtag.js` de Google Tag Manager. Se usa para google analytics. 
+   - **Google Analytics**: PAra seguimiento y estadísticas del sitio, los resultados son incrustados automáticamente en el reporte "SMART Stats" 
+   - **Rellax.js**: Para efectos de paralaje, el sitio utiliza Rellax.js, una biblioteca ligera de JavaScript vanilla. Se usa específicamente en las tarjetas dinámicas. 
    TODO: revisar constantemente la disponibilidad de la tecnología en CSS para reemplazar esta dependencia.(última revisión: ene 2023 - negativa) 
-   7. **Font Awesome**: El sitio utiliza Font Awesome para los iconos, como se indica por la fuente del script a un kit de Font Awesome (`https://kit.fontawesome.com/c09e05c963.js`). (Este Kit es pagado por el desarrollador y compartido gratuitamente al SMART)
-   8. **https://simplybook.me/**: La agenda presencial de las sesiones de counseling, coaching y programas de SMART es manejada desde el software de simplybook.me, un plugin costumizado para la página es el que se presenta de cara a los alumnos. 
-   9. Revisar Tecnologías en sección de proyecto DPI.
-   10. **Animate.css**: Para animaciones, el sitio incorpora Animate.css, una biblioteca de animaciones listas para usar.
-   11. **Google Auth**: Para manejar el login en cualquier página individual del sitio donde se requiera. 
-   12. **Instagram Api** Alimenta la sección "SMART news"
-   13. **Youtube API** Alimenta la sección: "SMART Tips"
+   - **Font Awesome**: El sitio utiliza Font Awesome para los iconos, como se indica por la fuente del script a un kit de Font Awesome (`https://kit.fontawesome.com/c09e05c963.js`). (Este Kit es pagado por el desarrollador y compartido gratuitamente al SMART)
+   - **https://simplybook.me/**: La agenda presencial de las sesiones de counseling, coaching y programas de SMART es manejada desde el software de simplybook.me, un plugin costumizado para la página es el que se presenta de cara a los alumnos. 
+   - Revisar Tecnologías en sección de proyecto DPI.
+   - **Animate.css**: Para animaciones, el sitio incorpora Animate.css, una biblioteca de animaciones listas para usar.
+   - **Google Auth**: Para manejar el login en cualquier página individual del sitio donde se requiera. 
+   - **Instagram Api** Alimenta la sección "SMART news"
+   - **Youtube API** Alimenta la sección: "SMART Tips"
 
 
    ### 1.4 Versiones:
@@ -147,28 +147,28 @@
 ## 2. Navegación
 
    ### 2.1 Barra de Navegación (componente)
-      La barra de navegación está diseñada para estar presente en todo el sitio, de un click puede llevarnos a: 
-      - [Experiencias](#experiencias)
-      - [¿Quiénes somos?](#somos)
-      - [Noticias](#news)
-      - [SMART Tips](#tips)
-      - [Contacto](#contacto)
-      - [Citas](citas.html)
+   La barra de navegación está diseñada para estar presente en todo el sitio, de un click puede llevarnos a: 
+   - Experiencias(#experiencias) 
+   - ¿Quiénes somos?(#somos) 
+   - Noticias(#news) 
+   - SMART Tips(#tips) 
+   - Contacto(#contacto) 
+   - Citas(citas.html) 
 
    ### 2.2 Sección de Experiencias
 
-      - [Experiencias Digitales](experiencias.html)
-      - [Experiencias Presenciales](presenciales.html)
-      - [Conoce nuestros GEAS](oferta_geas.html)
-      - [Únete a un GEA](https://form.typeform.com/to/B3w43naa?typeform-source=successcenter1.typeform.com)
-      - [Eventos GEA](https://calendar.google.com/calendar/embed?src=c_04s4ftskn78nu8vjsp0dseidpc%40group.calendar.google.com&ctz=America%2FMexico_City)
-      - [Crea tu GEA](https://docs.google.com/forms/d/e/1FAIpQLSeWJPgUl6ZTCLZXKFrPKvoPaIXD_VOjeb0KGhKqojdYhYVIQg/viewform?usp=pp_url)
-      - [¿Eres Asesor?](https://asesoria.up.edu.mx)
-      - [Cambio de asesor](https://forms.gle/BNqd2BnFyApZYJVL7)
+      - Experiencias Digitales (experiencias.html)
+      - Experiencias Presenciales (presenciales.html)
+      - Conoce nuestros GEAS (oferta_geas.html)
+      - Únete a un GEA(https://form.typeform.com/to/B3w43naa?typeform-source=successcenter1.typeform.com)
+      - Eventos GEA(https://calendar.google.com/calendar/embed?src=c_04s4ftskn78nu8vjsp0dseidpc%40group.calendar.google.com&ctz=America%2FMexico_City)
+      - Crea tu GEA (https://docs.google.com/forms/d/e/1FAIpQLSeWJPgUl6ZTCLZXKFrPKvoPaIXD_VOjeb0KGhKqojdYhYVIQg/viewform?usp=pp_url)
+      - ¿Eres Asesor?(https://asesoria.up.edu.mx)
+      - Cambio de asesor(https://forms.gle/BNqd2BnFyApZYJVL7)
 
    ### 2.3 Sección de Contacto
 
-      - [Formulario de Contacto](https://forms.gle/yVDwtKpG1gDEmdT89)
+      - Formulario de Contacto (https://forms.gle/yVDwtKpG1gDEmdT89)
 
    ### 2.4 Redes Sociales y Otros Enlaces
 
@@ -188,66 +188,66 @@
 
    ### 3.2 Nuestras Experiencias
 
-      ####  3.2.1 Experiencias Digitales
+   ####  3.2.1 Experiencias Digitales
 
-      1. **Organizing Your Life Like a Boss (Video)**
-         - **Duración:** 20min
-         - **Resumen:** Esta experiencia ofrece estrategias para mejorar la organización del tiempo y aumentar la productividad. Incluye 9 videos cortos con técnicas sencillas y la posibilidad de una sesión de coaching personalizado.
-      ---   
+   - **Organizing Your Life Like a Boss (Video)**
+      - **Duración:** 20min
+      - **Resumen:** Esta experiencia ofrece estrategias para mejorar la organización del tiempo y aumentar la productividad. Incluye 9 videos cortos con técnicas sencillas y la posibilidad de una sesión de coaching personalizado.
+   ---   
 
-      2. **Discovering the Leader in You (Interactiva)**
-         - **Duración:** 10min
-         - **Resumen:** Un taller en línea para descubrir tu estilo de liderazgo y aprender cómo aplicarlo efectivamente en diversas situaciones.
-      ---
+   - **Discovering the Leader in You (Interactiva)**
+      - **Duración:** 10min
+      - **Resumen:** Un taller en línea para descubrir tu estilo de liderazgo y aprender cómo aplicarlo efectivamente en diversas situaciones.
+   ---
 
-      3. **Your CV Your Masterpiece (Video)**
-         - **Duración:** 30min
-         - **Resumen:** Aprende a crear un CV impresionante y a destacar en procesos de selección. Incluye 7 videos educativos y la opción de recibir asesoría personalizada.
-      ---
+   - **Your CV Your Masterpiece (Video)**
+      - **Duración:** 30min
+      - **Resumen:** Aprende a crear un CV impresionante y a destacar en procesos de selección. Incluye 7 videos educativos y la opción de recibir asesoría personalizada.
+   ---
 
-      4. **Communicate Better (Interactiva)**
-         - **Duración:** 12min
-         - **Resumen:** Mejora tu estilo de comunicación descubriendo sus ventajas y desventajas, y aprende a relacionarte de manera más efectiva con los demás.
-      ---
+   - **Communicate Better (Interactiva)**
+      - **Duración:** 12min
+      - **Resumen:** Mejora tu estilo de comunicación descubriendo sus ventajas y desventajas, y aprende a relacionarte de manera más efectiva con los demás.
+   ---
 
-      5. **Enfrenta tus problemas con mayor facilidad (Interactiva)**
-         - **Duración:** 10min
-         - **Resumen:** Aprende a gestionar situaciones estresantes de manera efectiva, encontrando soluciones prácticas a problemas comunes.
-      ---
+   - **Enfrenta tus problemas con mayor facilidad (Interactiva)**
+      - **Duración:** 10min
+      - **Resumen:** Aprende a gestionar situaciones estresantes de manera efectiva, encontrando soluciones prácticas a problemas comunes.
+   ---
 
-      6. **Negociación (Interactiva)**
-         - **Duración:** 22min
-         - **Resumen:** Descubre tu estilo de negociación y cómo aplicarlo en diferentes contextos para lograr resultados óptimos.
-      ---
+   - **Negociación (Interactiva)**
+      - **Duración:** 22min
+      - **Resumen:** Descubre tu estilo de negociación y cómo aplicarlo en diferentes contextos para lograr resultados óptimos.
+   ---
 
-      7. **Live Smarter (Self-awareness) (Interactiva)**
-         - **Duración:** 15min
-         - **Resumen:** Fomenta tu autoconocimiento y mejora tu inteligencia emocional a través de actividades y reflexiones guiadas.
-      ---
+   - **Live Smarter (Self-awareness) (Interactiva)**
+      - **Duración:** 15min
+      - **Resumen:** Fomenta tu autoconocimiento y mejora tu inteligencia emocional a través de actividades y reflexiones guiadas.
+   ---
 
-      8. **Live Smarter (Manage yourself) (Interactiva)**
-         - **Duración:** 16min
-         - **Resumen:** Continúa tu desarrollo personal y profesional gestionando mejor tus emociones y reacciones ante diversas situaciones.
-      ---
+   - **Live Smarter (Manage yourself) (Interactiva)**
+      - **Duración:** 16min
+      - **Resumen:** Continúa tu desarrollo personal y profesional gestionando mejor tus emociones y reacciones ante diversas situaciones.
+   ---
 
-      9. **Recreando mi vida (Video)**
-         - **Duración:** 40min
-         - **Resumen:** Potencia tu autoconocimiento y establece un plan de acción para alcanzar tus metas personales y profesionales.
-      ---
+   - **Recreando mi vida (Video)**
+      - **Duración:** 40min
+      - **Resumen:** Potencia tu autoconocimiento y establece un plan de acción para alcanzar tus metas personales y profesionales.
+   ---
 
-      10. **Atrévete a ser un master (Interactiva)**
-         - **Duración:** 30min
-         - **Resumen:** Explora los requisitos de admisión para estudios de posgrado en el extranjero, conoce programas de preparación y obtén información sobre becas.
-      ---
+   - **Atrévete a ser un master (Interactiva)**
+      - **Duración:** 30min
+      - **Resumen:** Explora los requisitos de admisión para estudios de posgrado en el extranjero, conoce programas de preparación y obtén información sobre becas.
+   ---
 
-      11. **Gestión del cambio (Interactiva)**
-         - **Duración:** 60min
-         - **Resumen:** Aprende a adaptarte y gestionar el cambio de manera efectiva para alcanzar tus objetivos personales y profesionales.
-      ---
+   - **Gestión del cambio (Interactiva)**
+      - **Duración:** 60min
+      - **Resumen:** Aprende a adaptarte y gestionar el cambio de manera efectiva para alcanzar tus objetivos personales y profesionales.
+   ---
 
-      12. **Power UP (Interactiva)**
-         - **Duración:** 35min
-         - **Resumen:** Transforma tus habilidades en superpoderes laborales a través de talleres, proyectos innovadores y mentoring.
+   - **Power UP (Interactiva)**
+      - **Duración:** 35min
+      - **Resumen:** Transforma tus habilidades en superpoderes laborales a través de talleres, proyectos innovadores y mentoring.
    ---
       #### 3.2.2 Experiencias Presenciales
       - Experiencias presenciales es un componente diseñado a la medida para SMART para que cuando nuestros colaboradores organicen eventos presenciales se vean reflejados en tiempo real en la página. El procedimiento para agregar un evento presencial es sencillo: 
@@ -257,47 +257,47 @@
    ---
       #### 3.2.3 Oferta GEAS
     
-      1. **AIESEC**
+      - **AIESEC**
          - **Simulador empresarial**
          - **Training program**
          - **Descripción:** Red de jóvenes que ofrece desarrollo personal y experiencias internacionales a través de voluntariado y pasantías.
       ---
-      2. **COPARMEX UP**
+      - **COPARMEX UP**
          - **Simulador empresarial**
          - **Training program**
          - **Descripción:** Semillero de líderes empresariales que promueve una nueva cultura empresarial entre los jóvenes.
       ---
-      3. **GROWTH**
+      - **GROWTH**
          - **Simulador empresarial**
          - **Training program**
          - **Descripción:** Iniciativas para beneficiar la salud integral, promoviendo conocimiento y reflexión sobre el manejo de las emociones.
       ---
-      4. **Hult Prize**
+      - **Hult Prize**
          - **Simulador empresarial**
          - **Training program**
          - **Descripción:** Competencia global que invita a universitarios a resolver problemas sociales a través del emprendimiento social.
       ---
-      5. **Inspire UP**
+      - **Inspire UP**
          - **Simulador empresarial**
          - **Training program**
          - **Descripción:** Grupo estudiantil de excelencia que busca formar futuros líderes de México enfocándose en el sentido humano y la responsabilidad social.
       ---
-      6. **Nous**
+      - **Nous**
          - **Simulador empresarial**
          - **Training program**
          - **Descripción:** Espacio para el ejercicio filosófico y de reflexión a través de debates, diálogos, y discusiones sobre temas diversos.
       ---
-      7. **SH+E**
+      - **SH+E**
          - **Simulador empresarial**
          - **Training program**
          - **Descripción:** Promueve el empoderamiento femenino y la igualdad de oportunidades a través de conferencias, ferias, y talleres.
       ---
-      8. **TEDx**
+      - **TEDx**
          - **Simulador empresarial**
          - **Training program**
          - **Descripción:** Eventos locales que siguen el estilo de TED para difundir "ideas que valen la pena" a través de charlas y presentaciones.
       ---
-      9. **The Green Project**
+      - **The Green Project**
          - **Simulador empresarial**
          - **Training program**
          - **Descripción:** Fomenta una vida ecológica y busca hacer de la universidad un lugar más sustentable a través de diferentes proyectos y eventos.
