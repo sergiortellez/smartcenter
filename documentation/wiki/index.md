@@ -1,10 +1,11 @@
 # SMART 2.0 -  SMART Center UP
+---
+---
+
 
 
 # Tabla de Contenidos
-
-# Tabla de Contenidos
-
+---
 - [1. Introducción](#1-introducción)
   - [1.1 Objetivo del Proyecto](#11-objetivo-del-proyecto)
   - [1.2 Antecedentes](#12-antecedentes)
@@ -40,7 +41,7 @@
 
 
 ## 1. Introducción
-
+---
    - ### 1.1 Objetivo del Proyecto
    SMART Center es parte importante de la cultura universitaria de cara a los alumnos. El primer objetivo del proyecto es darle una 'casa en la red' al centro, un lugar de llegada para alumnos que desean acercarse a los servicios que se ofrecen en el mismo. 
    Se pretende también que sea un trampolín para magnificar el alcance que el centro tiene al ofrecer experiencias asincrónicas y de valor. 
@@ -174,7 +175,7 @@
       ---
 
 ## 2. Navegación
-
+---
    - ### 2.1 Barra de Navegación (componente)
       La barra de navegación está diseñada para estar presente en todo el sitio, de un click puede llevarnos a: 
       - Experiencias(#experiencias) 
@@ -210,7 +211,7 @@
 
 
 ## 3. Secciones Principales
-
+---
    - ### 3.1 Portada
    - Banner con animación
    - Video promocional
@@ -377,6 +378,7 @@
       - Información de contacto del campus CDMX
 
 ## 4. Recursos Adicionales
+---
 La sección de la agenda en el sitio web está diseñada para permitir a los usuarios programar citas o eventos de manera fácil e interactiva. A continuación, se detalla cómo funciona esta sección: 
    - ### 4.1 Agenda
 
