@@ -349,27 +349,27 @@
 ## 4. Recursos Adicionales
 
    - ### 4.1 Agenda
-   La sección de la agenda en el sitio web está diseñada para permitir a los usuarios programar citas o eventos de manera fácil e interactiva. A continuación, se detalla cómo funciona esta sección:  
+   
 
-      - #### 4.1.1 Sección de Agenda Personal (`#app_citas`)
-         - Esta sección muestra un **widget de SimplyBook**, un sistema de reservas online que permite a los usuarios elegir y reservar citas.
-         - **Loader (`#loader`):** Muestra una animación de carga mientras el widget de SimplyBook se carga, mejorando la experiencia de usuario.
+   - #### 4.1.1 Sección de Agenda Personal (`#app_citas`)
+      - Esta sección muestra un **widget de SimplyBook**, un sistema de reservas online que permite a los usuarios elegir y reservar citas.
+      - **Loader (`#loader`):** Muestra una animación de carga mientras el widget de SimplyBook se carga, mejorando la experiencia de usuario.
 
-      - #### 4.1.2 Widget de SimplyBook
-         - Se integra mediante un script que carga un iFrame del servicio de SimplyBook.
-         - Los usuarios pueden seleccionar el tipo de cita, la fecha y la hora directamente desde este widget interactivo.
-         - El tema del widget está personalizado para coincidir con el diseño general del sitio (`theme: "space"`).
+   - #### 4.1.2 Widget de SimplyBook
+      - Se integra mediante un script que carga un iFrame del servicio de SimplyBook.
+      - Los usuarios pueden seleccionar el tipo de cita, la fecha y la hora directamente desde este widget interactivo.
+      - El tema del widget está personalizado para coincidir con el diseño general del sitio (`theme: "space"`).
 
 
-      - ####  4.1.3 Funcionalidad JS para la Interactividad
-         - **Animaciones GSAP:** Se utilizan para animaciones en la página, mejorando la visual y transiciones.
-         - **Script de Navegación (`nav_citas.min.js`):** Controla la interacción con la barra de navegación.
-         - **SpyScroll (`spyscroll.min.js`):** Permite el seguimiento de la sección activa en la barra de navegación mientras el usuario se desplaza por la página.
-         - **Loader de Citas (`loader_citas.min.js`):** Gestiona la visualización del loader mientras se carga el widget de SimplyBook.
+   - ####  4.1.3 Funcionalidad JS para la Interactividad
+      - **Animaciones GSAP:** Se utilizan para animaciones en la página, mejorando la visual y transiciones.
+      - **Script de Navegación (`nav_citas.min.js`):** Controla la interacción con la barra de navegación.
+      - **SpyScroll (`spyscroll.min.js`):** Permite el seguimiento de la sección activa en la barra de navegación mientras el usuario se desplaza por la página.
+      - **Loader de Citas (`loader_citas.min.js`):** Gestiona la visualización del loader mientras se carga el widget de SimplyBook.
 
-      - #### 4.1.4 Interacción con los Eventos (`events_grid`)
-         - Permite a los usuarios expandir información sobre eventos específicos para leer más detalles.
-         - Los botones de "ver más" expanden las tarjetas de eventos para mostrar más información utilizando animaciones suaves y cambios de íconos para una indicación visual clara.
+   - #### 4.1.4 Interacción con los Eventos (`events_grid`)
+      - Permite a los usuarios expandir información sobre eventos específicos para leer más detalles.
+      - Los botones de "ver más" expanden las tarjetas de eventos para mostrar más información utilizando animaciones suaves y cambios de íconos para una indicación visual clara.
 
    Esta sección está diseñada para ser intuitiva y fácil de usar, asegurando que los usuarios puedan programar sus citas o registrarse para eventos presenciales sin inconvenientes.
 
