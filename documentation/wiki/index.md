@@ -157,27 +157,27 @@
 
    ### 2.2 Sección de Experiencias
 
-      - Experiencias Digitales (experiencias.html)
-      - Experiencias Presenciales (presenciales.html)
-      - Conoce nuestros GEAS (oferta_geas.html)
-      - Únete a un GEA(https://form.typeform.com/to/B3w43naa?typeform-source=successcenter1.typeform.com)
-      - Eventos GEA(https://calendar.google.com/calendar/embed?src=c_04s4ftskn78nu8vjsp0dseidpc%40group.calendar.google.com&ctz=America%2FMexico_City)
-      - Crea tu GEA (https://docs.google.com/forms/d/e/1FAIpQLSeWJPgUl6ZTCLZXKFrPKvoPaIXD_VOjeb0KGhKqojdYhYVIQg/viewform?usp=pp_url)
-      - ¿Eres Asesor?(https://asesoria.up.edu.mx)
-      - Cambio de asesor(https://forms.gle/BNqd2BnFyApZYJVL7)
+   - Experiencias Digitales (experiencias.html)
+   - Experiencias Presenciales (presenciales.html)
+   - Conoce nuestros GEAS (oferta_geas.html)
+   - Únete a un GEA(https://form.typeform.com/to/B3w43naa?typeform-source=successcenter1.typeform.com)
+   - Eventos GEA(https://calendar.google.com/calendar/embed?src=c_04s4ftskn78nu8vjsp0dseidpc%40group.calendar.google.com&ctz=America%2FMexico_City)
+   - Crea tu GEA (https://docs.google.com/forms/d/e/1FAIpQLSeWJPgUl6ZTCLZXKFrPKvoPaIXD_VOjeb0KGhKqojdYhYVIQg/viewform?usp=pp_url)
+   - ¿Eres Asesor?(https://asesoria.up.edu.mx)
+   - Cambio de asesor(https://forms.gle/BNqd2BnFyApZYJVL7)
 
    ### 2.3 Sección de Contacto
 
-      - Formulario de Contacto (https://forms.gle/yVDwtKpG1gDEmdT89)
+   - Formulario de Contacto (https://forms.gle/yVDwtKpG1gDEmdT89)
 
    ### 2.4 Redes Sociales y Otros Enlaces
 
-      - [YouTube](https://www.youtube.com/channel/UCMAOisJbM69nBTLbCK_b4LQ?view_as=subscriber)
-      - [Facebook](https://www.facebook.com/SuccessCenterUP/)
-      - [Instagram](https://www.instagram.com/smartcenterup/)
-      - [Aviso de privacidad](https://www.up.edu.mx/legales-politicas/)
-      - [SMART Center](https://smartcenter.up.edu.mx)
-      - [Visita Virtual](https://spotvirtual.com/invite/smart-center-eb42618dd1212b0a-enmMJMj8nb/sign-up)
+   - [YouTube](https://www.youtube.com/channel/UCMAOisJbM69nBTLbCK_b4LQ?view_as=subscriber)
+   - [Facebook](https://www.facebook.com/SuccessCenterUP/)
+   - [Instagram](https://www.instagram.com/smartcenterup/)
+   - [Aviso de privacidad](https://www.up.edu.mx/legales-politicas/)
+   - [SMART Center](https://smartcenter.up.edu.mx)
+   - [Visita Virtual](https://spotvirtual.com/invite/smart-center-eb42618dd1212b0a-enmMJMj8nb/sign-up)
 
 
 ## 3. Secciones Principales
@@ -249,72 +249,72 @@
       - **Duración:** 35min
       - **Resumen:** Transforma tus habilidades en superpoderes laborales a través de talleres, proyectos innovadores y mentoring.
    ---
-      #### 3.2.2 Experiencias Presenciales
-      - Experiencias presenciales es un componente diseñado a la medida para SMART para que cuando nuestros colaboradores organicen eventos presenciales se vean reflejados en tiempo real en la página. El procedimiento para agregar un evento presencial es sencillo: 
-         1. El colaborador abrirá el documento: https://docs.google.com/spreadsheets/d/1TXTHaHBOZXMPBtT8X5LJaZIuixXd-osvNHAGAHpPgZg/edit#gid=0
-         2. llenará los campos correspondientes a su evento.
-         3. El módulo automáticamente se comunicará con el documento y generará la tarjeta correspondiente que los alumnos pueden consultar. 
+   #### 3.2.2 Experiencias Presenciales
+   - Experiencias presenciales es un componente diseñado a la medida para SMART para que cuando nuestros colaboradores organicen eventos presenciales se vean reflejados en tiempo real en la página. El procedimiento para agregar un evento presencial es sencillo: 
+      1. El colaborador abrirá el documento: https://docs.google.com/spreadsheets/d/1TXTHaHBOZXMPBtT8X5LJaZIuixXd-osvNHAGAHpPgZg/edit#gid=0
+      2. llenará los campos correspondientes a su evento.
+      3. El módulo automáticamente se comunicará con el documento y generará la tarjeta correspondiente que los alumnos pueden consultar. 
    ---
-      #### 3.2.3 Oferta GEAS
-    
-      - **AIESEC**
-         - **Simulador empresarial**
-         - **Training program**
-         - **Descripción:** Red de jóvenes que ofrece desarrollo personal y experiencias internacionales a través de voluntariado y pasantías.
-      ---
-      - **COPARMEX UP**
-         - **Simulador empresarial**
-         - **Training program**
-         - **Descripción:** Semillero de líderes empresariales que promueve una nueva cultura empresarial entre los jóvenes.
-      ---
-      - **GROWTH**
-         - **Simulador empresarial**
-         - **Training program**
-         - **Descripción:** Iniciativas para beneficiar la salud integral, promoviendo conocimiento y reflexión sobre el manejo de las emociones.
-      ---
-      - **Hult Prize**
-         - **Simulador empresarial**
-         - **Training program**
-         - **Descripción:** Competencia global que invita a universitarios a resolver problemas sociales a través del emprendimiento social.
-      ---
-      - **Inspire UP**
-         - **Simulador empresarial**
-         - **Training program**
-         - **Descripción:** Grupo estudiantil de excelencia que busca formar futuros líderes de México enfocándose en el sentido humano y la responsabilidad social.
-      ---
-      - **Nous**
-         - **Simulador empresarial**
-         - **Training program**
-         - **Descripción:** Espacio para el ejercicio filosófico y de reflexión a través de debates, diálogos, y discusiones sobre temas diversos.
-      ---
-      - **SH+E**
-         - **Simulador empresarial**
-         - **Training program**
-         - **Descripción:** Promueve el empoderamiento femenino y la igualdad de oportunidades a través de conferencias, ferias, y talleres.
-      ---
-      - **TEDx**
-         - **Simulador empresarial**
-         - **Training program**
-         - **Descripción:** Eventos locales que siguen el estilo de TED para difundir "ideas que valen la pena" a través de charlas y presentaciones.
-      ---
-      - **The Green Project**
-         - **Simulador empresarial**
-         - **Training program**
-         - **Descripción:** Fomenta una vida ecológica y busca hacer de la universidad un lugar más sustentable a través de diferentes proyectos y eventos.
+   #### 3.2.3 Oferta GEAS
+   
+   - **AIESEC**
+      - **Simulador empresarial**
+      - **Training program**
+      - **Descripción:** Red de jóvenes que ofrece desarrollo personal y experiencias internacionales a través de voluntariado y pasantías.
    ---
-
-      - Únete a un GEA
-      - Eventos GEA
-      - Crea tu GEA
-      - ¿Qué es la AU? (Asesoría Universitaria)
-      - ¿Eres Asesor?
-      - Prepara tu asesoría
-      - Temas en la AU
-      - FAQ AU
-      - Cambio de asesor
-      - ¿Qué es counseling?
-      - Conócete con DPI
-      - Atención uno a uno (ver sección agenda) 
+   - **COPARMEX UP**
+      - **Simulador empresarial**
+      - **Training program**
+      - **Descripción:** Semillero de líderes empresariales que promueve una nueva cultura empresarial entre los jóvenes.
+   ---
+   - **GROWTH**
+      - **Simulador empresarial**
+      - **Training program**
+      - **Descripción:** Iniciativas para beneficiar la salud integral, promoviendo conocimiento y reflexión sobre el manejo de las emociones.
+   ---
+   - **Hult Prize**
+      - **Simulador empresarial**
+      - **Training program**
+      - **Descripción:** Competencia global que invita a universitarios a resolver problemas sociales a través del emprendimiento social.
+   ---
+   - **Inspire UP**
+      - **Simulador empresarial**
+      - **Training program**
+      - **Descripción:** Grupo estudiantil de excelencia que busca formar futuros líderes de México enfocándose en el sentido humano y la responsabilidad social.
+   ---
+   - **Nous**
+      - **Simulador empresarial**
+      - **Training program**
+      - **Descripción:** Espacio para el ejercicio filosófico y de reflexión a través de debates, diálogos, y discusiones sobre temas diversos.
+   ---
+   - **SH+E**
+      - **Simulador empresarial**
+      - **Training program**
+      - **Descripción:** Promueve el empoderamiento femenino y la igualdad de oportunidades a través de conferencias, ferias, y talleres.
+   ---
+   - **TEDx**
+      - **Simulador empresarial**
+      - **Training program**
+      - **Descripción:** Eventos locales que siguen el estilo de TED para difundir "ideas que valen la pena" a través de charlas y presentaciones.
+   ---
+   - **The Green Project**
+      - **Simulador empresarial**
+      - **Training program**
+      - **Descripción:** Fomenta una vida ecológica y busca hacer de la universidad un lugar más sustentable a través de diferentes proyectos y eventos.
+   ---
+   #### 3.2.4 Otras secciones: 
+   - Únete a un GEA
+   - Eventos GEA
+   - Crea tu GEA
+   - ¿Qué es la AU? (Asesoría Universitaria)
+   - ¿Eres Asesor?
+   - Prepara tu asesoría
+   - Temas en la AU
+   - FAQ AU
+   - Cambio de asesor
+   - ¿Qué es counseling?
+   - Conócete con DPI
+   - Atención uno a uno (ver sección agenda) 
 
    ### 3.3 ¿Quiénes Somos?
    - Tarjeta Portada
