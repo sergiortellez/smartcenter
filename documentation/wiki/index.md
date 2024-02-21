@@ -41,25 +41,42 @@
 
 ## 1. Introducción
 
-  - ### 1.1 Objetivo del Proyecto
+   - ### 1.1 Objetivo del Proyecto
    SMART Center es parte importante de la cultura universitaria de cara a los alumnos. El primer objetivo del proyecto es darle una 'casa en la red' al centro, un lugar de llegada para alumnos que desean acercarse a los servicios que se ofrecen en el mismo. 
    Se pretende también que sea un trampolín para magnificar el alcance que el centro tiene al ofrecer experiencias asincrónicas y de valor. 
    
 
-  - ### 1.2 Antecedentes
+   - ### 1.2 Antecedentes
    La manera orgánica en la que creció el sitio respecto a las necesidades del centro ocasionó problemas respecto a la elección y uso de tecnologías. A finales de 2019 se detectó la necesidad de reescribir todo el código usando una sola arquitectura y una lista de tecnologías definidas. Se abandonaron los frameworks y se restructuró todo a una arquitectura basada en componentes. 
 
-  - ### 1.3 Tecnologías y dependencias involucradas en el desarrollo
+   - ### 1.3 Lenguaje de comunicación
 
-   - #### 1.3.1 El sitio usa globalmente las siguientes **tecnologías**: 
+   Se trabajó por meses en desarrollar un lenguaje de comunicación para la interfaz de nuestro sitio. Basándonos en aplicaciones comúnmente usadas por jóvenes escribimos las reglas para un lenguaje de interfaz fluido e intuitivo. 
+   Alguno de los principios de este lenguaje son: 
 
-      - **HTML5**: Se utilizan varios elementos y atributos de HTML5, demostrando estándares web modernos para estructuración de contenido y diseño responsivo.
-      - **Técnicas de Diseño Responsivo**: A través de configuraciones del meta viewport y CSS, el sitio está diseñado para ser responsivo, asegurando que se adapta a diferentes tamaños de pantalla y dispositivos.
-      - **CSS**: Se usa CSS externo para el estilo (`assets/style/style.min.css`).
-      - **JavaScript**: Se hacen referencia a varios archivos JavaScript externos para funcionalidad, incluyendo navegación, inserción de videos, integración de API de Instagram, tarjetas expandibles, desplazamiento espía, gestión de FAQ y carruseles. Estos scripts son responsables de elementos interactivos, ajustes de diseño y gestión de contenido.
+      - La información se subdivide en tarjetas. (es un lenguaje basado en tarjetas)
+      - Las tarjetas muestran la mínima cantidad de texto posible, si se necesita más información no se asume que el usuario quiere consumirla, la información adicional se despliega después de un click. 
+      - Las tarjetas funcionan de manera jerárquica a lo largo de la página. La semántica de las tarjetas permite esconder sub secciones que se abren al oprimir la tarjeta misma. 
+      - Las tarjetas pueden funcionar de las siguientes maneras: 
+         - Tarjeta estática: Contiene información estática o dinámica pero la tarjeta no es clickleable. 
+         - Tarjeta de enlace: Si es necesario llevar al usuario a otro sitio dentro o fuera de la página las tarjetas pueden comportarse como botones.
+         - Tarjeta con sección oculta: Se programaron tarjetas que abren un espacio debajo de ellas y recorren a todas las demás en el grid mientras la sub sección está abierta. 
+   - ### 1.3 Arquitectura
+
+      Trabajamos con tecnologías web. Todos los elementos de la página respetan una arquitectura en componentes siguiendo un paradigma funcional. 
+      
+
+   - ### 1.4 Tecnologías y dependencias involucradas en el desarrollo
+
+      - #### 1.4.1 El sitio usa globalmente las siguientes **tecnologías**: 
+
+         - **HTML5**: Se utilizan varios elementos y atributos de HTML5, demostrando estándares web modernos para estructuración de contenido y diseño responsivo.
+         - **Técnicas de Diseño Responsivo**: A través de configuraciones del meta viewport y CSS, el sitio está diseñado para ser responsivo, asegurando que se adapta a diferentes tamaños de pantalla y dispositivos.
+         - **CSS**: Se usa CSS externo para el estilo (`assets/style/style.min.css`).
+         - **JavaScript**: Se hacen referencia a varios archivos JavaScript externos para funcionalidad, incluyendo navegación, inserción de videos, integración de API de Instagram, tarjetas expandibles, desplazamiento espía, gestión de FAQ y carruseles. Estos scripts son responsables de elementos interactivos, ajustes de diseño y gestión de contenido.
 
 
-   - #### 1.3.2 Además de tener las siguientes **dependencias**: 
+   - #### 1.4.2 Además de tener las siguientes **dependencias**: 
 
       - **Google Fonts**: El sitio utiliza Google Fonts para la tipografía, específicamente la familia de fuentes 'Nunito'.
       - **GSAP (GreenSock Animation Platform)**: El sitio utiliza GSAP junto con su plugin ScrollTrigger para animaciones basadas en el desplazamiento.
@@ -77,7 +94,7 @@
       - **Youtube API** Alimenta la sección: "SMART Tips"  
 
 
-  - ### 1.4 Versiones:
+  - ### 1.5 Versiones:
 
       - **Alpha** 
 
