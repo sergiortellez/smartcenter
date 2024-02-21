@@ -51,16 +51,17 @@
 
    - ### 1.3 Lenguaje de comunicación
 
-   Se trabajó por meses en desarrollar un lenguaje de comunicación para la interfaz de nuestro sitio. Basándonos en aplicaciones comúnmente usadas por jóvenes escribimos las reglas para un lenguaje de interfaz fluido e intuitivo. 
-   Alguno de los principios de este lenguaje son: 
+      -Se trabajó por meses en desarrollar un lenguaje de comunicación para la interfaz de nuestro sitio. Basándonos en aplicaciones comúnmente usadas por jóvenes escribimos las reglas para un lenguaje de interfaz fluido e intuitivo. 
+      Alguno de los principios de este lenguaje son: 
 
-      - La información se subdivide en tarjetas. (es un lenguaje basado en tarjetas)
-      - Las tarjetas muestran la mínima cantidad de texto posible, si se necesita más información no se asume que el usuario quiere consumirla, la información adicional se despliega después de un click. 
-      - Las tarjetas funcionan de manera jerárquica a lo largo de la página. La semántica de las tarjetas permite esconder sub secciones que se abren al oprimir la tarjeta misma. 
-      - Las tarjetas pueden funcionar de las siguientes maneras: 
-         - Tarjeta estática: Contiene información estática o dinámica pero la tarjeta no es clickleable. 
-         - Tarjeta de enlace: Si es necesario llevar al usuario a otro sitio dentro o fuera de la página las tarjetas pueden comportarse como botones.
-         - Tarjeta con sección oculta: Se programaron tarjetas que abren un espacio debajo de ellas y recorren a todas las demás en el grid mientras la sub sección está abierta. 
+         - La información se subdivide en tarjetas. (es un lenguaje basado en tarjetas)
+         - Las tarjetas muestran la mínima cantidad de texto posible, si se necesita más información no se asume que el usuario quiere consumirla, la información adicional se despliega después de un click. 
+         - Las tarjetas funcionan de manera jerárquica a lo largo de la página. La semántica de las tarjetas permite esconder sub secciones que se abren al oprimir la tarjeta misma. 
+         - Las tarjetas pueden funcionar de las siguientes maneras: 
+            - Tarjeta estática: Contiene información estática o dinámica pero la tarjeta no es clickleable. 
+            - Tarjeta de enlace: Si es necesario llevar al usuario a otro sitio dentro o fuera de la página las tarjetas pueden comportarse como botones.
+            - Tarjeta con sección oculta: Se programaron tarjetas que abren un espacio debajo de ellas y recorren a todas las demás en el grid mientras la sub sección está abierta.   
+            
    - ### 1.3 Arquitectura
 
       Trabajamos con tecnologías web. Todos los elementos de la página respetan una arquitectura en componentes siguiendo un paradigma funcional. 
