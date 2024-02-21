@@ -3,27 +3,39 @@
 
 # Tabla de Contenidos
 
+# Tabla de Contenidos
+
 - [1. Introducción](#1-introducción)
-  - [Objetivo del Proyecto](#objetivo-del-proyecto)
-  - [Antecedentes](#antecedentes)
-  - [Tecnologías y dependencias involucradas en el desarrollo](#tecnologías-y-dependencias-involucradas-en-el-desarrollo)
-  - [Versiones](#versiones)
+  - [1.1 Objetivo del Proyecto](#11-objetivo-del-proyecto)
+  - [1.2 Antecedentes](#12-antecedentes)
+  - [1.3 Tecnologías y dependencias involucradas en el desarrollo](#13-tecnologías-y-dependencias-involucradas-en-el-desarrollo)
+    - [1.3.1 El sitio usa globalmente las siguientes **tecnologías**](#131-el-sitio-usa-globalmente-las-siguientes-tecnologías)
+    - [1.3.2 Además de tener las siguientes **dependencias**](#132-además-de-tener-las-siguientes-dependencias)
+  - [1.4 Versiones](#14-versiones)
 - [2. Navegación](#2-navegación)
-  - [Barra de Navegación (componente)](#barra-de-navegación-componente)
-  - [Sección de Experiencias](#sección-de-experiencias)
-  - [Sección de Contacto](#sección-de-contacto)
-  - [Redes Sociales y Otros Enlaces](#redes-sociales-y-otros-enlaces)
+  - [2.1 Barra de Navegación (componente)](#21-barra-de-navegación-componente)
+  - [2.2 Sección de Experiencias](#22-sección-de-experiencias)
+  - [2.3 Sección de Contacto](#23-sección-de-contacto)
+  - [2.4 Redes Sociales y Otros Enlaces](#24-redes-sociales-y-otros-enlaces)
 - [3. Secciones Principales](#3-secciones-principales)
-  - [Portada](#portada)
-  - [Nuestras Experiencias](#nuestras-experiencias)
-  - [¿Quiénes Somos?](#¿quiénes-somos)
-  - [Noticias](#noticias)
-  - [SMART Tips](#smart-tips)
-  - [Contacto](#contacto)
-  - [Footer](#footer)
+  - [3.1 Portada](#31-portada)
+  - [3.2 Nuestras Experiencias](#32-nuestras-experiencias)
+    - [3.2.1 Experiencias Digitales](#321-experiencias-digitales)
+    - [3.2.2 Experiencias Presenciales](#322-experiencias-presenciales)
+    - [3.2.3 Oferta GEAS](#323-oferta-geas)
+    - [3.2.4 Otras secciones](#324-otras-secciones)
+  - [3.3 ¿Quiénes Somos?](#33-quiénes-somos)
+  - [3.4 Noticias](#34-noticias)
+  - [3.5 SMART Tips](#35-smart-tips)
+  - [3.6 Contacto](#36-contacto)
+  - [3.7 Footer](#37-footer)
 - [4. Recursos Adicionales](#4-recursos-adicionales)
-  - [Agenda](#agenda)
-  - [DPI](#dpi)
+  - [4.1 Agenda](#41-agenda)
+    - [4.1.1 Sección de Agenda Personal](#411-sección-de-agenda-personal)
+    - [4.1.2 Widget de SimplyBook](#412-widget-de-simplybook)
+    - [4.1.3 Funcionalidad JS para la Interactividad](#413-funcionalidad-js-para-la-interactividad)
+    - [4.1.4 Interacción con los Eventos](#414-interacción-con-los-eventos)
+  - [4.2 DPI](#42-dpi)
 
 
 
@@ -349,7 +361,7 @@
 ## 4. Recursos Adicionales
 La sección de la agenda en el sitio web está diseñada para permitir a los usuarios programar citas o eventos de manera fácil e interactiva. A continuación, se detalla cómo funciona esta sección: 
    - ### 4.1 Agenda
-   
+
       - #### 4.1.1 Sección de Agenda Personal (`#app_citas`)
          - Esta sección muestra un **widget de SimplyBook**, un sistema de reservas online que permite a los usuarios elegir y reservar citas.
          - **Loader (`#loader`):** Muestra una animación de carga mientras el widget de SimplyBook se carga, mejorando la experiencia de usuario.
