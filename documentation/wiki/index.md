@@ -1,6 +1,6 @@
 # SMART 2.0 -  SMART Center UP
 
----
+
 # Tabla de Contenidos
 
 - [1. Introducción](#1-introducción)
@@ -69,7 +69,7 @@
 
    - **Alpha** 
 
-      Versión de prueba que se presentó a la Vicerrectoría de innovación, Diseño aprobado por comunicación institucional de la universidad.
+      \*\*Versión de prueba que se presentó a la Vicerrectoría de innovación, Diseño aprobado por comunicación institucional de la universidad.\*\*
       --- 
    - **Beta**  
 
