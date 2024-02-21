@@ -29,17 +29,17 @@
 
 ## 1. Introducción
 
-   ### Objetivo del Proyecto
+   ### 1.1 Objetivo del Proyecto
    SMART Center es parte importante de la cultura universitaria de cara a los alumnos. El primer objetivo del proyecto es darle una 'casa en la red' al centro, un lugar de llegada para alumnos que desean acercarse a los servicios que se ofrecen en el mismo. 
    Se pretende también que sea un trampolín para magnificar el alcance que el centro tiene al ofrecer experiencias asincrónicas y de valor. 
    
 
-   ### Antecedentes
+   ### 1.2 Antecedentes
    La manera orgánica en la que creció el sitio respecto a las necesidades del centro ocasionó problemas respecto a la elección y uso de tecnologías. A finales de 2019 se detectó la necesidad de reescribir todo el código usando una sola arquitectura y una lista de tecnologías definidas. Se abandonaron los frameworks y se restructuró todo a una arquitectura basada en componentes. 
 
-   ### Tecnologías y dependencias involucradas en el desarrollo
+   ### 1.3 Tecnologías y dependencias involucradas en el desarrollo
 
-   #### El sitio usa globalmente las siguientes **tecnologías**: 
+   #### 1.3.1 El sitio usa globalmente las siguientes **tecnologías**: 
 
    1. **HTML5**: Se utilizan varios elementos y atributos de HTML5, demostrando estándares web modernos para estructuración de contenido y diseño responsivo.
    2. **Técnicas de Diseño Responsivo**: A través de configuraciones del meta viewport y CSS, el sitio está diseñado para ser responsivo, asegurando que se adapta a diferentes tamaños de pantalla y dispositivos.
@@ -47,7 +47,7 @@
    4. **JavaScript**: Se hacen referencia a varios archivos JavaScript externos para funcionalidad, incluyendo navegación, inserción de videos, integración de API de Instagram, tarjetas expandibles, desplazamiento espía, gestión de FAQ y carruseles. Estos scripts son responsables de elementos interactivos, ajustes de diseño y gestión de contenido.
 
 
-   #### Además de tener las siguientes **dependencias**: 
+   #### 1.3.2 Además de tener las siguientes **dependencias**: 
 
    1. **Google Fonts**: El sitio utiliza Google Fonts para la tipografía, específicamente la familia de fuentes 'Nunito'.
    2. **GSAP (GreenSock Animation Platform)**: El sitio utiliza GSAP junto con su plugin ScrollTrigger para animaciones basadas en el desplazamiento.
@@ -65,19 +65,19 @@
    13. **Youtube API** Alimenta la sección: "SMART Tips"
 
 
-   ### Versiones:
+   ### 1.4 Versiones:
 
    - **Alpha** 
 
-      \*\*Versión de prueba que se presentó a la Vicerrectoría de innovación, Diseño aprobado por comunicación institucional de la universidad.\*\*
-      --- 
+      - Versión de prueba que se presentó a la Vicerrectoría de innovación, Diseño aprobado por comunicación institucional de la universidad.
+      ---
    - **Beta**  
 
-      Primer versión pública, contenía una biblioteca de experiencias digitales (cursos) de un programa llamado "My career my success"
+      - Primer versión pública, contenía una biblioteca de experiencias digitales (cursos) de un programa llamado "My career my success"
       ---
    - **0.5**  
 
-      Primer versión que contenía un landing page para SMART, se explicaban los objetivos del centro. Contenía secciones de noticias en tiempo real y un buzón para que los alumnos se comunicaran con la dirección del centro. Además un directorio con los miembros del equipo. 
+      - Primer versión que contenía un landing page para SMART, se explicaban los objetivos del centro. Contenía secciones de noticias en tiempo real y un buzón para que los alumnos se comunicaran con la dirección del centro. Además un directorio con los miembros del equipo. 
       ---
    - **1.0**  
 
@@ -146,7 +146,7 @@
 
 ## 2. Navegación
 
-   ### Barra de Navegación (componente)
+   ### 2.1 Barra de Navegación (componente)
       La barra de navegación está diseñada para estar presente en todo el sitio, de un click puede llevarnos a: 
       - [Experiencias](#experiencias)
       - [¿Quiénes somos?](#somos)
@@ -155,7 +155,7 @@
       - [Contacto](#contacto)
       - [Citas](citas.html)
 
-   ### Sección de Experiencias
+   ### 2.2 Sección de Experiencias
 
       - [Experiencias Digitales](experiencias.html)
       - [Experiencias Presenciales](presenciales.html)
@@ -166,11 +166,11 @@
       - [¿Eres Asesor?](https://asesoria.up.edu.mx)
       - [Cambio de asesor](https://forms.gle/BNqd2BnFyApZYJVL7)
 
-   ### Sección de Contacto
+   ### 2.3 Sección de Contacto
 
       - [Formulario de Contacto](https://forms.gle/yVDwtKpG1gDEmdT89)
 
-   ### Redes Sociales y Otros Enlaces
+   ### 2.4 Redes Sociales y Otros Enlaces
 
       - [YouTube](https://www.youtube.com/channel/UCMAOisJbM69nBTLbCK_b4LQ?view_as=subscriber)
       - [Facebook](https://www.facebook.com/SuccessCenterUP/)
@@ -182,110 +182,121 @@
 
 ## 3. Secciones Principales
 
-   ### Portada
+   ### 3.1 Portada
    - Banner con animación
    - Video promocional
 
-   ### Nuestras Experiencias
+   ### 3.2 Nuestras Experiencias
 
-      ####  Experiencias Digitales
+      ####  3.2.1 Experiencias Digitales
 
       1. **Organizing Your Life Like a Boss (Video)**
          - **Duración:** 20min
          - **Resumen:** Esta experiencia ofrece estrategias para mejorar la organización del tiempo y aumentar la productividad. Incluye 9 videos cortos con técnicas sencillas y la posibilidad de una sesión de coaching personalizado.
+      ---   
 
       2. **Discovering the Leader in You (Interactiva)**
          - **Duración:** 10min
          - **Resumen:** Un taller en línea para descubrir tu estilo de liderazgo y aprender cómo aplicarlo efectivamente en diversas situaciones.
+      ---
 
       3. **Your CV Your Masterpiece (Video)**
          - **Duración:** 30min
          - **Resumen:** Aprende a crear un CV impresionante y a destacar en procesos de selección. Incluye 7 videos educativos y la opción de recibir asesoría personalizada.
+      ---
 
       4. **Communicate Better (Interactiva)**
          - **Duración:** 12min
          - **Resumen:** Mejora tu estilo de comunicación descubriendo sus ventajas y desventajas, y aprende a relacionarte de manera más efectiva con los demás.
+      ---
 
       5. **Enfrenta tus problemas con mayor facilidad (Interactiva)**
          - **Duración:** 10min
          - **Resumen:** Aprende a gestionar situaciones estresantes de manera efectiva, encontrando soluciones prácticas a problemas comunes.
+      ---
 
       6. **Negociación (Interactiva)**
          - **Duración:** 22min
          - **Resumen:** Descubre tu estilo de negociación y cómo aplicarlo en diferentes contextos para lograr resultados óptimos.
+      ---
 
       7. **Live Smarter (Self-awareness) (Interactiva)**
          - **Duración:** 15min
          - **Resumen:** Fomenta tu autoconocimiento y mejora tu inteligencia emocional a través de actividades y reflexiones guiadas.
+      ---
 
       8. **Live Smarter (Manage yourself) (Interactiva)**
          - **Duración:** 16min
          - **Resumen:** Continúa tu desarrollo personal y profesional gestionando mejor tus emociones y reacciones ante diversas situaciones.
+      ---
 
       9. **Recreando mi vida (Video)**
          - **Duración:** 40min
          - **Resumen:** Potencia tu autoconocimiento y establece un plan de acción para alcanzar tus metas personales y profesionales.
+      ---
 
       10. **Atrévete a ser un master (Interactiva)**
          - **Duración:** 30min
          - **Resumen:** Explora los requisitos de admisión para estudios de posgrado en el extranjero, conoce programas de preparación y obtén información sobre becas.
+      ---
 
       11. **Gestión del cambio (Interactiva)**
          - **Duración:** 60min
          - **Resumen:** Aprende a adaptarte y gestionar el cambio de manera efectiva para alcanzar tus objetivos personales y profesionales.
+      ---
 
       12. **Power UP (Interactiva)**
          - **Duración:** 35min
          - **Resumen:** Transforma tus habilidades en superpoderes laborales a través de talleres, proyectos innovadores y mentoring.
    ---
-      ####  Experiencias Presenciales
+      #### 3.2.2 Experiencias Presenciales
       - Experiencias presenciales es un componente diseñado a la medida para SMART para que cuando nuestros colaboradores organicen eventos presenciales se vean reflejados en tiempo real en la página. El procedimiento para agregar un evento presencial es sencillo: 
          1. El colaborador abrirá el documento: https://docs.google.com/spreadsheets/d/1TXTHaHBOZXMPBtT8X5LJaZIuixXd-osvNHAGAHpPgZg/edit#gid=0
          2. llenará los campos correspondientes a su evento.
          3. El módulo automáticamente se comunicará con el documento y generará la tarjeta correspondiente que los alumnos pueden consultar. 
    ---
-      #### Oferta GEAS
-      ##### Opciones Disponibles de GEAs
+      #### 3.2.3 Oferta GEAS
+    
       1. **AIESEC**
          - **Simulador empresarial**
          - **Training program**
          - **Descripción:** Red de jóvenes que ofrece desarrollo personal y experiencias internacionales a través de voluntariado y pasantías.
-
+      ---
       2. **COPARMEX UP**
          - **Simulador empresarial**
          - **Training program**
          - **Descripción:** Semillero de líderes empresariales que promueve una nueva cultura empresarial entre los jóvenes.
-
+      ---
       3. **GROWTH**
          - **Simulador empresarial**
          - **Training program**
          - **Descripción:** Iniciativas para beneficiar la salud integral, promoviendo conocimiento y reflexión sobre el manejo de las emociones.
-
+      ---
       4. **Hult Prize**
          - **Simulador empresarial**
          - **Training program**
          - **Descripción:** Competencia global que invita a universitarios a resolver problemas sociales a través del emprendimiento social.
-
+      ---
       5. **Inspire UP**
          - **Simulador empresarial**
          - **Training program**
          - **Descripción:** Grupo estudiantil de excelencia que busca formar futuros líderes de México enfocándose en el sentido humano y la responsabilidad social.
-
+      ---
       6. **Nous**
          - **Simulador empresarial**
          - **Training program**
          - **Descripción:** Espacio para el ejercicio filosófico y de reflexión a través de debates, diálogos, y discusiones sobre temas diversos.
-
+      ---
       7. **SH+E**
          - **Simulador empresarial**
          - **Training program**
          - **Descripción:** Promueve el empoderamiento femenino y la igualdad de oportunidades a través de conferencias, ferias, y talleres.
-
+      ---
       8. **TEDx**
          - **Simulador empresarial**
          - **Training program**
          - **Descripción:** Eventos locales que siguen el estilo de TED para difundir "ideas que valen la pena" a través de charlas y presentaciones.
-
+      ---
       9. **The Green Project**
          - **Simulador empresarial**
          - **Training program**
@@ -305,7 +316,7 @@
       - Conócete con DPI
       - Atención uno a uno (ver sección agenda) 
 
-   ### ¿Quiénes Somos?
+   ### 3.3 ¿Quiénes Somos?
    - Tarjeta Portada
    - Tarjeta texto explicativo
    - Tarjeta CIIE (Centro Institucional de Innovación Educativa)
@@ -314,10 +325,10 @@
    - Misión y Visión de SMART
    - Valores de SMART
 
-   ### Noticias
+   ### 3.4 Noticias
    - Enlaces a noticias (cargadas dinámicamente desde Instagram)
 
-   ### SMART Tips
+   ### 3.5 SMART Tips
    Carruseles de videos extraídos de nuestro canal de youtube, se sincronizan en tiempo real gracias a la API de youtube.
    - Preview de Video
    - Carruseles de videos temáticos
@@ -326,44 +337,44 @@
    - Cómo sobreviví a...
    - Apps para ti
 
-   ### Contacto
+   ### 3.6 Contacto
    - Información de contacto de todos los colaboradores del SMART
    - Mapa de ubicación
    - Buzón de sugerencias
 
-   ### Footer
+   ### 3.7  Footer
    - Logo de la Universidad Panamericana
    - Derechos Reservados y Enlaces de interés
    - Información de contacto del campus CDMX
 
 ## 4. Recursos Adicionales
 
-   ### Agenda
+   ### 4.1 Agenda
    La sección de la agenda en el sitio web está diseñada para permitir a los usuarios programar citas o eventos de manera fácil e interactiva. A continuación, se detalla cómo funciona esta sección:
-   #### Sección de Agenda Personal (`#app_citas`)
+   #### 4.1.1 Sección de Agenda Personal (`#app_citas`)
    - Esta sección muestra un **widget de SimplyBook**, un sistema de reservas online que permite a los usuarios elegir y reservar citas.
    - **Loader (`#loader`):** Muestra una animación de carga mientras el widget de SimplyBook se carga, mejorando la experiencia de usuario.
 
-   #### Widget de SimplyBook
+   #### 4.1.2 Widget de SimplyBook
    - Se integra mediante un script que carga un iFrame del servicio de SimplyBook.
    - Los usuarios pueden seleccionar el tipo de cita, la fecha y la hora directamente desde este widget interactivo.
    - El tema del widget está personalizado para coincidir con el diseño general del sitio (`theme: "space"`).
 
 
-   #### Funcionalidad JS para la Interactividad
+   ####  4.1.3 Funcionalidad JS para la Interactividad
    - **Animaciones GSAP:** Se utilizan para animaciones en la página, mejorando la visual y transiciones.
    - **Script de Navegación (`nav_citas.min.js`):** Controla la interacción con la barra de navegación.
    - **SpyScroll (`spyscroll.min.js`):** Permite el seguimiento de la sección activa en la barra de navegación mientras el usuario se desplaza por la página.
    - **Loader de Citas (`loader_citas.min.js`):** Gestiona la visualización del loader mientras se carga el widget de SimplyBook.
 
-   #### Interacción con los Eventos (`events_grid`)
+   #### 4.1.4 Interacción con los Eventos (`events_grid`)
    - Permite a los usuarios expandir información sobre eventos específicos para leer más detalles.
    - Los botones de "ver más" expanden las tarjetas de eventos para mostrar más información utilizando animaciones suaves y cambios de íconos para una indicación visual clara.
 
    Esta sección está diseñada para ser intuitiva y fácil de usar, asegurando que los usuarios puedan programar sus citas o registrarse para eventos presenciales sin inconvenientes.
 
 
-   ### DPI
+   ### 4.2 DPI
    El sitio alberga las siguientes partes del proyecto DPI (consultar diagramas de documentación):
    - Lectura.
    - Despliegue de DPI por alumno.
