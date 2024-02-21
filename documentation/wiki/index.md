@@ -46,7 +46,7 @@
    
 
    - ### 1.2 Antecedentes
-   La manera orgánica en la que creció el sitio respecto a las necesidades del centro ocasionó problemas respecto a la elección y uso de tecnologías. A finales de 2019 se detectó la necesidad de reescribir todo el código usando una sola arquitectura y una lista de tecnologías definidas. Se abandonaron los frameworks y se restructuró todo a una arquitectura basada en componentes. 
+   La manera orgánica en la que creció el sitio respecto a las necesidades del centro ocasionó problemas respecto a la elección y uso de tecnologías. A finales de 2019 se detectó la necesidad de reescribir todo el código usando una sola arquitectura y una lista de tecnologías definidas. Se abandonaron los frameworks y se re estructuró todo a una arquitectura basada en componentes. 
 
    - ### 1.3 Lenguaje de comunicación
 
