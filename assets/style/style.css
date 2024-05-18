@@ -3051,30 +3051,32 @@ justify-content: center;
 
 .person {
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    min-height: 8rem;
-    padding: 8rem 0 0 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+    background-color: rgb(232, 230, 230);
+    min-height: 18rem;
+    padding:0;
+    
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+
     transition: scale 300ms ease;
     -webkit-transition: scale 300ms ease;
     -moz-transition: scale 300ms ease;
     -ms-transition: scale 300ms ease;
     -o-transition: scale 300ms ease;
+
      overflow: hidden;
 }
 
-.person:hover {
+/* .person:hover {
     scale: 0.95;
 
-}
+} */
 
 /* desktop up */
 @media (min-width: 1200px) {
@@ -3084,23 +3086,44 @@ justify-content: center;
 }
 /* end desktop up */
 
+.profile_picture{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.profile_picture img {
+    width: 8.5rem;
+    height: 8.5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    object-fit: cover; /* Add this line */
+}
+
 .card-content {
     width: 100%;
     color: var(--background);
     font-size: 0.7rem;
-    padding: 1rem 0.5rem;
+    padding:0.5rem;
+    box-sizing: border-box;
+    align-self: flex-end;
+    min-height: 4rem;
 
-    /* glassmorphism */
+
     background-color: #ac8a549e;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px);
 
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 
     transition: transform 1000ms ease, height 200ms ease;
     -webkit-transition: transform 1000ms ease, height 200ms ease;
@@ -3112,10 +3135,12 @@ justify-content: center;
 
 .person:hover .card-content {
     height: 7.5rem;
+    margin-top: 0;
 }
 
 .card-name {
-    border-bottom: #f7f7f7 2px solid;
+    border-bottom: #f7f7f798 1px solid;
+    padding-bottom: 0.2rem;
     font-weight: 800;
 }
 
