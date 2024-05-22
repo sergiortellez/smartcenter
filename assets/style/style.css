@@ -1701,59 +1701,6 @@ Como se complicó el grid (estéticamente) en este punto, tomé la decisión de 
 
 
 
- #cambio_asesor{
-        order: 1;
-    }
-      article[data-id="que_es_couns"],#que_es_couns{
-       order: 4;
-    }
-    article[data-id="talleres"],#talleres{
-      order: 3;
-    }
-     article[data-id="dpi"],#dpi{
-        order: 5
-        ;
-    }
-/* tablet portrait up */
-@media (min-width: 768px) {
-    #cambio_asesor{
-        order: 1;
-    }
-      article[data-id="que_es_couns"],#que_es_couns{
-       order: 3;
-    }
-    article[data-id="talleres"],#talleres{
-      order: 2;
-    }
-     article[data-id="dpi"],#dpi{
-        order: 4;
-    }
-}
-/* end tablet up */
-
-/* tablet landscape up */
-@media (min-width: 1024.1px) {
-   #cambio_asesor{
-        order: 1;
-    }
-      article[data-id="que_es_couns"],#que_es_couns{
-       order: 3;
-    }
-    article[data-id="talleres"]{
-      order: 2;
-      grid-row: span 3;
-      grid-column: span 5 !important;
-      /* fue necesario sobre escribir mi selector parallax porque era mucho más específico. */
-      
-    }
-    #talleres{
-        order: 5;
-    }
-     article[data-id="dpi"],#dpi{
-        order: 4;
-    }
-}
-/* end tablet up */
 
 
 
@@ -1795,7 +1742,7 @@ Como se complicó el grid (estéticamente) en este punto, tomé la decisión de 
 display: flex;
 align-items: center;
 justify-content: center;
-min-height: 45vh;
+/* min-height: 20rem; */
 }
 
 
@@ -1872,7 +1819,27 @@ min-height: 45vh;
 }
 /* end tablet */
 
+article[data-id="dpi"],article[data-id="que_es_couns"] {
+    grid-column: span 2;
+}
 
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    article[data-id="dpi"],article[data-id="que_es_couns"] {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+}
+/* end tablet up */
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+     article[data-id="dpi"],article[data-id="que_es_couns"] {
+    grid-column: span 2;
+}
+}
+/* end tablet up */
 
 
 /*-------------------------------*/
@@ -1883,6 +1850,7 @@ min-height: 45vh;
 /*-------------------------------*/
 /* dpi */
 /*-------------------------------*/
+
 
 #dpi>div {
 margin-bottom: 1rem;
@@ -1960,6 +1928,11 @@ margin-bottom: 1rem;
 /*-------------------------------*/
 /* uno a uno */
 /*-------------------------------*/
+
+article[data-id="talleres"] {
+    grid-row: span 2;
+}
+
 .programas{
     padding: 2rem;
     margin-top: 2rem;
