@@ -1131,7 +1131,17 @@ nav.expanded .navContents a {
     top: -0%;
     left: 0;
 }
+.experiencias_presenciales span{
+    font-weight: 400;
+}
 
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .experiencias_presenciales span{
+         font-size: 2.3rem!important;
+    }
+}
+/* end tablet up */
 /* tablet portrait up */
 @media (min-width: 768px) {
     .experiencias-grid > .experiencias_presenciales {
