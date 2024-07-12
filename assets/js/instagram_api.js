@@ -31,7 +31,7 @@ fetch(url)
     -haz click en "visualización básica"
     - ve a "User Token Generator"
     - Genera un nuevo token
-    -sustitúyelo en este documento de sheets: https://docs.google.com/spreadsheets/d/12s8z3DKqUWCre_FnzjAPDZKqOwrSW6WaiQ708cdeUvM/edit#gid=2043418408
+    -sustitúyelo en este documento de sheets: https://docs.google.com/spreadsheets/d/12s8z3DKqUWCre_FnzjAPDZKqOwrSW6WaiQ708cdeUvM
 
 
 
