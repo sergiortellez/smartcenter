@@ -9,6 +9,7 @@ var carouselsContainers = document.querySelectorAll(".carrousel_container");
 //selecciona el visor de previsualización
 const videoPreview = document.querySelector('#previewVideo');
 // Esta constante guarda la clave API de Google. 
+//TODO: youtube api key should be private.
 const API_KEY = "AIzaSyCwGNVWWv5RMKWf_djwHzjE8mNigWnxGzE";
 // AIzaSyAY92qoSUcTrzZ669HLcAh - Mx9KBKKfePo
 
