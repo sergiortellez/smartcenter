@@ -770,20 +770,16 @@ nav.expanded .navContents a {
     .banner {
         min-height: calc(100vh - var(--navHeight));
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
+        overflow: hidden;
     }
 
-    .banner iframe {
-        position: relative;
-        top: -4rem;
-        margin-top: 0rem;
-        height: 100%;
+    .banner iframe {       
+        height: 630px;
         width: 100%;
         /* no permitas scroll bars */
         overflow: hidden;
-
-        /* max-height: 600px; */
     }
 }
 
@@ -793,14 +789,17 @@ nav.expanded .navContents a {
     .banner {
         width: calc((100vw * 1.61803398874)/(1 + 1.61803398874));
         align-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
     }
 
     .banner iframe {
         top: 4rem;
         width: 100%;
-        height: 100%;
+        height: 630px;
         overflow: hidden;
-        margin-top: 4rem;
     }
 }
 
