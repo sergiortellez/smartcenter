@@ -1185,20 +1185,42 @@ nav.expanded .navContents a {
     color: var(--smartBlue);
 }
 
+ #experiencias article[data-id="que_es_paar"].vertical{
+     grid-column: span 1;
+
+    }
+ #experiencias article[data-id="que_es_caar"].vertical{
+     grid-column: span 1;
+
+    }
+
+
 /* ---reacomodo de grid para tabletas en portrait--- */
 
 /* tablet portrait up */
 @media (min-width: 768px) and (max-width: 1024.1px){
    
-    /* qué es un gea abarca sólo una columna en este @media se tuvo que usar un selector tan específico para no interrumpir el el uso de los selectores verticales */
+    /*  HACK: En tabletas portrait ¿Qué es un CAAR? se cambió de órden por estética */
 
-    #experiencias article[data-id="que_es_gea"].vertical{
-     grid-column: span 1;
+     #experiencias article[data-id="que_es_paar"].vertical{
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
 
     }
-    /* #que_es_gea{
-        grid-column: span 1 !important;
-    } */
+    #experiencias article[data-id="que_es_caar"].vertical{
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+
+    }
+   
+}
+/* end tablet up */
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    #crea_gea{
+        grid-column: span 2;
+    }
 }
 /* end tablet up */
 
@@ -1206,11 +1228,19 @@ nav.expanded .navContents a {
 /* ---end reacomodo de grid para tabletas en portrait--- */
 
 
-/* ---GEAS--- */
+/* ---PAAR Y CAAR--- */
+
+.explanation-text{
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.7rem; 
+    line-height: 0.7rem; 
+    text-wrap: balance;
+}
 
 /* tablet portrait up */
 @media (min-width: 768px) {
-    #que_es_gea>.expanded-content{
+    #que_es_paar>.expanded-content{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1219,24 +1249,36 @@ nav.expanded .navContents a {
 }
 /* end tablet up */
 
-#que_es_gea>.expanded-content>p>span{
-    font-size: 2rem;
+#que_es_paar>.expanded-content>div>p>span{
+    font-size: 1.5rem;
     color: var(--smartBlue);
     font-weight: 100;
 }
 
-/* tablet landscape up */
-@media (min-width: 1024.1px) {
-    #crea_gea{
-grid-column: span 2;
-}
 
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    #que_es_caar>.expanded-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
 }
 /* end tablet up */
 
+#que_es_caar>.expanded-content>div>p>span{
+    font-size: 1.5rem;
+    color: var(--smartBlue);
+    font-weight: 100;
+}
 
 
-/* ---end GEAS--- */
+
+
+
+/* ---end PAAR Y CAAR--- */
 
 
 /* ---oferta de grupos estudiantiles parallax--- */

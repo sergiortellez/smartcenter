@@ -270,14 +270,14 @@
 
 
 
-            <!--	----  tarjeta expandible (Qué es un GEA) ----	-->
-            <article class="gruposCard vertical" data-type="button" data-id="que_es_gea">
-                <i class="fa-duotone fa-block-question" style="margin-right:1rem;"></i>
-                <span>¿Qué es un GEA?<br><i style="font-size: 0.8rem;">(Grupo Estudiantil Académico)</i></span>
+            <!--	----  tarjeta expandible (Qué es un PAAR) ----	-->
+            <article class="gruposCard vertical" data-type="button" data-id="que_es_paar">
+                <i class="fa-duotone fa-block-question" style="margin-right:0rem;"></i>
+                <span>¿Qué es un PAAR?<br><i class="explanation-text">Programa académico de alto rendimiento</i></span>
             </article>
 
             <!-- tarjeta expandida -->
-            <article class="expanded_card" data-expand="hidden" id="que_es_gea">
+            <article class="expanded_card" data-expand="hidden" id="que_es_paar">
                 <header>
                     <span class="title-expanded"></span>
                     <!-- botón cerrar -->
@@ -288,15 +288,65 @@
                 </header>
                 <div class="expanded-content">
 
-                    <!--video ¿Qué es un GEA? -->
-                    <iframe width="auto" height="500" src="https://www.youtube.com/embed/d1Ljny-0GA8?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!--video ¿Qué es un PAAR? -->
+                    <!-- TODO: añadir el nuevo video cuando sea entregado por SMART -->
+                    <!-- <iframe width="auto" height="500" src="https://www.youtube.com/embed/d1Ljny-0GA8?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
-                    <p>En los grupos estudiantiles académicos <span>conocerás</span> gente de tu edad que comparte tus pasiones e intereses, <span>explotarás</span> tus talentos en entornos desafiantes y <span>vivirás</span> experiencias increíbles como entrenamiento en liderazgo y simuladores
-                        empresariales. Queremos ayudarte a
-                        <span>desarrollar</span> las competencias que el mundo laboral está esperando de ti.
-                    </p>
+                    <div>
+                        <!-- HACK: <span> son palabras resaltadas -->
+                        <p>
+                            ¿Tienes <span>habilidades excepcionales</span> o una <span>pasión</span> por una disciplina específica? Los programas académicos de alto rendimiento (PAAR) están aquí para <span>desafiarte</span> y ayudarte a potenciar tus talentos.
+                        </p>
+                        <p>
+                            <span>Conoce</span> a personas como tú, <span>alcanza</span> tu máximo potencial y <span>prepárate</span> para los desafíos del futuro.
+                            Además, podrás obtener una <span><i class="fa-duotone fa-solid fa-medal"></i> insignia digital</span>, avalada por nuestra universidad, que elevará tu perfil profesional y te abrirá nuevas oportunidades.
+                        </p>
+                        <p><b>¡Únete y lleva tus habilidades al siguiente nivel!</b></p>
+                    </div>
 
 
+
+                </div>
+            </article>
+            <!-- end tarjeta expandida -->
+
+            <!--	---- end tarjeta expandible ----	-->
+
+            <!--	----  tarjeta expandible (Qué es un CAAR) ----	-->
+            <article class="gruposCard vertical" data-type="button" data-id="que_es_caar">
+                <i class="fa-duotone fa-block-question" style="margin-right:0rem;"></i>
+                <span>¿Qué es un CAAR?<br><i class="explanation-text">Concurso académico de alto rendimiento</i></span>
+            </article>
+
+            <!-- tarjeta expandida -->
+            <article class="expanded_card" data-expand="hidden" id="que_es_caar">
+                <header>
+                    <span class="title-expanded"></span>
+                    <!-- botón cerrar -->
+                    <button data-action="close">
+                        <i class="fa-duotone fa-rectangle-xmark"></i>
+                    </button>
+                    <!-- end botón cerrar -->
+                </header>
+                <div class="expanded-content">
+
+                    <!--video ¿Qué es un CAAR? -->
+                    <!-- TODO: añadir el nuevo video cuando sea entregado por SMART -->
+                    <!-- <iframe width="auto" height="500" src="https://www.youtube.com/embed/d1Ljny-0GA8?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+                    <div>
+                        <!-- HACK: <span> son palabras resaltadas -->
+                        <p>
+                            ¿Te gustan los <span>retos</span> y quieres <span>demostrar tus conocimientos</span>? Participa en nuestros concursos académicos y muéstranos tus <span>habilidades</span>. Aprovecha las excelentes plataformas que hemos encontrado y deja que el mundo te vea brillar.
+                        </p>
+                        <p>
+                            SMART está aquí para ayudarte a alcanzar un <span>rendimiento de alto nivel</span>, brindándote el <span>entrenamiento</span> necesario para que destaques y alcances los más altos estándares de evaluación.
+                        </p>
+                        <p>
+                            <b>¡Participa y eleva tu talento al máximo!</b>
+                        </p>
+
+                    </div>
                 </div>
             </article>
             <!-- end tarjeta expandida -->
@@ -309,35 +359,35 @@
                 <img class="rellax" data-rellax-speed="6" data-rellax-percentage="0.5" src="assets/images/parallax_geas_up.webp" alt="">
                 <img class="rellax" data-rellax-speed="2" data-rellax-percentage="0.7" src="assets/images/parallax_geas_down.webp" alt="">
                 <!-- <i class="fa-duotone fa-cart-circle-arrow-down"></i> -->
-                <span>Conoce nuestros GEAS</span>
+                <span>Programas y concursos de alto rendimiento </span>
             </a>
             <!--	---- end tarjeta enlace ----	-->
 
-            <!--	----  tarjeta enlace (Únete a un GEA)----	-->
-            <a class="gruposCard" id="uneteGEA" href="https://form.typeform.com/to/B3w43naa?typeform-source=successcenter1.typeform.com" target="_blank">
+            <!--	----  tarjeta enlace (Únete a un PAAR)----	-->
+            <a class="gruposCard" id="unetePAAR" href="https://forms.gle/LYNFS5gkyehqHVPW6" target="_blank">
 
                 <i class="fa-duotone fa-link"></i>
-                <i class="fa-duotone fa-calendar-lines-pen"></i>
-                <span style="font-size: 1rem;">Únete a un GEA</span>
+                <i class="fa-duotone fa-solid fa-file-signature"></i>
+                <span style="font-size: 1rem;margin-left: 0;
+                ">Únete a un PAAR</span>
             </a>
             <!--	---- end tarjeta enlace ----	-->
 
-            <!--	----  tarjeta enlace (Eventos GEA) ----	-->
-            <a class="gruposCard" id="uneteGEA" href="https://calendar.google.com/calendar/embed?src=c_04s4ftskn78nu8vjsp0dseidpc%40group.calendar.google.com&ctz=America%2FMexico_City
-" target="_blank">
+            <!--	----  tarjeta enlace (Únete a un CAAR) ----	-->
+            <a class="gruposCard" id="uneteCAAR" href="https://forms.gle/UZQMQQBMYm4SvKn67" target="_blank">
 
                 <i class="fa-duotone fa-link"></i>
-                <i class="fa-duotone fa-calendar"></i>
-                <span style="font-size: 1rem;">Eventos GEA</span>
+                <i class="fa-duotone fa-solid fa-file-signature"></i>
+                <span style="font-size: 1rem;margin-left: 0;">Únete a un CAAR</span>
             </a>
             <!--	---- end tarjeta enlace ----	-->
 
             <!--	----  tarjeta enlace (Crea tu GEA) ----	-->
-            <a id="crea_gea" class="gruposCard " href="https://docs.google.com/forms/d/e/1FAIpQLSeWJPgUl6ZTCLZXKFrPKvoPaIXD_VOjeb0KGhKqojdYhYVIQg/viewform?usp=pp_url" target="_blank">
+            <a id="crea_gea" class="gruposCard " href="https://forms.gle/ZRd1WHThiR5duwch7" target="_blank">
 
                 <i class="fa-duotone fa-link"></i>
-                <i class="fa-duotone fa-calendar-lines-pen"></i>
-                <span>Crea tu GEA</span>
+                <i class="fa-duotone fa-solid fa-lightbulb"></i>
+                <span>¿Tienes una iniciativa?</span>
             </a>
             <!--	---- end tarjeta enlace ----	-->
 
