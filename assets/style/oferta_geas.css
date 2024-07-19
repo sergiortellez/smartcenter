@@ -482,10 +482,9 @@ nav.expanded .navContents a {
 }
 
 #experiencias_digitales_grid article[data-type="button"] .pill {
-    background-color: var(--smartBlue);
     color: #ffffff;
-    padding: 0.2rem 0.4rem;
-    font-size: 0.6rem;
+    padding: 0.2rem 0.3rem;
+    font-size: 0.7rem;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -501,6 +500,15 @@ nav.expanded .navContents a {
     color: var(--text);
 }
 
+.paar{
+     background-color: var(--smartBlue);
+}
+.caar{
+     background-color: var(--smartYellow);
+}
+.insignia{
+     background-color: var(--smartRed);
+}
 /*-------------------------------*/
 /* end cards generales */
 /*-------------------------------*/
