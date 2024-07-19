@@ -1200,7 +1200,7 @@ nav.expanded .navContents a {
 /* tablet portrait up */
 @media (min-width: 768px) and (max-width: 1024.1px){
    
-    /*  HACK: En tabletas portrait ¿Qué es un CAAR? se cambió de órden por estética */
+    /*  HACK: En tabletas portrait ¿Qué es un CAAR? se cambió de orden por estética */
 
      #experiencias article[data-id="que_es_paar"].vertical{
         grid-column: 1 / 2;
@@ -1220,7 +1220,7 @@ nav.expanded .navContents a {
 @media (min-width: 1024.1px) {
     #crea_gea{
         grid-column: span 2;
-    }
+    } 
 }
 /* end tablet up */
 
