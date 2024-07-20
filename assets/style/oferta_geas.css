@@ -958,6 +958,16 @@ button.send-info-button:hover svg {
 }
 /* fin The Green Project */
 
+/* iise */
+[data-id="iise"],
+#iise {
+   --primarioGEA:#0704a5;
+   --monoGEA:#616096;
+   --contrasteGEA:#dfd111;
+   --textoGEA:#fff;
+}
+/* fin iise */
+
 /*-------------------------------*/
 /* end personalización de cards por GEA */
 /*-------------------------------*/
