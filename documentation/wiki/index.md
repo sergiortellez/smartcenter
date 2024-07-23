@@ -170,6 +170,47 @@
          - Se creó una pantalla para DPIs no encontrados que da instrucciones a los alumnos que escriban mal la URL.
          - Se arregló un error que impedía ejecutar nuestras experiencias interactivas. 
          ---
+      - **2.10**
+
+         Novedades:
+
+         - Se ha trabajado en la documentación del sitio, ahora tenemos una wiki para consultar asuntos técnicos, historial de desarrollo, etc. 
+         - Las tarjetas de contacto tienen un nuevo aspecto, ahora la foto es más pequeña y circular.
+         - El correo de SMART ahora se muestra literalmente en la sección de contacto. 
+         - Las tarjetas del área de Advisory ahora se muestran al final de la lista de experiencias. 
+         - La tarjeta de eventos presenciales tiene un diseño más llamativo. 
+         - Se añadió la ubicación del campus de Ciudad UP.
+         - Se modificaron los carruseles en SMART Tips, ahora llegan al final de la pantalla mostrando que hay más vídeos. 
+         - Se modificó el video de bienvenida a SMART Tips, ahora una alumna explica los contenidos en la sección. 
+         - La API de youtube ahora funciona en nuestro nuevo servidor de prueba.
+         - Se removió la tarjeta de Tere.
+         - Se añadió la tarjeta de Beatriz Quintero. 
+         - Se modificó el buzón automático de SMART para enviar correos a mx_smartcenter@up.edu.mx
+         - La tarjeta de Diana ahora dice "Mtra." (muchas felicidades 😊)
+         - Se modificó la extensión telefónica de Auro. 
+         - Se modificó el diseño de la agenda SMART para citas. 
+         - Las GEAS se han transformado en PAAR y CAAR: 
+            - Nueva tarjeta ¿Qué es un PAAR? 
+            - Nueva tarjeta ¿Qué es un CAAR? 
+            - Nueva tarjeta con formulario automático: Sugerir un programa o concurso. 
+            - Nueva tarjeta con formulario automático: Unirte a un PAAR.
+            - Nueva tarjeta con formulario automático: Unirte a un CAAR.
+            - Rediseño en la página de oferta de Programas y concursos.
+            - Rediseño en las tarjetas de Programas y concursos. 
+            - Se eliminaron las GEAS que no son programas o concursos de alto rendimiento. 
+            - Se mejoraron textos de GEAs existentes para reflejar mejor el atractivo de las mismas. 
+            - Se añadió una tarjeta para el PAAR - Panteras iise 
+         
+         Mantenimiento: 
+         - Se actualizó el token de la api de Instagram
+         - Se renovó la suscripción de fontawesome por otro año.
+         - Nuevo servidor de prueba en smart.huin.solutions 
+         - Mantenimiento general al sitio.
+
+         Bugs: 
+         - Se corrigió un error en donde la animación inicial que explica qué es SMART antes se salía de su lugar en pantallas pequeñas. 
+         - Se corrigió un error donde la tarjeta de contacto de direcciones y campus virtual se desbordaba en contenido. 
+         - El título en "¿Quiénes somos?" no tenía acento. 
 
 ## 2. Navegación
 ---
