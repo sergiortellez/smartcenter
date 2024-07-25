@@ -968,6 +968,36 @@ button.send-info-button:hover svg {
 }
 /* fin iise */
 
+/* cia */
+[data-id="cia"],
+#cia {
+   --primarioGEA:#111010;
+   --monoGEA:#aeaeae;
+   --contrasteGEA:#ffffff;
+   --textoGEA:#fff;
+}
+/* fin cia */
+
+/* be */
+[data-id="be"],
+#be {
+   --primarioGEA:#13453e;
+   --monoGEA:#39c3b0;
+   --contrasteGEA:#ffffff;
+   --textoGEA:#fff;
+}
+/* fin be */
+
+/* consulting */
+[data-id="consulting"],
+#consulting {
+   --primarioGEA:#988205;
+   --monoGEA:#fff6c1;
+   --contrasteGEA:#242f6a;
+   --textoGEA:#000;
+}
+/* fin consulting */
+
 /*-------------------------------*/
 /* end personalización de cards por GEA */
 /*-------------------------------*/
