@@ -367,6 +367,10 @@ aside header img {
     --customCourse: #3342AF;
     --customCourseMono: rgb(163, 173, 211);
 }
+.version{
+    --customCourse: #3342af;
+    --customCourseMono: #878aa2;
+}
 /*###################################################*/
 /*...................................................*/
 /* end custom colors */
