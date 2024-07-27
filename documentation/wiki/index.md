@@ -211,7 +211,19 @@
          - Se corrigió un error en donde la animación inicial que explica qué es SMART antes se salía de su lugar en pantallas pequeñas. 
          - Se corrigió un error donde la tarjeta de contacto de direcciones y campus virtual se desbordaba en contenido. 
          - El título en "¿Quiénes somos?" no tenía acento. 
+      - **2.11**
 
+         Novedades:
+         - Se añadió la tarjeta del PAAR 'Be Consultant'
+         - Se añadió la tarjeta del PAAR 'CIA'
+         - Se añadió la tarjeta del PAAR 'Consulting Club'
+         - Se añadieron los logos de los nuevos PAAR al formulario de inscripción. 
+         - Se mejoró la tarjeta de 'Eventos presenciales' a un diseño más llamativo.
+
+         Bugs: 
+         - Se ajustó la tarjeta 'Eventos Presenciales' para diferentes tamaños de pantalla.
+         - Se corrigió un error donde las tarjetas de 'Qué es PAAR' y 'Qué es CAAR' no abrían correctamente en iPads.
+          
 ## 2. Navegación
 ---
    - ### 2.1 Barra de Navegación (componente)
