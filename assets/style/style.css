@@ -1106,7 +1106,7 @@ nav.expanded .navContents a {
     -o-border-radius: 15px;
 
     grid-column: span 2;
-    min-height: 10rem;
+    min-height: 13rem;
 
     /* background-image: url(../images/map.webp);
     background-repeat: no-repeat;
@@ -1120,11 +1120,11 @@ nav.expanded .navContents a {
 .experiencias_presenciales img {
     width: 100%;
     transform: translate3d(0%, -294.036px, 0px);
-    opacity: 1;
-    -webkit-transform: translate3d(0%, -294.036px, 0px);
+    opacity: 0.6;
+    /* -webkit-transform: translate3d(0%, -294.036px, 0px);
     -moz-transform: translate3d(0%, -294.036px, 0px);
     -ms-transform: translate3d(0%, -294.036px, 0px);
-    -o-transform: translate3d(0%, -294.036px, 0px);
+    -o-transform: translate3d(0%, -294.036px, 0px); */
     z-index: -1;
     position: absolute;
     top: -0%;
