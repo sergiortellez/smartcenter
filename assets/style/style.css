@@ -1212,7 +1212,17 @@ nav.expanded .navContents a {
         grid-row: 6 / 7;
 
     }
-   
+
+    /* Pero también se tuvieron que modificar las tarjetas que se abren antes de las que se movieron*/
+   #talleres{
+        grid-row: 5 / 6;
+    } 
+     #dpi{
+        grid-row: 5 / 6;
+    } 
+    #que_es_paar{
+        grid-row: 6 / 7;
+    }
 }
 /* end tablet up */
 
