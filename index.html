@@ -133,7 +133,7 @@
             <!--	----  tarjeta enlace (Experiencias Presenciales)----	-->
             <a class="experiencias_presenciales" href="presenciales.html">
                 <i class="fa-duotone fa-link"></i>
-                <img class="rellax" id="presenciales_rellax" src="assets/images/map.webp" alt="mapa">
+                <img class="rellax" id="presenciales_rellax" src="assets/images/map.webp" alt="mapa" data-rellax-speed="8" data-rellax-percentage="0">
                 <i class="fa-duotone fa-street-view"></i>
                 <span id="experiencias_presenciales_title">Experiencias Presenciales</span>
             </a>
@@ -1446,6 +1446,8 @@
 
     <!-- rellax parallax -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <!-- Gobierna los parámetros de rellax -->
+    <script src="assets/js/rellax_control.min.js"></script>
     <script>
         var rellax = new Rellax('.rellax');
     </script>
@@ -1465,8 +1467,7 @@
     <script src="assets/js/faqau.min.js"></script>
     <!-- Gobierna los carruseles de videos -->
     <script src="assets/js/carousels.js"></script>
-    <!-- Gobierna los parámetros de rellax -->
-    <script src="assets/js/rellax_control.min.js"></script>
+
 
     <!------------------------------------------------->
     <!--	end JS	-->
