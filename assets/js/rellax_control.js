@@ -14,7 +14,6 @@ function updateParallaxAttributes() {
         element.setAttribute('data-rellax-speed', '2');
         element.setAttribute('data-rellax-percentage', '0');
     }
-    console.log('updateParallaxAttributes');
 }
 
 // Update attributes on window resize
