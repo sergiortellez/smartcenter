@@ -17,7 +17,7 @@
 
     <form id="fetchForm">
         <label>id de prueba:</label>
-        <input type="text" name="idAsesor" placeholder="id asesor">
+        <input type="text" id="idInput" name="idInput" placeholder="id asesor">
         <button type="button" id="submitButton">go!</button>
     </form>
 
@@ -27,15 +27,16 @@
         <h2>iD del asesor:</h2>
         <span id="idAsesor"></span>
         <h3>Id's asesorados</h3>
-        <span id="idAsesorados"></span>
+        <ul id="idAsesorados"></ul>
     </section>
 
     <script>
-        document.getElementById('submitButton').addEventListener('click', getData());
+        document.getElementById('submitButton').addEventListener('click', getData);
 
         function getData() {
             // Obtener el valor del input con id 'idAsesor'
-            const profesorId = document.getElementById('idAsesor').value;
+            const profesorId = document.getElementById('idInput').value;
+            console.log(profesorId)
 
             // URL de la API
             const url = `https://servicios.up.edu.mx/upapi/asesorados/${profesorId}`;
@@ -71,6 +72,15 @@
                     dataDisplaySection.style.display = 'block';
                     nombreAsesor.textContent = data.nombreAsesor;
                     idAsesor.textContent = data.idAsesor;
+
+                    //work with the student's ids (if any)
+                    if (data.idAsesorados.length > 0) {
+                        data.idAsesorados.forEach(idAsesorado => {
+                            let newLi = document.createElement('li')
+                            newLi.textContent = idAsesorado
+                            idAsesorados.append(newLi)
+                        });
+                    }
 
 
                 })
