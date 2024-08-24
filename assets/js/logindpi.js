@@ -12,18 +12,32 @@
 <!------------------------------------------------->*/
 function responseGOauth(credentialResponse) {
     try {
-        // Decode the 'credential' property of credentialResponse
+        // Decode the JWT token
         const credencialesObject = parseJWT(credentialResponse.credential);
 
-        // Extract user details
-        const { name: nombreUsuario, email: emailUsuario } = credencialesObject;
-        const userName = emailUsuario.split('@')[0];
+        // Validate the token's audience and expiration
+        if (credencialesObject.aud !== '94652977258-lf78996qj8qd6i9fgeg0j6qk1aq2ehp1.apps.googleusercontent.com') {
+            throw new Error('Invalid token audience.');
+        }
 
-        // Elements of the page to modify
+        const currentTime = Math.floor(Date.now() / 1000);
+        if (credencialesObject.exp < currentTime) {
+            throw new Error('Token has expired.');
+        }
+
+        // Extract user information
+        const nombreUsuario = credencialesObject.name;
+        const emailUsuario = credencialesObject.email;
+        const userName = emailUsuario.split('@')[0];
+        const userOrg = credencialesObject.hd;
+
+        console.log('User organization:', userOrg);
+        console.log('User name:', nombreUsuario);
+
+        // UI updates based on authentication status
         const notLoggedInBanner = document.getElementById('notLogged');
         const buscador = document.getElementById('buscador');
 
-        // If a user exists, toggle between the warning banner and the search bar
         if (credencialesObject && isNaN(Number(userName))) {
             notLoggedInBanner.style.display = 'none';
             buscador.style.display = 'grid';

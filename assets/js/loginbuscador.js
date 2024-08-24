@@ -32,6 +32,7 @@ function responseGOauth(credentialResponse) {
         const userOrg = credencialesObject.hd;
 
         console.log('User organization:', userOrg);
+        console.log('User name:', nombreUsuario);
 
         // UI updates based on authentication status
         const notLoggedInBanner = document.getElementById('notLogged');
