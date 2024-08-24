@@ -36,14 +36,14 @@ function responseGOauth(credentialResponse) {
 
         // UI updates based on authentication status
         const notLoggedInBanner = document.getElementById('notLogged');
-        const buscador = document.getElementById('buscador');
+        const dpi = document.getElementById('dpi');
 
         if (credencialesObject && isNaN(Number(userName))) {
             notLoggedInBanner.style.display = 'none';
-            buscador.style.display = 'grid';
+            dpi.style.display = 'grid';
         } else {
             notLoggedInBanner.style.display = 'block';
-            buscador.style.display = 'none';
+            dpi.style.display = 'none';
         }
     } catch (error) {
         console.error('Error processing OAuth response:', error);
