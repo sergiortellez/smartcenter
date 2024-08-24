@@ -142,6 +142,17 @@ body {
     padding: 2rem;
 }
 
+#notAuthorized{
+    height: calc(90vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+#notAuthorized div{
+    
+        padding: 2rem;
+}
 /*###################################################*/
 /*...................................................*/
 /* end login */

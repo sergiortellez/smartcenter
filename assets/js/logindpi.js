@@ -41,6 +41,7 @@ function responseGOauth(credentialResponse) {
         if (credencialesObject && isNaN(Number(userName))) {
             notLoggedInBanner.style.display = 'none';
             dpi.style.display = 'grid';
+            buildDPI(userName);
         } else {
             notLoggedInBanner.style.display = 'block';
             dpi.style.display = 'none';
@@ -78,3 +79,20 @@ function parseJWT(token) {
 /*<!------------------------------------------------->
 <!--	end parseJWT()	-->
 <!------------------------------------------------->*/
+
+
+function buildDPI() {
+    //obtén el string de parámetros en la URL
+    const queryString = window.location.search;
+    //busca los parámetros en ese string
+    const urlParams = new URLSearchParams(queryString);
+    //consigue el id
+    const id = urlParams.get('id');
+    //id de la implementación, debe cambiarse cada vez que se implementa (se hacen cambios en el backend)
+    const idImplementacion = 'AKfycbz1cQAo1aWej117ZhvUoDqcE_KQHynaHdueYWBOHE0ft9tHrZzoIckF7pS1snkAlF-wfw';
+    //arma un nuevo url
+    const frameURL = 'https://script.google.com/a/up.edu.mx/macros/s/' + idImplementacion + '/exec' + '?id=' + id;
+    //encuentra el iframe
+    var iframe = document.getElementById('dpiIframe');
+    iframe.setAttribute('src', frameURL);
+}
