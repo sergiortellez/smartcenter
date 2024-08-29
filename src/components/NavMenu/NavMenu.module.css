@@ -1,0 +1,206 @@
+/*###################################################*/
+/*...................................................*/
+/* root properties */
+/*...................................................*/
+/*###################################################*/
+
+:root {
+  --navMenu-height: 5rem;
+  --animation-duration: 0.4s;
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end root properties */
+/*...................................................*/
+/*###################################################*/
+
+/*###################################################*/
+/*...................................................*/
+/* nav */
+/*...................................................*/
+/*###################################################*/
+
+
+nav[data-type="mobile"] {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--background);
+  padding: 0;
+  color: white;
+  border-top: solid 1px var(--background-mono);
+  min-height: var(--navMenu-height);
+}
+
+nav[data-type="mobile"].navMenuDialogOpen{
+  border-top: none;
+}
+
+nav[data-type="mobile"] .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+nav[data-type="mobile"] .item:hover {
+  background-color: #444;
+}
+
+/*-------------------------------*/
+/* hamburger & animation */
+/*-------------------------------*/
+
+
+.hamburger { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+ 
+}
+
+.hamburger > div{
+  width: 24px;
+  height: 2px;
+  background-color: var(--text);
+  transition: transform var(--animation-duration) ease;
+}
+
+.hamburger.open > .line1 {
+  transform: rotate(45deg) translate(0px, 5px);
+}
+
+.hamburger.open > .line2 {
+  transform: rotate(-45deg) translate(0px, -5px);
+}
+
+
+/*-------------------------------*/
+/* end hamburger & animation */
+/*-------------------------------*/
+
+
+
+/*###################################################*/
+/*...................................................*/
+/* end nav */
+/*...................................................*/
+/*###################################################*/
+
+/*###################################################*/
+/*...................................................*/
+/* slide menu */
+/*...................................................*/
+/*###################################################*/
+
+
+dialog {
+  display: none;
+  position: fixed;
+  bottom: var(--navMenu-height); 
+  left: 0;
+  width: 100vw;
+
+  background-color: var(--background);
+  color: var(--text);
+  box-shadow: 0 -2px 3px var(--background-mono);
+
+  padding: 20px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  z-index: 900;
+  border-style: none;
+  margin: 0;
+  
+}
+
+dialog[open] {
+ display: block ;
+ animation: slideIn var(--animation-duration);
+}
+
+dialog[open].closing{
+  animation: slideOut var(--animation-duration);
+  
+}
+
+/*-------------------------------*/
+/* animations */
+/*-------------------------------*/
+
+@keyframes slideOut {
+  from {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+  to {
+
+    opacity: 50%;
+    transform: translateY(100%);
+  }
+}
+
+@keyframes slideIn {
+  from {
+
+    transform: translateY(100%);
+  }
+  to {
+
+    transform: translateY(0);
+  }
+}
+
+/*-------------------------------*/
+/* end animations */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* links */
+/*-------------------------------*/
+
+/* links */
+dialog ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+dialog li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+dialog a {
+  text-decoration: none;
+  color: var(--text);
+  display: block;
+  width: 100%;
+}
+
+dialog a:hover {
+  background-color: #f1f1f1;
+}
+
+/*-------------------------------*/
+/* end links */
+/*-------------------------------*/
+
+
+
+
+/*###################################################*/
+/*...................................................*/
+/* end slide menu */
+/*...................................................*/
+/*###################################################*/
+
+
+

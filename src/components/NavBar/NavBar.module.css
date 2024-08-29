@@ -1,0 +1,30 @@
+
+nav[data-type="desktop"]{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: var(--nav-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    background-color: var(--background);
+    padding: 0.5rem;
+}
+
+nav[data-type="desktop"] ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+nav[data-type="desktop"] ul > li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+nav[data-type="desktop"] ul > li > a{
+    text-decoration: none;
+    color: var(--text);
+}
