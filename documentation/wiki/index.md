@@ -223,6 +223,11 @@
          Bugs: 
          - Se ajustó la tarjeta 'Eventos Presenciales' para diferentes tamaños de pantalla.
          - Se corrigió un error donde las tarjetas de 'Qué es PAAR' y 'Qué es CAAR' no abrían correctamente en iPads.
+
+      - **2.11.1**
+
+         Correcciones; 
+         - La experiencia "Mi mejor versión" se ha ocultado. 
           
 ## 2. Navegación
 ---
