@@ -10,10 +10,6 @@ import { faCat } from '@awesome.me/kit-c09e05c963/icons/sharp/solid'
 import { faDog } from '@awesome.me/kit-c09e05c963/icons/sharp-duotone/solid'
 
 
-
-
-
-
 export default function NavBar() {
 
     return (
@@ -28,5 +24,6 @@ export default function NavBar() {
                 <li><a href="#book">  Book a class</a></li>
             </ul>
         </nav>
+
     )
 }
