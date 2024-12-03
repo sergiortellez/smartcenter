@@ -1,4 +1,4 @@
-import React from 'react'
+
 //app logo
 // import logo from '../../assets/images/react.svg'
 //styles

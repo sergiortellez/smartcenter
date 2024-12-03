@@ -7,6 +7,7 @@ import './App.css'
 //components
 import NavBar from './components/NavBar/NavBar'
 import NavMenu from './components/NavMenu/NavMenu'
+import Footer from './components/Footer/Footer'
 
 //Pages
 
@@ -41,8 +42,6 @@ function App() {
     <>
       <BrowserRouter>
         {!isMobile && <NavBar />}
-
-        {isMobile && <NavMenu />}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/citas" element={<Citas />} />
@@ -54,6 +53,8 @@ function App() {
           <Route path='/experiencias/:id' element={<Video />} />
           <Route path="*" element={<h1>Página no encontrada.</h1>} />
         </Routes>
+        <Footer />
+        {isMobile && <NavMenu />}
       </BrowserRouter>
     </>
   )

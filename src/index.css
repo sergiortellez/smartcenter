@@ -23,6 +23,7 @@
     --primary: #ac8a54;
     --orangeBtn: var(--primary);
     --navHeight: 7vh;
+    --navMenu-height: 5rem;
 }
 
 /* tablet up */
