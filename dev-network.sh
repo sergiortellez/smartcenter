@@ -2,8 +2,8 @@
 # Get the current IP address on macOS
 IP=$(ipconfig getifaddr en0)
 
-# Kill any process using the Vite's default port (3000 is default for Create React App, 5173 for Vite)
-lsof -ti:5173 | xargs kill -9
+# Kill any process using Vite's default port (5173 for Vite)
+lsof -ti:5173 | xargs kill -9 2>/dev/null
 
 # Construct the full URL
 URL="http://$IP:5173"
@@ -14,13 +14,46 @@ BROWSER=none npm run dev &
 # Wait for the server to start
 sleep 5
 
-# Open the URL in Google Chrome
-open -a "Google Chrome" $URL
+# AppleScript to check if Google Chrome is running
+APPLESCRIPT_CHECK_APP="
+if application \"Google Chrome\" is running then
+    return true
+else
+    return false
+end if
+"
+
+# AppleScript to open the URL in an existing or new window
+APPLESCRIPT_OPEN_URL="
+tell application \"Google Chrome\"
+    if (count of windows) > 0 then
+        set theTab to make new tab at the end of tabs of front window
+        set URL of theTab to \"$URL\"
+    else
+        make new window
+        set URL of active tab of front window to \"$URL\"
+    end if
+    activate
+end tell
+"
+
+# Check if Google Chrome is running
+IS_RUNNING=$(osascript -e "$APPLESCRIPT_CHECK_APP")
+
+if [ "$IS_RUNNING" = "true" ]; then
+    # Open URL in existing Chrome window
+    osascript -e "$APPLESCRIPT_OPEN_URL"
+else
+    # Start Google Chrome and open the URL
+    open -a "Google Chrome" "$URL"
+fi
 
 # Copy the URL to the clipboard
 echo $URL | pbcopy
 
-echo "Development server running in network and (copied to clipboard)"
+echo "Development server running on network and copied to clipboard."
+
+
 
 #                  🆁🅴🅰🅳 🅼🅴
 
