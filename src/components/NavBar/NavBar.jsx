@@ -1,6 +1,6 @@
 import React from 'react'
 //app logo
-import logo from '../../assets/images/react.svg'
+// import logo from '../../assets/images/react.svg'
 //styles
 import styles from './NavBar.module.css'
 //fontawesome
@@ -15,7 +15,7 @@ export default function NavBar() {
     return (
         <nav data-type="desktop">
             <div className="logo">
-                <img src={logo} alt="L&J" />
+                {/* <img src={logo} alt="L&J" /> */}
             </div>
             <ul>
                 {/* <li><a href="#academic"> <FontAwesomeIcon icon={faCoffeePot} /> Classes</a></li> */}

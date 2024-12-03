@@ -41,6 +41,7 @@ function App() {
     <>
       <BrowserRouter>
         {!isMobile && <NavBar />}
+
         {isMobile && <NavMenu />}
         <Routes>
           <Route path="/" element={<Home />} />
