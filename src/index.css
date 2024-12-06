@@ -22,7 +22,7 @@
     --text: #000;
     --primary: #ac8a54;
     --orangeBtn: var(--primary);
-    --navHeight: 7vh;
+    --navHeight: 14vh;
     --navMenu-height: 5rem;
 }
 
@@ -329,6 +329,13 @@ a {
     box-sizing: inherit;
 }
 
+/* ---for active class in navbar--- */
+
+
+
+/* ---end for active class in navbar--- */
+
+
 /*-------------------------------*/
 /* end special styles */
 /*-------------------------------*/
@@ -341,3 +348,4 @@ a {
 /* end general properties */
 /*...................................................*/
 /*###################################################*/
+
