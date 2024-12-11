@@ -13,6 +13,7 @@ nav[data-type="desktop"]{
     color: var(--text);
     border-bottom: 6px solid var(--primary);
     font-weight: 200;
+    padding: 0 0.5rem 0.4rem 0.5rem;
 
 
     /* fixed from materialized  */
@@ -24,7 +25,7 @@ nav[data-type="desktop"]{
     position: fixed;
     top: 0;
     /* full width */
-    width: 100vw;
+    width: 100%;
 
     /* always in the front */
     z-index: 9;
@@ -47,15 +48,14 @@ nav[data-type="desktop"]{
     align-items: flex-end;
     justify-content: space-between;
     height: var(--navHeight);
-    margin-left: 1rem;
-   
+   padding-bottom: 0.3rem;
 }
 
 .brand {
     display: flex;
     align-items: baseline;
     justify-content: center;
-    padding-bottom: 0.3rem;
+    /* padding-bottom: 0.3rem; */
 }
 
 
@@ -68,8 +68,19 @@ nav[data-type="desktop"]{
 .navSmartLogo {
     display: inline;
     height: auto;
-    width: 8rem;
+    width: 15vw;  
 }
+
+/* tablet landscape up */
+@media (min-width: 1054.1px) { 
+    .navSmartLogo {
+        padding-left: 1rem;
+        border-left: 0.5px solid var(--primary);
+        width: 10vw;
+    }
+}
+/* end tablet up */
+
 .navUpLogo {
     display: none;
     height: 2rem;
@@ -79,11 +90,9 @@ nav[data-type="desktop"]{
 @media (min-width: 1054.1px) { 
     .navUpLogo {
         display: inline;
-        height: 4rem;
-        width: auto;
-        padding-left: 1rem;
-        border-left: 0.5px solid var(--primary);
-        margin-left: 1rem;
+        width: 15vw;
+        height: auto;
+        padding-right: 1rem;
     }
 }
 /* end tablet up */
@@ -105,16 +114,16 @@ nav[data-type="desktop"]{
         align-items: center;
         height: var(--navHeight);
         gap: 1rem;
-        padding-right: 1rem;
+
     }
 
 .navContents a, .navContents span {
     display:flex;
+    white-space: nowrap; 
     align-items: flex-end;
     justify-content: center;
     height: 100%;
     padding: 0.3rem;
-    margin-bottom: 0.2rem;
 }
 
 .active,
@@ -126,7 +135,7 @@ nav[data-type="desktop"]{
 
 .logoCitas{
     margin-right: 0.3rem;
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.2rem;
 }
 /*-------------------------------*/
 /* end contents */
@@ -138,11 +147,11 @@ nav[data-type="desktop"]{
 /*-------------------------------*/
 
 .contracted {
-   --navHeight: 6vh;
+   --navHeight: 6.5vh;
 }
 
 .contracted .navIcons {
-    align-items: center;
+    align-items: flex-end;
 }
 .contracted .navContents {
     align-items: center;
