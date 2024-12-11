@@ -101,6 +101,7 @@ export default function NavBar() {
                 rootMargin: '-500px 0px 0px 0px',
                 threshold: 0,
             };
+            
 
             //This is the callback function when the observer detects a change. 'entries' is an array of elements that have changed intersection state.
             const observerCallback = entriesArray => {

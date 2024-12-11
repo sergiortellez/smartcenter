@@ -24,14 +24,14 @@
 
 nav[data-type="mobile"] {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   position: fixed;
   bottom: 0;
   width: 100%;
   z-index: 1000;
   background-color: var(--background);
   padding: 0;
-  color: white;
+  color: var(--smartBlue);
   border-top: solid 1px var(--background-mono);
   min-height: var(--navMenu-height);
 }
@@ -42,15 +42,35 @@ nav[data-type="mobile"].navMenuDialogOpen{
 
 nav[data-type="mobile"] .item {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  gap: 5px;
   padding: 1rem;
+  min-width: 3rem;
+  font-size: 0.8rem;
 }
 
 nav[data-type="mobile"] .item:hover {
-  background-color: #444;
+  background-color: var(--primary);
+  color: var(--smartBlue);
 }
+
+/*-------------------------------*/
+/* nav icons */
+/*-------------------------------*/
+
+nav[data-type="mobile"] .item .icon {
+  width: 1.8rem;
+  font-size: 1.8rem;
+
+}
+
+/*-------------------------------*/
+/* end nav icons */
+/*-------------------------------*/
+
 
 /*-------------------------------*/
 /* hamburger & animation */
@@ -64,13 +84,14 @@ nav[data-type="mobile"] .item:hover {
   align-items: center;
   gap: 5px;
   cursor: pointer;
+   min-width: 3rem;
  
 }
 
 .hamburger > div{
   width: 24px;
   height: 2px;
-  background-color: var(--text);
+  background-color: var(--smartBlue);
   transition: transform var(--animation-duration) ease;
 }
 
@@ -168,25 +189,26 @@ dialog[open].closing{
 /*-------------------------------*/
 
 /* links */
-dialog ul {
-  list-style-type: none;
-  padding: 0;
+dialog section {
+  
 }
 
 dialog li {
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd;
+  
 }
 
 dialog a {
-  text-decoration: none;
-  color: var(--text);
   display: block;
   width: 100%;
+  border-radius: 5px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  color: var(--text);
 }
 
 dialog a:hover {
-  background-color: #f1f1f1;
+  background-color: var(--smartBlue);
+  color: var(--primary);
 }
 
 /*-------------------------------*/
