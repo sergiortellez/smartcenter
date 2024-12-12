@@ -76,7 +76,7 @@ html {
     font-size: var(--fs-b);
     /* Oficial SMART font-family   */
     font-family: 'Nunito', sans-serif;
-    /* protección de movimiento de overflow por animaciones */
+    /* protection against overflow movement due to animations */
     overflow-x: hidden;
     /* Size of elements wont be affected by paddings or margins */
     box-sizing: border-box;
