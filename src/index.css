@@ -19,6 +19,7 @@
     --smartYellowMono: #86612e;
     /* theme colors */
     --background: #F5F5F5;
+    --backgroundMono:#f0f0f0;
     --text: #000;
     --primary: #ac8a54;
     --orangeBtn: var(--primary);
