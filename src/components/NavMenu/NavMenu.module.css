@@ -123,7 +123,7 @@ nav[data-type="mobile"] .item .icon {
 /*###################################################*/
 
 
-dialog {
+.slideMenu {
   display: none;
   position: fixed;
   bottom: var(--navMenu-height); 
@@ -143,12 +143,12 @@ dialog {
   
 }
 
-dialog[open] {
- display: block ;
+.slideMenu[open] {
+ display: block;
  animation: slideIn var(--animation-duration);
 }
 
-dialog[open].closing{
+.slideMenu[open].closing{
   animation: slideOut var(--animation-duration);
   
 }
@@ -188,16 +188,8 @@ dialog[open].closing{
 /* links */
 /*-------------------------------*/
 
-/* links */
-dialog section {
-  
-}
 
-dialog li {
-  
-}
-
-dialog a {
+.slideMenu a {
   display: block;
   width: 100%;
   border-radius: 5px;
@@ -206,7 +198,7 @@ dialog a {
   color: var(--text);
 }
 
-dialog a:hover {
+.slideMenu a:hover {
   background-color: var(--smartBlue);
   color: var(--primary);
 }

@@ -5,7 +5,7 @@
 /*###################################################*/
 
 
-footer {
+footer[data-type="persistent"] {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,7 +20,7 @@ footer {
 
 /* tablet portrait up */
 @media (min-width: 768px) {
-    footer {
+    footer[data-type="persistent"] {
         flex-direction: row;
         font-size: 0.8rem;
         padding: 1rem;
@@ -30,7 +30,7 @@ footer {
 /* end tablet up */
 /* tablet landscape up */
 @media (min-width: 1054.1px) {
-    footer {
+    footer[data-type="persistent"] {
         flex-direction: row;
         font-size: 1rem;
         padding: 3rem;
@@ -39,15 +39,15 @@ footer {
 
 /* end tablet up */
 
-footer a {
+footer[data-type="persistent"] a {
     color: var(--background);
 }
 
-footer a:visited {
+footer[data-type="persistent"] a:visited {
     color: var(--background);
 }
 
-footer svg {
+footer[data-type="persistent"] svg {
     font-size: 1.3rem;
 }
 

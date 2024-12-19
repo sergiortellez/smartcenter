@@ -1,3 +1,23 @@
+/*<------------------------------------------------->
+<!--	NavMenu (component)	-->
+<!-------------------------------------------------->
+* Description: This component is the navigation menu for the website. It's a mobile-first design, so it's optimized for mobile devices. It has a hamburger menu that opens a sliding menu with the navigation links. The links are hashlinks that scroll to the corresponding section of the page. The menu is built using the <dialog> api, and the opening and closing of the menu are managed with the toggleMenu function. The menu has a logo, and the links are styled with icons from fontawesome. The menu is responsive and adapts to the screen size. The menu is built using react and react-router-dom.
+    
+* Parameters:
+    - none
+* Dependencies:
+    - react
+    - react-router-dom
+    - HashLink
+    - smartIcon
+    - styles
+    - FontAwesomeIcon
+    - faGrid2
+    - faCalendar
+* Returns/results: The component returns a navigation menu itself. 
+<!------------------------------------------------->*/
+
+/*<--	*** imports ***	-->*/
 //react
 import { useState, useRef } from 'react'
 import { NavLink } from 'react-router-dom'
@@ -10,8 +30,7 @@ import styles from './NavMenu.module.css'
 //fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGrid2, faCalendar } from '@awesome.me/kit-c09e05c963/icons/classic/solid'
-
-
+/*<--	*** end imports ***	-->*/
 
 
 const NavMenu = () => {
@@ -30,12 +49,7 @@ const NavMenu = () => {
     * Dependencies:
         - useRef
         - useState
-        - styles.closing
-        - styles.navMenuDialogOpen
-        - styles.hamburger
-        - styles.open
-        - styles.line1
-        - styles.line2
+        - styles
     * Returns/result: when invoked, it opens or closes the mobile menu.
     <!------------------------------------------------->*/
     const toggleMenu = () => {
@@ -75,7 +89,6 @@ const NavMenu = () => {
 
 
 
-
     return (
         <>
             {/* nav bar */}
@@ -93,7 +106,7 @@ const NavMenu = () => {
             </nav>
 
             {/* sliding menu */}
-            <dialog ref={dialogRef} className={styles.dialog} >
+            <dialog ref={dialogRef} className={styles.slideMenu} >
                 <section>
                     <HashLink smooth to="/#somos"> ¿Quiénes somos?</HashLink>
                     <HashLink smooth to="/#news"> Noticias</HashLink>
@@ -108,3 +121,17 @@ const NavMenu = () => {
 export default NavMenu;
 
 //TODO: check periodically if mobile browsers support of animating the display property has been implemented to change all the code inside toggleMenu for a ternary operator that just opens or closes the dialog managing animations with css
+
+
+
+/*<!------------------------------------------------->
+<!--	end NavMenu (component)	-->
+<!------------------------------------------------->*/
+
+
+
+
+
+
+
+

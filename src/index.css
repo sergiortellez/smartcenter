@@ -86,8 +86,7 @@ html {
 
 
 body {
-    /* scroll spy */
-    overflow-y: scroll;
+  
 
     background-color: var(--brColor);
     color: var(--text);

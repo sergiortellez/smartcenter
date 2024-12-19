@@ -1,3 +1,18 @@
+/*<------------------------------------------------->
+<!--	Footer (component)	-->
+<!-------------------------------------------------->
+* Description: Footer component for the application, is one of the persistent components.
+    
+* Parameters:
+    - none
+* Dependencies:
+    - styles: Footer.module.css
+    - images: upLogo
+    - fontawesome: FontAwesomeIcon, faBuilding, faPhoneVolume, faYoutube, faFacebook, faInstagram|
+* Returns/results: Renders the footer component itself.
+<!------------------------------------------------->*/
+
+/*<--	*** imports ***	-->*/
 //styles
 import styles from './Footer.module.css';
 //images
@@ -10,12 +25,12 @@ import { faYoutube } from '@awesome.me/kit-c09e05c963/icons/classic/brands';
 import { faFacebook } from '@awesome.me/kit-c09e05c963/icons/classic/brands';
 import { faInstagram } from '@awesome.me/kit-c09e05c963/icons/classic/brands';
 
-
+/*<--	*** end imports ***	-->*/
 
 
 export default function Footer() {
     return (
-        <footer>
+        <footer data-type="persistent" >
             <img src={upLogo} alt="Universidad Panamericana" className={styles.footer_logo} />
             <section className={styles.footer_derechos}>
                 <span>Derechos Reservados </span>
@@ -45,3 +60,16 @@ export default function Footer() {
         </footer>
     )
 }
+
+
+
+/*<!------------------------------------------------->
+<!--	end Footer (component)	-->
+<!------------------------------------------------->*/
+
+
+
+
+
+
+
