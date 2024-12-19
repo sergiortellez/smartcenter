@@ -12,6 +12,8 @@ import styles from './NavBar.module.css'
 //fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendars } from '@awesome.me/kit-c09e05c963/icons/sharp-duotone/solid'
+//components
+import NavDropdown from '../NavDropdown/NavDropdown';
 
 
 
@@ -101,7 +103,7 @@ export default function NavBar() {
                 rootMargin: '-500px 0px 0px 0px',
                 threshold: 0,
             };
-            
+
 
             //This is the callback function when the observer detects a change. 'entries' is an array of elements that have changed intersection state.
             const observerCallback = entriesArray => {
@@ -176,6 +178,27 @@ export default function NavBar() {
                 <span>|</span>
                 {/* HACK: since using "modules.css" we need to reference the class name with this boolean because the modules invent classes like NavBar_active_123 so the "active" class was not directly working */}
                 <NavLink to="/citas" className={({ isActive }) => (isActive ? styles.active : '')} > <FontAwesomeIcon icon={faCalendars} className={styles.logoCitas} /> Citas </NavLink>
+
+                {/* <NavDropdown icon={faCalendars}>
+                    <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                        <li>
+                            <a href="/profile" style={{ textDecoration: 'none', color: '#333', padding: '0.5rem', display: 'block' }}>
+                                Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/settings" style={{ textDecoration: 'none', color: '#333', padding: '0.5rem', display: 'block' }}>
+                                Settings
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/logout" style={{ textDecoration: 'none', color: '#333', padding: '0.5rem', display: 'block' }}>
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </NavDropdown> */}
+
             </section>
         </nav>
 

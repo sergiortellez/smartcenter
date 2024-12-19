@@ -1,0 +1,137 @@
+/*###################################################*/
+/*...................................................*/
+/* root properties */
+/*...................................................*/
+/*###################################################*/
+
+:root {
+  --animation-duration: 0.4s;
+}
+
+/*###################################################*/
+/*...................................................*/
+/* dropdown container */
+/*...................................................*/
+/*###################################################*/
+
+.dropdown {
+    position: relative;
+}
+
+.dropdownButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--text, #333);
+}
+
+/*###################################################*/
+/*...................................................*/
+/* dropdown dialog */
+/*...................................................*/
+/*###################################################*/
+
+/* dialog {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 200px;
+  background-color: var(--background, white);
+  color: var(--text, #333);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 10px 0;
+  z-index: 1000;
+  border: none;
+  margin: 0;
+}
+
+dialog[open] {
+  display: block;
+  animation: slideIn var(--animation-duration) ease-out;
+}
+
+dialog[open].closing {
+  animation: slideOut var(--animation-duration) ease-out;
+}  */
+
+/*###################################################*/
+/*...................................................*/
+/* animations */
+/*...................................................*/
+/*###################################################*/
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+/*###################################################*/
+/*...................................................*/
+/* links inside dropdown */
+/*...................................................*/
+/*###################################################*/
+
+.dialogContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.dialogContent a {
+  display: block;
+  padding: 10px 1rem;
+  color: var(--text, #333);
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
+  transition: background-color var(--animation-duration), color var(--animation-duration);
+}
+
+.dialogContent a:hover {
+  background-color: var(--smartBlue, #f0f0f0);
+  color: var(--primary, #007bff);
+}
+
+/*###################################################*/
+/*...................................................*/
+/* dynamic positioning classes */
+/*...................................................*/
+/*###################################################*/
+
+.bottom-right {
+  top: 100%;
+  right: 0;
+}
+
+.bottom-left {
+  top: 100%;
+  left: 0;
+}
+
+.top-right {
+  bottom: 100%;
+  right: 0;
+}
+
+.top-left {
+  bottom: 100%;
+  left: 0;
+}
