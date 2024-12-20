@@ -1,6 +1,10 @@
 //react
 import { useState, useEffect } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
+//hooks
+import useCampus from '../../hooks/useCampus'
+//components
+import NavDropdown from '../NavDropdown/NavDropdown';
 //for smooth scrolling
 import { HashLink } from "react-router-hash-link";
 //app logo
@@ -9,15 +13,20 @@ import largeSmartLogo from '../../assets/intercampi/logos/logo_smart.svg'
 import upHorizontalLogo from '../../assets/intercampi/logos/up_logo_horizontal.webp'
 //styles
 import styles from './NavBar.module.css'
+import dropdownContentStyles from '../NavDropdown/NavDropdownContentsCampus.module.css'
 //fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCalendars } from '@awesome.me/kit-c09e05c963/icons/sharp-duotone/solid'
-//components
-import NavDropdown from '../NavDropdown/NavDropdown';
+import { faCalendars, faLocationDot } from '@awesome.me/kit-c09e05c963/icons/sharp-duotone/solid'
 
 
 
 export default function NavBar() {
+
+    const { dispatch } = useCampus()
+
+    const selectCampus = (campus) => {
+        dispatch({ type: 'SET_CAMPUS', payload: campus })
+    }
 
     /*<------------------------------------------------->
     <!--	Auto contracción de la barra de navegación	-->
@@ -175,29 +184,31 @@ export default function NavBar() {
                 <HashLink smooth to="/#news" className={activeSection === 'news' ? styles.active : ''}> Noticias</HashLink>
                 <HashLink smooth to="/#tips" className={activeSection === 'tips' ? styles.active : ''}> SMART Tips</HashLink>
                 <HashLink smooth to="/#contacto" className={activeSection === 'contacto' ? styles.active : ''}> Contacto</HashLink>
+
                 <span>|</span>
+
                 {/* HACK: since using "modules.css" we need to reference the class name with this boolean because the modules invent classes like NavBar_active_123 so the "active" class was not directly working */}
+
+
                 <NavLink to="/citas" className={({ isActive }) => (isActive ? styles.active : '')} > <FontAwesomeIcon icon={faCalendars} className={styles.logoCitas} /> Citas </NavLink>
 
-                {/* <NavDropdown icon={faCalendars}>
-                    <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                        <li>
-                            <a href="/profile" style={{ textDecoration: 'none', color: '#333', padding: '0.5rem', display: 'block' }}>
-                                Profile
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/settings" style={{ textDecoration: 'none', color: '#333', padding: '0.5rem', display: 'block' }}>
-                                Settings
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/logout" style={{ textDecoration: 'none', color: '#333', padding: '0.5rem', display: 'block' }}>
-                                Logout
-                            </a>
-                        </li>
-                    </ul>
-                </NavDropdown> */}
+                <NavDropdown icon={faLocationDot} position='bottom-left'>
+                    {/* LEARN: The following a design pattern called:  "Render prop pattern" */}
+                    {/* HACK: By passing the children of the NavDropdown as a function we can pass an argument wich was declared in the component as the method that closes de dropdown. */}
+                    {({ toggleDialog }) => (
+                        <div className={dropdownContentStyles.buttonsContainer}>
+                            <button onClick={() => { selectCampus('AGS'); toggleDialog(); }}>
+                                <FontAwesomeIcon icon={faLocationDot} /> AGS
+                            </button>
+                            <button onClick={() => { selectCampus('CDMX'); toggleDialog(); }}>
+                                <FontAwesomeIcon icon={faLocationDot} /> CDMX
+                            </button>
+                            <button onClick={() => { selectCampus('GDL'); toggleDialog(); }}>
+                                <FontAwesomeIcon icon={faLocationDot} /> GDL
+                            </button>
+                        </div>
+                    )}
+                </NavDropdown>
 
             </section>
         </nav>

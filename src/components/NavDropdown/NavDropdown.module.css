@@ -6,6 +6,9 @@
 
 :root {
   --animation-duration: 0.4s;
+  --icon-height: 1.1rem;
+  /* HACK: icon-height is defined so the modal displays at the right hight when it's being used on the top-left & top-right positions. */
+   --dropdown-offset: 8px;
 }
 
 /*###################################################*/
@@ -16,13 +19,17 @@
 
 .dropdown {
     position: relative;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .dropdownButton {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: var(--icon-height);
   color: var(--text, #333);
 }
 
@@ -32,11 +39,10 @@
 /*...................................................*/
 /*###################################################*/
 
-/* dialog {
+.dropdownDialog {
   display: none;
   position: absolute;
-  top: 100%;
-  right: 0;
+  
   min-width: 200px;
   background-color: var(--background, white);
   color: var(--text, #333);
@@ -48,14 +54,14 @@
   margin: 0;
 }
 
-dialog[open] {
+.dropdownDialog[open] {
   display: block;
-  animation: slideIn var(--animation-duration) ease-out;
+  animation: slideIn var(--animation-duration) ease-in;
 }
 
-dialog[open].closing {
+.dropdownDialog[open].closing {
   animation: slideOut var(--animation-duration) ease-out;
-}  */
+} 
 
 /*###################################################*/
 /*...................................................*/
@@ -63,52 +69,29 @@ dialog[open].closing {
 /*...................................................*/
 /*###################################################*/
 
-@keyframes fadeIn {
+@keyframes slideIn {
   from {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(-10px) translateX(-80%);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) translateX(-80%); 
   }
 }
 
-@keyframes fadeOut {
+@keyframes slideOut {
   from {
-    opacity: 1;
-    transform: translateY(0);
+   opacity: 1;
+    transform: translateY(0) translateX(-80%);
   }
   to {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(-10px) translateX(-80%);
   }
 }
 
-/*###################################################*/
-/*...................................................*/
-/* links inside dropdown */
-/*...................................................*/
-/*###################################################*/
 
-.dialogContent {
-  display: flex;
-  flex-direction: column;
-}
-
-.dialogContent a {
-  display: block;
-  padding: 10px 1rem;
-  color: var(--text, #333);
-  text-decoration: none;
-  border-bottom: 1px solid #ddd;
-  transition: background-color var(--animation-duration), color var(--animation-duration);
-}
-
-.dialogContent a:hover {
-  background-color: var(--smartBlue, #f0f0f0);
-  color: var(--primary, #007bff);
-}
 
 /*###################################################*/
 /*...................................................*/
@@ -117,21 +100,23 @@ dialog[open].closing {
 /*###################################################*/
 
 .bottom-right {
-  top: 100%;
+  top:calc(100% + var( --dropdown-offset));
   right: 0;
 }
 
 .bottom-left {
-  top: 100%;
-  left: 0;
+  
+  top:calc(100% + var( --dropdown-offset));
+  transform: translateX(-80%);
 }
 
 .top-right {
-  bottom: 100%;
+  bottom:calc(var(--icon-height) + var( --dropdown-offset));
   right: 0;
 }
 
 .top-left {
-  bottom: 100%;
-  left: 0;
+  bottom:calc(var(--icon-height) + var( --dropdown-offset));
+  transform: translateX(-80%);
 }
+
