@@ -36,10 +36,18 @@
     border: none;
 }
 
+.buttonsContainer button:active{
+    background-color: var(--smartBlue);
+    color: aliceblue;
+    transform: scale(0.85); 
+}
+
 .buttonsContainer button.selected{
     background-color: var(--smartBlue);
     color: aliceblue;
 }
+
+
 
 /*-------------------------------*/
 /* reset predefined */
