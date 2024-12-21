@@ -4,30 +4,57 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  padding: 0 1rem;
-  gap: 1rem;
+  padding: 0 0.2rem;
+  gap: 0.5rem;
 }
 
 .buttonsContainer button{
 
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 0.3rem;
+    justify-content: flex-start;
+    gap: 0.2rem;
 
     min-height: 1rem;
     min-width: 5rem;
+    width: 100%;
     background-color: var(--backgroundMono);
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     cursor: pointer;
-    color: var(--primary);
+    color: var(--text);
     font-size: 0.8rem;
+    text-align: left;
+    /* border-bottom: 1px solid var(--smartBlue); */
     
 }
 
 .buttonsContainer button:hover{
     background-color: var(--smartBlue);
     color: aliceblue;
+    border: none;
 }
+
+.buttonsContainer button.selected{
+    background-color: var(--smartBlue);
+    color: aliceblue;
+}
+
+/*-------------------------------*/
+/* reset predefined */
+/*-------------------------------*/
+
+button:focus,
+select:focus,
+option:focus {
+  outline: none;
+  -webkit-appearance: none; /* Prevent default iOS styles */
+  appearance: none;
+  border: none; /* Remove default border */
+}
+
+
+/*-------------------------------*/
+/* end reset predefined */
+/*-------------------------------*/

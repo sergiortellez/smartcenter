@@ -22,7 +22,7 @@ import { faCalendars, faLocationDot } from '@awesome.me/kit-c09e05c963/icons/sha
 
 export default function NavBar() {
 
-    const { dispatch } = useCampus()
+    const { campus, dispatch } = useCampus()
 
     const selectCampus = (campus) => {
         dispatch({ type: 'SET_CAMPUS', payload: campus })
@@ -193,17 +193,23 @@ export default function NavBar() {
                 <NavLink to="/citas" className={({ isActive }) => (isActive ? styles.active : '')} > <FontAwesomeIcon icon={faCalendars} className={styles.logoCitas} /> Citas </NavLink>
 
                 <NavDropdown icon={faLocationDot} position='bottom-left'>
-                    {/* LEARN: The following a design pattern called:  "Render prop pattern" */}
-                    {/* HACK: By passing the children of the NavDropdown as a function we can pass an argument wich was declared in the component as the method that closes de dropdown. */}
+                    {/* LEARN: The following is a design pattern called:  "Render prop pattern" */}
+                    {/* HACK: By passing the children of the NavDropdown as a function we can pass an argument which was declared in the component as the method that closes de dropdown. */}
                     {({ toggleDialog }) => (
                         <div className={dropdownContentStyles.buttonsContainer}>
-                            <button onClick={() => { selectCampus('AGS'); toggleDialog(); }}>
+                            <button
+                                className={campus === 'AGS' ? dropdownContentStyles.selected : ''}
+                                onClick={() => { selectCampus('AGS'); toggleDialog(); }}>
                                 <FontAwesomeIcon icon={faLocationDot} /> AGS
                             </button>
-                            <button onClick={() => { selectCampus('CDMX'); toggleDialog(); }}>
+                            <button
+                                className={campus === 'CDMX' ? dropdownContentStyles.selected : ''}
+                                onClick={() => { selectCampus('CDMX'); toggleDialog(); }}>
                                 <FontAwesomeIcon icon={faLocationDot} /> CDMX
                             </button>
-                            <button onClick={() => { selectCampus('GDL'); toggleDialog(); }}>
+                            <button
+                                className={campus === 'GDL' ? dropdownContentStyles.selected : ''}
+                                onClick={() => { selectCampus('GDL'); toggleDialog(); }}>
                                 <FontAwesomeIcon icon={faLocationDot} /> GDL
                             </button>
                         </div>
