@@ -2,18 +2,18 @@
 <!--	NavMenu (component)	-->
 <!-------------------------------------------------->
 * Description: This component is the navigation menu for the website. It's a mobile-first design, so it's optimized for mobile devices. It has a hamburger menu that opens a sliding menu with the navigation links. The links are hashlinks that scroll to the corresponding section of the page. The menu is built using the <dialog> api, and the opening and closing of the menu are managed with the toggleMenu function. The menu has a logo, and the links are styled with icons from fontawesome. The menu is responsive and adapts to the screen size. The menu is built using react and react-router-dom.
-    
+   
 * Parameters:
-    - none
+   - none
 * Dependencies:
-    - react
-    - react-router-dom
-    - HashLink
-    - smartIcon
-    - styles
-    - FontAwesomeIcon
-    - faGrid2
-    - faCalendar
+   - react
+   - react-router-dom
+   - HashLink
+   - smartIcon
+   - styles
+   - FontAwesomeIcon
+   - faGrid2
+   - faCalendar
 * Returns/results: The component returns a navigation menu itself. 
 <!------------------------------------------------->*/
 
@@ -23,6 +23,8 @@ import { useState, useRef } from 'react'
 import { NavLink } from 'react-router-dom'
 //for smooth scrolling
 import { HashLink } from "react-router-hash-link";
+//components
+import Accordion from '../Accordion/Accordion';
 //logos
 import smartIcon from '../../assets/intercampi/logos/smart_icon.svg'
 //styles
@@ -112,6 +114,7 @@ const NavMenu = () => {
                     <HashLink smooth to="/#news"> Noticias</HashLink>
                     <HashLink smooth to="/#tips"> SMART Tips</HashLink>
                     <HashLink smooth to="/#contacto"> Contacto</HashLink>
+                    <Accordion title="Experiencias" defaultExpanded="true"> This is a test </Accordion>
                 </section>
             </dialog>
         </>
