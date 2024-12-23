@@ -6,14 +6,21 @@
 * Parameters:
    - none
 * Dependencies:
-   - react
-   - react-router-dom
-   - HashLink
-   - smartIcon
-   - styles
-   - FontAwesomeIcon
-   - faGrid2
-   - faCalendar
+    - useRef
+    - useState
+    - useCampus
+    - react-router-dom
+    - HashLink
+    - smartIcon
+    - Accordion(component)
+    - styles
+        - dropdownContentStyles
+    - FontAwesomeIcon
+        - faGrid2
+        - faCalendar
+        - faLocationDot
+   
+
 * Returns/results: The component returns a navigation menu itself. 
 <!------------------------------------------------->*/
 
@@ -25,13 +32,16 @@ import { NavLink } from 'react-router-dom'
 import { HashLink } from "react-router-hash-link";
 //components
 import Accordion from '../Accordion/Accordion';
+//context
+import useCampus from '../../hooks/useCampus';
 //logos
 import smartIcon from '../../assets/intercampi/logos/smart_icon.svg'
 //styles
 import styles from './NavMenu.module.css'
+import dropdownContentStyles from '../NavDropdown/NavDropdownContentsCampus.module.css'
 //fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGrid2, faCalendar } from '@awesome.me/kit-c09e05c963/icons/classic/solid'
+import { faGrid2, faCalendar, faLocationDot } from '@awesome.me/kit-c09e05c963/icons/classic/solid'
 /*<--	*** end imports ***	-->*/
 
 
@@ -40,6 +50,12 @@ const NavMenu = () => {
     const dialogRef = useRef(null)
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    // context and it´s functions.
+    const { campus, dispatch } = useCampus();
+
+    const selectCampus = (campus) => {
+        dispatch({ type: 'SET_CAMPUS', payload: campus })
+    }
 
     /*<------------------------------------------------->
     <!--	toggleMenu	-->
@@ -114,7 +130,29 @@ const NavMenu = () => {
                     <HashLink smooth to="/#news"> Noticias</HashLink>
                     <HashLink smooth to="/#tips"> SMART Tips</HashLink>
                     <HashLink smooth to="/#contacto"> Contacto</HashLink>
-                    <Accordion title="Experiencias" defaultExpanded="true"> This is a test </Accordion>
+                    <Accordion title="Campus" defaultExpanded="true">
+                        {/* LEARN: The following is a design pattern called:  "Render prop pattern" */}
+                        {/* HACK: By passing the children of the NavDropdown as a function we can pass an argument which was declared in the component as the method that closes de dropdown. */}
+                        {({ toggleAccordionContent }) => (
+                            <div data-type='mobile' className={dropdownContentStyles.buttonsContainer}>
+                                <button
+                                    className={campus === 'AGS' ? dropdownContentStyles.selected : ''}
+                                    onClick={() => { selectCampus('AGS'); toggleAccordionContent(); }}>
+                                    <FontAwesomeIcon icon={faLocationDot} /> AGS
+                                </button>
+                                <button
+                                    className={campus === 'CDMX' ? dropdownContentStyles.selected : ''}
+                                    onClick={() => { selectCampus('CDMX'); toggleAccordionContent(); }}>
+                                    <FontAwesomeIcon icon={faLocationDot} /> CDMX
+                                </button>
+                                <button
+                                    className={campus === 'GDL' ? dropdownContentStyles.selected : ''}
+                                    onClick={() => { selectCampus('GDL'); toggleAccordionContent(); }}>
+                                    <FontAwesomeIcon icon={faLocationDot} /> GDL
+                                </button>
+                            </div>
+                        )}
+                    </Accordion>
                 </section>
             </dialog>
         </>

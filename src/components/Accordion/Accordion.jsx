@@ -45,7 +45,12 @@ export default function Accordion({ title, children, defaultExpanded = false }) 
                 className={`${styles.accordionContainer} ${isExpanded ? styles.expanded : styles.contracted}`}
 
             >
-                <div className={styles.innerContent}>{children}</div>
+                <div className={styles.innerContent}>
+                    {/* LEARN: The following is a design pattern called:  "Render prop pattern" */}
+                    {/* HACK: The children prop can be whatever we want it to be. In this case we are checking if it´s a function and in that case we pass the argument (toggleDialog) to give the children a method to close the Dropdown. But if we pass a node tree it will just render the children with no argument.  */}
+
+                    {typeof children === 'function' ? children({ toggleAccordionContent }) : children}
+                </div>
             </div>
         </div>
     );
