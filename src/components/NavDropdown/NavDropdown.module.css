@@ -26,13 +26,26 @@
 }
 
 .dropdownButton {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
   background: none;
   border: none;
   cursor: pointer;
   font-size: var(--icon-height);
   color: var(--text, #333);
+  
+  padding: 0;
 }
 
+.title {
+  font-size: 0.8rem;
+}
+
+.icon{
+  margin-bottom: 0.3rem;
+}
 /*###################################################*/
 /*...................................................*/
 /* dropdown dialog */

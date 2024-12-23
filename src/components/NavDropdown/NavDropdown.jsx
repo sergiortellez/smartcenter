@@ -27,7 +27,7 @@ import styles from './NavDropdown.module.css';
 /*<--	*** end imports ***	-->*/
 
 
-export default function NavDropdown({ icon, children, position = 'bottom-right' }) {
+export default function NavDropdown({ icon, title, children, position = 'bottom-right' }) {
     const dropdownRef = useRef(null);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -124,7 +124,8 @@ export default function NavDropdown({ icon, children, position = 'bottom-right' 
                 aria-haspopup="dialog"
                 aria-expanded={isDropdownOpen}
             >
-                <FontAwesomeIcon icon={icon} />
+                <FontAwesomeIcon icon={icon} className={styles.icon} />
+                <span className={styles.title}>{title}</span>
             </button>
             <dialog ref={dropdownRef} className={`${styles.dropdownDialog} ${styles[position]}`}>
                 <div className={styles.dialogContent}>
