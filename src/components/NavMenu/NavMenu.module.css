@@ -192,8 +192,9 @@ nav[data-type="mobile"] .item .icon {
 .slideMenu a {
   display: block;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
   padding: 10px 0;
+
   border-bottom: 1px solid #ddd;
   color: var(--text);
 }
