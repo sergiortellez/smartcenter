@@ -13,6 +13,10 @@
 <!------------------------------------------------->*/
 
 /*<--	*** imports ***	-->*/
+//context
+import useCampus from '../../hooks/useCampus';
+//data
+import footerData from '../../data/footerData';
 //styles
 import styles from './Footer.module.css';
 //images
@@ -29,6 +33,11 @@ import { faInstagram } from '@awesome.me/kit-c09e05c963/icons/classic/brands';
 
 
 export default function Footer() {
+    const { campus } = useCampus();
+    const currentCampus = footerData[campus] ?? campusData['CDMX'];
+
+
+
     return (
         <footer data-type="persistent" >
             <img src={upLogo} alt="Universidad Panamericana" className={styles.footer_logo} />
@@ -49,13 +58,18 @@ export default function Footer() {
                 </div>
             </section>
             <section className={styles.footer_contacto}>
-                <span> <FontAwesomeIcon icon={faBuilding} /> Campus CDMX </span>
-                <span> Augusto Rodin No. 498 </span>
-                <span>Col. Insurgentes Mixcoac CP 03920</span>
-                <span>Del. Benito Juárez, CDMX</span>
-                <span><FontAwesomeIcon icon={faPhoneVolume} />  Conmutador</span>
-                <span>55 5482 1600 | 55 5482 1700</span>
-                <span>01 800 627 22 87</span>
+                <b> <FontAwesomeIcon icon={faBuilding} /> {currentCampus.name} </b>
+                <div>
+                    <span> {currentCampus.addressLines[0]} </span>
+                    <span>{currentCampus.addressLines[1]}</span>
+                    <span>{currentCampus.addressLines[2]}</span>
+                </div>
+                <div>
+                    <span><FontAwesomeIcon icon={faPhoneVolume} />  Conmutador</span>
+                    <span>{currentCampus.phone[0]} {currentCampus.phone[1] ? '|' : ''} {currentCampus.phone[1]}</span>
+                    <span>{currentCampus.phone[2]}</span>
+                </div>
+
             </section>
         </footer>
     )

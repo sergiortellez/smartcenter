@@ -1,0 +1,38 @@
+{
+    "CDMX": {
+        "name": "Campus CDMX",
+        "addressLines": [
+            "Augusto Rodin No. 498",
+            "Col. Insurgentes Mixcoac CP 03920",
+            "Del. Benito Juárez, CDMX"
+        ],
+        "phone": [
+            "(55) 5482 1600",
+            "(55) 5482 1700",
+            "(01 800) 627 22 87"
+        ]
+    },
+    "GDL": {
+        "name": "Campus Guadalajara",
+        "addressLines": [
+            "Álvaro del Portillo No. 49",
+            "Ciudad Granja CP 45010",
+            "Zapopan, Jalisco"
+        ],
+        "phone": [
+            "(33) 1368 2200"
+        ]
+    },
+    "AGS": {
+        "name": "Campus Aguascalientes",
+        "addressLines": [
+            "Av. Josemaría Escrivá de Balaguer 101",
+            "Villas de Bonaterra, 20296",
+            "Aguascalientes, Ags"
+        ],
+        "phone": [
+            "(449) 910 6200",
+            "(449) 910 6209"
+        ]
+    }
+}

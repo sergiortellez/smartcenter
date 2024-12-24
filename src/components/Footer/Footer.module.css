@@ -32,7 +32,7 @@ footer[data-type="persistent"] {
 @media (min-width: 1054.1px) {
     footer[data-type="persistent"] {
         flex-direction: row;
-        font-size: 1rem;
+        font-size: 0.9rem;
         padding: 3rem;
     }
 }
@@ -56,7 +56,7 @@ footer[data-type="persistent"] svg {
 /*-------------------------------*/
 
 .footer_logo {
-    width: 18rem;
+    width: 15rem;
 }
 
 /* tablet portrait up */
@@ -80,14 +80,23 @@ footer[data-type="persistent"] svg {
     align-items: center;
     justify-content: center;
     margin: 2rem 0;
+
 }
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .footer_derechos {
+        margin: 0;
+    }
+}
+/* end tablet up */
 
 .footer_redes {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin-top: 1.2rem;
+    margin-top: 1.5rem;
 }
 
 /*-------------------------------*/
@@ -104,6 +113,7 @@ footer[data-type="persistent"] svg {
     justify-content: center;
     text-align: left;
     margin-bottom: var(--navMenu-height);
+    
 }
 
 /* tablet portrait up */
@@ -111,11 +121,26 @@ footer[data-type="persistent"] svg {
     .footer_contacto {
         align-items: flex-start;
         margin-bottom: 0;
+        gap: 0.5rem;
     }
 }
 
 /* end tablet up */
 
+.footer_contacto div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left; 
+}
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .footer_contacto div {
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+}
 
 /*-------------------------------*/
 /* end dirección y contacto */
