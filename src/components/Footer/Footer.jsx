@@ -1,11 +1,14 @@
 /*<------------------------------------------------->
 <!--	Footer (component)	-->
 <!-------------------------------------------------->
-* Description: Footer component for the application, is one of the persistent components.
+* Description: Footer component for the application, is one of the persistent components. It renders the footer of the page with the logo of the university, the rights reserved, the privacy notice, the smart center link, the social media links, the campus name, the campus address and the campus phone number.
+It's sensible to the campus context, so it will render the information of the campus that is currently selected. And it works with a data file that contains the information of all the campuses. The data file is imported and stored in "footerData" and the information of the current campus is extracted from it.
     
 * Parameters:
     - none
 * Dependencies:
+    - context: useCampus
+    - data: footerData
     - styles: Footer.module.css
     - images: upLogo
     - fontawesome: FontAwesomeIcon, faBuilding, faPhoneVolume, faYoutube, faFacebook, faInstagram|
@@ -34,7 +37,7 @@ import { faInstagram } from '@awesome.me/kit-c09e05c963/icons/classic/brands';
 
 export default function Footer() {
     const { campus } = useCampus();
-    const currentCampus = footerData[campus] ?? campusData['CDMX'];
+    const currentCampus = footerData[campus] ?? footerData['CDMX'];
 
 
 
@@ -44,15 +47,15 @@ export default function Footer() {
             <section className={styles.footer_derechos}>
                 <span>Derechos Reservados </span>
                 <span>© CENTROS CULTURALES DE MÉXICO A.C</span>
-                <a href="https://www.up.edu.mx/legales-politicas/" target="_blank">Aviso de privacidad</a>
+                <a href="https://www.up.edu.mx/legales-politicas/" target="_blank" rel="noopener noreferrer">Aviso de privacidad</a>
                 <a href="https://smartcenter.up.edu.mx">SMART Center</a>
                 <div className={styles.footer_redes}>
-                    <a href="https://www.youtube.com/channel/UCMAOisJbM69nBTLbCK_b4LQ?view_as=subscriber" target="_blank">
+                    <a href="https://www.youtube.com/channel/UCMAOisJbM69nBTLbCK_b4LQ?view_as=subscriber" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faYoutube} /></a>
-                    <a href="https://www.facebook.com/SuccessCenterUP/" target="_blank">
+                    <a href="https://www.facebook.com/SuccessCenterUP/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faFacebook} />
                     </a>
-                    <a href="https://www.instagram.com/smartcenterup/" target="_blank">
+                    <a href="https://www.instagram.com/smartcenterup/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faInstagram} />
                     </a>
                 </div>
@@ -60,9 +63,8 @@ export default function Footer() {
             <section className={styles.footer_contacto}>
                 <b> <FontAwesomeIcon icon={faBuilding} /> {currentCampus.name} </b>
                 <div>
-                    <span> {currentCampus.addressLines[0]} </span>
-                    <span>{currentCampus.addressLines[1]}</span>
-                    <span>{currentCampus.addressLines[2]}</span>
+                    {/* Get all the adress lines and render them in the page into span tags. */}
+                    {currentCampus.addressLines.map((line, index) => (<span key={index}>{line}</span>))}
                 </div>
                 <div>
                     <span><FontAwesomeIcon icon={faPhoneVolume} />  Conmutador</span>
