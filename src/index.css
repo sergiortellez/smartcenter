@@ -103,7 +103,10 @@ body>#root>section {
     float: none !important;
 }
 
-
+/* when the navBar (iPad portrait up) is contracted the root variable must be redefined */
+body.navIsContracted {
+   --navHeight: 6.5vh;
+}
 
 /*-------------------------------*/
 /* margins */

@@ -161,10 +161,6 @@ nav[data-type="desktop"]{
 /* contracted NavBar */
 /*-------------------------------*/
 
-.contracted {
-   --navHeight: 6.5vh;
-}
-
 .contracted .navIcons {
     align-items: flex-end;
 }

@@ -32,7 +32,7 @@ export default function NavBar() {
     <!--	Auto contracción de la barra de navegación	-->
     <!-------------------------------------------------->
     * Descripción:
-        Esta función se encarga de contraer la barra de navegación cuando el usuario hace scroll hacia abajo. Escondiendo Los logos grandes y sustituyéndoos por un logo contraído. Sólo se ejecuta una vez por cada renderizado de la página.
+        Esta función se encarga de contraer la barra de navegación cuando el usuario hace scroll hacia abajo. Escondiendo Los logos grandes y sustituyéndoos por un logo contraído. Sólo se ejecuta una vez por cada renderizado de la página. Esta función también añade una clase al body que redefine la variable --navHeight a 6.5vh para que el contenido no se mueva hacia arriba cuando la barra de navegación se contrae.
     * Parámetros:
         - ninguno
     * Dependencias:
@@ -44,6 +44,10 @@ export default function NavBar() {
     const [isContracted, setIsContracted] = useState(false)
     useEffect(() => {
         if (!isContracted) {
+            //remove the class in the body and keep using the root value for navHeight
+            document.body.classList.remove('navIsContracted');
+
+            
             //we need a function to pass to the event listener
             const handleScroll = () => {
                 //scroll threshold is the limit where the navbar will contract
@@ -54,7 +58,7 @@ export default function NavBar() {
                     //remove event listener
                     window.removeEventListener('scroll', handleScroll);
                 }
-            };
+            }
 
             //add event listener
             window.addEventListener('scroll', handleScroll, { passive: true });
@@ -63,6 +67,9 @@ export default function NavBar() {
             return () => {
                 window.removeEventListener('scroll', handleScroll);
             };
+        } else {
+            //add the class to the body that will apply the  --navHight value of 6.5vh (overwriting the root value)
+            document.body.classList.add('navIsContracted');
         }
     }, [isContracted]);
 
