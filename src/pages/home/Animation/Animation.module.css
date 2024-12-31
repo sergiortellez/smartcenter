@@ -1,0 +1,53 @@
+/*-------------------------------*/
+/* AnimationFrame */
+/*-------------------------------*/
+
+.animationFrame {
+
+    display: none;
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .animationFrame {
+        min-height: calc(100vh - var(--navHeight));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .animationFrame iframe {       
+        height: 630px;
+        width: 100%;
+        /* no permitas scroll bars */
+        overflow: hidden;
+    }
+}
+
+/* end tablet up */
+/* tablet landscape up */
+@media (min-width: 1054.1px) {
+    .animationFrame {
+        width: calc((100vw * 1.61803398874)/(1 + 1.61803398874));
+        align-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .animationFrame iframe {
+        top: 4rem;
+        width: 100%;
+        height: 630px;
+        overflow: hidden;
+    }
+}
+
+/* end tablet up */
+
+
+/*-------------------------------*/
+/* end AnimationFrame */
+/*-------------------------------*/

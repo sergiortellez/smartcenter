@@ -1,0 +1,36 @@
+/*###################################################*/
+/*...................................................*/
+/* hero component */
+/*...................................................*/
+/*###################################################*/
+.hero {
+    min-width: 100vw;
+    height: 100vh;
+    
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    background: url(../../../assets/intercampi/home/background_cover.webp); 
+    background-color: var(--primary);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: opacity(20%);
+}
+
+/* tablet landscape up */
+@media (min-width: 1054.1px) {
+    .hero {
+        padding-top: var(--navHeight);
+        grid-template-columns: repeat(2, 1fr);
+        background-position: left top;
+        /* max-height: calc(100vh - var(--navHeight)); */
+    }
+}
+
+
+/*###################################################*/
+/*...................................................*/
+/* end hero component*/
+/*...................................................*/
+/*###################################################*/
