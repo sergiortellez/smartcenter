@@ -2,12 +2,13 @@
 <!--	Animation Frame(Component)	-->
 <!----------------------------------------------------------------------------->
 * Description:
-     
+     This component is in charge of rendering the animation of the selected campus. It's sensitive to the campus context.
 * Parameters:
-    -
+    - none
 * Dependencies:
-    -
-* Returns/results:
+    - useCampus (hook)
+    - styles
+* Returns/results: Renders the animation of the selected campus.
     
 <!------------------------------------------------->*/
 //imports
@@ -16,23 +17,27 @@
 import styles from './Animation.module.css';
 
 //hooks
-import campus from '../../../hooks/useCampus';
 import useCampus from '../../../hooks/useCampus';
 
 
 export default function AnimationFrame() {
 
     const { campus } = useCampus();
+    //TODO: when the animations for AGS and GDL are ready, replace function with a data structure approach.
     const renderContent = () => {
         switch (campus) {
             case 'AGS':
-                return <div>Contenido para AGS</div>;
+                return <img src="animations/ags/smart_ags_cover.webp" alt="Logo AGS" />;
             case 'CDMX':
-                return <iframe src="../../../assets/intercampi/animations/cdmx/smart_cover_animation.html" ></iframe>;
+                return <iframe src="animations/cdmx/smart_cover_animation.html"
+                    scrolling="no"
+                    loading="lazy"
+                    frameBorder="0"
+                ></iframe>;
             case 'GDL':
-                return <div>Contenido para GDL</div>;
+                return <img src="animations/gdl/smart_gdl_cover.webp" alt="Logo GDL" />;
             default:
-                return <div>Contenido por defecto</div>;
+                return <span>No se encontró la animación...</span>;
         }
     };
 

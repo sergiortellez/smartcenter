@@ -23,6 +23,13 @@
         /* no permitas scroll bars */
         overflow: hidden;
     }
+
+    /* TODO: Remove when animations are ready. */
+    .animationFrame img{
+        width: 100%;
+        height: auto;
+        padding: 3rem;
+    }
 }
 
 /* end tablet up */
