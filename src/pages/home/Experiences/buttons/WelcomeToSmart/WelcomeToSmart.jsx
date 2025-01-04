@@ -38,8 +38,14 @@ export default function WelcomeToSmart() {
         <span style={{ marginLeft: '0.3rem' }} >Llegaste a </span> <b style={{ color: 'var(--primary)' }}>SMART</b>
       </p>
       <hr />
-      {currentCampus.welcomeMessage.map((line, index) => <p key={index}>{line}</p>)}
-      <FontAwesomeIcon icon={faGraduationCap} />
+      {currentCampus.welcomeMessage.map((line, index) => (
+        <p key={index}>
+          {line}
+          {index === currentCampus.welcomeMessage.length - 1 && (
+            <FontAwesomeIcon icon={faGraduationCap} style={{ marginLeft: '0.4rem' }} />
+          )}
+        </p>
+      ))}
     </article >
   );
 }

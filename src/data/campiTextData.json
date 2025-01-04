@@ -27,7 +27,8 @@
             "(33) 1368 2200"
         ],
         "welcomeMessage": [
-            "Bienvenido al Campus Guadalajara"
+            "Aquí encontrarás soporte académico personalizado con nuestras tutorías, así como acompañamiento y apoyo en temas de tu vida diaria con nuestro programa 'Reencuadre emocional'.",
+            "Visítanos seguido y déjanos acompañarte y ayudarte en esta gran aventura."
         ]
     },
     "AGS": {
@@ -42,7 +43,8 @@
             "(449) 910 6209"
         ],
         "welcomeMessage": [
-            "Bienvenido al Campus Aguascalientes"
+            "Aquí encontrarás una colección de experiencias, cursos, guías e información que te será increíblemente útil durante tus años de universidad.",
+            "Visítanos seguido y déjanos acompañarte y ayudarte en esta gran aventura."
         ]
     }
 }
