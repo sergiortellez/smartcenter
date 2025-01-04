@@ -86,15 +86,11 @@ html {
 }
 
 
-body {
-  
-
+body { 
     background-color: var(--brColor);
     color: var(--text);
     margin: 0;
     padding: 0;
-
-
 }
 
 /* adjusting and centering max with of sections */
