@@ -1,0 +1,102 @@
+/*###################################################*/
+/*...................................................*/
+/* Experiences  */
+/*...................................................*/
+/*###################################################*/
+
+
+#experiencias {
+    padding: 5rem 1rem;
+}
+
+
+/*-------------------------------*/
+/* title */
+/*-------------------------------*/
+
+/* just mobile */
+.title {
+    margin-bottom: 6rem;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 200;
+}
+
+
+/*-------------------------------*/
+/* end title */
+/*-------------------------------*/
+
+
+/*-------------------------------*/
+/* experiences grid */
+/*-------------------------------*/
+.experiencesGrid {
+    display: grid;
+    gap: 0.5rem;
+    padding: 1rem;
+    grid-template-areas: 
+            "first second"
+            "firstExpanded firstExpanded"
+            "secondExpanded secondExpanded"
+            "third third"
+            "thirdExpanded thirdExpanded"
+            "fourth fifth"
+            "fourthExpanded fourthExpanded"
+            "fifthExpanded fifthExpanded"
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .experiencesGrid {
+         grid-template-areas: 
+         "firstExpanded firstExpanded firstExpanded"
+            "first second second"
+            "third second second"
+            "secondExpanded secondExpanded secondExpanded"
+            "thirdExpanded thirdExpanded thirdExpanded"
+            "fourth fifth ."
+            "fourthExpanded fourthExpanded fourthExpanded"
+            "fifthExpanded fifthExpanded fifthExpanded"
+            
+    }
+}
+/* end tablet up */
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    .experiencesGrid {
+       grid-template-areas: 
+            "secondExpanded secondExpanded secondExpanded secondExpanded secondExpanded secondExpanded"
+            "thirdExpanded thirdExpanded thirdExpanded thirdExpanded thirdExpanded thirdExpanded"
+            "first second second second third third"
+            "first fourth fourth fifth fifth .   "
+            "firstExpanded firstExpanded firstExpanded firstExpanded firstExpanded firstExpanded"
+            "fourthExpanded fourthExpanded fourthExpanded fourthExpanded fourthExpanded fourthExpanded"
+            "fifthExpanded fifthExpanded fifthExpanded fifthExpanded fifthExpanded fifthExpanded"
+
+           
+    }
+}
+/* end tablet up */
+
+
+/*-------------------------------*/
+/* end experiences grid */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* gridArea templates */
+/*-------------------------------*/
+
+
+
+/*-------------------------------*/
+/* end gridArea templates */
+/*-------------------------------*/
+
+/*###################################################*/
+/*...................................................*/
+/* end experiences  */
+/*...................................................*/
+/*###################################################*/

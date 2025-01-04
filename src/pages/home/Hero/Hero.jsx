@@ -2,11 +2,14 @@
 <!--	Hero(component)	-->
 <!-------------------------------------------------->
 * Description:
-    
+    A React component that displays the hero section of the home page.  
 * Parameters:
-    -
-* Dependencies:
-* Returns/results:
+    - none
+* Dependencies: 
+    - AnimationFrame (component)
+    - VideoFrame (component)
+    - CSS Modules for styling
+* Returns/results: Renders the hero section of the home page. The dependencies component are campus context sensitive. 
 <!------------------------------------------------->*/
 //imports
 
