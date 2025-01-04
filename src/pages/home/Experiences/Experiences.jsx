@@ -23,7 +23,7 @@ import { faCoffee } from '@awesome.me/kit-c09e05c963/icons/sharp-duotone/solid';
 
 export default function Experiences() {
 
-    const sampleIcon = (<IconTextTitle icon={faCoffee} title='Coffee 4 u' />)
+    const sampleIcon = (<IconTextTitle icon={faCoffee} title='Coffee 4 u' iconSize='3' titleSize='0.6' />)
     const secondIcon = (<IconTextTitle icon={faCoffee} title='Coffee 4 u' flow='row' />)
 
     return (
