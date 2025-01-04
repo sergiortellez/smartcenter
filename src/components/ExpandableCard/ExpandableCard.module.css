@@ -10,7 +10,7 @@
 
 .cardBase {
   position: relative;
-  background-color: #e8e6e6;
+  background-color: var(--cardBackgroundColor);
   border: none;
   border-radius: 9px;
   overflow: hidden; 
