@@ -19,7 +19,7 @@ It's sensible to the campus context, so it will render the information of the ca
 //context
 import useCampus from '../../hooks/useCampus';
 //data
-import footerData from '../../data/footerData';
+import campiTextData from '../../data/campiTextData.json';
 //styles
 import styles from './Footer.module.css';
 //images
@@ -36,8 +36,10 @@ import { faInstagram } from '@awesome.me/kit-c09e05c963/icons/classic/brands';
 
 
 export default function Footer() {
+    //Get the current campus from the context
     const { campus } = useCampus();
-    const currentCampus = footerData[campus] ?? footerData['CDMX'];
+    //Get the data of the current campus from the data file
+    const currentCampus = campiTextData[campus] ?? campiTextData['CDMX'];
 
 
 
