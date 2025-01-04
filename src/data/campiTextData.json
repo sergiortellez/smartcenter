@@ -10,6 +10,10 @@
             "(55) 5482 1600",
             "(55) 5482 1700",
             "(01 800) 627 22 87"
+        ],
+        "welcomeMessage": [
+            "Aquí encontrarás una colección de experiencias, cursos, guías e información que te será increíblemente útil durante tus años de universidad.",
+            "Visítanos seguido y déjanos acompañarte y ayudarte en esta gran aventura."
         ]
     },
     "GDL": {
@@ -21,6 +25,9 @@
         ],
         "phone": [
             "(33) 1368 2200"
+        ],
+        "welcomeMessage": [
+            "Bienvenido al Campus Guadalajara"
         ]
     },
     "AGS": {
@@ -33,6 +40,9 @@
         "phone": [
             "(449) 910 6200",
             "(449) 910 6209"
+        ],
+        "welcomeMessage": [
+            "Bienvenido al Campus Aguascalientes"
         ]
     }
 }

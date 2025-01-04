@@ -35,9 +35,10 @@
     display: grid;
     gap: 0.5rem;
     padding: 1rem;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
-            "first second"
-            "firstExpanded firstExpanded"
+            "WelcomeToSmart WelcomeToSmart"
+            "second second"
             "secondExpanded secondExpanded"
             "third third"
             "thirdExpanded thirdExpanded"
@@ -49,10 +50,11 @@
 /* tablet portrait up */
 @media (min-width: 768px) {
     .experiencesGrid {
+         grid-template-columns: repeat(3, 1fr);
          grid-template-areas: 
-         "firstExpanded firstExpanded firstExpanded"
-            "first second second"
-            "third second second"
+
+            "WelcomeToSmart second second"
+            "third          second second"
             "secondExpanded secondExpanded secondExpanded"
             "thirdExpanded thirdExpanded thirdExpanded"
             "fourth fifth ."
@@ -66,12 +68,14 @@
 /* tablet landscape up */
 @media (min-width: 1024.1px) {
     .experiencesGrid {
-       grid-template-areas: 
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
             "secondExpanded secondExpanded secondExpanded secondExpanded secondExpanded secondExpanded"
-            "thirdExpanded thirdExpanded thirdExpanded thirdExpanded thirdExpanded thirdExpanded"
-            "first second second second third third"
-            "first fourth fourth fifth fifth .   "
-            "firstExpanded firstExpanded firstExpanded firstExpanded firstExpanded firstExpanded"
+           
+            "WelcomeToSmart WelcomeToSmart second second second second"
+            "WelcomeToSmart WelcomeToSmart second second second second"
+            "third third fourth fourth fifth fifth"
+            "third third fourth fourth fifth fifth"
             "fourthExpanded fourthExpanded fourthExpanded fourthExpanded fourthExpanded fourthExpanded"
             "fifthExpanded fifthExpanded fifthExpanded fifthExpanded fifthExpanded fifthExpanded"
 
