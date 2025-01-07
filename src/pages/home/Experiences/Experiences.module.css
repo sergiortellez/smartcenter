@@ -40,26 +40,30 @@
             "WelcomeToSmart WelcomeToSmart"
             "second second"
             "secondExpanded secondExpanded"
-            "third third"
+            "third fourth"
             "thirdExpanded thirdExpanded"
-            "fourth fifth"
             "fourthExpanded fourthExpanded"
-            "fifthExpanded fifthExpanded"
+            " fifth fifth"
+           
 }
 
 /* tablet portrait up */
 @media (min-width: 768px) {
     .experiencesGrid {
          grid-template-columns: repeat(3, 1fr);
+         grid-template-rows: minmax(100px, auto);
          grid-template-areas: 
 
             "WelcomeToSmart second second"
             "third          second second"
             "secondExpanded secondExpanded secondExpanded"
             "thirdExpanded thirdExpanded thirdExpanded"
-            "fourth fifth ."
+            "fourth fourth fourth"
             "fourthExpanded fourthExpanded fourthExpanded"
-            "fifthExpanded fifthExpanded fifthExpanded"
+            "fifth fifth fifth"
+            "fifth fifth fifth"
+            "fifth fifth fifth"
+
             
     }
 }

@@ -18,9 +18,12 @@ import styles from './Experiences.module.css';
 import ExpandableCard from '../../../components/ExpandableCard/ExpandableCard';
 import LinkCard from '../../../components/LinkCard/LinkCard';
 import IconTextTitle from '../../../components/IconTextTitle/IconTextTitle';
+import LinkCardParallax from '../../../components/LinkCardParallax/LinkCardParallax';
+//FontAwesome
 import { faCoffee } from '@awesome.me/kit-c09e05c963/icons/sharp-duotone/solid';
 //cards
 import WelcomeToSmart from './buttons/WelcomeToSmart/WelcomeToSmart';
+
 
 
 export default function Experiences() {
@@ -34,12 +37,18 @@ export default function Experiences() {
 
             <div className={styles.experiencesGrid} >
                 <WelcomeToSmart />
+                <LinkCardParallax
+                    route="/experiencias"
+                    contents={secondIcon}
+                    areaName="second"
+                    images={[
+                        { src: '/images/parallax/experiencias_parallax_up.webp', speed: -0.3, offset: 0 },
+                        { src: '/images/parallax/experiencias_parallax_down.webp', speed: 0.3, offset: -100 }
 
-                <ExpandableCard
-                    buttonContent={secondIcon}
-                    expandedContent={<div>Contenido Expandido Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repellat, facere nam pariatur earum a obcaecati, optio facilis illum, blanditiis quo aspernatur totam veniam. Vel eos, nostrum ipsum optio voluptatibus officiis eius consectetur rem dolorum maiores? Exercitationem, aliquam. Temporibus, cum.</div>}
-                    areaName='second'
+                    ]}
                 />
+
+
 
                 <LinkCard
                     rout='/experiencias'
@@ -51,11 +60,15 @@ export default function Experiences() {
                     expandedContent={<div>Contenido Expandido Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repellat, facere nam pariatur earum a obcaecati, optio facilis illum, blanditiis quo aspernatur totam veniam. Vel eos, nostrum ipsum optio voluptatibus officiis eius consectetur rem dolorum maiores? Exercitationem, aliquam. Temporibus, cum.</div>}
                     areaName='fourth'
                 />
-                <LinkCard
-                    rout='http://google.com'
-                    contents={<div> Go to google</div>}
-                    areaName='fifth'
-                    isExternal={true}
+                <LinkCardParallax
+                    route="/experiencias"
+                    contents={secondIcon}
+                    areaName="fifth"
+                    images={[
+                        { src: '/images/parallax/experiencias_parallax_up.webp', speed: -0.3, offset: 0 },
+                        { src: '/images/parallax/experiencias_parallax_down.webp', speed: 0.3, offset: -100 }
+
+                    ]}
                 />
             </div>
         </section>
