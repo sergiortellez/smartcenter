@@ -4,7 +4,7 @@
 * Description: LinkCard is a component that renders a card that behaves as a link. It visually warns the user that's about to click a link with an icon(top left of the card). It can be used to link to internal or external pages. It's meant to be used in a grid layout and the dev can control the position of the card in the grid by passing an areaName prop, then just use grid-template-areas to place the card in the desired position.
      
 * Parameters:
-    - rout (string): The path to the page the card will link to.
+    - route (string): The path to the page the card will link to.
     - contents (JSX): The content of the card.
     - areaName (string): The name of the area in the grid layout where the card will be placed.
     - isExternal (boolean): If true, the card will link to an external page.
@@ -28,7 +28,7 @@ import { faLink } from '@awesome.me/kit-c09e05c963/icons/sharp-duotone/solid'
 
 export default function LinkCard(
   {
-    rout = '',
+    route = '',
     contents,
     areaName = '',
     isExternal = false }) {
@@ -54,7 +54,7 @@ export default function LinkCard(
   // If the link is external, we use an anchor tag
   if (isExternal) {
     return (
-      <a href={rout} target="_blank" rel="noopener noreferrer"
+      <a href={route} target="_blank" rel="noopener noreferrer"
         className={`${styles.cardBase} ${styles.linkCard}`} style={linkCardStyles || {}}>
         <FontAwesomeIcon icon={faLink} className={styles.linkIcon} />
         {contents}
@@ -64,7 +64,7 @@ export default function LinkCard(
 
   // For internal links, we use React Router's Link component
   return (
-    <Link to={rout} className={`${styles.cardBase} ${styles.linkCard}`} style={linkCardStyles || {}} >
+    <Link to={route} className={`${styles.cardBase} ${styles.linkCard}`} style={linkCardStyles || {}} >
       <FontAwesomeIcon icon={faLink} className={styles.linkIcon} />
       {contents}
     </Link>

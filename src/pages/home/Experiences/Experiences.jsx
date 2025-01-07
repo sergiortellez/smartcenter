@@ -51,7 +51,7 @@ export default function Experiences() {
 
 
                 <LinkCard
-                    rout='/experiencias'
+                    route='/experiencias'
                     contents={<div> Link content 3</div>}
                     areaName='third'
                 />
