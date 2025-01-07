@@ -55,7 +55,7 @@ export default function LinkCard(
   if (isExternal) {
     return (
       <a href={route} target="_blank" rel="noopener noreferrer"
-        className={`${styles.cardBase} ${styles.linkCard}`} style={linkCardStyles || {}}>
+        className={`${styles.cardBase} ${styles.linkCard}`} style={linkCardStyles || {}} data-name={areaName}>
         <FontAwesomeIcon icon={faLink} className={styles.linkIcon} />
         {contents}
       </a>
@@ -64,7 +64,7 @@ export default function LinkCard(
 
   // For internal links, we use React Router's Link component
   return (
-    <Link to={route} className={`${styles.cardBase} ${styles.linkCard}`} style={linkCardStyles || {}} >
+    <Link to={route} className={`${styles.cardBase} ${styles.linkCard}`} style={linkCardStyles || {}} data-name={areaName} >
       <FontAwesomeIcon icon={faLink} className={styles.linkIcon} />
       {contents}
     </Link>

@@ -93,7 +93,7 @@ export default function ExpandableCard({
 
         <>
             {/* button part */}
-            <article className={`${styles.cardBase} ${styles.button} ${isOpen ? styles.openedButton : ''}`} style={collapsedGridStyles || {}} onClick={handleToggle} aria-expanded={isOpen} aria-label="Open expanded content">
+            <article className={`${styles.cardBase} ${styles.button} ${isOpen ? styles.openedButton : ''}`} style={collapsedGridStyles || {}} onClick={handleToggle} aria-expanded={isOpen} aria-label="Open expanded content" data-name={areaName}>
                 {buttonContent}
             </article>
             {/* end button part */}

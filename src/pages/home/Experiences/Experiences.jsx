@@ -61,6 +61,7 @@ export default function Experiences() {
                     buttonContent={sampleIcon}
                     expandedContent={<div>Contenido Expandido Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repellat, facere nam pariatur earum a obcaecati, optio facilis illum, blanditiis quo aspernatur totam veniam. Vel eos, nostrum ipsum optio voluptatibus officiis eius consectetur rem dolorum maiores? Exercitationem, aliquam. Temporibus, cum.</div>}
                     areaName='fourth'
+                    cardMinHeight='10'
                     images={[
                         { src: '/images/parallax/experiencias_parallax_up.webp', speed: -0.3, offset: 0 },
                         { src: '/images/parallax/experiencias_parallax_down.webp', speed: 0.3, offset: -100 }

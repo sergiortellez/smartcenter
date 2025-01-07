@@ -94,6 +94,7 @@ export default function LinkCardParallax({
         rel="noopener noreferrer"
         className={`${styles.cardBase} ${styles.linkCard}`}
         style={linkCardStyles}
+        data-name={areaName}
       >
         <FontAwesomeIcon icon={faLink} className={styles.linkIcon} />
         {renderImages()}
@@ -108,6 +109,7 @@ export default function LinkCardParallax({
       to={route}
       className={`${styles.cardBase} ${styles.linkCard}`}
       style={linkCardStyles}
+      data-name={areaName}
     >
       <FontAwesomeIcon icon={faLink} className={styles.linkIcon} />
       {renderImages()}

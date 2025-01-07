@@ -47,25 +47,38 @@
            
 }
 
+ article[data-name='fourth'] {
+        min-height: 15rem;
+    }
+
+
+/*-------------------------------*/
+/* end experiences grid */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* gridArea templates */
+/*-------------------------------*/
+
+
 /* tablet portrait up */
 @media (min-width: 768px) {
     .experiencesGrid {
-         grid-template-columns: repeat(3, 1fr);
-         grid-template-rows: minmax(100px, auto);
-         grid-template-areas: 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+    
+    grid-template-areas: 
+        "WelcomeToSmart second         second"
+        "third          second         second"
+        "secondExpanded secondExpanded secondExpanded"
+        "thirdExpanded  thirdExpanded  thirdExpanded"
+        "fourth         fourth         fourth"
+        "fourthExpanded fourthExpanded fourthExpanded"
+        "fifth          fifth          fifth";
+}
 
-            "WelcomeToSmart second second"
-            "third          second second"
-            "secondExpanded secondExpanded secondExpanded"
-            "thirdExpanded thirdExpanded thirdExpanded"
-            "fourth fourth fourth"
-            "fourthExpanded fourthExpanded fourthExpanded"
-            "fifth fifth fifth"
-            "fifth fifth fifth"
-            "fifth fifth fifth"
-
-            
-    }
+   
 }
 /* end tablet up */
 
@@ -87,17 +100,6 @@
     }
 }
 /* end tablet up */
-
-
-/*-------------------------------*/
-/* end experiences grid */
-/*-------------------------------*/
-
-/*-------------------------------*/
-/* gridArea templates */
-/*-------------------------------*/
-
-
 
 /*-------------------------------*/
 /* end gridArea templates */
