@@ -29,6 +29,7 @@ export default function useParallaxInCard() {
     // Keep track of the images currently in the viewport
     const [visibleImages, setVisibleImages] = useState([]);
 
+    //Execute the effect only once, after the component is mounted
     useEffect(() => {
         // Make sure the container is mounted
         if (!containerRef.current) return;
@@ -124,7 +125,7 @@ export default function useParallaxInCard() {
     // Using [visibleImages] so that if the set of visible images changes,
     // we re-run the effect and keep the observer in sync.
 
-    // Return the ref so LinkCardParallax can attach it to its root element. Delegating the responsibility of attaching the ref to the component that uses the hook.
+    // Return the ref so LinkCardParallax can attach it to its root element. Delegating the responsibility of attaching the ref to the component that uses the hook. 
     return { containerRef };
 }
 

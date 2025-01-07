@@ -1,0 +1,137 @@
+/*###################################################*/
+/*...................................................*/
+/* ExpandableCardParallax(component) */
+/*...................................................*/
+/*###################################################*/
+
+
+/*-------------------------------*/
+/* base styles */
+/*-------------------------------*/
+
+.cardBase {
+  position: relative;
+  background-color: var(--cardBackgroundColor);
+  border: none;
+  border-radius: 9px;
+  overflow: hidden; 
+}
+
+
+/*-------------------------------*/
+/* end base styles */
+/*-------------------------------*/
+
+
+/*-------------------------------*/
+/* card button */
+/*-------------------------------*/
+
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+   /* HACK: images inside linkCard (parallax images) will have a negative index so it's necessary to restart the stack for preserving them on screen  */
+  isolation: isolate;
+  transition: transform 0.2s ease;
+    -webkit-transition: transform 0.2s ease;
+    -moz-transition: transform 0.2s ease;
+    -ms-transition: transform 0.2s ease;
+    -o-transition: transform 0.2s ease;
+}
+
+.openedButton{
+  /* background-color: var(--primary); */
+  opacity: 0.6;
+}
+
+.button:hover,
+.button:focus{
+  transform: scale(0.95);
+   
+}
+/*-------------------------------*/
+/* end card button */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* parallax images */
+/*-------------------------------*/
+
+.parallaxImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  /* Default position  for smooth transitions in some browsers*/
+  transform: translateY(0);
+  /* HACK: Hint to the browser for better performance */ 
+  will-change: transform; 
+  z-index: -1;
+}
+
+/* If user prefers to avoid motion: */
+@media (prefers-reduced-motion: reduce) {
+  .parallaxImg {
+    transform: none !important;
+  }
+}
+
+
+/*-------------------------------*/
+/* end parallax images */
+/*-------------------------------*/
+
+
+/*-------------------------------*/
+/* expanded card */
+/*-------------------------------*/
+
+/* 
+   The 'cardExpanded' class ensures that once open, 
+   the article spans all columns in the grid. 
+   (This means grid-column: from 1 to the last) 
+*/
+.cardExpanded {
+  padding: 1rem;
+}
+
+
+.cardExpanded header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+
+.cardExpanded header button{
+   all: unset;
+  cursor: pointer;
+  border: none;
+  font-size: 2rem;
+  color: var(--smartRed);
+}
+
+.cardExpanded header button:hover{
+  color: var(--primary);
+}
+.cardExpanded header button:active{
+  scale: 1.1;
+}
+
+
+/*-------------------------------*/
+/* end expanded card */
+/*-------------------------------*/
+
+
+
+
+/*###################################################*/
+/*...................................................*/
+/* end ExpandableCardParallax(component) */
+/*...................................................*/
+/*###################################################*/

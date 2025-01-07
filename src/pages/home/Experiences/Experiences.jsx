@@ -16,6 +16,7 @@
 import styles from './Experiences.module.css';
 //Components
 import ExpandableCard from '../../../components/ExpandableCard/ExpandableCard';
+import ExpandableCardParallax from '../../../components/ExpandableCardParallax/ExpandableCardParallax';
 import LinkCard from '../../../components/LinkCard/LinkCard';
 import IconTextTitle from '../../../components/IconTextTitle/IconTextTitle';
 import LinkCardParallax from '../../../components/LinkCardParallax/LinkCardParallax';
@@ -32,7 +33,7 @@ export default function Experiences() {
     const secondIcon = (<IconTextTitle icon={faCoffee} title='Coffee 4 u' flow='row' />)
 
     return (
-        <section id="experiences">
+        <section id="experiencias">
             <h1 className={styles.title} >Nuestras experiencias</h1>
 
             <div className={styles.experiencesGrid} >
@@ -55,10 +56,16 @@ export default function Experiences() {
                     contents={<div> Link content 3</div>}
                     areaName='third'
                 />
-                <ExpandableCard
-                    buttonContent={<div> button content 4</div>}
+
+                <ExpandableCardParallax
+                    buttonContent={sampleIcon}
                     expandedContent={<div>Contenido Expandido Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repellat, facere nam pariatur earum a obcaecati, optio facilis illum, blanditiis quo aspernatur totam veniam. Vel eos, nostrum ipsum optio voluptatibus officiis eius consectetur rem dolorum maiores? Exercitationem, aliquam. Temporibus, cum.</div>}
                     areaName='fourth'
+                    images={[
+                        { src: '/images/parallax/experiencias_parallax_up.webp', speed: -0.3, offset: 0 },
+                        { src: '/images/parallax/experiencias_parallax_down.webp', speed: 0.3, offset: -100 }
+
+                    ]}
                 />
                 <LinkCardParallax
                     route="/experiencias"
