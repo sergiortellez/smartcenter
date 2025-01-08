@@ -9,6 +9,7 @@
     - route (string): The path to the page the card will link to.
     - contents (JSX): The content of the card.
     - areaName (string): The name of the area in the grid layout where the card will be placed.
+    - className (string): Additional classes for styling on parent. (can pass through several parent components)
     - isExternal (boolean): If true, the card will link to an external page.
     - images (array): An array of objects for parallax configuration containing: 
       - `src`(string): The image source.
@@ -44,6 +45,7 @@ export default function LinkCardParallax({
   route = '',
   contents,
   areaName = '',
+  className = '',
   isExternal = false,
   images = [],
 }) {
@@ -92,9 +94,8 @@ export default function LinkCardParallax({
         href={route}
         target="_blank"
         rel="noopener noreferrer"
-        className={`${styles.cardBase} ${styles.linkCard}`}
+        className={`${styles.cardBase} ${styles.linkCard} ${className}`}
         style={linkCardStyles}
-        data-name={areaName}
       >
         <FontAwesomeIcon icon={faLink} className={styles.linkIcon} />
         {renderImages()}
@@ -107,9 +108,8 @@ export default function LinkCardParallax({
     <Link
       ref={containerRef}
       to={route}
-      className={`${styles.cardBase} ${styles.linkCard}`}
+      className={`${styles.cardBase} ${styles.linkCard} ${className}`}
       style={linkCardStyles}
-      data-name={areaName}
     >
       <FontAwesomeIcon icon={faLink} className={styles.linkIcon} />
       {renderImages()}

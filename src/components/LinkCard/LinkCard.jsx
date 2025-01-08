@@ -7,6 +7,7 @@
     - route (string): The path to the page the card will link to.
     - contents (JSX): The content of the card.
     - areaName (string): The name of the area in the grid layout where the card will be placed.
+    - className (string): Additional classes for styling on parent. (can pass through several parent components)
     - isExternal (boolean): If true, the card will link to an external page.
 
 * Dependencies:
@@ -31,6 +32,7 @@ export default function LinkCard(
     route = '',
     contents,
     areaName = '',
+    className = '',
     isExternal = false }) {
 
   /*<------------------------------------------------->
@@ -55,7 +57,7 @@ export default function LinkCard(
   if (isExternal) {
     return (
       <a href={route} target="_blank" rel="noopener noreferrer"
-        className={`${styles.cardBase} ${styles.linkCard}`} style={linkCardStyles || {}} data-name={areaName}>
+        className={`${styles.cardBase} ${styles.linkCard} ${className}`} style={linkCardStyles || {}} >
         <FontAwesomeIcon icon={faLink} className={styles.linkIcon} />
         {contents}
       </a>
@@ -64,7 +66,7 @@ export default function LinkCard(
 
   // For internal links, we use React Router's Link component
   return (
-    <Link to={route} className={`${styles.cardBase} ${styles.linkCard}`} style={linkCardStyles || {}} data-name={areaName} >
+    <Link to={route} className={`${styles.cardBase} ${styles.linkCard} ${className}`} style={linkCardStyles || {}} >
       <FontAwesomeIcon icon={faLink} className={styles.linkIcon} />
       {contents}
     </Link>

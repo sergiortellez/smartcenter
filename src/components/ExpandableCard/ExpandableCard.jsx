@@ -9,6 +9,7 @@ The way it works is that the buttonContent is always visible and when clicked, t
     - expandedContent (JSX): The content that will be displayed in the expanded part of the card.
     - animateDuration (number): The duration of the animation when the card is expanded. (default: 0.4)
     - areaName (string): The name of the grid area where the card will be placed.
+    - className (string): Additional classes for styling on parent. (can pass through several parent components)
 
 * Dependencies:
     - FontAwesomeIcon: The icon component from the react-fontawesome library.
@@ -35,7 +36,8 @@ export default function ExpandableCard({
     buttonContent,
     expandedContent,
     animateDuration = 0.4,
-    areaName = ''
+    areaName = '',
+    className = ''
 }) {
 
     const [isOpen, setIsOpen] = useState(false);
@@ -93,7 +95,7 @@ export default function ExpandableCard({
 
         <>
             {/* button part */}
-            <article className={`${styles.cardBase} ${styles.button} ${isOpen ? styles.openedButton : ''}`} style={collapsedGridStyles || {}} onClick={handleToggle} aria-expanded={isOpen} aria-label="Open expanded content" data-name={areaName}>
+            <article className={`${styles.cardBase} ${styles.button} ${className} ${isOpen ? styles.openedButton : ''}`} style={collapsedGridStyles || {}} onClick={handleToggle} aria-expanded={isOpen} aria-label="Open expanded content">
                 {buttonContent}
             </article>
             {/* end button part */}

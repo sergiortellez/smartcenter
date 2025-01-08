@@ -11,6 +11,7 @@ The difference between this component and the ExpandableCard component is that t
     - expandedContent (JSX): The content that will be displayed in the expanded part of the card.
     - animateDuration (number): The duration of the animation when the card is expanded. (default: 0.4)
     - areaName (string): The name of the grid area where the card will be placed.
+    - className (string): Additional classes for styling on parent. (can pass through several parent components)
      - images (array): An array of objects for parallax configuration containing: 
       - `src`(string): The image source.
       - `speed` (number +-): The speed of the parallax effect.
@@ -45,6 +46,7 @@ export default function ExpandableCard({
   expandedContent,
   animateDuration = 0.4,
   areaName = '',
+  className = '',
   images = [],
 }) {
 
@@ -127,7 +129,7 @@ export default function ExpandableCard({
 
     <>
       {/* button part, must attach the ref of the container from the hook */}
-      <article ref={containerRef} className={`${styles.cardBase} ${styles.button} ${isOpen ? styles.openedButton : ''} `} style={collapsedGridStyles || {}} onClick={handleToggle} aria-expanded={isOpen} aria-label="Open expanded content" data-name={areaName}>
+      <article ref={containerRef} className={`${styles.cardBase} ${styles.button} ${className}} ${isOpen ? styles.openedButton : ''} `} style={collapsedGridStyles || {}} onClick={handleToggle} aria-expanded={isOpen} aria-label="Open expanded content" data-name={areaName}>
         {renderImages()}
         {buttonContent}
       </article>
