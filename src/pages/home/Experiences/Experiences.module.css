@@ -31,25 +31,6 @@
 /*-------------------------------*/
 /* experiences grid */
 /*-------------------------------*/
-.experiencesGrid {
-    display: grid;
-    gap: 0.5rem;
-    padding: 1rem;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-            "WelcomeToSmart WelcomeToSmart"
-            "second second"
-            "secondExpanded secondExpanded"
-            "third fourth"
-            "thirdExpanded thirdExpanded"
-            "fourthExpanded fourthExpanded"
-            " fifth fifth"
-           
-}
-
- article[data-name='fourth'] {
-        min-height: 15rem;
-    }
 
 
 /*-------------------------------*/
@@ -59,23 +40,42 @@
 /*-------------------------------*/
 /* gridArea templates */
 /*-------------------------------*/
+.experiencesGrid {
+    display: grid;
+    gap: 0.5rem;
+    padding: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-areas: 
+            "WelcomeToSmart WelcomeToSmart"
+            "DigitalExperiences DigitalExperiences"
+            "InPerson InPerson"
+            "third fourth"
+            "thirdExpanded thirdExpanded"
+            "fourthExpanded fourthExpanded"
+            " fifth fifth"
+           
+}
 
 
+.DigitalExperiences{
+    min-height: 10rem;
+}
+
+.InPerson{
+    min-height: 10rem;
+}
 /* tablet portrait up */
 @media (min-width: 768px) {
     .experiencesGrid {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
    
     
     grid-template-areas: 
-        "WelcomeToSmart second         second"
-        "third          second         second"
-        "secondExpanded secondExpanded secondExpanded"
-        "thirdExpanded  thirdExpanded  thirdExpanded"
-        "fourth         fourth         fourth"
-        "fourthExpanded fourthExpanded fourthExpanded"
-        "fifth          fifth          fifth";
+        "WelcomeToSmart DigitalExperiences  DigitalExperiences"
+        "InPerson          InPerson         InPerson"
+        
+        ;
 }
 
    
@@ -87,14 +87,9 @@
     .experiencesGrid {
         grid-template-columns: repeat(6, 1fr);
         grid-template-areas: 
-            "secondExpanded secondExpanded secondExpanded secondExpanded secondExpanded secondExpanded"
-           
-            "WelcomeToSmart WelcomeToSmart second second second second"
-            "WelcomeToSmart WelcomeToSmart second second second second"
-            "third third fourth fourth fifth fifth"
-            "third third fourth fourth fifth fifth"
-            "fourthExpanded fourthExpanded fourthExpanded fourthExpanded fourthExpanded fourthExpanded"
-            "fifthExpanded fifthExpanded fifthExpanded fifthExpanded fifthExpanded fifthExpanded"
+            "WelcomeToSmart WelcomeToSmart DigitalExperiences DigitalExperiences DigitalExperiences DigitalExperiences"
+            "InPerson InPerson InPerson InPerson InPerson InPerson"
+            ;
 
            
     }
