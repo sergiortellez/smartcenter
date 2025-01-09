@@ -50,10 +50,8 @@
             "WelcomeToSmart WelcomeToSmart"
             "DigitalExperiences DigitalExperiences"
             "InPerson InPerson"
-            "third fourth"
-            "thirdExpanded thirdExpanded"
-            "fourthExpanded fourthExpanded"
-            " fifth fifth"
+            "WhatIsCounseling WhatIsCounseling"
+            "WhatIsCounselingExpanded WhatIsCounselingExpanded"
            
 }
 
@@ -74,6 +72,8 @@
     grid-template-areas: 
         "WelcomeToSmart DigitalExperiences  DigitalExperiences"
         "InPerson          InPerson         InPerson"
+        "WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded"
+        "WhatIsCounseling  . ."
         
         ;
 }
@@ -89,6 +89,8 @@
         grid-template-areas: 
             "WelcomeToSmart WelcomeToSmart DigitalExperiences DigitalExperiences DigitalExperiences DigitalExperiences"
             "InPerson InPerson InPerson InPerson InPerson InPerson"
+            "WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded"
+            "WhatIsCounseling WhatIsCounseling . . . ."
             ;
 
            

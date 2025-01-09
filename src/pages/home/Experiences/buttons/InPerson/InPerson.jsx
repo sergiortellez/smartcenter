@@ -30,7 +30,7 @@ import { faStreetView } from '@awesome.me/kit-c09e05c963/icons/sharp-duotone/sol
 export default function InPerson({ className = '' }) {
 
   const { campus } = useCampus()
-  const title = <IconTextTitle icon={faStreetView} title='Experiencias Presenciales' iconSize='4' titleSize='2' flow='row' />
+  const title = <IconTextTitle icon={faStreetView} title='Experiencias Presenciales' iconSize='3' titleSize='1.7' flow='row' />
 
   if (campus === 'CDMX') {
     return (

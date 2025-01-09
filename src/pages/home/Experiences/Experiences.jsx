@@ -15,24 +15,20 @@
 //styles
 import styles from './Experiences.module.css';
 //Components
-import ExpandableCard from '../../../components/ExpandableCard/ExpandableCard';
-import ExpandableCardParallax from '../../../components/ExpandableCardParallax/ExpandableCardParallax';
-import LinkCard from '../../../components/LinkCard/LinkCard';
-import IconTextTitle from '../../../components/IconTextTitle/IconTextTitle';
-import LinkCardParallax from '../../../components/LinkCardParallax/LinkCardParallax';
-import InPerson from './buttons/InPerson/InPerson';
-//FontAwesome
-import { faCoffee } from '@awesome.me/kit-c09e05c963/icons/sharp-duotone/solid';
+
 //cards
 import WelcomeToSmart from './buttons/WelcomeToSmart/WelcomeToSmart';
 import DigitalExperiences from './buttons/DigitalExperiences/DigitalExperiences';
+import InPerson from './buttons/InPerson/InPerson';
+import WhatIsCounseling from './buttons/WhatIsCounseling/WhatIsCounseling';
+
+import ExpandableCardParallax from '@components/ExpandableCardParallax/ExpandableCardParallax';
 
 
 
 export default function Experiences() {
 
-    const sampleIcon = (<IconTextTitle icon={faCoffee} title='Coffee 4 u' iconSize='3' titleSize='0.6' />)
-    const secondIcon = (<IconTextTitle icon={faCoffee} title='Coffee 4 u' flow='row' />)
+
 
     return (
         <section id="experiencias">
@@ -45,6 +41,13 @@ export default function Experiences() {
 
                 <InPerson className={styles.InPerson} />
 
+                <WhatIsCounseling className={styles.WhatIsCounseling} />
+
+                <ExpandableCardParallax
+                    buttonContent='Iam a button'
+                    expandedContent='I am expanded content'
+                    areaName='test'
+                    className='test' />
 
             </div>
         </section>
