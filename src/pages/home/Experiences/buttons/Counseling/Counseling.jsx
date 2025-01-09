@@ -8,7 +8,7 @@
 * Dependencies:
     - useCampus (context hook to retrieve current campus)
     - ExpandableCardParallax (layout component)
-    - CounselingData (data array or JSON of counseling services)
+    - CounselingData (data array of counseling services)
 * Returns/results:
     Renders an expandable card with a subgrid of service options.
 <!------------------------------------------------->*/

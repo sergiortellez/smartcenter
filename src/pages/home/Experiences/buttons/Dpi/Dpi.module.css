@@ -1,0 +1,79 @@
+/*###################################################*/
+/*...................................................*/
+/* Dpi(component) */
+/*...................................................*/
+/*###################################################*/
+
+
+
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    .flexContainerDpi {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+    }
+}
+/* end tablet up */
+
+.pill{
+    display: inline-block;
+    background-color:var(--smartGreenMono);
+    color: var(--background);
+    font-size: 0.7rem;
+    margin: 0.2rem;
+    padding: 0.4rem;
+    border-radius: 10px;
+    
+    white-space: nowrap;
+}
+
+.btnDpi {
+    background-color:var(--smartGreenMono);
+    color: var(--background);
+    font-size: 1.5rem;
+    margin:0.2rem;
+    padding: 0.4rem;
+    padding-left: 2rem;
+    border-radius: 9px;
+}
+
+.resultados{
+    display: block;
+    font-size: 0.7rem;
+    margin-top: 1rem;
+    color: gray;
+}
+
+/* tablet landscape down */
+@media (max-width: 1023.5px) {
+    
+.videoDpi {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.videoDpi iframe,
+.videoDpi object,
+.videoDpi embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+}
+/* end tablet down */
+
+/*###################################################*/
+/*...................................................*/
+/* end Dpi(component) */
+/*...................................................*/
+/*###################################################*/
