@@ -23,7 +23,7 @@ import styles from './ParAndCar.module.css'
 
 export default function DigitalExperiences({ className }) {
 
-  const title = <span> Programas y concursos de alto rendimiento </span>
+  const title = <span className={styles.title}> Programas y concursos de alto rendimiento </span>
 
   return (
     <>
