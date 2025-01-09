@@ -17,7 +17,7 @@
 import styles from './DigitalExperiences.module.css'
 
 //Components
-import LinkCardParallax from '../../../../../components/LinkCardParallax/LinkCardParallax'
+import LinkCardParallax from '@components/LinkCardParallax/LinkCardParallax'
 
 
 export default function DigitalExperiences({ className = '' }) {
