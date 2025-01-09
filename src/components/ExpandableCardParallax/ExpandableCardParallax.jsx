@@ -32,7 +32,7 @@ The difference between this component and the ExpandableCard component is that t
 
 //styles
 import styles from './ExpandableCardParallax.module.css'
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useLayoutEffect } from 'react'
 
 //hooks
 import useParallaxInCard from '../../hooks/useParallaxInCard';
@@ -68,21 +68,41 @@ export default function ExpandableCard({
   <!------------------------------------------------->*/
 
   /*<------------------------------------------------->
-  <!--	Measure content and assign height	-->
-  <!------------------------------------------------->*/
-  // Measure content height whenever isOpen changes to true
-  useEffect(() => {
-    if (isOpen && contentRef.current) {
-      //whatever the content height is, add 50px to it (for padding and header)
-      const scrollHeight = contentRef.current.scrollHeight + 50;
-      setExpandedHeight(scrollHeight);
-    } else {
-      // collapsed
-      setExpandedHeight(0);
+     <!--	ResizeObserver logic	-->
+     <!------------------------------------------------->*/
+  // We'll attach a resize observer to the expanded content container.
+
+  //LEARN: Using useLayoutEffect instead of useEffect for the observer setup ensures we measure the DOM before the browser repaints, reducing flickers.
+
+  useLayoutEffect(() => {
+    if (!contentRef.current) return;
+
+    let resizeObserver = new ResizeObserver((entries) => {
+      for (let entry of entries) {
+        if (entry.contentBoxSize) {
+          // measure new height
+          // We add a bit of extra space (like 50 or 100px) if needed
+          // but you can tweak or remove this if you want a tighter fit.
+          const newHeight = entry.contentRect.height + 50;
+          setExpandedHeight(newHeight);
+        }
+      }
+    });
+
+    if (contentRef.current) {
+      resizeObserver.observe(contentRef.current);
     }
-  }, [isOpen])
+
+    // Cleanup the observer on unmount
+    return () => {
+      if (resizeObserver && contentRef.current) {
+        resizeObserver.unobserve(contentRef.current);
+      }
+      resizeObserver = null;
+    };
+  }, [isOpen]);
   /*<!------------------------------------------------->
-  <!--	end Measure content and assign height	-->
+  <!--	end ResizeObserver logic	-->
   <!------------------------------------------------->*/
 
 
