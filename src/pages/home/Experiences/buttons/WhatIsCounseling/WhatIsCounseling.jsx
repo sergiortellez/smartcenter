@@ -44,22 +44,28 @@ export default function WhatIsCounseling({ className }) {
   let expandedContent = null
   if (campusObj.content) {
     expandedContent = (
-      <div className={styles.container}>
-        <div className={styles.definition}>
-          {campusObj.content}
+      <>
+        <div className={styles.title}>
+          <span>Un servicio de SMART que no te puedes perder...</span>
         </div>
-        <div className={styles.image}>
-          <img
-            src={campusObj.img}
-            alt="Person counseling student"
-          //TODO: add fallback image
-          // onError={(e) => {
-          //   // If the image fails, use the fallback
-          //   e.currentTarget.src = campusData.FALLBACK.img
-          // }}
-          />
+        <div className={styles.container}>
+          <div className={styles.definition}>
+            {campusObj.content}
+          </div>
+          <div className={styles.image}>
+            <img
+              src={campusObj.img}
+              alt="Person counseling student"
+            //TODO: add fallback image
+            // onError={(e) => {
+            //   // If the image fails, use the fallback
+            //   e.currentTarget.src = campusData.FALLBACK.img
+            // }}
+            />
+          </div>
         </div>
-      </div>
+      </>
+
     )
   }
 
