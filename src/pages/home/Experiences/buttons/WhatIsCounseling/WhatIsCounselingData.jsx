@@ -1,3 +1,23 @@
+
+/*<---------------------------------------------------------------------------->
+<!--	Data aux (object)	-->
+<!----------------------------------------------------------------------------->
+* Description:
+     This is an auxiliary file that contains the data for the component WhatIsCounseling. 
+     It's structured as an object that contains the data for each campus.
+     Contains the logic to display the content for each campus considering repetitive content.
+* Parameters:
+    - none
+* Dependencies:
+    - styles: WhatIsCounseling.module.css
+    - assets: images for each campus
+    - FontAwesome: faHouseLaptop
+    - FontAwesome: FontAwesomeIcon
+* Returns/results: An object with the data for each campus.
+<!------------------------------------------------->*/
+
+//---------------------imports----------------------
+
 //Styles
 import styles from './WhatIsCounseling.module.css'
 
@@ -29,6 +49,9 @@ const counselingText = (
     </>
 )
 
+/*<------------------------------------------------->
+<!--	Exporting	-->
+<!------------------------------------------------->*/
 export const WhatIsCounselingData = {
     AGS: {
         title: '¿Qué es Counseling?',
@@ -55,3 +78,11 @@ export const WhatIsCounselingData = {
         content: null
     }
 }
+/*<!------------------------------------------------->
+<!--	end Exporting	-->
+<!------------------------------------------------->*/
+
+
+/*<!--------------------------------------------------------------------------->
+<!--	end Data aux (Component)	-->
+<!--------------------------------------------------------------------------->*/

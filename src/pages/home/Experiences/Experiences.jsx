@@ -22,7 +22,6 @@ import DigitalExperiences from './buttons/DigitalExperiences/DigitalExperiences'
 import InPerson from './buttons/InPerson/InPerson';
 import WhatIsCounseling from './buttons/WhatIsCounseling/WhatIsCounseling';
 
-import ExpandableCardParallax from '@components/ExpandableCardParallax/ExpandableCardParallax';
 
 
 
@@ -43,11 +42,6 @@ export default function Experiences() {
 
                 <WhatIsCounseling className={styles.WhatIsCounseling} />
 
-                <ExpandableCardParallax
-                    buttonContent='Iam a button'
-                    expandedContent='I am expanded content'
-                    areaName='test'
-                    className='test' />
 
             </div>
         </section>

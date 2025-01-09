@@ -2,13 +2,21 @@
 <!--	WhatIsCounseling (Component)	-->
 <!----------------------------------------------------------------------------->
 * Description:
-     
+     This component displays a card with a title and an icon for explaining what is Counseling. When the user clicks on the card, it expands to show a definition and an image.
+     It is used in the Experiences component.
+     It uses the ExpandableCard component.
+     It's a data-driven component, meaning that the content is defined in a separate file.  
 * Parameters:
-    -
+    - none
 * Dependencies:
-    -
+    - ExpandableCard component
+    - IconTextTitle component
+    - WhatIsCounselingData data file
+    - useCampus custom hook
+    - styles from './WhatIsCounseling.module.css'
+    - Font Awesome icons
 * Returns/results:
-    
+    - A card with a title and an icon for explaining what is Counseling. When the user clicks on the card, it expands to show a definition and an image.
 <!------------------------------------------------->*/
 
 //---------------------imports----------------------
@@ -31,6 +39,7 @@ export default function WhatIsCounseling() {
 
   const { campus } = useCampus()
   const campusObj = WhatIsCounselingData[campus] || WhatIsCounselingData.FALLBACK
+
   // Build the expanded content
   let expandedContent = null
   if (campusObj.content) {
@@ -43,6 +52,7 @@ export default function WhatIsCounseling() {
           <img
             src={campusObj.img}
             alt="Person counseling student"
+          //TODO: add fallback image
           // onError={(e) => {
           //   // If the image fails, use the fallback
           //   e.currentTarget.src = campusData.FALLBACK.img
