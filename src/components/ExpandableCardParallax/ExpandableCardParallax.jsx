@@ -149,7 +149,7 @@ export default function ExpandableCard({
 
     <>
       {/* button part, must attach the ref of the container from the hook */}
-      <article ref={containerRef} className={`${styles.cardBase} ${styles.button} ${className}} ${isOpen ? styles.openedButton : ''} `} style={collapsedGridStyles || {}} onClick={handleToggle} aria-expanded={isOpen} aria-label="Open expanded content" data-name={areaName}>
+      <article ref={containerRef} className={`${styles.cardBase} ${styles.button} ${className} ${isOpen ? styles.openedButton : ''} `} style={collapsedGridStyles || {}} onClick={handleToggle} aria-expanded={isOpen} aria-label="Open expanded content" data-name={areaName}>
         {renderImages()}
         {buttonContent}
       </article>
