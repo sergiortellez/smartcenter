@@ -48,10 +48,18 @@
 
     grid-template-areas: 
             "WelcomeToSmart WelcomeToSmart"
+
             "DigitalExperiences DigitalExperiences"
+
             "InPerson InPerson"
+
             "WhatIsCounseling WhatIsCounseling"
+
             "WhatIsCounselingExpanded WhatIsCounselingExpanded"
+
+            "Counseling Counseling"
+
+            "CounselingExpanded CounselingExpanded"
            
 }
 
@@ -67,6 +75,13 @@
 .WhatIsCounseling{
     color: var(--smartGreen);
 }
+
+.Counseling{
+    min-height: 13rem;
+    color: var(--smartGreen);
+}
+
+
 /* tablet portrait up */
 @media (min-width: 768px) {
     .experiencesGrid {
@@ -77,12 +92,11 @@
         "WelcomeToSmart DigitalExperiences  DigitalExperiences"
         "InPerson          InPerson         InPerson"
         "WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded"
-        "WhatIsCounseling  . ."
+        "WhatIsCounseling  Counseling Counseling"
+        "CounselingExpanded CounselingExpanded CounselingExpanded"
         
         ;
-}
-
-   
+    }   
 }
 /* end tablet up */
 
@@ -94,7 +108,8 @@
             "WelcomeToSmart WelcomeToSmart DigitalExperiences DigitalExperiences DigitalExperiences DigitalExperiences"
             "InPerson InPerson InPerson InPerson InPerson InPerson"
             "WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded"
-            "WhatIsCounseling WhatIsCounseling . . . ."
+            "WhatIsCounseling WhatIsCounseling Counseling Counseling Counseling Counseling"
+            "CounselingExpanded CounselingExpanded CounselingExpanded CounselingExpanded CounselingExpanded CounselingExpanded"
             ;
 
            

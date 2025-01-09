@@ -31,7 +31,7 @@ import IconTextTitle from '@components/IconTextTitle/IconTextTitle'
 //Font Awesome
 import { faCommentsQuestionCheck } from '@awesome.me/kit-c09e05c963/icons/sharp-duotone/solid';
 // data
-import { WhatIsCounselingData } from './WhatIsCounselingData' // the file we just created
+import { WhatIsCounselingData } from './WhatIsCounselingData'
 
 
 

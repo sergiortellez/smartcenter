@@ -21,6 +21,7 @@ import WelcomeToSmart from './buttons/WelcomeToSmart/WelcomeToSmart';
 import DigitalExperiences from './buttons/DigitalExperiences/DigitalExperiences';
 import InPerson from './buttons/InPerson/InPerson';
 import WhatIsCounseling from './buttons/WhatIsCounseling/WhatIsCounseling';
+import Counseling from './buttons/Counseling/Counseling';
 
 
 
@@ -42,6 +43,7 @@ export default function Experiences() {
 
                 <WhatIsCounseling className={styles.WhatIsCounseling} />
 
+                <Counseling className={styles.Counseling} />
 
             </div>
         </section>
