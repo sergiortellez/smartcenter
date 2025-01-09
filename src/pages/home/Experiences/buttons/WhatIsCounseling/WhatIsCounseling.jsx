@@ -35,7 +35,7 @@ import { WhatIsCounselingData } from './WhatIsCounselingData' // the file we jus
 
 
 
-export default function WhatIsCounseling() {
+export default function WhatIsCounseling({ className }) {
 
   const { campus } = useCampus()
   const campusObj = WhatIsCounselingData[campus] || WhatIsCounselingData.FALLBACK
@@ -79,7 +79,7 @@ export default function WhatIsCounseling() {
         buttonContent={buttonContent}
         expandedContent={expandedContent}
         areaName='WhatIsCounseling'
-        className='WhatIsCounseling'
+        className={className}
       />
     </>
   );

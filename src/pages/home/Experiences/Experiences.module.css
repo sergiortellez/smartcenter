@@ -63,6 +63,10 @@
 .InPerson{
     min-height: 10rem;
 }
+
+.WhatIsCounseling{
+    color: var(--smartGreen);
+}
 /* tablet portrait up */
 @media (min-width: 768px) {
     .experiencesGrid {
