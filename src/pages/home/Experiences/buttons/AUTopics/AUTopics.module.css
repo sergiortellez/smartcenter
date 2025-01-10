@@ -1,0 +1,62 @@
+/*###################################################*/
+/*...................................................*/
+/* AUTopics(component) */
+/*...................................................*/
+/*###################################################*/
+
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) { 
+    .topics{
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }  
+}
+/* end tablet up */
+
+
+.topics :is(.firstSemesters, .lastSemesters, .duringCareer){
+    background-color: rgb(146, 146, 146);
+    padding: 0.5rem;
+    border-radius: 15px;
+    color: #f7f7f7;
+    margin-top: 1rem;
+}
+.topics :is(.firstSemesters, .lastSemesters, .duringCareer) svg{
+ font-size: 1.4rem;
+}
+
+.topics > .duringCareer{
+    background-color: rgb(217, 213, 213);
+    color: var(--text);
+ }
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+        .topics > div{
+        flex: 1 1 0;
+        margin-top: 0;
+    }
+}
+/* end tablet up */
+
+.topics div ul{
+    padding: 0.5rem;
+    list-style: none;
+}
+.topics div ul li{
+    margin-bottom: 1.2rem;
+    
+}
+
+.duringCareer svg{
+    margin-right: 0.5rem;
+    color: var(--smartRed);
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end AUTopics(component) */
+/*...................................................*/
+/*###################################################*/

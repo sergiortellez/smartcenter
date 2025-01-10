@@ -2,11 +2,17 @@
 <!--	PrepareAU (Component)	-->
 <!----------------------------------------------------------------------------->
 * Description:
+This component is a button that when clicked expands to show a list of steps to prepare for an advisory session.
      
 * Parameters:
-    -
+    - className (string): CSS class name to be added from the parent.
 * Dependencies:
-    -
+    - ExpandableCard
+    - IconTextTitle
+    - PrepareAUData (dataFile)
+    - FontAwesomeIcon
+    - faShoePrints
+    - styles
 * Returns/results:
     
 <!------------------------------------------------->*/
