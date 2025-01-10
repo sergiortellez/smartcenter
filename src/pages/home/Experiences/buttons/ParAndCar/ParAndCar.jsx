@@ -2,12 +2,14 @@
 <!--	ParAndCar (Component)	-->
 <!----------------------------------------------------------------------------->
 * Description:
+  The component ParAndCar is a LinkCardParallax component that is used to display a card with a title and a link to the /pyc/catalogo page.
      
 * Parameters:
-    -
+    - className: string, used to apply css styles from the parent component.
 * Dependencies:
-    -
-* Returns/results:
+    - LinkCardParallax
+    - styles
+* Returns/results: Renders the button itself.
     
 <!------------------------------------------------->*/
 
