@@ -10,46 +10,46 @@
 * Returns/Result:
     Opens a new page with the form, sending the username, email, and photo.
 <!------------------------------------------------->*/
-function responseGOauth(credentialResponse) {
-    try {
-        // Decode the JWT token
-        const credencialesObject = parseJWT(credentialResponse.credential);
+// function responseGOauth(credentialResponse) {
+//     try {
+//         // Decode the JWT token
+//         const credencialesObject = parseJWT(credentialResponse.credential);
 
-        // Validate the token's audience and expiration
-        if (credencialesObject.aud !== '94652977258-lf78996qj8qd6i9fgeg0j6qk1aq2ehp1.apps.googleusercontent.com') {
-            throw new Error('Invalid token audience.');
-        }
+//         // Validate the token's audience and expiration
+//         if (credencialesObject.aud !== '94652977258-lf78996qj8qd6i9fgeg0j6qk1aq2ehp1.apps.googleusercontent.com') {
+//             throw new Error('Invalid token audience.');
+//         }
 
-        const currentTime = Math.floor(Date.now() / 1000);
-        if (credencialesObject.exp < currentTime) {
-            throw new Error('Token has expired.');
-        }
+//         const currentTime = Math.floor(Date.now() / 1000);
+//         if (credencialesObject.exp < currentTime) {
+//             throw new Error('Token has expired.');
+//         }
 
-        // Extract user information
-        const nombreUsuario = credencialesObject.name;
-        const emailUsuario = credencialesObject.email;
-        const userName = emailUsuario.split('@')[0];
-        const userOrg = credencialesObject.hd;
+//         // Extract user information
+//         const nombreUsuario = credencialesObject.name;
+//         const emailUsuario = credencialesObject.email;
+//         const userName = emailUsuario.split('@')[0];
+//         const userOrg = credencialesObject.hd;
 
-        console.log('User organization:', userOrg);
-        console.log('User name:', nombreUsuario);
+//         console.log('User organization:', userOrg);
+//         console.log('User name:', nombreUsuario);
 
-        // UI updates based on authentication status
-        const notLoggedInBanner = document.getElementById('notLogged');
-        const dpi = document.getElementById('dpi');
+//         // UI updates based on authentication status
+//         const notLoggedInBanner = document.getElementById('notLogged');
+//         const dpi = document.getElementById('dpi');
 
-        if (credencialesObject && isNaN(Number(userName))) {
-            notLoggedInBanner.style.display = 'none';
-            dpi.style.display = 'grid';
-            buildDPI(userName);
-        } else {
-            notLoggedInBanner.style.display = 'block';
-            dpi.style.display = 'none';
-        }
-    } catch (error) {
-        console.error('Error processing OAuth response:', error);
-    }
-}
+//         if (credencialesObject && isNaN(Number(userName))) {
+//             notLoggedInBanner.style.display = 'none';
+//             dpi.style.display = 'grid';
+//             buildDPI(userName);
+//         } else {
+//             notLoggedInBanner.style.display = 'block';
+//             dpi.style.display = 'none';
+//         }
+//     } catch (error) {
+//         console.error('Error processing OAuth response:', error);
+//     }
+// }
 /*<!------------------------------------------------->
 <!--	end responseGOauth()	-->
 <!------------------------------------------------->*/
@@ -64,23 +64,25 @@ function responseGOauth(credentialResponse) {
 * Dependencies: None
 * Returns/Result: A decoded JSON object with the user's credentials.
 <!------------------------------------------------->*/
-function parseJWT(token) {
-    const base64Url = token.split('.')[1];
-    const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
-    const jsonPayload = decodeURIComponent(
-        atob(base64)
-            .split('')
-            .map(c => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2))
-            .join('')
-    );
+// function parseJWT(token) {
+//     const base64Url = token.split('.')[1];
+//     const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+//     const jsonPayload = decodeURIComponent(
+//         atob(base64)
+//             .split('')
+//             .map(c => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2))
+//             .join('')
+//     );
 
-    return JSON.parse(jsonPayload);
-}
+//     return JSON.parse(jsonPayload);
+// }
 /*<!------------------------------------------------->
 <!--	end parseJWT()	-->
 <!------------------------------------------------->*/
 
-
+window.onload = function () {
+    buildDPI();
+};
 function buildDPI() {
     //obtén el string de parámetros en la URL
     const queryString = window.location.search;
