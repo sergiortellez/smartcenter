@@ -30,10 +30,13 @@
     -o-transition: transform 0.2s ease;
 }
 
-.linkCard:hover,
-.linkCard:focus{
-  transform: scale(0.95);  
+@media (hover: hover) and (pointer: fine) {
+  .linkCard:hover,
+  .linkCard:focus{
+    transform: scale(0.95);  
+  }
 }
+
 
 /*-------------------------------*/
 /* end base styles */

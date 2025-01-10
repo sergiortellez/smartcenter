@@ -48,11 +48,14 @@
   opacity: 0.6;
 }
 
-.button:hover,
-.button:focus{
-  transform: scale(0.95);
+@media (hover: hover) and (pointer: fine) {
+  .button:hover,
+  .button:focus{
+    transform: scale(0.95);
    
+  }
 }
+
 /*-------------------------------*/
 /* end card button */
 /*-------------------------------*/

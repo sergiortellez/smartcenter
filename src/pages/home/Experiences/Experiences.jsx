@@ -14,39 +14,55 @@
 //....................imports........................
 //styles
 import styles from './Experiences.module.css';
-//Components
+
+//context
+import useCampus from '@hooks/useCampus';
 
 //cards
-import WelcomeToSmart from './buttons/WelcomeToSmart/WelcomeToSmart';
-import DigitalExperiences from './buttons/DigitalExperiences/DigitalExperiences';
-import InPerson from './buttons/InPerson/InPerson';
-import WhatIsCounseling from './buttons/WhatIsCounseling/WhatIsCounseling';
-import Counseling from './buttons/Counseling/Counseling';
+import WelcomeToSmart from './buttons/WelcomeToSmart/WelcomeToSmart'
+import DigitalExperiences from './buttons/DigitalExperiences/DigitalExperiences'
+import InPerson from './buttons/InPerson/InPerson'
+import WhatIsCounseling from './buttons/WhatIsCounseling/WhatIsCounseling'
+import Counseling from './buttons/Counseling/Counseling'
+import Dpi from './buttons/Dpi/Dpi'
+import ParAndCar from './buttons/ParAndCar/ParAndCar'
+import WhatIsPar from './buttons/WhatIsPar/WhatIsPar';
+import WhatIsCar from './buttons/WhatIsCar/WhatIsCar';
+import WhatIsAU from './buttons/WhatIsAU/WhatIsAU';
+import PrepareAU from './buttons/PrepareAU/PrepareAU';
+import AUTopics from './buttons/AUTopics/AUTopics';
+import AUFaq from './buttons/AUFaq/AUFaq';
+
 
 
 
 
 export default function Experiences() {
 
-
+    const { campus } = useCampus();
 
     return (
         <section id="experiencias">
             <h1 className={styles.title} >Nuestras experiencias</h1>
 
-            <div className={styles.experiencesGrid} >
-                <WelcomeToSmart />
+            <div className={`${styles.experiencesGrid} ${styles[`template${campus}`] || ''}`} >
 
-                <DigitalExperiences className={styles.DigitalExperiences} />
-
-                <InPerson className={styles.InPerson} />
-
-                <WhatIsCounseling className={styles.WhatIsCounseling} />
-
-                <Counseling className={styles.Counseling} />
+                {['AGS', 'CDMX', 'GDL'].includes(campus) && <WelcomeToSmart />}
+                {['AGS', 'CDMX', 'GDL'].includes(campus) && <DigitalExperiences className={styles.DigitalExperiences} />}
+                {['CDMX'].includes(campus) && <InPerson className={styles.InPerson} />}
+                {['AGS', 'CDMX', 'GDL'].includes(campus) && <WhatIsCounseling className={styles.WhatIsCounseling} />}
+                {['AGS', 'CDMX', 'GDL'].includes(campus) && <Counseling className={styles.Counseling} />}
+                {['AGS', 'CDMX', 'GDL'].includes(campus) && <Dpi className={styles.ParAndCar} />}
+                {['AGS', 'CDMX'].includes(campus) && <ParAndCar className={styles.ParAndCar} />}
+                {['CDMX'].includes(campus) && <WhatIsPar className={styles.WhatIsPar} />}
+                {['AGS', 'CDMX'].includes(campus) && <WhatIsCar className={styles.WhatIsCar} />}
+                {['AGS', 'CDMX', 'GDL'].includes(campus) && <WhatIsAU className={styles.WhatIsAU} />}
+                {['AGS', 'CDMX', 'GDL'].includes(campus) && <PrepareAU className={styles.PrepareAU} />}
+                {['AGS', 'CDMX', 'GDL'].includes(campus) && <AUTopics className={styles.AUTopics} />}
+                {['AGS', 'CDMX', 'GDL'].includes(campus) && <AUFaq className={styles.AUFaq} />}
 
             </div>
-        </section>
+        </section >
     )
 }
 

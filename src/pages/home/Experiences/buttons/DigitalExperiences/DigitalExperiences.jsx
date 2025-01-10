@@ -22,7 +22,7 @@ import LinkCardParallax from '@components/LinkCardParallax/LinkCardParallax'
 
 export default function DigitalExperiences({ className = '' }) {
 
-  const title = <span> Experiencias Digitales </span>
+  const title = <span className={styles.title} > Experiencias Digitales </span>
 
   return (
     <>
