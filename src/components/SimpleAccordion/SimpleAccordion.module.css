@@ -1,0 +1,66 @@
+/*###################################################*/
+/*...................................................*/
+/* SimpleAccordion (component) */
+/*...................................................*/
+/*###################################################*/
+
+/* Container for the entire accordion section (if needed) */
+.accordionFaq {
+  width: 100%;
+}
+
+/* Wrapper for each accordion item */
+.accordionFaqItem {
+  margin-bottom: 1rem; /* Just for spacing if you have multiple items */
+}
+
+/* Title */
+.accordionFaqItemTitle {
+  background-color: #f7f7f7;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+/* Content container (initially hidden) */
+.accordionFaqItemContent {
+  padding: 0.3rem;
+  display: none;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s ease-out;
+}
+
+/* UL / LI styles */
+.accordionFaqItemContent ul {
+  list-style: none;
+  padding: 0.1rem;
+  margin: 0;
+}
+
+.accordionFaqItemContent li {
+  margin-top: 0.5rem;
+}
+
+/* Show class for toggling */
+.show {
+  display: block;
+  max-height: 15rem; /* Adjust as needed */
+  animation: slideDown 0.4s ease-out;
+}
+
+/* Keyframe for the slide-down animation */
+@keyframes slideDown {
+  from {
+    transform: translateY(-70%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end SimpleAccordion (component) */
+/*...................................................*/
+/*###################################################*/
