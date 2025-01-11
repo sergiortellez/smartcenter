@@ -5,7 +5,7 @@
 /*###################################################*/
 
 
-#somos {
+.whoAreWe {
     padding: 5rem 1rem;
 }
 
@@ -18,7 +18,7 @@
 .title {
     margin-bottom: 6rem;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     font-weight: 200;
 }
 
