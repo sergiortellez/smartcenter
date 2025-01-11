@@ -7,7 +7,7 @@
     "dev-network": "./dev-network.sh",
     "dev": "vite",
     "build": "vite build",
-    "deploy:ghpages": "vite build && gh-pages -d dist",
+    "deploy:ghpages": "vite build && cp dist/index.html dist/404.html && gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview",
     "build:zip": "./build-zip.sh"

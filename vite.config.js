@@ -34,7 +34,7 @@ export default defineConfig(({ mode }) => ({
   define: {
     'process.env': process.env,
   },
-  base: mode === 'development' ? '/' : '/smartcenter/', // Adjust the base for GitHub Pages
+  base: mode === 'development' ? '/' : '/', // Adjust the base for GitHub Pages
   build: {
     rollupOptions: {
       output: {
