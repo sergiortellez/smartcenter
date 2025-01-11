@@ -1,0 +1,52 @@
+/*###################################################*/
+/*...................................................*/
+/* Cover(component) */
+/*...................................................*/
+/*###################################################*/
+
+.Cover {
+
+    min-height: 40vh;
+    display: flex;
+    align-items: flex-end;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .Cover {
+        grid-column: span 2;
+    }
+}
+
+/* end tablet up */
+
+/* tablet landscape up */
+@media (min-width: 1054.1px) {
+    .Cover {
+        grid-row: span 2;
+    }
+}
+
+/* end tablet up */
+
+.Cover p {
+    background-color: #f7f7f7;
+    padding: 0.5rem;
+    background-color: var(--smartRed);
+    color: var(--background);
+    width: 100%;
+}
+
+
+
+/*###################################################*/
+/*...................................................*/
+/* end Cover(component) */
+/*...................................................*/
+/*###################################################*/
