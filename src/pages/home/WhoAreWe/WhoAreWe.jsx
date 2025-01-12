@@ -22,6 +22,7 @@ import Cover from './Cover/Cover';
 import Info from './Info/Info';
 import Ciie from './Ciie/Ciie';
 import Objectives from './Objectives/Objectives';
+import Mission from './Mission/Mission';
 
 
 export default function WhoAreWe() {
@@ -32,7 +33,9 @@ export default function WhoAreWe() {
         <Cover />
         <Info />
         <Ciie />
-        <Objectives ClassName='Objectives' />
+        <Objectives />
+        <Mission />
+
       </div>
     </section >
   );

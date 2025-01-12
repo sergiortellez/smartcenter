@@ -72,6 +72,8 @@
     "Ciie"
     "Objectives"
     "ObjectivesExpanded"
+    "Mission"
+    "MissionExpanded"
         
     ;
 }
@@ -83,7 +85,8 @@
     "Cover Cover"
     "Info Ciie"
     "ObjectivesExpanded ObjectivesExpanded"
-    "Objectives ."
+    "Objectives Mission"
+    "MissionExpanded MissionExpanded"
         
     ; 
     }
@@ -97,7 +100,8 @@
           grid-template-areas: 
     ". . ObjectivesExpanded ObjectivesExpanded ObjectivesExpanded"      
     "Cover Cover Info Ciie Objectives"
-    "Cover Cover . . ."
+    "Cover Cover Mission . ."
+    ". . MissionExpanded MissionExpanded MissionExpanded"
   
         
     ; 
@@ -121,10 +125,6 @@
 /*-------------------------------*/
 /* end tarjetas */
 /*-------------------------------*/
-
-.objectives{
-
-}
 
 /*###################################################*/
 /*...................................................*/

@@ -35,7 +35,7 @@ export default function Objectives({ className }) {
           title='Objetivos'
           flow='row'
           titleSize='1.2'
-          iconSize='2'
+          iconSize='1.2'
         />
       </header>
       <div>
@@ -48,7 +48,7 @@ export default function Objectives({ className }) {
   )
   //expanded content
   const expandedContent = (
-    <ul>
+    <ul className={styles.objectivesList}>
       <li>Brindar un servicio de excelencia para el mejoramiento constante de las competencias académicas, personales y profesionales de los estudiantes de la Universidad Panamericana.</li>
       <li>Potenciar el talento del alumnado durante su experiencia universitaria, brindando formación, apoyo y orientación en su labor educativa.</li>
 
