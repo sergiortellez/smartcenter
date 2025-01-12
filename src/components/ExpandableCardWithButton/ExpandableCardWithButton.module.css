@@ -1,0 +1,96 @@
+/*###################################################*/
+/*...................................................*/
+/* ExpandableCard */
+/*...................................................*/
+/*###################################################*/
+
+/*-------------------------------*/
+/* base styles */
+/*-------------------------------*/
+
+.cardBase {
+  position: relative;
+  background-color: var(--cardBackgroundColor);
+  border: none;
+  border-radius: var(--cardCurve);
+  overflow: hidden; 
+}
+
+
+/*-------------------------------*/
+/* end base styles */
+/*-------------------------------*/
+
+
+/*-------------------------------*/
+/* card button */
+/*-------------------------------*/
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  padding-bottom: 1.3rem ;
+
+}
+
+.openedCard{
+  /* background-color: var(--primary); */
+  opacity: 0.6;
+}
+
+
+/*-------------------------------*/
+/* end card button */
+/*-------------------------------*/
+
+
+
+
+/*-------------------------------*/
+/* expanded card */
+/*-------------------------------*/
+
+
+.cardExpanded {
+  padding: 1rem;
+}
+
+
+.cardExpanded>div>header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+
+.cardExpanded>div>header>button{
+   all: unset;
+  cursor: pointer;
+  border: none;
+  font-size: 2rem;
+  color: var(--smartRed);
+}
+
+.cardExpanded>div>header>button:hover{
+  color: var(--primary);
+}
+.cardExpanded>div>header>button:active{
+  scale: 1.1;
+}
+
+
+/*-------------------------------*/
+/* end expanded card */
+/*-------------------------------*/
+
+
+
+/*###################################################*/
+/*...................................................*/
+/* end ExpandableCard */
+/*...................................................*/
+/*###################################################*/
