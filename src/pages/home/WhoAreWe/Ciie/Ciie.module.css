@@ -1,0 +1,47 @@
+/*###################################################*/
+/*...................................................*/
+/* Ciie(component) */
+/*...................................................*/
+/*###################################################*/
+
+.ciie {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ciie img {
+    width: 10rem;
+    height: auto;
+}
+
+/* tablet landscape up */
+@media (min-width: 1054.1px) {
+    .ciie {
+        font-size: 0.7rem;
+    }
+
+    /* end tablet up */
+
+}
+
+/* tablet landscape up */
+@media (min-width: 1054.1px) {
+    .ciie {
+        flex-direction: column;
+    }
+
+    .ciie img {
+        width: 8rem;
+        height: auto;
+    }
+}
+
+/* end tablet up */
+
+/*###################################################*/
+/*...................................................*/
+/* end Ciie(component) */
+/*...................................................*/
+/*###################################################*/
