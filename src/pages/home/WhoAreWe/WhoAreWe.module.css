@@ -28,7 +28,7 @@
 /*-------------------------------*/
 
 /*-------------------------------*/
-/* grid */
+/* grid basics*/
 /*-------------------------------*/
 
 .grid {
@@ -56,8 +56,58 @@
 
 /* end tablet up */
 
+
 /*-------------------------------*/
-/* end grid */
+/* end grid basics */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* Template areas */
+/*-------------------------------*/
+
+.grid {
+    grid-template-areas: 
+    "Cover"
+    "Info"
+    "Ciie"
+    "Objectives"
+    "ObjectivesExpanded"
+        
+    ;
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .grid {
+        grid-template-areas: 
+    "Cover Cover"
+    "Info Ciie"
+    "ObjectivesExpanded ObjectivesExpanded"
+    "Objectives ."
+        
+    ; 
+    }
+}
+
+/* end tablet up */
+
+/* tablet landscape up */
+@media (min-width: 1054.1px) {
+    .grid{
+          grid-template-areas: 
+    ". . ObjectivesExpanded ObjectivesExpanded ObjectivesExpanded"      
+    "Cover Cover Info Ciie Objectives"
+    "Cover Cover . . ."
+  
+        
+    ; 
+    }
+}
+
+/* end tablet up */
+
+/*-------------------------------*/
+/* end Template areas */
 /*-------------------------------*/
 
 /*-------------------------------*/
@@ -71,6 +121,10 @@
 /*-------------------------------*/
 /* end tarjetas */
 /*-------------------------------*/
+
+.objectives{
+
+}
 
 /*###################################################*/
 /*...................................................*/

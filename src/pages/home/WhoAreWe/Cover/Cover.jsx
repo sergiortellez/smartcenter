@@ -47,6 +47,8 @@ export default function Cover({ className }) {
     backgroundImage: `url(${campusBackgrounds[campus]})`,
     backgroundSize: 'cover', // Ensure the image covers the area
     backgroundPosition: 'center', // Center the image
+    gridArea: 'Cover',
+
   };
 
 

@@ -2,6 +2,7 @@
 <!--	WhoAreWe (Component)	-->
 <!----------------------------------------------------------------------------->
 * Description:
+  
      
 * Parameters:
     -
@@ -19,6 +20,8 @@ import styles from './WhoAreWe.module.css'
 //cards
 import Cover from './Cover/Cover';
 import Info from './Info/Info';
+import Ciie from './Ciie/Ciie';
+import Objectives from './Objectives/Objectives';
 
 
 export default function WhoAreWe() {
@@ -28,6 +31,8 @@ export default function WhoAreWe() {
       <div className={styles.grid}>
         <Cover />
         <Info />
+        <Ciie />
+        <Objectives ClassName='Objectives' />
       </div>
     </section >
   );

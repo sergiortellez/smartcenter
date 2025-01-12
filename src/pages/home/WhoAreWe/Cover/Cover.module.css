@@ -16,25 +16,6 @@
 }
 
 
-
-/* tablet portrait up */
-@media (min-width: 768px) {
-    .Cover {
-        grid-column: span 2;
-    }
-}
-
-/* end tablet up */
-
-/* tablet landscape up */
-@media (min-width: 1054.1px) {
-    .Cover {
-        grid-row: span 2;
-    }
-}
-
-/* end tablet up */
-
 .Cover p {
     background-color: #f7f7f7;
     padding: 0.5rem;
