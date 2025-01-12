@@ -1,12 +1,15 @@
 /*<---------------------------------------------------------------------------->
 <!--	Mission (Component)	-->
 <!----------------------------------------------------------------------------->
-* Description:
+* Description: Component that renders a card with a title, an icon and a button that when clicked, expands to show the mission and vision of the organization.
      
 * Parameters:
-    -
+    - className: string, optional, used to add styling from the parent component.
 * Dependencies:
-    -
+    - ExpandableCardWithButton: custom component that renders a card with a button that when clicked, expands to show more content.
+    - IconTextTitle: custom component that renders a title with an icon.
+    - FontAwesome: library that provides icons.
+    - styles: object, contains the classes names.
 * Returns/results:
     
 <!------------------------------------------------->*/

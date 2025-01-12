@@ -23,6 +23,7 @@ import Info from './Info/Info';
 import Ciie from './Ciie/Ciie';
 import Objectives from './Objectives/Objectives';
 import Mission from './Mission/Mission';
+import History from './History/History';
 
 
 export default function WhoAreWe() {
@@ -35,6 +36,7 @@ export default function WhoAreWe() {
         <Ciie />
         <Objectives />
         <Mission />
+        <History />
 
       </div>
     </section >

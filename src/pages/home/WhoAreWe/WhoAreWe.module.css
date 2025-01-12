@@ -74,6 +74,8 @@
     "ObjectivesExpanded"
     "Mission"
     "MissionExpanded"
+    "History"
+    "HistoryExpanded"
         
     ;
 }
@@ -87,6 +89,9 @@
     "ObjectivesExpanded ObjectivesExpanded"
     "Objectives Mission"
     "MissionExpanded MissionExpanded"
+    "History ."
+    "HistoryExpanded HistoryExpanded"
+
         
     ; 
     }
@@ -100,8 +105,9 @@
           grid-template-areas: 
     ". . ObjectivesExpanded ObjectivesExpanded ObjectivesExpanded"      
     "Cover Cover Info Ciie Objectives"
-    "Cover Cover Mission . ."
+    "Cover Cover Mission History ."
     ". . MissionExpanded MissionExpanded MissionExpanded"
+    ". . HistoryExpanded HistoryExpanded HistoryExpanded"
   
         
     ; 
