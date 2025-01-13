@@ -1,13 +1,20 @@
 /*<---------------------------------------------------------------------------->
 <!--	ContactUs (Component)	-->
 <!----------------------------------------------------------------------------->
-* Description:
+* Description: This component is responsible for rendering the contact directory section of the contact Us part of the home page.
+It imports the TeamCard component and the data for the cards. It's campus sensitive so it will just render the team members that match the selected campus.
+Data driven approach.
      
 * Parameters:
-    -
+    - none 
+
 * Dependencies:
-    -
-* Returns/results:
+    - useCampus (context)
+    - TeamCard (Component)
+    - ContactUsData (data)
+    - styles (css)
+    
+* Returns/results: Renders a grid with the team members cards that match the selected campus.
     
 <!------------------------------------------------->*/
 
@@ -22,7 +29,7 @@ import styles from './ContactUs.module.css'
 import TeamCard from '@components/TeamCard/TeamCard'
 
 //data for person cards
-import { CounselingData } from './ContactUsData'
+import { ContactUsData } from './ContactUsData'
 
 
 
@@ -32,7 +39,7 @@ export default function ContactUs() {
   const { campus } = useCampus();
 
   // Filter the team members that match the selected campus
-  const filteredTeam = CounselingData.filter(teamMember => teamMember.campi === campus);
+  const filteredTeam = ContactUsData.filter(teamMember => teamMember.campi === campus);
 
 
 

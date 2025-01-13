@@ -1,13 +1,13 @@
 /*<---------------------------------------------------------------------------->
 <!--	ContactUSData(Component)	-->
 <!----------------------------------------------------------------------------->
-* Description:
-     
+* Description: Data for the team members in the ContactUs component, It should be imported in the ContactUs component for creating the cards.
+
 * Parameters:
-    -
+    - none
 * Dependencies:
-    -
-* Returns/results:
+    - none
+* Returns/results: Exported array with the objects containing the data of the team members.
     
 <!------------------------------------------------->*/
 
@@ -40,7 +40,7 @@ import sofiaGonzales from '@assets/gdl/team/sofia_gonzales.webp';
 
 
 
-export const CounselingData = [
+export const ContactUsData = [
     // AGS
     {
         name: 'Mtra. Liliana Medina de la Torre',
