@@ -57,7 +57,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/citas" element={<Citas />} />
           <Route path="/dpi/lectura" element={<Lectura />} />
-          <Route path="/dpi/reporte" element={<Reporte />} />
+          <Route path="/dpi/reporte/:id" element={<Reporte />} />
           <Route path="/presenciales" element={<Presenciales />} />
           <Route path="/pyc/catalogo" element={<Catalogo />} />
           <Route path="/experiencias" element={<Experiencias />} />
