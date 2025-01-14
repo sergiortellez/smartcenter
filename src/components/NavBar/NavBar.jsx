@@ -9,14 +9,14 @@ import NavDropdown from '../NavDropdown/NavDropdown';
 import { HashLink } from "react-router-hash-link";
 //app logo
 import minSmartLogo from '../../assets/intercampi/logos/smart_min.webp'
-import largeSmartLogo from '../../assets/intercampi/logos/logo_smart.svg'
+import largeSmartLogo from '../../assets/intercampi/logos/logo_smart_original.svg'
 import upHorizontalLogo from '../../assets/intercampi/logos/up_logo_horizontal.webp'
 //styles
 import styles from './NavBar.module.css'
 import dropdownContentStyles from '../NavDropdown/NavDropdownContentsCampus.module.css'
 //fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCalendars, faLocationDot } from '@awesome.me/kit-c09e05c963/icons/sharp-duotone/solid'
+import { faCalendars, faLocationDot, faHouse } from '@awesome.me/kit-c09e05c963/icons/sharp-duotone/solid'
 
 
 
@@ -173,7 +173,9 @@ export default function NavBar() {
                     {/* render just the right images */}
                     {isContracted ? (
                         //render contracted
-                        <img src={minSmartLogo} alt="SMART" className={styles.navSmartLogoMin} />) : (
+                        // <img src={minSmartLogo} alt="SMART" className={styles.navSmartLogoMin} />
+                        <><FontAwesomeIcon icon={faHouse} className={styles.homeButton} /> </>
+                    ) : (
                         //render expanded logo
                         <>
                             <img src={upHorizontalLogo} alt="UP" className={styles.navUpLogo} />

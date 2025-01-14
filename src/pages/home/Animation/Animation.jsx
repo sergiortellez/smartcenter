@@ -27,7 +27,7 @@ export default function AnimationFrame() {
     const renderContent = () => {
         switch (campus) {
             case 'AGS':
-                return <img src="animations/ags/smart_ags_cover.webp" alt="Logo AGS" />;
+                return null;
             case 'CDMX':
                 return <iframe src="animations/cdmx/smart_cover_animation.html"
                     scrolling="no"
@@ -35,7 +35,7 @@ export default function AnimationFrame() {
                     frameBorder="0"
                 ></iframe>;
             case 'GDL':
-                return <img src="animations/gdl/smart_gdl_cover.webp" alt="Logo GDL" />;
+                return null;
             default:
                 return <span>No se encontró la animación...</span>;
         }
