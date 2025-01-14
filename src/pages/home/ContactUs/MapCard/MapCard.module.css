@@ -1,0 +1,138 @@
+/*###################################################*/
+/*...................................................*/
+/* MapCard(component) */
+/*...................................................*/
+/*###################################################*/
+.map {
+    /* ajusta la posición en el grid */
+    grid-column: span 2;
+    grid-row: span 2;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    background-color: rgb(232, 230, 230);
+    padding: 15px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .map {
+        /* ajusta la posición en el grid */
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}
+
+/* end tablet up */
+
+/* tablet landscape up */
+@media (min-width: 1200px) {
+    .map {
+        /* ajusta la posición en el grid */
+        grid-row: 1 / 10;
+        grid-column: 1 / 3;
+    }
+}
+
+/* end tablet up */
+
+.mapTitle {
+    border-bottom: var(--text) solid 2px;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+}
+
+.map img {
+    width: 100%;
+    height: auto;
+    border-radius: 11px;
+}
+
+.googleMaps {
+    position: relative;
+    display: inline-block;
+}
+
+.googleMaps img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    border-radius: 0;
+    border-radius: 11px;
+    
+}
+
+.googleMaps .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--primary);  
+  color: var(--background); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 11px;
+}
+
+.googleMaps:hover .overlay {
+  opacity: 0.7;
+}
+
+
+.adress {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    margin-top: 1.3rem;
+}
+
+.button{
+    background-color: var(--primary);
+    color: var(--background);
+    padding: 0.2rem 0.6rem;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+
+
+.newTag{
+    background-color: var(--smartBlue);
+    color: var(--background);
+    font-size: 0.8rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 8px;
+    margin-left: 0.5rem;
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end MapCard(component) */
+/*...................................................*/
+/*###################################################*/

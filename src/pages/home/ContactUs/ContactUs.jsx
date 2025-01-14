@@ -13,7 +13,7 @@ Data driven approach.
     - TeamCard (Component)
     - ContactUsData (data)
     - styles (css)
-    
+
 * Returns/results: Renders a grid with the team members cards that match the selected campus.
     
 <!------------------------------------------------->*/
@@ -27,6 +27,7 @@ import styles from './ContactUs.module.css'
 
 //cards
 import TeamCard from '@components/TeamCard/TeamCard'
+import MapCard from './MapCard/MapCard'
 
 //data for person cards
 import { ContactUsData } from './ContactUsData'
@@ -47,6 +48,7 @@ export default function ContactUs() {
     <section id="contacto" className={styles.contactUs}>
       <h1 className={styles.title} >Contáctanos</h1>
       <div className={styles.grid}>
+        {/* Team cards */}
         {filteredTeam.map(person => (
           <TeamCard
             key={person.name.replace(/\s/g, '')} // Remove spaces from name to create a unique key 
@@ -58,7 +60,10 @@ export default function ContactUs() {
             profilePicture={person.profilePicture}
           />
         ))}
+        {/* End Team cards */}
+        <MapCard />
       </div>
+
     </section >
   );
 }
