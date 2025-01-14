@@ -47,7 +47,7 @@ export default function NavBar() {
             //remove the class in the body and keep using the root value for navHeight
             document.body.classList.remove('navIsContracted');
 
-            
+
             //we need a function to pass to the event listener
             const handleScroll = () => {
                 //scroll threshold is the limit where the navbar will contract

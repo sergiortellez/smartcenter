@@ -28,6 +28,7 @@ import styles from './ContactUs.module.css'
 //cards
 import TeamCard from '@components/TeamCard/TeamCard'
 import MapCard from './MapCard/MapCard'
+import MailBox from './MailBox/MailBox';
 
 //data for person cards
 import { ContactUsData } from './ContactUsData'
@@ -62,6 +63,8 @@ export default function ContactUs() {
         ))}
         {/* End Team cards */}
         <MapCard />
+        <MailBox />
+
       </div>
 
     </section >
