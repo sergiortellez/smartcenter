@@ -26,23 +26,26 @@ export default function Reporte() {
 
     useEffect(() => {
         const handleMessage = (event) => {
-            // Replace this with the expected origin of your iframe content
-            const expectedOrigin = "https://script.google.com";
-            const validOrigins = ["https://script.google.com", "https://script.googleusercontent.com", "https://smart.huin.solutions",];
-            // Only process messages from the expected origin
-            if (!validOrigins.includes(event.origin)) {
+            /* 
+         We'll do a simple "endsWith" check to allow messages
+         from script.googleusercontent.com. 
+         (You may also add more domains to handle dev or other variants.)
+      */
+            if (!event.origin.endsWith("script.googleusercontent.com")) {
                 console.warn("Message from unexpected origin:", event.origin);
                 return;
             }
 
-            // Validate the data structure and update the height
+            // If the data contains a frameHeight property, update local state
             if (event.data && typeof event.data.frameHeight === "number") {
                 setIframeHeight(event.data.frameHeight + "px");
             }
         };
 
+        // Add the event listener on mount
         window.addEventListener("message", handleMessage);
 
+        // Cleanup on unmount
         return () => {
             window.removeEventListener("message", handleMessage);
         };
@@ -60,7 +63,7 @@ export default function Reporte() {
             case 'GDL':
                 return null
             case 'CDMX':
-                return 'AKfycbyko7e9s2uBL6Va8O75PiAGY2MBikLsvxI24zS1EUpRjOgnX-eX3Ur2SAx_FjPgiCPI6w';
+                return 'AKfycbybgFbqK84PRM2xq8TMdkBazaU_re5RqEczsK8OPoED6SXhgsf6JKP2vExgD2t_2WNsmw';
             default:
                 return null
         }
