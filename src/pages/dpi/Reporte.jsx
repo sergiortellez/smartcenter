@@ -26,6 +26,14 @@ export default function Reporte() {
 
     useEffect(() => {
         const handleMessage = (event) => {
+
+            // Diagnostic log
+            console.log(
+                "PARENT: received postMessage from origin:",
+                event.origin,
+                "with data:",
+                event.data
+            );
             console.log("Received postMessage from:", event.origin, "with data:", event.data);
 
             // Check domain
@@ -37,6 +45,7 @@ export default function Reporte() {
             // Check data and set height
             if (event.data && typeof event.data.frameHeight === "number") {
                 setIframeHeight(event.data.frameHeight + "px");
+                console.log("PARENT: Updated iframeHeight to:", event.data.frameHeight);
             }
         };
 
