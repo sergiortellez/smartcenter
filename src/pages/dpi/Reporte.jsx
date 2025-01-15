@@ -26,30 +26,24 @@ export default function Reporte() {
 
     useEffect(() => {
         const handleMessage = (event) => {
-            /* 
-         We'll do a simple "endsWith" check to allow messages
-         from script.googleusercontent.com. 
-         (You may also add more domains to handle dev or other variants.)
-      */
+            console.log("Received postMessage from:", event.origin, "with data:", event.data);
+
+            // Check domain
             if (!event.origin.endsWith("script.googleusercontent.com")) {
                 console.warn("Message from unexpected origin:", event.origin);
                 return;
             }
 
-            // If the data contains a frameHeight property, update local state
+            // Check data and set height
             if (event.data && typeof event.data.frameHeight === "number") {
                 setIframeHeight(event.data.frameHeight + "px");
             }
         };
 
-        // Add the event listener on mount
         window.addEventListener("message", handleMessage);
-
-        // Cleanup on unmount
-        return () => {
-            window.removeEventListener("message", handleMessage);
-        };
+        return () => window.removeEventListener("message", handleMessage);
     }, []);
+
 
 
 
@@ -63,7 +57,7 @@ export default function Reporte() {
             case 'GDL':
                 return null
             case 'CDMX':
-                return 'AKfycby9kqV7SKmyBpUOFEXcaXMCM3WIGhmTtWJl7DGGndnQhXo1yMUgeswnNI-SPpOGolDTvA';
+                return 'AKfycbxj7DB8yZzx912L_gocGhuDSJpugf0kL5Aem_YwCjaB5gjBc9M7fYCYhxb8CMUJfM9W7g';
             default:
                 return null
         }
