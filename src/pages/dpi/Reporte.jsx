@@ -25,6 +25,7 @@ export default function Reporte() {
     const [iframeHeight, setIframeHeight] = useState("500px"); // fallback or default
 
     useEffect(() => {
+        console.log("PARENT: The Reporte component mounted, I'm listening for messages now.");
         const handleMessage = (event) => {
 
             // Diagnostic log
