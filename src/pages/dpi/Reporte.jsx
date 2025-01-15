@@ -28,9 +28,9 @@ export default function Reporte() {
         const handleMessage = (event) => {
             // Replace this with the expected origin of your iframe content
             const expectedOrigin = "https://script.google.com";
-
+            const validOrigins = ["https://script.google.com", "https://script.googleusercontent.com", "https://smart.huin.solutions",];
             // Only process messages from the expected origin
-            if (event.origin !== expectedOrigin) {
+            if (!validOrigins.includes(event.origin)) {
                 console.warn("Message from unexpected origin:", event.origin);
                 return;
             }
@@ -60,7 +60,7 @@ export default function Reporte() {
             case 'GDL':
                 return null
             case 'CDMX':
-                return 'AKfycbwbIHcMvmYdXXYZPy4BJfptuleOudDLsAwFfgfLfpjZf3aikMTAKJ66u__U_maifz_OtA';
+                return 'AKfycbyko7e9s2uBL6Va8O75PiAGY2MBikLsvxI24zS1EUpRjOgnX-eX3Ur2SAx_FjPgiCPI6w';
             default:
                 return null
         }
