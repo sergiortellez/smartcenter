@@ -20,7 +20,7 @@ import { useState, useEffect } from 'react';
 //styles
 import styles from './VideoFrame.module.css';
 // import the JSON video Library
-import videoLibrary from '../../../data/videoLibrary.json';
+import videoLibrary from './videoLibrary.json';
 //fontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuoteLeft, faQuoteRight } from '@awesome.me/kit-c09e05c963/icons/sharp-duotone/solid';
