@@ -1,13 +1,30 @@
+/*<---------------------------------------------------------------------------->
+<!--	DPI/reporte(page)	-->
+<!----------------------------------------------------------------------------->
+* Description: This page is responsible for rendering the DPI report for a specific student. It uses the 'id' parameter from the URL to fetch the report from the backend. The report is displayed in an iframe. The URL for the iframe is built using the 'id' parameter and the campus context. This page is campus sensitive, meaning that the URL for the iframe is different for each campus.
+     
+* Parameters:
+    - none
+* Dependencies:
+    - useParams: to extract the 'id' parameter from the URL
+    - useEffect: to run side effects
+    - useState: to manage state
+    - useCampus: to get the campus from the context
+    - styles: to style the page
 
+* Returns/results: Renders the page itself with the student's report.
+    
+<!------------------------------------------------->*/
+
+//---------------------imports----------------------
 //React
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from 'react';
-
 //context
 import useCampus from '@hooks/useCampus';
-
 //styles
 import styles from './Reporte.module.css'
+
 
 
 export default function Reporte() {
@@ -22,52 +39,22 @@ export default function Reporte() {
     const [frameURL, setFrameURL] = useState("");
 
     // State to keep track of the iframe height
-    const [iframeHeight, setIframeHeight] = useState("500px"); // fallback or default
-
-    useEffect(() => {
-        console.log("PARENT: The Reporte component mounted, I'm listening for messages now.");
-        const handleMessage = (event) => {
-
-            // Diagnostic log
-            console.log(
-                "PARENT: received postMessage from origin:",
-                event.origin,
-                "with data:",
-                event.data
-            );
-            console.log("Received postMessage from:", event.origin, "with data:", event.data);
-
-            // Check domain
-            if (!event.origin.endsWith("script.googleusercontent.com")) {
-                console.warn("Message from unexpected origin:", event.origin);
-                return;
-            }
-
-            // Check data and set height
-            if (event.data && typeof event.data.frameHeight === "number") {
-                setIframeHeight(event.data.frameHeight + "px");
-                console.log("PARENT: Updated iframeHeight to:", event.data.frameHeight);
-            }
-        };
-
-        window.addEventListener("message", handleMessage);
-        return () => window.removeEventListener("message", handleMessage);
-    }, []);
+    const [iframeHeight, setIframeHeight] = useState("3300px"); // fallback or default
 
 
-
-
-
+    /*<------------------------------------------------->
+    <!--	build the URL for iframe	-->
+    <!------------------------------------------------->*/
     //id of the current implementation in the backend google script, should change each time a new implementation is created, campi sensitive. 
-    //TODO: add the ID of the implementation for each campus
+
     const implementationId = (() => {
         switch (campus) {
             case 'AGS':
-                return null
+                return 'AKfycbznd-h2Ef_YfWngHuNZUhnrtvxNUtmwiYSawnIoaVZwmOCVj9ZcLdt3BeSkg6uTptLJ'
             case 'GDL':
-                return null
+                return 'AKfycbz6OuZU2s2piOSsp3bbdap6K7uxAUDXAIpVEn9b6ic4lzT482lT4dGYl0fkd_cxzUxlZw'
             case 'CDMX':
-                return 'AKfycbysTEnt-xdARMq1xb1_Ji5viqwQ6sjlWswXQ8UzlxK-6C6aY7julLJ5syZv3YASKP9-Rg';
+                return 'AKfycbyfV__0Aa3RTAKyJ3S1mY1M2KVbGkgIIOHndm4ogJz2l5EZrga_meslMCNTAi89js6nHA';
             default:
                 return null
         }
@@ -82,9 +69,16 @@ export default function Reporte() {
 
         // Optional cleanup function (if needed)
         return () => {
-            console.log('Component is unmounting');
+            console.log('Reloading DPI...');
         };
-    }, [id]);
+    }, [implementationId, campus]);
+    /*<!------------------------------------------------->
+    <!--	end build the URL for iframe	-->
+    <!------------------------------------------------->*/
+
+    /*<------------------------------------------------->
+    <!--	rendering logic	-->
+    <!------------------------------------------------->*/
     return (
         <section className={styles.dpi} >
 
@@ -97,4 +91,11 @@ export default function Reporte() {
 
         </section>
     )
+    /*<!------------------------------------------------->
+    <!--	end rendering logic	-->
+    <!------------------------------------------------->*/
 }
+
+/*<!--------------------------------------------------------------------------->
+<!--	end DPI/reporte(page)	-->
+<!--------------------------------------------------------------------------->*/
