@@ -50,11 +50,11 @@ export default function Reporte() {
     const implementationId = (() => {
         switch (campus) {
             case 'AGS':
-                return 'AKfycbznd-h2Ef_YfWngHuNZUhnrtvxNUtmwiYSawnIoaVZwmOCVj9ZcLdt3BeSkg6uTptLJ'
+                return 'AKfycbxjSZU8HB-H78E5o7z8nltxnsWsc70n_F-wdar8LWSsw3Om6rrOsNQkeWY-FOh2iE_3'
             case 'GDL':
-                return 'AKfycbz6OuZU2s2piOSsp3bbdap6K7uxAUDXAIpVEn9b6ic4lzT482lT4dGYl0fkd_cxzUxlZw'
+                return 'AKfycbwQ91N8KjxWhjf--NC8Eocs9oHlDH8HlzkwQYaqJSXyzWjZ4cEojIFqta0L9tfSSL0'
             case 'CDMX':
-                return 'AKfycbyfV__0Aa3RTAKyJ3S1mY1M2KVbGkgIIOHndm4ogJz2l5EZrga_meslMCNTAi89js6nHA';
+                return 'AKfycbyc5a-e6eGbbxf90aPhX8kv9CEx0Fok4ljTF6aljpvxDV45MRJDcib-5EwPS8iZa7GlVg';
             default:
                 return null
         }
