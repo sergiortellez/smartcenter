@@ -19,8 +19,8 @@ import { faBuildingColumns, faVrCardboard } from '@awesome.me/kit-c09e05c963/ico
 
 // campus images
 import campusPictureCDMX from '@assets/intercampi/home/campus_cdmx.webp'
-// import campusPictureGDL from '@assets/intercampi/home/campus_gdl.webp'
-// import campusPictureAGS from '@assets/intercampi/home/campus_ags.webp'
+import campusPictureGDL from '@assets/intercampi/home/campus_gdl.webp'
+import campusPictureAGS from '@assets/intercampi/home/campus_ags.webp'
 
 //campus map
 import campusMapCDMX from '@assets/cdmx/map_cdmx.webp'
@@ -77,7 +77,7 @@ const campusConfig = {
 
     GDL: {
         // image: campusPictureGDL, // if available
-        campusImage: null,
+        campusImage: campusPictureGDL,
         mapImage: campusMapGDL,
         mapURL: 'https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=UP+Guadalajara,Guadalajara&travelmode=driving',
         address: (
@@ -95,7 +95,7 @@ const campusConfig = {
 
     AGS: {
         // image: campusPictureAGS, // if available
-        campusImage: null,
+        campusImage: campusPictureAGS,
         mapImage: campusMapAGS,
         mapURL: 'https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=UP+Aguascalientes,Aguascalientes&travelmode=driving',
         address: (
