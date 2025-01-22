@@ -36,9 +36,10 @@ import sofiaDerat from '@assets/cdmx/team/sofiaDerat.webp';
 import claudiaVillareal from '@assets/gdl/team/claudia_villareal.webp';
 import joseLuisAlvarado from '@assets/gdl/team/jose_luis_alvarado.webp';
 import sofiaGonzales from '@assets/gdl/team/sofia_gonzales.webp';
-
-
-
+import hildaCervantez from '@assets/gdl/team/hilda_cervantez.webp';
+import lilianaMejorado from '@assets/gdl/team/liliana_mejorado.webp';
+import margaritaPerez from '@assets/gdl/team/margarita_perez.webp';
+import marianaFernandez from '@assets/gdl/team/mariana_fernandez.webp';
 
 export const ContactUsData = [
     // AGS
@@ -185,7 +186,7 @@ export const ContactUsData = [
         email: 'hcervan@up.edu.mx',
         secondaryEmail: null,
         phoneExtension: 4680,
-        profilePicture: null, //TODO: Add Missing image
+        profilePicture: hildaCervantez,
         campi: 'GDL'
     },
     {
@@ -194,7 +195,7 @@ export const ContactUsData = [
         email: 'lmejorad@up.edu.mx',
         secondaryEmail: null,
         phoneExtension: 4684,
-        profilePicture: null, //TODO: Add Missing image
+        profilePicture: lilianaMejorado,
         campi: 'GDL'
     },
     {
@@ -212,7 +213,7 @@ export const ContactUsData = [
         email: 'mperezp@up.edu.mx',
         secondaryEmail: null,
         phoneExtension: 4097,
-        profilePicture: null, //TODO: Add Missing image
+        profilePicture: margaritaPerez,
         campi: 'GDL'
     },
     {
@@ -239,7 +240,7 @@ export const ContactUsData = [
         email: 'mfernandezc@up.edu.mx',
         secondaryEmail: null,
         phoneExtension: 4912,
-        profilePicture: null, //TODO: Add Missing image
+        profilePicture: marianaFernandez,
         campi: 'GDL'
     },
 ];
