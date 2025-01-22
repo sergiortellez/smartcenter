@@ -36,7 +36,7 @@ export default function MailBox() {
     },
     'GDL': {
       phone: '(33) 1368 2200',
-      email: 'hcervan@up.edu.mx'
+      email: 'cesmart@up.edu.mx'
     },
     'AGS': {
       phone: '(449) 910 6200',
