@@ -69,22 +69,16 @@
 .templateAGS {
     grid-template-areas: 
             "WelcomeToSmart WelcomeToSmart"
-            
             "DigitalExperiences DigitalExperiences"
-
-
-            "WhatIsCounseling WhatIsCounseling"
-
-            "WhatIsCounselingExpanded WhatIsCounselingExpanded"
-
-            "Counseling Counseling"
-
-            "CounselingExpanded CounselingExpanded"
-            "Dpi Dpi"
-            "DpiExpanded DpiExpanded"
             "ParAndCar ParAndCar"
             "WhatIsCar WhatIsCar"
             "WhatIsCarExpanded WhatIsCarExpanded"
+            "WhatIsCounseling WhatIsCounseling"
+            "WhatIsCounselingExpanded WhatIsCounselingExpanded"
+            "Counseling Counseling"
+            "CounselingExpanded CounselingExpanded"
+            "Dpi Dpi"
+            "DpiExpanded DpiExpanded"
             "WhatIsAU WhatIsAU"
             "WhatIsAUExpanded WhatIsAUExpanded"
             "PrepareAUExpanded PrepareAUExpanded"
@@ -102,15 +96,17 @@
         grid-template-areas: 
         "WelcomeToSmart DigitalExperiences  DigitalExperiences"
 
+        "ParAndCar ParAndCar WhatIsCar"
+        "ParAndCar ParAndCar WhatIsCar"
+        "WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded"
+
         "WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded"
         "WhatIsCounseling  Counseling Counseling"
         "Dpi               Counseling Counseling"
         "CounselingExpanded CounselingExpanded CounselingExpanded"
         "DpiExpanded DpiExpanded DpiExpanded"
 
-        "ParAndCar ParAndCar WhatIsCar"
-        "ParAndCar ParAndCar WhatIsCar"
-        "WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded"
+       
         "WhatIsAUExpanded WhatIsAUExpanded WhatIsAUExpanded"
         "WhatIsAU WhatIsAU PrepareAU"
         "PrepareAUExpanded PrepareAUExpanded PrepareAUExpanded"
@@ -130,14 +126,16 @@
         grid-template-areas: 
             "WelcomeToSmart WelcomeToSmart DigitalExperiences DigitalExperiences DigitalExperiences DigitalExperiences"
 
+            "ParAndCar ParAndCar ParAndCar ParAndCar WhatIsCar WhatIsCar"
+            "ParAndCar ParAndCar ParAndCar ParAndCar WhatIsCar WhatIsCar"
+            "WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded"
+
             "WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded"
             "WhatIsCounseling WhatIsCounseling Counseling Counseling Counseling Counseling"
             "Dpi Dpi Counseling Counseling Counseling Counseling"
             "CounselingExpanded CounselingExpanded CounselingExpanded CounselingExpanded CounselingExpanded CounselingExpanded"
             "DpiExpanded DpiExpanded DpiExpanded DpiExpanded DpiExpanded DpiExpanded"
-            "ParAndCar ParAndCar ParAndCar ParAndCar WhatIsCar WhatIsCar"
-            "ParAndCar ParAndCar ParAndCar ParAndCar WhatIsCar WhatIsCar"
-            "WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded"
+
             "WhatIsAUExpanded WhatIsAUExpanded WhatIsAUExpanded WhatIsAUExpanded WhatIsAUExpanded WhatIsAUExpanded"
             "WhatIsAU WhatIsAU PrepareAU AUTopics AUFaq ."
             "PrepareAUExpanded PrepareAUExpanded PrepareAUExpanded PrepareAUExpanded PrepareAUExpanded PrepareAUExpanded"
@@ -165,6 +163,11 @@
 
             "InPerson InPerson"
 
+            "ParAndCar ParAndCar"
+            "WhatIsParExpanded WhatIsParExpanded"
+            "WhatIsPar WhatIsCar"
+            "WhatIsCarExpanded WhatIsCarExpanded"
+
             "WhatIsCounseling WhatIsCounseling"
 
             "WhatIsCounselingExpanded WhatIsCounselingExpanded"
@@ -174,10 +177,7 @@
             "CounselingExpanded CounselingExpanded"
             "Dpi Dpi"
             "DpiExpanded DpiExpanded"
-            "ParAndCar ParAndCar"
-            "WhatIsParExpanded WhatIsParExpanded"
-            "WhatIsPar WhatIsCar"
-            "WhatIsCarExpanded WhatIsCarExpanded"
+
             "WhatIsAU WhatIsAU"
             "WhatIsAUExpanded WhatIsAUExpanded"
             "PrepareAUExpanded PrepareAUExpanded"
@@ -195,15 +195,18 @@
     grid-template-areas: 
         "WelcomeToSmart DigitalExperiences  DigitalExperiences"
         "InPerson          InPerson         InPerson"
+
+        "WhatIsParExpanded WhatIsParExpanded WhatIsParExpanded"
+        "ParAndCar ParAndCar WhatIsPar"
+        "ParAndCar ParAndCar WhatIsCar"
+        "WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded"
+
         "WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded"
         "WhatIsCounseling  Counseling Counseling"
         "Dpi               Counseling Counseling"
         "CounselingExpanded CounselingExpanded CounselingExpanded"
         "DpiExpanded DpiExpanded DpiExpanded"
-        "WhatIsParExpanded WhatIsParExpanded WhatIsParExpanded"
-        "ParAndCar ParAndCar WhatIsPar"
-        "ParAndCar ParAndCar WhatIsCar"
-        "WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded"
+        
         "WhatIsAUExpanded WhatIsAUExpanded WhatIsAUExpanded"
         "WhatIsAU WhatIsAU PrepareAU"
         "PrepareAUExpanded PrepareAUExpanded PrepareAUExpanded"
@@ -223,15 +226,20 @@
         grid-template-areas: 
             "WelcomeToSmart WelcomeToSmart DigitalExperiences DigitalExperiences DigitalExperiences DigitalExperiences"
             "InPerson InPerson InPerson InPerson InPerson InPerson"
+
+             "WhatIsParExpanded WhatIsParExpanded WhatIsParExpanded WhatIsParExpanded WhatIsParExpanded WhatIsParExpanded"
+            "ParAndCar ParAndCar ParAndCar ParAndCar WhatIsPar WhatIsPar"
+            "ParAndCar ParAndCar ParAndCar ParAndCar WhatIsCar WhatIsCar"
+            "WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded"
+
             "WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded"
             "WhatIsCounseling WhatIsCounseling Counseling Counseling Counseling Counseling"
             "Dpi Dpi Counseling Counseling Counseling Counseling"
             "CounselingExpanded CounselingExpanded CounselingExpanded CounselingExpanded CounselingExpanded CounselingExpanded"
             "DpiExpanded DpiExpanded DpiExpanded DpiExpanded DpiExpanded DpiExpanded"
-            "WhatIsParExpanded WhatIsParExpanded WhatIsParExpanded WhatIsParExpanded WhatIsParExpanded WhatIsParExpanded"
-            "ParAndCar ParAndCar ParAndCar ParAndCar WhatIsPar WhatIsPar"
-            "ParAndCar ParAndCar ParAndCar ParAndCar WhatIsCar WhatIsCar"
-            "WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded"
+
+           
+
             "WhatIsAUExpanded WhatIsAUExpanded WhatIsAUExpanded WhatIsAUExpanded WhatIsAUExpanded WhatIsAUExpanded"
             "WhatIsAU WhatIsAU PrepareAU AUTopics AUFaq ."
             "PrepareAUExpanded PrepareAUExpanded PrepareAUExpanded PrepareAUExpanded PrepareAUExpanded PrepareAUExpanded"
