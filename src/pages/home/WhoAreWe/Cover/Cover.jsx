@@ -25,8 +25,8 @@ import useCampus from '@hooks/useCampus';
 import styles from './Cover.module.css'
 
 //images
+import agsImage from '@assets/intercampi/home/alumnos_ags.webp';
 import cdmxImage from '@assets/intercampi/home/alumnos_cdmx.webp';
-import agsImage from '@assets/intercampi/home/alumnos_cdmx.webp';
 import gdlImage from '@assets/intercampi/home/alumnos_gdl.webp';
 
 //Data object:
