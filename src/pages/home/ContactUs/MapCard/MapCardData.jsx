@@ -15,7 +15,7 @@
 
 //---------------------imports----------------------
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBuildingColumns, faVrCardboard } from '@awesome.me/kit-c09e05c963/icons/sharp-duotone/solid'
+import { faStreetView, faVrCardboard } from '@awesome.me/kit-c09e05c963/icons/sharp-duotone/solid'
 
 // campus images
 import campusPictureCDMX from '@assets/intercampi/home/campus_cdmx.webp'
@@ -42,14 +42,14 @@ const campusConfig = {
             <>
                 <div className={styles.adress} >
                     <span>
-                        <FontAwesomeIcon icon={faBuildingColumns} /> Campus CDMX
+                        <FontAwesomeIcon icon={faStreetView} /> Oficina Campus Mixcoac
                     </span>
                     <span>Busca la puerta de Augusto Rodin No. 498</span>
                     <span>Casco antiguo.</span>
                 </div>
                 <div className={styles.adress} >
                     <span>
-                        <FontAwesomeIcon icon={faBuildingColumns} /> Campus Ciudad UP
+                        <FontAwesomeIcon icon={faStreetView} /> Oficina Ciudad UP
                     </span>
                     <span>Busca la oficina de vida universitaria.</span>
                     <span>Todos los martes en la mañana.</span>
@@ -84,10 +84,10 @@ const campusConfig = {
             <>
                 <div className={styles.adress} >
                     <span>
-                        <FontAwesomeIcon icon={faBuildingColumns} /> Campus GDL
+                        <FontAwesomeIcon icon={faStreetView} /> Oficina Campus GDL
                     </span>
-                    <span>Busca la puerta de Augusto Rodin No. 498</span>
-                    <span>Casco antiguo.</span>
+                    <span>Encuéntranos en el edificio L. </span>
+                    <span>Justo a un costado del ingreso principal.</span>
                 </div>
             </>
         ),
@@ -102,10 +102,10 @@ const campusConfig = {
             <>
                 <div className={styles.adress} >
                     <span>
-                        <FontAwesomeIcon icon={faBuildingColumns} /> Campus AGS
+                        <FontAwesomeIcon icon={faStreetView} /> Oficina Campus AGS
                     </span>
-                    <span>Busca la puerta de Augusto Rodin No. 498</span>
-                    <span>Casco antiguo.</span>
+                    <span>Edificio fundadores, primer piso.</span>
+                    <span>En la esquina antes de subir las escaleras.</span>
                 </div>
             </>
         ),
