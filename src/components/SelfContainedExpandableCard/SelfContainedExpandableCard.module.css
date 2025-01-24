@@ -1,0 +1,101 @@
+/*###################################################*/
+/*...................................................*/
+/* SelfContainedExpandableCard(component) */
+/*...................................................*/
+/*###################################################*/
+/*-------------------------------*/
+/* base styles */
+/*-------------------------------*/
+
+.cardBase {
+  border-radius: var(--cardCurve);
+  padding: 1rem;
+}
+
+
+/*-------------------------------*/
+/* end base styles */
+/*-------------------------------*/
+
+
+/*-------------------------------*/
+/* card button */
+/*-------------------------------*/
+
+.buttonState{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  background-color: var(--cardBackgroundColorGold);
+
+  transition: transform 0.2s ease;
+    -webkit-transition: transform 0.2s ease;
+    -moz-transition: transform 0.2s ease;
+    -ms-transition: transform 0.2s ease;
+    -o-transition: transform 0.2s ease;
+
+}
+
+
+
+@media (hover: hover) and (pointer: fine) {
+  .buttonState:hover,
+  .buttonState:focus{
+    transform: scale(0.95);   
+  }
+}
+
+/*-------------------------------*/
+/* end card button */
+/*-------------------------------*/
+
+
+/*-------------------------------*/
+/* expanded card */
+/*-------------------------------*/
+
+/* 
+   The 'expandedState' class ensures that once open, 
+   the article spans all columns in the grid. 
+   (This means grid-column: from 1 to the last) 
+*/
+.expandedState {
+  grid-column: 1/-1;
+  background-color: var(--cardBackgroundColor);
+}
+
+
+.expandedState div>header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+
+.expandedState div>header button{
+  all: unset;
+  cursor: pointer;
+  border: none;
+  font-size: 2rem;
+  color: var(--smartRed);
+}
+
+.expandedState div>header button:hover{
+  color: var(--primary);
+}
+.expandedState div>header button:active{
+  scale: 1.1;
+}
+
+/*-------------------------------*/
+/* end expanded card */
+/*-------------------------------*/
+
+/*###################################################*/
+/*...................................................*/
+/* end SelfContainedExpandableCard(component) */
+/*...................................................*/
+/*###################################################*/
