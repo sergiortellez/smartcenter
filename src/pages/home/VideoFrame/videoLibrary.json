@@ -53,5 +53,10 @@
         "id": "taking_test",
         "title": "Taking Test",
         "src": "media/taking_test.mp4"
+    },
+    {
+        "id": "campus_up",
+        "title": "Campus UP",
+        "src": "media/campus_up.mp4"
     }
 ]
