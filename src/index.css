@@ -25,7 +25,8 @@
     --orangeBtn: var(--primary);
     --navHeight: 14vh;
     --navMenu-height: 5rem;
-     --cardBackgroundColor: #e8e6e6;
+    --cardBackgroundColor: #e8e6e6;
+    --cardBackgroundColorGold: #ddd4c2;
      --cardCurve: 15px;
 }
 
