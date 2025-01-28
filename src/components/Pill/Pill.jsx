@@ -1,7 +1,7 @@
 /*<---------------------------------------------------------------------------->
 <!--	Pill (Component)	-->
 <!----------------------------------------------------------------------------->
-* Description: A pill component to display details in a card. It will display an icon and a text.
+* Description: A pill component to display details in a card. It will display an icon and a text.It will include a transition name to be used with the ViewTransition API. (in case the pill is used in a transition)
      
 * Parameters:
     - icon: icon to display in the pill (fontAwesome is expected)
