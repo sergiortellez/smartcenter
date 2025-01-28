@@ -1,4 +1,4 @@
-cd/*<---------------------------------------------------------------------------->
+/*<---------------------------------------------------------------------------->
 <!--	LinkedExperienceCard (Component)	-->
 <!----------------------------------------------------------------------------->
 * Description:
@@ -13,6 +13,7 @@ cd/*<---------------------------------------------------------------------------
     - certificateBool: a boolean.
     - certificateUrl: a string.
     - experienceUrl: a string.
+    - campi: an array of strings to filter the cards by campus.
 
 * Dependencies:
     - SelfContainedExpandableCard
@@ -27,12 +28,12 @@ cd/*<---------------------------------------------------------------------------
 
 //components
 import SelfContainedExpandableCard from '@components/SelfContainedExpandableCard/SelfContainedExpandableCard'
-import CardCover from './components/CardCover/CardCover'
-import CardContent from './components/CardContent/CardContent'
+import CardCover from '../CardCover/CardCover'
+import CardContent from '../CardContent/CardContent'
 
 
 
-export default function LinkedExperienceCard({ cardId, cardLogo, cardTitle, details = [], whatIsIt, whatToExpect = [], certificateBool = false, certificateUrl, experienceUrl }) {
+export default function LinkedExperienceCard({ cardId, cardLogo, cardTitle, details = [], whatIsIt, whatToExpect = [], certificateBool = false, certificateUrl, experienceUrl, campi = [] }) {
 
 
   const cover = (
@@ -66,7 +67,7 @@ export default function LinkedExperienceCard({ cardId, cardLogo, cardTitle, deta
   <!------------------------------------------------->*/
   return (
 
-    <SelfContainedExpandableCard cardId='first' cardCover={cover} cardContent={content} />
+    <SelfContainedExpandableCard cardId={cardId} cardCover={cover} cardContent={content} />
 
   )
   /*<!------------------------------------------------->
