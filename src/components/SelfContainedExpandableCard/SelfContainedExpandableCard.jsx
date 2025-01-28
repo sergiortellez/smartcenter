@@ -59,9 +59,16 @@ export default function SelfContainedExpandableCard({
   <!--	end Toggle open/close	-->
   <!------------------------------------------------->*/
 
+  /*<------------------------------------------------->
+  <!--	naming	-->
+  <!------------------------------------------------->*/
   //Unique names for each card (needed for ViewTransition API)
   const cardName = `cardContainer-${cardId}`;
   const contentName = `cardContent-${cardId}`;
+  /*<!------------------------------------------------->
+  <!--	end naming	-->
+  <!------------------------------------------------->*/
+
 
   return (
     <article
