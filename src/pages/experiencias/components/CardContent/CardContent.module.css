@@ -1,0 +1,247 @@
+/*###################################################*/
+/*...................................................*/
+/* CardContent(component) */
+/*...................................................*/
+/*###################################################*/
+
+/*-------------------------------*/
+/* header */
+/*-------------------------------*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+}
+header img{
+    width: 7rem;
+    height: auto;
+    margin-right: 0.6rem;
+}
+.cardTitle{
+    font-size: 2rem;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.pills{
+    display: flex;
+    gap: 0.5rem;
+}
+/*-------------------------------*/
+/* end header */
+/*-------------------------------*/
+
+
+/*-------------------------------*/
+/* Content Layout */
+/*-------------------------------*/
+
+
+.contentLayout {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .contentLayout {
+        flex-direction: row;
+    }
+}
+
+/* end tablet up */
+
+/*-------------------------------*/
+/* end Content Layout */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* Data */
+/*-------------------------------*/
+
+.descriptions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+/* desktop up */
+@media (min-width: 1600px) {
+    .descriptions .whatIsIt{
+        min-width: 20rem;
+    }
+   
+}
+/* end desktop up */
+ 
+.descriptions .whatIsIt,
+.descriptions .whatToExpect,
+.descriptions .instructions {
+    background-color: #d1cccc;
+    border-radius: 7px;
+}
+
+.descriptions .whatIsIt header,
+.descriptions .whatToExpect header,
+.descriptions .instructions header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--smartBlue);
+    color: #ffffff;
+    padding: 1rem;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    text-align: right;
+    font-size: 1.4rem;
+}
+
+.descriptions .whatIsIt header svg,
+.descriptions .whatToExpect header svg,
+.descriptions .instructions header svg {
+    /* color: var(--smartBlueMono); */
+    font-size: 2rem;
+}
+
+.descriptions .whatIsIt p,
+.descriptions .whatIsIt span {
+    padding: 1rem;
+}
+
+/* tablet portrait */
+@media (min-width: 768px) and (max-width: 1999px) {
+
+    .descriptions .whatIsIt p,
+    .descriptions .whatToExpect ul,
+    .descriptions .instructions ul {
+        font-size: 0.8rem;
+    }
+}
+
+/* end tablet */
+.whatToExpect ul {
+    padding: 0.6rem;
+    margin: 0;
+    margin-left: 1.3rem;
+}
+.whatToExpect li {
+    padding: 0.4rem 0.3rem;
+}
+.instructions ul {
+    text-align: right;
+    padding: 0;
+}
+
+.instructions ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 0.4rem;
+}
+
+.instructions ul svg {
+    font-size: 1.4rem;
+    /* margin-bottom: 0.6rem; */
+    margin-right: 0.6rem;
+    color: var(--smartBlue);
+}
+
+.interactive {
+    min-width: 50vw;
+}
+/* desktop up */
+@media (min-width: 1600px) {
+   
+     .descriptions .interactive{
+        min-width: 50rem;
+    }
+   
+}
+/* end desktop up */
+
+
+/*-------------------------------*/
+/* end Data */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* buttons */
+/*-------------------------------*/
+
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 0.5rem;
+    margin: 1rem;
+    color:#fff;
+    
+}
+
+.button a {
+    text-decoration: none;
+    background-color: var(--smartBlueMono);
+   
+    padding: 0.5rem;
+    border-radius: 10px;
+    transition: scale 300ms ease;
+    -webkit-transition: scale 300ms ease;
+    -moz-transition: scale 300ms ease;
+    -ms-transition: scale 300ms ease;
+    -o-transition: scale 300ms ease;
+}
+
+.button a svg {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.button a:hover {
+    background-color: var(--smartBlue);
+    scale: 0.95;
+}
+
+
+/* ---experiencias interactivas--- */
+.startExperience {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.buttonOut a {
+    text-decoration: none;
+    background-color: var(--smartBlueMono);
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 9px;
+    transition: transform 300ms ease;
+    font-size: 2rem;
+}
+
+.buttonOut a:hover {
+    background-color: var(--smartBlue);
+   transform: scale(0.95);
+}
+
+
+/*-------------------------------*/
+/* end buttons */
+/*-------------------------------*/
+
+
+/*###################################################*/
+/*...................................................*/
+/* end CardContent(component) */
+/*...................................................*/
+/*###################################################*/
