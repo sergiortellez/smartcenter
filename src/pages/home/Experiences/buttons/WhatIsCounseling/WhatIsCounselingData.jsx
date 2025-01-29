@@ -22,11 +22,11 @@
 import styles from './WhatIsCounseling.module.css'
 
 // Images 
-//TODO: Import images for GDL and AGS
-//import counselingAGS from '@assets/intercampi/home/counseling_ags.webp'
+
+import counselingAGS from '@assets/intercampi/home/counseling_ags.webp'
 import counselingCDMX from '@assets/intercampi/home/counseling_cdmx.webp'
-//import counselingGDL from '@assets/intercampi/home/counseling_gdl.webp'
-//import fallbackImg from '@assets/fallback.webp'
+import counselingGDL from '@assets/intercampi/home/counseling_gdl.webp'
+
 
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -55,7 +55,7 @@ const counselingText = (
 export const WhatIsCounselingData = {
     AGS: {
         title: '¿Qué es Counseling?',
-        img: null,
+        img: counselingAGS,
         content: counselingText
     },
     CDMX: {
@@ -65,7 +65,7 @@ export const WhatIsCounselingData = {
     },
     GDL: {
         title: '¿Qué es Coaching?',
-        img: null,
+        img: counselingGDL,
         content: (
             <>
                 <p>Some content.</p>
