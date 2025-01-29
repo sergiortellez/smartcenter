@@ -22,7 +22,7 @@
 
 //---------------------imports----------------------
 //React
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 
 //Hooks
 import { useViewTransition } from '@hooks/useViewTransition'
@@ -45,16 +45,51 @@ export default function SelfContainedExpandableCard({
 
   const [isOpen, setIsOpen] = useState(false)
   const { startTransition } = useViewTransition();
+  // Create a ref to access the <article> DOM node
+  const cardRef = useRef(null);
 
   /*<------------------------------------------------->
   <!--	Toggle open/close with animations 	-->
   <!------------------------------------------------->*/
+  /*<--	*** Open the card with animations ***	-->*/
   const handleToggle = () => {
     startTransition(() => {
       setIsOpen((prev) => !prev)
     })
 
-  };
+  }
+  /*<--	*** end Open the card with animations ***	-->*/
+
+  /*<--	*** Scroll the card to the top of the page after toggling ***	-->*/
+  useEffect(() => {
+    // Make sure the ref is available
+    if (!cardRef.current) return;
+
+    // check if the user is on a mobile device
+    const isMobile = window.innerWidth <= 767.98 && /Mobi|Android/i.test(navigator.userAgent);
+
+    // Adjust the scroll offset based on the device
+    const offsetAdjustment = isMobile ? 10 : 90;
+
+    // Get the height of the nav bar
+    const navHeight = parseInt(
+      getComputedStyle(document.documentElement).getPropertyValue('--navHeight'), 10);
+    // Get the position object of the card  
+    const rect = cardRef.current.getBoundingClientRect();
+    // Calculate the absolute top position of the card
+    const absoluteTop = rect.top + window.pageYOffset - navHeight - offsetAdjustment;
+
+    //Do the scrolling after 0.9 seconds
+    const timer = setTimeout(() => {
+      window.scrollTo({ top: absoluteTop, behavior: 'smooth' });
+    }, 900);
+
+    //cleanup
+    return () => clearTimeout(timer);
+
+  }, [isOpen]);
+  /*<--	*** end Scroll to the top of the page after toggling ***	-->*/
+
   /*<!------------------------------------------------->
   <!--	end Toggle open/close	-->
   <!------------------------------------------------->*/
@@ -72,6 +107,7 @@ export default function SelfContainedExpandableCard({
 
   return (
     <article
+      ref={cardRef}
       onClick={!isOpen ? handleToggle : undefined}
       className={`${styles.cardBase}  ${isOpen ? styles.expandedState : styles.buttonState}`}
       aria-expanded={isOpen}

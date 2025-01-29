@@ -49,7 +49,7 @@ export const LinkedExperiencesData = [
         ],
         certificateBool: true,
         certificateUrl: 'https://docs.google.com/forms/d/e/1FAIpQLScHmIpT0RODx95qMmIz0hoELK159VQUCJvn3YYUqwJ0IDfXgQ/viewform?usp=sf_link',
-        experienceUrl: '/experiencias/liderazgo/experience/story.html',
+        experienceUrl: '/experiences/liderazgo/experience/story.html',
         campi: ['CDMX', 'GDL', 'AGS']
     },
     /*<!------------------------------------------------->
@@ -77,7 +77,7 @@ export const LinkedExperiencesData = [
         ],
         certificateBool: true,
         certificateUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSf8sK14NUaUih6LySoKMmIShZfgW7143CynrgGS6vpDm4-evw/viewform?usp=sf_link',
-        experienceUrl: '/experiencias/communicate/experience/story.html',
+        experienceUrl: '/experiences/communicate/experience/story.html',
         campi: ['CDMX', 'GDL', 'AGS']
     },
     /*<!------------------------------------------------->
@@ -103,7 +103,7 @@ export const LinkedExperiencesData = [
         ],
         certificateBool: true,
         certificateUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSck7psffX6KxSTrVb_NnuJTH_tFuhQhPZs1wnAod57O9ZEnZw/viewform?usp=sf_link',
-        experienceUrl: '/experiencias/resiliencia/experiencia/story.html',
+        experienceUrl: '/experiences/resiliencia/experiencia/story.html',
         campi: ['CDMX', 'GDL', 'AGS']
     },
     /*<!------------------------------------------------->
@@ -131,7 +131,7 @@ export const LinkedExperiencesData = [
         ],
         certificateBool: true,
         certificateUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSfD8eNsDupfcJDFnqd3Hw3kgBTlV3azjXkDOmLRTS9FbeXv6Q/viewform?usp=sf_link',
-        experienceUrl: '/experiencias/negotiate/experience/story.html',
+        experienceUrl: '/experiences/negotiate/experience/story.html',
         campi: ['CDMX', 'GDL', 'AGS']
     },
     /*<!------------------------------------------------->
@@ -159,7 +159,7 @@ export const LinkedExperiencesData = [
         ],
         certificateBool: true,
         certificateUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSf6yLTyR0TwLb9NgyC66Ha1EmIHO0Pp1k403siux-VLEBe7PA/viewform?usp=sf_link',
-        experienceUrl: '/experiencias/self/story.html',
+        experienceUrl: '/experiences/self/story.html',
         campi: ['CDMX', 'GDL', 'AGS']
     },
     /*<!------------------------------------------------->
@@ -187,7 +187,7 @@ export const LinkedExperiencesData = [
         ],
         certificateBool: true,
         certificateUrl: 'https://docs.google.com/forms/d/e/1FAIpQLScyfLZi287NFjhMSg1LSzmDNbRQ__X9pEDz7HJ2pm3PYAIKJw/viewform?usp=sf_link',
-        experienceUrl: '/experiencias/manage/story.html',
+        experienceUrl: '/experiences/manage/story.html',
         campi: ['CDMX', 'GDL', 'AGS']
     },
     /*<!------------------------------------------------->
@@ -215,7 +215,7 @@ export const LinkedExperiencesData = [
         ],
         certificateBool: false,
         certificateUrl: '',
-        experienceUrl: '/experiencias/master/index.html',
+        experienceUrl: '/experiences/master/index.html',
         campi: ['CDMX']
     },
     /*<!------------------------------------------------->
@@ -243,7 +243,7 @@ export const LinkedExperiencesData = [
         ],
         certificateBool: true,
         certificateUrl: 'https://forms.gle/TgmH8qoj1XouprW39',
-        experienceUrl: '/experiencias/gestion/index.html',
+        experienceUrl: '/experiences/gestion/index.html',
         campi: ['CDMX', 'GDL', 'AGS']
     },
     /*<!------------------------------------------------->

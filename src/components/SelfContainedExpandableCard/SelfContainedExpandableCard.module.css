@@ -3,6 +3,11 @@
 /* SelfContainedExpandableCard(component) */
 /*...................................................*/
 /*###################################################*/
+
+::view-transition-group(*){
+  animation-duration: 0.7s;
+}
+
 /*-------------------------------*/
 /* base styles */
 /*-------------------------------*/
@@ -11,7 +16,6 @@
   border-radius: var(--cardCurve);
   padding: 1rem;
 }
-
 
 /*-------------------------------*/
 /* end base styles */
