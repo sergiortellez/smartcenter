@@ -42,7 +42,7 @@ export default function Experiences() {
     const { campus } = useCampus();
 
     return (
-        <section id="experiencias">
+        <section id="experiencias" className={styles.experiences} >
             <h1 className={styles.title} >Nuestras experiencias</h1>
 
             <div className={`${styles.experiencesGrid} ${styles[`template${campus}`] || ''}`} >

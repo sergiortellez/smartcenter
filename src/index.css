@@ -98,7 +98,7 @@ body {
 /* adjusting and centering max with of sections */
 body>#root>section {
     max-width: 1824px;
-    margin: 5rem auto !important;
+    margin: 2rem auto !important;
     float: none !important;
 }
 

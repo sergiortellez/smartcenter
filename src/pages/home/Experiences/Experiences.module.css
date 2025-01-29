@@ -5,8 +5,8 @@
 /*###################################################*/
 
 
-#experiencias {
-    padding: 5rem 1rem;
+.experiences {
+    padding: 5rem 0rem;
 }
 
 
@@ -34,7 +34,7 @@
 .experiencesGrid {
     display: grid;
     /* gap: 0.5rem; */
-    padding: 1rem;
+    padding: 0.3rem;
     grid-template-columns: repeat(2, 1fr);          
 }
 /* For Gap: */
