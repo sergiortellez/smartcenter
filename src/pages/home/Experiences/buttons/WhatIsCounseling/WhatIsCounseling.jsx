@@ -56,11 +56,6 @@ export default function WhatIsCounseling({ className }) {
             <img
               src={campusObj.img}
               alt="Person counseling student"
-            //TODO: add fallback image
-            // onError={(e) => {
-            //   // If the image fails, use the fallback
-            //   e.currentTarget.src = campusData.FALLBACK.img
-            // }}
             />
           </div>
         </div>

@@ -76,7 +76,7 @@ export default function Counseling({ className }) {
   return (
     <>
       <ExpandableCardParallax
-        buttonContent="Atención uno a uno"
+        buttonContent="Atención 121"
         expandedContent={expandedContent}
         areaName="Counseling"
         className={className}

@@ -35,17 +35,46 @@ import { faHouseLaptop } from '@awesome.me/kit-c09e05c963/icons/sharp-duotone/so
 
 
 // The repetitive content for AGS & CDMX:
-const counselingText = (
+const oneToOneText = (
     <>
-        <p>¿Conoces el Counseling de la Universidad Panamericana? Es una metodología que te ayuda a <span className={styles.resaltado} >mejorar en situaciones complicadas</span> o desarrollar habilidades específicas. Básicamente, te ayuda a <span className={styles.resaltado}> construir tu
-            mejor versión</span>. </p>
-        <p>Fue desarrollada en el SMART Center y ha ayudado a muchos estudiantes como tú a salir adelante.</p>
+
+
         <p>¿Quieres tener
-            <span className={styles.resaltado}>mejores calificaciones</span>? ¿Quieres<span className={styles.resaltado}> tener tiempo</span> <span className={styles.resaltado}>para ti</span>, para estudiar, tu familia, pareja y amigos? ¡Uno de nuestros <b>expertos</b> puede ayudarte a
+            <span className={styles.resaltado}> mejores calificaciones</span>? ¿Quieres<span className={styles.resaltado}> tener tiempo</span>  para ti, para estudiar, para tu familia, pareja y amigos?
+            <br />¡Uno de nuestros <b>expertos</b> puede ayudarte a
             crear un <span className={styles.resaltado}>plan personalizado</span> de <b>estrategias y hábitos de estudio</b>!
         </p>
         <p>Si vives lejos o prefieres el contacto remoto <FontAwesomeIcon icon={faHouseLaptop} /> nuestra <span className={styles.resaltado}>opción online</span> es para ti.
         </p>
+        <hr />
+        <h3>Metodología</h3>
+        <p>¿Conoces el Counseling de la Universidad Panamericana? Es una metodología que te ayuda a <span className={styles.resaltado} >mejorar en situaciones complicadas</span> o desarrollar habilidades específicas. Básicamente, te ayuda a <span className={styles.resaltado}> construir tu
+            mejor versión</span>. </p>
+        <p>Fue desarrollada en el SMART Center y ha ayudado a muchos estudiantes como tú a salir adelante.</p>
+    </>
+)
+
+const oneToOneTextGdl = (
+    <>
+        <p>¿Quieres tener
+            <span className={styles.resaltado}> mejores calificaciones</span>? ¿Quieres<span className={styles.resaltado}> tener tiempo</span> para ti, para estudiar, para tu familia, pareja y amigos?
+            <br /> ¡Uno de nuestros <b>expertos</b> puede ayudarte a
+            crear un <span className={styles.resaltado}>plan personalizado</span> de <b>estrategias y hábitos de estudio</b>!
+        </p>
+        <p>Si vives lejos o prefieres el contacto remoto <FontAwesomeIcon icon={faHouseLaptop} /> nuestra <span className={styles.resaltado}>opción online</span> es para ti.
+        </p>
+        <hr />
+        <h3>Metodología</h3>
+        <p>¿Conoces el Coaching de la Universidad Panamericana? Es una metodología que te ofrece <span className={styles.resaltado} >acompañamiento personalizado</span> si estás en los últimos años de la carrera. Uno de nuestros coaches, con entrenamiento especial, te puede ayudar a <span className={styles.resaltado}> lograr tus objetivos</span> personales y profesionales. </p>
+
+        <p>Fue desarrollada en el SMART Center Guadalajara y ha ayudado a muchos estudiantes como tú a triunfar.</p>
+    </>
+)
+
+const cardTitle = (
+    <>
+        <p className={styles.cardTitle} >¿Qué es 121?</p>
+        <p className={styles.cardSubtitle} >Atención uno a uno</p>
     </>
 )
 
@@ -54,23 +83,19 @@ const counselingText = (
 <!------------------------------------------------->*/
 export const WhatIsCounselingData = {
     AGS: {
-        title: '¿Qué es Counseling?',
+        title: cardTitle,
         img: counselingAGS,
-        content: counselingText
+        content: oneToOneText
     },
     CDMX: {
-        title: '¿Qué es Counseling?',
+        title: cardTitle,
         img: counselingCDMX,
-        content: counselingText
+        content: oneToOneText
     },
     GDL: {
-        title: '¿Qué es Coaching?',
+        title: cardTitle,
         img: counselingGDL,
-        content: (
-            <>
-                <p>Some content.</p>
-            </>
-        )
+        content: oneToOneTextGdl
     },
     FALLBACK: {
         title: 'No campus selected',
