@@ -41,7 +41,7 @@ export const LinkedExperiencesData = [
             { icon: faClock, text: '10 min' },
             { icon: faHashtag, text: 'profesional' }
         ],
-        whatIsIt: 'Esta experiencia te permitirá descubrir tu estilo de liderazgo y conocer en qué situaciones lo puedes aplicar.',
+        whatIsIt: (<p>Esta experiencia te permitirá descubrir tu estilo de liderazgo y conocer en qué situaciones lo puedes aplicar.</p>),
         whatToExpect: [
             'Un taller en línea pensado en ti y en tus necesidades.',
             'Corto, entendible, fácil y rápido de hacer.',
@@ -69,7 +69,7 @@ export const LinkedExperiencesData = [
             { icon: faClock, text: '12 min' },
             { icon: faHashtag, text: 'personal' }
         ],
-        whatIsIt: 'Esta experiencia te ayudará a encontrar cuál es tu estilo de comunicación, conocerás sus ventajas y desventajas para relacionarte más efectivamente con personas que tengan un estilo distinto al tuyo.',
+        whatIsIt: (<p>Esta experiencia te ayudará a encontrar cuál es tu estilo de comunicación, conocerás sus ventajas y desventajas para relacionarte más efectivamente con personas que tengan un estilo distinto al tuyo.</p>),
         whatToExpect: [
             'Un pequeño test para identificar tu estilo de comunicación.',
             'Un ejercicio para mejorar tu manera de interactuar con otros.',
@@ -97,7 +97,7 @@ export const LinkedExperiencesData = [
             { icon: faClock, text: '10 min' },
             { icon: faHashtag, text: 'personal' }
         ],
-        whatIsIt: 'Esta experiencia te llevará a proponer una solución a una situación que te estrese.',
+        whatIsIt: (<p>Esta experiencia te llevará a proponer una solución a una situación que te estrese.</p>),
         whatToExpect: [
             'Encontrarás una estrategia concreta para aplicar a cualquier problema que tengas.'
         ],
@@ -123,7 +123,7 @@ export const LinkedExperiencesData = [
             { icon: faClock, text: '22 min' },
             { icon: faHashtag, text: 'profesional' }
         ],
-        whatIsIt: 'Esta experiencia te permitirá saber cuál es tu estilo de negociación.',
+        whatIsIt: (<p>Esta experiencia te permitirá saber cuál es tu estilo de negociación.</p>),
         whatToExpect: [
             'Un taller en línea pensado en ti y en tus necesidades.',
             'Corto, entendible, fácil y rápido de hacer. ¡No tardarás más de 30 minutos!',
@@ -151,7 +151,7 @@ export const LinkedExperiencesData = [
             { icon: faClock, text: '15 min' },
             { icon: faHashtag, text: 'personal' }
         ],
-        whatIsIt: 'Esta experiencia se enfoca en el desarrollo de tu inteligencia emocional, ayudándote a reconocer tus propias emociones y reacciones.',
+        whatIsIt: (<p>Esta experiencia se enfoca en el desarrollo de tu inteligencia emocional, ayudándote a reconocer tus propias emociones y reacciones.</p>),
         whatToExpect: [
             'Identificar tu estilo emocional.',
             'Aplicar una estrategia concreta para conocerte a profundidad.',
@@ -179,7 +179,7 @@ export const LinkedExperiencesData = [
             { icon: faClock, text: '16 min' },
             { icon: faHashtag, text: 'personal' }
         ],
-        whatIsIt: 'Esta experiencia forma parte de tu desarrollo de inteligencia emocional y se enfoca en la autogestión.',
+        whatIsIt: (<p>Esta experiencia forma parte de tu desarrollo de inteligencia emocional y se enfoca en la autogestión.</p>),
         whatToExpect: [
             'Ejercicios cortos, entendibles y fáciles de aplicar.',
             'No tardarás más de 30 minutos en completarlo.',
@@ -207,7 +207,7 @@ export const LinkedExperiencesData = [
             { icon: faClock, text: '30 min' },
             { icon: faHashtag, text: 'profesional' }
         ],
-        whatIsIt: 'Mapa interactivo que te orientará en los requisitos de admisión para estudiar un posgrado en el extranjero.',
+        whatIsIt: (<p>Mapa interactivo que te orientará en los requisitos de admisión para estudiar un posgrado en el extranjero.</p>),
         whatToExpect: [
             'Requisitos de las universidades TOP del mundo.',
             'Distintos programas de preparación que tenemos para ti.',
@@ -235,7 +235,7 @@ export const LinkedExperiencesData = [
             { icon: faClock, text: '60 min' },
             { icon: faHashtag, text: 'personal' }
         ],
-        whatIsIt: 'Una experiencia en línea para que conozcas cómo abrazar y gestionar el cambio para alcanzar tus objetivos.',
+        whatIsIt: (<p>Una experiencia en línea para que conozcas cómo abrazar y gestionar el cambio para alcanzar tus objetivos.</p>),
         whatToExpect: [
             'Interactivo, entendible y fácil de hacer.',
             'Te llevará máximo una hora.',
@@ -263,7 +263,7 @@ export const LinkedExperiencesData = [
             { icon: faClock, text: '35 min' },
             { icon: faHashtag, text: 'académica' }
         ],
-        whatIsIt: 'Un programa que impulsa tu crecimiento personal, académico y profesional para que construyas un perfil que te diferencie en cualquier entorno laboral.',
+        whatIsIt: (<p>Un programa que impulsa tu crecimiento personal, académico y profesional para que construyas un perfil que te diferencie en cualquier entorno laboral.</p>),
         whatToExpect: [
             'Talleres transformadores para desarrollar habilidades reales.',
             'Proyectos innovadores y aplicables a tu futuro profesional.',
