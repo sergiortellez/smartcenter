@@ -32,7 +32,7 @@ export default function IconTextTitle({ icon, title, flow = 'column', titleSize 
         className={`${flow === 'column' ? styles.iconColumn : styles.iconRow} `}
         style={{ fontSize: `${iconSize}rem` }} />
 
-      <span style={{ fontSize: `${titleSize}rem` }} >{title}</span>
+      <div style={{ fontSize: `${titleSize}rem` }} >{title}</div>
     </div >
   );
 }

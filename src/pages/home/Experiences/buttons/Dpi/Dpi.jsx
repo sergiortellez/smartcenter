@@ -33,14 +33,21 @@ import styles from './Dpi.module.css'
 
 export default function Dpi({ className }) {
 
+  const cardTitle = (
+    <>
+      <p className={styles.title} > Conócete con DPI</p>
+      <p className={styles.subtitle} >Diagnóstico de perfil diferencial </p>
+    </>
+
+  )
 
   const buttonContent = (
     <IconTextTitle
       icon={faMagnifyingGlass}
-      title='Conócete con DPI'
-      flow='column'
+      title={cardTitle}
       titleSize='1.2'
       iconSize='2'
+      flow='column'
     />
   )
 
