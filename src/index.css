@@ -331,6 +331,13 @@ a {
     box-sizing: inherit;
 }
 
+hr {
+  border: none;
+  height: 2px;
+  background-color: rgb(194, 189, 189);
+  border-radius: 5px;
+
+}
 /* ---for active class in navbar--- */
 
 
