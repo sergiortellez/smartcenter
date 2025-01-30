@@ -13,7 +13,7 @@
 
 //---------------------imports----------------------
 
-//Logos
+//Logos origin CDMX
 import leaderLogo from '@assets/intercampi/experiencias/leader.webp'
 import communicateLogo from '@assets/intercampi/experiencias/communicate.webp'
 import resilienciaLogo from '@assets/intercampi/experiencias/resiliencia.webp'
@@ -23,6 +23,26 @@ import manageLogo from '@assets/intercampi/experiencias/manage.webp'
 import masterLogo from '@assets/intercampi/experiencias/master.webp'
 import gestionLogo from '@assets/intercampi/experiencias/gestion.webp'
 import powerUpLogo from '@assets/intercampi/experiencias/power_up.webp'
+//import cvmpLogo from '@assets/intercampi/experiencias/cvmp.webp';
+//import oylbLogo from '@assets/intercampi/experiencias/oylb.webp';
+//import recreandoLogo from '@assets/intercampi/experiencias/recreando.webp';
+//import versionLogo from '@assets/intercampi/experiencias/version.webp';
+
+
+
+
+
+// Logos origin GDL
+import conflictoOportunidadLogo from '@assets/intercampi/experiencias/conflicto_oportunidad.webp';
+import inaccionAccionLogo from '@assets/intercampi/experiencias/inaccion_accion.webp';
+//import lecturaInteligenteLogo from '@assets/intercampi/experiencias/lectura_inteligente.webp';
+import masteringTimeLogo from '@assets/intercampi/experiencias/mastering_time.webp';
+import menteExitoLogo from '@assets/intercampi/experiencias/mente_exito.webp';
+import reinventaFormaEstudiarLogo from '@assets/intercampi/experiencias/reinventa_forma_estudiar.webp';
+
+
+
+
 
 //icons
 import { faFingerprint, faClock, faHashtag } from '@awesome.me/kit-c09e05c963/icons/sharp-duotone/solid'
@@ -273,10 +293,137 @@ export const LinkedExperiencesData = [
         certificateUrl: '',
         experienceUrl: 'https://view.genial.ly/64b945c308d2fa0012d25104/dossier-power-up',
         campi: ['CDMX']
-    }
+    },
     /*<!------------------------------------------------->
     <!--	end Power UP	-->
     <!------------------------------------------------->*/
+    /*<------------------------------------------------->
+    <!-- Mastering time, trucos para el éxito universitario-->
+    <!------------------------------------------------->*/
+    {
+        cardId: 'masteringTime',
+        cardLogo: masteringTimeLogo,
+        cardTitle: 'Mastering time, trucos para el éxito universitario',
+        details: [
+            { icon: faFingerprint, text: 'interactiva' },
+            { icon: faClock, text: '2 hrs' },
+            { icon: faHashtag, text: 'académica' }
+        ],
+        whatIsIt: (<p>Un curso que te permitirá saber como organizar tu tiempo para detectar en qué áreas puedes mejorar, con el fin de aumentar tu productividad y hacer más en menos tiempo.</p>),
+        whatToExpect: [
+            'Obtener constancia y dedicación para lograr resultados firmes y perdurables.'
+        ],
+        certificateBool: false,
+        certificateUrl: '',
+        experienceUrl: 'https://blackboard.up.edu.mx/ultra/courses/_8900_1/outline',
+        campi: ['GDL']
+    },
+    /*<!------------------------------------------------->
+    <!--	end Mastering time, trucos para el éxito universitario	-->
+    <!------------------------------------------------->*/
+    /*<------------------------------------------------->
+<!-- Conflicto: Oportunidad para el crecimiento y aprendizaje -->
+<!------------------------------------------------->*/
+    {
+        cardId: 'conflictoOportunidad',
+        cardLogo: conflictoOportunidadLogo,
+        cardTitle: 'Conflicto: Oportunidad para el Crecimiento y Aprendizaje',
+        details: [
+            { icon: faFingerprint, text: 'interactiva' },
+            { icon: faClock, text: '2 hrs' },
+            { icon: faHashtag, text: 'académica' }
+        ],
+        whatIsIt: (<p>Un curso que te permite identificar qué es un conflicto, cómo se detona y los factores que intervienen en él.</p>),
+        whatToExpect: [
+            'Desarrollar la habilidad para afrontar los conflictos y solucionarlos de manera satisfactoria.'
+        ],
+        certificateBool: false,
+        certificateUrl: '',
+        experienceUrl: 'https://blackboard.up.edu.mx/ultra/courses/_8903_1/outline',
+        campi: ['GDL']
+    },
+    /*<!------------------------------------------------->
+    <!--	end Conflicto: Oportunidad para el crecimiento y aprendizaje -->
+    <!------------------------------------------------->*/
+
+
+    /*<------------------------------------------------->
+    <!-- De la intención a la acción: cómo superar la procrastinación -->
+    <!------------------------------------------------->*/
+    {
+        cardId: 'inaccionAccion',
+        cardLogo: inaccionAccionLogo,
+        cardTitle: 'De la intención a la acción: Cómo superar la procrastinación',
+        details: [
+            { icon: faFingerprint, text: 'interactiva' },
+            { icon: faClock, text: '2 hrs' },
+            { icon: faHashtag, text: 'académica' }
+        ],
+        whatIsIt: (<p>Un curso que te ayudará a evitar la procrastinación y mejorar tu rendimiento académico, tu bienestar emocional y tu futuro profesional.</p>),
+        whatToExpect: [
+            'Identificar qué te lleva a procrastinar, aprender a gestionar mejor tu tiempo y descubrir estrategias prácticas para dejar de posponer lo importante.'
+        ],
+        certificateBool: false,
+        certificateUrl: '',
+        experienceUrl: 'https://blackboard.up.edu.mx/ultra/courses/_8901_1/outline',
+        campi: ['GDL']
+    },
+    /*<!------------------------------------------------->
+    <!--	end De la intención a la acción: cómo superar la procrastinación -->
+    <!------------------------------------------------->*/
+
+
+    /*<------------------------------------------------->
+    <!-- Mente clara, éxito seguro: técnicas para superar el estrés académico -->
+    <!------------------------------------------------->*/
+    {
+        cardId: 'menteExito',
+        cardLogo: menteExitoLogo,
+        cardTitle: 'Mente clara, éxito seguro: Técnicas para superar el estrés académico',
+        details: [
+            { icon: faFingerprint, text: 'interactiva' },
+            { icon: faClock, text: '2 hrs' },
+            { icon: faHashtag, text: 'académica' }
+        ],
+        whatIsIt: (<p>Es un curso para identificar y desarrollar la capacidad de manejar el estrés en las demandas del entorno universitario, con la finalidad de equilibrar tu vida personal y académica.</p>),
+        whatToExpect: [
+            'Manejar el estrés y potencializar mi motivación, personal, académica y profesional.'
+        ],
+        certificateBool: false,
+        certificateUrl: '',
+        experienceUrl: 'https://blackboard.up.edu.mx/ultra/courses/_8902_1/outline',
+        campi: ['GDL']
+    },
+    /*<!------------------------------------------------->
+    <!--	end Mente clara, éxito seguro: técnicas para superar el estrés académico -->
+    <!------------------------------------------------->*/
+
+
+    /*<------------------------------------------------->
+    <!-- Reinventa tu forma de estudiar: El toolkit del estudiante -->
+    <!------------------------------------------------->*/
+    {
+        cardId: 'reinventaFormaEstudiar',
+        cardLogo: reinventaFormaEstudiarLogo,
+        cardTitle: 'Reinventa tu forma de estudiar: El toolkit del estudiante',
+        details: [
+            { icon: faFingerprint, text: 'interactiva' },
+            { icon: faClock, text: '2 hrs' },
+            { icon: faHashtag, text: 'académica' }
+        ],
+        whatIsIt: (<p>Es un curso para adquirir métodos y técnicas de estudio para enfrentar con éxito las demandas de tu aprendizaje de manera autónoma y eficaz.</p>),
+        whatToExpect: [
+            'Descubrir el método y las técnicas de estudio que se adapten mejor a tu estilo de aprendizaje.'
+        ],
+        certificateBool: false,
+        certificateUrl: '',
+        experienceUrl: 'https://blackboard.up.edu.mx/ultra/courses/_8904_1/outline',
+        campi: ['GDL']
+    }
+    /*<!------------------------------------------------->
+    <!--	end Reinventa tu forma de estudiar: El toolkit del estudiante -->
+    <!------------------------------------------------->*/
+
 
 ];
 
