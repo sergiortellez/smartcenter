@@ -144,3 +144,4 @@ dmypy.json
 .DS_Store
 .icloud
 .DS_Store
+.vscode/settings.json
