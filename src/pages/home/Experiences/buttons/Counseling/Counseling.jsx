@@ -61,6 +61,16 @@ export default function Counseling({ className }) {
                 </div>
 
               </div>
+              <hr className={styles.line} />
+
+              {service.questions && service.questions.map((question, index) => (
+
+                <div key={`${service.id}${index}`} className={styles.serviceQuestion}>{question}</div>
+
+              ))}
+
+
+              <hr className={styles.line} />
               <p className={styles.serviceDescription}>{service.description}</p>
             </div>
           ))}

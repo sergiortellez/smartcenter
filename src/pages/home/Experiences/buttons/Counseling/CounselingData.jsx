@@ -28,16 +28,18 @@ export const CounselingData = [
         icon: holaDiez,
         title: '¡Hola Diez! Adiós estrés.',
         subtitle: 'La universidad no tiene que ser estresante',
+        questions: ['¿Sientes que la universidad es demasiado estresante?', '¿Te cuesta trabajo concentrarte?', '¿Estudias mucho y rindes poco?', '¿No te da tiempo de nada?',],
         description: 'Identifica lo que haces bien y lo que hace falta para que tengas el mejor rendimiento. Si necesitas un plan personalizado de estrategias y hábitos de estudio para tener éxito en tu carrera, este programa es para ti.',
-        campi: ['AGS', 'CDMX']
+        campi: ['AGS', 'CDMX', 'GDL']
     },
     {
         id: 'sos',
         // icon: IconTwo,
         icon: sos,
         title: 'SOS Vocacional',
-        subtitle: 'Encuentra tu camino profesional',
-        description: '¿Crees que te equivocaste de carrera? ¿No sabes qué hacer después de la universidad? Este programa es para ti.',
+        subtitle: 'Encuentra el sentido de tu camino profesional',
+        questions: ['¿Crees que te equivocaste de carrera?', '¿No te gusta lo que haces?', '¿No sabes qué hacer después de la universidad?'],
+        description: ' Este programa es para ti. Uno de nuestros expertos hará una evaluación exhaustiva de tus habilidades, intereses y valores para ayudarte a encontrar sentido a la carrera que escogiste, darte claridad del tu futuro profesional o si es el caso ayudarte a escoger la carrera que mejor se adapte a ti.',
         campi: ['AGS', 'CDMX', 'GDL']
     },
     {
@@ -45,16 +47,28 @@ export const CounselingData = [
         icon: talent,
         title: 'Talent & Career',
         subtitle: 'Descubre tus superpoderes',
-        description: '¿Tienes mucho potencial dentro de ti? ¿Quieres aprender a sacarle el máximo provecho? Este programa es para ti. Identifica y desarrolla tus fortalezas, alcanza tus metas y diseña tu plan de vida y carrera.',
+        questions: ['¿Tienes mucho potencial dentro de ti?', '¿Quieres aprender a sacarle el máximo provecho?', '¿Sientes que aún no aprovechas todos tus talentos?'],
+        description: 'Este programa es para ti. Identifica y desarrolla tus fortalezas, alcanza tus metas y diseña tu plan de vida y carrera.',
         campi: ['AGS', 'CDMX']
+    },
+    {
+        id: 'reencuadre',
+        icon: reencuadre,
+        title: 'Reencuadre emocional',
+        subtitle: 'Trabajemos juntos para que encuentres balance y bienestar',
+        questions: ['¿Te cuesta demasiado trabajo sobrellevar algunos aspectos de tu vida?', '¿Tu día a día se ha vuelto poco placentero?', '¿Experimentas angustia o dolor emocional?',],
+        description: 'El reencuadre emocional de SMART Center es un servicio 100 % gratuito, diseñado para ayudarte a encontrar nuevas perspectivas y bienestar. Cuidar nuestra salud mental es fundamental, y en ocasiones, contar con el apoyo de un experto puede marcar la diferencia.',
+        campi: ['AGS', 'CDMX', 'GDL']
     },
     {
         id: 'simulador',
         icon: simulador,
         title: 'Simulador de entrevista laboral',
         subtitle: 'Prepárate para los retos intelectuales y emocionales que enfrentarás al buscar trabajo',
+        questions: ['¿Te aterra enfrentar una entrevista laboral?', '¿Te gustaría saber cómo responder a las preguntas más difíciles?', '¿Quieres mejorar tu comunicación verbal y no verbal?'],
         description: 'Vive un simulador de entrevista laboral para prepararte para el escenario real. ',
         campi: ['AGS', 'CDMX']
     },
 ];
+
 

@@ -89,6 +89,17 @@
 }
 
 
+.serviceQuestion{
+  font-style: italic;
+  font-size: 0.7rem;
+  color: var(--smartGreenMono);
+  border-radius: 5px;
+  margin: 3px;
+}
+
+.line{
+  height: 1px;
+}
 /*-------------------------------*/
 /* end Cards */
 /*-------------------------------*/
