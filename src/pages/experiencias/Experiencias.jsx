@@ -26,6 +26,8 @@ import styles from './Experiencias.module.css'
 
 
 
+
+
 export default function Experiencias() {
 
     /*<------------------------------------------------->
@@ -59,6 +61,7 @@ export default function Experiencias() {
                         details={experience.details}
                         whatIsIt={experience.whatIsIt}
                         whatToExpect={experience.whatToExpect}
+                        instructions={experience.instructions}
                         certificateBool={experience.certificateBool}
                         certificateUrl={experience.certificateUrl}
                         experienceUrl={experience.experienceUrl}

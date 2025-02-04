@@ -135,7 +135,6 @@ header img{
     padding: 0.4rem 0.3rem;
 }
 .instructions ul {
-    text-align: right;
     padding: 0;
 }
 
@@ -143,15 +142,28 @@ header img{
     list-style: none;
     display: flex;
     align-items: center;
-    text-align: left;
+    justify-content: space-between;
     padding: 0.4rem;
+    border-bottom: 2px solid #c0bfbf;
 }
 
-.instructions ul svg {
+.instructionsNumber {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
     font-size: 1.4rem;
-    /* margin-bottom: 0.6rem; */
     margin-right: 0.6rem;
-    color: var(--smartBlue);
+    color: #fff;
+    background-color: var(--smartBlueMono);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    opacity: 0.8;
+}
+
+.instructionsNumber  svg{
+    font-size: 1rem;
 }
 
 .interactive {

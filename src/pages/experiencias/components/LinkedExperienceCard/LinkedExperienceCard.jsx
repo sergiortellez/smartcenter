@@ -33,7 +33,7 @@ import CardContent from '../CardContent/CardContent'
 
 
 
-export default function LinkedExperienceCard({ cardId, cardLogo, cardTitle, details = [], whatIsIt, whatToExpect = [], certificateBool = false, certificateUrl, experienceUrl, campi = [] }) {
+export default function LinkedExperienceCard({ cardId, cardLogo, cardTitle, details = [], whatIsIt, whatToExpect = [], instructions = [], certificateBool = false, certificateUrl, experienceUrl, campi = [] }) {
 
 
   const cover = (
@@ -54,6 +54,7 @@ export default function LinkedExperienceCard({ cardId, cardLogo, cardTitle, deta
       details={details}
       whatIsIt={whatIsIt}
       whatToExpect={whatToExpect}
+      instructions={instructions}
       certificateBool={certificateBool}
       certificateUrl={certificateUrl}
       experienceUrl={experienceUrl}

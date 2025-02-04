@@ -50,7 +50,7 @@ import { faFingerprint, faClock, faHashtag } from '@awesome.me/kit-c09e05c963/ic
 export const LinkedExperiencesData = [
 
     /*<------------------------------------------------->
-    <!-- Leadership (example) 	-->
+    <!-- Leadership 	-->
     <!------------------------------------------------->*/
     {
         cardId: 'leadership',
@@ -67,6 +67,7 @@ export const LinkedExperiencesData = [
             'Corto, entendible, fácil y rápido de hacer.',
             'Recuerda que la plataforma no guardará tu avance, por lo que te recomendamos realizarlo de corrido.'
         ],
+        instructions: ['Aprieta el botón de abajo que dice "¡Empieza ya!"', 'Sigue las instrucciones de la experiencia'],
         certificateBool: true,
         certificateUrl: 'https://docs.google.com/forms/d/e/1FAIpQLScHmIpT0RODx95qMmIz0hoELK159VQUCJvn3YYUqwJ0IDfXgQ/viewform?usp=sf_link',
         experienceUrl: '/experiences/liderazgo/experience/story.html',
@@ -95,6 +96,7 @@ export const LinkedExperiencesData = [
             'Un ejercicio para mejorar tu manera de interactuar con otros.',
             '¡Es la manera más concisa y fácil de conocerte a ti mismo en menos de 20 minutos!'
         ],
+        instructions: ['Aprieta el botón de abajo que dice "¡Empieza ya!"', 'Sigue las instrucciones de la experiencia'],
         certificateBool: true,
         certificateUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSf8sK14NUaUih6LySoKMmIShZfgW7143CynrgGS6vpDm4-evw/viewform?usp=sf_link',
         experienceUrl: '/experiences/communicate/experience/story.html',
@@ -121,6 +123,7 @@ export const LinkedExperiencesData = [
         whatToExpect: [
             'Encontrarás una estrategia concreta para aplicar a cualquier problema que tengas.'
         ],
+        instructions: ['Aprieta el botón de abajo que dice "¡Empieza ya!"', 'Sigue las instrucciones de la experiencia'],
         certificateBool: true,
         certificateUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSck7psffX6KxSTrVb_NnuJTH_tFuhQhPZs1wnAod57O9ZEnZw/viewform?usp=sf_link',
         experienceUrl: '/experiences/resiliencia/experiencia/story.html',
@@ -149,6 +152,7 @@ export const LinkedExperiencesData = [
             'Corto, entendible, fácil y rápido de hacer. ¡No tardarás más de 30 minutos!',
             'Recuerda que la plataforma no guardará tu avance, por lo que te recomendamos realizarlo de corrido.'
         ],
+        instructions: ['Aprieta el botón de abajo que dice "¡Empieza ya!"', 'Sigue las instrucciones de la experiencia'],
         certificateBool: true,
         certificateUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSfD8eNsDupfcJDFnqd3Hw3kgBTlV3azjXkDOmLRTS9FbeXv6Q/viewform?usp=sf_link',
         experienceUrl: '/experiences/negotiate/experience/story.html',
@@ -177,6 +181,7 @@ export const LinkedExperiencesData = [
             'Aplicar una estrategia concreta para conocerte a profundidad.',
             'Recuerda que la plataforma no guardará tu avance, por lo que te recomendamos realizarlo de corrido.'
         ],
+        instructions: ['Aprieta el botón de abajo que dice "¡Empieza ya!"', 'Sigue las instrucciones de la experiencia'],
         certificateBool: true,
         certificateUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSf6yLTyR0TwLb9NgyC66Ha1EmIHO0Pp1k403siux-VLEBe7PA/viewform?usp=sf_link',
         experienceUrl: '/experiences/self/story.html',
@@ -205,6 +210,7 @@ export const LinkedExperiencesData = [
             'No tardarás más de 30 minutos en completarlo.',
             'Recuerda que la plataforma no guardará tu avance.'
         ],
+        instructions: ['Aprieta el botón de abajo que dice "¡Empieza ya!"', 'Sigue las instrucciones de la experiencia'],
         certificateBool: true,
         certificateUrl: 'https://docs.google.com/forms/d/e/1FAIpQLScyfLZi287NFjhMSg1LSzmDNbRQ__X9pEDz7HJ2pm3PYAIKJw/viewform?usp=sf_link',
         experienceUrl: '/experiences/manage/story.html',
@@ -233,6 +239,7 @@ export const LinkedExperiencesData = [
             'Distintos programas de preparación que tenemos para ti.',
             'Información sobre becas y financiamiento.'
         ],
+        instructions: ['Aprieta el botón de abajo que dice "¡Empieza ya!"', 'Sigue las instrucciones de la experiencia'],
         certificateBool: false,
         certificateUrl: '',
         experienceUrl: '/experiences/master/index.html',
@@ -261,6 +268,7 @@ export const LinkedExperiencesData = [
             'Te llevará máximo una hora.',
             'Aprenderás qué es el cambio, el ciclo emocional del cambio y cómo liderar ante cambios inesperados.'
         ],
+        instructions: ['Aprieta el botón de abajo que dice "¡Empieza ya!"', 'Sigue las instrucciones de la experiencia'],
         certificateBool: true,
         certificateUrl: 'https://forms.gle/TgmH8qoj1XouprW39',
         experienceUrl: '/experiences/gestion/index.html',
@@ -289,6 +297,7 @@ export const LinkedExperiencesData = [
             'Proyectos innovadores y aplicables a tu futuro profesional.',
             'Mentoring de impacto y desarrollo de soft skills críticas.'
         ],
+        instructions: ['Aprieta el botón de abajo que dice "¡Empieza ya!"', 'Sigue las instrucciones de la experiencia'],
         certificateBool: false,
         certificateUrl: '',
         experienceUrl: 'https://view.genial.ly/64b945c308d2fa0012d25104/dossier-power-up',
@@ -313,6 +322,7 @@ export const LinkedExperiencesData = [
         whatToExpect: [
             'Obtener constancia y dedicación para lograr resultados firmes y perdurables.'
         ],
+        instructions: ['Aprieta el botón de abajo que dice "¡Empieza ya!"', 'Sigue las instrucciones de la experiencia'],
         certificateBool: false,
         certificateUrl: '',
         experienceUrl: 'https://blackboard.up.edu.mx/ultra/courses/_8900_1/outline',
@@ -337,6 +347,7 @@ export const LinkedExperiencesData = [
         whatToExpect: [
             'Desarrollar la habilidad para afrontar los conflictos y solucionarlos de manera satisfactoria.'
         ],
+        instructions: ['Aprieta el botón de abajo que dice "¡Empieza ya!"', 'Sigue las instrucciones de la experiencia'],
         certificateBool: false,
         certificateUrl: '',
         experienceUrl: 'https://blackboard.up.edu.mx/ultra/courses/_8903_1/outline',
@@ -363,6 +374,7 @@ export const LinkedExperiencesData = [
         whatToExpect: [
             'Identificar qué te lleva a procrastinar, aprender a gestionar mejor tu tiempo y descubrir estrategias prácticas para dejar de posponer lo importante.'
         ],
+        instructions: ['Aprieta el botón de abajo que dice "¡Empieza ya!"', 'Sigue las instrucciones de la experiencia'],
         certificateBool: false,
         certificateUrl: '',
         experienceUrl: 'https://blackboard.up.edu.mx/ultra/courses/_8901_1/outline',
@@ -389,6 +401,7 @@ export const LinkedExperiencesData = [
         whatToExpect: [
             'Manejar el estrés y potencializar mi motivación, personal, académica y profesional.'
         ],
+        instructions: ['Aprieta el botón de abajo que dice "¡Empieza ya!"', 'Sigue las instrucciones de la experiencia'],
         certificateBool: false,
         certificateUrl: '',
         experienceUrl: 'https://blackboard.up.edu.mx/ultra/courses/_8902_1/outline',
@@ -415,6 +428,7 @@ export const LinkedExperiencesData = [
         whatToExpect: [
             'Descubrir el método y las técnicas de estudio que se adapten mejor a tu estilo de aprendizaje.'
         ],
+        instructions: ['Aprieta el botón de abajo que dice "¡Empieza ya!"', 'Sigue las instrucciones de la experiencia'],
         certificateBool: false,
         certificateUrl: '',
         experienceUrl: 'https://blackboard.up.edu.mx/ultra/courses/_8904_1/outline',

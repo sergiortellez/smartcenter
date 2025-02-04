@@ -37,7 +37,7 @@ import Pill from '@components/Pill/Pill'
 //fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 //from sharp collection
-import { faSignsPost, faSquare1, faSquare2, faSquare3, faMedal } from '@awesome.me/kit-c09e05c963/icons/sharp-duotone/solid'
+import { faSignsPost, faDiploma, faFileCertificate } from '@awesome.me/kit-c09e05c963/icons/sharp-duotone/solid'
 //from duotone collection
 import { faBlockQuestion } from '@awesome.me/kit-c09e05c963/icons/duotone/solid'
 
@@ -48,6 +48,7 @@ export default function CardContent({
   details = [],
   whatIsIt,
   whatToExpect = [],
+  instructions = [],
   certificateBool = false,
   certificateUrl,
   experienceUrl
@@ -94,28 +95,27 @@ export default function CardContent({
             </ul>
 
           </div>
-
         </div>
         <div className={styles.descriptions}>
           <div className={`${styles.instructions} ${styles.interactive}`} >
             <header><FontAwesomeIcon icon={faSignsPost} /> Instrucciones</header>
             <ul>
-              <FontAwesomeIcon icon={faSquare1} />
-              <hr />
-              <li> Aprieta el botón de abajo que dice "¡Empieza ya!"</li>
-
-              <FontAwesomeIcon icon={faSquare2} />
-              <hr />
-              <li> Sigue las instrucciones de la experiencia.</li>
-
+              {instructions.map((instruction, index) => (
+                <li key={index}>
+                  <span>{instruction}</span>
+                  <div className={styles.instructionsNumber}> {index + 1} </div>
+                </li>
+              ))}
               {certificateBool && (
                 <>
-                  <FontAwesomeIcon icon={faSquare3} />
-                  <hr />
-                  <li>Haz valer tu esfuerzo y obtén un certificado.</li>
+                  <li>
+                    <span>Haz valer tu esfuerzo y obtén un certificado.</span>
+                    <div className={styles.instructionsNumber}>  <FontAwesomeIcon icon={faDiploma} /> </div>
+                  </li>
+
                   <div className={styles.button}>
                     <a href={certificateUrl} target="_blank" rel="noopener noreferrer">
-                      <FontAwesomeIcon icon={faMedal} /> Obtén un diploma
+                      <FontAwesomeIcon icon={faFileCertificate} /> Obtén un diploma
                     </a>
                   </div>
                 </>
