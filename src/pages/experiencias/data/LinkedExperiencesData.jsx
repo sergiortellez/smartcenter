@@ -322,7 +322,7 @@ export const LinkedExperiencesData = [
         whatToExpect: [
             'Obtener constancia y dedicación para lograr resultados firmes y perdurables.'
         ],
-        instructions: ['Aprieta el botón de abajo que dice "¡Empieza ya!"', 'Sigue las instrucciones de la experiencia'],
+        instructions: ['Aprieta el botón de abajo que dice "¡Empieza ya!"', 'Se te redirigirá a la plataforma de Blackboard', 'Debes iniciar sesión con tu cuenta de la universidad', 'Sigue las instrucciones de la experiencia'],
         certificateBool: false,
         certificateUrl: '',
         experienceUrl: 'https://blackboard.up.edu.mx/ultra/courses/_8900_1/outline',
@@ -332,8 +332,8 @@ export const LinkedExperiencesData = [
     <!--	end Mastering time, trucos para el éxito universitario	-->
     <!------------------------------------------------->*/
     /*<------------------------------------------------->
-<!-- Conflicto: Oportunidad para el crecimiento y aprendizaje -->
-<!------------------------------------------------->*/
+    <!-- Conflicto: Oportunidad para el crecimiento y aprendizaje -->
+    <!------------------------------------------------->*/
     {
         cardId: 'conflictoOportunidad',
         cardLogo: conflictoOportunidadLogo,
@@ -347,7 +347,7 @@ export const LinkedExperiencesData = [
         whatToExpect: [
             'Desarrollar la habilidad para afrontar los conflictos y solucionarlos de manera satisfactoria.'
         ],
-        instructions: ['Aprieta el botón de abajo que dice "¡Empieza ya!"', 'Sigue las instrucciones de la experiencia'],
+        instructions: ['Aprieta el botón de abajo que dice "¡Empieza ya!"', 'Se te redirigirá a la plataforma de Blackboard', 'Debes iniciar sesión con tu cuenta de la universidad', 'Sigue las instrucciones de la experiencia'],
         certificateBool: false,
         certificateUrl: '',
         experienceUrl: 'https://blackboard.up.edu.mx/ultra/courses/_8903_1/outline',
@@ -374,7 +374,7 @@ export const LinkedExperiencesData = [
         whatToExpect: [
             'Identificar qué te lleva a procrastinar, aprender a gestionar mejor tu tiempo y descubrir estrategias prácticas para dejar de posponer lo importante.'
         ],
-        instructions: ['Aprieta el botón de abajo que dice "¡Empieza ya!"', 'Sigue las instrucciones de la experiencia'],
+        instructions: ['Aprieta el botón de abajo que dice "¡Empieza ya!"', 'Se te redirigirá a la plataforma de Blackboard', 'Debes iniciar sesión con tu cuenta de la universidad', 'Sigue las instrucciones de la experiencia'],
         certificateBool: false,
         certificateUrl: '',
         experienceUrl: 'https://blackboard.up.edu.mx/ultra/courses/_8901_1/outline',
@@ -401,7 +401,7 @@ export const LinkedExperiencesData = [
         whatToExpect: [
             'Manejar el estrés y potencializar mi motivación, personal, académica y profesional.'
         ],
-        instructions: ['Aprieta el botón de abajo que dice "¡Empieza ya!"', 'Sigue las instrucciones de la experiencia'],
+        instructions: ['Aprieta el botón de abajo que dice "¡Empieza ya!"', 'Se te redirigirá a la plataforma de Blackboard', 'Debes iniciar sesión con tu cuenta de la universidad', 'Sigue las instrucciones de la experiencia'],
         certificateBool: false,
         certificateUrl: '',
         experienceUrl: 'https://blackboard.up.edu.mx/ultra/courses/_8902_1/outline',
@@ -428,7 +428,7 @@ export const LinkedExperiencesData = [
         whatToExpect: [
             'Descubrir el método y las técnicas de estudio que se adapten mejor a tu estilo de aprendizaje.'
         ],
-        instructions: ['Aprieta el botón de abajo que dice "¡Empieza ya!"', 'Sigue las instrucciones de la experiencia'],
+        instructions: ['Aprieta el botón de abajo que dice "¡Empieza ya!"', 'Se te redirigirá a la plataforma de Blackboard', 'Debes iniciar sesión con tu cuenta de la universidad', 'Sigue las instrucciones de la experiencia'],
         certificateBool: false,
         certificateUrl: '',
         experienceUrl: 'https://blackboard.up.edu.mx/ultra/courses/_8904_1/outline',
