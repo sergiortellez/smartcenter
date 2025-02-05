@@ -71,8 +71,6 @@
             "WelcomeToSmart WelcomeToSmart"
             "DigitalExperiences DigitalExperiences"
             "ParAndCar ParAndCar"
-            "WhatIsCar WhatIsCar"
-            "WhatIsCarExpanded WhatIsCarExpanded"
             "WhatIsCounseling WhatIsCounseling"
             "WhatIsCounselingExpanded WhatIsCounselingExpanded"
             "Counseling Counseling"
@@ -96,8 +94,8 @@
         grid-template-areas: 
         "WelcomeToSmart DigitalExperiences  DigitalExperiences"
 
-        "ParAndCar ParAndCar WhatIsCar"
-        "ParAndCar ParAndCar WhatIsCar"
+        "ParAndCar ParAndCar ParAndCar"
+        "ParAndCar ParAndCar ParAndCar"
         "WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded"
 
         "WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded"
@@ -126,8 +124,8 @@
         grid-template-areas: 
             "WelcomeToSmart WelcomeToSmart DigitalExperiences DigitalExperiences DigitalExperiences DigitalExperiences"
 
-            "ParAndCar ParAndCar ParAndCar ParAndCar WhatIsCar WhatIsCar"
-            "ParAndCar ParAndCar ParAndCar ParAndCar WhatIsCar WhatIsCar"
+            "ParAndCar ParAndCar ParAndCar ParAndCar ParAndCar ParAndCar"
+            "ParAndCar ParAndCar ParAndCar ParAndCar ParAndCar ParAndCar"
             "WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded"
 
             "WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded"
@@ -164,9 +162,7 @@
             "InPerson InPerson"
 
             "ParAndCar ParAndCar"
-            "WhatIsParExpanded WhatIsParExpanded"
-            "WhatIsPar WhatIsCar"
-            "WhatIsCarExpanded WhatIsCarExpanded"
+            
 
             "WhatIsCounseling WhatIsCounseling"
 
@@ -196,10 +192,10 @@
         "WelcomeToSmart DigitalExperiences  DigitalExperiences"
         "InPerson          InPerson         InPerson"
 
-        "WhatIsParExpanded WhatIsParExpanded WhatIsParExpanded"
-        "ParAndCar ParAndCar WhatIsPar"
-        "ParAndCar ParAndCar WhatIsCar"
-        "WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded"
+       
+        "ParAndCar ParAndCar ParAndCar"
+        "ParAndCar ParAndCar ParAndCar"
+        
 
         "WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded"
         "WhatIsCounseling  Counseling Counseling"
@@ -227,10 +223,10 @@
             "WelcomeToSmart WelcomeToSmart DigitalExperiences DigitalExperiences DigitalExperiences DigitalExperiences"
             "InPerson InPerson InPerson InPerson InPerson InPerson"
 
-             "WhatIsParExpanded WhatIsParExpanded WhatIsParExpanded WhatIsParExpanded WhatIsParExpanded WhatIsParExpanded"
-            "ParAndCar ParAndCar ParAndCar ParAndCar WhatIsPar WhatIsPar"
-            "ParAndCar ParAndCar ParAndCar ParAndCar WhatIsCar WhatIsCar"
-            "WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded WhatIsCarExpanded"
+            
+            "ParAndCar ParAndCar ParAndCar ParAndCar ParAndCar ParAndCar"
+            "ParAndCar ParAndCar ParAndCar ParAndCar ParAndCar ParAndCar"
+        
 
             "WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded WhatIsCounselingExpanded"
             "WhatIsCounseling WhatIsCounseling Counseling Counseling Counseling Counseling"
