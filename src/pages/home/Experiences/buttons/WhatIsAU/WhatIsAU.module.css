@@ -8,11 +8,8 @@
 /* button */
 /*-------------------------------*/
 
-.subtitle{
-    display: block;
-    font-size: 0.7rem;
-    text-align: center;
-
+.title{
+    font-size: 1.5rem;
 }
 
 /*-------------------------------*/
@@ -22,49 +19,39 @@
 /*-------------------------------*/
 /* layout */
 /*-------------------------------*/
+
+
+.image{
+    float: none;
+    display: block;
+    width: 90%; /* Set the image to take up the full width of the container */
+    height: auto; /* Set the height to automatically adjust to maintain the aspect ratio */
+    border-radius: 15px;
+    margin: 1rem auto;
+}
+
 /* tablet portrait up */
 @media (min-width: 768px) {
-    .container {
+    .image{
+        float: right;
+        margin: 0 0 1em 1em;
+        max-width: 60%; 
+    }
+}
+/* end tablet up */
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    .container{
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        justify-content: center;
         gap: 2rem;
     }
 }
 /* end tablet up */
 
-.definition{
-    padding-bottom: 2rem;
-}
-.image{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.image img {
-  width: 70%; /* Set the image to take up the full width of the container */
-  height: auto; /* Set the height to automatically adjust to maintain the aspect ratio */
-  border-radius: 15px;
-
-}
-
-
-/* tablet portrait */
-@media (min-width: 768px ) and (max-width: 1024.1px) {
-    .image {
-        flex: 1;
-    }
-
-    .definition {
-        flex: 1; 
-    }
-    .image img {
-     width: 100%; /* Set the image to take up the full width of the container */
-    }
-
-}
-/* end tablet */
 
 /*-------------------------------*/
 /* end layout */
