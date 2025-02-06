@@ -14,9 +14,15 @@
 
 .cardBase {
   border-radius: var(--cardCurve);
-  padding: 1rem;
+  padding: 0.4rem;
 }
-
+/* tablet portrait up */
+@media (min-width: 768px) {
+  .cardBase {
+    padding: 1rem;
+  }
+}
+/* end tablet up */
 /*-------------------------------*/
 /* end base styles */
 /*-------------------------------*/

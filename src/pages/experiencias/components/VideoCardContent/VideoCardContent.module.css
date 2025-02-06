@@ -85,7 +85,7 @@ header img{
 .descriptions .whatToExpect,
 .descriptions .instructions {
     background-color: #d1cccc;
-    border-radius: 7px;
+    border-radius: 9px;
 }
 
 .descriptions .whatIsIt header,
@@ -145,6 +145,7 @@ header img{
     justify-content: space-between;
     padding: 0.4rem;
     border-bottom: 2px solid #c0bfbf;
+    text-wrap: balance;
 }
 
 .instructionsNumber {
@@ -154,22 +155,34 @@ header img{
 
     font-size: 1.4rem;
     margin-right: 0.6rem;
+    margin-left: 0.4rem;
     color: #fff;
     background-color: var(--smartBlueMono);
     border-radius: 50%;
-    width: 2.2rem;
-    height: 2.2rem;
+    min-width: 2.1rem;
+    min-height: 2.1rem;
     opacity: 0.8;
 }
 
 
 .instructionsNumber  svg{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
-
+.wrapAppointmentIcons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.3rem;
+}
+.appointmentButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .appointmentIcon{
     font-size: 1.4rem;
     color: var(--smartBlueMono);
+    margin-right: 0.6rem;
 }
 
 .interactive {

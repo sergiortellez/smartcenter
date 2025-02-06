@@ -23,9 +23,9 @@ import Pill from '@components/Pill/Pill'
 //fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 //from sharp collection
-import { faSignsPost, faDiploma, faFileCertificate, faCirclePlay, faRectanglePro, faCalendars } from '@awesome.me/kit-c09e05c963/icons/sharp-duotone/solid'
+import { faSignsPost, faDiploma, faFileCertificate, faCirclePlay, faCalendars } from '@awesome.me/kit-c09e05c963/icons/sharp-duotone/solid'
 //from duotone collection
-import { faBlockQuestion } from '@awesome.me/kit-c09e05c963/icons/duotone/solid'
+import { faBlockQuestion, faRectanglePro } from '@awesome.me/kit-c09e05c963/icons/duotone/solid'
 
 export default function VideoCardContent({
   cardId,
@@ -100,16 +100,17 @@ export default function VideoCardContent({
               {appointmentBool && (
                 <>
                   <li>
-                    <span>Si lo crees necesario agenda una sesión individual de coaching con uno de nuestros expertos.</span>
-                    <div className={styles.appointmentIcon}>  <FontAwesomeIcon icon={faRectanglePro} /> </div>
+                    <span>Si lo crees necesario agenda una sesión individual 121 (uno a uno) con uno de nuestros expertos.</span>
+                    <div className={styles.wrapAppointmentIcons} >
+                      <div className={styles.button}>
+                        <NavLink to='/citas' className={styles.appointmentButton}  >
+                          <FontAwesomeIcon icon={faCalendars} /> Cita
+                        </NavLink>
+                      </div>
+                      <div className={styles.appointmentIcon}>  <FontAwesomeIcon icon={faRectanglePro} /> </div>
+                    </div>
+
                   </li>
-                  <div className={styles.button}>
-                    <NavLink to='/citas' >
-                      <FontAwesomeIcon icon={faCalendars} /> Cita
-                    </NavLink>
-                  </div>
-
-
                 </>
               )}
               {certificateBool && (
