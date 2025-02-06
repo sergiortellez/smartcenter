@@ -46,11 +46,11 @@ const oneToOneText = (
         </p>
         <p>Si vives lejos o prefieres el contacto remoto <FontAwesomeIcon icon={faHouseLaptop} /> nuestra <span className={styles.resaltado}>opción online</span> es para ti.
         </p>
-        <hr />
+        {/* <hr />
         <h3>Metodología</h3>
         <p>¿Conoces el Counseling de la Universidad Panamericana? Es una metodología que te ayuda a <span className={styles.resaltado} >mejorar en situaciones complicadas</span> o desarrollar habilidades específicas. Básicamente, te ayuda a <span className={styles.resaltado}> construir tu
             mejor versión</span>. </p>
-        <p>Fue desarrollada en el SMART Center y ha ayudado a muchos estudiantes como tú a salir adelante.</p>
+        <p>Fue desarrollada en el SMART Center y ha ayudado a muchos estudiantes como tú a salir adelante.</p> */}
     </>
 )
 
@@ -61,13 +61,13 @@ const oneToOneTextGdl = (
             <br /> ¡Uno de nuestros <b>expertos</b> puede ayudarte a
             crear un <span className={styles.resaltado}>plan personalizado</span> de <b>estrategias y hábitos de estudio</b>!
         </p>
-        <p>Si vives lejos o prefieres el contacto remoto <FontAwesomeIcon icon={faHouseLaptop} /> nuestra <span className={styles.resaltado}>opción online</span> es para ti.
-        </p>
-        <hr />
-        <h3>Metodología</h3>
+        {/* <p>Si vives lejos o prefieres el contacto remoto <FontAwesomeIcon icon={faHouseLaptop} /> nuestra <span className={styles.resaltado}>opción online</span> es para ti.
+        </p> */}
+
+        {/* <h3>Metodología</h3>
         <p>¿Conoces el Coaching de la Universidad Panamericana? Es una metodología que te ofrece <span className={styles.resaltado} >acompañamiento personalizado</span> si estás en los últimos años de la carrera. Uno de nuestros coaches, con entrenamiento especial, te puede ayudar a <span className={styles.resaltado}> lograr tus objetivos</span> personales y profesionales. </p>
 
-        <p>Fue desarrollada en el SMART Center Guadalajara y ha ayudado a muchos estudiantes como tú a triunfar.</p>
+        <p>Fue desarrollada en el SMART Center Guadalajara y ha ayudado a muchos estudiantes como tú a triunfar.</p> */}
     </>
 )
 
