@@ -1,0 +1,229 @@
+/*###################################################*/
+/*...................................................*/
+/* ParAndCarCardContent(component) */
+/*...................................................*/
+/*###################################################*/
+
+/*-------------------------------*/
+/* header */
+/*-------------------------------*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+}
+header img{
+    width: 7rem;
+    height: auto;
+    margin-right: 0.6rem;
+}
+.cardTitle{
+    font-size: 2rem;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.pills{
+    display: flex;
+    gap: 0.5rem;
+}
+/*-------------------------------*/
+/* end header */
+/*-------------------------------*/
+
+
+/*-------------------------------*/
+/* Content Layout */
+/*-------------------------------*/
+
+
+.contentLayout {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .contentLayout {
+        flex-direction: row;
+    }
+}
+
+/* end tablet up */
+
+/*-------------------------------*/
+/* end Content Layout */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* Data */
+/*-------------------------------*/
+
+.descriptions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+/* desktop up */
+@media (min-width: 1600px) {
+    .descriptions .whatIsIt{
+        min-width: 20rem;
+    }
+   
+}
+/* end desktop up */
+ 
+.descriptions .whatIsIt,
+.descriptions .whatToExpect {
+    background-color: #d1cccc;
+    border-radius: 9px;
+}
+
+.descriptions .whatIsIt header,
+.descriptions .whatToExpect header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--smartBlue);
+    color: #ffffff;
+    padding: 1rem;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    text-align: right;
+    font-size: 1.4rem;
+}
+
+.descriptions .whatIsIt header svg,
+.descriptions .whatToExpect header svg {
+    /* color: var(--smartBlueMono); */
+    font-size: 2rem;
+}
+
+.descriptions .whatIsIt p,
+.descriptions .whatIsIt span {
+    padding: 1rem;
+}
+
+/* tablet portrait */
+@media (min-width: 768px) and (max-width: 1999px) {
+
+    .descriptions .whatIsIt p,
+    .descriptions .whatToExpect ul{
+        font-size: 0.8rem;
+    }
+}
+
+/* end tablet */
+.whatToExpect ul {
+    padding: 0.6rem;
+    margin: 0;
+    margin-left: 1.3rem;
+}
+.whatToExpect li {
+    padding: 0.4rem 0.3rem;
+}
+
+/*-------------------------------*/
+/* end Data */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* gallery */
+/*-------------------------------*/
+
+.gallery {
+    
+}
+
+.buttons{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .buttons{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+/* end tablet up */
+
+/*-------------------------------*/
+/* end gallery */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* buttons */
+/*-------------------------------*/
+
+
+.button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+    margin: 1rem;
+    color:#fff;
+    background-color: var(--smartBlueMono);
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 0.5rem;
+   
+    transition: scale 300ms ease;
+    -webkit-transition: scale 300ms ease;
+    -moz-transition: scale 300ms ease;
+    -ms-transition: scale 300ms ease;
+    -o-transition: scale 300ms ease;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+
+.button  svg {
+    font-size: 2rem;
+    color: #fff;
+    margin-right: 1rem;
+}
+
+.button:hover {
+    background-color: var(--smartBlue);
+    scale: 0.95;
+}
+
+.justMobile{
+    display: none;
+}
+
+/* cellphone landscape down */
+@media (max-width: 767.98px) {
+    .justMobile{
+        display: flex;
+    }
+}
+/* end cellphone landscape down */
+
+
+/*-------------------------------*/
+/* end buttons */
+/*-------------------------------*/
+
+
+/*###################################################*/
+/*...................................................*/
+/* end ParAndCarCardContent(component) */
+/*...................................................*/
+/*###################################################*/
