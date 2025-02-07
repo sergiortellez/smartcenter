@@ -6,11 +6,11 @@
   "scripts": {
     "dev-network": "./dev-network.sh",
     "dev": "vite",
-    "build": "vite build",
-    "deploy:ghpages": "vite build && cp dist/index.html dist/404.html && gh-pages -d dist --branch=gh-pages",
+    "build:university": "vite build --mode production",
+    "deploy:ghpages": "vite build --mode test && cp dist/index.html dist/404.html && gh-pages -d dist --branch=gh-pages",
     "lint": "eslint .",
     "preview": "vite preview",
-    "build:zip": "./build-zip.sh"
+    "build:zip": "vite build --mode production && ./build-zip.sh"
   },
   "dependencies": {
     "@awesome.me/kit-c09e05c963": "^1.0.6",
