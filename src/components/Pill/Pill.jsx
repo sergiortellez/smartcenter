@@ -27,7 +27,7 @@ export default function Pill({ icon, text, transitionName = '' }) {
 
   return (
     <div className={styles.pill} style={{ viewTransitionName: transitionName }}>
-      <FontAwesomeIcon icon={icon} />
+      {icon && <FontAwesomeIcon icon={icon} />}
       <span className={styles.text} >{text}</span>
     </div>
   );
