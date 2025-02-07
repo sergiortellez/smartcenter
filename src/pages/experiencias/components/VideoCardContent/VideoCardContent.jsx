@@ -132,7 +132,7 @@ export default function VideoCardContent({
         </div>
         <div className={styles.playlist}>
           {playList.map((video, index) => (
-            <NavLink to={`/video/${video.id}`} key={video.id} className={`${styles.videoCard} ${video.isSub ? styles.subVid : ''}`}  >
+            <NavLink to={`/experiencias/${video.id}`} key={video.id} className={`${styles.videoCard} ${video.isSub ? styles.subVid : ''}`}  >
               <img src={`https://img.youtube.com/vi/${video.id}/0.jpg`} alt={`${video.title} preview photo`} />
               <div>
                 <h4> <FontAwesomeIcon icon={faCirclePlay} /> {video.title}</h4>

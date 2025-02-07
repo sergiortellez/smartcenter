@@ -1,0 +1,195 @@
+/*###################################################*/
+/*...................................................*/
+/* video(page) */
+/*...................................................*/
+/*###################################################*/
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - var(--navHeight));
+    min-width: 100%;
+    background-color: #c2bebe;
+}
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    .container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+
+
+    }
+}
+
+/* end tablet up */
+
+/*-------------------------------*/
+/* video container */
+/*-------------------------------*/
+
+.videoContainer {
+    min-width: 70%;
+    min-height: 100%;
+
+}
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+
+    .videoContainer {
+        padding: 1rem;
+    }
+}
+
+/* end tablet up */
+
+
+.videoContainer iframe,
+.videoContainer object,
+.videoContainer embed {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+
+}
+
+.videoContainer h2 {
+    margin-left: 1rem;
+}
+
+/*-------------------------------*/
+/* end video container */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* aside container */
+/*-------------------------------*/
+
+aside {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    flex: 1 1 auto;
+    align-self: stretch;
+    padding: 1rem;
+}
+
+
+
+aside .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+}
+
+aside .buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    text-decoration: none;
+    background-color: var(--customCourse);
+    color: #ffffff;
+    padding: 1rem;
+
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+
+    transition: scale 300ms ease;
+    -webkit-transition: scale 300ms ease;
+    -moz-transition: scale 300ms ease;
+    -ms-transition: scale 300ms ease;
+    -o-transition: scale 300ms ease;
+}
+
+aside .buttons a:hover {
+    color: var(--customCourse);
+    background-color: var(--customCourseMono);
+    scale: 0.92;
+}
+
+/* ---downloads--- */
+
+.downloads {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+
+}
+
+.downloads span {
+    color: #a4a1a1;
+
+}
+
+.downloads a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: var(--customCourse);
+    padding: 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+
+    transition: scale 300ms ease;
+    -webkit-transition: scale 300ms ease;
+    -moz-transition: scale 300ms ease;
+    -ms-transition: scale 300ms ease;
+    -o-transition: scale 300ms ease;
+}
+
+.downloads a svg {
+    font-size: 2rem;
+    margin-right: 1.3rem;
+}
+
+.downloads a:hover {
+    color: var(--customCourse);
+    background-color: var(--customCourseMono);
+    scale: 0.92;
+
+}
+
+.downloads a:hover span {
+    color: var(--customCourse);
+}
+
+/* ---end downloads--- */
+
+aside header {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+aside header img {
+    width: 6rem;
+}
+
+/*-------------------------------*/
+/* end aside container */
+/*-------------------------------*/
+
+/*###################################################*/
+/*...................................................*/
+/* end video(page) */
+/*...................................................*/
+/*###################################################*/
