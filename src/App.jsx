@@ -20,7 +20,7 @@ import Lectura from './pages/dpi/Lectura'
 import Reporte from './pages/dpi/Reporte'
 import Experiencias from './pages/experiencias/Experiencias'
 import Video from './pages/experiencias/Video'
-import Catalogo from './pages/pyc/Catalogo'
+import Catalog from './pages/pyc/Catalog'
 import Presenciales from './pages/presenciales/Presenciales'
 
 
@@ -59,7 +59,7 @@ function App() {
           <Route path="/dpi/lectura" element={<Lectura />} />
           <Route path="/dpi/reporte/:id" element={<Reporte />} />
           <Route path="/presenciales" element={<Presenciales />} />
-          <Route path="/pyc/catalogo" element={<Catalogo />} />
+          <Route path="/pyc/catalogo" element={<Catalog />} />
           <Route path="/experiencias" element={<Experiencias />} />
           <Route path='/experiencias/:id' element={<Video />} />
           <Route path="*" element={<h1>Página no encontrada.</h1>} />
