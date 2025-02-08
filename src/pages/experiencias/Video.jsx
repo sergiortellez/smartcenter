@@ -12,11 +12,12 @@
 //-----------------------imports---------------------
 
 //React
-import { useParams } from 'react-router-dom'
+import { useParams, NavLink } from 'react-router-dom'
+
 
 
 //components
-
+import YoutubeEmbed from '@components/YoutubeEmbed/YoutubeEmbed';
 
 //context
 
@@ -27,80 +28,128 @@ import { useParams } from 'react-router-dom'
 //styles
 import styles from './Video.module.css'
 
+//FontAwesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCloudArrowDown, faFilePdf, faImages, faListCheck, faFile } from '@awesome.me/kit-c09e05c963/icons/duotone/solid'
+import { faAppStoreIos } from '@awesome.me/kit-c09e05c963/icons/classic/brands';
+
+//data
+import { VideoPlayerData } from './data/VideoPageData';
+
+
 
 export default function Video({
     id = '',
     title = '',
-    nextVideo = '',
     prevVideo = '',
+    nextVideo = '',
     resources = [],
     optionalResources = [],
     optionalResourcesSubTitle = '',
     originExperience = '',
     originExperienceLogo = null
 }) {
+    //get id from url
     const params = useParams()
-    console.log(params.id)
+    //get current video from data
+    const CurrentVideo = VideoPlayerData.find(video => video.id === params.id)
+
+    //set current video data
+    if (CurrentVideo) {
+        id = CurrentVideo.id
+        title = CurrentVideo.title
+        prevVideo = CurrentVideo.prevVideo
+        nextVideo = CurrentVideo.nextVideo
+        resources = CurrentVideo.resources
+        optionalResources = CurrentVideo.optionalResources
+        optionalResourcesSubTitle = CurrentVideo.optionalResourcesSubTitle
+        originExperience = CurrentVideo.originExperience
+        originExperienceLogo = CurrentVideo.originExperienceLogo
+    }
+    /*<------------------------------------------------->
+    <!--	get resource icon	-->
+    <!------------------------------------------------->*/
+    const getResourceIcon = (type) => {
+        switch (type) {
+            case 'pdf':
+                return faFilePdf
+            case 'image':
+                return faImages
+            case 'form':
+                return faListCheck
+            case 'app':
+                return faAppStoreIos
+            default:
+                return faFile
+
+        }
+    }
+    /*<!------------------------------------------------->
+    <!--	end get resource icon	-->
+    <!------------------------------------------------->*/
+
+
     /*<------------------------------------------------->
     <!--	Render Logic	-->
     <!------------------------------------------------->*/
     return (
-        <section className={styles.container} >
+        <div className={styles.container}>
 
             <main className={styles.videoContainer} >
 
-                <iframe class="frame-video" id="ytplayer" type="text/html" src="https://www.youtube.com/embed/v7QYFEiEKtQ?loop=1&color=white&modestbranding=1&enablejsapi=1&showinfo=0" frameborder="0" allow="accelerometer;  clipboard-write; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
+                <YoutubeEmbed
+                    videoId={id}
+                    containerClassName='videoContainer'
+                />
 
-                <h2 class="animate__animated animate__bounceInLeft animate__delay-0.8s">Es momento de distinguirse.</h2>
+                <h2>{title}</h2>
             </main>
 
 
 
-            <aside class="animate__animated animate__bounceInRight animate__delay-0.8s">
-                <div class="buttons">
+            <aside>
+                <nav className={styles.navigation}>
+                    {prevVideo && <NavLink to={`/experiencias/${prevVideo}`}>Anterior</NavLink>}
+                    {nextVideo && <NavLink to={`/experiencias/${nextVideo}`}>Siguiente</NavLink>}
+                </nav>
+                <div className={styles.downloads} >
+                    <h2>Recursos <FontAwesomeIcon icon={faCloudArrowDown} /></h2>
 
-                    <a href="0.html" class="prev">Anterior</a>
-                    <a href="2.html" class="next">Siguiente</a>
+                    {resources.length === 0 && optionalResources.length === 0 && (
+                        <span>Este video no contiene recursos</span>
+                    )}
+
+                    {resources.map((resource, index) => (
+                        <a key={`${index}-resources`} href={resource.url} target="_blank">
+
+                            <FontAwesomeIcon icon={getResourceIcon(resource.type)} /> <span>{resource.name}</span>
+                        </a>
+                    ))}
+
+                    {optionalResources.length > 0 && (
+                        <>
+                            <hr />
+                            <h3>{optionalResourcesSubTitle}</h3>
+                            {optionalResources.map((resource, index) => (
+
+                                <a key={`${index}-optionalResources`} href={resource.url} target="_blank">
+                                    <FontAwesomeIcon icon={getResourceIcon(resource.type)} /> <span>{resource.name}</span></a>
+                            ))}
+                        </>
+                    )}
+
+
+
+
                 </div>
-                <div class="downloads">
-                    <h2>Recursos <i class="fa-duotone fa-cloud-arrow-down"></i></h2>
-
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeljqKex6gVtNecdmbg1eMNM8UZncUh1YnZwcpzTQJYOyviEw/viewform?usp=sharing" target="_blank">
-                        <i class="fa-duotone fa-list-check"></i> <span>Armar tu pitch</span>
-                    </a>
-                    <hr />
-                    <h3> Te ayudamos a conocerte (opcional)<i class="fa-duotone fa-solid fa-image-polaroid-user"></i> </h3>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfg_OosGrUfc7J_zY13KhnOvBiTCp2JIdaPpXjdewuousu_cQ/viewform?usp=sharing" target="_blank">
-                        <i class="fa-duotone fa-list-check"></i> <span>Quiero conocerme</span>
-                    </a>
-                    <a href="https://drive.google.com/file/d/1YYgpCbzJpz4XFLfrcxq0A-FkiJ4xvGSS/view" target="_blank">
-                        <i class="fa-duotone fa-file-pdf"></i> <span>5 pasos para realizar y descargar las pruebas</span>
-                    </a>
-
-                    <a href="https://drive.google.com/file/d/1rLjxSdPYzID8wSlCJNsfpd1n-cHei09Q/view" target="_blank">
-                        <i class="fa-duotone fa-file-pdf"></i> <span>Interpreta tus resultados</span>
-                    </a>
-
-                    <a href="https://drive.google.com/file/d/1GjVjGJ3nS6qCvywQikrk8GE6blsMsOt9/view" target="_blank">
-                        <i class="fa-duotone fa-file-pdf"></i> <span>Nombre del recurso</span>
-                    </a>
-                    <a href="https://drive.google.com/file/d/1GjVjGJ3nS6qCvywQikrk8GE6blsMsOt9/view" target="_blank">
-                        <i class="fa-duotone fa-list-check"></i> <span>Nombre del recurso</span>
-                    </a>
-                    <a href="https://drive.google.com/file/d/1GjVjGJ3nS6qCvywQikrk8GE6blsMsOt9/view" target="_blank">
-                        <i class="fa-duotone fa-images"></i> <span>Nombre del recurso</span>
-                    </a>
-                </div>
-                <header>
-                    <h1>Mi mejor versión</h1>
-                    <img src="../../assets/images/experiencias/version.webp" alt="mi mejor versión" />
+                <header className={styles.originExperience}>
+                    <h1>{originExperience}</h1>
+                    {originExperienceLogo && <img src={originExperienceLogo} alt="mi mejor versión" />}
                 </header>
             </aside>
 
 
-        </section>
+        </div>
     )
     /*<!------------------------------------------------->
     <!--	end Render Logic	-->

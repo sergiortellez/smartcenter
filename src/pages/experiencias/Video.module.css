@@ -9,15 +9,24 @@
     display: flex;
     flex-direction: column;
     min-height: calc(100vh - var(--navHeight));
-    min-width: 100%;
-    background-color: #c2bebe;
+    max-width: 1824px;
+    margin: 0rem auto !important;
+    float: none !important;
+   
+    
 }
-
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .container{
+        padding-top: calc(1rem + var(--navHeight));
+    }
+}
+/* end tablet up */
 /* tablet landscape up */
 @media (min-width: 1024.1px) {
     .container {
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         justify-content: flex-start;
 
 
@@ -52,8 +61,18 @@
 .videoContainer embed {
     aspect-ratio: 16 / 9;
     width: 100%;
-
 }
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    
+    .videoContainer iframe,
+    .videoContainer object,
+    .videoContainer embed {
+         border-radius: 9px;
+    }
+}
+/* end tablet up */
+
 
 .videoContainer h2 {
     margin-left: 1rem;
@@ -78,21 +97,23 @@ aside {
 
 
 
-aside .buttons {
+aside .navigation {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 2px;
+    justify-content: flex-end;
+    gap: 1rem;
 }
 
-aside .buttons a {
+aside .navigation a {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
     text-decoration: none;
-    background-color: var(--customCourse);
-    color: #ffffff;
+    background-color: var(--primary);
+    /* border: var(--smartBlueMono) 1px solid; */
+    color: #fff;
+    font-size: 1.3rem;
     padding: 1rem;
 
     border-radius: 7px;
@@ -108,10 +129,11 @@ aside .buttons a {
     -o-transition: scale 300ms ease;
 }
 
-aside .buttons a:hover {
-    color: var(--customCourse);
-    background-color: var(--customCourseMono);
+aside .navigation a:hover,
+ aside .navigation a:active{
+    background-color: var(--smartYellowMono);
     scale: 0.92;
+    color: #ffffff;
 }
 
 /* ---downloads--- */
@@ -127,7 +149,7 @@ aside .buttons a:hover {
 }
 
 .downloads span {
-    color: #a4a1a1;
+    color: #a9a9a9;
 
 }
 
@@ -135,7 +157,7 @@ aside .buttons a:hover {
     display: flex;
     align-items: center;
     width: 100%;
-    background-color: var(--customCourse);
+    background-color: var(--smartBlueMono);
     padding: 1rem;
     color: #ffffff;
     text-decoration: none;
@@ -160,8 +182,8 @@ aside .buttons a:hover {
 }
 
 .downloads a:hover {
-    color: var(--customCourse);
-    background-color: var(--customCourseMono);
+    color: var(--background);
+    background-color: var(--smartBlue);
     scale: 0.92;
 
 }
@@ -172,7 +194,7 @@ aside .buttons a:hover {
 
 /* ---end downloads--- */
 
-aside header {
+aside .originExperience {
     margin-top: auto;
     display: flex;
     align-items: center;
@@ -180,7 +202,7 @@ aside header {
 
 }
 
-aside header img {
+aside .originExperience img {
     width: 6rem;
 }
 
