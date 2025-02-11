@@ -313,6 +313,275 @@ export const VideoPlayerData = [
         originExperienceLogo: cvmpLogo
     },
     /*<------------------------------------------------->
+    <!-- Recreando mi vida 	-->
+    <!------------------------------------------------->*/
+    // 1. ¿De qué está hecha mi vida?
+    {
+        id: 't0XERxrQcV4',
+        title: '¿De qué está hecha mi vida?',
+        prevVideo: null,
+        nextVideo: '6LwDe3aRt_g',
+        resources: [
+            {
+                name: 'Ejercicio 1',
+                url: 'https://drive.google.com/file/d/1WgohDGhzqggPdTpL-ohTriE9OvyS57PP/view',
+                type: 'pdf'
+            }
+        ],
+        optionalResources: [],
+        optionalResourcesSubTitle: '',
+        originExperience: 'Recreando mi vida',
+        originExperienceLogo: recreandoLogo
+    },
+
+    // 2. ¿Cómo veo y vivo mi vida?
+    {
+        id: '6LwDe3aRt_g',
+        title: '¿Cómo veo y vivo mi vida?',
+        prevVideo: 't0XERxrQcV4',
+        nextVideo: 'itbs2yaUXJI',
+        resources: [
+            {
+                name: 'Ejercicio 2',
+                url: 'https://drive.google.com/file/d/1M5ot9mRd3mlHTVaT2Eq7jKL0EXK865HN/view',
+                type: 'pdf'
+            }
+        ],
+        optionalResources: [],
+        optionalResourcesSubTitle: '',
+        originExperience: 'Recreando mi vida',
+        originExperienceLogo: recreandoLogo
+    },
+
+    // 3. ¿Cómo me percibo?
+    {
+        id: 'itbs2yaUXJI',
+        title: '¿Cómo me percibo?',
+        prevVideo: '6LwDe3aRt_g',
+        nextVideo: 'Urc_u6z9T-0',
+        resources: [
+            {
+                name: 'Ejercicio 3',
+                url: 'https://drive.google.com/file/d/13FKvyWXX6ohcbYMqfU8wuohz5sf4xVhk/view',
+                type: 'pdf'
+            }
+        ],
+        optionalResources: [],
+        optionalResourcesSubTitle: '',
+        originExperience: 'Recreando mi vida',
+        originExperienceLogo: recreandoLogo
+    },
+
+    // 4. Personalidad
+    {
+        id: 'Urc_u6z9T-0',
+        title: 'Personalidad',
+        prevVideo: 'itbs2yaUXJI',
+        nextVideo: 'SEcKa-PaBu4',
+        resources: [
+            {
+                name: 'Ejercicio 4',
+                url: 'https://drive.google.com/file/d/1JlB9O3jHTkUYJrfbojmE_KuyIlmpeGs9/view',
+                type: 'pdf'
+            }
+        ],
+        optionalResources: [],
+        optionalResourcesSubTitle: '',
+        originExperience: 'Recreando mi vida',
+        originExperienceLogo: recreandoLogo
+    },
+
+    // 5. ¿Cómo me ven los demás?
+    {
+        id: 'SEcKa-PaBu4',
+        title: '¿Cómo me ven los demás?',
+        prevVideo: 'Urc_u6z9T-0',
+        nextVideo: 'QUvNOrQR7IE',
+        resources: [
+            {
+                name: 'ejercicio 5',
+                url: 'https://drive.google.com/file/d/1e_A1INNp-BjzsXcXPg6HoGp3ZgqcJxa8/view',
+                type: 'pdf'
+            }
+        ],
+        optionalResources: [],
+        optionalResourcesSubTitle: '',
+        originExperience: 'Recreando mi vida',
+        originExperienceLogo: recreandoLogo
+    },
+
+    // 6. Lo que soy
+    {
+        id: 'QUvNOrQR7IE',
+        title: 'Lo que soy',
+        prevVideo: 'SEcKa-PaBu4',
+        nextVideo: 'Ic_FOAypEb0',
+        resources: [],
+        optionalResources: [],
+        optionalResourcesSubTitle: '',
+        originExperience: 'Recreando mi vida',
+        originExperienceLogo: recreandoLogo
+    },
+
+    // 7. Mis héroes
+    {
+        id: 'Ic_FOAypEb0',
+        title: 'Mis héroes',
+        prevVideo: 'QUvNOrQR7IE',
+        nextVideo: 'xkcg3LcC8cA',
+        resources: [
+            {
+                name: 'Ejercicio 6',
+                url: 'https://drive.google.com/file/d/1KGVhA7V_9y9yG91dOXDIBTu_iJo_gpns/view',
+                type: 'pdf'
+            }
+        ],
+        optionalResources: [],
+        optionalResourcesSubTitle: '',
+        originExperience: 'Recreando mi vida',
+        originExperienceLogo: recreandoLogo
+    },
+
+    // 8. Mis deseos
+    {
+        id: 'xkcg3LcC8cA',
+        title: 'Mis deseos',
+        prevVideo: 'Ic_FOAypEb0',
+        nextVideo: '_ILoXZ5qcf0',
+        resources: [
+            {
+                name: 'Ejercicio 7',
+                url: 'https://drive.google.com/file/d/1foc3qxgtLC_xhfRHduVMkpBX-IatOzO8/view',
+                type: 'pdf'
+            }
+        ],
+        optionalResources: [],
+        optionalResourcesSubTitle: '',
+        originExperience: 'Recreando mi vida',
+        originExperienceLogo: recreandoLogo
+    },
+
+    // 9. 5 años
+    {
+        id: '_ILoXZ5qcf0',
+        title: '5 años',
+        prevVideo: 'xkcg3LcC8cA',
+        nextVideo: 'O1VMyjVfnFE',
+        resources: [],
+        optionalResources: [],
+        optionalResourcesSubTitle: '',
+        originExperience: 'Recreando mi vida',
+        originExperienceLogo: recreandoLogo
+    },
+
+    // 10. Ingredientes de la vida que amo
+    {
+        id: 'O1VMyjVfnFE',
+        title: 'Ingredientes de la vida que amo',
+        prevVideo: '_ILoXZ5qcf0',
+        nextVideo: 'Ukc9euI-mpA',
+        resources: [
+            {
+                name: 'Ejercicio 8',
+                url: 'https://drive.google.com/file/d/1KahLjeTKZ_1dpGF3fSBz7x7nMpL44yig/view',
+                type: 'pdf'
+            }
+        ],
+        optionalResources: [],
+        optionalResourcesSubTitle: '',
+        originExperience: 'Recreando mi vida',
+        originExperienceLogo: recreandoLogo
+    },
+
+    // 11. Mi visión de éxito
+    {
+        id: 'Ukc9euI-mpA',
+        title: 'Mi visión de éxito',
+        prevVideo: 'O1VMyjVfnFE',
+        nextVideo: 'eJmhJvOcrRM',
+        resources: [
+            {
+                name: 'Ejercicio 9',
+                url: 'https://drive.google.com/file/d/1lWm67-D51nFVUgPAYqogDScGf6qEojnO/view',
+                type: 'pdf'
+            }
+        ],
+        optionalResources: [],
+        optionalResourcesSubTitle: '',
+        originExperience: 'Recreando mi vida',
+        originExperienceLogo: recreandoLogo
+    },
+
+    // 13. Mi vida emocional, física e intelectual
+    {
+        id: 'eJmhJvOcrRM',
+        title: 'Mi vida emocional, física e intelectual',
+        prevVideo: 'eJmhJvOcrRM',
+        nextVideo: 'zCSou8SjqMc',
+        resources: [
+            {
+                name: 'Ejercicio 10',
+                url: 'https://drive.google.com/file/d/1pSAKF3ducx_K5qp3knHTTJVroYZTPt88/view',
+                type: 'pdf'
+            }
+        ],
+        optionalResources: [],
+        optionalResourcesSubTitle: '',
+        originExperience: 'Recreando mi vida',
+        originExperienceLogo: recreandoLogo
+    },
+
+    // 13. Mi yo futuro
+    {
+        id: 'zCSou8SjqMc',
+        title: 'Mi yo futuro',
+        prevVideo: 'eJmhJvOcrRM',
+        nextVideo: 'K3cGYjVE7II',
+        resources: [],
+        optionalResources: [],
+        optionalResourcesSubTitle: '',
+        originExperience: 'Recreando mi vida',
+        originExperienceLogo: recreandoLogo
+    },
+
+    // 14. Tu acción inmediata
+    {
+        id: 'K3cGYjVE7II',
+        title: 'Tu acción inmediata',
+        prevVideo: 'zCSou8SjqMc',
+        nextVideo: 'EdXzjcqjHTw',
+        resources: [
+            {
+                name: 'Ejercicio 11',
+                url: 'https://drive.google.com/file/d/1LQwFz4iVWhGrL1B5rSsPPl3opnJ2LmcN/view',
+                type: 'pdf'
+            }
+        ],
+        optionalResources: [],
+        optionalResourcesSubTitle: '',
+        originExperience: 'Recreando mi vida',
+        originExperienceLogo: recreandoLogo
+    },
+
+    // 15. Tu manifiesto y cierre
+    {
+        id: 'EdXzjcqjHTw',
+        title: 'Tu manifiesto y cierre',
+        prevVideo: 'K3cGYjVE7II',
+        nextVideo: null,
+        resources: [
+            {
+                name: 'Ejercicio 12',
+                url: 'https://drive.google.com/file/d/1UV8xGmIJK2bDP-OZfEB-LOX4r_x1Hdp-/view',
+                type: 'pdf'
+            }
+        ],
+        optionalResources: [],
+        optionalResourcesSubTitle: '',
+        originExperience: 'Recreando mi vida',
+        originExperienceLogo: recreandoLogo
+    },
+    /*<------------------------------------------------->
     <!-- Mi mejor versión 	-->
     <!------------------------------------------------->*/
     // Nadie mejor que tú.

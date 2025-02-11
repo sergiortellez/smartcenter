@@ -42,6 +42,7 @@
 .videoContainer {
     min-width: 70%;
     min-height: 100%;
+    
 
 }
 
@@ -61,6 +62,7 @@
 .videoContainer embed {
     aspect-ratio: 16 / 9;
     width: 100%;
+     border-style: none;
 }
 /* tablet landscape up */
 @media (min-width: 1024.1px) {
@@ -69,6 +71,7 @@
     .videoContainer object,
     .videoContainer embed {
          border-radius: 9px;
+        
     }
 }
 /* end tablet up */
@@ -198,12 +201,13 @@ aside .originExperience {
     margin-top: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 0.5rem;
 
 }
 
 aside .originExperience img {
-    width: 6rem;
+    width: 4rem;
 }
 
 /*-------------------------------*/
