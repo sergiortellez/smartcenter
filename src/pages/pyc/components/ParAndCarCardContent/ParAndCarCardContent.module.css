@@ -120,8 +120,11 @@ header img{
         font-size: 0.8rem;
     }
 }
-
 /* end tablet */
+.whatToExpect p {
+    padding: 0.6rem;
+   
+}
 .whatToExpect ul {
     padding: 0.6rem;
     margin: 0;
