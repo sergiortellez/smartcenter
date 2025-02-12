@@ -20,7 +20,7 @@ import useYouTubePlaylist from '@hooks/useYouTubePlaylist';
 import styles from './YoutubeCarousel.module.css'
 //FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSquareLeft, faSquareRight } from '@awesome.me/kit-c09e05c963/icons/sharp-duotone/solid'
+import { faSquareLeft, faSquareRight } from '@awesome.me/kit-c09e05c963/icons/duotone/solid'
 
 
 export default function YoutubeCarousel({
@@ -143,7 +143,7 @@ export default function YoutubeCarousel({
             <FontAwesomeIcon icon={faSquareLeft} />
           </button>
 
-          <div className={`${styles.carousel} landscape`} ref={carouselRef}>
+          <div className={`${styles.carousel} ${styles.landscape}`} ref={carouselRef}>
             {loading && renderPlaceholders()}
             {!loading &&
               videos.map((video) => (

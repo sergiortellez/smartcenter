@@ -167,7 +167,7 @@
 /* PlaceHolders */
 /*-------------------------------*/
 
-.carrouselPlaceHolder{
+.carouselPlaceHolder{
     display: flex;
     gap: 0.7rem;
     background-color: #e8e6e6;
