@@ -15,7 +15,7 @@
 
 import { useState, useEffect } from 'react';
 
-export default function useYouTubePlaylist(playlistId, maxResults = 12) {
+export default function useYouTubePlaylist(playlistId, maxResults = 30) {
     const [videos, setVideos] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -23,8 +23,6 @@ export default function useYouTubePlaylist(playlistId, maxResults = 12) {
     useEffect(() => {
         // Get the API key from the Vite environment variable.
         const API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY;
-        console.log('API Key:', import.meta.env.VITE_YOUTUBE_API_KEY);
-
         const endpoint = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,contentDetails&maxResults=${maxResults}&playlistId=${playlistId}&key=${API_KEY}`;
 
         fetch(endpoint)
