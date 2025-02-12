@@ -114,7 +114,7 @@ export default function YoutubeCarousel({
     const phs = [];
     for (let i = 0; i < placeholdersCount; i++) {
       phs.push(
-        <div key={`placeholder-${i}`} className={styles.carrouselPlaceHolder}>
+        <div key={`placeholder-${i}`} className={styles.carouselPlaceHolder}>
           <div className={styles.PlaceHolderPreview}></div>
           <div className={styles.PlaceHolderTitle}></div>
           <div className={styles.PlaceHolderTitleShort}></div>
@@ -132,12 +132,12 @@ export default function YoutubeCarousel({
   <!--	render Logic	-->
   <!------------------------------------------------->*/
   return (
-    <div className={styles.carrousel_container} data-id={playlistId}>
+    <div className={styles.container} data-id={playlistId}>
       {!error && (
         <>
           <button
             type="button"
-            className={`${styles.prev_button} ${showPrev ? styles.showButton : styles.hideButton}`}
+            className={`${styles.prevButton} ${showPrev ? styles.showButton : styles.hideButton}`}
             onClick={handlePrev}
           >
             <FontAwesomeIcon icon={faSquareLeft} />
@@ -150,7 +150,7 @@ export default function YoutubeCarousel({
                 <button
                   key={video.id}
                   type="button"
-                  className={styles.carousel_item}
+                  className={styles.carouselItem}
                   onClick={() => handleVideoClick(video.id)}
                 >
                   <img src={video.thumbnail} alt="video thumbnail" loading="lazy" />
@@ -163,7 +163,7 @@ export default function YoutubeCarousel({
 
           <button
             type="button"
-            className={`${styles.next_button} ${showNext ? styles.showButton : styles.hideButton}`}
+            className={`${styles.nextButton} ${showNext ? styles.showButton : styles.hideButton}`}
             onClick={handleNext}
           >
             <FontAwesomeIcon icon={faSquareRight} />

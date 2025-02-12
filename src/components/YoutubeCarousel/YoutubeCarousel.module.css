@@ -8,13 +8,6 @@
 /* carruseles */
 /*-------------------------------*/
 
-.carrousels h3{
-    margin: 0.5rem 0;
-    padding: 0;
-    
-}
-
-
 .carousel {
   display: flex;
   flex-wrap: nowrap;
@@ -26,7 +19,7 @@
   scroll-behavior: smooth;
   margin-bottom: 0.1rem;
 }
-
+/* Hide scrollbar for Safari */
 .carousel::-webkit-scrollbar {
     display: none;
 }
@@ -36,6 +29,10 @@
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+/*-------------------------------*/
+/* elements */
+/*-------------------------------*/
 
 .carousel button{
     all: unset;
@@ -58,12 +55,12 @@
     transform: scale(0.9);
     background-color: rgb(84, 82, 82);
 }
-.carousel-item {
+.carouselItem {
   display: flex;
   justify-content: flex-start;
 
 }
-.carousel-item figcaption{
+.carouselItem figcaption{
     font-size: 0.7rem;
 }
 
@@ -78,7 +75,7 @@
 
 
 
-.portrait .carousel-item>img{
+.portrait .carouselItem>img{
     height: 100%;
     width: auto;
     aspect-ratio: 9/16;    
@@ -88,21 +85,28 @@
     transform: translate(-30%); */
 
 }
-.landscape .carousel-item>img{
+.landscape .carouselItem>img{
     
     height: 6rem;
      aspect-ratio: 16 / 9;
      border-radius: 10px;
 }
 
-/* ---botones next/prev--- */
+/*-------------------------------*/
+/* end elements */
+/*-------------------------------*/
 
-.carrousel_container{
+/*-------------------------------*/
+/* prev/next buttons */
+/*-------------------------------*/
+
+
+.container{
     position: relative;
     overflow: hidden;
 }
-.prev-button,
-.next-button {
+.prevButton,
+.nextButton {
   position: absolute;
   top: 30%;
   padding: 0.5em 1em;
@@ -115,22 +119,20 @@
   z-index: 2;
 }
 
-.prev-button:hover,
-.next-button:hover {
+.prevButton:hover,
+.nextButton:hover {
   
 
   transform: scale(1.2);
 }
 
-.prev-button svg,
-.next-button svg {
+.prevButton svg,
+.nextButton svg {
     font-size: 3rem;
     color: rgb(179, 173, 173);
 }
 
-/* ---controles de visualización de botones en el carrusel--- */
-
-/* se manejan desde JS */
+/* ---controls for carousel button visibility--- */
 
 .showButton{
     display: block;
@@ -147,19 +149,24 @@
         display: none;
     }
 }
-/* ---end controles de visualización de botones en el carrusel--- */
+/* ---end controls for carousel button visibility--- */
 
-.prev-button {
+.prevButton {
   left: 0.5em;
 }
 
-.next-button {
+.nextButton {
   right: 0.5em;
 }
-/* ---end botones next/prev--- */
 
+/*-------------------------------*/
+/* end prev/next buttons */
+/*-------------------------------*/
 
-/* ---placeHolders--- */
+/*-------------------------------*/
+/* PlaceHolders */
+/*-------------------------------*/
+
 .carrouselPlaceHolder{
     display: flex;
     gap: 0.7rem;
@@ -185,11 +192,11 @@
 }
 /* end animación  */
 
-.portrait .carrouselPlaceHolder {
+.portrait .carouselPlaceHolder {
     align-items: flex-end;
 }
 
-.landscape .carrouselPlaceHolder {
+.landscape .carouselPlaceHolder {
     gap: 0.3rem;
     flex-direction: column;
 }
@@ -233,11 +240,11 @@
     border-radius: 15px;
     background-color: rgb(103, 97, 97);
 }
-/* ---end placeHolders--- */
+/*-------------------------------*/
+/* end PlaceHolders */
+/*-------------------------------*/
 
-/*-------------------------------*/
-/* end carruseles */
-/*-------------------------------*/
+
 
 /*###################################################*/
 /*...................................................*/
