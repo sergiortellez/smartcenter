@@ -45,6 +45,13 @@
     min-width: 10rem;
     min-height: 8.3rem;
     transition: all 0.3s ease;
+    
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  border-radius: 9px; /* Smooth edges */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  backdrop-filter: blur(10px); /* Blurred background */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.3); 
 }
 
 .carousel button:is(:hover){
@@ -89,7 +96,7 @@
     
     height: 6rem;
      aspect-ratio: 16 / 9;
-     border-radius: 10px;
+     border-radius: 5px;
 }
 
 /*-------------------------------*/

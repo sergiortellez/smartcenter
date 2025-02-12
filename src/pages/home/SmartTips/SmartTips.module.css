@@ -5,7 +5,6 @@
 /*###################################################*/
 
 .tips {
-    padding: 5rem 1rem;
     width: 100%;
     overflow: visible;
     margin-right: none !important;
@@ -38,6 +37,11 @@
     gap: 1rem;
 }
 
+.preview {
+        padding: 0 1rem;
+        
+    }
+
 /* tablet landscape up */
 @media (min-width: 1024.1px) {
    .flexTips{
@@ -54,17 +58,47 @@
 }
 /* end tablet up */
 
-.carousels h3{
-    margin: 0.5rem 0;
-    padding: 0;
-    opacity: 0.8;
-    
-}
+
 
 /*-------------------------------*/
 /* end contenedor flex */
 /*-------------------------------*/
 
+/*-------------------------------*/
+/* carousels */
+/*-------------------------------*/
+
+.carousel{
+    position: relative;
+    background: linear-gradient(to right,  #547bc3,var(--smartBlueMono));
+    margin: 3rem 0;
+    padding: 2rem;
+    color: white;
+
+}
+.carousel span{
+    margin: 0.5rem 0;
+    padding: 0;
+    opacity: 0.8;
+    
+}
+.carousel img{
+    position: absolute;
+    top:-30%;
+    left: 80%;
+    width: 4rem;
+}
+/* cellphone landscape up */
+@media (min-width: 576px) {
+    .carousel img{
+    left: 88%;
+}
+}
+/* end cellphone landscape up */
+
+/*-------------------------------*/
+/* end carousels */
+/*-------------------------------*/
 
 /*-------------------------------*/
 /* preview */
@@ -74,7 +108,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 93%;
+    width: 100%;
     height: auto;
     
 
@@ -85,7 +119,7 @@
 .preview embed {
   width: 100%;
   aspect-ratio: 9 / 16;
-  border-radius: 15px;
+  border-radius: 9px;
   max-height: calc(100dvh - var(--navHeight) - 2rem);
 }
 

@@ -13,7 +13,7 @@
 
 //---------------------imports----------------------
 //react
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 //Context
 import useCampus from '@hooks/useCampus';
 //Components
@@ -46,9 +46,9 @@ export default function SmartTips() {
   useEffect(() => {
     // Define a mapping from campus to initial video ID.
     const campusToVideoId = {
-      AGS: '',             // TODO: Provide AGS video ID when available
+      AGS: 'LUQsIWiWb1s',
       CDMX: 'GDXqbd5khbg',
-      GDL: '',             // TODO: Provide GDL video ID when available
+      GDL: 'q5dfHkuaDf4',
     };
 
     // Update the video ID based on the current campus.
@@ -110,16 +110,17 @@ export default function SmartTips() {
         {/* Carousels Section */}
         <div className={styles.carousels}>
           {filteredPlaylists.map((playlist) => (
-            <React.Fragment key={playlist.playListId}>
-              <h3>
-                <FontAwesomeIcon icon={playlist.icon} /> {playlist.title}
-              </h3>
+            <div className={styles.carousel} key={playlist.playListId}>
+              {playlist.icon && <img src={playlist.icon} alt="decorative image" />}
+              <span>
+                {playlist.title}
+              </span>
               <YoutubeCarousel
                 playlistId={playlist.playListId}
                 onVideoSelect={handleVideoSelect}
                 onFail={onFail}
                 placeholdersCount={7} />
-            </React.Fragment>
+            </div>
           ))}
         </div>
       </div>
