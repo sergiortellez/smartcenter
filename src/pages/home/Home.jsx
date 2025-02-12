@@ -16,6 +16,7 @@ import Hero from './Hero/Hero';
 import Experiences from './Experiences/Experiences';
 import WhoAreWe from './WhoAreWe/WhoAreWe';
 import ContactUs from './ContactUs/ContactUs';
+import SmartTips from './SmartTips/SmartTips';
 
 
 
@@ -30,9 +31,11 @@ export default function Home() {
             <Experiences />
             {/* About us section */}
             <WhoAreWe />
+            {/* SMART Tips section */}
+            <SmartTips />
             {/* Contact section */}
             <ContactUs />
-        </ >
+        </>
     )
 }
 /*<!------------------------------------------------->

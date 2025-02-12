@@ -1,0 +1,93 @@
+/*###################################################*/
+/*...................................................*/
+/* SmartTips(component) */
+/*...................................................*/
+/*###################################################*/
+
+.tips {
+    padding: 5rem 1rem;
+    width: 100%;
+    overflow: visible;
+    margin-right: none !important;
+}
+
+/*-------------------------------*/
+/* title */
+/*-------------------------------*/
+
+/* just mobile */
+.title {
+    margin-bottom: 6rem;
+    text-align: center;
+    font-size: 3.3rem;
+    font-weight: 200;
+}
+
+
+/*-------------------------------*/
+/* end title */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* contenedor flex */
+/*-------------------------------*/
+
+.flexTips{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+   .flexTips{
+        display: flex;
+        flex-direction: row;
+    } 
+    .preview {
+        width: 40%;
+        
+    }
+    .carrousels{
+        width: 60%;
+    }
+}
+/* end tablet up */
+
+/*-------------------------------*/
+/* end contenedor flex */
+/*-------------------------------*/
+
+
+/*-------------------------------*/
+/* preview */
+/*-------------------------------*/
+
+ .preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 93%;
+    height: auto;
+    
+
+}
+
+.preview iframe,
+.preview object,
+.preview embed {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border-radius: 15px;
+  max-height: calc(100dvh - var(--navHeight) - 2rem);
+}
+
+/*-------------------------------*/
+/* end preview */
+/*-------------------------------*/
+
+/*###################################################*/
+/*...................................................*/
+/* end SmartTips(component) */
+/*...................................................*/
+/*###################################################*/
