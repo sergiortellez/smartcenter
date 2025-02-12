@@ -1,0 +1,246 @@
+/*###################################################*/
+/*...................................................*/
+/* YoutubeCarousel(component) */
+/*...................................................*/
+/*###################################################*/
+
+/*-------------------------------*/
+/* carruseles */
+/*-------------------------------*/
+
+.carrousels h3{
+    margin: 0.5rem 0;
+    padding: 0;
+    
+}
+
+
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  margin-bottom: 0.1rem;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.carousel {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.carousel button{
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    gap: 0.7rem;
+    background-color: #e8e6e6;
+    padding: 0.5rem;
+    border-radius: 5px;
+    min-width: 10rem;
+    min-height: 8.3rem;
+    transition: all 0.3s ease;
+}
+
+.carousel button:is(:hover){
+    transform: scale(0.9);
+}
+
+.carousel button:active{
+    transform: scale(0.9);
+    background-color: rgb(84, 82, 82);
+}
+.carousel-item {
+  display: flex;
+  justify-content: flex-start;
+
+}
+.carousel-item figcaption{
+    font-size: 0.7rem;
+}
+
+.portrait button {
+    align-items: flex-end;
+}
+
+.landscape button {
+    gap: 0.3rem;
+    flex-direction: column;
+}
+
+
+
+.portrait .carousel-item>img{
+    height: 100%;
+    width: auto;
+    aspect-ratio: 9/16;    
+    /* width: auto;
+    height: 5.3rem;
+    clip-path: inset(0px 34% 0px 34%);
+    transform: translate(-30%); */
+
+}
+.landscape .carousel-item>img{
+    
+    height: 6rem;
+     aspect-ratio: 16 / 9;
+     border-radius: 10px;
+}
+
+/* ---botones next/prev--- */
+
+.carrousel_container{
+    position: relative;
+    overflow: hidden;
+}
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 30%;
+  padding: 0.5em 1em;
+  background-color: transparent;
+  border: none;
+  opacity: 0.9;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 2;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  
+
+  transform: scale(1.2);
+}
+
+.prev-button svg,
+.next-button svg {
+    font-size: 3rem;
+    color: rgb(179, 173, 173);
+}
+
+/* ---controles de visualización de botones en el carrusel--- */
+
+/* se manejan desde JS */
+
+.showButton{
+    display: block;
+}
+
+.hideButton{
+    display: none;
+}
+
+@media (pointer: coarse) {
+  /* en touch devices nunca aparecen las flechas */
+    .showButton,
+    .hideButton {
+        display: none;
+    }
+}
+/* ---end controles de visualización de botones en el carrusel--- */
+
+.prev-button {
+  left: 0.5em;
+}
+
+.next-button {
+  right: 0.5em;
+}
+/* ---end botones next/prev--- */
+
+
+/* ---placeHolders--- */
+.carrouselPlaceHolder{
+    display: flex;
+    gap: 0.7rem;
+    background-color: #e8e6e6;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 12rem;
+    height: 5.3rem;
+    transition: all 0.3s ease;
+    animation: placeholder-fade 3s linear infinite;
+}
+/* animación  */
+@keyframes placeholder-fade {
+    0% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0.7;
+    }
+}
+/* end animación  */
+
+.portrait .carrouselPlaceHolder {
+    align-items: flex-end;
+}
+
+.landscape .carrouselPlaceHolder {
+    gap: 0.3rem;
+    flex-direction: column;
+}
+
+.portrait .PlaceHolderPreview{
+    width: 3.5rem;
+    height: 5.3rem;
+    background-color: rgb(78, 73, 73);
+}
+.landscape .PlaceHolderPreview{
+    width: 10rem;
+    height: 4rem;
+    background-color: rgb(78, 73, 73);
+}
+
+.landscape .PlaceHolderTitle{
+    width: 10rem;
+    height: 0.6rem;
+    border-radius: 15px;
+    background-color: rgb(49, 46, 46);
+}
+
+.landscape .PlaceHolderTitleShort{
+     width: 4.5rem;
+    height: 0.6rem;
+    border-radius: 15px;
+    background-color: rgb(103, 97, 97);
+}
+
+.portrait  .PlaceHolderTitle{
+    width: 4.5rem;
+    height: 0.6rem;
+    border-radius: 15px;
+    background-color: rgb(49, 46, 46);
+}
+
+.portrait .PlaceHolderTitleShort{
+     width: 2.5rem;
+    height: 0.6rem;
+    margin-top: 0.5rem;
+    border-radius: 15px;
+    background-color: rgb(103, 97, 97);
+}
+/* ---end placeHolders--- */
+
+/*-------------------------------*/
+/* end carruseles */
+/*-------------------------------*/
+
+/*###################################################*/
+/*...................................................*/
+/* end YoutubeCarousel(component) */
+/*...................................................*/
+/*###################################################*/
