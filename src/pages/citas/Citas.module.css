@@ -1,0 +1,89 @@
+/*###################################################*/
+/*...................................................*/
+/* Citas(Page) */
+/*...................................................*/
+/*###################################################*/
+/* tablet portrait up */
+@media (min-width: 768px) {
+   .citas{
+    padding-top: calc(var(--navHeight) + 1rem);
+} 
+}
+/* end tablet up */
+
+
+.title {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 3.3rem;
+    font-weight: 200;
+}
+
+.message {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.message p{
+    text-wrap: balance;
+}
+
+.crisis {
+    font-size: 1.4rem;
+    color: red;
+}
+
+.sinCita{
+    font-size: 1.6rem;
+    color: var(--smartBlueMono);
+}
+
+/*-------------------------------*/
+/* location Selector */
+/*-------------------------------*/
+
+/* Modality Selector */
+.modalitySelector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+.locationButton {
+    all: unset;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #ddd4c2;
+    border-radius: 9px;
+    color: var(--text);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.locationButton:hover {
+    background-color: var(--primary);
+    color: var(--background);
+}
+.locationButton.active {
+    background-color: var(--smartBlueMono);
+    color: var(--background);
+}
+
+/* Icon inside buttons */
+.icon {
+    font-size: 1.2rem;
+}
+
+/*-------------------------------*/
+/* end location Selector */
+/*-------------------------------*/
+/*###################################################*/
+/*...................................................*/
+/* end Citas(Page) */
+/*...................................................*/
+/*###################################################*/
