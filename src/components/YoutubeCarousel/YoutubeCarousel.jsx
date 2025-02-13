@@ -28,6 +28,7 @@ export default function YoutubeCarousel({
   onVideoSelect,
   placeholdersCount = 5,
   onFail,
+  className
 }) {
   //Using the hook useYouTubePlaylist for fetching the videos
   const { videos, loading, error } = useYouTubePlaylist(playlistId);
@@ -132,7 +133,7 @@ export default function YoutubeCarousel({
   <!--	render Logic	-->
   <!------------------------------------------------->*/
   return (
-    <div className={styles.container} data-id={playlistId}>
+    <div className={`${styles.container} ${className}`} data-id={playlistId}>
       {!error && (
         <>
           <button

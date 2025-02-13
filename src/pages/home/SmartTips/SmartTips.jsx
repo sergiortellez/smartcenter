@@ -111,15 +111,16 @@ export default function SmartTips() {
         <div className={styles.carousels}>
           {filteredPlaylists.map((playlist) => (
             <div className={styles.carousel} key={playlist.playListId}>
-              {playlist.icon && <img src={playlist.icon} alt="decorative image" />}
-              <span>
+              {playlist.icon && <img src={playlist.icon} className={styles.carouselIcon} alt="decorative image" />}
+              <div className={styles.carouselTitle}>
                 {playlist.title}
-              </span>
+              </div>
               <YoutubeCarousel
                 playlistId={playlist.playListId}
                 onVideoSelect={handleVideoSelect}
                 onFail={onFail}
-                placeholdersCount={7} />
+                placeholdersCount={7}
+              />
             </div>
           ))}
         </div>

@@ -37,10 +37,6 @@
     gap: 1rem;
 }
 
-.preview {
-        padding: 0 1rem;
-        
-    }
 
 /* tablet landscape up */
 @media (min-width: 1024.1px) {
@@ -70,31 +66,36 @@
 
 .carousel{
     position: relative;
-    background: linear-gradient(to right,  #547bc3,var(--smartBlueMono));
+    background: linear-gradient(to right,  var(--background),#e8e6e6);
+    background-color: 
+#e8e6e6;
     margin: 3rem 0;
-    padding: 2rem;
-    color: white;
+    padding: 2rem 0;
+    color: var(--smartBlue);
 
 }
-.carousel span{
-    margin: 0.5rem 0;
+.carouselTitle{
+    margin: 1rem;
+    margin-bottom: 2rem;
     padding: 0;
     opacity: 0.8;
-    
+    font-size: 1.5rem;
 }
-.carousel img{
+.carouselIcon{
     position: absolute;
-    top:-30%;
+    top:-10%;
     left: 80%;
     width: 4rem;
 }
 /* cellphone landscape up */
 @media (min-width: 576px) {
-    .carousel img{
+    .carouselIcon{
     left: 88%;
-}
+    }
 }
 /* end cellphone landscape up */
+
+
 
 /*-------------------------------*/
 /* end carousels */
@@ -106,10 +107,10 @@
 
  .preview {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    width: 100%;
     height: auto;
+    padding: 1rem;
     
 
 }
