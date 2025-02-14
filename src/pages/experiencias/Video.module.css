@@ -86,6 +86,18 @@
 /*-------------------------------*/
 
 /*-------------------------------*/
+/* carrousel */
+/*-------------------------------*/
+
+.carousel>div button{
+    background-color:var(--cardBackgroundColorGold) ;
+}
+
+/*-------------------------------*/
+/* end carrousel */
+/*-------------------------------*/
+
+/*-------------------------------*/
 /* aside container */
 /*-------------------------------*/
 
@@ -209,7 +221,9 @@ aside .originExperience {
 aside .originExperience img {
     width: 4rem;
 }
-
+aside .originExperience h1{
+    text-align: right;
+}
 /*-------------------------------*/
 /* end aside container */
 /*-------------------------------*/

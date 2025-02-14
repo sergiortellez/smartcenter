@@ -12,8 +12,8 @@
 //-----------------------imports---------------------
 
 //React
-import { useParams, NavLink } from 'react-router-dom'
-
+import { useParams, NavLink, useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 
 
 //components
@@ -43,10 +43,12 @@ export default function Video({
     optionalResources = [],
     optionalResourcesSubTitle = '',
     originExperience = '',
-    originExperienceLogo = null
+    originExperienceLogo = null,
+    originPlaylistId = ''
 }) {
-    //get id from url
+    // Get id from URL
     const params = useParams()
+
     //get current video from data
     const CurrentVideo = VideoPlayerData.find(video => video.id === params.id)
 
@@ -61,6 +63,7 @@ export default function Video({
         optionalResourcesSubTitle = CurrentVideo.optionalResourcesSubTitle
         originExperience = CurrentVideo.originExperience
         originExperienceLogo = CurrentVideo.originExperienceLogo
+        originPlaylistId = CurrentVideo.originPlaylistId
     }
     /*<------------------------------------------------->
     <!--	get resource icon	-->
@@ -84,6 +87,32 @@ export default function Video({
     <!--	end get resource icon	-->
     <!------------------------------------------------->*/
 
+    /*<------------------------------------------------->
+    <!--	if carrousel fails	-->
+    <!------------------------------------------------->*/
+    // State to track if the carousel encountered an error
+    const [carouselError, setCarouselError] = useState(false);
+
+
+    const onFail = () => {
+        setCarouselError(true);
+    }
+    /*<!------------------------------------------------->
+    <!--	end if carrousel fails	-->
+    <!------------------------------------------------->*/
+
+    /*<------------------------------------------------->
+    <!--	if user clicks on video	-->
+    <!------------------------------------------------->*/
+    // Navigate to other video when clicking on the carousel videos
+    const navigate = useNavigate();
+    const handleVideoClick = (videoId) => {
+        navigate(`/experiencias/${videoId}`)
+    }
+    /*<!------------------------------------------------->
+    <!--	end if user clicks on video	-->
+    <!------------------------------------------------->*/
+
 
     /*<------------------------------------------------->
     <!--	Render Logic	-->
@@ -100,11 +129,15 @@ export default function Video({
 
                 <h2>{title}</h2>
 
-                <YoutubeCarousel
-                    playlistId='PLhMMXwN8RXkwSMt41y9qRbuOr_edYcLqL'
-                    placeholdersCount='5'
-
-                />
+                {!carouselError && (
+                    <YoutubeCarousel
+                        playlistId={originPlaylistId}
+                        placeholdersCount={5}
+                        onVideoSelect={handleVideoClick}
+                        onFail={onFail}
+                        className={styles.carousel}
+                    />
+                )}
             </main>
 
 
