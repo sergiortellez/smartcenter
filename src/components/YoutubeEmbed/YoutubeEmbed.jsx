@@ -27,10 +27,9 @@
 //libraries
 import YouTube from 'react-youtube';
 
-
-
 const YoutubeEmbed = ({
   videoId,
+  iframeId,
   opts = {},
   containerClassName = '',
   className = '',
@@ -49,16 +48,13 @@ const YoutubeEmbed = ({
     playerVars: {
       autoplay: 0,
       controls: 1,
-      loop: 0, // Set to 1 for loop
-      // If looping a single video, the playlist must be set to the same video ID:
+      loop: 0,
       playlist: videoId,
       modestbranding: 1,
       rel: 0,
       enablejsapi: 1,
-      // Add any additional default parameters here
     },
   };
-
   // Merge the default options with any user-supplied overrides.
   // This deep merge ensures that playerVars can be extended or overridden.
   const mergedOpts = {
@@ -70,13 +66,26 @@ const YoutubeEmbed = ({
     },
   };
 
+  // Wrap the onReady event to set the iframe id.
+  const handleReady = (event) => {
+    if (iframeId) {
+      const iframeElement = event.target.getIframe();
+      if (iframeElement) {
+        iframeElement.id = iframeId;
+      }
+    }
+    if (onReady) {
+      onReady(event);
+    }
+  };
+
   return (
     <div className={containerClassName}>
       <YouTube
         videoId={videoId}
         opts={mergedOpts}
         className={className}
-        onReady={onReady}
+        onReady={handleReady}
         onPlay={onPlay}
         onPause={onPause}
         onEnd={onEnd}
