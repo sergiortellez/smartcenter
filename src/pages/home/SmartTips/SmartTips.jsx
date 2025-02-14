@@ -2,12 +2,16 @@
 <!--	SmartTips (Component)	-->
 <!----------------------------------------------------------------------------->
 * Description:
-     
+     This component is responsible for rendering the Smart Tips section of the home page. It calls the YoutubeCarousel component to display the videos and manages the state of the current video being displayed. It also filters the playlists based on the current campus. It's important to note that the initial video displayed is based on the campus.
 * Parameters:
-    -
+    - none  
 * Dependencies:
-    -
-* Returns/results:
+    - useCampus: custom hook to get the current campus.
+    - useScrollTo: custom hook to scroll to a specific element.
+    - YoutubeCarousel: component to display the videos.
+    - Data/SmartTipsData: data for the playlists.
+    - styles: css styles for the component.
+* Returns/results: Renders the Smart Tips section of the home page.
     
 <!------------------------------------------------->*/
 
@@ -24,8 +28,7 @@ import useScrollTo from '@hooks/useScrollTo';
 import { Playlists } from './Data/SmartTipsData'
 //styles
 import styles from './SmartTips.module.css'
-//FontAwesome
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 
 //HACK:  esta sección tiene wrap con un div, en lugar de section porque el carrusel de videos necesita salir de la pantalla
@@ -78,19 +81,16 @@ export default function SmartTips() {
   <!--	handle error from youtube api	-->
   <!------------------------------------------------->*/
   const onFail = (error) => {
-    console.error('Failed to fetch YouTube playlist:', error);
     setHasError(true);
   };
 
   // If there's any error from the YouTube API, hide the entire section.
   if (hasError) {
-    // return null;
+    return null;
   }
   /*<!------------------------------------------------->
   <!--	end handle error from youtube api	-->
   <!------------------------------------------------->*/
-
-
 
   return (
     <div id="tips" className={styles.tips}>
