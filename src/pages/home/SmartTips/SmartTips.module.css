@@ -106,11 +106,10 @@
 /*-------------------------------*/
 
  .preview {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    height: auto;
+    
     padding: 1rem;
+    width: 100%;
+    min-height: 100%;
     
 
 }
@@ -118,10 +117,10 @@
 .preview iframe,
 .preview object,
 .preview embed {
-  width: 100%;
-  aspect-ratio: 9 / 16;
+  min-width: 100%;
+  aspect-ratio: 16 / 9;
   border-radius: 9px;
-  max-height: calc(100dvh - var(--navHeight) - 2rem);
+  height: calc(100dvh - var(--navHeight) - 1rem);
 }
 
 /*-------------------------------*/

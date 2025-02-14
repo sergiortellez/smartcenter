@@ -22,8 +22,10 @@ import { useState, useEffect } from 'react';
 import useCampus from '@hooks/useCampus';
 //Components
 import YoutubeCarousel from '@components/YoutubeCarousel/YoutubeCarousel'
+import YoutubeEmbed from '@components/YoutubeEmbed/YoutubeEmbed'
 //hooks
 import useScrollTo from '@hooks/useScrollTo';
+import useIsMobile from '@hooks/useIsMobile';
 //Data
 import { Playlists } from './Data/SmartTipsData'
 //styles
@@ -46,14 +48,13 @@ export default function SmartTips() {
   /*<------------------------------------------------->
   <!--	Set initial video on player	-->
   <!------------------------------------------------->*/
+  // Define a mapping from campus to initial video ID.
+  const campusToVideoId = {
+    AGS: 'LUQsIWiWb1s',
+    CDMX: 'GDXqbd5khbg',
+    GDL: 'q5dfHkuaDf4',
+  };
   useEffect(() => {
-    // Define a mapping from campus to initial video ID.
-    const campusToVideoId = {
-      AGS: 'LUQsIWiWb1s',
-      CDMX: 'GDXqbd5khbg',
-      GDL: 'q5dfHkuaDf4',
-    };
-
     // Update the video ID based on the current campus.
     setCurrentVideoId(campusToVideoId[campus] || '');
     // LEARN: No cleanup is needed in this effect since there are no subscriptions,event listeners, or timers that require cleanup.
@@ -67,9 +68,11 @@ export default function SmartTips() {
   /*<------------------------------------------------->
   <!--	handleVideoSelect	-->
   <!------------------------------------------------->*/
+  const isMobile = useIsMobile();
+  const offset = isMobile ? 10 : 90;
   const handleVideoSelect = (videoId) => {
     // Scroll to the top of the player (on mobile).
-    scrollTo('previewVideo');
+    scrollTo('previewVideo', offset);
     // Update the video ID in the player.
     setCurrentVideoId(videoId);
   };
@@ -86,7 +89,7 @@ export default function SmartTips() {
 
   // If there's any error from the YouTube API, hide the entire section.
   if (hasError) {
-    return null;
+    //return null;
   }
   /*<!------------------------------------------------->
   <!--	end handle error from youtube api	-->
@@ -97,15 +100,12 @@ export default function SmartTips() {
       <h1 className={styles.title}>SMART Tips</h1>
       <div className={styles.flexTips}>
         {/* Video Preview Section */}
-        <div className={styles.preview}>
-          <iframe
-            id="previewVideo"
-            src={`https://www.youtube.com/embed/${currentVideoId}`}
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
+
+        <YoutubeEmbed
+          videoId={currentVideoId}
+          iframeId="previewVideo"
+          containerClassName={styles.preview}
+        />
 
         {/* Carousels Section */}
         <div className={styles.carousels}>
