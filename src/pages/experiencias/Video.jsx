@@ -18,12 +18,10 @@ import { useParams, NavLink } from 'react-router-dom'
 
 //components
 import YoutubeEmbed from '@components/YoutubeEmbed/YoutubeEmbed';
-
-//context
-
+import YoutubeCarousel from '@components/YoutubeCarousel/YoutubeCarousel';
 
 //data
-
+import { VideoPlayerData } from './data/VideoPageData';
 
 //styles
 import styles from './Video.module.css'
@@ -33,8 +31,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCloudArrowDown, faFilePdf, faImages, faListCheck, faFile } from '@awesome.me/kit-c09e05c963/icons/duotone/solid'
 import { faAppStoreIos } from '@awesome.me/kit-c09e05c963/icons/classic/brands';
 
-//data
-import { VideoPlayerData } from './data/VideoPageData';
 
 
 
@@ -103,6 +99,12 @@ export default function Video({
                 />
 
                 <h2>{title}</h2>
+
+                <YoutubeCarousel
+                    playlistId='PLhMMXwN8RXkwSMt41y9qRbuOr_edYcLqL'
+                    placeholdersCount='5'
+
+                />
             </main>
 
 

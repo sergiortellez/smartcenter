@@ -20,10 +20,6 @@ import recreandoLogo from '@assets/intercampi/experiencias/recreando.webp';
 import versionLogo from '@assets/intercampi/experiencias/version.webp';
 
 
-
-
-
-
 export const VideoPlayerData = [
 
     /*<------------------------------------------------->
@@ -39,7 +35,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Organizing your life like a boss',
-        originExperienceLogo: oylbLogo
+        originExperienceLogo: oylbLogo,
+        originPlaylistId: 'PLhMMXwN8RXkwSMt41y9qRbuOr_edYcLqL'
     },
 
     // 2. Productivity 101
@@ -58,7 +55,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Organizing your life like a boss',
-        originExperienceLogo: oylbLogo
+        originExperienceLogo: oylbLogo,
+        originPlaylistId: 'PLhMMXwN8RXkwSMt41y9qRbuOr_edYcLqL'
     },
 
     // 3. Estudia sin distracciones
@@ -82,7 +80,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Organizing your life like a boss',
-        originExperienceLogo: oylbLogo
+        originExperienceLogo: oylbLogo,
+        originPlaylistId: 'PLhMMXwN8RXkwSMt41y9qRbuOr_edYcLqL'
     },
 
     // 4. ¿Cómo ser más efectivo?
@@ -101,7 +100,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Organizing your life like a boss',
-        originExperienceLogo: oylbLogo
+        originExperienceLogo: oylbLogo,
+        originPlaylistId: 'PLhMMXwN8RXkwSMt41y9qRbuOr_edYcLqL'
     },
 
     // 5. ¿Cómo usas tu tiempo?
@@ -120,7 +120,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Organizing your life like a boss',
-        originExperienceLogo: oylbLogo
+        originExperienceLogo: oylbLogo,
+        originPlaylistId: 'PLhMMXwN8RXkwSMt41y9qRbuOr_edYcLqL'
     },
 
     // 6. 5 formas de tener más energía
@@ -149,7 +150,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Organizing your life like a boss',
-        originExperienceLogo: oylbLogo
+        originExperienceLogo: oylbLogo,
+        originPlaylistId: 'PLhMMXwN8RXkwSMt41y9qRbuOr_edYcLqL'
     },
 
     // 7. ¿Quieres tener tu propio coach?
@@ -162,7 +164,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Organizing your life like a boss',
-        originExperienceLogo: oylbLogo
+        originExperienceLogo: oylbLogo,
+        originPlaylistId: 'PLhMMXwN8RXkwSMt41y9qRbuOr_edYcLqL'
     },
 
     // 8. ¿No tienes tiempo de nada?
@@ -181,7 +184,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Organizing your life like a boss',
-        originExperienceLogo: oylbLogo
+        originExperienceLogo: oylbLogo,
+        originPlaylistId: 'PLhMMXwN8RXkwSMt41y9qRbuOr_edYcLqL'
     },
 
     // 9. Casi estás en la meta
@@ -194,8 +198,10 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Organizing your life like a boss',
-        originExperienceLogo: oylbLogo
+        originExperienceLogo: oylbLogo,
+        originPlaylistId: 'PLhMMXwN8RXkwSMt41y9qRbuOr_edYcLqL'
     },
+
     /*<------------------------------------------------->
     <!-- Your CV your master peace 	-->
     <!------------------------------------------------->*/
@@ -209,7 +215,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Your CV Your Masterpiece',
-        originExperienceLogo: cvmpLogo
+        originExperienceLogo: cvmpLogo,
+        originPlaylistId: 'PLhMMXwN8RXkws6i9m4P8JHipD_y8Bb0b7'
     },
     // 2. ¿Qué es un CV y para qué sirve?
     {
@@ -221,7 +228,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Your CV Your Masterpiece',
-        originExperienceLogo: cvmpLogo
+        originExperienceLogo: cvmpLogo,
+        originPlaylistId: 'PLhMMXwN8RXkws6i9m4P8JHipD_y8Bb0b7'
     },
     // 3. Enfócate en ti mismo
     {
@@ -239,8 +247,10 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Your CV Your Masterpiece',
-        originExperienceLogo: cvmpLogo
-    },// 4. Enfócate en la empresa
+        originExperienceLogo: cvmpLogo,
+        originPlaylistId: 'PLhMMXwN8RXkws6i9m4P8JHipD_y8Bb0b7'
+    },
+    // 4. Enfócate en la empresa
     {
         id: 'yEMkpaVFCW8',
         title: 'Enfócate en la empresa',
@@ -256,7 +266,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Your CV Your Masterpiece',
-        originExperienceLogo: cvmpLogo
+        originExperienceLogo: cvmpLogo,
+        originPlaylistId: 'PLhMMXwN8RXkws6i9m4P8JHipD_y8Bb0b7'
     },
     // 5. Enfócate en el puesto
     {
@@ -274,7 +285,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Your CV Your Masterpiece',
-        originExperienceLogo: cvmpLogo
+        originExperienceLogo: cvmpLogo,
+        originPlaylistId: 'PLhMMXwN8RXkws6i9m4P8JHipD_y8Bb0b7'
     },
     // 6. Prepara tu CV
     {
@@ -292,7 +304,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Your CV Your Masterpiece',
-        originExperienceLogo: cvmpLogo
+        originExperienceLogo: cvmpLogo,
+        originPlaylistId: 'PLhMMXwN8RXkws6i9m4P8JHipD_y8Bb0b7'
     },
     // 7. ¿Qué no debe faltar en tu CV?
     {
@@ -310,8 +323,10 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Your CV Your Masterpiece',
-        originExperienceLogo: cvmpLogo
+        originExperienceLogo: cvmpLogo,
+        originPlaylistId: 'PLhMMXwN8RXkws6i9m4P8JHipD_y8Bb0b7'
     },
+
     /*<------------------------------------------------->
     <!-- Recreando mi vida 	-->
     <!------------------------------------------------->*/
@@ -331,7 +346,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Recreando mi vida',
-        originExperienceLogo: recreandoLogo
+        originExperienceLogo: recreandoLogo,
+        originPlaylistId: 'PLhMMXwN8RXkxUdFOQOfejrEWx799KIGgw'
     },
 
     // 2. ¿Cómo veo y vivo mi vida?
@@ -350,7 +366,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Recreando mi vida',
-        originExperienceLogo: recreandoLogo
+        originExperienceLogo: recreandoLogo,
+        originPlaylistId: 'PLhMMXwN8RXkxUdFOQOfejrEWx799KIGgw'
     },
 
     // 3. ¿Cómo me percibo?
@@ -369,7 +386,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Recreando mi vida',
-        originExperienceLogo: recreandoLogo
+        originExperienceLogo: recreandoLogo,
+        originPlaylistId: 'PLhMMXwN8RXkxUdFOQOfejrEWx799KIGgw'
     },
 
     // 4. Personalidad
@@ -388,7 +406,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Recreando mi vida',
-        originExperienceLogo: recreandoLogo
+        originExperienceLogo: recreandoLogo,
+        originPlaylistId: 'PLhMMXwN8RXkxUdFOQOfejrEWx799KIGgw'
     },
 
     // 5. ¿Cómo me ven los demás?
@@ -407,7 +426,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Recreando mi vida',
-        originExperienceLogo: recreandoLogo
+        originExperienceLogo: recreandoLogo,
+        originPlaylistId: 'PLhMMXwN8RXkxUdFOQOfejrEWx799KIGgw'
     },
 
     // 6. Lo que soy
@@ -420,7 +440,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Recreando mi vida',
-        originExperienceLogo: recreandoLogo
+        originExperienceLogo: recreandoLogo,
+        originPlaylistId: 'PLhMMXwN8RXkxUdFOQOfejrEWx799KIGgw'
     },
 
     // 7. Mis héroes
@@ -439,7 +460,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Recreando mi vida',
-        originExperienceLogo: recreandoLogo
+        originExperienceLogo: recreandoLogo,
+        originPlaylistId: 'PLhMMXwN8RXkxUdFOQOfejrEWx799KIGgw'
     },
 
     // 8. Mis deseos
@@ -458,7 +480,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Recreando mi vida',
-        originExperienceLogo: recreandoLogo
+        originExperienceLogo: recreandoLogo,
+        originPlaylistId: 'PLhMMXwN8RXkxUdFOQOfejrEWx799KIGgw'
     },
 
     // 9. 5 años
@@ -471,7 +494,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Recreando mi vida',
-        originExperienceLogo: recreandoLogo
+        originExperienceLogo: recreandoLogo,
+        originPlaylistId: 'PLhMMXwN8RXkxUdFOQOfejrEWx799KIGgw'
     },
 
     // 10. Ingredientes de la vida que amo
@@ -490,7 +514,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Recreando mi vida',
-        originExperienceLogo: recreandoLogo
+        originExperienceLogo: recreandoLogo,
+        originPlaylistId: 'PLhMMXwN8RXkxUdFOQOfejrEWx799KIGgw'
     },
 
     // 11. Mi visión de éxito
@@ -509,14 +534,15 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Recreando mi vida',
-        originExperienceLogo: recreandoLogo
+        originExperienceLogo: recreandoLogo,
+        originPlaylistId: 'PLhMMXwN8RXkxUdFOQOfejrEWx799KIGgw'
     },
 
-    // 13. Mi vida emocional, física e intelectual
+    // 12. Mi vida emocional, física e intelectual
     {
         id: 'eJmhJvOcrRM',
         title: 'Mi vida emocional, física e intelectual',
-        prevVideo: 'eJmhJvOcrRM',
+        prevVideo: 'Ukc9euI-mpA',
         nextVideo: 'zCSou8SjqMc',
         resources: [
             {
@@ -528,7 +554,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Recreando mi vida',
-        originExperienceLogo: recreandoLogo
+        originExperienceLogo: recreandoLogo,
+        originPlaylistId: 'PLhMMXwN8RXkxUdFOQOfejrEWx799KIGgw'
     },
 
     // 13. Mi yo futuro
@@ -541,7 +568,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Recreando mi vida',
-        originExperienceLogo: recreandoLogo
+        originExperienceLogo: recreandoLogo,
+        originPlaylistId: 'PLhMMXwN8RXkxUdFOQOfejrEWx799KIGgw'
     },
 
     // 14. Tu acción inmediata
@@ -560,7 +588,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Recreando mi vida',
-        originExperienceLogo: recreandoLogo
+        originExperienceLogo: recreandoLogo,
+        originPlaylistId: 'PLhMMXwN8RXkxUdFOQOfejrEWx799KIGgw'
     },
 
     // 15. Tu manifiesto y cierre
@@ -579,8 +608,10 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Recreando mi vida',
-        originExperienceLogo: recreandoLogo
+        originExperienceLogo: recreandoLogo,
+        originPlaylistId: 'PLhMMXwN8RXkxUdFOQOfejrEWx799KIGgw'
     },
+
     /*<------------------------------------------------->
     <!-- Mi mejor versión 	-->
     <!------------------------------------------------->*/
@@ -600,7 +631,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Mi mejor versión',
-        originExperienceLogo: versionLogo
+        originExperienceLogo: versionLogo,
+        originPlaylistId: 'PLhMMXwN8RXkysyxb6A9kPO507p6cQJlcZ'
     },
 
     // Es momento de distinguirse.
@@ -624,7 +656,7 @@ export const VideoPlayerData = [
             },
             {
                 name: '5 pasos para realizar y descargar las pruebas',
-                url: 'https://drive.google.com/file/d/1YYgpCbzJpz4XFLfrcxq0A-FkiJ4xvGSS/view',
+                url: 'https://drive.google.com/file/d/1YYgpCbzJpz4XFLfrcxq0A-FkiJ4xVGSS/view',
                 type: 'pdf'
             },
             {
@@ -635,7 +667,8 @@ export const VideoPlayerData = [
         ],
         optionalResourcesSubTitle: 'Te ayudamos a conocerte (opcional)',
         originExperience: 'Mi mejor versión',
-        originExperienceLogo: versionLogo
+        originExperienceLogo: versionLogo,
+        originPlaylistId: 'PLhMMXwN8RXkysyxb6A9kPO507p6cQJlcZ'
     },
 
     // Es clave ir más allá.
@@ -654,7 +687,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Mi mejor versión',
-        originExperienceLogo: versionLogo
+        originExperienceLogo: versionLogo,
+        originPlaylistId: 'PLhMMXwN8RXkysyxb6A9kPO507p6cQJlcZ'
     },
 
     // No te detengas, el esfuerzo y dirección dependen de ti.
@@ -678,7 +712,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Mi mejor versión',
-        originExperienceLogo: versionLogo
+        originExperienceLogo: versionLogo,
+        originPlaylistId: 'PLhMMXwN8RXkysyxb6A9kPO507p6cQJlcZ'
     },
 
     // El mejor aliado.
@@ -697,7 +732,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Mi mejor versión',
-        originExperienceLogo: versionLogo
+        originExperienceLogo: versionLogo,
+        originPlaylistId: 'PLhMMXwN8RXkysyxb6A9kPO507p6cQJlcZ'
     },
 
     // El mejor aliado - Cuida cómo te hablas.
@@ -716,7 +752,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Mi mejor versión',
-        originExperienceLogo: versionLogo
+        originExperienceLogo: versionLogo,
+        originPlaylistId: 'PLhMMXwN8RXkysyxb6A9kPO507p6cQJlcZ'
     },
 
     // El mejor aliado - Rueda de la vida (opcional)
@@ -735,7 +772,8 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Mi mejor versión',
-        originExperienceLogo: versionLogo
+        originExperienceLogo: versionLogo,
+        originPlaylistId: 'PLhMMXwN8RXkysyxb6A9kPO507p6cQJlcZ'
     },
 
     // Cierre
@@ -754,9 +792,11 @@ export const VideoPlayerData = [
         optionalResources: [],
         optionalResourcesSubTitle: '',
         originExperience: 'Mi mejor versión',
-        originExperienceLogo: versionLogo
+        originExperienceLogo: versionLogo,
+        originPlaylistId: 'PLhMMXwN8RXkysyxb6A9kPO507p6cQJlcZ'
     }
 ];
+
 
 /*<!--------------------------------------------------------------------------->
 <!--	end VideoPlayerData(Data)	-->
