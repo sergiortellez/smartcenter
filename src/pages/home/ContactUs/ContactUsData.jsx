@@ -27,7 +27,7 @@ import beatrizQuintero from '@assets/cdmx/team/bquintero.webp';
 import anaCarolinaBalseca from '@assets/cdmx/team/caro.webp';
 import citlaliVazquez from '@assets/cdmx/team/citlaliVazquez.webp';
 import erikaRangel from '@assets/cdmx/team/erangel.webp';
-import ferHaro from '@assets/cdmx/team/fer_haro.webp';
+import ferHaro from '@assets/cdmx/team/ferHaro.webp';
 import ferSarmiento from '@assets/cdmx/team/ferSarmiento.webp';
 import marianaCubas from '@assets/cdmx/team/marianaCubas.webp';
 import sofiaDerat from '@assets/cdmx/team/sofiaDerat.webp';
