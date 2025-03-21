@@ -30,6 +30,8 @@ import useIsMobile from '@hooks/useIsMobile';
 import { Playlists } from './Data/SmartTipsData'
 //styles
 import styles from './SmartTips.module.css'
+//FontAwesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 
@@ -111,7 +113,8 @@ export default function SmartTips() {
         <div className={styles.carousels}>
           {filteredPlaylists.map((playlist) => (
             <div className={styles.carousel} key={playlist.playListId}>
-              {playlist.icon && <img src={playlist.icon} className={styles.carouselIcon} alt="decorative image" />}
+              {playlist.icon && <FontAwesomeIcon icon={playlist.icon} className={styles.carouselIcon} />}
+
               <div className={styles.carouselTitle}>
                 {playlist.title}
               </div>

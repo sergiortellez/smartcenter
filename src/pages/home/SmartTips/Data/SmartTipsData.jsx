@@ -13,11 +13,12 @@
 
 //---------------------imports----------------------
 
-//images
-import popcorn from '@assets/intercampi/tips/popcorn.webp'
-import map from '@assets/intercampi/tips/map.webp'
-import knife from '@assets/intercampi/tips/knife.webp'
-import apps from '@assets/intercampi/tips/apps.webp'
+
+
+//FontAwesome
+
+import { faPopcorn, faMapLocationDot, faCrystalBall, } from '@awesome.me/kit-c09e05c963/icons/sharp-duotone/solid'
+import { faAppStoreIos } from '@awesome.me/kit-c09e05c963/icons/classic/brands';
 
 export const Playlists = [
 
@@ -27,7 +28,7 @@ export const Playlists = [
     {
         playListId: 'PLhMMXwN8RXkz3zpbF_nBQc_WID0ntJGfH',
         title: 'Up Explorer',
-        icon: map,
+        icon: faMapLocationDot,
         campi: ['CDMX']
     },
     /*<!------------------------------------------------->
@@ -36,7 +37,7 @@ export const Playlists = [
     {
         playListId: 'PLhMMXwN8RXkwR_OmEenjMmJi3Lr07vAtO',
         title: 'Competencias en el cine',
-        icon: popcorn,
+        icon: faPopcorn,
         campi: ['AGS', 'CDMX', 'GDL']
     },
     /*<!------------------------------------------------->
@@ -45,7 +46,7 @@ export const Playlists = [
     {
         playListId: 'PLhMMXwN8RXkzQXdiitwc1VMqMZNIh0Xy5',
         title: 'Cómo sobreviví a...',
-        icon: knife,
+        icon: faCrystalBall,
         campi: ['AGS', 'CDMX', 'GDL']
     },
     /*<!------------------------------------------------->
@@ -54,7 +55,7 @@ export const Playlists = [
     {
         playListId: 'PLhMMXwN8RXkwqQ7JMSyWl2JYt2B4_sU5O',
         title: 'Apps para ti',
-        icon: apps,
+        icon: faAppStoreIos,
         campi: ['AGS', 'CDMX', 'GDL']
     },
 

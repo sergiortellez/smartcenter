@@ -83,9 +83,10 @@
 }
 .carouselIcon{
     position: absolute;
-    top:-10%;
+    top:-17%;
     left: 80%;
-    width: 4rem;
+    color: var(--smartBlueMono);
+    font-size: 3.2rem;
 }
 /* cellphone landscape up */
 @media (min-width: 576px) {
