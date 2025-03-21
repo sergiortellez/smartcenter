@@ -1,0 +1,103 @@
+/*###################################################*/
+/*...................................................*/
+/* MediaGallery(component) */
+/*...................................................*/
+/*###################################################*/
+
+/*-------------------------------*/
+/* modal */
+/*-------------------------------*/
+
+.dialog{
+    border: none;
+    padding: 0;
+    top: calc(var(--navHeight) + 2.5rem);
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.9);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(12.8px);
+-webkit-backdrop-filter: blur(0.6px);
+
+}
+
+
+/* ---buttons--- */
+
+.closeButton{
+    all: unset;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background:transparent;
+    border: none;
+    font-size: 2rem;
+    color: var(--smartRed);
+    cursor:pointer; 
+}
+.prevButton{
+    all: unset;
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    font-size: 4rem;
+    color: gray;
+    cursor: pointer;
+}
+
+.nextButton{
+    all: unset;
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    font-size: 4rem;
+    color: gray;
+    cursor: pointer;
+}
+
+/* ---end buttons--- */
+
+/* ---mediaContainer--- */
+
+
+
+/* ---end mediaContainer--- */
+
+
+/*-------------------------------*/
+/* end modal */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* video media */
+/*-------------------------------*/
+
+
+.youtubeEmbedPlayer iframe{
+    min-height: 50vh;
+    min-width: 50vw;
+}
+
+/*-------------------------------*/
+/* end video media */
+/*-------------------------------*/
+
+
+
+
+
+
+
+/*###################################################*/
+/*...................................................*/
+/* end MediaGallery(component) */
+/*...................................................*/
+/*###################################################*/

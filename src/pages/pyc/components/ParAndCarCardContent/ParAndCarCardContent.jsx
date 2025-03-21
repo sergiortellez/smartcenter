@@ -16,6 +16,7 @@
 import styles from './ParAndCarCardContent.module.css'
 //components
 import Pill from '@components/Pill/Pill'
+import MediaGallery from '@components/MediaGallery/MediaGallery';
 
 //fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -24,6 +25,9 @@ import { faDiploma, faFileCertificate } from '@awesome.me/kit-c09e05c963/icons/s
 //from duotone collection
 import { faBlockQuestion, faFlaskVial, faEnvelopeCircleCheck } from '@awesome.me/kit-c09e05c963/icons/duotone/solid'
 import { faInstagram } from '@awesome.me/kit-c09e05c963/icons/classic/brands';
+
+//TODO: Remove this test code
+import womenUp from '@assets/intercampi/par_car/icons/women_up.webp'
 
 
 export default function ParAndCarCardContent({
@@ -37,6 +41,30 @@ export default function ParAndCarCardContent({
   instagramUser = '',
   contactEmail = ''
 }) {
+
+
+  /*<------------------------------------------------->
+  <!--	test (delete later)	-->
+  <!------------------------------------------------->*/
+  //TODO: Remove this test code
+
+  const mediaItems = [
+    {
+      type: 'youtube',
+      id: 'rwC7HY8_U_g',
+      caption: 'Example YouTube Video',
+    },
+    {
+      type: 'image',
+      src: womenUp,
+      caption: 'Example Image',
+    },
+    // Add more media items as needed
+  ];
+
+  /*<!------------------------------------------------->
+  <!--	end test (delete later)	-->
+  <!------------------------------------------------->*/
 
 
   /*<------------------------------------------------->
@@ -101,8 +129,12 @@ export default function ParAndCarCardContent({
           </div>
         </div>
         <div className={styles.gallery}>
-
-
+          <MediaGallery
+            mediaItems={mediaItems}
+            galleryClassName="my-gallery"
+            thumbnailClassName="my-thumbnail"
+            modalClassName="my-modal"
+          />
         </div>
 
 
