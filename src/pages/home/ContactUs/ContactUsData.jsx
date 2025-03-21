@@ -18,6 +18,7 @@ import anaPauQuiroga from '@assets/ags/team/ana_pau_quiroga.webp';
 import guillermoRamos from '@assets/ags/team/guillermo_ramos.webp';
 import lilianaMedina from '@assets/ags/team/liliana_medina.webp';
 import oscarArmendariz from '@assets/ags/team/oscar_armendariz.webp';
+import sofiaGuillen from '@assets/ags/team/sofia_guillen.webp';
 
 
 //images CDMX
@@ -86,6 +87,15 @@ export const ContactUsData = [
         secondaryEmail: null,
         phoneExtension: 7176,
         profilePicture: oscarArmendariz,
+        campi: 'AGS'
+    },
+    {
+        name: 'Lic. Sofía Guillén Prince',
+        position: 'Coordinadora Smart Center',
+        email: ' sprince@up.edu.mx',
+        secondaryEmail: null,
+        phoneExtension: 7134,
+        profilePicture: sofiaGuillen,
         campi: 'AGS'
     },
     // CDMX
