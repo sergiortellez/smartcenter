@@ -47,7 +47,7 @@
 
 .buttonStyles {
     all: unset;
-    background-color: var(--primary);
+    background-color: var(--smartBlueMono);
     color: var(--background);
     padding: 0.6rem;
     border-radius: 10px;
@@ -63,7 +63,7 @@
 .buttonStyles:focus {
     cursor: pointer;
     background-color: var(--background);
-    color: var(--primary);
+    color: var(--smartBlue);
 
 }
 

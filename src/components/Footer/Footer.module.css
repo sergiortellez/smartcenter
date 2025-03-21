@@ -11,9 +11,9 @@ footer[data-type="persistent"] {
     justify-content: space-between;
     flex-direction: column;
 
-    background-color: var(--smartBlue);
+    background-color: var(--cardBackgroundColor);
     padding: 3rem;
-    color: var(--background);
+    color: var(--text);
     text-align: center;
     
 }
@@ -40,11 +40,17 @@ footer[data-type="persistent"] {
 /* end tablet up */
 
 footer[data-type="persistent"] a {
-    color: var(--background);
+    color: var(--smartBlue);
 }
-
+footer[data-type="persistent"] a:hover,
+footer[data-type="persistent"] a:active {
+    background-color: var(--smartBlueMono);
+    color: var(--cardBackgroundColor);
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
 footer[data-type="persistent"] a:visited {
-    color: var(--background);
+    color: var(--smartBlue);
 }
 
 footer[data-type="persistent"] svg {
@@ -97,6 +103,7 @@ footer[data-type="persistent"] svg {
     justify-content: center;
     gap: 1rem;
     margin-top: 1.5rem;
+    color: var(--smartRed);
 }
 
 /*-------------------------------*/
@@ -140,6 +147,10 @@ footer[data-type="persistent"] svg {
         align-items: flex-start;
         margin-bottom: 0;
     }
+}
+
+.title{
+    color: var(--primary);
 }
 
 /*-------------------------------*/

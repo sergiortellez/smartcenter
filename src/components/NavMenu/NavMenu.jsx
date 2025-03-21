@@ -41,7 +41,7 @@ import styles from './NavMenu.module.css'
 import dropdownContentStyles from '../NavDropdown/NavDropdownContentsCampus.module.css'
 //fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGrid2, faCalendar, faLocationDot } from '@awesome.me/kit-c09e05c963/icons/classic/solid'
+import { faGrid2, faCalendar, faLocationDot, faHouse } from '@awesome.me/kit-c09e05c963/icons/classic/solid'
 /*<--	*** end imports ***	-->*/
 
 
@@ -111,7 +111,7 @@ const NavMenu = () => {
         <>
             {/* nav bar */}
             <nav data-type="mobile" className={`${styles.navMenu} ${isMenuOpen ? styles.navMenuDialogOpen : ''}`}>
-                <HashLink smooth to="/" className={styles.item} > <img src={smartIcon} alt="SC" className={styles.icon} /> SMART </HashLink>
+                <HashLink smooth to="/" className={styles.item} > <FontAwesomeIcon icon={faHouse} className={styles.icon} /> SMART </HashLink>
 
                 <HashLink smooth to="/#experiencias" className={styles.item} > <FontAwesomeIcon icon={faGrid2} className={styles.icon} /> Experiencias </HashLink>
 

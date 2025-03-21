@@ -9,7 +9,7 @@ import NavDropdown from '../NavDropdown/NavDropdown';
 import { HashLink } from "react-router-hash-link";
 //app logo
 import minSmartLogo from '../../assets/intercampi/logos/smart_min.webp'
-import largeSmartLogo from '../../assets/intercampi/logos/logo_smart_original.svg'
+import shortSmartLogo from '../../assets/intercampi/logos/smart_short_official.webp'
 import upHorizontalLogo from '../../assets/intercampi/logos/up_logo_horizontal.webp'
 //styles
 import styles from './NavBar.module.css'
@@ -179,7 +179,7 @@ export default function NavBar() {
                         //render expanded logo
                         <>
                             <img src={upHorizontalLogo} alt="UP" className={styles.navUpLogo} />
-                            <img src={largeSmartLogo} alt="SMART" className={styles.navSmartLogo} />
+                            <img src={shortSmartLogo} alt="SMART" className={styles.navSmartLogo} />
                         </>
                     )}
 

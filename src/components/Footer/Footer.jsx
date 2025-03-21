@@ -63,13 +63,13 @@ export default function Footer() {
                 </div>
             </section>
             <section className={styles.footer_contacto}>
-                <b> <FontAwesomeIcon icon={faBuilding} /> {currentCampus.name} </b>
+                <b className={styles.title}> <FontAwesomeIcon icon={faBuilding} /> {currentCampus.name} </b>
                 <div>
                     {/* Get all the adress lines and render them in the page into span tags. */}
                     {currentCampus.addressLines.map((line, index) => (<span key={index}>{line}</span>))}
                 </div>
                 <div>
-                    <span><FontAwesomeIcon icon={faPhoneVolume} />  Conmutador</span>
+                    <span className={styles.title}><FontAwesomeIcon icon={faPhoneVolume} />  Conmutador</span>
                     <span>{currentCampus.phone[0]} {currentCampus.phone[1] ? '|' : ''} {currentCampus.phone[1]}</span>
                     <span>{currentCampus.phone[2]}</span>
                 </div>

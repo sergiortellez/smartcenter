@@ -79,7 +79,10 @@ html {
     /* font size general control using variable */
     font-size: var(--fs-b);
     /* Oficial SMART font-family   */
-    font-family: 'Nunito', sans-serif;
+    font-family: "Quat";
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 300;
     /* protection against overflow movement due to animations */
     overflow-x: hidden;
     /* Size of elements wont be affected by paddings or margins */
@@ -318,6 +321,13 @@ body.navIsContracted {
 /*-------------------------------*/
 /* special styles */
 /*-------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "LaurentianPro";
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 300;;
+}
 
 a {
     all: unset;

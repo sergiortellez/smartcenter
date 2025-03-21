@@ -7,11 +7,25 @@
     display: none;
 }
 
+.animationFrame h2 {
+    font-size: 2rem;
+    margin: 0rem;
+    text-align: left;
+    
+}
+.animationFrame p {
+    font-size: 1.5rem;
+    margin: 0rem;
+    text-align: left;
+}
+
 /* tablet portrait up */
 @media (min-width: 768px) {
     .animationFrame {
         min-height: calc(100vh - var(--navHeight));
         display: flex;
+        flex-direction: column;
+        color: #fff;
         align-items: center;
         justify-content: center;
         overflow: hidden;

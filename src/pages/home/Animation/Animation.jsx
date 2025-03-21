@@ -27,15 +27,17 @@ export default function AnimationFrame() {
     const renderContent = () => {
         switch (campus) {
             case 'AGS':
-                return null;
+                return (
+                    <><h2>SMART Center</h2>
+                        <p>Campus Aguascalientes</p></>);
             case 'CDMX':
-                return <iframe src="animations/cdmx/smart_cover_animation.html"
-                    scrolling="no"
-                    loading="lazy"
-                    frameBorder="0"
-                ></iframe>;
+                return (
+                    <><h2>SMART Center</h2>
+                        <p>Ciudad de México</p></>);
             case 'GDL':
-                return null;
+                return (
+                    <><h2>SMART Center</h2>
+                        <p>Campus Guadalajara</p></>);
             default:
                 return <span>No se encontró la animación...</span>;
         }
