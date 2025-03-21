@@ -195,43 +195,34 @@ export default function NavBar() {
                 <HashLink smooth to="/#contacto" className={activeSection === 'contacto' ? styles.active : ''}> Contacto</HashLink>
 
                 <span>|</span>
-
+                <NavLink to="/citas" className={({ isActive }) => (isActive ? styles.active : '')} > <FontAwesomeIcon icon={faCalendars} className={styles.logoCitas} /> Citas </NavLink>
                 {/* HACK: since using "modules.css" we need to reference the class name with this boolean because the modules invent classes like NavBar_active_123 so the "active" class was not directly working */}
 
-                {/* Semantic action group */}
-                <div className={styles.actionGroup}>
-                    <NavLink to="/citas" className={({ isActive }) => (isActive ? styles.active : '')} > <FontAwesomeIcon icon={faCalendars} className={styles.logoCitas} /> Citas </NavLink>
+                <NavDropdown icon={faLocationDot} title={campus} position='bottom-left'>
+                    {/* LEARN: The following is a design pattern called:  "Render prop pattern" */}
+                    {/* HACK: By passing the children of the NavDropdown as a function we can pass an argument which was declared in the component as the method that closes de dropdown. */}
 
-                    <NavDropdown icon={faLocationDot} title={campus} position='bottom-left'>
-                        {/* LEARN: The following is a design pattern called:  "Render prop pattern" */}
-                        {/* HACK: By passing the children of the NavDropdown as a function we can pass an argument which was declared in the component as the method that closes de dropdown. */}
-
-                        {/* Only show the options for the campus that are not currently selected. (Conditional rendering) */}
-                        {({ toggleDialog }) => (
-                            <div className={dropdownContentStyles.buttonsContainer}>
-                                {campus === 'AGS' ? '' : <button
-                                    className={campus === 'AGS' ? dropdownContentStyles.selected : ''}
-                                    onClick={() => { selectCampus('AGS'); toggleDialog(); }}>
-                                    <FontAwesomeIcon icon={faLocationDot} /> AGS
-                                </button>}
-                                {campus === 'CDMX' ? '' : <button
-                                    className={campus === 'CDMX' ? dropdownContentStyles.selected : ''}
-                                    onClick={() => { selectCampus('CDMX'); toggleDialog(); }}>
-                                    <FontAwesomeIcon icon={faLocationDot} /> CDMX
-                                </button>}
-                                {campus === 'GDL' ? '' : <button
-                                    className={campus === 'GDL' ? dropdownContentStyles.selected : ''}
-                                    onClick={() => { selectCampus('GDL'); toggleDialog(); }}>
-                                    <FontAwesomeIcon icon={faLocationDot} /> GDL
-                                </button>}
-                            </div>
-                        )}
-                    </NavDropdown>
-                </div>
-
-                {/* End Semantic Lateral */}
-
-
+                    {/* Only show the options for the campus that are not currently selected. (Conditional rendering) */}
+                    {({ toggleDialog }) => (
+                        <div className={dropdownContentStyles.buttonsContainer}>
+                            {campus === 'AGS' ? '' : <button
+                                className={campus === 'AGS' ? dropdownContentStyles.selected : ''}
+                                onClick={() => { selectCampus('AGS'); toggleDialog(); }}>
+                                <FontAwesomeIcon icon={faLocationDot} /> AGS
+                            </button>}
+                            {campus === 'CDMX' ? '' : <button
+                                className={campus === 'CDMX' ? dropdownContentStyles.selected : ''}
+                                onClick={() => { selectCampus('CDMX'); toggleDialog(); }}>
+                                <FontAwesomeIcon icon={faLocationDot} /> CDMX
+                            </button>}
+                            {campus === 'GDL' ? '' : <button
+                                className={campus === 'GDL' ? dropdownContentStyles.selected : ''}
+                                onClick={() => { selectCampus('GDL'); toggleDialog(); }}>
+                                <FontAwesomeIcon icon={faLocationDot} /> GDL
+                            </button>}
+                        </div>
+                    )}
+                </NavDropdown>
 
             </section>
         </nav>

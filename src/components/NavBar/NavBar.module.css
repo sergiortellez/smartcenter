@@ -113,12 +113,10 @@ nav[data-type="desktop"]{
 /*-------------------------------*/
 
 .navContents {
-        /* white-space: nowrap; */
-        /* overflow-x: auto; */
         display: flex;
         align-items: center;
         height: var(--navHeight);
-        gap: 0.5rem;
+        gap: 0.4rem;
 
     }
 
@@ -129,6 +127,7 @@ nav[data-type="desktop"]{
     justify-content: center;
     height: 100%;
     padding: 0.3rem;
+   
 }
 
 .active,
@@ -140,22 +139,10 @@ nav[data-type="desktop"]{
 
 .logoCitas{
     margin-right: 0.2rem;
-    /* margin-bottom: 0.1rem; */
+    margin-bottom: 0.2rem;
 }
 
-/* ---action group--- */
 
-.actionGroup {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 0.4rem;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-/* ---end action group--- */
 
 /*-------------------------------*/
 /* end contents */

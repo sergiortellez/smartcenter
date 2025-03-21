@@ -26,6 +26,7 @@
 }
 
 .dropdownButton {
+  all: unset;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -39,12 +40,21 @@
   padding: 0;
 }
 
-.title {
+.dropdownButton:active, 
+.dropdownButton:hover {
+  background-color:var( --cardBackgroundColorGold);
+  border-radius: 5px;
+  padding: 0.1rem;
+}
+
+.dropdownButton .title {
   font-size: 0.8rem;
+  font-weight: 500;
+  padding-bottom: 0.1rem;
 }
 
 .icon{
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
 }
 /*###################################################*/
 /*...................................................*/
