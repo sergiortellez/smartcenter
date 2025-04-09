@@ -1,6 +1,6 @@
 #!/bin/bash
 # Get the current IP address on macOS
-IP=$(ipconfig getifaddr en0)
+IP=$(ipconfig getifaddr "$(route get default | awk '/interface: / { print $2 }')")
 
 # Kill any process using Vite's default port (5173 for Vite)
 lsof -ti:5173 | xargs kill -9 2>/dev/null
