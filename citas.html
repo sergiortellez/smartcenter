@@ -79,7 +79,8 @@
     <section id="app_citas">
         <h3><i class="fa-duotone fa-user"></i> Agenda Personal </h3>
 
-        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding
+        <!-- HACK: In case of emergency: turn on alert. -->
+        <!-- <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding
             : 2rem; min-height: 50vh;">
             <h4>Tenemos algunas dificultades con nuestra app de citas.</h4>
             <h4>Nuestra prioridad es atenderte.</h4>
@@ -87,47 +88,47 @@
                 Estamos trabajando para solucionarlo lo antes posible, mientras tanto puedes hacer tus citas directamente en el siguiente correo: <a href="mailto:mx_smartcenter@up.edu.mx"> mx_smartcenter@up.edu.mx</a>
             </p>
 
-        </div>
-        <!-- El loader desaparece al cargar el iframe -->
-        <!-- TODO: uncomment <div id=" loader">
-
-                    <div class="loader_top">
-                        <div class="loader_logo"></div>
-                    </div>
-                    <hr>
-                    <div class="loader_menu">
-                        <div class="phanthom_title"></div>
-                        <div class="phanthom_title"></div>
-                        <div class="phanthom_title"></div>
-                        <div class="phanthom_title"></div>
-                        <div class="phanthom_title"></div>
-                        <div class="phanthom_title"></div>
-                    </div>
-
-                    <hr>
-                    <div class="loader_cards">
-                        <div class="loader_phanthom">
-                            <div class="phanthom_img"></div>
-                            <div class="phanthom_txt"></div>
-                            <div class="phanthom_button"></div>
-                        </div>
-                        <div class="loader_phanthom">
-                            <div class="phanthom_img"></div>
-                            <div class="phanthom_txt"></div>
-                            <div class="phanthom_button"></div>
-                        </div>
-                        <div class="loader_phanthom">
-                            <div class="phanthom_img"></div>
-                            <div class="phanthom_txt"></div>
-                            <div class="phanthom_button"></div>
-                        </div>
-                    </div>
-
         </div> -->
+        <!-- El loader desaparece al cargar el iframe -->
+        <div id="loader">
+
+            <div class="loader_top">
+                <div class="loader_logo"></div>
+            </div>
+            <hr>
+            <div class="loader_menu">
+                <div class="phanthom_title"></div>
+                <div class="phanthom_title"></div>
+                <div class="phanthom_title"></div>
+                <div class="phanthom_title"></div>
+                <div class="phanthom_title"></div>
+                <div class="phanthom_title"></div>
+            </div>
+
+            <hr>
+            <div class="loader_cards">
+                <div class="loader_phanthom">
+                    <div class="phanthom_img"></div>
+                    <div class="phanthom_txt"></div>
+                    <div class="phanthom_button"></div>
+                </div>
+                <div class="loader_phanthom">
+                    <div class="phanthom_img"></div>
+                    <div class="phanthom_txt"></div>
+                    <div class="phanthom_button"></div>
+                </div>
+                <div class="loader_phanthom">
+                    <div class="phanthom_img"></div>
+                    <div class="phanthom_txt"></div>
+                    <div class="phanthom_button"></div>
+                </div>
+            </div>
+
+        </div>
         <!-- fin de loader -->
 
         <!-- simple book me iframe -->
-        <!-- TODO: uncomment <script src="//widget.simplybook.me/v2/widget/widget.js"></script> -->
+        <script src="//widget.simplybook.me/v2/widget/widget.js"></script>
 
         <script>
             var widget = new SimplybookWidget({
@@ -217,72 +218,9 @@
     <!-- spyscroll -->
     <script src="assets/js/spyscroll.min.js"></script>
     <!-- loader citas (fantasmas para agenda personal) -->
-    <!-- TODO: uncomment <script src="assets/js/loader_citas.min.js"></script> -->
-    <!-- TODO: uncomment <script>
-        // Seleccionar el contenedor de los eventos
-        const eventosGrid = document.querySelector("#events_grid");
+    <script src="assets/js/loader_citas.min.js"></script>
 
-        // Seleccionar todos los botones "ver más" de cada evento
-        const botonesMas = eventosGrid.querySelectorAll(".event_more_button");
-
-        // Iterar sobre cada botón "ver más"
-        botonesMas.forEach((boton) => {
-            // Añadir un evento click a cada botón "ver más"
-            boton.addEventListener("click", () => {
-
-                //obtener una referencia a la tarjeta madre del botón
-                const eventCard = boton.closest('.event_card');
-                // Obtener el contenedor de datos ocultos correspondiente a este botón "ver más"
-                const datosOcultos = eventCard.querySelector('.event_hidden');
-                //obtener una referencia al texto dentro de botón "ver más"
-                const textBoton = boton.querySelector('span');
-                //obtener una referencia al icono dentro de botón "ver más"
-                const iconBoton = boton.querySelector('svg');
-
-
-                //se usarán alturas máximas para controlar la visualización de los datos ocultos (no se usa la propiedad display porque no se puede animar)
-
-
-                // Si el elemento "oculto" está actualmente oculto, cambiar su estilo para mostrarlo
-                if (datosOcultos.style.maxHeight === "0px" || datosOcultos.style.maxHeight === "") {
-
-                    //muestra los datos ocultos cambiando su altura máxima
-                    datosOcultos.style.maxHeight = "800px";
-
-
-                    //cambia el texto del botón
-                    textBoton.innerHTML = "menos";
-                    //cambia el ícono de la flecha por el de flecha arriba
-                    iconBoton.classList.remove('fa-square-caret-down');
-                    iconBoton.classList.add('fa-square-caret-up');
-
-                    //cambia la altura máxima de la tarjeta madre para que se ajuste a los datos ocultos
-                    eventCard.style.maxHeight = "fit-content";
-
-
-                } else {
-
-                    //oculta los datos reduciendo su altura máxima
-                    datosOcultos.style.maxHeight = "0px";
-
-                    //cambia el texto del botón
-                    textBoton.innerHTML = "más";
-                    //cambia el ícono de la flecha por el de flecha abajo
-                    iconBoton.classList.remove('fa-square-caret-up');
-                    iconBoton.classList.add('fa-square-caret-down');
-
-                    //regresa la altura máxima de la tarjeta madre a su valor original después de 1 segundo. Esto es para que la tarjeta madre no se quede con una altura muy grande si el usuario abre otra tarjeta en la misma fila.
-                    if (eventCard.style.maxHeight === "fit-content") {
-                        setTimeout(function () {
-                            eventCard.style.maxHeight = "24rem";
-                        }, 1000);
-
-                    };
-
-                }
-            });
-        });
-    </script> -->
+    <!------------------------------------------------->
     <!--	end JS	-->
     <!------------------------------------------------->
 
