@@ -33,12 +33,12 @@ import powerUpLogo from '@assets/intercampi/experiencias/power_up.webp'
 
 
 // Logos origin GDL
-import conflictoOportunidadLogo from '@assets/intercampi/experiencias/conflicto_oportunidad.webp';
+import peaceMakersLogo from '@assets/intercampi/experiencias/conflicto_oportunidad.webp';
 import inaccionAccionLogo from '@assets/intercampi/experiencias/inaccion_accion.webp';
 //import lecturaInteligenteLogo from '@assets/intercampi/experiencias/lectura_inteligente.webp';
-import masteringTimeLogo from '@assets/intercampi/experiencias/mastering_time.webp';
+import agendaInteligenteLogo from '@assets/intercampi/experiencias/mastering_time.webp';
 import menteExitoLogo from '@assets/intercampi/experiencias/mente_exito.webp';
-import reinventaFormaEstudiarLogo from '@assets/intercampi/experiencias/reinventa_forma_estudiar.webp';
+import arteEstudiarLogo from '@assets/intercampi/experiencias/reinventa_forma_estudiar.webp';
 
 
 
@@ -307,12 +307,12 @@ export const LinkedExperiencesData = [
     <!--	end Power UP	-->
     <!------------------------------------------------->*/
     /*<------------------------------------------------->
-    <!-- Mastering time, trucos para el éxito universitario-->
+    <!-- Agenda inteligente -->
     <!------------------------------------------------->*/
     {
-        cardId: 'masteringTime',
-        cardLogo: masteringTimeLogo,
-        cardTitle: 'Mastering time, trucos para el éxito universitario',
+        cardId: 'agendaInteligente',
+        cardLogo: agendaInteligenteLogo,
+        cardTitle: 'Agenda inteligente',
         details: [
             { icon: faFingerprint, text: 'interactiva' },
             { icon: faClock, text: '2 hrs' },
@@ -335,9 +335,9 @@ export const LinkedExperiencesData = [
     <!-- Conflicto: Oportunidad para el crecimiento y aprendizaje -->
     <!------------------------------------------------->*/
     {
-        cardId: 'conflictoOportunidad',
-        cardLogo: conflictoOportunidadLogo,
-        cardTitle: 'Conflicto: Oportunidad para el Crecimiento y Aprendizaje',
+        cardId: 'peaceMakers',
+        cardLogo: peaceMakersLogo,
+        cardTitle: 'Peace Makers',
         details: [
             { icon: faFingerprint, text: 'interactiva' },
             { icon: faClock, text: '2 hrs' },
@@ -364,7 +364,7 @@ export const LinkedExperiencesData = [
     {
         cardId: 'inaccionAccion',
         cardLogo: inaccionAccionLogo,
-        cardTitle: 'De la intención a la acción: Cómo superar la procrastinación',
+        cardTitle: 'De la intención a la acción',
         details: [
             { icon: faFingerprint, text: 'interactiva' },
             { icon: faClock, text: '2 hrs' },
@@ -391,7 +391,7 @@ export const LinkedExperiencesData = [
     {
         cardId: 'menteExito',
         cardLogo: menteExitoLogo,
-        cardTitle: 'Mente clara, éxito seguro: Técnicas para superar el estrés académico',
+        cardTitle: 'Mente clara, éxito seguro',
         details: [
             { icon: faFingerprint, text: 'interactiva' },
             { icon: faClock, text: '2 hrs' },
@@ -416,9 +416,9 @@ export const LinkedExperiencesData = [
     <!-- Reinventa tu forma de estudiar: El toolkit del estudiante -->
     <!------------------------------------------------->*/
     {
-        cardId: 'reinventaFormaEstudiar',
-        cardLogo: reinventaFormaEstudiarLogo,
-        cardTitle: 'Reinventa tu forma de estudiar: El toolkit del estudiante',
+        cardId: 'arteEstudiar',
+        cardLogo: arteEstudiarLogo,
+        cardTitle: 'El arte de estudiar',
         details: [
             { icon: faFingerprint, text: 'interactiva' },
             { icon: faClock, text: '2 hrs' },
