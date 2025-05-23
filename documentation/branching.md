@@ -14,8 +14,9 @@ This document explains the new branching strategy for the SMART Project reposito
 | `gh-pages`                      | **Test deployment** – used for preview/testing before production       |
 | `smart1.0`                      | **Legacy** – archived version of the original SMART 1.0                |
 | `smart2.0`                      | **Legacy** – snapshot of SMART 2.0 prior to React refactor             |
-| `smartApp/stable`              | **Stable base** for ongoing development (React refactor)               |
-| `smartApp/features/*`          | **Feature branches** – used to build new components or improvements    |
+| `smartApp/stable`               | **Stable base** for ongoing development (React refactor)               |
+| `smartApp/features/*`           | **Feature branches** – used to build new components or improvements    |
+| `smartApp/hotfix/*`             | **Quick fix branches** – used to make quick patches or urgent fixes    |
 
 ---
 
@@ -69,7 +70,7 @@ Target branch: `smartApp/stable`
 | `smartApp/features/`         | New features                     |
 | `smartApp/bugfix/`           | Fixes to existing functionality  |
 | `smartApp/refactor/`         | Structural improvements          |
-| `smartApp/hotfix/`           | Urgent fixes                     |
+| `smartApp/hotfix/`           | Urgent fixes or quick additions  |
 
 Examples:
 - `smartApp/features/new-cards`
