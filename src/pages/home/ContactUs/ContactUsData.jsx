@@ -32,6 +32,7 @@ import ferHaro from '@assets/cdmx/team/ferHaro.webp';
 import ferSarmiento from '@assets/cdmx/team/ferSarmiento.webp';
 import marianaCubas from '@assets/cdmx/team/marianaCubas.webp';
 import sofiaDerat from '@assets/cdmx/team/sofiaDerat.webp';
+import omarMorales from '@assets/cdmx/team/omar.webp';
 
 //images GDL
 import claudiaVillareal from '@assets/gdl/team/claudia_villareal.webp';
@@ -181,6 +182,15 @@ export const ContactUsData = [
         campi: 'CDMX'
     },
     {
+        name: 'Mtro. Edgar Omar Morales Contreras',
+        position: 'Fortalecimiento Académico',
+        email: 'emorales@up.edu.mx',
+        secondaryEmail: null,
+        phoneExtension: 5351,
+        profilePicture: omarMorales,
+        campi: 'CDMX'
+    },
+    {
         name: 'Beatriz Quintero Díaz',
         position: 'Primera atención',
         email: 'bquinter@up.edu.mx',
@@ -189,6 +199,7 @@ export const ContactUsData = [
         profilePicture: beatrizQuintero,
         campi: 'CDMX'
     },
+
     //GDL
     {
         name: 'Mtra. Hilda Leticia Cervantes Barragán',
